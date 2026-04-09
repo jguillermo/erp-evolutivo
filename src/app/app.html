@@ -4,13 +4,13 @@
   <header class="mb-4 text-center">
     <h1 class="text-2xl font-extrabold mb-1 gradient-text-brand">🚀 ERP Evolutivo + IA Asesora</h1>
     <p class="text-[#888] text-[0.8rem]">
-      Un sistema que crece contigo Y te dice cómo crecer mejor — aprendiendo de miles de negocios como el tuyo
+      Un sistema que crece contigo Y te dice cómo crecer mejor
     </p>
   </header>
 
   <!-- Navigation tabs -->
   <nav class="flex justify-center gap-1.5 mb-4 flex-wrap">
-    @for (tab of tabs; track tab.route) {
+    @for (tab of tabs; track tab.route) { @if (tab.visible) {
       <a
         [routerLink]="tab.route"
         routerLinkActive="tab-active"
@@ -18,7 +18,7 @@
       >
         {{ tab.icon }} {{ tab.label }}
       </a>
-    }
+    } }
   </nav>
 
   <!-- Page content -->

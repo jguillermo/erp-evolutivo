@@ -5,6 +5,7 @@ interface NavTab {
   label: string;
   route: string;
   icon: string;
+  visible: boolean;
 }
 
 @Component({
@@ -15,10 +16,10 @@ interface NavTab {
 })
 export class App {
   tabs: NavTab[] = [
-    { label: 'Canvas', route: '/canvas', icon: '📋' },
-    { label: 'Árbol Evolutivo', route: '/tree', icon: '🌳' },
-    { label: 'IA Asesora', route: '/ai', icon: '🧠' },
-    { label: 'Triggers', route: '/triggers', icon: '⚡' },
-    { label: 'Precios', route: '/pricing', icon: '💰' },
+    { label: 'Canvas',         route: '/canvas',  icon: '📋', visible: true  },
+    { label: 'Árbol Evolutivo',route: '/tree',    icon: '🌳', visible: false },
+    { label: 'IA Asesora',     route: '/ai',      icon: '🧠', visible: false },
+    { label: 'Triggers',       route: '/triggers',icon: '⚡', visible: false },
+    { label: 'Precios',        route: '/pricing', icon: '💰', visible: false },
   ];
 }
