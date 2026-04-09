@@ -1,0 +1,97 @@
+<div class="max-w-[1200px] mx-auto space-y-2.5">
+
+  <!-- Trigger rules table -->
+  <div class="bg-[#1a1d27] border border-[#2a2d3a] rounded-xl p-4">
+    <h3 class="text-[0.85rem] font-semibold text-[#22d3ee] mb-1 flex items-center gap-2">
+      ⚡ Sistema de Triggers — Cómo se desbloquea cada función
+    </h3>
+    <p class="text-[0.75rem] text-[#888] mb-3 leading-relaxed">
+      El sistema + la IA detectan métricas de tu negocio y sugieren nuevos módulos. Tú decides cuándo activar.
+    </p>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr>
+            <th class="tbl-th">Tipo Trigger</th>
+            <th class="tbl-th">Ejemplo</th>
+            <th class="tbl-th">Desbloqueo</th>
+            <th class="tbl-th">Modo</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (trigger of triggers; track trigger.type) {
+            <tr class="hover:bg-[#1e2030] transition-colors">
+              <td class="tbl-td">{{ trigger.type }}</td>
+              <td class="tbl-td">{{ trigger.example }}</td>
+              <td class="tbl-td">{{ trigger.unlocks }}</td>
+              <td class="tbl-td">
+                <span class="mode-badge" [ngClass]="getModeBadgeClass(trigger.mode)">
+                  {{ getModeLabel(trigger.mode) }}
+                </span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Activation modes table -->
+  <div class="bg-[#1a1d27] border border-[#2a2d3a] rounded-xl p-4">
+    <h3 class="text-[0.85rem] font-semibold text-[#a78bfa] mb-3 flex items-center gap-2">
+      🎯 Tipos de Activación
+    </h3>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr>
+            <th class="tbl-th w-[20%]">Modo</th>
+            <th class="tbl-th w-[35%]">Descripción</th>
+            <th class="tbl-th">Experiencia</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (mode of activationModes; track mode.mode) {
+            <tr class="hover:bg-[#1e2030] transition-colors">
+              <td class="tbl-td">
+                <span class="mode-badge" [ngClass]="mode.badgeClass">{{ mode.label }}</span>
+              </td>
+              <td class="tbl-td">{{ mode.description }}</td>
+              <td class="tbl-td">{{ mode.experience }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  .tbl-th {
+    text-align: left;
+    font-size: 0.68rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 6px 8px;
+    border-bottom: 1px solid #2a2d3a;
+  }
+  .tbl-td {
+    font-size: 0.73rem;
+    padding: 8px;
+    border-bottom: 1px solid #1f2233;
+    color: #b0b3c0;
+  }
+  .mode-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+  }
+  .m-auto { background: #1e1b4b; color: #a5b4fc; }
+  .m-suggest { background: #042f2e; color: #5eead4; }
+  .m-manual { background: #422006; color: #fde68a; }
+  .m-ai { background: linear-gradient(135deg, #831843, #4c1d95); color: #f9a8d4; }
+</style>
