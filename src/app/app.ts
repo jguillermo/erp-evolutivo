@@ -23,7 +23,7 @@ export class App {
   toggleTheme() { this.theme.toggle(); }
 
   tabs: NavTab[] = [
-    { label: 'Canvas',         route: '/canvas',  icon: '📋', visible: true  },
+    { label: 'Lienzo Canvas',  route: '/canvas',  icon: '📋', visible: true  },
     { label: 'Árbol Evolutivo',route: '/tree',    icon: '🌳', visible: false },
     { label: 'IA Asesora',     route: '/ai',      icon: '🧠', visible: false },
     { label: 'Triggers',       route: '/triggers',icon: '⚡', visible: false },
