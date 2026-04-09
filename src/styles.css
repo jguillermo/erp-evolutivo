@@ -9,7 +9,47 @@ body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   background-color: #0f1117;
   color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+/* Light mode global overrides */
+.light-mode {
+  --card-bg: #ffffff;
+  --card-border: #e0e0e0;
+  --text-muted: #666;
+}
+
+.light-mode .gradient-text-brand {
+  background: linear-gradient(135deg, #4f46e5, #0891b2, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Canvas light mode */
+.light-mode .canvas-block {
+  background: #ffffff !important;
+  border-color: #e0e0e0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.light-mode .block-list li { color: #444 !important; }
+.light-mode .block-list li::before { color: #aaa !important; }
+.light-mode .block-question { color: #888 !important; border-bottom-color: #e0e0e0 !important; }
+.light-mode .value-statement { color: #333 !important; }
+.light-mode .vs-section { background: rgba(6,182,212,0.05) !important; }
+.light-mode .vs-label { color: #555 !important; }
+.light-mode .vs-text { color: #333 !important; }
+.light-mode .game-section { background: rgba(139,92,246,0.06) !important; border-color: rgba(139,92,246,0.15) !important; }
+.light-mode .game-text { color: #444 !important; }
+.light-mode .segment-meta { background: rgba(251,191,36,0.1) !important; color: #92400e !important; }
+.light-mode .seg-desc { color: #666 !important; }
+.light-mode .viability-note { color: #555 !important; background: rgba(0,0,0,0.03) !important; border-left-color: #ccc !important; }
+.light-mode .hl { color: #6d28d9 !important; }
+.light-mode .hl2 { color: #0e7490 !important; }
+.light-mode .hl3 { color: #15803d !important; }
+.light-mode .hl-ai { color: #be185d !important; }
+.light-mode .btn-print { background: rgba(99,102,241,0.1) !important; color: #4f46e5 !important; border-color: rgba(99,102,241,0.3) !important; }
+.light-mode .btn-print:hover { background: rgba(99,102,241,0.2) !important; color: #3730a3 !important; }
 
 /* Gradient text utility */
 .gradient-text-brand {

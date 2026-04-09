@@ -1,9 +1,21 @@
-<div class="min-h-screen bg-[#0f1117] text-[#e0e0e0] p-4">
+<div class="min-h-screen p-4" [class]="darkMode ? 'bg-[#0f1117] text-[#e0e0e0]' : 'light-mode bg-[#f5f5f5] text-[#1a1a2e]'">
 
   <!-- Header -->
-  <header class="mb-4 text-center">
+  <header class="mb-4 text-center relative">
+    <div class="absolute right-0 top-0 flex gap-1.5">
+      <button
+        onclick="window.print()"
+        class="p-2 rounded-lg border text-sm cursor-pointer transition-all duration-300"
+        [class]="darkMode ? 'bg-[#1a1d27] border-[#2a2d3a] text-[#888] hover:border-[#4a4d5a] hover:text-[#ccc]' : 'bg-white border-[#ddd] text-[#555] hover:border-[#999] hover:text-[#222]'"
+      >🖨️</button>
+      <button
+        (click)="toggleTheme()"
+        class="p-2 rounded-lg border text-sm cursor-pointer transition-all duration-300"
+        [class]="darkMode ? 'bg-[#1a1d27] border-[#2a2d3a] text-[#888] hover:border-[#4a4d5a] hover:text-[#ccc]' : 'bg-white border-[#ddd] text-[#555] hover:border-[#999] hover:text-[#222]'"
+      >{{ darkMode ? '☀️' : '🌙' }}</button>
+    </div>
     <h1 class="text-2xl font-extrabold mb-1 gradient-text-brand">🚀 ERP Evolutivo + IA Asesora</h1>
-    <p class="text-[#888] text-[0.8rem]">
+    <p class="text-[0.8rem]" [class.text-[#888]]="darkMode" [class.text-[#666]]="!darkMode">
       Solo las herramientas que necesitas, sin la complejidad que no usas
     </p>
   </header>
@@ -15,6 +27,7 @@
         [routerLink]="tab.route"
         routerLinkActive="tab-active"
         class="tab-btn"
+        [class.tab-btn-light]="!darkMode"
       >
         {{ tab.icon }} {{ tab.label }}
       </a>

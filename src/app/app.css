@@ -21,3 +21,21 @@
   border-color: #6366f1 !important;
   color: #a5b4fc !important;
 }
+
+/* Light mode overrides */
+.tab-btn-light {
+  background: #fff !important;
+  border-color: #ddd !important;
+  color: #555 !important;
+}
+
+.tab-btn-light:hover {
+  border-color: #999 !important;
+  color: #222 !important;
+}
+
+.tab-btn-light.tab-active {
+  background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+  border-color: #6366f1 !important;
+  color: #fff !important;
+}
