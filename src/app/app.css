@@ -1,3 +1,27 @@
+.tab-link {
+  padding: 8px 14px;
+  background: none;
+  border: none;
+  color: #22d3ee;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.tab-link:hover {
+  color: #67e8f9;
+}
+
+.tab-link-light {
+  color: #1e3a5f !important;
+}
+
+.tab-link-light:hover {
+  color: #312e81 !important;
+}
+
 .tab-btn {
   padding: 8px 14px;
   border-radius: 8px;
@@ -20,6 +44,18 @@
   background: linear-gradient(135deg, #312e81, #1e3a5f) !important;
   border-color: #6366f1 !important;
   color: #a5b4fc !important;
+}
+
+.tab-link.tab-active {
+  background: none !important;
+  border: none !important;
+  color: #22d3ee !important;
+}
+
+.tab-link-light.tab-active {
+  background: none !important;
+  border: none !important;
+  color: #1e3a5f !important;
 }
 
 /* Light mode overrides */
