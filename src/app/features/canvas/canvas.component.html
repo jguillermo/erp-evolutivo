@@ -1,6 +1,9 @@
 <!-- Business Model Canvas -->
 <div class="max-w-[1200px] mx-auto">
-  <div class="canvas-grid">
+  <div class="canvas-actions no-print">
+    <button class="btn-print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+  </div>
+  <div class="canvas-grid" id="canvas-grid">
 
     <!-- Socios Clave -->
     <div class="canvas-block" style="grid-column:1/3; grid-row:1/3;">
@@ -384,11 +387,197 @@
     border-left: 2px solid #4b5563;
   }
 
-  @media (max-width: 1000px) {
+  .canvas-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .btn-print {
+    background: rgba(99,102,241,0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-print:hover {
+    background: rgba(99,102,241,0.3);
+    color: #c7d2fe;
+  }
+
+  @media screen and (max-width: 1000px) {
     .canvas-grid { grid-template-columns: 1fr 1fr !important; }
     .canvas-grid .canvas-block { grid-column: auto !important; grid-row: auto !important; }
   }
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .canvas-grid { grid-template-columns: 1fr !important; }
+  }
+
+  @media print {
+    @page {
+      size: A3 landscape;
+      margin: 6mm;
+    }
+
+    /* Ocultar todo excepto el canvas */
+    .no-print, nav, header, footer, aside,
+    app-header, app-sidebar, .tab-bar, .tab-content-wrapper { display: none !important; }
+
+    /* Reset fondo a blanco */
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body, html, app-root, app-canvas, :host {
+      background: #fff !important;
+      color: #1a1a1a !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Grid: forzar layout 10 columnas x 3 filas */
+    .canvas-grid {
+      display: grid !important;
+      grid-template-columns: repeat(10, 1fr) !important;
+      grid-template-rows: auto auto auto !important;
+      gap: 4px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      font-size: 9px !important;
+    }
+
+    /* Forzar posiciones exactas de cada bloque */
+    .canvas-block:nth-child(1) { grid-column: 1/3 !important; grid-row: 1/3 !important; }   /* Socios */
+    .canvas-block:nth-child(2) { grid-column: 3/5 !important; grid-row: 1/2 !important; }   /* Actividades */
+    .canvas-block:nth-child(3) { grid-column: 3/5 !important; grid-row: 2/3 !important; }   /* Recursos */
+    .canvas-block:nth-child(4) { grid-column: 5/7 !important; grid-row: 1/3 !important; }   /* Propuesta */
+    .canvas-block:nth-child(5) { grid-column: 7/9 !important; grid-row: 1/2 !important; }   /* Relación */
+    .canvas-block:nth-child(6) { grid-column: 7/9 !important; grid-row: 2/3 !important; }   /* Canales */
+    .canvas-block:nth-child(7) { grid-column: 9/11 !important; grid-row: 1/3 !important; }  /* Segmentos */
+    .canvas-block:nth-child(8) { grid-column: 1/6 !important; grid-row: 3/4 !important; }   /* Costos */
+    .canvas-block:nth-child(9) { grid-column: 6/11 !important; grid-row: 3/4 !important; }  /* Ingresos */
+
+    /* Bloques: fondo blanco con borde de color */
+    .canvas-block {
+      background: #fff !important;
+      border: 1.5px solid #ccc !important;
+      border-radius: 6px !important;
+      padding: 6px 8px !important;
+      break-inside: avoid;
+      box-shadow: none !important;
+    }
+
+    /* Barra superior: mantener colores */
+    .block-bar {
+      height: 3px !important;
+    }
+
+    /* Títulos: versión oscura para impresión */
+    .block-title {
+      font-size: 8px !important;
+      margin-bottom: 4px !important;
+      color: #1a1a1a !important;
+    }
+
+    /* Textos generales a negro/gris oscuro */
+    .block-list li {
+      color: #333 !important;
+      font-size: 7.5px !important;
+      line-height: 1.35 !important;
+      padding: 1.5px 0 1.5px 10px !important;
+    }
+    .block-list li::before {
+      color: #999 !important;
+      font-size: 6px !important;
+    }
+
+    /* Highlights: colores oscuros legibles en papel */
+    .hl { color: #5b21b6 !important; }
+    .hl2 { color: #0e7490 !important; }
+    .hl3 { color: #15803d !important; }
+    .hl-ai { color: #be185d !important; }
+
+    /* Value statement */
+    .value-statement {
+      color: #1a1a1a !important;
+      font-size: 8px !important;
+      border-left-color: #0e7490 !important;
+      line-height: 1.35 !important;
+    }
+
+    /* Pregunta guía */
+    .block-question {
+      color: #888 !important;
+      font-size: 6.5px !important;
+      margin-bottom: 4px !important;
+      padding-bottom: 3px !important;
+      border-bottom-color: #ddd !important;
+    }
+
+    /* Sección vs competencia */
+    .vs-section {
+      background: #f8f9fa !important;
+      border-radius: 4px !important;
+      padding: 4px 6px !important;
+    }
+    .vs-label { color: #555 !important; font-size: 7px !important; }
+    .vs-text { color: #1a1a1a !important; font-size: 7.5px !important; }
+
+    /* Sección juego */
+    .game-section {
+      background: #f3f0ff !important;
+      border-color: #c4b5fd !important;
+      padding: 4px 6px !important;
+    }
+    .game-label { color: #5b21b6 !important; font-size: 7px !important; }
+    .game-text { color: #333 !important; font-size: 7px !important; }
+
+    /* Segmentos */
+    .segment-meta {
+      color: #92400e !important;
+      background: #fef3c7 !important;
+      font-size: 6.5px !important;
+    }
+    .segment-tier { margin: 4px 0 1px 0 !important; }
+    .seg-badge { font-size: 6px !important; }
+    .seg-initial { background: #dcfce7 !important; color: #15803d !important; border-color: #86efac !important; }
+    .seg-growth { background: #fef9c3 !important; color: #a16207 !important; border-color: #fde047 !important; }
+    .seg-established { background: #ffedd5 !important; color: #c2410c !important; border-color: #fdba74 !important; }
+    .seg-desc { color: #555 !important; font-size: 6.5px !important; }
+
+    /* Badges de costos e ingresos */
+    .cost-fixed {
+      background: #fee2e2 !important; color: #dc2626 !important;
+      border-color: #fca5a5 !important; font-size: 6px !important;
+    }
+    .cost-var {
+      background: #ffedd5 !important; color: #ea580c !important;
+      border-color: #fdba74 !important; font-size: 6px !important;
+    }
+    .revenue-main {
+      background: #dcfce7 !important; color: #16a34a !important;
+      border-color: #86efac !important; font-size: 6px !important;
+    }
+    .revenue-sec {
+      background: #f0fdf4 !important; color: #15803d !important;
+      border-color: #bbf7d0 !important; font-size: 6px !important;
+    }
+    .revenue-future {
+      background: #fce7f3 !important; color: #be185d !important;
+      border-color: #f9a8d4 !important; font-size: 6px !important;
+    }
+
+    /* Nota de viabilidad */
+    .viability-note {
+      color: #555 !important;
+      background: #f8f9fa !important;
+      border-left-color: #ccc !important;
+      font-size: 7px !important;
+      padding: 3px 6px !important;
+      margin-top: 4px !important;
+    }
   }
 </style>
