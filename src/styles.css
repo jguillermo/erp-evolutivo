@@ -139,6 +139,29 @@ body {
 .light-mode .b-production .level-name { color: #c2410c !important; }
 .light-mode .b-production .feat-tag { background: #ffedd5 !important; color: #c2410c !important; }
 
+/* ===== Print styles ===== */
+@media print {
+  /* Fondo blanco global */
+  body, html, app-root, app-root > * {
+    background: #fff !important;
+    color: #1a1a1a !important;
+  }
+
+  /* Ocultar header buttons (print/theme) */
+  header button {
+    display: none !important;
+  }
+
+  /* Forzar título visible — los gradientes con text-fill transparent no imprimen en iOS Safari */
+  .gradient-text-brand,
+  .gradient-text-ai,
+  .gradient-text-tree {
+    -webkit-text-fill-color: #1a1a1a !important;
+    color: #1a1a1a !important;
+    background: none !important;
+  }
+}
+
 /* Gradient text utility */
 .gradient-text-brand {
   background: linear-gradient(135deg, #6366f1, #06b6d4, #10b981);
