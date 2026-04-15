@@ -69,7 +69,7 @@ body {
 .light-mode .seg-established { background: #ffedd5 !important; color: #c2410c !important; border-color: #fdba74 !important; }
 
 /* Beachhead block */
-.light-mode .beachhead-block { background: #fffbeb !important; border: 1px solid #d97706 !important; }
+.light-mode .beachhead-block { background: #fff !important; border: 1px solid #e5e7eb !important; border-left: 3px solid #d97706 !important; }
 .light-mode .beachhead-title { color: #78350f !important; }
 .light-mode .beachhead-desc { color: #78350f !important; }
 .light-mode .beachhead-block .block-list li { color: #1a1a1a !important; }
