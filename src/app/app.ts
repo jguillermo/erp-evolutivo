@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { ThemeService } from './theme.service';
 
@@ -21,6 +21,12 @@ export class App {
   get darkMode() { return this.theme.darkMode(); }
 
   toggleTheme() { this.theme.toggle(); }
+
+  @HostListener('window:beforeprint')
+  onBeforePrint() { document.body.classList.add('light-mode'); }
+
+  @HostListener('window:afterprint')
+  onAfterPrint() { document.body.classList.remove('light-mode'); }
 
   tabs: NavTab[] = [
     { label: 'Lienzo Canvas',  route: '/canvas',  icon: '📋', visible: true  },

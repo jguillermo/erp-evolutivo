@@ -524,14 +524,12 @@
     .no-print, nav, header, footer, aside,
     app-header, app-sidebar, .tab-bar, .tab-content-wrapper { display: none !important; }
 
-    /* Reset fondo a blanco */
     *, *::before, *::after {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
     body, html, app-root, app-canvas, :host {
       background: #fff !important;
-      color: #1a1a1a !important;
       margin: 0 !important;
       padding: 0 !important;
     }
@@ -547,163 +545,53 @@
       font-size: 9px !important;
     }
 
-    /* Forzar posiciones exactas de cada bloque */
-    .canvas-block:nth-child(1) { grid-column: 1/3 !important; grid-row: 1/3 !important; }   /* Socios */
-    .canvas-block:nth-child(2) { grid-column: 3/5 !important; grid-row: 1/2 !important; }   /* Actividades */
-    .canvas-block:nth-child(3) { grid-column: 3/5 !important; grid-row: 2/3 !important; }   /* Recursos */
-    .canvas-block:nth-child(4) { grid-column: 5/7 !important; grid-row: 1/3 !important; }   /* Propuesta */
-    .canvas-block:nth-child(5) { grid-column: 7/9 !important; grid-row: 1/2 !important; }   /* Relación */
-    .canvas-block:nth-child(6) { grid-column: 7/9 !important; grid-row: 2/3 !important; }   /* Canales */
-    .canvas-block:nth-child(7) { grid-column: 9/11 !important; grid-row: 1/3 !important; }  /* Segmentos */
-    .canvas-block:nth-child(8) { grid-column: 1/6 !important; grid-row: 3/4 !important; }   /* Costos */
-    .canvas-block:nth-child(9) { grid-column: 6/11 !important; grid-row: 3/4 !important; }  /* Ingresos */
+    .canvas-block:nth-child(1) { grid-column: 1/3 !important; grid-row: 1/3 !important; }
+    .canvas-block:nth-child(2) { grid-column: 3/5 !important; grid-row: 1/2 !important; }
+    .canvas-block:nth-child(3) { grid-column: 3/5 !important; grid-row: 2/3 !important; }
+    .canvas-block:nth-child(4) { grid-column: 5/7 !important; grid-row: 1/3 !important; }
+    .canvas-block:nth-child(5) { grid-column: 7/9 !important; grid-row: 1/2 !important; }
+    .canvas-block:nth-child(6) { grid-column: 7/9 !important; grid-row: 2/3 !important; }
+    .canvas-block:nth-child(7) { grid-column: 9/11 !important; grid-row: 1/3 !important; }
+    .canvas-block:nth-child(8) { grid-column: 1/6 !important; grid-row: 3/4 !important; }
+    .canvas-block:nth-child(9) { grid-column: 6/11 !important; grid-row: 3/4 !important; }
 
-    /* Bloques: fondo blanco con borde de color */
     .canvas-block {
-      background: #fff !important;
-      border: 1.5px solid #ccc !important;
       border-radius: 6px !important;
       padding: 6px 8px !important;
       break-inside: avoid;
       box-shadow: none !important;
     }
 
-    /* Barra superior: mantener colores */
-    .block-bar {
-      height: 3px !important;
-    }
+    .block-bar { height: 3px !important; }
 
-    /* Títulos: versión oscura para impresión */
-    .block-title {
-      font-size: 8px !important;
-      margin-bottom: 4px !important;
-      color: #1a1a1a !important;
-    }
-
-    /* Textos generales a negro/gris oscuro */
-    .block-list li {
-      color: #333 !important;
-      font-size: 7.5px !important;
-      line-height: 1.35 !important;
-      padding: 1.5px 0 1.5px 10px !important;
-    }
-    .block-list li::before {
-      color: #999 !important;
-      font-size: 6px !important;
-    }
-
-    /* Highlights: colores oscuros legibles en papel */
-    .hl { color: #5b21b6 !important; }
-    .hl2 { color: #0e7490 !important; }
-    .hl3 { color: #15803d !important; }
-    .hl-ai { color: #be185d !important; }
-
-    /* Value statement */
-    .value-statement {
-      color: #1a1a1a !important;
-      font-size: 8px !important;
-      border-left-color: #0e7490 !important;
-      line-height: 1.35 !important;
-    }
-
-    /* Pregunta guía */
-    .block-question {
-      color: #888 !important;
-      font-size: 6.5px !important;
-      margin-bottom: 4px !important;
-      padding-bottom: 3px !important;
-      border-bottom-color: #ddd !important;
-    }
-
-    /* Sección vs competencia */
-    .vs-section {
-      background: #f8f9fa !important;
-      border-radius: 4px !important;
-      padding: 4px 6px !important;
-    }
-    .vs-label { color: #555 !important; font-size: 7px !important; }
-    .vs-text { color: #1a1a1a !important; font-size: 7.5px !important; }
-
-    /* Sección juego */
-    .game-section {
-      background: #f3f0ff !important;
-      border-color: #c4b5fd !important;
-      padding: 4px 6px !important;
-    }
-    .game-label { color: #5b21b6 !important; font-size: 7px !important; }
-    .game-text { color: #333 !important; font-size: 7px !important; }
-
-    /* Segmentos */
-    .segment-meta {
-      color: #92400e !important;
-      background: #fef3c7 !important;
-      font-size: 6.5px !important;
-    }
-    .segment-tier { margin: 4px 0 1px 0 !important; }
-    .seg-badge { font-size: 6px !important; }
-    .seg-initial { background: #dcfce7 !important; color: #15803d !important; border-color: #86efac !important; }
-    .seg-growth { background: #fef9c3 !important; color: #a16207 !important; border-color: #fde047 !important; }
-    .seg-established { background: #ffedd5 !important; color: #c2410c !important; border-color: #fdba74 !important; }
-    .seg-desc { color: #555 !important; font-size: 6.5px !important; }
-
-    /* Badges de costos e ingresos */
-    .cost-fixed {
-      background: #fee2e2 !important; color: #dc2626 !important;
-      border-color: #fca5a5 !important; font-size: 6px !important;
-    }
-    .cost-var {
-      background: #ffedd5 !important; color: #ea580c !important;
-      border-color: #fdba74 !important; font-size: 6px !important;
-    }
-    .revenue-main {
-      background: #dcfce7 !important; color: #16a34a !important;
-      border-color: #86efac !important; font-size: 6px !important;
-    }
-    .revenue-sec {
-      background: #f0fdf4 !important; color: #15803d !important;
-      border-color: #bbf7d0 !important; font-size: 6px !important;
-    }
-    .revenue-future {
-      background: #fce7f3 !important; color: #be185d !important;
-      border-color: #f9a8d4 !important; font-size: 6px !important;
-    }
-
-    /* Beachhead, módulo arranque, fase/canal badges */
-    .beachhead-block {
-      background: #fff !important;
-      border: 1px solid #e5e7eb !important;
-      border-left: 3px solid #d97706 !important;
-      padding: 4px 6px !important;
-    }
-    .beachhead-title { color: #1a1a1a !important; font-size: 7px !important; font-weight: 700 !important; }
-    .beachhead-desc { color: #374151 !important; font-size: 6.5px !important; }
-    .beachhead-block .block-list li { color: #1a1a1a !important; font-size: 7px !important; }
-    .seg-beachhead { background: #d97706 !important; color: #fff !important; border: none !important; font-size: 6px !important; }
-    .entry-module-box {
-      background: #ecfeff !important;
-      border-color: #06b6d4 !important;
-      padding: 4px 6px !important;
-    }
-    .entry-module-label { color: #0e7490 !important; font-size: 6.5px !important; }
-    .entry-module-main { color: #1a1a1a !important; font-size: 8px !important; }
-    .entry-module-sub { color: #555 !important; font-size: 6.5px !important; }
-    .fase-badge { font-size: 6px !important; }
-    .fase1 { background: #ede9fe !important; color: #4f46e5 !important; border-color: #c4b5fd !important; }
-    .fase2 { background: #f1f5f9 !important; color: #475569 !important; border-color: #cbd5e1 !important; }
-    .canal-badge { font-size: 6px !important; }
-    .canal1 { background: #ccfbf1 !important; color: #0f766e !important; border-color: #99f6e4 !important; }
-    .canal2 { background: #f0fdfa !important; color: #115e59 !important; border-color: #ccfbf1 !important; }
-    .canal3 { background: #f8fafc !important; color: #334155 !important; border-color: #e2e8f0 !important; }
-
-    /* Nota de viabilidad */
-    .viability-note {
-      color: #555 !important;
-      background: #f8f9fa !important;
-      border-left-color: #ccc !important;
-      font-size: 7px !important;
-      padding: 3px 6px !important;
-      margin-top: 4px !important;
-    }
+    /* Solo tamaños de fuente — los colores vienen del light-mode */
+    .block-title       { font-size: 8px !important;   margin-bottom: 4px !important; }
+    .block-list li     { font-size: 7.5px !important; line-height: 1.35 !important; padding: 1.5px 0 1.5px 10px !important; }
+    .block-list li::before { font-size: 6px !important; }
+    .value-statement   { font-size: 8px !important;   line-height: 1.35 !important; }
+    .block-question    { font-size: 6.5px !important; margin-bottom: 4px !important; padding-bottom: 3px !important; }
+    .vs-section        { padding: 4px 6px !important; }
+    .vs-label          { font-size: 7px !important; }
+    .vs-text           { font-size: 7.5px !important; }
+    .game-section      { padding: 4px 6px !important; }
+    .game-label        { font-size: 7px !important; }
+    .game-text         { font-size: 7px !important; }
+    .segment-meta      { font-size: 6.5px !important; }
+    .segment-tier      { margin: 4px 0 1px 0 !important; }
+    .seg-badge         { font-size: 6px !important; }
+    .seg-desc          { font-size: 6.5px !important; }
+    .cost-fixed, .cost-var,
+    .revenue-main, .revenue-sec, .revenue-future { font-size: 6px !important; }
+    .viability-note    { font-size: 7px !important; padding: 3px 6px !important; margin-top: 4px !important; }
+    .fase-badge, .canal-badge { font-size: 6px !important; }
+    .beachhead-block   { padding: 4px 6px !important; }
+    .beachhead-title   { font-size: 7px !important; }
+    .beachhead-desc    { font-size: 6.5px !important; }
+    .beachhead-block .block-list li { font-size: 7px !important; }
+    .entry-module-box  { padding: 4px 6px !important; }
+    .entry-module-label { font-size: 6.5px !important; }
+    .entry-module-main { font-size: 8px !important; }
+    .entry-module-sub  { font-size: 6.5px !important; }
   }
 
 </style>
