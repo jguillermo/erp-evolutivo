@@ -41,6 +41,7 @@ npx ng test --include="**/canvas.component.spec.ts"
 ## Conventions
 
 - All new components must be **standalone** and **lazy-loaded** in the router.
+- **Before creating or modifying any shared component, read `docs/design-system.md`** — it defines the component catalog, color tokens, testing conventions, and template rules that all shared components must follow.
 - **Angular Signals are mandatory in all components** — use `input()` / `input.required()` instead of `@Input()`, `output()` instead of `@Output()`, `computed()` for derived state, and `signal()` for local mutable state. Never use `@Input`, `@Output`, or `BehaviorSubject` in components.
 - Use **Angular Signals** for reactive state; avoid introducing external state libraries.
 - Dark mode is the default. Light mode activates at print time via `@media print` in `src/styles.css`.
