@@ -28,12 +28,13 @@ body {
 
 /* ===== Canvas light mode ===== */
 
-/* Bloques */
-.light-mode .canvas-block {
+/* Card component */
+.light-mode app-card > div {
   background: #ffffff !important;
   border-color: #d4d4d8 !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
+.light-mode app-card h3 { color: #1e293b !important; }
+.light-mode app-card p  { color: #6b7280 !important; border-bottom-color: #e5e7eb !important; }
 
 /* Textos generales */
 .light-mode .block-list li { color: #374151 !important; }

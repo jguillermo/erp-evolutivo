@@ -27,7 +27,6 @@ export type CardColor = keyof typeof CARD_COLORS;
   },
   template: `
     <div class="relative overflow-hidden bg-surface border border-border rounded-[10px] p-3 h-full
-               print:bg-white print:border-[#d1d5db]
                print:rounded-[6px] print:px-[8px] print:py-[6px] print:break-inside-avoid"
          cdkMonitorSubtreeFocus>
 
@@ -52,7 +51,6 @@ export type CardColor = keyof typeof CARD_COLORS;
       <p
         class="text-[0.65rem] text-[#6b7280] italic mb-2 pb-[6px]
                border-b border-dashed border-[#2a2d3a]
-               print:text-[#374151] print:border-[#cbd5e1]
                print:text-[6.5px] print:mb-1 print:pb-[3px]"
         [attr.data-testid]="testId() + '-question'">
         {{ question() }}

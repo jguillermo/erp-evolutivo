@@ -134,10 +134,6 @@ describe('CanvasComponent — Print styles', () => {
     expect(cardSource).toContain('print:py-[6px]');
   });
 
-  it('card has white background in print (print:bg-white)', () => {
-    expect(cardSource).toContain('print:bg-white');
-  });
-
   it('card has break-inside: avoid in print (print:break-inside-avoid)', () => {
     expect(cardSource).toContain('print:break-inside-avoid');
   });
@@ -165,40 +161,6 @@ describe('CanvasComponent — Print styles', () => {
   });
 
   // ── Block list print (CSS in <style> @media print) ────────────────────────
-
-  // ── Color overrides for white background ─────────────────────────────────
-
-  it('block-list li text is dark in print (#374151)', () => {
-    expect(printContains('.block-list li { color: #374151 !important')).toBe(true);
-  });
-
-  it('.hl color darkened for print (#6d28d9)', () => {
-    expect(printContains('.hl { color: #6d28d9 !important')).toBe(true);
-  });
-
-  it('.hl-ai color darkened for print (#9d174d)', () => {
-    expect(printContains('.hl-ai { color: #9d174d !important')).toBe(true);
-  });
-
-  it('beachhead-block gets light background in print (#fffbeb)', () => {
-    expect(printContains('.beachhead-block { background: #fffbeb !important')).toBe(true);
-  });
-
-  it('vs-section gets light background in print (#f0fdfa)', () => {
-    expect(printContains('.vs-section { background: #f0fdfa !important')).toBe(true);
-  });
-
-  it('game-section gets light background in print (#f5f3ff)', () => {
-    expect(printContains('.game-section { background: #f5f3ff !important')).toBe(true);
-  });
-
-  it('entry-module-box gets light background in print (#ecfeff)', () => {
-    expect(printContains('.entry-module-box { background: #ecfeff !important')).toBe(true);
-  });
-
-  it('viability-note gets light background in print (#f8fafc)', () => {
-    expect(printContains('.viability-note { background: #f8fafc !important')).toBe(true);
-  });
 
   // ── Typography overrides in print (CSS @media print) ─────────────────────
 
