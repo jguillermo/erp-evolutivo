@@ -6,18 +6,13 @@ import { CanvasComponent } from './canvas.component';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const templateHtml = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
-const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
-const css = styleMatch ? styleMatch[1] : '';
 
-function cssContains(selector: string, property: string, value: string): boolean {
-  const normalized = css.replace(/\s+/g, ' ');
-  const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const ruleRx = new RegExp(esc(selector) + '\\s*\\{([^}]+)\\}');
-  const ruleMatch = ruleRx.exec(normalized);
-  if (!ruleMatch) return false;
-  const propRx = new RegExp(esc(property) + '\\s*:\\s*([^;]+)');
-  const propMatch = propRx.exec(ruleMatch[1]);
-  return propMatch ? propMatch[1].includes(value) : false;
+// Extract a grid binding value for a given testId, e.g. gridColumn('card-1') → '1/3'
+function gridBinding(attr: 'gridColumn' | 'gridRow', testId: string): string | null {
+  const pattern = new RegExp(
+    `testId="${testId}"[\\s\\S]*?\\[style\\.${attr}\\]="'([^']+)'"`,
+  );
+  return pattern.exec(templateHtml)?.[1] ?? null;
 }
 
 describe('CanvasComponent — Grid & Layout', () => {
@@ -31,130 +26,146 @@ describe('CanvasComponent — Grid & Layout', () => {
     el = fixture.nativeElement as HTMLElement;
   });
 
-  // ── Canvas grid CSS ───────────────────────────────────────────────────────
+  // ── Canvas grid Tailwind classes (DOM) ────────────────────────────────────
 
-  it('canvas-grid display is grid', () => {
-    expect(cssContains('.canvas-grid', 'display', 'grid')).toBe(true);
+  it('canvas grid has display:grid class', () => {
+    const grid = el.querySelector('[data-testid="canvas-grid"]') as HTMLElement;
+    expect(grid).toBeTruthy();
+    expect(grid.classList.contains('grid')).toBe(true);
   });
 
-  it('canvas-grid has 10 equal columns', () => {
-    expect(cssContains('.canvas-grid', 'grid-template-columns', 'repeat(10, 1fr)')).toBe(true);
+  it('canvas grid has 10-column class (grid-cols-10)', () => {
+    const grid = el.querySelector('[data-testid="canvas-grid"]') as HTMLElement;
+    expect(grid.classList.contains('grid-cols-10')).toBe(true);
   });
 
-  it('canvas-grid has 3 auto rows', () => {
-    expect(cssContains('.canvas-grid', 'grid-template-rows', 'auto auto auto')).toBe(true);
+  it('canvas grid has 3-row class (grid-rows-[auto_auto_auto])', () => {
+    const grid = el.querySelector('[data-testid="canvas-grid"]') as HTMLElement;
+    expect(grid.className).toContain('grid-rows-[auto_auto_auto]');
   });
 
-  it('canvas-grid gap is 7px', () => {
-    expect(cssContains('.canvas-grid', 'gap', '7px')).toBe(true);
+  it('canvas grid has gap-[7px] class', () => {
+    const grid = el.querySelector('[data-testid="canvas-grid"]') as HTMLElement;
+    expect(grid.classList.contains('gap-[7px]')).toBe(true);
   });
 
-  // ── Responsive breakpoints ────────────────────────────────────────────────
+  // ── Responsive breakpoints (Tailwind classes in template source) ──────────
 
   it('responsive 1000px breakpoint collapses to 2 columns', () => {
-    expect(css).toContain('max-width: 1000px');
-    expect(css).toContain('grid-template-columns: 1fr 1fr !important');
+    expect(templateHtml).toContain('max-[1000px]:grid-cols-2');
   });
 
   it('responsive 600px breakpoint collapses to 1 column', () => {
-    expect(css).toContain('max-width: 600px');
-    expect(css).toContain('grid-template-columns: 1fr !important');
+    expect(templateHtml).toContain('max-[600px]:grid-cols-1');
   });
 
   it('responsive 1000px resets block grid-column to auto', () => {
-    expect(css).toContain('grid-column: auto !important');
-    expect(css).toContain('grid-row: auto !important');
+    expect(templateHtml).toContain('max-[1000px]:[grid-column:auto]');
+    expect(templateHtml).toContain('max-[1000px]:[grid-row:auto]');
   });
 
-  // ── Canvas grid DOM ───────────────────────────────────────────────────────
+  // ── Canvas grid DOM identity ──────────────────────────────────────────────
 
-  it('canvas grid element exists with id canvas-grid', () => {
-    const grid = el.querySelector('#canvas-grid');
-    expect(grid).toBeTruthy();
-    expect(grid!.classList.contains('canvas-grid')).toBe(true);
+  it('canvas grid element exists with both id and data-testid', () => {
+    expect(el.querySelector('#canvas-grid')).toBeTruthy();
+    expect(el.querySelector('[data-testid="canvas-grid"]')).toBeTruthy();
   });
 
-  it('canvas grid contains exactly 9 canvas-block elements', () => {
-    const blocks = el.querySelectorAll('.canvas-block');
-    expect(blocks.length).toBe(9);
+  it('canvas grid contains exactly 9 app-card elements', () => {
+    const cards = el.querySelectorAll('app-card');
+    expect(cards.length).toBe(9);
   });
 
-  // ── Block inline grid positions (verified against template source) ──────────
+  // ── Block grid positions (verified against template source) ──────────────
   // jsdom does not support CSS grid properties in CSSStyleDeclaration,
-  // so we verify the raw style attributes directly in the template HTML.
+  // so we verify the [style.gridColumn] / [style.gridRow] bindings in the template.
 
-  const gridPositions: [string, string, string][] = [
-    ['Socios Clave',         'grid-column:1/3',  'grid-row:1/3'],
-    ['Actividades Clave',    'grid-column:3/5',  'grid-row:1'],
-    ['Recursos Clave',       'grid-column:3/5',  'grid-row:2'],
-    ['Propuesta de Valor',   'grid-column:5/7',  'grid-row:1/3'],
-    ['Relación Clientes',    'grid-column:7/9',  'grid-row:1'],
-    ['Canales',              'grid-column:7/9',  'grid-row:2'],
-    ['Segmentos',            'grid-column:9/11', 'grid-row:1/3'],
-    ['Estructura de Costos', 'grid-column:1/6',  'grid-row:3'],
-    ['Fuentes de Ingreso',   'grid-column:6/11', 'grid-row:3'],
+  const gridPositions: [string, string, string, string][] = [
+    ['Socios Clave',         'card-1', '1/3',  '1/3'],
+    ['Actividades Clave',    'card-2', '3/5',  '1'],
+    ['Recursos Clave',       'card-3', '3/5',  '2'],
+    ['Propuesta de Valor',   'card-4', '5/7',  '1/3'],
+    ['Relación Clientes',    'card-5', '7/9',  '1'],
+    ['Canales',              'card-6', '7/9',  '2'],
+    ['Segmentos',            'card-7', '9/11', '1/3'],
+    ['Estructura de Costos', 'card-8', '1/6',  '3'],
+    ['Fuentes de Ingreso',   'card-9', '6/11', '3'],
   ];
 
-  gridPositions.forEach(([name, colDecl, rowDecl]) => {
-    it(`${name} — template contains "${colDecl}"`, () => {
-      expect(templateHtml).toContain(colDecl);
+  gridPositions.forEach(([name, testId, col, row]) => {
+    it(`${name} — [style.gridColumn] is "${col}"`, () => {
+      expect(gridBinding('gridColumn', testId)).toBe(col);
     });
 
-    it(`${name} — template contains "${rowDecl}"`, () => {
-      expect(templateHtml).toContain(rowDecl);
+    it(`${name} — [style.gridRow] is "${row}"`, () => {
+      expect(gridBinding('gridRow', testId)).toBe(row);
     });
   });
 
-  it('all 9 grid-column declarations are present in the template', () => {
-    const matches = templateHtml.match(/grid-column:[^;'"]+/g) ?? [];
-    // Each block has grid-column declared at least once (9 blocks)
+  it('all 9 gridColumn bindings are present in the template', () => {
+    const matches = templateHtml.match(/\[style\.gridColumn\]/g) ?? [];
     expect(matches.length).toBeGreaterThanOrEqual(9);
   });
 
-  // ── Block bar position CSS ────────────────────────────────────────────────
+  // ── Card bar position (Tailwind classes via DOM) ──────────────────────────
 
-  it('block-bar is positioned absolute at top:0 left:0 right:0', () => {
-    expect(cssContains('.block-bar', 'position', 'absolute')).toBe(true);
-    expect(cssContains('.block-bar', 'top', '0')).toBe(true);
-    expect(cssContains('.block-bar', 'left', '0')).toBe(true);
-    expect(cssContains('.block-bar', 'right', '0')).toBe(true);
+  it('card-bar is positioned absolute (absolute class)', () => {
+    const bar = el.querySelector('[data-testid="card-1-bar"]') as HTMLElement;
+    expect(bar).toBeTruthy();
+    expect(bar.classList.contains('absolute')).toBe(true);
   });
 
-  it('canvas-block is positioned relative', () => {
-    expect(cssContains('.canvas-block', 'position', 'relative')).toBe(true);
+  it('card-bar spans full width (inset-x-0 class)', () => {
+    const bar = el.querySelector('[data-testid="card-1-bar"]') as HTMLElement;
+    expect(bar.classList.contains('inset-x-0')).toBe(true);
   });
 
-  it('canvas-block overflow is hidden', () => {
-    expect(cssContains('.canvas-block', 'overflow', 'hidden')).toBe(true);
+  it('card-bar is pinned to top (top-0 class)', () => {
+    const bar = el.querySelector('[data-testid="card-1-bar"]') as HTMLElement;
+    expect(bar.classList.contains('top-0')).toBe(true);
   });
 
-  // ── Structural sub-layout ─────────────────────────────────────────────────
+  // ── Card inner div position / overflow ────────────────────────────────────
+
+  it('card inner div is positioned relative', () => {
+    const inner = el.querySelector('[data-testid="card-1"] div') as HTMLElement;
+    expect(inner).toBeTruthy();
+    expect(inner.classList.contains('relative')).toBe(true);
+  });
+
+  it('card inner div has overflow-hidden', () => {
+    const inner = el.querySelector('[data-testid="card-1"] div') as HTMLElement;
+    expect(inner.classList.contains('overflow-hidden')).toBe(true);
+  });
+
+  // ── Structural sub-layout (CSS in <style> tag) ────────────────────────────
 
   it('beachhead-header display is flex', () => {
-    expect(cssContains('.beachhead-header', 'display', 'flex')).toBe(true);
+    expect(templateHtml).toContain('.beachhead-header { display: flex');
   });
 
   it('beachhead-header align-items is center', () => {
-    expect(cssContains('.beachhead-header', 'align-items', 'center')).toBe(true);
+    expect(templateHtml).toContain('align-items: center');
   });
 
   it('beachhead-header gap is 6px', () => {
-    expect(cssContains('.beachhead-header', 'gap', '6px')).toBe(true);
+    expect(templateHtml).toContain('gap: 6px');
   });
 
   it('segment-tier display is flex', () => {
-    expect(cssContains('.segment-tier', 'display', 'flex')).toBe(true);
-  });
-
-  it('segment-tier align-items is center', () => {
-    expect(cssContains('.segment-tier', 'align-items', 'center')).toBe(true);
+    expect(templateHtml).toContain('.segment-tier { display: flex');
   });
 
   it('segment-tier gap is 6px', () => {
-    expect(cssContains('.segment-tier', 'gap', '6px')).toBe(true);
+    const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
+    const css = styleMatch ? styleMatch[1] : '';
+    expect(css).toContain('.segment-tier');
+    expect(css).toContain('gap: 6px');
   });
 
   it('segment-tier margin is 6px 0 2px 0', () => {
-    expect(cssContains('.segment-tier', 'margin', '6px 0 2px 0')).toBe(true);
+    const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
+    const css = styleMatch ? styleMatch[1] : '';
+    expect(css).toContain('margin: 6px 0 2px 0');
   });
 });

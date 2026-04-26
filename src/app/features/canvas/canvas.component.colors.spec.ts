@@ -31,41 +31,32 @@ describe('CanvasComponent — Colors', () => {
     el = fixture.nativeElement as HTMLElement;
   });
 
-  // ── Canvas block base ────────────────────────────────────────────────────
+  // ── Canvas card base (Tailwind classes via DOM) ───────────────────────────
 
-  it('canvas-block background is #1a1d27', () => {
-    expect(cssContains('.canvas-block', 'background', '#1a1d27')).toBe(true);
+  it('card inner div has bg-surface class', () => {
+    const inner = el.querySelector('[data-testid="card-1"] div') as HTMLElement;
+    expect(inner).toBeTruthy();
+    expect(inner.classList.contains('bg-surface')).toBe(true);
   });
 
-  it('canvas-block border is 1px solid #2a2d3a', () => {
-    expect(cssContains('.canvas-block', 'border', '1px solid #2a2d3a')).toBe(true);
+  it('card inner div has border and border-border classes', () => {
+    const inner = el.querySelector('[data-testid="card-1"] div') as HTMLElement;
+    expect(inner.classList.contains('border')).toBe(true);
+    expect(inner.classList.contains('border-border')).toBe(true);
   });
 
-  it('block-list li color is #b0b3c0', () => {
-    expect(cssContains('.block-list li', 'color', '#b0b3c0')).toBe(true);
+  it('card question has text-[#6b7280] class', () => {
+    const q = el.querySelector('[data-testid="card-1-question"]') as HTMLElement;
+    expect(q).toBeTruthy();
+    expect(q.className).toContain('text-[#6b7280]');
   });
 
-  it('block-list li::before color is #666', () => {
-    expect(cssContains('.block-list li::before', 'color', '#666')).toBe(true);
+  it('card question has border-[#2a2d3a] class', () => {
+    const q = el.querySelector('[data-testid="card-1-question"]') as HTMLElement;
+    expect(q.className).toContain('border-[#2a2d3a]');
   });
 
-  it('block-question color is #6b7280', () => {
-    expect(cssContains('.block-question', 'color', '#6b7280')).toBe(true);
-  });
-
-  it('block-question border-bottom uses #2a2d3a', () => {
-    expect(cssContains('.block-question', 'border-bottom', '1px dashed #2a2d3a')).toBe(true);
-  });
-
-  it('value-statement color is #e2e8f0', () => {
-    expect(cssContains('.value-statement', 'color', '#e2e8f0')).toBe(true);
-  });
-
-  it('value-statement border-left uses #22d3ee', () => {
-    expect(cssContains('.value-statement', 'border-left', '2px solid #22d3ee')).toBe(true);
-  });
-
-  // ── Highlight classes ─────────────────────────────────────────────────────
+  // ── Highlight classes (CSS) ───────────────────────────────────────────────
 
   it('.hl color is #c4b5fd', () => {
     expect(cssContains('.hl', 'color', '#c4b5fd')).toBe(true);
@@ -81,6 +72,16 @@ describe('CanvasComponent — Colors', () => {
 
   it('.hl-ai color is #f9a8d4', () => {
     expect(cssContains('.hl-ai', 'color', '#f9a8d4')).toBe(true);
+  });
+
+  // ── Block list ────────────────────────────────────────────────────────────
+
+  it('block-list li color is #b0b3c0', () => {
+    expect(cssContains('.block-list li', 'color', '#b0b3c0')).toBe(true);
+  });
+
+  it('block-list li::before color is #666', () => {
+    expect(cssContains('.block-list li::before', 'color', '#666')).toBe(true);
   });
 
   // ── Cost badges ───────────────────────────────────────────────────────────
@@ -273,6 +274,16 @@ describe('CanvasComponent — Colors', () => {
     expect(cssContains('.entry-module-sub', 'color', '#94a3b8')).toBe(true);
   });
 
+  // ── Value statement ───────────────────────────────────────────────────────
+
+  it('value-statement color is #e2e8f0', () => {
+    expect(cssContains('.value-statement', 'color', '#e2e8f0')).toBe(true);
+  });
+
+  it('value-statement border-left uses #22d3ee', () => {
+    expect(cssContains('.value-statement', 'border-left', '2px solid #22d3ee')).toBe(true);
+  });
+
   // ── Game section ──────────────────────────────────────────────────────────
 
   it('game-section background uses rgba(139,92,246,0.08)', () => {
@@ -319,51 +330,52 @@ describe('CanvasComponent — Colors', () => {
     expect(cssContains('.viability-note', 'border-left', '2px solid #4b5563')).toBe(true);
   });
 
-  // ── Block bar inline gradients (DOM) ──────────────────────────────────────
+  // ── Card bar gradient colors (Tailwind ngClass via DOM) ───────────────────
 
-  const barGradients: [string, string, string][] = [
-    ['Socios Clave',         '1', 'linear-gradient(90deg,#8b5cf6,#7c3aed)'],
-    ['Actividades Clave',    '2', 'linear-gradient(90deg,#6366f1,#4f46e5)'],
-    ['Recursos Clave',       '3', 'linear-gradient(90deg,#3b82f6,#2563eb)'],
-    ['Propuesta de Valor',   '4', 'linear-gradient(90deg,#06b6d4,#0891b2)'],
-    ['Relación Clientes',    '5', 'linear-gradient(90deg,#10b981,#059669)'],
-    ['Canales',              '6', 'linear-gradient(90deg,#14b8a6,#0d9488)'],
-    ['Segmentos',            '7', 'linear-gradient(90deg,#f59e0b,#d97706)'],
-    ['Estructura de Costos', '8', 'linear-gradient(90deg,#ef4444,#dc2626)'],
-    ['Fuentes de Ingreso',   '9', 'linear-gradient(90deg,#22c55e,#16a34a)'],
+  const barColors: [string, number, string, string][] = [
+    ['Socios Clave',         1, '#8b5cf6', '#7c3aed'],
+    ['Actividades Clave',    2, '#6366f1', '#4f46e5'],
+    ['Recursos Clave',       3, '#3b82f6', '#2563eb'],
+    ['Propuesta de Valor',   4, '#06b6d4', '#0891b2'],
+    ['Relación Clientes',    5, '#10b981', '#059669'],
+    ['Canales',              6, '#14b8a6', '#0d9488'],
+    ['Segmentos',            7, '#f59e0b', '#d97706'],
+    ['Estructura de Costos', 8, '#ef4444', '#dc2626'],
+    ['Fuentes de Ingreso',   9, '#22c55e', '#16a34a'],
   ];
 
-  barGradients.forEach(([name, nth, gradient]) => {
-    it(`${name} — block-bar gradient contains correct colors`, () => {
-      const bar = el.querySelector(`.canvas-block:nth-child(${nth}) .block-bar`) as HTMLElement;
+  barColors.forEach(([name, n, from, to]) => {
+    it(`${name} — card-${n}-bar has from-[${from}] class`, () => {
+      const bar = el.querySelector(`[data-testid="card-${n}-bar"]`) as HTMLElement;
       expect(bar).toBeTruthy();
-      const raw = bar.getAttribute('style') ?? '';
-      // Extract both hex colors from the gradient
-      const colors = gradient.match(/#[0-9a-f]{6}/gi) ?? [];
-      colors.forEach(color => expect(raw.toLowerCase()).toContain(color.toLowerCase()));
+      expect(bar.className).toContain(`from-[${from}]`);
+    });
+
+    it(`${name} — card-${n}-bar has to-[${to}] class`, () => {
+      const bar = el.querySelector(`[data-testid="card-${n}-bar"]`) as HTMLElement;
+      expect(bar.className).toContain(`to-[${to}]`);
     });
   });
 
-  // ── Block title inline colors (DOM) ───────────────────────────────────────
+  // ── Card title colors (Tailwind ngClass via DOM) ──────────────────────────
 
-  const titleColors: [string, string, string][] = [
-    ['Socios Clave',         '1', '#a78bfa'],
-    ['Actividades Clave',    '2', '#818cf8'],
-    ['Recursos Clave',       '3', '#60a5fa'],
-    ['Propuesta de Valor',   '4', '#22d3ee'],
-    ['Relación Clientes',    '5', '#34d399'],
-    ['Canales',              '6', '#2dd4bf'],
-    ['Segmentos',            '7', '#fbbf24'],
-    ['Estructura de Costos', '8', '#f87171'],
-    ['Fuentes de Ingreso',   '9', '#4ade80'],
+  const titleColors: [string, number, string][] = [
+    ['Socios Clave',         1, '#a78bfa'],
+    ['Actividades Clave',    2, '#818cf8'],
+    ['Recursos Clave',       3, '#60a5fa'],
+    ['Propuesta de Valor',   4, '#22d3ee'],
+    ['Relación Clientes',    5, '#34d399'],
+    ['Canales',              6, '#2dd4bf'],
+    ['Segmentos',            7, '#fbbf24'],
+    ['Estructura de Costos', 8, '#f87171'],
+    ['Fuentes de Ingreso',   9, '#4ade80'],
   ];
 
-  titleColors.forEach(([name, nth, color]) => {
-    it(`${name} — block-title inline color is ${color}`, () => {
-      const title = el.querySelector(`.canvas-block:nth-child(${nth}) .block-title`) as HTMLElement;
+  titleColors.forEach(([name, n, color]) => {
+    it(`${name} — card-${n}-title has text-[${color}] class`, () => {
+      const title = el.querySelector(`[data-testid="card-${n}-title"]`) as HTMLElement;
       expect(title).toBeTruthy();
-      const raw = title.getAttribute('style') ?? '';
-      expect(raw.toLowerCase()).toContain(color.toLowerCase());
+      expect(title.className).toContain(`text-[${color}]`);
     });
   });
 });

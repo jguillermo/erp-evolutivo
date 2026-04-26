@@ -4,6 +4,8 @@ import { dirname, join } from 'node:path';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const templateHtml = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
+const cardSource = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
+
 const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
 const css = styleMatch ? styleMatch[1] : '';
 
@@ -72,83 +74,133 @@ describe('CanvasComponent — Print styles', () => {
     expect(printCss).toContain('.tab-bar');
   });
 
-  // ── Canvas grid print layout ──────────────────────────────────────────────
+  // ── Canvas grid print layout (Tailwind print: classes in template) ────────
 
-  it('canvas-grid keeps 10-column layout in print', () => {
-    expect(printContains('grid-template-columns: repeat(10, 1fr) !important')).toBe(true);
+  it('canvas-grid keeps 10-column layout in print (print:grid-cols-10)', () => {
+    expect(templateHtml).toContain('print:grid-cols-10');
   });
 
-  it('canvas-grid keeps 3-row layout in print', () => {
-    expect(printContains('grid-template-rows: auto auto auto !important')).toBe(true);
+  it('canvas-grid keeps 3-row layout in print (print:grid-rows-[auto_auto_auto])', () => {
+    expect(templateHtml).toContain('print:grid-rows-[auto_auto_auto]');
   });
 
-  it('canvas-grid gap is 4px in print', () => {
-    expect(printContains('gap: 4px !important')).toBe(true);
+  it('canvas-grid gap is reduced in print (print:gap-1)', () => {
+    expect(templateHtml).toContain('print:gap-1');
   });
 
-  it('canvas-grid width is 100% in print', () => {
-    expect(printContains('width: 100% !important')).toBe(true);
+  it('canvas-grid is full width in print (print:w-full)', () => {
+    expect(templateHtml).toContain('print:w-full');
   });
 
-  it('canvas-grid font-size is 9px in print', () => {
-    expect(printContains('font-size: 9px !important')).toBe(true);
+  it('canvas-grid font-size is 9px in print (print:text-[9px])', () => {
+    expect(templateHtml).toContain('print:text-[9px]');
   });
 
-  // ── Block nth-child grid positions in print ───────────────────────────────
+  // ── Block print grid positions (Tailwind print: classes in template) ──────
 
   const printPositions: [number, string, string][] = [
-    [1, '1/3 !important', '1/3 !important'],
-    [2, '3/5 !important', '1/2 !important'],
-    [3, '3/5 !important', '2/3 !important'],
-    [4, '5/7 !important', '1/3 !important'],
-    [5, '7/9 !important', '1/2 !important'],
-    [6, '7/9 !important', '2/3 !important'],
-    [7, '9/11 !important', '1/3 !important'],
-    [8, '1/6 !important', '3/4 !important'],
-    [9, '6/11 !important', '3/4 !important'],
+    [1, '1/3',  '1/3'],
+    [2, '3/5',  '1/2'],
+    [3, '3/5',  '2/3'],
+    [4, '5/7',  '1/3'],
+    [5, '7/9',  '1/2'],
+    [6, '7/9',  '2/3'],
+    [7, '9/11', '1/3'],
+    [8, '1/6',  '3/4'],
+    [9, '6/11', '3/4'],
   ];
 
-  printPositions.forEach(([nth, col, row]) => {
-    it(`canvas-block:nth-child(${nth}) print grid-column is ${col}`, () => {
-      expect(printContains(`.canvas-block:nth-child(${nth}) { grid-column: ${col}`)).toBe(true);
+  printPositions.forEach(([n, col, row]) => {
+    it(`card-${n} print grid-column is ${col} (print:[grid-column:${col}])`, () => {
+      expect(templateHtml).toContain(`print:[grid-column:${col}]`);
     });
 
-    it(`canvas-block:nth-child(${nth}) print grid-row is ${row}`, () => {
-      expect(printContains(`grid-row: ${row}`)).toBe(true);
+    it(`card-${n} print grid-row is ${row} (print:[grid-row:${row}])`, () => {
+      expect(templateHtml).toContain(`print:[grid-row:${row}]`);
     });
   });
 
-  // ── Block print box styles ────────────────────────────────────────────────
+  // ── Card print box styles (Tailwind print: classes in CardComponent) ──────
 
-  it('canvas-block border-radius is 6px in print', () => {
-    expect(printContains('border-radius: 6px !important')).toBe(true);
+  it('card has smaller border-radius in print (print:rounded-[6px])', () => {
+    expect(cardSource).toContain('print:rounded-[6px]');
   });
 
-  it('canvas-block padding is 6px 8px in print', () => {
-    expect(printContains('padding: 6px 8px !important')).toBe(true);
+  it('card has horizontal padding 8px in print (print:px-[8px])', () => {
+    expect(cardSource).toContain('print:px-[8px]');
   });
 
-  it('canvas-block has break-inside: avoid in print', () => {
-    expect(printContains('break-inside: avoid')).toBe(true);
+  it('card has vertical padding 6px in print (print:py-[6px])', () => {
+    expect(cardSource).toContain('print:py-[6px]');
   });
 
-  it('canvas-block box-shadow is none in print', () => {
-    expect(printContains('box-shadow: none !important')).toBe(true);
+  it('card has white background in print (print:bg-white)', () => {
+    expect(cardSource).toContain('print:bg-white');
   });
 
-  it('block-bar height stays 3px in print', () => {
-    expect(printContains('.block-bar { height: 3px !important')).toBe(true);
+  it('card has break-inside: avoid in print (print:break-inside-avoid)', () => {
+    expect(cardSource).toContain('print:break-inside-avoid');
   });
 
-  // ── Typography overrides in print ─────────────────────────────────────────
-
-  it('block-title font-size is 8px in print', () => {
-    expect(printContains('.block-title { font-size: 8px !important')).toBe(true);
+  it('block-bar height stays 3px in print (print:h-[3px])', () => {
+    expect(cardSource).toContain('print:h-[3px]');
   });
 
-  it('block-title margin-bottom is 4px in print', () => {
-    expect(printContains('margin-bottom: 4px !important')).toBe(true);
+  // ── Typography overrides in print (Tailwind print: classes in CardComponent) ──
+
+  it('block-title font-size is 8px in print (print:text-[8px])', () => {
+    expect(cardSource).toContain('print:text-[8px]');
   });
+
+  it('block-title margin-bottom reduced in print (print:mb-1)', () => {
+    expect(cardSource).toContain('print:mb-1');
+  });
+
+  it('block-question font-size is 6.5px in print (print:text-[6.5px])', () => {
+    expect(cardSource).toContain('print:text-[6.5px]');
+  });
+
+  it('block-question padding-bottom reduced in print (print:pb-[3px])', () => {
+    expect(cardSource).toContain('print:pb-[3px]');
+  });
+
+  // ── Block list print (CSS in <style> @media print) ────────────────────────
+
+  // ── Color overrides for white background ─────────────────────────────────
+
+  it('block-list li text is dark in print (#374151)', () => {
+    expect(printContains('.block-list li { color: #374151 !important')).toBe(true);
+  });
+
+  it('.hl color darkened for print (#6d28d9)', () => {
+    expect(printContains('.hl { color: #6d28d9 !important')).toBe(true);
+  });
+
+  it('.hl-ai color darkened for print (#9d174d)', () => {
+    expect(printContains('.hl-ai { color: #9d174d !important')).toBe(true);
+  });
+
+  it('beachhead-block gets light background in print (#fffbeb)', () => {
+    expect(printContains('.beachhead-block { background: #fffbeb !important')).toBe(true);
+  });
+
+  it('vs-section gets light background in print (#f0fdfa)', () => {
+    expect(printContains('.vs-section { background: #f0fdfa !important')).toBe(true);
+  });
+
+  it('game-section gets light background in print (#f5f3ff)', () => {
+    expect(printContains('.game-section { background: #f5f3ff !important')).toBe(true);
+  });
+
+  it('entry-module-box gets light background in print (#ecfeff)', () => {
+    expect(printContains('.entry-module-box { background: #ecfeff !important')).toBe(true);
+  });
+
+  it('viability-note gets light background in print (#f8fafc)', () => {
+    expect(printContains('.viability-note { background: #f8fafc !important')).toBe(true);
+  });
+
+  // ── Typography overrides in print (CSS @media print) ─────────────────────
 
   it('block-list li font-size is 7.5px in print', () => {
     expect(printContains('font-size: 7.5px !important')).toBe(true);
@@ -168,10 +220,6 @@ describe('CanvasComponent — Print styles', () => {
 
   it('value-statement font-size is 8px in print', () => {
     expect(printContains('.value-statement { font-size: 8px !important')).toBe(true);
-  });
-
-  it('block-question font-size is 6.5px in print', () => {
-    expect(printContains('font-size: 6.5px !important')).toBe(true);
   });
 
   it('vs-label font-size is 7px in print', () => {

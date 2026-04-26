@@ -41,6 +41,7 @@ npx ng test --include="**/canvas.component.spec.ts"
 ## Conventions
 
 - All new components must be **standalone** and **lazy-loaded** in the router.
+- **Angular Signals are mandatory in all components** — use `input()` / `input.required()` instead of `@Input()`, `output()` instead of `@Output()`, `computed()` for derived state, and `signal()` for local mutable state. Never use `@Input`, `@Output`, or `BehaviorSubject` in components.
 - Use **Angular Signals** for reactive state; avoid introducing external state libraries.
 - Dark mode is the default. Light mode activates at print time via `@media print` in `src/styles.css`.
 - Emoji icons and gradient text utilities (`.hl`, `.hl-ai`) are part of the design system — follow the patterns in `canvas.component.html`.

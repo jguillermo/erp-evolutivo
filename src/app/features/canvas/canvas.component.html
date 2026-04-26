@@ -1,27 +1,43 @@
 <!-- Business Model Canvas -->
 <div class="max-w-[1200px] mx-auto">
-  <div class="canvas-grid" id="canvas-grid">
+  <div class="grid grid-cols-10 grid-rows-[auto_auto_auto] gap-[7px]
+              max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1
+              print:grid-cols-10 print:grid-rows-[auto_auto_auto] print:gap-1 print:text-[9px] print:w-full"
+       id="canvas-grid"
+       data-testid="canvas-grid">
 
     <!-- Socios Clave -->
-    <div class="canvas-block" style="grid-column:1/3; grid-row:1/3;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#8b5cf6,#7c3aed)"></div>
-      <h3 class="block-title" style="color:#a78bfa;"><span>🤝</span> Socios Clave</h3>
-      <p class="block-question">¿Qué no puedo o no me conviene hacer solo?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-1"
+      color="purple"
+      title="Socios Clave"
+      emoji="🤝"
+      question="¿Qué no puedo o no me conviene hacer solo?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:1/3] print:[grid-row:1/3]"
+      [style.gridColumn]="'1/3'"
+      [style.gridRow]="'1/3'">
+      <ul class="block-list" data-testid="card-1-list">
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl">OSE / SUNAT:</span> proveedor de facturación electrónica homologado — sin esto no podemos operar legalmente en Perú</li>
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl">Yape / Plin:</span> pasarela de cobro dominante en bodegas limeñas — integración crítica para el flujo de ventas del beachhead</li>
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl">Red de contadores aliados:</span> 5–10 contadores activos en Lima que ya atienden bodegas — son el Canal #1 de distribución</li>
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl">Proveedores LLM</span> (OpenAI / Anthropic) para la IA avanzada — necesario cuando lleguen usuarios premium</li>
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl">Incubadoras y cámaras de comercio PYME</span> — para escalar acceso a early adopters en otras ciudades</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Actividades Clave -->
-    <div class="canvas-block" style="grid-column:3/5; grid-row:1;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#6366f1,#4f46e5)"></div>
-      <h3 class="block-title" style="color:#818cf8;"><span>⚙️</span> Actividades Clave</h3>
-      <p class="block-question">¿Qué tenemos que hacer sí o sí para entregar la propuesta de valor?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-2"
+      color="indigo"
+      title="Actividades Clave"
+      emoji="⚙️"
+      question="¿Qué tenemos que hacer sí o sí para entregar la propuesta de valor?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:3/5] print:[grid-row:1/2]"
+      [style.gridColumn]="'3/5'"
+      [style.gridRow]="'1'">
+      <ul class="block-list" data-testid="card-2-list">
         <li><span class="fase-badge fase1">FASE 1</span> Desarrollar <span class="hl">módulo Ventas + Inventario básico</span> para bodegas (flujo completo en &lt;10 min)</li>
         <li><span class="fase-badge fase1">FASE 1</span> Crear <span class="hl">onboarding "Soy bodega"</span> — setup guiado sin soporte humano</li>
         <li><span class="fase-badge fase1">FASE 1</span> Integrar <span class="hl">facturación electrónica SUNAT</span> y pasarela Yape/Plin</li>
@@ -29,14 +45,20 @@
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl-ai">Prompts IA por sector</span> y nivel de madurez del negocio</li>
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl">Contenido educativo</span> (TikTok, YouTube) para escalar captación orgánica</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Recursos Clave -->
-    <div class="canvas-block" style="grid-column:3/5; grid-row:2;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#3b82f6,#2563eb)"></div>
-      <h3 class="block-title" style="color:#60a5fa;"><span>🔧</span> Recursos Clave</h3>
-      <p class="block-question">¿Sin qué recursos no podemos operar?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-3"
+      color="blue"
+      title="Recursos Clave"
+      emoji="🔧"
+      question="¿Sin qué recursos no podemos operar?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:3/5] print:[grid-row:2/3]"
+      [style.gridColumn]="'3/5'"
+      [style.gridRow]="'2'">
+      <ul class="block-list" data-testid="card-3-list">
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl">2 devs full-stack web</span> — sin mobile nativa aún; app web responsive es suficiente para bodegas</li>
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl">1 UX</span> especializado en usuarios no técnicos con baja alfabetización digital</li>
         <li><span class="fase-badge fase1">FASE 1</span> <span class="hl-ai">Prompts IA para bodegas</span> — base de conocimiento acotada a comercio minorista (no todos los sectores)</li>
@@ -44,15 +66,21 @@
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl">App móvil nativa</span> + growth marketer LATAM para escalar a otras ciudades</li>
         <li><span class="fase-badge fase2">FASE 2+</span> <span class="hl-ai">Pipeline IA multi-sector</span> y motor de reglas de progresión completo</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Propuesta de Valor -->
-    <div class="canvas-block" style="grid-column:5/7; grid-row:1/3;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#06b6d4,#0891b2)"></div>
-      <h3 class="block-title" style="color:#22d3ee;"><span>💎</span> Propuesta de Valor</h3>
-      <p class="block-question">¿Qué problema resuelvo y por qué me elegirían?</p>
-      <p class="value-statement">Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.</p>
-      <div class="vs-section">
+    <app-card
+      testId="card-4"
+      color="cyan"
+      title="Propuesta de Valor"
+      emoji="💎"
+      question="¿Qué problema resuelvo y por qué me elegirían?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:5/7] print:[grid-row:1/3]"
+      [style.gridColumn]="'5/7'"
+      [style.gridRow]="'1/3'">
+      <p class="value-statement" data-testid="card-4-value-statement">Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.</p>
+      <div class="vs-section" data-testid="card-4-vs">
         <p class="vs-label">vs. Libreta y Excel:</p>
         <p class="vs-text">Digitalización sin trauma, empiezas gratis, el sistema te guía paso a paso</p>
         <p class="vs-label">vs. Odoo / Otros:</p>
@@ -60,42 +88,54 @@
         <p class="vs-label">vs. SAP / S10:</p>
         <p class="vs-text">Sin implementador, sin meses de capacitacion.</p>
       </div>
-      <div class="game-section">
+      <div class="game-section" data-testid="card-4-game">
         <p class="game-label">🎮 Mecánica de videojuego</p>
         <p class="game-text">Igual que en un juego de estrategia, arrancas con lo básico y vas desbloqueando nuevas herramientas conforme avanzas. Nuestros usuarios crecieron jugando así, entienden niveles, logros y progresión sin necesidad de manual. Esa misma lógica aplicada a su negocio hace que adoptar un ERP se sienta natural, no abrumador.</p>
       </div>
-      <div class="entry-module-box">
+      <div class="entry-module-box" data-testid="card-4-entry-module">
         <p class="entry-module-label">🚀 Módulo de arranque</p>
         <p class="entry-module-main">💰 Ventas + Inventario básico + Facturación SUNAT</p>
         <p class="entry-module-sub">Para bodega/comercio minorista en Lima — setup en &lt;10 min, gratis para empezar</p>
       </div>
-      <ul class="block-list" style="margin-top:6px;">
+      <ul class="block-list" style="margin-top:6px;" data-testid="card-4-list">
         <li><span class="hl2">Crece contigo:</span> ramas que se activan según TU camino real, como subir de nivel</li>
         <li><span class="hl-ai">IA siempre incluida:</span> asesorando cuando tu negocio lo necesita</li>
         <li>El sistema sugiere tu <span class="hl2">siguiente paso</span> basado en tu contexto</li>
         <li><span class="hl-ai">Como tener un asesor de negocio 24/7</span> que conoce tu sector</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Relación Clientes -->
-    <div class="canvas-block" style="grid-column:7/9; grid-row:1;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#10b981,#059669)"></div>
-      <h3 class="block-title" style="color:#34d399;"><span>💬</span> Relación Clientes</h3>
-      <p class="block-question">¿Cómo los capto, retengo y hago que crezcan conmigo?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-5"
+      color="green"
+      title="Relación Clientes"
+      emoji="💬"
+      question="¿Cómo los capto, retengo y hago que crezcan conmigo?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:7/9] print:[grid-row:1/2]"
+      [style.gridColumn]="'7/9'"
+      [style.gridRow]="'1'">
+      <ul class="block-list" data-testid="card-5-list">
         <li><span class="hl">Captación:</span> Registro freemium sin tarjeta + onboarding guiado por tipo de negocio ("Soy bodega", "Soy restaurante"...)</li>
         <li><span class="hl">Retención:</span> Celebración de hitos del negocio, comunidad de emprendedores por sector, soporte por <span class="hl-ai">chat IA contextual</span></li>
         <li><span class="hl">Expansión:</span> <span class="hl-ai">IA proactiva: "Tu negocio ya tiene 3 empleados, activa la rama Equipo"</span> el sistema vende el upgrade naturalmente</li>
         <li><span class="hl">Recuperación:</span> Alertas cuando el usuario deja de entrar + resumen de lo que se perdió</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Canales -->
-    <div class="canvas-block" style="grid-column:7/9; grid-row:2;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#14b8a6,#0d9488)"></div>
-      <h3 class="block-title" style="color:#2dd4bf;"><span>📡</span> Canales</h3>
-      <p class="block-question">¿Cómo me conocen, cómo compran y cómo reciben el producto?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-6"
+      color="teal"
+      title="Canales"
+      emoji="📡"
+      question="¿Cómo me conocen, cómo compran y cómo reciben el producto?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:7/9] print:[grid-row:2/3]"
+      [style.gridColumn]="'7/9'"
+      [style.gridRow]="'2'">
+      <ul class="block-list" data-testid="card-6-list">
         <li><span class="canal-badge canal1">CANAL #1</span> <span class="hl">Contadores y asesores tributarios</span> que ya visitan a bodegas — recomendación directa de confianza</li>
         <li><span class="canal-badge canal2">CANAL #2</span> <span class="hl">TikTok / Instagram</span> con tips de negocio PYME — captación orgánica de bajo costo</li>
         <li><span class="canal-badge canal3">CANAL #3</span> <span class="hl">Programa de referidos</span> entre dueños de negocio del mismo barrio</li>
@@ -103,54 +143,64 @@
         <li><span class="hl">Reciben:</span> App web responsive + app móvil nativa</li>
         <li><span class="hl">Recompran:</span> <span class="hl-ai">IA proactiva in-app</span> que sugiere el siguiente módulo cuando el negocio lo necesita</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Segmentos -->
-    <div class="canvas-block" style="grid-column:9/11; grid-row:1/3;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#f59e0b,#d97706)"></div>
-      <h3 class="block-title" style="color:#fbbf24;"><span>👥</span> Segmentos de Clientes</h3>
-      <p class="block-question">¿Para quién es? ¿Quién paga? ¿Quién usa?</p>
-      <p class="segment-meta">📍 Perú primero (Lima), luego LATAM · Dueño = usuario = pagador</p>
-
-      <div class="beachhead-block">
+    <app-card
+      testId="card-7"
+      color="amber"
+      title="Segmentos de Clientes"
+      emoji="👥"
+      question="¿Para quién es? ¿Quién paga? ¿Quién usa?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:9/11] print:[grid-row:1/3]"
+      [style.gridColumn]="'9/11'"
+      [style.gridRow]="'1/3'">
+      <p class="segment-meta" data-testid="card-7-meta">📍 Perú primero (Lima), luego LATAM · Dueño = usuario = pagador</p>
+      <div class="beachhead-block" data-testid="card-7-beachhead">
         <div class="beachhead-header">
           <span class="seg-badge seg-beachhead">BEACHHEAD</span>
           <span class="beachhead-title">Foco de lanzamiento</span>
         </div>
         <p class="beachhead-desc">1–3 personas · Lima · Hoy usa libreta o Excel · El dolor más inmediato: no saber cuánto vendió ni facturar bien a SUNAT</p>
-        <ul class="block-list" style="margin-top:4px;">
+        <ul class="block-list" style="margin-top:4px;" data-testid="card-7-beachhead-list">
           <li>🛒 <span class="hl">Bodegas y comercios minoristas</span> — 400K+ solo en Lima, alta frecuencia de transacciones, dolor claro</li>
           <li>💇 Peluquerías, barberías, spas — agenda + cobro, decisión de compra rápida</li>
           <li>🌱 Emprendedores unipersonales — primeras ventas, necesitan orden sin complejidad</li>
         </ul>
       </div>
-
-      <div class="segment-tier" style="margin-top:8px;">
+      <div class="segment-tier" style="margin-top:8px;" data-testid="card-7-tier-2">
         <span class="seg-badge seg-growth">FASE 2</span>
         <span class="seg-desc">4–15 personas · Probó algún sistema y lo dejó · Necesita inventario, equipo y finanzas</span>
       </div>
-      <ul class="block-list">
+      <ul class="block-list" data-testid="card-7-list-2">
         <li>🍽️ Restaurantes y food service</li>
         <li>🔧 Servicios profesionales</li>
         <li>🏭 Pequeños productores y talleres</li>
       </ul>
-      <div class="segment-tier">
+      <div class="segment-tier" data-testid="card-7-tier-3">
         <span class="seg-badge seg-established">FASE 3</span>
         <span class="seg-desc">16–50 personas · Múltiples locales · Necesita integración, analítica y predicción</span>
       </div>
-      <ul class="block-list">
+      <ul class="block-list" data-testid="card-7-list-3">
         <li>📦 Distribuidores y mayoristas</li>
         <li>🏗️ Constructoras pequeñas</li>
         <li>🌾 Agronegocios</li>
       </ul>
-    </div>
+    </app-card>
 
     <!-- Estructura de Costos -->
-    <div class="canvas-block" style="grid-column:1/6; grid-row:3;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#ef4444,#dc2626)"></div>
-      <h3 class="block-title" style="color:#f87171;"><span>💸</span> Estructura de Costos</h3>
-      <p class="block-question">¿Cuáles son los gastos principales? ¿Los ingresos los superan?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-8"
+      color="red"
+      title="Estructura de Costos"
+      emoji="💸"
+      question="¿Cuáles son los gastos principales? ¿Los ingresos los superan?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:1/6] print:[grid-row:3/4]"
+      [style.gridColumn]="'1/6'"
+      [style.gridRow]="'3'">
+      <ul class="block-list" data-testid="card-8-list">
         <li><span class="cost-fixed">FIJO</span> <span class="hl">Equipo técnico:</span> devs full-stack, QA, UX, DevOps; el mayor costo fijo (~60% del total)</li>
         <li><span class="cost-fixed">FIJO</span> <span class="hl">Infraestructura base:</span> servidores cloud, CDN, bases de datos, CI/CD</li>
         <li><span class="cost-fixed">FIJO</span> <span class="hl">Soporte y CS:</span> equipo de soporte, documentación, community manager</li>
@@ -158,15 +208,21 @@
         <li><span class="cost-var">VARIABLE</span> <span class="hl">Adquisición:</span> marketing digital, contenido educativo, eventos y ferias PYME</li>
         <li><span class="cost-var">VARIABLE</span> <span class="hl">Compliance:</span> facturación electrónica SUNAT, certificaciones de seguridad</li>
       </ul>
-      <p class="viability-note">📐 <span class="hl">Viabilidad:</span> costos de IA básica ~0 (offline). Costo de IA avanzada crece solo cuando el usuario ya paga tier premium. El modelo se autofinancia por nivel.</p>
-    </div>
+      <p class="viability-note" data-testid="card-8-viability">📐 <span class="hl">Viabilidad:</span> costos de IA básica ~0 (offline). Costo de IA avanzada crece solo cuando el usuario ya paga tier premium. El modelo se autofinancia por nivel.</p>
+    </app-card>
 
     <!-- Fuentes de Ingreso -->
-    <div class="canvas-block" style="grid-column:6/11; grid-row:3;">
-      <div class="block-bar" style="background:linear-gradient(90deg,#22c55e,#16a34a)"></div>
-      <h3 class="block-title" style="color:#4ade80;"><span>💰</span> Fuentes de Ingreso</h3>
-      <p class="block-question">¿Cómo gano dinero? ¿Hay ingresos recurrentes? ¿Cuánto están dispuestos a pagar?</p>
-      <ul class="block-list">
+    <app-card
+      testId="card-9"
+      color="emerald"
+      title="Fuentes de Ingreso"
+      emoji="💰"
+      question="¿Cómo gano dinero? ¿Hay ingresos recurrentes? ¿Cuánto están dispuestos a pagar?"
+      class="max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+             print:[grid-column:6/11] print:[grid-row:3/4]"
+      [style.gridColumn]="'6/11'"
+      [style.gridRow]="'3'">
+      <ul class="block-list" data-testid="card-9-list">
         <li><span class="revenue-main">PRINCIPAL</span> <span class="hl3">Suscripción por ramas activas:</span> pagas solo los módulos que usas (S/ 29–199/mes) ingreso recurrente mensual, predecible</li>
         <li><span class="revenue-main">PRINCIPAL</span> <span class="hl-ai">IA Avanzada (upsell natural):</span> cuando el negocio crece y necesita predicciones, estrategia y análisis con LLM, el usuario ya percibe el valor</li>
         <li><span class="revenue-sec">SECUNDARIO</span> <span class="hl3">Freemium → conversión:</span> núcleo gratis + IA básica offline ilimitada → el propio crecimiento del negocio lo lleva a pagar</li>
@@ -174,402 +230,155 @@
         <li><span class="revenue-future">FUTURO</span> <span class="hl3">Marketplace:</span> plantillas de negocio, reportes sectoriales, conectores con terceros</li>
         <li><span class="revenue-future">FUTURO</span> <span class="hl-ai">Inteligencia sectorial:</span> datos anonimizados y agregados de PYMEs para consultoras e inversores</li>
       </ul>
-      <p class="viability-note">💡 <span class="hl3">Referencia de mercado:</span> Odoo cobra S/ 70–200/mes por funcionalidad fija. Nosotros cobramos igual o menos, pero el usuario solo paga lo que usa.</p>
-    </div>
+      <p class="viability-note" data-testid="card-9-viability">💡 <span class="hl3">Referencia de mercado:</span> Odoo cobra S/ 70–200/mes por funcionalidad fija. Nosotros cobramos igual o menos, pero el usuario solo paga lo que usa.</p>
+    </app-card>
 
   </div>
 </div>
 
+<!-- ─────────────────────────────────────────────────────────────────────────
+     TEMPORAL: estilos del contenido interno (badges, listas, secciones)
+     Se eliminará progresivamente al crear Badge, List y Section components
+     ──────────────────────────────────────────────────────────────────────── -->
 <style>
-  .canvas-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto auto auto;
-    gap: 7px;
-  }
-  .canvas-block {
-    background: #1a1d27;
-    border: 1px solid #2a2d3a;
-    border-radius: 10px;
-    padding: 12px;
-    position: relative;
-    overflow: hidden;
-  }
-  .block-bar {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    border-radius: 10px 10px 0 0;
-  }
-  .block-title {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .value-statement {
-    font-size: 0.78rem;
-    color: #e2e8f0;
-    line-height: 1.5;
-    border-left: 2px solid #22d3ee;
-    padding-left: 8px;
-    font-style: italic;
-  }
-  .segment-meta {
-    font-size: 0.68rem;
-    color: #fbbf24;
-    background: rgba(251,191,36,0.08);
-    border-radius: 4px;
-    padding: 3px 6px;
-    margin-bottom: 4px;
-  }
-  .block-list {
-    list-style: none;
-  }
+  .block-list { list-style: none; }
   .block-list li {
-    font-size: 0.74rem;
-    line-height: 1.45;
-    padding: 3px 0 3px 12px;
-    position: relative;
-    color: #b0b3c0;
+    font-size: 0.74rem; line-height: 1.45;
+    padding: 3px 0 3px 12px; position: relative; color: #b0b3c0;
   }
   .block-list li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    font-size: 0.65rem;
-    color: #666;
+    content: '▸'; position: absolute; left: 0; font-size: 0.65rem; color: #666;
   }
   .cost-fixed {
-    font-size: 0.58rem;
-    background: rgba(239,68,68,0.15);
-    color: #f87171;
-    border: 1px solid rgba(239,68,68,0.3);
-    border-radius: 3px;
-    padding: 1px 4px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
+    font-size: 0.58rem; background: rgba(239,68,68,0.15); color: #f87171;
+    border: 1px solid rgba(239,68,68,0.3); border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px; margin-right: 4px;
   }
   .cost-var {
-    font-size: 0.58rem;
-    background: rgba(251,146,60,0.15);
-    color: #fb923c;
-    border: 1px solid rgba(251,146,60,0.3);
-    border-radius: 3px;
-    padding: 1px 4px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
+    font-size: 0.58rem; background: rgba(251,146,60,0.15); color: #fb923c;
+    border: 1px solid rgba(251,146,60,0.3); border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px; margin-right: 4px;
   }
   .revenue-main {
-    font-size: 0.58rem;
-    background: rgba(74,222,128,0.15);
-    color: #4ade80;
-    border: 1px solid rgba(74,222,128,0.3);
-    border-radius: 3px;
-    padding: 1px 4px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
+    font-size: 0.58rem; background: rgba(74,222,128,0.15); color: #4ade80;
+    border: 1px solid rgba(74,222,128,0.3); border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px; margin-right: 4px;
   }
   .revenue-sec {
-    font-size: 0.58rem;
-    background: rgba(74,222,128,0.07);
-    color: #86efac;
-    border: 1px solid rgba(74,222,128,0.15);
-    border-radius: 3px;
-    padding: 1px 4px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
+    font-size: 0.58rem; background: rgba(74,222,128,0.07); color: #86efac;
+    border: 1px solid rgba(74,222,128,0.15); border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px; margin-right: 4px;
   }
   .revenue-future {
-    font-size: 0.58rem;
-    background: rgba(249,168,212,0.1);
-    color: #f9a8d4;
-    border: 1px solid rgba(249,168,212,0.2);
-    border-radius: 3px;
-    padding: 1px 4px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-right: 4px;
+    font-size: 0.58rem; background: rgba(249,168,212,0.1); color: #f9a8d4;
+    border: 1px solid rgba(249,168,212,0.2); border-radius: 3px;
+    padding: 1px 4px; font-weight: 700; letter-spacing: 0.5px; margin-right: 4px;
   }
   .hl { color: #c4b5fd; font-weight: 600; }
   .hl2 { color: #22d3ee; font-weight: 600; }
   .hl3 { color: #4ade80; font-weight: 600; }
   .hl-ai { color: #f9a8d4; font-weight: 600; }
-
-  /* Fase badges (Actividades Clave) */
   .fase-badge {
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border-radius: 3px;
-    padding: 1px 4px;
-    margin-right: 4px;
-    white-space: nowrap;
+    font-size: 0.55rem; font-weight: 700; letter-spacing: 0.5px;
+    border-radius: 3px; padding: 1px 4px; margin-right: 4px; white-space: nowrap;
   }
-  .fase1 {
-    background: rgba(99,102,241,0.2);
-    color: #a5b4fc;
-    border: 1px solid rgba(99,102,241,0.4);
-  }
-  .fase2 {
-    background: rgba(71,85,105,0.2);
-    color: #94a3b8;
-    border: 1px solid rgba(71,85,105,0.35);
-  }
-
-  /* Canal priority badges */
+  .fase1 { background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.4); }
+  .fase2 { background: rgba(71,85,105,0.2); color: #94a3b8; border: 1px solid rgba(71,85,105,0.35); }
   .canal-badge {
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border-radius: 3px;
-    padding: 1px 4px;
-    margin-right: 4px;
-    white-space: nowrap;
+    font-size: 0.55rem; font-weight: 700; letter-spacing: 0.5px;
+    border-radius: 3px; padding: 1px 4px; margin-right: 4px; white-space: nowrap;
   }
-  .canal1 {
-    background: rgba(20,184,166,0.25);
-    color: #2dd4bf;
-    border: 1px solid rgba(20,184,166,0.5);
-  }
-  .canal2 {
-    background: rgba(20,184,166,0.12);
-    color: #5eead4;
-    border: 1px solid rgba(20,184,166,0.25);
-  }
-  .canal3 {
-    background: rgba(20,184,166,0.06);
-    color: #99f6e4;
-    border: 1px solid rgba(20,184,166,0.15);
-  }
-
-  /* Beachhead block (Segmentos) */
+  .canal1 { background: rgba(20,184,166,0.25); color: #2dd4bf; border: 1px solid rgba(20,184,166,0.5); }
+  .canal2 { background: rgba(20,184,166,0.12); color: #5eead4; border: 1px solid rgba(20,184,166,0.25); }
+  .canal3 { background: rgba(20,184,166,0.06); color: #99f6e4; border: 1px solid rgba(20,184,166,0.15); }
   .beachhead-block {
-    margin-top: 6px;
-    padding: 7px 9px;
-    background: rgba(217,119,6,0.07);
-    border: 1px solid rgba(217,119,6,0.4);
-    border-radius: 6px;
+    margin-top: 6px; padding: 7px 9px;
+    background: rgba(217,119,6,0.07); border: 1px solid rgba(217,119,6,0.4); border-radius: 6px;
   }
-  .beachhead-header {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 4px;
-  }
-  .beachhead-title {
-    font-size: 0.65rem;
-    font-weight: 700;
-    color: #fef3c7;
-  }
-  .seg-beachhead {
-    background: #d97706;
-    color: #fff;
-    border: none;
-    font-size: 0.58rem;
-  }
-  .beachhead-desc {
-    font-size: 0.62rem;
-    color: #fde68a;
-    line-height: 1.4;
-    margin-bottom: 4px;
-  }
-  .beachhead-block .block-list li {
-    color: #e5e7eb;
-  }
-
-  /* Módulo de arranque (Propuesta de Valor) */
+  .beachhead-header { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+  .beachhead-title { font-size: 0.65rem; font-weight: 700; color: #fef3c7; }
+  .seg-beachhead { background: #d97706; color: #fff; border: none; font-size: 0.58rem; }
+  .beachhead-desc { font-size: 0.62rem; color: #fde68a; line-height: 1.4; margin-bottom: 4px; }
+  .beachhead-block .block-list li { color: #e5e7eb; }
   .entry-module-box {
-    margin-top: 8px;
-    padding: 7px 10px;
-    background: rgba(6,182,212,0.09);
-    border: 1.5px solid rgba(6,182,212,0.35);
-    border-radius: 7px;
+    margin-top: 8px; padding: 7px 10px;
+    background: rgba(6,182,212,0.09); border: 1.5px solid rgba(6,182,212,0.35); border-radius: 7px;
   }
-  .entry-module-label {
-    font-size: 0.62rem;
-    font-weight: 700;
-    color: #67e8f9;
-    margin-bottom: 3px;
-  }
-  .entry-module-main {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #e2e8f0;
-    margin-bottom: 2px;
-  }
-  .entry-module-sub {
-    font-size: 0.63rem;
-    color: #94a3b8;
-    line-height: 1.35;
-  }
-
-  .block-question {
-    font-size: 0.65rem;
-    color: #6b7280;
-    font-style: italic;
-    margin-bottom: 8px;
-    padding-bottom: 6px;
-    border-bottom: 1px dashed #2a2d3a;
-  }
-
+  .entry-module-label { font-size: 0.62rem; font-weight: 700; color: #67e8f9; margin-bottom: 3px; }
+  .entry-module-main { font-size: 0.8rem; font-weight: 700; color: #e2e8f0; margin-bottom: 2px; }
+  .entry-module-sub { font-size: 0.63rem; color: #94a3b8; line-height: 1.35; }
   .game-section {
-    margin-top: 8px;
-    padding: 6px 8px;
-    background: rgba(139,92,246,0.08);
-    border: 1px solid rgba(139,92,246,0.2);
-    border-radius: 6px;
+    margin-top: 8px; padding: 6px 8px;
+    background: rgba(139,92,246,0.08); border: 1px solid rgba(139,92,246,0.2); border-radius: 6px;
   }
-  .game-label {
-    font-size: 0.65rem;
-    font-weight: 700;
-    color: #a78bfa;
-    margin-bottom: 3px;
-  }
-  .game-text {
-    font-size: 0.68rem;
-    color: #d1d5db;
-    line-height: 1.45;
-  }
-
+  .game-label { font-size: 0.65rem; font-weight: 700; color: #a78bfa; margin-bottom: 3px; }
+  .game-text { font-size: 0.68rem; color: #d1d5db; line-height: 1.45; }
   .vs-section {
-    margin-top: 8px;
-    padding: 6px 8px;
-    background: rgba(6,182,212,0.06);
-    border-radius: 6px;
+    margin-top: 8px; padding: 6px 8px; background: rgba(6,182,212,0.06); border-radius: 6px;
   }
-  .vs-label {
-    font-size: 0.65rem;
-    color: #94a3b8;
-    font-weight: 700;
-    margin-top: 4px;
-    margin-bottom: 1px;
-  }
+  .vs-label { font-size: 0.65rem; color: #94a3b8; font-weight: 700; margin-top: 4px; margin-bottom: 1px; }
   .vs-section .vs-label:first-child { margin-top: 0; }
-  .vs-text {
-    font-size: 0.72rem;
-    color: #e2e8f0;
-    padding-left: 8px;
-    margin-bottom: 2px;
+  .vs-text { font-size: 0.72rem; color: #e2e8f0; padding-left: 8px; margin-bottom: 2px; }
+  .segment-meta {
+    font-size: 0.68rem; color: #fbbf24; background: rgba(251,191,36,0.08);
+    border-radius: 4px; padding: 3px 6px; margin-bottom: 4px;
   }
-
-  .segment-tier {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 6px 0 2px 0;
-  }
+  .segment-tier { display: flex; align-items: center; gap: 6px; margin: 6px 0 2px 0; }
   .seg-badge {
-    font-size: 0.55rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    border-radius: 3px;
-    padding: 1px 5px;
-    white-space: nowrap;
+    font-size: 0.55rem; font-weight: 700; letter-spacing: 0.5px;
+    border-radius: 3px; padding: 1px 5px; white-space: nowrap;
   }
-  .seg-initial {
-    background: rgba(74,222,128,0.15);
-    color: #4ade80;
-    border: 1px solid rgba(74,222,128,0.3);
+  .seg-growth { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+  .seg-established { background: rgba(249,115,22,0.15); color: #fb923c; border: 1px solid rgba(249,115,22,0.3); }
+  .seg-desc { font-size: 0.62rem; color: #9ca3af; line-height: 1.3; }
+  .value-statement {
+    font-size: 0.78rem; color: #e2e8f0; line-height: 1.5;
+    border-left: 2px solid #22d3ee; padding-left: 8px; font-style: italic;
   }
-  .seg-growth {
-    background: rgba(251,191,36,0.15);
-    color: #fbbf24;
-    border: 1px solid rgba(251,191,36,0.3);
-  }
-  .seg-established {
-    background: rgba(249,115,22,0.15);
-    color: #fb923c;
-    border: 1px solid rgba(249,115,22,0.3);
-  }
-  .seg-desc {
-    font-size: 0.62rem;
-    color: #9ca3af;
-    line-height: 1.3;
-  }
-
   .viability-note {
-    font-size: 0.68rem;
-    color: #94a3b8;
-    margin-top: 8px;
-    padding: 5px 8px;
-    background: rgba(255,255,255,0.03);
-    border-radius: 4px;
-    border-left: 2px solid #4b5563;
-  }
-
-
-  @media screen and (max-width: 1000px) {
-    .canvas-grid { grid-template-columns: 1fr 1fr !important; }
-    .canvas-grid .canvas-block { grid-column: auto !important; grid-row: auto !important; }
-  }
-  @media screen and (max-width: 600px) {
-    .canvas-grid { grid-template-columns: 1fr !important; }
+    font-size: 0.68rem; color: #94a3b8; margin-top: 8px; padding: 5px 8px;
+    background: rgba(255,255,255,0.03); border-radius: 4px; border-left: 2px solid #4b5563;
   }
 
   @media print {
-    @page {
-      size: A3 landscape;
-      margin: 6mm;
-    }
-
-    /* Ocultar todo excepto el canvas */
+    @page { size: A3 landscape; margin: 6mm; }
     .no-print, nav, header, footer, aside,
     app-header, app-sidebar, .tab-bar, .tab-content-wrapper { display: none !important; }
-
     *, *::before, *::after {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
     body, html, app-root, app-canvas, :host {
-      background: #fff !important;
-      margin: 0 !important;
-      padding: 0 !important;
+      background: #fff !important; margin: 0 !important; padding: 0 !important;
     }
-
-    /* Grid: forzar layout 10 columnas x 3 filas */
-    .canvas-grid {
-      display: grid !important;
-      grid-template-columns: repeat(10, 1fr) !important;
-      grid-template-rows: auto auto auto !important;
-      gap: 4px !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      font-size: 9px !important;
-    }
-
-    .canvas-block:nth-child(1) { grid-column: 1/3 !important; grid-row: 1/3 !important; }
-    .canvas-block:nth-child(2) { grid-column: 3/5 !important; grid-row: 1/2 !important; }
-    .canvas-block:nth-child(3) { grid-column: 3/5 !important; grid-row: 2/3 !important; }
-    .canvas-block:nth-child(4) { grid-column: 5/7 !important; grid-row: 1/3 !important; }
-    .canvas-block:nth-child(5) { grid-column: 7/9 !important; grid-row: 1/2 !important; }
-    .canvas-block:nth-child(6) { grid-column: 7/9 !important; grid-row: 2/3 !important; }
-    .canvas-block:nth-child(7) { grid-column: 9/11 !important; grid-row: 1/3 !important; }
-    .canvas-block:nth-child(8) { grid-column: 1/6 !important; grid-row: 3/4 !important; }
-    .canvas-block:nth-child(9) { grid-column: 6/11 !important; grid-row: 3/4 !important; }
-
-    .canvas-block {
-      border-radius: 6px !important;
-      padding: 6px 8px !important;
-      break-inside: avoid;
-      box-shadow: none !important;
-    }
-
-    .block-bar { height: 3px !important; }
-
-    /* Solo tamaños de fuente — los colores vienen del light-mode */
-    .block-title       { font-size: 8px !important;   margin-bottom: 4px !important; }
+    /* Colores claros para fondo blanco */
+    .block-list li                           { color: #374151 !important; }
+    .block-list li::before                   { color: #9ca3af !important; }
+    .beachhead-block .block-list li          { color: #374151 !important; }
+    .hl                                      { color: #6d28d9 !important; }
+    .hl2                                     { color: #0e7490 !important; }
+    .hl3                                     { color: #15803d !important; }
+    .hl-ai                                   { color: #9d174d !important; }
+    .beachhead-block { background: #fffbeb !important; border-color: rgba(217,119,6,0.35) !important; }
+    .beachhead-title                         { color: #92400e !important; }
+    .beachhead-desc                          { color: #b45309 !important; }
+    .seg-desc                                { color: #374151 !important; }
+    .vs-section                              { background: #f0fdfa !important; }
+    .vs-label                                { color: #374151 !important; }
+    .vs-text                                 { color: #1e293b !important; }
+    .game-section                            { background: #f5f3ff !important; }
+    .game-label                              { color: #5b21b6 !important; }
+    .game-text                               { color: #374151 !important; }
+    .entry-module-box                        { background: #ecfeff !important; border-color: rgba(6,182,212,0.35) !important; }
+    .entry-module-label                      { color: #0e7490 !important; }
+    .entry-module-main                       { color: #1e293b !important; }
+    .entry-module-sub                        { color: #374151 !important; }
+    .segment-meta                            { background: #fef3c7 !important; color: #92400e !important; }
+    .viability-note { background: #f8fafc !important; color: #374151 !important; border-left-color: #94a3b8 !important; }
+    .value-statement { color: #1e293b !important; }
     .block-list li     { font-size: 7.5px !important; line-height: 1.35 !important; padding: 1.5px 0 1.5px 10px !important; }
     .block-list li::before { font-size: 6px !important; }
-    .value-statement   { font-size: 8px !important;   line-height: 1.35 !important; }
-    .block-question    { font-size: 6.5px !important; margin-bottom: 4px !important; padding-bottom: 3px !important; }
+    .value-statement   { font-size: 8px !important; line-height: 1.35 !important; }
     .vs-section        { padding: 4px 6px !important; }
     .vs-label          { font-size: 7px !important; }
     .vs-text           { font-size: 7.5px !important; }
@@ -593,5 +402,4 @@
     .entry-module-main { font-size: 8px !important; }
     .entry-module-sub  { font-size: 6.5px !important; }
   }
-
 </style>

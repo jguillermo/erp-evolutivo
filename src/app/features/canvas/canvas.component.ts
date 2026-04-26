@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CardComponent } from '../../shared/components/card/card.component';
 
 @Component({
   selector: 'app-canvas',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CardComponent],
   templateUrl: './canvas.component.html',
 })
 export class CanvasComponent {}
