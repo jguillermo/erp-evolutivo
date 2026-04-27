@@ -159,9 +159,10 @@ El `@page` size (A3 landscape) se declara en `src/styles.css` como regla global 
 
 Variantes visuales:
 - **note** → fondo sutil + borde izquierdo gris (notas, viabilidad)
-- **info** → fondo cyan tenue (comparaciones, info)
+- **info** → fondo cyan tenue sin borde (comparaciones, info)
 - **callout** → fondo violeta + borde (mecánicas, módulos destacados)
 - **highlight** → fondo ámbar + borde fuerte (beachhead, destacados)
+- **feature** → fondo cyan + borde cyan (módulo principal de entrada, CTA destacado)
 
 ### `app-button`
 

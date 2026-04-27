@@ -19,6 +19,10 @@ export const SECTION_STYLES = {
     container: 'mt-[6px] px-[9px] py-[7px] bg-[rgba(217,119,6,0.07)] border border-[rgba(217,119,6,0.4)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
     title: 'text-[0.65rem] font-bold text-[#fef3c7] mb-1 print:text-[7px]',
   },
+  feature: {
+    container: 'mt-2 px-[8px] py-[6px] bg-[rgba(6,182,212,0.08)] border border-[rgba(6,182,212,0.35)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
+    title: 'text-[0.65rem] font-bold text-[#67e8f9] mb-[3px] print:text-[7px]',
+  },
 } as const;
 
 export type SectionVariant = keyof typeof SECTION_STYLES;
