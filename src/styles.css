@@ -164,10 +164,24 @@ body {
 
 /* ===== Print styles ===== */
 @media print {
+  @page { size: A3 landscape; margin: 6mm; }
+
+  /* Ocultar elementos de navegación */
+  .no-print, nav, header, footer, aside,
+  app-header, app-sidebar, .tab-bar, .tab-content-wrapper { display: none !important; }
+
+  /* Forzar reproducción de colores exacta */
+  *, *::before, *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   /* Fondo blanco global */
   body, html, app-root, app-root > * {
     background: #fff !important;
     color: #1a1a1a !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   /* Ocultar header buttons (print/theme) */
@@ -185,7 +199,23 @@ body {
   }
 }
 
-/* Gradient text utility */
+/* ===== Text highlight utilities (used across canvas content) ===== */
+.hl    { color: #c4b5fd; font-weight: 600; }
+.hl2   { color: #22d3ee; font-weight: 600; }
+.hl3   { color: #4ade80; font-weight: 600; }
+.hl-ai { color: #f9a8d4; font-weight: 600; }
+
+/* ===== List component light mode ===== */
+.light-mode app-list-item li              { color: #374151 !important; }
+.light-mode app-list-item li::before      { color: #9ca3af !important; }
+
+/* ===== Section component light mode ===== */
+.light-mode app-section[data-variant="note"]      > div { background: #f8fafc !important; border-left-color: #cbd5e1 !important; color: #475569 !important; }
+.light-mode app-section[data-variant="info"]      > div { background: #f0fdfa !important; }
+.light-mode app-section[data-variant="callout"]   > div { background: #f5f3ff !important; border-color: #c4b5fd !important; }
+.light-mode app-section[data-variant="highlight"] > div { background: #fffbeb !important; border-color: rgba(217,119,6,0.35) !important; }
+
+/* ===== Gradient text utility ===== */
 .gradient-text-brand {
   background: linear-gradient(135deg, #6366f1, #06b6d4, #10b981);
   -webkit-background-clip: text;

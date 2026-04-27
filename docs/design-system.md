@@ -21,6 +21,21 @@ Todos los componentes del design system siguen estas tres reglas sin excepción:
 
 ---
 
+## Utilidades de texto
+
+Definidas en `src/styles.css` como clases globales. No requieren componente.
+
+| Clase | Color | Uso |
+|---|---|---|
+| `.hl` | `#c4b5fd` (violeta) | Términos clave generales |
+| `.hl2` | `#22d3ee` (cyan) | Términos de crecimiento |
+| `.hl3` | `#4ade80` (verde) | Términos de ingresos |
+| `.hl-ai` | `#f9a8d4` (rosa) | Términos relacionados con IA |
+
+Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
+
+---
+
 ## Tokens de color
 
 Definidos en `tailwind.config.js` → `theme.extend.colors`. Nunca valores hex sueltos en los templates.
@@ -97,10 +112,99 @@ El `@page` size (A3 landscape) se declara en `src/styles.css` como regla global 
 | Componente | Selector | Estado | CDK usado |
 |---|---|---|---|
 | `CardComponent` | `app-card` | ✅ Creado | `FocusMonitor` |
-| `AlertComponent` | `app-alert` | 🔲 Pendiente | `Overlay`, `A11yModule` |
-| `BadgeComponent` | `app-badge` | 🔲 Pendiente | — |
-| `ButtonComponent` | `app-button` | 🔲 Pendiente | `FocusMonitor` |
-| `TooltipComponent` | `app-tooltip` | 🔲 Pendiente | `Overlay` |
+| `BadgeComponent` | `app-badge` | ✅ Creado | — |
+| `ListComponent` | `app-list` | ✅ Creado | — |
+| `ListItemComponent` | `app-list-item` | ✅ Creado | — |
+| `SectionComponent` | `app-section` | ✅ Creado | — |
+| `ButtonComponent` | `app-button` | ✅ Creado | `FocusMonitor` |
+| `AlertComponent` | `app-alert` | ✅ Creado | — |
+| `TooltipComponent` | `app-tooltip` | ✅ Creado | — |
+
+---
+
+## API de componentes
+
+### `app-list` + `app-list-item`
+
+```html
+<app-list [testId]="'my-list'">
+  <app-list-item>Texto con <span class="hl">énfasis</span> o <app-badge>...</app-badge></app-list-item>
+</app-list>
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `testId` | `string` | No | Valor de `data-testid` en el host |
+
+### `app-section`
+
+```html
+<app-section variant="callout" title="🎮 Título opcional" [testId]="'sec-1'">
+  Contenido proyectado aquí
+</app-section>
+```
+
+| Input | Tipo | Requerido | Valores |
+|---|---|---|---|
+| `variant` | `SectionVariant` | **Sí** | `'note'` · `'info'` · `'callout'` · `'highlight'` |
+| `title` | `string` | No | Texto del encabezado de la sección |
+| `testId` | `string` | No | Valor de `data-testid` |
+
+Variantes visuales:
+- **note** → fondo sutil + borde izquierdo gris (notas, viabilidad)
+- **info** → fondo cyan tenue (comparaciones, info)
+- **callout** → fondo violeta + borde (mecánicas, módulos destacados)
+- **highlight** → fondo ámbar + borde fuerte (beachhead, destacados)
+
+### `app-button`
+
+```html
+<app-button variant="primary" size="md" [disabled]="false" ariaLabel="Acción" (clicked)="handler()">
+  Texto del botón
+</app-button>
+```
+
+| Input | Tipo | Default | Valores |
+|---|---|---|---|
+| `variant` | `ButtonVariant` | `'primary'` | `'primary'` · `'secondary'` · `'ghost'` |
+| `size` | `ButtonSize` | `'md'` | `'sm'` · `'md'` · `'lg'` |
+| `disabled` | `boolean` | `false` | — |
+| `ariaLabel` | `string` | — | Accesibilidad |
+| `testId` | `string` | — | `data-testid` |
+
+Output: `clicked: OutputRef<void>`
+
+### `app-alert`
+
+```html
+<app-alert variant="info" message="Texto del mensaje" [dismissible]="true" (dismissed)="handler()" />
+```
+
+| Input | Tipo | Requerido | Valores |
+|---|---|---|---|
+| `variant` | `AlertVariant` | **Sí** | `'info'` · `'success'` · `'warning'` · `'error'` |
+| `message` | `string` | **Sí** | Texto a mostrar |
+| `dismissible` | `boolean` | No (false) | Muestra botón de cierre |
+| `testId` | `string` | No | `data-testid` |
+
+Output: `dismissed: OutputRef<void>`  
+ARIA: `role="alert"` (error) / `role="status"` (resto). `aria-live` automático.
+
+### `app-tooltip`
+
+```html
+<app-tooltip text="Texto del tooltip" position="top">
+  <button>Hover aquí</button>
+</app-tooltip>
+```
+
+| Input | Tipo | Default | Valores |
+|---|---|---|---|
+| `text` | `string` | **Requerido** | Texto visible en el tooltip |
+| `position` | `TooltipPosition` | `'top'` | `'top'` · `'bottom'` · `'left'` · `'right'` |
+| `testId` | `string` | — | `data-testid` |
+
+Visibilidad: CSS `opacity-0` → `opacity-100` via `group-hover:` y `group-focus-within:`.
 
 ---
 

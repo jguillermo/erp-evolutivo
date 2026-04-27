@@ -138,34 +138,30 @@ describe('CanvasComponent — Grid & Layout', () => {
     expect(inner.classList.contains('overflow-hidden')).toBe(true);
   });
 
-  // ── Structural sub-layout (CSS in <style> tag) ────────────────────────────
+  // ── Structural sub-layout (Tailwind classes in template) ────────────────
 
-  it('beachhead-header display is flex', () => {
-    expect(templateHtml).toContain('.beachhead-header { display: flex');
+  it('beachhead-header has flex class', () => {
+    expect(templateHtml).toContain('flex items-center gap-[6px]');
   });
 
-  it('beachhead-header align-items is center', () => {
-    expect(templateHtml).toContain('align-items: center');
+  it('beachhead-header has items-center class', () => {
+    expect(templateHtml).toContain('items-center');
   });
 
-  it('beachhead-header gap is 6px', () => {
-    expect(templateHtml).toContain('gap: 6px');
+  it('beachhead-header has gap-[6px] class', () => {
+    expect(templateHtml).toContain('gap-[6px]');
   });
 
-  it('segment-tier display is flex', () => {
-    expect(templateHtml).toContain('.segment-tier { display: flex');
+  it('segment-tier has flex class', () => {
+    expect(templateHtml).toContain('flex items-center');
   });
 
-  it('segment-tier gap is 6px', () => {
-    const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
-    const css = styleMatch ? styleMatch[1] : '';
-    expect(css).toContain('.segment-tier');
-    expect(css).toContain('gap: 6px');
+  it('segment-tier has gap-[6px] class', () => {
+    expect(templateHtml).toContain('gap-[6px]');
   });
 
-  it('segment-tier margin is 6px 0 2px 0', () => {
-    const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(templateHtml);
-    const css = styleMatch ? styleMatch[1] : '';
-    expect(css).toContain('margin: 6px 0 2px 0');
+  it('segment-tier has top and bottom margin classes (mt-2 mb-[2px])', () => {
+    expect(templateHtml).toContain('mt-2');
+    expect(templateHtml).toContain('mb-[2px]');
   });
 });

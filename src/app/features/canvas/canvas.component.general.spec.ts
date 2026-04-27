@@ -131,8 +131,8 @@ describe('CanvasComponent — General Structure', () => {
     expect(el.querySelector(sel('card-4-vs'))).toBeTruthy();
   });
 
-  it('card-4-vs has 3 vs-label elements', () => {
-    expect(el.querySelector(sel('card-4-vs'))?.querySelectorAll('.vs-label').length).toBe(3);
+  it('card-4-vs has 3 label elements', () => {
+    expect(el.querySelector(sel('card-4-vs'))?.querySelectorAll('[data-testid^="card-4-vs-label"]').length).toBe(3);
   });
 
   it('card-4-game exists', () => {
@@ -140,7 +140,7 @@ describe('CanvasComponent — General Structure', () => {
   });
 
   it('card-4-game label contains Mecánica de videojuego', () => {
-    expect(el.querySelector(sel('card-4-game'))?.querySelector('.game-label')?.textContent)
+    expect(el.querySelector(sel('card-4-game'))?.querySelector('[data-testid="card-4-game-title"]')?.textContent)
       .toContain('Mecánica de videojuego');
   });
 
@@ -149,12 +149,12 @@ describe('CanvasComponent — General Structure', () => {
   });
 
   it('card-4-entry-module label contains Módulo de arranque', () => {
-    expect(el.querySelector(sel('card-4-entry-module'))?.querySelector('.entry-module-label')?.textContent)
+    expect(el.querySelector(sel('card-4-entry-module'))?.querySelector('[data-testid="card-4-entry-module-title"]')?.textContent)
       .toContain('Módulo de arranque');
   });
 
   it('card-4-entry-module main mentions Ventas + Inventario', () => {
-    expect(el.querySelector(sel('card-4-entry-module'))?.querySelector('.entry-module-main')?.textContent)
+    expect(el.querySelector(sel('card-4-entry-module'))?.querySelector('[data-testid="card-4-entry-module-main"]')?.textContent)
       .toContain('Ventas + Inventario');
   });
 
@@ -172,9 +172,8 @@ describe('CanvasComponent — General Structure', () => {
     expect(el.querySelector(sel('card-7-beachhead'))).toBeTruthy();
   });
 
-  it('card-7-beachhead contains seg-beachhead badge with text BEACHHEAD', () => {
-    expect(el.querySelector(sel('card-7-beachhead'))?.querySelector('.seg-beachhead')?.textContent?.trim())
-      .toBe('BEACHHEAD');
+  it('card-7-beachhead contains BEACHHEAD badge', () => {
+    expect(el.querySelector('[data-testid="badge-7-1"]')?.textContent?.trim()).toBe('BEACHHEAD');
   });
 
   it('card-7-beachhead-list exists and has items', () => {
@@ -183,26 +182,26 @@ describe('CanvasComponent — General Structure', () => {
     expect(list?.querySelectorAll('li').length).toBeGreaterThan(0);
   });
 
-  it('card-7-tier-2 contains seg-growth badge with text FASE 2', () => {
-    expect(el.querySelector(sel('card-7-tier-2'))?.querySelector('.seg-growth')?.textContent?.trim())
-      .toBe('FASE 2');
+  it('card-7-tier-2 contains FASE 2 badge', () => {
+    expect(el.querySelector('[data-testid="badge-7-2"]')?.textContent?.trim()).toBe('FASE 2');
   });
 
-  it('card-7-tier-3 contains seg-established badge with text FASE 3', () => {
-    expect(el.querySelector(sel('card-7-tier-3'))?.querySelector('.seg-established')?.textContent?.trim())
-      .toBe('FASE 3');
+  it('card-7-tier-3 contains FASE 3 badge', () => {
+    expect(el.querySelector('[data-testid="badge-7-3"]')?.textContent?.trim()).toBe('FASE 3');
   });
 
   // ── Card 8 — Estructura de Costos ────────────────────────────────────────
 
-  it('card-8-list contains cost-fixed badges', () => {
-    expect(el.querySelector(sel('card-8-list'))?.querySelectorAll('.cost-fixed').length)
-      .toBeGreaterThanOrEqual(3);
+  it('card-8-list contains FIJO badges', () => {
+    const fijo = Array.from(el.querySelector(sel('card-8-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'FIJO');
+    expect(fijo.length).toBeGreaterThanOrEqual(3);
   });
 
-  it('card-8-list contains cost-var badges', () => {
-    expect(el.querySelector(sel('card-8-list'))?.querySelectorAll('.cost-var').length)
-      .toBeGreaterThanOrEqual(3);
+  it('card-8-list contains VARIABLE badges', () => {
+    const variable = Array.from(el.querySelector(sel('card-8-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'VARIABLE');
+    expect(variable.length).toBeGreaterThanOrEqual(3);
   });
 
   it('card-8-viability exists', () => {
@@ -215,19 +214,22 @@ describe('CanvasComponent — General Structure', () => {
 
   // ── Card 9 — Fuentes de Ingreso ───────────────────────────────────────────
 
-  it('card-9-list contains revenue-main badges', () => {
-    expect(el.querySelector(sel('card-9-list'))?.querySelectorAll('.revenue-main').length)
-      .toBeGreaterThanOrEqual(2);
+  it('card-9-list contains PRINCIPAL badges', () => {
+    const main = Array.from(el.querySelector(sel('card-9-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'PRINCIPAL');
+    expect(main.length).toBeGreaterThanOrEqual(2);
   });
 
-  it('card-9-list contains revenue-sec badges', () => {
-    expect(el.querySelector(sel('card-9-list'))?.querySelectorAll('.revenue-sec').length)
-      .toBeGreaterThanOrEqual(2);
+  it('card-9-list contains SECUNDARIO badges', () => {
+    const sec = Array.from(el.querySelector(sel('card-9-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'SECUNDARIO');
+    expect(sec.length).toBeGreaterThanOrEqual(2);
   });
 
-  it('card-9-list contains revenue-future badges', () => {
-    expect(el.querySelector(sel('card-9-list'))?.querySelectorAll('.revenue-future').length)
-      .toBeGreaterThanOrEqual(2);
+  it('card-9-list contains FUTURO badges', () => {
+    const future = Array.from(el.querySelector(sel('card-9-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'FUTURO');
+    expect(future.length).toBeGreaterThanOrEqual(2);
   });
 
   it('card-9-viability exists', () => {
@@ -240,31 +242,30 @@ describe('CanvasComponent — General Structure', () => {
 
   // ── Card 2 — Actividades Clave fase badges ────────────────────────────────
 
-  it('card-2-list has fase1 badges', () => {
-    expect(el.querySelector(sel('card-2-list'))?.querySelectorAll('.fase1').length)
-      .toBeGreaterThanOrEqual(3);
+  it('card-2-list has FASE 1 badges', () => {
+    const fase1 = Array.from(el.querySelector(sel('card-2-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'FASE 1');
+    expect(fase1.length).toBeGreaterThanOrEqual(3);
   });
 
-  it('card-2-list has fase2 badges', () => {
-    expect(el.querySelector(sel('card-2-list'))?.querySelectorAll('.fase2').length)
-      .toBeGreaterThanOrEqual(3);
+  it('card-2-list has FASE 2+ badges', () => {
+    const fase2 = Array.from(el.querySelector(sel('card-2-list'))?.querySelectorAll('app-badge') ?? [])
+      .filter(b => b.textContent?.trim() === 'FASE 2+');
+    expect(fase2.length).toBeGreaterThanOrEqual(3);
   });
 
   // ── Card 6 — Canales canal badges ─────────────────────────────────────────
 
-  it('card-6-list has canal1 badge with text CANAL #1', () => {
-    expect(el.querySelector(sel('card-6-list'))?.querySelector('.canal1')?.textContent?.trim())
-      .toBe('CANAL #1');
+  it('card-6-list has CANAL #1 badge', () => {
+    expect(el.querySelector('[data-testid="badge-6-1"]')?.textContent?.trim()).toBe('CANAL #1');
   });
 
-  it('card-6-list has canal2 badge with text CANAL #2', () => {
-    expect(el.querySelector(sel('card-6-list'))?.querySelector('.canal2')?.textContent?.trim())
-      .toBe('CANAL #2');
+  it('card-6-list has CANAL #2 badge', () => {
+    expect(el.querySelector('[data-testid="badge-6-2"]')?.textContent?.trim()).toBe('CANAL #2');
   });
 
-  it('card-6-list has canal3 badge with text CANAL #3', () => {
-    expect(el.querySelector(sel('card-6-list'))?.querySelector('.canal3')?.textContent?.trim())
-      .toBe('CANAL #3');
+  it('card-6-list has CANAL #3 badge', () => {
+    expect(el.querySelector('[data-testid="badge-6-3"]')?.textContent?.trim()).toBe('CANAL #3');
   });
 
   // ── Highlight classes presence ────────────────────────────────────────────

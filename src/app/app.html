@@ -10,16 +10,8 @@
         </p>
       </div>
       <div class="flex gap-1.5 shrink-0">
-        <button
-          onclick="window.print()"
-          class="p-2 rounded-lg border text-sm cursor-pointer transition-all duration-300"
-          [class]="darkMode ? 'bg-[#1a1d27] border-[#2a2d3a] text-[#888] hover:border-[#4a4d5a] hover:text-[#ccc]' : 'bg-white border-[#ddd] text-[#555] hover:border-[#999] hover:text-[#222]'"
-        >🖨️</button>
-        <button
-          (click)="toggleTheme()"
-          class="p-2 rounded-lg border text-sm cursor-pointer transition-all duration-300"
-          [class]="darkMode ? 'bg-[#1a1d27] border-[#2a2d3a] text-[#888] hover:border-[#4a4d5a] hover:text-[#ccc]' : 'bg-white border-[#ddd] text-[#555] hover:border-[#999] hover:text-[#222]'"
-        >{{ darkMode ? '☀️' : '🌙' }}</button>
+        <app-button variant="ghost" size="sm" ariaLabel="Imprimir" (clicked)="printPage()">🖨️</app-button>
+        <app-button variant="ghost" size="sm" ariaLabel="Cambiar tema" (clicked)="toggleTheme()">{{ darkMode ? '☀️' : '🌙' }}</app-button>
       </div>
     </div>
   </header>

@@ -1,6 +1,7 @@
 import { Component, inject, HostListener } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { ThemeService } from './theme.service';
+import { ButtonComponent } from './shared/components/button/button.component';
 
 interface NavTab {
   label: string;
@@ -11,7 +12,7 @@ interface NavTab {
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, ButtonComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -21,6 +22,7 @@ export class App {
   get darkMode() { return this.theme.darkMode(); }
 
   toggleTheme() { this.theme.toggle(); }
+  printPage() { window.print(); }
 
   @HostListener('window:beforeprint')
   onBeforePrint() { document.body.classList.add('light-mode'); }
