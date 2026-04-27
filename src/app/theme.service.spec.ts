@@ -2,7 +2,10 @@ import { TestBed } from '@angular/core/testing';
 import { ThemeService } from './theme.service';
 
 describe('ThemeService', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => {
+    localStorage.clear();
+    document.documentElement.classList.remove('light');
+  });
 
   // ── Initialization from localStorage ──────────────────────────────────────
 
@@ -18,6 +21,21 @@ describe('ThemeService', () => {
   it('restores light preference from localStorage', () => {
     localStorage.setItem('theme', 'light');
     expect(new ThemeService().darkMode()).toBe(false);
+  });
+
+  // ── CSS class on <html> ────────────────────────────────────────────────────
+
+  it('adds html.light class when restoring light preference', () => {
+    localStorage.setItem('theme', 'light');
+    new ThemeService();
+    expect(document.documentElement.classList.contains('light')).toBe(true);
+  });
+
+  it('removes html.light class when restoring dark preference', () => {
+    document.documentElement.classList.add('light');
+    localStorage.setItem('theme', 'dark');
+    new ThemeService();
+    expect(document.documentElement.classList.contains('light')).toBe(false);
   });
 
   // ── toggle() ──────────────────────────────────────────────────────────────
@@ -40,6 +58,17 @@ describe('ThemeService', () => {
       service.toggle();
       service.toggle();
       expect(service.darkMode()).toBe(true);
+    });
+
+    it('adds html.light class on toggle to light', () => {
+      service.toggle();
+      expect(document.documentElement.classList.contains('light')).toBe(true);
+    });
+
+    it('removes html.light class on toggle back to dark', () => {
+      service.toggle();
+      service.toggle();
+      expect(document.documentElement.classList.contains('light')).toBe(false);
     });
 
     it('persists light preference to localStorage', () => {

@@ -6,14 +6,6 @@
   @apply text-accent-300;
 }
 
-.tab-link-light {
-  color: theme('colors.primary.900') !important;
-}
-
-.tab-link-light:hover {
-  color: theme('colors.primary.800') !important;
-}
-
 .tab-btn {
   @apply py-lg px-2xl rounded-card border border-line bg-surface text-ink-subtle cursor-pointer text-xs font-semibold no-underline transition-all duration-300;
 }
@@ -34,25 +26,33 @@
   color: theme('colors.accent.400') !important;
 }
 
-.tab-link-light.tab-active {
+/* Light mode — selectors CSS, sin clases dinámicas desde JavaScript */
+html.light .tab-link {
+  color: theme('colors.primary.900');
+}
+
+html.light .tab-link:hover {
+  color: theme('colors.primary.800');
+}
+
+html.light .tab-link.tab-active {
   background: transparent !important;
   border-color: transparent !important;
   color: theme('colors.primary.900') !important;
 }
 
-/* Light mode overrides */
-.tab-btn-light {
-  background: white !important;
-  border-color: #d4d4d8 !important;
-  color: theme('colors.ink.subtle') !important;
+html.light .tab-btn {
+  background: white;
+  border-color: var(--ds-line);
+  color: var(--ds-ink-subtle);
 }
 
-.tab-btn-light:hover {
-  border-color: #9ca3af !important;
-  color: theme('colors.ink.inverse') !important;
+html.light .tab-btn:hover {
+  border-color: var(--ds-line-strong);
+  color: var(--ds-ink);
 }
 
-.tab-btn-light.tab-active {
+html.light .tab-btn.tab-active {
   background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.primary.700')) !important;
   border-color: theme('colors.primary.500') !important;
   color: white !important;

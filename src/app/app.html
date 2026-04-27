@@ -1,4 +1,4 @@
-<div class="min-h-screen p-2xl" [class]="darkMode ? 'bg-base text-ink' : 'light-mode bg-base-light text-ink-inverse'">
+<div class="min-h-screen p-2xl bg-base text-ink">
 
   <!-- Header -->
   <header class="mb-2xl">
@@ -23,8 +23,6 @@
         [routerLink]="tab.route"
         routerLinkActive="tab-active"
         [class]="tab.route === '/canvas' ? 'tab-link' : 'tab-btn'"
-        [class.tab-btn-light]="!darkMode && tab.route !== '/canvas'"
-        [class.tab-link-light]="!darkMode && tab.route === '/canvas'"
       >
         {{ tab.icon }} {{ tab.label }}
       </a>

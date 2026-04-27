@@ -20,70 +20,53 @@ const info    = twColors.blue     // Informativo neutral
 const ai      = twColors.violet   // Elementos de IA (.hl = ai-300)
 
 // ─────────────────────────────────────────────────────────────────────────────
-// SURFACE TOKENS — sistema de capas oscuro (dark-first)
+// SURFACE / INK / LINE / STATE — backed by CSS variables
 // ─────────────────────────────────────────────────────────────────────────────
 //
-//  bg-base          → fondo del body / canvas exterior
-//  bg-surface        → tarjetas, paneles, drawers
-//  bg-surface-raised → elementos elevados (tooltips, dropdowns)
-//  border-line       → bordes por defecto
-//  border-line-strong → bordes en hover / focus
-//  text-ink          → texto principal
-//  text-ink-muted    → texto secundario / ayuda
-//  text-ink-subtle   → placeholder, timestamps
+//  Los valores reales están en src/styles.css:
+//    :root       → modo oscuro (por defecto)
+//    html.light  → modo claro (activado por ThemeService)
+//    @media print → modo claro forzado (sin JavaScript)
+//
+//  Esto permite que bg-surface, text-ink, border-line, etc. cambien de modo
+//  automáticamente sin que ningún componente cambie su código.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const base    = '#0f1117'
+const base = 'var(--ds-base)'
 
 const surface = {
-  DEFAULT: '#1a1d27',
-  dark:    '#0f1117',
-  raised:  '#242838',
-  overlay: '#2d3148',
+  DEFAULT: 'var(--ds-surface)',
+  dark:    'var(--ds-base)',
+  raised:  'var(--ds-surface-raised)',
+  overlay: 'var(--ds-surface-overlay)',
 }
 
 const line = {
-  DEFAULT: '#2a2d3a',
-  strong:  '#4a4d5a',
-  subtle:  '#1f2230',
+  DEFAULT: 'var(--ds-line)',
+  strong:  'var(--ds-line-strong)',
+  subtle:  'var(--ds-line-subtle)',
 }
 
 const ink = {
-  DEFAULT: '#e0e0e0',
-  muted:   '#b0b3c0',
-  subtle:  '#888888',
-  inverse: '#111827',
+  DEFAULT: 'var(--ds-ink)',
+  muted:   'var(--ds-ink-muted)',
+  subtle:  'var(--ds-ink-subtle)',
+  inverse: 'var(--ds-ink-inverse)',
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// STATE TOKENS — estados interactivos (hover, active, selected, disabled)
-// ─────────────────────────────────────────────────────────────────────────────
-//
-//  Estandariza el aspecto de todos los elementos interactivos.
-//  En HTML: hover:bg-state-hover  active:bg-state-active  bg-state-selected
-//
-//  hover    → superficie elevada (dropdown row al pasar el cursor)
-//  active   → superficie más elevada (click / pressed)
-//  selected → ítem seleccionado — tinte primario oscuro
-//  disabled → fondo apagado para elementos no interactivos
-// ─────────────────────────────────────────────────────────────────────────────
-
 const state = {
-  hover:    surface.raised,   // '#242838' — elevación sutil al hover
-  active:   surface.overlay,  // '#2d3148' — elevación al presionar
-  selected: primary[900],     // indigo-900 — ítem seleccionado
-  disabled: surface.dark,     // '#0f1117' — elemento no interactivo
+  hover:    'var(--ds-state-hover)',
+  active:   'var(--ds-state-active)',
+  selected: 'var(--ds-state-selected)',
+  disabled: 'var(--ds-state-disabled)',
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // EXPORT
 // ─────────────────────────────────────────────────────────────────────────────
 
-const baseLight = '#f5f5f5' // light mode root background
-
 module.exports = {
   primary, accent, success, warning, danger, info, ai,
-  base, 'base-light': baseLight,
-  surface, line, ink,
+  base, surface, line, ink,
   state,
 }

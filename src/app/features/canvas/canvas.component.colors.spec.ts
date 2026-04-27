@@ -84,12 +84,12 @@ describe('CanvasComponent — Colors', () => {
 
   // ── Section variant colors (semantic tokens in SectionComponent) ──────────
 
-  it('note variant uses white/[3%] for background', () => {
-    expect(sectionSource).toContain('white/[3%]');
+  it('note variant uses bg-surface-raised for background', () => {
+    expect(sectionSource).toContain('bg-surface-raised');
   });
 
-  it('note variant uses gray-600 for border', () => {
-    expect(sectionSource).toContain('gray-600');
+  it('note variant uses border-line-strong for border', () => {
+    expect(sectionSource).toContain('border-line-strong');
   });
 
   it('info variant uses accent-500/[6%] for background', () => {

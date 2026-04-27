@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   DESIGN SYSTEM — CSS variables que cambian entre modo oscuro y claro
+   ─────────────────────────────────────────────────────────────────────────────
+
+   :root       → modo oscuro (por defecto)
+   html.light  → modo claro (ThemeService añade esta clase al <html>)
+   @media print → siempre claro, sin JavaScript
+
+   Estos variables respaldan los tokens de Tailwind (bg-surface, text-ink, etc.)
+   definidos en tokens/colors.js. Los componentes no necesitan cambiar nada.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --ds-base:            #0f1117;
+  --ds-surface:         #1a1d27;
+  --ds-surface-raised:  #242838;
+  --ds-surface-overlay: #2d3148;
+  --ds-ink:             #e0e0e0;
+  --ds-ink-muted:       #b0b3c0;
+  --ds-ink-subtle:      #888888;
+  --ds-ink-inverse:     #111827;
+  --ds-line:            #2a2d3a;
+  --ds-line-strong:     #4a4d5a;
+  --ds-line-subtle:     #1f2230;
+  --ds-state-hover:     #242838;
+  --ds-state-active:    #2d3148;
+  --ds-state-selected:  #312e81;
+  --ds-state-disabled:  #0f1117;
+}
+
+html.light {
+  --ds-base:            #f5f5f5;
+  --ds-surface:         #ffffff;
+  --ds-surface-raised:  #f0f4f8;
+  --ds-surface-overlay: #e8edf2;
+  --ds-ink:             #1e293b;
+  --ds-ink-muted:       #4b5563;
+  --ds-ink-subtle:      #6b7280;
+  --ds-ink-inverse:     #e0e0e0;
+  --ds-line:            #d4d4d8;
+  --ds-line-strong:     #9ca3af;
+  --ds-line-subtle:     #e5e7eb;
+  --ds-state-hover:     #f0f4f8;
+  --ds-state-active:    #e8edf2;
+  --ds-state-selected:  #e0e7ff;
+  --ds-state-disabled:  #f5f5f5;
+}
+
 /* Global resets and base */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -12,158 +60,26 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light mode global overrides */
-.light-mode {
-  --card-bg: #ffffff;
-  --card-border: #e0e0e0;
-  --text-muted: #666;
-}
-
-.light-mode .gradient-text-brand {
-  background: linear-gradient(135deg, #4f46e5, #0891b2, #059669);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ===== Canvas light mode ===== */
-
-/* Card component */
-.light-mode app-card > div {
-  background: #ffffff !important;
-  border-color: #d4d4d8 !important;
-}
-.light-mode app-card h3 { color: #1e293b !important; }
-.light-mode app-card p  { color: #6b7280 !important; border-bottom-color: #e5e7eb !important; }
-
-/* Textos generales */
-.light-mode .block-list li { color: #374151 !important; }
-.light-mode .block-list li::before { color: #9ca3af !important; }
-.light-mode .block-question { color: #6b7280 !important; border-bottom-color: #e5e7eb !important; }
-.light-mode .value-statement { color: #1e293b !important; border-left-color: #0891b2 !important; }
-
-/* Highlights — versiones oscuras con buen contraste sobre blanco */
-.light-mode .hl { color: #5b21b6 !important; }
-.light-mode .hl2 { color: #0e7490 !important; }
-.light-mode .hl3 { color: #047857 !important; }
-.light-mode .hl-ai { color: #9d174d !important; }
-
-/* Títulos de bloque — forzar color oscuro en light mode
-   (la barra de color superior ya identifica cada bloque) */
-.light-mode .block-title { color: #1e293b !important; }
-
-/* Sección VS competencia */
-.light-mode .vs-section { background: #f0fdfa !important; }
-.light-mode .vs-label { color: #475569 !important; }
-.light-mode .vs-text { color: #1e293b !important; }
-
-/* Sección juego */
-.light-mode .game-section { background: #f5f3ff !important; border-color: #c4b5fd !important; }
-.light-mode .game-label { color: #5b21b6 !important; }
-.light-mode .game-text { color: #374151 !important; }
-
-/* Segmentos */
-.light-mode .segment-meta { background: #fef3c7 !important; color: #92400e !important; }
-.light-mode .seg-desc { color: #4b5563 !important; }
-.light-mode .seg-initial { background: #dcfce7 !important; color: #15803d !important; border-color: #86efac !important; }
-.light-mode .seg-growth { background: #fef9c3 !important; color: #a16207 !important; border-color: #fde047 !important; }
-.light-mode .seg-established { background: #ffedd5 !important; color: #c2410c !important; border-color: #fdba74 !important; }
-
-/* Beachhead block */
-.light-mode .beachhead-block { background: #fffbeb !important; border: 1px solid rgba(217,119,6,0.35) !important; }
-.light-mode .beachhead-title { color: #78350f !important; }
-.light-mode .beachhead-desc { color: #78350f !important; }
-.light-mode .beachhead-block .block-list li { color: #1a1a1a !important; }
-.light-mode .seg-beachhead { background: #b45309 !important; color: #fff !important; border: none !important; }
-
-/* Fase badges */
-.light-mode .fase1 { background: #ede9fe !important; color: #4338ca !important; border-color: #c4b5fd !important; }
-.light-mode .fase2 { background: #f1f5f9 !important; color: #334155 !important; border-color: #cbd5e1 !important; }
-
-/* Canal badges */
-.light-mode .canal1 { background: #ccfbf1 !important; color: #0f766e !important; border-color: #5eead4 !important; }
-.light-mode .canal2 { background: #f0fdfa !important; color: #115e59 !important; border-color: #99f6e4 !important; }
-.light-mode .canal3 { background: #f8fafc !important; color: #334155 !important; border-color: #e2e8f0 !important; }
-
-/* Módulo de arranque */
-.light-mode .entry-module-box { background: #ecfeff !important; border-color: #0891b2 !important; }
-.light-mode .entry-module-label { color: #0e7490 !important; }
-.light-mode .entry-module-main { color: #1e293b !important; }
-.light-mode .entry-module-sub { color: #475569 !important; }
-
-/* Badges costos */
-.light-mode .cost-fixed { background: #fee2e2 !important; color: #b91c1c !important; border-color: #fca5a5 !important; }
-.light-mode .cost-var { background: #ffedd5 !important; color: #c2410c !important; border-color: #fdba74 !important; }
-
-/* Badges ingresos */
-.light-mode .revenue-main { background: #dcfce7 !important; color: #15803d !important; border-color: #86efac !important; }
-.light-mode .revenue-sec { background: #f0fdf4 !important; color: #166534 !important; border-color: #bbf7d0 !important; }
-.light-mode .revenue-future { background: #fce7f3 !important; color: #9d174d !important; border-color: #f9a8d4 !important; }
-
-/* Nota viabilidad */
-.light-mode .viability-note { color: #475569 !important; background: #f8fafc !important; border-left-color: #cbd5e1 !important; }
-
-/* AI badge */
-.light-mode .ai-badge { background: linear-gradient(135deg, #fce7f3, #ede9fe) !important; color: #9d174d !important; }
-.light-mode .feat-ai { background: linear-gradient(135deg, #fce7f3, #ede9fe) !important; color: #9d174d !important; border-color: #f0abfc !important; }
-
-/* Branch colors — light mode con fondos suaves y textos saturados */
-.light-mode .b-team .branch-header { background: linear-gradient(135deg, #ede9fe, #f5f3ff) !important; }
-.light-mode .b-team .branch-title { color: #5b21b6 !important; }
-.light-mode .b-team .level-dot { background: #ede9fe !important; color: #5b21b6 !important; }
-.light-mode .b-team .level-name { color: #6d28d9 !important; }
-.light-mode .b-team .feat-tag { background: #ede9fe !important; color: #5b21b6 !important; }
-
-.light-mode .b-sales .branch-header { background: linear-gradient(135deg, #ccfbf1, #f0fdfa) !important; }
-.light-mode .b-sales .branch-title { color: #0f766e !important; }
-.light-mode .b-sales .level-dot { background: #ccfbf1 !important; color: #0f766e !important; }
-.light-mode .b-sales .level-name { color: #0f766e !important; }
-.light-mode .b-sales .feat-tag { background: #ccfbf1 !important; color: #0f766e !important; }
-
-.light-mode .b-locations .branch-header { background: linear-gradient(135deg, #fef3c7, #fffbeb) !important; }
-.light-mode .b-locations .branch-title { color: #a16207 !important; }
-.light-mode .b-locations .level-dot { background: #fef3c7 !important; color: #a16207 !important; }
-.light-mode .b-locations .level-name { color: #a16207 !important; }
-.light-mode .b-locations .feat-tag { background: #fef3c7 !important; color: #a16207 !important; }
-
-.light-mode .b-inventory .branch-header { background: linear-gradient(135deg, #dbeafe, #eff6ff) !important; }
-.light-mode .b-inventory .branch-title { color: #1d4ed8 !important; }
-.light-mode .b-inventory .level-dot { background: #dbeafe !important; color: #1d4ed8 !important; }
-.light-mode .b-inventory .level-name { color: #1d4ed8 !important; }
-.light-mode .b-inventory .feat-tag { background: #dbeafe !important; color: #1d4ed8 !important; }
-
-.light-mode .b-finance .branch-header { background: linear-gradient(135deg, #dcfce7, #f0fdf4) !important; }
-.light-mode .b-finance .branch-title { color: #15803d !important; }
-.light-mode .b-finance .level-dot { background: #dcfce7 !important; color: #15803d !important; }
-.light-mode .b-finance .level-name { color: #15803d !important; }
-.light-mode .b-finance .feat-tag { background: #dcfce7 !important; color: #15803d !important; }
-
-.light-mode .b-clients .branch-header { background: linear-gradient(135deg, #fae8ff, #fdf4ff) !important; }
-.light-mode .b-clients .branch-title { color: #86198f !important; }
-.light-mode .b-clients .level-dot { background: #fae8ff !important; color: #86198f !important; }
-.light-mode .b-clients .level-name { color: #86198f !important; }
-.light-mode .b-clients .feat-tag { background: #fae8ff !important; color: #86198f !important; }
-
-.light-mode .b-digital .branch-header { background: linear-gradient(135deg, #fee2e2, #fef2f2) !important; }
-.light-mode .b-digital .branch-title { color: #b91c1c !important; }
-.light-mode .b-digital .level-dot { background: #fee2e2 !important; color: #b91c1c !important; }
-.light-mode .b-digital .level-name { color: #b91c1c !important; }
-.light-mode .b-digital .feat-tag { background: #fee2e2 !important; color: #b91c1c !important; }
-
-.light-mode .b-analytics .branch-header { background: linear-gradient(135deg, #dbeafe, #eff6ff) !important; }
-.light-mode .b-analytics .branch-title { color: #1e40af !important; }
-.light-mode .b-analytics .level-dot { background: #dbeafe !important; color: #1e40af !important; }
-.light-mode .b-analytics .level-name { color: #1e40af !important; }
-.light-mode .b-analytics .feat-tag { background: #dbeafe !important; color: #1e40af !important; }
-
-.light-mode .b-production .branch-header { background: linear-gradient(135deg, #ffedd5, #fff7ed) !important; }
-.light-mode .b-production .branch-title { color: #c2410c !important; }
-.light-mode .b-production .level-dot { background: #ffedd5 !important; color: #c2410c !important; }
-.light-mode .b-production .level-name { color: #c2410c !important; }
-.light-mode .b-production .feat-tag { background: #ffedd5 !important; color: #c2410c !important; }
-
 /* ===== Print styles ===== */
 @media print {
+  /* Forzar modo claro sin JavaScript */
+  :root {
+    --ds-base:            #ffffff;
+    --ds-surface:         #ffffff;
+    --ds-surface-raised:  #f5f5f5;
+    --ds-surface-overlay: #f0f0f0;
+    --ds-ink:             #1a1a1a;
+    --ds-ink-muted:       #4b5563;
+    --ds-ink-subtle:      #6b7280;
+    --ds-line:            #d1d5db;
+    --ds-line-strong:     #9ca3af;
+    --ds-line-subtle:     #e5e7eb;
+    --ds-state-hover:     #f5f5f5;
+    --ds-state-active:    #f0f0f0;
+    --ds-state-selected:  #e0e7ff;
+    --ds-state-disabled:  #f5f5f5;
+  }
+
   @page { size: A3 landscape; margin: 6mm; }
 
   /* Ocultar elementos de navegación */
@@ -176,50 +92,44 @@ body {
     print-color-adjust: exact !important;
   }
 
-  /* Fondo blanco global */
-  body, html, app-root, app-root > * {
-    background: #fff !important;
-    color: #1a1a1a !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  body { background: #fff !important; margin: 0 !important; padding: 0 !important; }
 
   /* Ocultar header buttons (print/theme) */
-  header button {
-    display: none !important;
-  }
+  header button { display: none !important; }
 
   /* Forzar título visible — los gradientes con text-fill transparent no imprimen en iOS Safari */
   .gradient-text-brand,
   .gradient-text-ai,
   .gradient-text-tree {
-    -webkit-text-fill-color: #1a1a1a !important;
-    color: #1a1a1a !important;
+    -webkit-text-fill-color: var(--ds-ink) !important;
+    color: var(--ds-ink) !important;
     background: none !important;
   }
 }
 
 /* ===== Text highlight utilities (used across canvas content) ===== */
-.hl    { @apply text-ai-300 font-semibold; }   /* ai-300 = violet-300 */
-.hl2   { @apply text-accent-400 font-semibold; } /* accent-400 = cyan-400 */
+.hl    { @apply text-ai-300 font-semibold; }
+.hl2   { @apply text-accent-400 font-semibold; }
 .hl3   { @apply text-green-400 font-semibold; }
 .hl-ai { @apply text-pink-300 font-semibold; }
 
-/* ===== List component light mode ===== */
-.light-mode app-list-item li              { color: #374151 !important; }
-.light-mode app-list-item li::before      { color: #9ca3af !important; }
+/* Light mode: versiones más oscuras con contraste adecuado sobre blanco */
+html.light .hl    { color: theme('colors.ai.700'); }
+html.light .hl2   { color: theme('colors.accent.700'); }
+html.light .hl3   { color: theme('colors.green.700'); }
+html.light .hl-ai { color: theme('colors.pink.700'); }
 
-/* ===== Section component light mode ===== */
-.light-mode app-section[data-variant="note"]      > div { background: #f8fafc !important; border-left-color: #cbd5e1 !important; color: #475569 !important; }
-.light-mode app-section[data-variant="info"]      > div { background: #f0fdfa !important; }
-.light-mode app-section[data-variant="callout"]   > div { background: #f5f3ff !important; border-color: #c4b5fd !important; }
-.light-mode app-section[data-variant="highlight"] > div { background: #fffbeb !important; border-color: rgba(217,119,6,0.35) !important; }
-
-/* ===== Gradient text utility ===== */
+/* ===== Gradient text utilities ===== */
 .gradient-text-brand {
-  background: linear-gradient(135deg, #6366f1, #06b6d4, #10b981);
+  background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.accent.500'), theme('colors.success.500'));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html.light .gradient-text-brand {
+  background: linear-gradient(135deg, theme('colors.primary.600'), theme('colors.accent.600'), theme('colors.success.600'));
+  -webkit-background-clip: text;
   background-clip: text;
 }
 
@@ -262,7 +172,7 @@ body {
   border: 1px solid rgba(147, 51, 234, 0.33);
 }
 
-/* Branch-specific color schemes */
+/* Branch-specific color schemes (future /tree route) */
 .b-team .branch-header { background: linear-gradient(135deg, #1e1b4b, #1a1d27); }
 .b-team .branch-title { color: #a78bfa; }
 .b-team .level-dot { background: #312e81; color: #a5b4fc; }

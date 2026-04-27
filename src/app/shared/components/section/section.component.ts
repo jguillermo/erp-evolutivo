@@ -4,8 +4,8 @@ import { NgClass } from '@angular/common';
 // All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const SECTION_STYLES = {
   note: {
-    container: 'mt-lg px-lg py-md bg-white/[3%] rounded border-l-2 border-gray-600 text-xs text-slate-400 print:mt-sm print:px-md print:py-sm',
-    title: 'text-2xs font-bold text-slate-400 mb-sm print:text-print-xs',
+    container: 'mt-lg px-lg py-md bg-surface-raised rounded border-l-2 border-line-strong text-xs text-ink-muted print:mt-sm print:px-md print:py-sm',
+    title: 'text-2xs font-bold text-ink-muted mb-sm print:text-print-xs',
   },
   info: {
     container: 'mt-lg px-lg py-md bg-accent-500/[6%] rounded-md print:mt-sm print:px-md print:py-sm',
