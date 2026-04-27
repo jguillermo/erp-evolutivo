@@ -67,14 +67,20 @@ Los colores específicos de componentes (gradientes de card, badges de fase, etc
 <!-- ✅ Correcto -->
 <div class="bg-surface border border-border rounded-[10px] p-3">
 
+<!-- ✅ Correcto — grid span con valores arbitrarios Tailwind -->
+<app-card class="[grid-column:1/3] [grid-row:1/3]
+                 max-[1000px]:[grid-column:auto] max-[1000px]:[grid-row:auto]
+                 print:[grid-column:1/3] print:[grid-row:1/3]">
+
 <!-- ❌ Incorrecto — nunca estilos inline para diseño -->
 <div style="background:#1a1d27; border:1px solid #2a2d3a">
+
+<!-- ❌ Incorrecto — nunca [style.gridColumn] ni [style.gridRow] -->
+<app-card [style.gridColumn]="'1/3'" [style.gridRow]="'1/3'">
 
 <!-- ❌ Incorrecto — nunca bloques <style> en templates -->
 <style>.canvas-block { ... }</style>
 ```
-
-**Excepción única permitida**: `[style.gridColumn]` / `[style.gridRow]` para posicionamiento en CSS Grid cuando Tailwind no puede expresar el valor dinámicamente (p.ej. `1/3`, `6/11`).
 
 ---
 
