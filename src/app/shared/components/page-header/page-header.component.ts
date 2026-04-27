@@ -10,12 +10,12 @@ import { Component, input } from '@angular/core';
   template: `
     <div class="flex items-center gap-3 mb-2">
       <span class="text-2xl" data-testid="page-header-emoji">{{ emoji() }}</span>
-      <h1 class="text-xl font-bold text-[#e0e0e0] tracking-tight" data-testid="page-header-title">
+      <h1 class="text-xl font-bold text-ink tracking-tight" data-testid="page-header-title">
         {{ title() }}
       </h1>
     </div>
     @if (subtitle()) {
-      <p class="text-[0.85rem] text-[#b0b3c0] leading-[1.6]" data-testid="page-header-subtitle">
+      <p class="text-[0.85rem] text-ink-muted leading-[1.6]" data-testid="page-header-subtitle">
         {{ subtitle() }}
       </p>
     }

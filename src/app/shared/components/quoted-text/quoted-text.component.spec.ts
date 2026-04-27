@@ -28,7 +28,7 @@ describe('QuotedTextComponent', () => {
   it('renders paragraph with border and italic classes', () => {
     const p = fixture.debugElement.query(By.css('p')).nativeElement as HTMLElement;
     expect(p.className).toContain('border-l-2');
-    expect(p.className).toContain('border-[#22d3ee]');
+    expect(p.className).toContain('border-accent-400');
     expect(p.className).toContain('italic');
     expect(p.className).toContain('pl-2');
   });

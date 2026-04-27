@@ -56,13 +56,13 @@ describe('BadgeLabelComponent', () => {
     });
 
     it('renders label with description classes', () => {
-      const span = fixture.debugElement.query(By.css('span')).nativeElement as HTMLElement;
-      expect(span.className).toContain('text-[#9ca3af]');
+      const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
+      expect(span.className).toContain('text-gray-400');
       expect(span.className).toContain('text-[0.62rem]');
     });
 
     it('renders label text', () => {
-      const span = fixture.debugElement.query(By.css('span')).nativeElement as HTMLElement;
+      const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
       expect(span.textContent?.trim()).toBe('Descripción del tier');
     });
   });
@@ -77,8 +77,8 @@ describe('BadgeLabelComponent', () => {
     });
 
     it('renders label with title classes', () => {
-      const span = fixture.debugElement.query(By.css('span')).nativeElement as HTMLElement;
-      expect(span.className).toContain('text-[#fef3c7]');
+      const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
+      expect(span.className).toContain('text-warning-100');
       expect(span.className).toContain('font-bold');
     });
   });

@@ -2,11 +2,11 @@ import { Component, computed, inject, input, output } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FocusMonitor } from '@angular/cdk/a11y';
 
-// All class values live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const BUTTON_VARIANTS = {
-  primary:   'bg-[#6366f1] hover:bg-[#4f46e5] text-white border border-[#6366f1] hover:border-[#4f46e5]',
-  secondary: 'bg-surface hover:bg-border text-[#e0e0e0] border border-border hover:border-[#4a4d5a]',
-  ghost:     'bg-transparent hover:bg-[rgba(255,255,255,0.06)] text-[#b0b3c0] hover:text-[#e0e0e0] border border-transparent',
+  primary:   'bg-primary-500 hover:bg-primary-600 text-white border border-primary-500 hover:border-primary-600',
+  secondary: 'bg-surface hover:bg-surface-raised text-ink border border-line hover:border-line-strong',
+  ghost:     'bg-transparent hover:bg-white/[6%] text-ink-muted hover:text-ink border border-transparent',
 } as const;
 
 export const BUTTON_SIZES = {
@@ -30,7 +30,7 @@ export type ButtonSize    = keyof typeof BUTTON_SIZES;
     <button
       class="inline-flex items-center justify-center gap-2 font-medium rounded-[6px]
              transition-colors duration-150 cursor-pointer
-             focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1]
+             focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500
              disabled:opacity-50 disabled:cursor-not-allowed
              print:hidden"
       [ngClass]="[variantClasses(), sizeClasses()]"

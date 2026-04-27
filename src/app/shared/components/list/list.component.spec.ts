@@ -82,7 +82,7 @@ describe('ListItemComponent', () => {
   it('has pl-[12px] class',          () => expect(li.className).toContain('pl-[12px]'));
 
   // ── Color ──────────────────────────────────────────────────────────────────
-  it('has text-[#b0b3c0] class',     () => expect(li.className).toContain('text-[#b0b3c0]'));
+  it('has text-ink-muted class',      () => expect(li.className).toContain('text-ink-muted'));
 
   // ── Pseudo-element bullet ──────────────────────────────────────────────────
   it('has relative class for bullet positioning', () => expect(li.className).toContain('relative'));
@@ -90,7 +90,7 @@ describe('ListItemComponent', () => {
   it('has before:absolute class',                 () => expect(li.className).toContain('before:absolute'));
   it('has before:left-0 class',                   () => expect(li.className).toContain('before:left-0'));
   it('has before:text-[0.65rem] class',           () => expect(li.className).toContain('before:text-[0.65rem]'));
-  it('has before:text-[#666] class',              () => expect(li.className).toContain('before:text-[#666]'));
+  it('has before:text-ink-subtle class',          () => expect(li.className).toContain('before:text-ink-subtle'));
 
   // ── Print ──────────────────────────────────────────────────────────────────
   it('has print:text-[7.5px] class',   () => expect(li.className).toContain('print:text-[7.5px]'));

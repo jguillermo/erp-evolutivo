@@ -3,11 +3,14 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const templateHtml   = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
-const cardSource     = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
-const listItemSource = readFileSync(join(__dir, '../../shared/components/list/list-item.component.ts'), 'utf-8');
-const sectionSource  = readFileSync(join(__dir, '../../shared/components/section/section.component.ts'), 'utf-8');
-const globalCss      = readFileSync(join(__dir, '../../../styles.css'), 'utf-8');
+const templateHtml        = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
+const cardSource          = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
+const listItemSource      = readFileSync(join(__dir, '../../shared/components/list/list-item.component.ts'), 'utf-8');
+const sectionSource       = readFileSync(join(__dir, '../../shared/components/section/section.component.ts'), 'utf-8');
+const quotedTextSource    = readFileSync(join(__dir, '../../shared/components/quoted-text/quoted-text.component.ts'), 'utf-8');
+const comparisonRowSource = readFileSync(join(__dir, '../../shared/components/comparison-row/comparison-row.component.ts'), 'utf-8');
+const badgeLabelSource    = readFileSync(join(__dir, '../../shared/components/badge-label/badge-label.component.ts'), 'utf-8');
+const globalCss           = readFileSync(join(__dir, '../../../styles.css'), 'utf-8');
 
 describe('CanvasComponent — Typography', () => {
 
@@ -81,36 +84,36 @@ describe('CanvasComponent — Typography', () => {
     expect(cardSource).toContain('pb-[6px]');
   });
 
-  // ── Value statement (inline Tailwind in canvas.component.html) ────────────
+  // ── Value statement (Tailwind in QuotedTextComponent) ────────────────────
 
   it('value-statement font-size is 0.78rem', () => {
-    expect(templateHtml).toContain('text-[0.78rem]');
+    expect(quotedTextSource).toContain('text-[0.78rem]');
   });
 
   it('value-statement line-height is 1.5', () => {
-    expect(templateHtml).toContain('leading-[1.5]');
+    expect(quotedTextSource).toContain('leading-[1.5]');
   });
 
   it('value-statement padding-left is 2 (pl-2)', () => {
-    expect(templateHtml).toContain('pl-2');
+    expect(quotedTextSource).toContain('pl-2');
   });
 
   it('value-statement is italic', () => {
-    expect(templateHtml).toContain('italic');
+    expect(quotedTextSource).toContain('italic');
   });
 
-  // ── VS labels (inline Tailwind in canvas.component.html) ─────────────────
+  // ── VS labels (Tailwind in ComparisonRowComponent) ───────────────────────
 
   it('vs-label font-size is 0.65rem', () => {
-    expect(templateHtml).toContain('text-[0.65rem]');
+    expect(comparisonRowSource).toContain('text-[0.65rem]');
   });
 
   it('vs-label font-weight is bold (font-bold)', () => {
-    expect(templateHtml).toContain('font-bold');
+    expect(comparisonRowSource).toContain('font-bold');
   });
 
   it('vs-text font-size is 0.72rem', () => {
-    expect(templateHtml).toContain('text-[0.72rem]');
+    expect(comparisonRowSource).toContain('text-[0.72rem]');
   });
 
   // ── Game section (inline Tailwind in canvas.component.html) ───────────────
@@ -138,10 +141,10 @@ describe('CanvasComponent — Typography', () => {
     expect(templateHtml).toContain('text-[0.62rem]');
   });
 
-  // ── Beachhead (inline Tailwind in canvas.component.html) ─────────────────
+  // ── Beachhead (Tailwind in BadgeLabelComponent) ───────────────────────────
 
   it('beachhead title font-size is 0.65rem', () => {
-    expect(templateHtml).toContain('text-[0.65rem]');
+    expect(badgeLabelSource).toContain('text-[0.65rem]');
   });
 
   it('beachhead title font-weight is bold (font-bold)', () => {
@@ -180,8 +183,8 @@ describe('CanvasComponent — Typography', () => {
     expect(sectionSource).toContain('text-[0.68rem]');
   });
 
-  it('section note text color is #94a3b8 (text-[#94a3b8] in SectionComponent)', () => {
-    expect(sectionSource).toContain('text-[#94a3b8]');
+  it('section note text color is slate-400 (text-slate-400 in SectionComponent)', () => {
+    expect(sectionSource).toContain('text-slate-400');
   });
 
   it('section title font-size is 0.65rem (text-[0.65rem] in SectionComponent)', () => {

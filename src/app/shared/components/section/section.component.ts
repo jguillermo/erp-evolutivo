@@ -1,27 +1,27 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All hex/rgba values live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const SECTION_STYLES = {
   note: {
-    container: 'mt-2 px-[8px] py-[5px] bg-[rgba(255,255,255,0.03)] rounded-[4px] border-l-2 border-[#4b5563] text-[0.68rem] text-[#94a3b8] print:mt-1 print:px-[6px] print:py-[3px]',
-    title: 'text-[0.65rem] font-bold text-[#94a3b8] mb-1 print:text-[7px]',
+    container: 'mt-2 px-[8px] py-[5px] bg-white/[3%] rounded-[4px] border-l-2 border-gray-600 text-[0.68rem] text-slate-400 print:mt-1 print:px-[6px] print:py-[3px]',
+    title: 'text-[0.65rem] font-bold text-slate-400 mb-1 print:text-[7px]',
   },
   info: {
-    container: 'mt-2 px-[8px] py-[6px] bg-[rgba(6,182,212,0.06)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
-    title: 'text-[0.65rem] font-bold text-[#67e8f9] mb-[3px] print:text-[7px]',
+    container: 'mt-2 px-[8px] py-[6px] bg-accent-500/[6%] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
+    title: 'text-[0.65rem] font-bold text-accent-300 mb-[3px] print:text-[7px]',
   },
   callout: {
-    container: 'mt-2 px-[8px] py-[6px] bg-[rgba(139,92,246,0.08)] border border-[rgba(139,92,246,0.2)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
-    title: 'text-[0.65rem] font-bold text-[#a78bfa] mb-[3px] print:text-[7px]',
+    container: 'mt-2 px-[8px] py-[6px] bg-ai-500/[8%] border border-ai-500/20 rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
+    title: 'text-[0.65rem] font-bold text-ai-400 mb-[3px] print:text-[7px]',
   },
   highlight: {
-    container: 'mt-[6px] px-[9px] py-[7px] bg-[rgba(217,119,6,0.07)] border border-[rgba(217,119,6,0.4)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
-    title: 'text-[0.65rem] font-bold text-[#fef3c7] mb-1 print:text-[7px]',
+    container: 'mt-[6px] px-[9px] py-[7px] bg-warning-600/[7%] border border-warning-600/40 rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
+    title: 'text-[0.65rem] font-bold text-warning-100 mb-1 print:text-[7px]',
   },
   feature: {
-    container: 'mt-2 px-[8px] py-[6px] bg-[rgba(6,182,212,0.08)] border border-[rgba(6,182,212,0.35)] rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
-    title: 'text-[0.65rem] font-bold text-[#67e8f9] mb-[3px] print:text-[7px]',
+    container: 'mt-2 px-[8px] py-[6px] bg-accent-500/[8%] border border-accent-500/35 rounded-[6px] print:mt-1 print:px-[6px] print:py-[4px]',
+    title: 'text-[0.65rem] font-bold text-accent-300 mb-[3px] print:text-[7px]',
   },
 } as const;
 

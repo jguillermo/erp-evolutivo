@@ -2,17 +2,17 @@ import { Component, computed, inject, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FocusMonitor } from '@angular/cdk/a11y';
 
-// All hex values live here — change a token, all cards using it update automatically
+// All color tokens live here — change a token, all cards using it update automatically
 export const CARD_COLORS = {
-  purple:  { bar: 'from-[#8b5cf6] to-[#7c3aed]', title: 'text-[#a78bfa]' },
-  indigo:  { bar: 'from-[#6366f1] to-[#4f46e5]', title: 'text-[#818cf8]' },
-  blue:    { bar: 'from-[#3b82f6] to-[#2563eb]', title: 'text-[#60a5fa]' },
-  cyan:    { bar: 'from-[#06b6d4] to-[#0891b2]', title: 'text-[#22d3ee]' },
-  green:   { bar: 'from-[#10b981] to-[#059669]', title: 'text-[#34d399]' },
-  teal:    { bar: 'from-[#14b8a6] to-[#0d9488]', title: 'text-[#2dd4bf]' },
-  amber:   { bar: 'from-[#f59e0b] to-[#d97706]', title: 'text-[#fbbf24]' },
-  red:     { bar: 'from-[#ef4444] to-[#dc2626]', title: 'text-[#f87171]' },
-  emerald: { bar: 'from-[#22c55e] to-[#16a34a]', title: 'text-[#4ade80]' },
+  purple:  { bar: 'from-ai-500 to-ai-600',         title: 'text-ai-400'      },
+  indigo:  { bar: 'from-primary-500 to-primary-600', title: 'text-primary-400' },
+  blue:    { bar: 'from-info-500 to-info-600',       title: 'text-info-400'    },
+  cyan:    { bar: 'from-accent-500 to-accent-600',   title: 'text-accent-400'  },
+  green:   { bar: 'from-success-500 to-success-600', title: 'text-success-400' },
+  teal:    { bar: 'from-teal-500 to-teal-600',       title: 'text-teal-400'    },
+  amber:   { bar: 'from-warning-500 to-warning-600', title: 'text-warning-400' },
+  red:     { bar: 'from-danger-500 to-danger-600',   title: 'text-danger-400'  },
+  emerald: { bar: 'from-green-500 to-green-600',     title: 'text-green-400'   },
 } as const;
 
 export type CardColor = keyof typeof CARD_COLORS;
@@ -26,7 +26,7 @@ export type CardColor = keyof typeof CARD_COLORS;
     'class': 'block',
   },
   template: `
-    <div class="relative overflow-hidden bg-surface border border-border rounded-[10px] p-3 h-full
+    <div class="relative overflow-hidden bg-surface border border-line rounded-[10px] p-3 h-full
                print:rounded-[6px] print:px-[8px] print:py-[6px] print:break-inside-avoid"
          cdkMonitorSubtreeFocus>
 
@@ -49,8 +49,8 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Question -->
       <p
-        class="text-[0.65rem] text-[#6b7280] italic mb-2 pb-[6px]
-               border-b border-dashed border-[#2a2d3a]
+        class="text-[0.65rem] text-gray-500 italic mb-2 pb-[6px]
+               border-b border-dashed border-line
                print:text-[6.5px] print:mb-1 print:pb-[3px]"
         [attr.data-testid]="testId() + '-question'">
         {{ question() }}

@@ -60,7 +60,7 @@ describe('TooltipComponent', () => {
   it('has group-focus-within:opacity-100', () => { setup('t'); expect(tooltip.className).toContain('group-focus-within:opacity-100'); });
   it('has whitespace-nowrap class',     () => { setup('t'); expect(tooltip.className).toContain('whitespace-nowrap'); });
   it('has print:hidden class',          () => { setup('t'); expect(tooltip.className).toContain('print:hidden'); });
-  it('has bg-[#1a1d27] class',          () => { setup('t'); expect(tooltip.className).toContain('bg-[#1a1d27]'); });
+  it('has bg-surface class',             () => { setup('t'); expect(tooltip.className).toContain('bg-surface'); });
   it('has border class',                () => { setup('t'); expect(tooltip.className).toContain('border'); });
   it('has rounded-[4px] class',         () => { setup('t'); expect(tooltip.className).toContain('rounded-[4px]'); });
 

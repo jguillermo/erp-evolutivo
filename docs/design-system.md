@@ -36,28 +36,53 @@ Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
 
 ---
 
-## Tokens de color
+## Sistema de colores
 
-Definidos en `tailwind.config.js` → `theme.extend.colors`. Nunca valores hex sueltos en los templates.
+**Un solo archivo para gobernarlos todos: `colors.js` en la raíz del proyecto.**
 
+Para cambiar el color primario de indigo a azul, basta editar una línea:
 ```js
-// tailwind.config.js
-colors: {
-  base:          '#0f1117',
-  surface:       '#1a1d27',
-  'surface-dark':'#0f1117',
-  border:        '#2a2d3a',
-  'border-hover':'#4a4d5a',
-  muted:         '#888',
-  'text-base':   '#e0e0e0',
-  'text-muted':  '#b0b3c0',
-  'ai-pink':     '#f9a8d4',
-  'ai-purple':   '#c084fc',
-  'ai-violet':   '#9333ea',
-}
+// colors.js
+const primary = twColors.blue   // ← cambio aquí, toda la app se actualiza
 ```
 
-Los colores específicos de componentes (gradientes de card, badges de fase, etc.) se definen como constantes TypeScript en el propio componente (`CARD_COLORS`, `BADGE_COLORS`, etc.) para que Tailwind JIT los detecte en el escaneo de `.ts`.
+### Aliases semánticos
+
+| Token | Paleta base | Uso |
+|---|---|---|
+| `primary` | indigo | Acciones, botones, focus ring |
+| `accent` | cyan | Destacados, datos, info |
+| `success` | emerald | Estados positivos, ingresos |
+| `warning` | amber | Atención, alertas |
+| `danger` | red | Errores, acciones destructivas |
+| `info` | blue | Informativo neutro |
+| `ai` | violet | Elementos de IA |
+
+En HTML: `bg-primary-500`, `text-accent-400`, `border-danger-300`, `bg-success-500/10`
+
+Cada alias expone la escala completa de 50 a 950:
+`primary-50` `primary-100` `primary-200` … `primary-900` `primary-950`
+
+### Tokens de superficie
+
+| Token | Valor | Uso |
+|---|---|---|
+| `bg-base` | `#0f1117` | Fondo del body / canvas exterior |
+| `bg-surface` | `#1a1d27` | Tarjetas, paneles |
+| `bg-surface-raised` | `#242838` | Tooltips, dropdowns |
+| `bg-surface-overlay` | `#2d3148` | Modales |
+| `border-line` | `#2a2d3a` | Bordes por defecto |
+| `border-line-strong` | `#4a4d5a` | Bordes en hover / focus |
+| `text-ink` | `#e0e0e0` | Texto principal |
+| `text-ink-muted` | `#b0b3c0` | Texto secundario |
+| `text-ink-subtle` | `#888888` | Placeholder, timestamps |
+
+### Reglas
+
+1. **Nunca** valores hex sueltos (`#6366f1`, `rgba(...)`) en templates ni constantes de componente.
+2. **Usar siempre** aliases semánticos: `primary-500` en vez de `indigo-500`.
+3. Las constantes de componente (`CARD_COLORS`, `BADGE_COLORS`, etc.) siguen existiendo para que Tailwind JIT las detecte, pero ya referencian tokens nombrados.
+4. Para opacidad usa la sintaxis `/`: `bg-primary-500/20`, `border-success-500/30`.
 
 ---
 
@@ -65,7 +90,7 @@ Los colores específicos de componentes (gradientes de card, badges de fase, etc
 
 ```html
 <!-- ✅ Correcto -->
-<div class="bg-surface border border-border rounded-[10px] p-3">
+<div class="bg-surface border border-line rounded-[10px] p-3">
 
 <!-- ✅ Correcto — grid span con valores arbitrarios Tailwind -->
 <app-card class="[grid-column:1/3] [grid-row:1/3]

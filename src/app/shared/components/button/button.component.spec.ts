@@ -45,7 +45,7 @@ describe('ButtonComponent', () => {
 
   it('has focus-visible:outline-2 class',        () => { setup(); expect(button.className).toContain('focus-visible:outline-2'); });
   it('has focus-visible:outline-offset-2 class', () => { setup(); expect(button.className).toContain('focus-visible:outline-offset-2'); });
-  it('has focus-visible:outline-[#6366f1]',      () => { setup(); expect(button.className).toContain('focus-visible:outline-[#6366f1]'); });
+  it('has focus-visible:outline-primary-500',     () => { setup(); expect(button.className).toContain('focus-visible:outline-primary-500'); });
 
   // ── Variants ──────────────────────────────────────────────────────────────
 

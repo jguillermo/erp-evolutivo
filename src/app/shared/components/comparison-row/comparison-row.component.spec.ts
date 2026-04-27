@@ -36,7 +36,7 @@ describe('ComparisonRowComponent', () => {
 
   it('renders label with muted color class', () => {
     const label = fixture.debugElement.queryAll(By.css('p'))[0].nativeElement as HTMLElement;
-    expect(label.className).toContain('text-[#94a3b8]');
+    expect(label.className).toContain('text-slate-400');
     expect(label.className).toContain('font-bold');
   });
 

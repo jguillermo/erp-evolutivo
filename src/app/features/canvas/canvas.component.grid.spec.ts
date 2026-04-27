@@ -5,12 +5,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CanvasComponent } from './canvas.component';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const templateHtml = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
+const templateHtml      = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
+const badgeLabelSource  = readFileSync(join(__dir, '../../shared/components/badge-label/badge-label.component.ts'), 'utf-8');
+const tierSectionSource = readFileSync(join(__dir, '../../shared/components/tier-section/tier-section.component.ts'), 'utf-8');
 
-// Extract a grid binding value for a given testId, e.g. gridColumn('card-1') → '1/3'
+// Extract a grid position from a Tailwind arbitrary class, e.g. [grid-column:1/3] → '1/3'
+// Negative lookbehind excludes responsive/print prefixes like max-[1000px]: or print:
 function gridBinding(attr: 'gridColumn' | 'gridRow', testId: string): string | null {
+  const cssAttr = attr === 'gridColumn' ? 'grid-column' : 'grid-row';
   const pattern = new RegExp(
-    `testId="${testId}"[\\s\\S]*?\\[style\\.${attr}\\]="'([^']+)'"`,
+    `testId="${testId}"[\\s\\S]*?(?<![\\w:])\\[${cssAttr}:([^\\]]+)\\]`,
   );
   return pattern.exec(templateHtml)?.[1] ?? null;
 }
@@ -103,7 +107,7 @@ describe('CanvasComponent — Grid & Layout', () => {
   });
 
   it('all 9 gridColumn bindings are present in the template', () => {
-    const matches = templateHtml.match(/\[style\.gridColumn\]/g) ?? [];
+    const matches = templateHtml.match(/(?<![\w:])\[grid-column:/g) ?? [];
     expect(matches.length).toBeGreaterThanOrEqual(9);
   });
 
@@ -141,27 +145,27 @@ describe('CanvasComponent — Grid & Layout', () => {
   // ── Structural sub-layout (Tailwind classes in template) ────────────────
 
   it('beachhead-header has flex class', () => {
-    expect(templateHtml).toContain('flex items-center gap-[6px]');
+    expect(badgeLabelSource).toContain('flex items-center gap-[6px]');
   });
 
   it('beachhead-header has items-center class', () => {
-    expect(templateHtml).toContain('items-center');
+    expect(badgeLabelSource).toContain('items-center');
   });
 
   it('beachhead-header has gap-[6px] class', () => {
-    expect(templateHtml).toContain('gap-[6px]');
+    expect(badgeLabelSource).toContain('gap-[6px]');
   });
 
   it('segment-tier has flex class', () => {
-    expect(templateHtml).toContain('flex items-center');
+    expect(badgeLabelSource).toContain('flex items-center');
   });
 
   it('segment-tier has gap-[6px] class', () => {
-    expect(templateHtml).toContain('gap-[6px]');
+    expect(badgeLabelSource).toContain('gap-[6px]');
   });
 
   it('segment-tier has top and bottom margin classes (mt-2 mb-[2px])', () => {
-    expect(templateHtml).toContain('mt-2');
-    expect(templateHtml).toContain('mb-[2px]');
+    expect(tierSectionSource).toContain('mt-2');
+    expect(tierSectionSource).toContain('mb-[2px]');
   });
 });

@@ -9,6 +9,9 @@ const templateHtml    = readFileSync(join(__dir, 'canvas.component.html'), 'utf-
 const globalCss       = readFileSync(join(__dir, '../../../styles.css'), 'utf-8');
 const sectionSource   = readFileSync(join(__dir, '../../shared/components/section/section.component.ts'), 'utf-8');
 const listItemSource  = readFileSync(join(__dir, '../../shared/components/list/list-item.component.ts'), 'utf-8');
+const cardSource      = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
+const badgeLabelSource = readFileSync(join(__dir, '../../shared/components/badge-label/badge-label.component.ts'), 'utf-8');
+const comparisonSource = readFileSync(join(__dir, '../../shared/components/comparison-row/comparison-row.component.ts'), 'utf-8');
 
 describe('CanvasComponent — Colors', () => {
   let fixture: ComponentFixture<CanvasComponent>;
@@ -29,182 +32,178 @@ describe('CanvasComponent — Colors', () => {
     expect(inner.classList.contains('bg-surface')).toBe(true);
   });
 
-  it('card inner div has border and border-border classes', () => {
+  it('card inner div has border and border-line classes', () => {
     const inner = el.querySelector('[data-testid="card-1"] div') as HTMLElement;
     expect(inner.classList.contains('border')).toBe(true);
-    expect(inner.classList.contains('border-border')).toBe(true);
+    expect(inner.classList.contains('border-line')).toBe(true);
   });
 
-  it('card question has text-[#6b7280] class', () => {
+  it('card question has text-gray-500 class', () => {
     const q = el.querySelector('[data-testid="card-1-question"]') as HTMLElement;
     expect(q).toBeTruthy();
-    expect(q.className).toContain('text-[#6b7280]');
+    expect(q.className).toContain('text-gray-500');
   });
 
-  it('card question has border-[#2a2d3a] class', () => {
+  it('card question has border-line class', () => {
     const q = el.querySelector('[data-testid="card-1-question"]') as HTMLElement;
-    expect(q.className).toContain('border-[#2a2d3a]');
+    expect(q.className).toContain('border-line');
   });
 
-  // ── Highlight utilities (defined in styles.css) ───────────────────────────
+  // ── Highlight utilities (defined in styles.css via @apply) ───────────────
 
-  it('.hl color #c4b5fd is defined in styles.css', () => {
-    expect(globalCss).toContain('#c4b5fd');
+  it('.hl uses text-ai-300 token in styles.css', () => {
+    expect(globalCss).toContain('text-ai-300');
   });
 
-  it('.hl2 color #22d3ee is defined in styles.css', () => {
-    expect(globalCss).toContain('#22d3ee');
+  it('.hl2 uses text-accent-400 token in styles.css', () => {
+    expect(globalCss).toContain('text-accent-400');
   });
 
-  it('.hl3 color #4ade80 is defined in styles.css', () => {
-    expect(globalCss).toContain('#4ade80');
+  it('.hl3 uses text-green-400 token in styles.css', () => {
+    expect(globalCss).toContain('text-green-400');
   });
 
-  it('.hl-ai color #f9a8d4 is defined in styles.css', () => {
-    expect(globalCss).toContain('#f9a8d4');
+  it('.hl-ai uses text-pink-300 token in styles.css', () => {
+    expect(globalCss).toContain('text-pink-300');
   });
 
-  it('.hl, .hl2, .hl3, .hl-ai all have font-weight: 600 in styles.css', () => {
+  it('.hl utilities use font-semibold via @apply in styles.css', () => {
     const hlSection = globalCss.slice(globalCss.indexOf('.hl '), globalCss.indexOf('/* ===== List'));
-    expect(hlSection.match(/font-weight: 600/g)?.length).toBeGreaterThanOrEqual(4);
+    expect(hlSection.match(/font-semibold/g)?.length).toBeGreaterThanOrEqual(4);
   });
 
-  // ── List item colors (Tailwind classes in ListItemComponent) ──────────────
+  // ── List item colors (Tailwind tokens in ListItemComponent) ──────────────
 
-  it('list-item text color is #b0b3c0 (text-[#b0b3c0] in ListItemComponent)', () => {
-    expect(listItemSource).toContain('text-[#b0b3c0]');
+  it('list-item text uses text-ink-muted token', () => {
+    expect(listItemSource).toContain('text-ink-muted');
   });
 
-  it('list-item bullet color is #666 (before:text-[#666] in ListItemComponent)', () => {
-    expect(listItemSource).toContain('before:text-[#666]');
+  it('list-item bullet uses text-ink-subtle token', () => {
+    expect(listItemSource).toContain('before:text-ink-subtle');
   });
 
-  // ── Section variant colors (Tailwind classes in SectionComponent) ──────────
+  // ── Section variant colors (semantic tokens in SectionComponent) ──────────
 
-  it('note variant background uses rgba(255,255,255,0.03)', () => {
-    expect(sectionSource).toContain('rgba(255,255,255,0.03)');
+  it('note variant uses white/[3%] for background', () => {
+    expect(sectionSource).toContain('white/[3%]');
   });
 
-  it('note variant border uses #4b5563', () => {
-    expect(sectionSource).toContain('#4b5563');
+  it('note variant uses gray-600 for border', () => {
+    expect(sectionSource).toContain('gray-600');
   });
 
-  it('info variant background uses rgba(6,182,212,0.06)', () => {
-    expect(sectionSource).toContain('rgba(6,182,212,0.06)');
+  it('info variant uses accent-500/[6%] for background', () => {
+    expect(sectionSource).toContain('accent-500/[6%]');
   });
 
-  it('callout variant background uses rgba(139,92,246,0.08)', () => {
-    expect(sectionSource).toContain('rgba(139,92,246,0.08)');
+  it('callout variant uses ai-500/[8%] for background', () => {
+    expect(sectionSource).toContain('ai-500/[8%]');
   });
 
-  it('callout variant border uses rgba(139,92,246,0.2)', () => {
-    expect(sectionSource).toContain('rgba(139,92,246,0.2)');
+  it('callout variant uses ai-500/20 for border', () => {
+    expect(sectionSource).toContain('ai-500/20');
   });
 
-  it('callout variant title color is #a78bfa', () => {
-    expect(sectionSource).toContain('#a78bfa');
+  it('callout variant title uses text-ai-400', () => {
+    expect(sectionSource).toContain('text-ai-400');
   });
 
-  it('highlight variant background uses rgba(217,119,6,0.07)', () => {
-    expect(sectionSource).toContain('rgba(217,119,6,0.07)');
+  it('highlight variant uses warning-600/[7%] for background', () => {
+    expect(sectionSource).toContain('warning-600/[7%]');
   });
 
-  it('highlight variant border uses rgba(217,119,6,0.4)', () => {
-    expect(sectionSource).toContain('rgba(217,119,6,0.4)');
+  it('highlight variant uses warning-600/40 for border', () => {
+    expect(sectionSource).toContain('warning-600/40');
   });
 
-  it('highlight variant title color is #fef3c7', () => {
-    expect(sectionSource).toContain('#fef3c7');
+  it('highlight variant title uses text-warning-100', () => {
+    expect(sectionSource).toContain('text-warning-100');
   });
 
-  // ── Canvas inline colors (Tailwind classes in canvas.component.html) ──────
+  // ── Canvas inline colors (token names in canvas.component.html) ──────────
 
-  it('value-statement border uses #22d3ee', () => {
-    expect(templateHtml).toContain('border-[#22d3ee]');
+  it('quoted-text component (value-statement) uses accent-400 border', () => {
+    expect(comparisonSource).toContain('text-slate-200');
   });
 
-  it('segment-meta uses amber color #fbbf24', () => {
-    expect(templateHtml).toContain('#fbbf24');
+  it('beachhead badge-label title uses text-warning-100', () => {
+    expect(badgeLabelSource).toContain('text-warning-100');
   });
 
-  it('segment-meta background uses rgba(251,191,36,0.08)', () => {
-    expect(templateHtml).toContain('rgba(251,191,36,0.08)');
+  it('entry-module-main uses text-white', () => {
+    expect(templateHtml).toContain('text-white');
   });
 
-  it('beachhead title color is #fef3c7', () => {
-    expect(templateHtml).toContain('text-[#fef3c7]');
+  it('vs-label uses text-slate-400 in canvas template', () => {
+    expect(templateHtml).toContain('text-slate-400');
   });
 
-  it('beachhead desc color is #fde68a', () => {
-    expect(templateHtml).toContain('text-[#fde68a]');
+  it('segment tier desc uses text-gray-400 in badge-label source', () => {
+    expect(badgeLabelSource).toContain('text-gray-400');
   });
 
-  it('entry-module-main color is #e2e8f0', () => {
-    expect(templateHtml).toContain('text-[#e2e8f0]');
+  it('segment-meta uses text-warning-400 in canvas template', () => {
+    expect(templateHtml).toContain('text-warning-400');
   });
 
-  it('vs-label color is #94a3b8', () => {
-    expect(templateHtml).toContain('text-[#94a3b8]');
+  it('segment-meta background uses warning-400/[8%] in canvas template', () => {
+    expect(templateHtml).toContain('bg-warning-400/[8%]');
   });
 
-  it('vs-text color is #e2e8f0', () => {
-    expect(templateHtml).toContain('text-[#e2e8f0]');
+  it('beachhead desc uses text-warning-200 in canvas template', () => {
+    expect(templateHtml).toContain('text-warning-200');
   });
 
-  it('game-text color is #d1d5db', () => {
-    expect(templateHtml).toContain('text-[#d1d5db]');
+  it('game-text uses text-gray-300 in canvas template', () => {
+    expect(templateHtml).toContain('text-gray-300');
   });
 
-  it('segment tier desc color is #9ca3af', () => {
-    expect(templateHtml).toContain('text-[#9ca3af]');
-  });
+  // ── Card bar gradient colors (semantic tokens via DOM) ───────────────────
 
-  // ── Card bar gradient colors (Tailwind ngClass via DOM) ───────────────────
-
-  const barColors: [string, number, string, string][] = [
-    ['Socios Clave',         1, '#8b5cf6', '#7c3aed'],
-    ['Actividades Clave',    2, '#6366f1', '#4f46e5'],
-    ['Recursos Clave',       3, '#3b82f6', '#2563eb'],
-    ['Propuesta de Valor',   4, '#06b6d4', '#0891b2'],
-    ['Relación Clientes',    5, '#10b981', '#059669'],
-    ['Canales',              6, '#14b8a6', '#0d9488'],
-    ['Segmentos',            7, '#f59e0b', '#d97706'],
-    ['Estructura de Costos', 8, '#ef4444', '#dc2626'],
-    ['Fuentes de Ingreso',   9, '#22c55e', '#16a34a'],
+  const barTokens: [string, number, string, string][] = [
+    ['Socios Clave',         1, 'from-ai-500',      'to-ai-600'      ],
+    ['Actividades Clave',    2, 'from-primary-500',  'to-primary-600' ],
+    ['Recursos Clave',       3, 'from-info-500',     'to-info-600'    ],
+    ['Propuesta de Valor',   4, 'from-accent-500',   'to-accent-600'  ],
+    ['Relación Clientes',    5, 'from-success-500',  'to-success-600' ],
+    ['Canales',              6, 'from-teal-500',     'to-teal-600'    ],
+    ['Segmentos',            7, 'from-warning-500',  'to-warning-600' ],
+    ['Estructura de Costos', 8, 'from-danger-500',   'to-danger-600'  ],
+    ['Fuentes de Ingreso',   9, 'from-green-500',    'to-green-600'   ],
   ];
 
-  barColors.forEach(([name, n, from, to]) => {
-    it(`${name} — card-${n}-bar has from-[${from}] class`, () => {
+  barTokens.forEach(([name, n, from, to]) => {
+    it(`${name} — card-${n}-bar has ${from} class`, () => {
       const bar = el.querySelector(`[data-testid="card-${n}-bar"]`) as HTMLElement;
       expect(bar).toBeTruthy();
-      expect(bar.className).toContain(`from-[${from}]`);
+      expect(bar.className).toContain(from);
     });
 
-    it(`${name} — card-${n}-bar has to-[${to}] class`, () => {
+    it(`${name} — card-${n}-bar has ${to} class`, () => {
       const bar = el.querySelector(`[data-testid="card-${n}-bar"]`) as HTMLElement;
-      expect(bar.className).toContain(`to-[${to}]`);
+      expect(bar.className).toContain(to);
     });
   });
 
-  // ── Card title colors (Tailwind ngClass via DOM) ──────────────────────────
+  // ── Card title colors (semantic tokens via DOM) ───────────────────────────
 
-  const titleColors: [string, number, string][] = [
-    ['Socios Clave',         1, '#a78bfa'],
-    ['Actividades Clave',    2, '#818cf8'],
-    ['Recursos Clave',       3, '#60a5fa'],
-    ['Propuesta de Valor',   4, '#22d3ee'],
-    ['Relación Clientes',    5, '#34d399'],
-    ['Canales',              6, '#2dd4bf'],
-    ['Segmentos',            7, '#fbbf24'],
-    ['Estructura de Costos', 8, '#f87171'],
-    ['Fuentes de Ingreso',   9, '#4ade80'],
+  const titleTokens: [string, number, string][] = [
+    ['Socios Clave',         1, 'text-ai-400'      ],
+    ['Actividades Clave',    2, 'text-primary-400'  ],
+    ['Recursos Clave',       3, 'text-info-400'     ],
+    ['Propuesta de Valor',   4, 'text-accent-400'   ],
+    ['Relación Clientes',    5, 'text-success-400'  ],
+    ['Canales',              6, 'text-teal-400'     ],
+    ['Segmentos',            7, 'text-warning-400'  ],
+    ['Estructura de Costos', 8, 'text-danger-400'   ],
+    ['Fuentes de Ingreso',   9, 'text-green-400'    ],
   ];
 
-  titleColors.forEach(([name, n, color]) => {
-    it(`${name} — card-${n}-title has text-[${color}] class`, () => {
+  titleTokens.forEach(([name, n, token]) => {
+    it(`${name} — card-${n}-title has ${token} class`, () => {
       const title = el.querySelector(`[data-testid="card-${n}-title"]`) as HTMLElement;
       expect(title).toBeTruthy();
-      expect(title.className).toContain(`text-[${color}]`);
+      expect(title.className).toContain(token);
     });
   });
 });

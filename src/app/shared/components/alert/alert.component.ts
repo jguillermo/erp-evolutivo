@@ -1,22 +1,22 @@
 import { Component, computed, input, output } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All hex/rgba values live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const ALERT_STYLES = {
   info: {
-    container: 'bg-[rgba(6,182,212,0.1)] border-[rgba(6,182,212,0.3)] text-[#22d3ee]',
+    container: 'bg-accent-500/10 border-accent-500/30 text-accent-400',
     icon: 'ℹ️',
   },
   success: {
-    container: 'bg-[rgba(16,185,129,0.1)] border-[rgba(16,185,129,0.3)] text-[#34d399]',
+    container: 'bg-success-500/10 border-success-500/30 text-success-400',
     icon: '✅',
   },
   warning: {
-    container: 'bg-[rgba(245,158,11,0.1)] border-[rgba(245,158,11,0.3)] text-[#fbbf24]',
+    container: 'bg-warning-500/10 border-warning-500/30 text-warning-400',
     icon: '⚠️',
   },
   error: {
-    container: 'bg-[rgba(239,68,68,0.1)] border-[rgba(239,68,68,0.3)] text-[#f87171]',
+    container: 'bg-danger-500/10 border-danger-500/30 text-danger-400',
     icon: '❌',
   },
 } as const;

@@ -3,11 +3,12 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const templateHtml   = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
-const cardSource     = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
-const listItemSource = readFileSync(join(__dir, '../../shared/components/list/list-item.component.ts'), 'utf-8');
-const sectionSource  = readFileSync(join(__dir, '../../shared/components/section/section.component.ts'), 'utf-8');
-const globalCss      = readFileSync(join(__dir, '../../../styles.css'), 'utf-8');
+const templateHtml        = readFileSync(join(__dir, 'canvas.component.html'), 'utf-8');
+const cardSource          = readFileSync(join(__dir, '../../shared/components/card/card.component.ts'), 'utf-8');
+const listItemSource      = readFileSync(join(__dir, '../../shared/components/list/list-item.component.ts'), 'utf-8');
+const sectionSource       = readFileSync(join(__dir, '../../shared/components/section/section.component.ts'), 'utf-8');
+const comparisonRowSource = readFileSync(join(__dir, '../../shared/components/comparison-row/comparison-row.component.ts'), 'utf-8');
+const globalCss           = readFileSync(join(__dir, '../../../styles.css'), 'utf-8');
 
 describe('CanvasComponent — Print styles', () => {
 
@@ -161,7 +162,7 @@ describe('CanvasComponent — Print styles', () => {
   });
 
   it('vs-text has print:text-[7.5px]', () => {
-    expect(templateHtml).toContain('print:text-[7.5px]');
+    expect(comparisonRowSource).toContain('print:text-[7.5px]');
   });
 
   it('game-text has print:text-[7px]', () => {

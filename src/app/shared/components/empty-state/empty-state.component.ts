@@ -9,11 +9,11 @@ import { Component, input } from '@angular/core';
   },
   template: `
     <span class="text-5xl mb-4">{{ emoji() }}</span>
-    <h2 class="text-lg font-bold text-[#e0e0e0] mb-2" data-testid="empty-state-title">
+    <h2 class="text-lg font-bold text-ink mb-2" data-testid="empty-state-title">
       {{ title() }}
     </h2>
     @if (description()) {
-      <p class="text-[0.85rem] text-[#b0b3c0] max-w-[400px] leading-[1.6]"
+      <p class="text-[0.85rem] text-ink-muted max-w-[400px] leading-[1.6]"
          data-testid="empty-state-description">
         {{ description() }}
       </p>

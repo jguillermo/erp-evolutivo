@@ -1,11 +1,11 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All hex values here for Tailwind JIT detection
+// All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const STAT_ROW_STYLES = {
-  default:     { label: 'text-[0.65rem] text-[#94a3b8]', value: 'text-[0.78rem] font-bold text-[#e2e8f0]' },
-  highlighted: { label: 'text-[0.65rem] text-[#94a3b8]', value: 'text-[0.78rem] font-bold text-[#4ade80]' },
-  ai:          { label: 'text-[0.65rem] text-[#94a3b8]', value: 'text-[0.78rem] font-bold text-[#f9a8d4]' },
+  default:     { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-slate-200' },
+  highlighted: { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-green-400' },
+  ai:          { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-pink-300' },
 } as const;
 
 export type StatRowVariant = keyof typeof STAT_ROW_STYLES;
