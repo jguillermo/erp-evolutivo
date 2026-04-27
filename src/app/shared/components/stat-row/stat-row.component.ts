@@ -16,7 +16,7 @@ export type StatRowVariant = keyof typeof STAT_ROW_STYLES;
   imports: [NgClass],
   host: {
     '[attr.data-testid]': 'testId() ?? null',
-    'class': 'flex items-center justify-between gap-2 py-[3px]',
+    'class': 'flex items-center justify-between gap-lg py-sm',
   },
   template: `
     <span [ngClass]="styles().label">{{ label() }}</span>

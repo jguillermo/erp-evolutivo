@@ -78,8 +78,8 @@ describe('ListItemComponent', () => {
   // ── Size & spacing ─────────────────────────────────────────────────────────
   it('has text-xs class',            () => expect(li.className).toContain('text-xs'));
   it('has leading-[1.45] class',     () => expect(li.className).toContain('leading-[1.45]'));
-  it('has py-[3px] class',           () => expect(li.className).toContain('py-[3px]'));
-  it('has pl-[12px] class',          () => expect(li.className).toContain('pl-[12px]'));
+  it('has py-sm class',              () => expect(li.className).toContain('py-sm'));
+  it('has pl-xl class',              () => expect(li.className).toContain('pl-xl'));
 
   // ── Color ──────────────────────────────────────────────────────────────────
   it('has text-ink-muted class',      () => expect(li.className).toContain('text-ink-muted'));
@@ -95,6 +95,6 @@ describe('ListItemComponent', () => {
   // ── Print ──────────────────────────────────────────────────────────────────
   it('has print:text-print-xs class',  () => expect(li.className).toContain('print:text-print-xs'));
   it('has print:leading-[1.35] class', () => expect(li.className).toContain('print:leading-[1.35]'));
-  it('has print:pl-[10px] class',      () => expect(li.className).toContain('print:pl-[10px]'));
+  it('has print:pl-xl class',          () => expect(li.className).toContain('print:pl-xl'));
   it('has print:before:text-print-2xs', () => expect(li.className).toContain('print:before:text-print-2xs'));
 });

@@ -83,12 +83,12 @@ describe('CanvasComponent — Print styles', () => {
     expect(cardSource).toContain('print:rounded-[6px]');
   });
 
-  it('card has print:px-[8px]', () => {
-    expect(cardSource).toContain('print:px-[8px]');
+  it('card has print:px-lg', () => {
+    expect(cardSource).toContain('print:px-lg');
   });
 
-  it('card has print:py-[6px]', () => {
-    expect(cardSource).toContain('print:py-[6px]');
+  it('card has print:py-md', () => {
+    expect(cardSource).toContain('print:py-md');
   });
 
   it('card has print:break-inside-avoid', () => {
@@ -103,16 +103,16 @@ describe('CanvasComponent — Print styles', () => {
     expect(cardSource).toContain('print:text-print-sm');
   });
 
-  it('card title has print:mb-1', () => {
-    expect(cardSource).toContain('print:mb-1');
+  it('card title has print:mb-sm', () => {
+    expect(cardSource).toContain('print:mb-sm');
   });
 
   it('card question has print:text-print-xs', () => {
     expect(cardSource).toContain('print:text-print-xs');
   });
 
-  it('card question has print:pb-[3px]', () => {
-    expect(cardSource).toContain('print:pb-[3px]');
+  it('card question has print:pb-sm', () => {
+    expect(cardSource).toContain('print:pb-sm');
   });
 
   // ── List item print (Tailwind print: classes in ListItemComponent) ────────
@@ -125,12 +125,12 @@ describe('CanvasComponent — Print styles', () => {
     expect(listItemSource).toContain('print:leading-[1.35]');
   });
 
-  it('list-item has print:py-[1.5px]', () => {
-    expect(listItemSource).toContain('print:py-[1.5px]');
+  it('list-item has print:py-nano', () => {
+    expect(listItemSource).toContain('print:py-nano');
   });
 
-  it('list-item has print:pl-[10px]', () => {
-    expect(listItemSource).toContain('print:pl-[10px]');
+  it('list-item has print:pl-xl', () => {
+    expect(listItemSource).toContain('print:pl-xl');
   });
 
   it('list-item bullet has print:before:text-print-2xs', () => {
@@ -139,16 +139,16 @@ describe('CanvasComponent — Print styles', () => {
 
   // ── Section print (Tailwind print: classes in SectionComponent) ──────────
 
-  it('section note has print:px-[6px]', () => {
-    expect(sectionSource).toContain('print:px-[6px]');
+  it('section note has print:px-md', () => {
+    expect(sectionSource).toContain('print:px-md');
   });
 
-  it('section note has print:py-[3px]', () => {
-    expect(sectionSource).toContain('print:py-[3px]');
+  it('section note has print:py-sm', () => {
+    expect(sectionSource).toContain('print:py-sm');
   });
 
-  it('section info/callout/highlight have print:py-[4px]', () => {
-    expect(sectionSource).toContain('print:py-[4px]');
+  it('section info/callout/highlight have print:py-sm', () => {
+    expect(sectionSource).toContain('print:py-sm');
   });
 
   it('section title has print:text-print-xs', () => {

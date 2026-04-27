@@ -48,9 +48,9 @@ describe('CanvasComponent — Grid & Layout', () => {
     expect(grid.className).toContain('grid-rows-[auto_auto_auto]');
   });
 
-  it('canvas grid has gap-[7px] class', () => {
+  it('canvas grid has gap-lg class', () => {
     const grid = el.querySelector('[data-testid="canvas-grid"]') as HTMLElement;
-    expect(grid.classList.contains('gap-[7px]')).toBe(true);
+    expect(grid.classList.contains('gap-lg')).toBe(true);
   });
 
   // ── Responsive breakpoints (Tailwind classes in template source) ──────────
@@ -145,27 +145,27 @@ describe('CanvasComponent — Grid & Layout', () => {
   // ── Structural sub-layout (Tailwind classes in template) ────────────────
 
   it('beachhead-header has flex class', () => {
-    expect(badgeLabelSource).toContain('flex items-center gap-[6px]');
+    expect(badgeLabelSource).toContain('flex items-center gap-md');
   });
 
   it('beachhead-header has items-center class', () => {
     expect(badgeLabelSource).toContain('items-center');
   });
 
-  it('beachhead-header has gap-[6px] class', () => {
-    expect(badgeLabelSource).toContain('gap-[6px]');
+  it('beachhead-header has gap-md class', () => {
+    expect(badgeLabelSource).toContain('gap-md');
   });
 
   it('segment-tier has flex class', () => {
     expect(badgeLabelSource).toContain('flex items-center');
   });
 
-  it('segment-tier has gap-[6px] class', () => {
-    expect(badgeLabelSource).toContain('gap-[6px]');
+  it('segment-tier has gap-md class', () => {
+    expect(badgeLabelSource).toContain('gap-md');
   });
 
-  it('segment-tier has top and bottom margin classes (mt-2 mb-[2px])', () => {
-    expect(tierSectionSource).toContain('mt-2');
-    expect(tierSectionSource).toContain('mb-[2px]');
+  it('segment-tier has top and bottom margin classes (mt-lg mb-xs)', () => {
+    expect(tierSectionSource).toContain('mt-lg');
+    expect(tierSectionSource).toContain('mb-xs');
   });
 });

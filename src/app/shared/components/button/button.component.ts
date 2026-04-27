@@ -10,9 +10,9 @@ export const BUTTON_VARIANTS = {
 } as const;
 
 export const BUTTON_SIZES = {
-  sm: 'text-xs px-3 py-[5px]',
-  md: 'text-sm px-4 py-[7px]',
-  lg: 'text-md px-5 py-[9px]',
+  sm: 'text-xs px-xl py-md',
+  md: 'text-sm px-2xl py-lg',
+  lg: 'text-md px-3xl py-lg',
 } as const;
 
 export type ButtonVariant = keyof typeof BUTTON_VARIANTS;
@@ -28,7 +28,7 @@ export type ButtonSize    = keyof typeof BUTTON_SIZES;
   },
   template: `
     <button
-      class="inline-flex items-center justify-center gap-2 font-medium rounded-[6px]
+      class="inline-flex items-center justify-center gap-lg font-medium rounded-[6px]
              transition-colors duration-150 cursor-pointer
              focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500
              disabled:opacity-50 disabled:cursor-not-allowed

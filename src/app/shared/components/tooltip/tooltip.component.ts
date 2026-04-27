@@ -3,10 +3,10 @@ import { NgClass } from '@angular/common';
 
 // All class values live here — Tailwind JIT detects them via static scan of this file
 export const TOOLTIP_POSITIONS = {
-  top:    'bottom-full left-1/2 -translate-x-1/2 mb-1',
-  bottom: 'top-full left-1/2 -translate-x-1/2 mt-1',
-  left:   'right-full top-1/2 -translate-y-1/2 mr-1',
-  right:  'left-full top-1/2 -translate-y-1/2 ml-1',
+  top:    'bottom-full left-1/2 -translate-x-1/2 mb-sm',
+  bottom: 'top-full left-1/2 -translate-x-1/2 mt-sm',
+  left:   'right-full top-1/2 -translate-y-1/2 mr-sm',
+  right:  'left-full top-1/2 -translate-y-1/2 ml-sm',
 } as const;
 
 export type TooltipPosition = keyof typeof TOOLTIP_POSITIONS;
@@ -22,7 +22,7 @@ export type TooltipPosition = keyof typeof TOOLTIP_POSITIONS;
   template: `
     <ng-content />
     <div role="tooltip"
-         class="absolute z-50 px-2 py-1 text-xs font-medium text-ink
+         class="absolute z-50 px-lg py-sm text-xs font-medium text-ink
                 bg-surface border border-line rounded-[4px] whitespace-nowrap
                 shadow-lg pointer-events-none
                 opacity-0 transition-opacity duration-150

@@ -36,6 +36,39 @@ Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
 
 ---
 
+## Sistema de espaciado
+
+**Un solo archivo para gobernarlos todos: `spacing.js` en la raíz del proyecto.**
+
+La escala usa claves semánticas de letras (`nano`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`) que se añaden a la escala estándar de Tailwind vía `theme.extend.spacing`. Las claves de letras son inconfundibles con los valores numéricos de Tailwind.
+
+Para cambiar el espaciado global, edita los valores en `spacing.js`. Todos los componentes se actualizan automáticamente.
+
+### Escala semántica
+
+| Token | Valor | Uso principal |
+|---|---|---|
+| `nano` | 1 px | Bordes hairline, padding micro print (1.5 px se normaliza aquí) |
+| `xs` | 2 px | Separación mínima, `mb` entre elementos adyacentes |
+| `sm` | 4 px | Gap de iconos, padding badge, filas compactas (3 px → aquí) |
+| `md` | 6 px | Gap estándar, padding de badge secundario (5 px → aquí) |
+| `lg` | 8 px | Padding de componentes, gap de lista (7 px y 9 px → aquí) |
+| `xl` | 12 px | Padding mayor, sangría de listas (10 px → aquí) |
+| `2xl` | 16 px | Padding de card, padding de página |
+| `3xl` | 20 px | Padding de sección grande |
+| `4xl` | 24 px | Margen de layout |
+| `5xl` | 40 px | Espaciado de nivel de página |
+
+En HTML: `py-nano` · `px-sm` · `gap-md` · `mb-lg` · `p-xl` · `px-2xl` · `mb-4xl`
+
+### Reglas
+
+1. **Nunca** clases numéricas de Tailwind (`p-3`, `mb-4`, `gap-2`, `px-1.5`) ni valores arbitrarios (`px-[6px]`).
+2. **Usar siempre** los tokens semánticos: `py-sm`, `px-md`, `gap-lg`, `p-xl`, `mb-2xl`, etc.
+3. Para cambiar el espaciado globalmente, editar **solo** `spacing.js`.
+
+---
+
 ## Sistema de tipografía
 
 **Un solo archivo para gobernarlos todos: `typography.js` en la raíz del proyecto.**

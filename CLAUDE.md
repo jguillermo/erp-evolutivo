@@ -104,12 +104,32 @@ Print scale: `text-print-2xs` · `text-print-xs` · `text-print-sm` · `text-pri
 
 Font families: `font-sans` · `font-display` · `font-mono`
 
+### Spacing — semantic letter tokens only
+
+**NEVER** use arbitrary spacing values or raw Tailwind numeric classes:
+
+```html
+<!-- ❌ FORBIDDEN -->
+<div class="px-[6px] py-[3px] gap-[7px]">
+<div class="px-1.5 py-0.75 gap-2 mb-4 p-3">
+```
+
+**ALWAYS** use the semantic letter scale defined in `spacing.js`:
+
+```html
+<!-- ✅ CORRECT -->
+<div class="px-md py-sm gap-lg mb-2xl p-xl">
+```
+
+Scale reference: `nano`=1px · `xs`=2px · `sm`=4px · `md`=6px · `lg`=8px · `xl`=12px · `2xl`=16px · `3xl`=20px · `4xl`=24px · `5xl`=40px
+
 ### Where to change tokens
 
 | To change | Edit this file | Scope |
 |---|---|---|
 | Color palette or semantic alias | `colors.js` | Whole app |
 | Font sizes or families | `typography.js` | Whole app |
+| Spacing / padding / margin / gap | `spacing.js` | Whole app |
 | Surface / border / text colors | `colors.js` | Whole app |
 
 ## Project Context

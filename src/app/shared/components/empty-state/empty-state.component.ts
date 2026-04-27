@@ -8,8 +8,8 @@ import { Component, input } from '@angular/core';
     'class': 'flex flex-col items-center justify-center min-h-[300px] text-center',
   },
   template: `
-    <span class="text-5xl mb-4">{{ emoji() }}</span>
-    <h2 class="text-lg font-bold text-ink mb-2" data-testid="empty-state-title">
+    <span class="text-5xl mb-2xl">{{ emoji() }}</span>
+    <h2 class="text-lg font-bold text-ink mb-lg" data-testid="empty-state-title">
       {{ title() }}
     </h2>
     @if (description()) {

@@ -33,7 +33,7 @@ describe('BadgeComponent', () => {
   it('inner span has font-bold',         () => { setup('indigo'); expect(span.className).toContain('font-bold'); });
   it('inner span has tracking-[0.5px]',  () => { setup('indigo'); expect(span.className).toContain('tracking-[0.5px]'); });
   it('inner span has rounded-[3px]',     () => { setup('indigo'); expect(span.className).toContain('rounded-[3px]'); });
-  it('inner span has py-[1px]',          () => { setup('indigo'); expect(span.className).toContain('py-[1px]'); });
+  it('inner span has py-nano',           () => { setup('indigo'); expect(span.className).toContain('py-nano'); });
   it('inner span has whitespace-nowrap', () => { setup('indigo'); expect(span.className).toContain('whitespace-nowrap'); });
   it('inner span has print:text-print-2xs', () => { setup('indigo'); expect(span.className).toContain('print:text-print-2xs'); });
 

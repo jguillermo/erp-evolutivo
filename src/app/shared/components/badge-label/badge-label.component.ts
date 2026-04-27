@@ -16,7 +16,7 @@ export type BadgeLabelVariant = keyof typeof BADGE_LABEL_VARIANTS;
   imports: [BadgeComponent, NgClass],
   host: {
     '[attr.data-testid]': 'testId() ?? null',
-    'class': 'flex items-center gap-[6px]',
+    'class': 'flex items-center gap-md',
   },
   template: `
     <app-badge [color]="badgeColor()" [testId]="badgeTestId()">{{ badgeText() }}</app-badge>

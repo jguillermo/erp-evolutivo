@@ -43,7 +43,7 @@ describe('ComparisonRowComponent', () => {
   it('renders description with print class', () => {
     const desc = fixture.debugElement.queryAll(By.css('p'))[1].nativeElement as HTMLElement;
     expect(desc.className).toContain('print:text-print-xs');
-    expect(desc.className).toContain('pl-2');
+    expect(desc.className).toContain('pl-lg');
   });
 
   it('projects description content', () => {

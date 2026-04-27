@@ -30,7 +30,7 @@ describe('QuotedTextComponent', () => {
     expect(p.className).toContain('border-l-2');
     expect(p.className).toContain('border-accent-400');
     expect(p.className).toContain('italic');
-    expect(p.className).toContain('pl-2');
+    expect(p.className).toContain('pl-lg');
   });
 
   it('renders paragraph with print classes', () => {

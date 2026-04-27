@@ -28,16 +28,16 @@ describe('CanvasComponent — Typography', () => {
     expect(cardSource).toContain('tracking-[1px]');
   });
 
-  it('card title margin-bottom is 8px (mb-2)', () => {
-    expect(cardSource).toContain('mb-2');
+  it('card title margin-bottom is 8px (mb-lg)', () => {
+    expect(cardSource).toContain('mb-lg');
   });
 
   it('card title display is flex', () => {
     expect(cardSource).toContain('flex items-center');
   });
 
-  it('card title gap is 5px (gap-[5px])', () => {
-    expect(cardSource).toContain('gap-[5px]');
+  it('card title gap is 6px (gap-md)', () => {
+    expect(cardSource).toContain('gap-md');
   });
 
   // ── List item (Tailwind classes in ListItemComponent) ─────────────────────
@@ -50,12 +50,12 @@ describe('CanvasComponent — Typography', () => {
     expect(listItemSource).toContain('leading-[1.45]');
   });
 
-  it('list-item padding-left is 12px (pl-[12px])', () => {
-    expect(listItemSource).toContain('pl-[12px]');
+  it('list-item padding-left is 12px (pl-xl)', () => {
+    expect(listItemSource).toContain('pl-xl');
   });
 
-  it('list-item padding-top/bottom is 3px (py-[3px])', () => {
-    expect(listItemSource).toContain('py-[3px]');
+  it('list-item padding-top/bottom is 4px (py-sm)', () => {
+    expect(listItemSource).toContain('py-sm');
   });
 
   it("list-item bullet content is '▸'", () => {
@@ -76,12 +76,12 @@ describe('CanvasComponent — Typography', () => {
     expect(cardSource).toContain('italic');
   });
 
-  it('card question margin-bottom is 8px (mb-2)', () => {
-    expect(cardSource).toContain('mb-2');
+  it('card question margin-bottom is 8px (mb-lg)', () => {
+    expect(cardSource).toContain('mb-lg');
   });
 
-  it('card question padding-bottom is 6px (pb-[6px])', () => {
-    expect(cardSource).toContain('pb-[6px]');
+  it('card question padding-bottom is 6px (pb-md)', () => {
+    expect(cardSource).toContain('pb-md');
   });
 
   // ── Value statement (Tailwind in QuotedTextComponent) ────────────────────
@@ -94,8 +94,8 @@ describe('CanvasComponent — Typography', () => {
     expect(quotedTextSource).toContain('leading-[1.5]');
   });
 
-  it('value-statement padding-left is 2 (pl-2)', () => {
-    expect(quotedTextSource).toContain('pl-2');
+  it('value-statement padding-left (pl-lg)', () => {
+    expect(quotedTextSource).toContain('pl-lg');
   });
 
   it('value-statement is italic', () => {
@@ -128,9 +128,9 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Segment meta (inline Tailwind in canvas.component.html) ──────────────
 
-  it('segment-meta has padding (px-[6px] py-[3px])', () => {
-    expect(templateHtml).toContain('px-[6px]');
-    expect(templateHtml).toContain('py-[3px]');
+  it('segment-meta has padding (px-md py-sm)', () => {
+    expect(templateHtml).toContain('px-md');
+    expect(templateHtml).toContain('py-sm');
   });
 
   it('segment tier desc uses text-2xs token', () => {
@@ -191,8 +191,8 @@ describe('CanvasComponent — Typography', () => {
     expect(cardSource).toContain('rounded-[10px]');
   });
 
-  it('card inner div padding is 12px (p-3)', () => {
-    expect(cardSource).toContain('p-3');
+  it('card inner div padding is 12px (p-xl)', () => {
+    expect(cardSource).toContain('p-xl');
   });
 
   it('card bar height is 3px (h-[3px])', () => {

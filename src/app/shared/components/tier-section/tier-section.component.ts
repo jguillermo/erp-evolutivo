@@ -9,11 +9,11 @@ import { BadgeColor } from '../badge/badge.component';
   imports: [BadgeLabelComponent, ListComponent],
   host: {
     '[attr.data-testid]': 'testId() ?? null',
-    'class': 'block mt-2',
+    'class': 'block mt-lg',
   },
   template: `
     <app-badge-label
-      class="mb-[2px]"
+      class="mb-xs"
       variant="description"
       [badgeColor]="badgeColor()"
       [badgeText]="badgeText()"

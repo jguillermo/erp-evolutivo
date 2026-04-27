@@ -26,8 +26,8 @@ export type CardColor = keyof typeof CARD_COLORS;
     'class': 'block',
   },
   template: `
-    <div class="relative overflow-hidden bg-surface border border-line rounded-[10px] p-3 h-full
-               print:rounded-[6px] print:px-[8px] print:py-[6px] print:break-inside-avoid"
+    <div class="relative overflow-hidden bg-surface border border-line rounded-[10px] p-xl h-full
+               print:rounded-[6px] print:px-lg print:py-md print:break-inside-avoid"
          cdkMonitorSubtreeFocus>
 
       <!-- Color bar -->
@@ -40,8 +40,8 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Title -->
       <h3
-        class="text-xs uppercase tracking-[1px] mb-2 flex items-center gap-[5px]
-               print:text-print-sm print:mb-1"
+        class="text-xs uppercase tracking-[1px] mb-lg flex items-center gap-md
+               print:text-print-sm print:mb-sm"
         [ngClass]="colors().title"
         [attr.data-testid]="testId() + '-title'">
         <span aria-hidden="true">{{ emoji() }}</span>{{ title() }}
@@ -49,9 +49,9 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Question -->
       <p
-        class="text-2xs text-gray-500 italic mb-2 pb-[6px]
+        class="text-2xs text-gray-500 italic mb-lg pb-md
                border-b border-dashed border-line
-               print:text-print-xs print:mb-1 print:pb-[3px]"
+               print:text-print-xs print:mb-sm print:pb-sm"
         [attr.data-testid]="testId() + '-question'">
         {{ question() }}
       </p>
