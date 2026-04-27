@@ -119,6 +119,13 @@ El `@page` size (A3 landscape) se declara en `src/styles.css` como regla global 
 | `ButtonComponent` | `app-button` | ✅ Creado | `FocusMonitor` |
 | `AlertComponent` | `app-alert` | ✅ Creado | — |
 | `TooltipComponent` | `app-tooltip` | ✅ Creado | — |
+| `QuotedTextComponent` | `app-quoted-text` | ✅ Creado | — |
+| `BadgeLabelComponent` | `app-badge-label` | ✅ Creado | — |
+| `ComparisonRowComponent` | `app-comparison-row` | ✅ Creado | — |
+| `TierSectionComponent` | `app-tier-section` | ✅ Creado | — |
+| `StatRowComponent` | `app-stat-row` | ✅ Creado | — |
+| `PageHeaderComponent` | `app-page-header` | ✅ Creado | — |
+| `EmptyStateComponent` | `app-empty-state` | ✅ Creado | — |
 
 ---
 
@@ -205,6 +212,128 @@ ARIA: `role="alert"` (error) / `role="status"` (resto). `aria-live` automático.
 | `testId` | `string` | — | `data-testid` |
 
 Visibilidad: CSS `opacity-0` → `opacity-100` via `group-hover:` y `group-focus-within:`.
+
+### `app-quoted-text`
+
+```html
+<app-quoted-text testId="card-4-value-statement">
+  Texto con borde izquierdo cyan e itálica.
+</app-quoted-text>
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `testId` | `string` | No | `data-testid` en el host |
+
+Proyecta contenido en un `<p>` con `border-l-2 border-[#22d3ee] italic`. Uso: frases de posicionamiento, citas estratégicas.
+
+### `app-badge-label`
+
+```html
+<app-badge-label
+  variant="title"
+  badgeColor="amber-solid"
+  badgeTestId="badge-7-1"
+  badgeText="BEACHHEAD"
+  labelText="Foco de lanzamiento"
+/>
+```
+
+| Input | Tipo | Requerido | Valores |
+|---|---|---|---|
+| `badgeColor` | `BadgeColor` | **Sí** | mismos que `app-badge` |
+| `badgeText` | `string` | **Sí** | texto del badge |
+| `badgeTestId` | `string` | **Sí** | `data-testid` del badge |
+| `labelText` | `string` | **Sí** | texto del span descriptor |
+| `variant` | `BadgeLabelVariant` | No (`'description'`) | `'title'` · `'description'` |
+| `testId` | `string` | No | `data-testid` en el host |
+
+Variantes: **title** → `text-[#fef3c7] font-bold` · **description** → `text-[#9ca3af]`
+
+### `app-comparison-row`
+
+```html
+<app-comparison-row competitor="Odoo / Otros" testId="card-4-vs-label-2">
+  <span class="hl-ai">IA asesora integrada</span> + solo pagas módulos que usas
+</app-comparison-row>
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `competitor` | `string` | **Sí** | Nombre del competidor (sin "vs.") |
+| `testId` | `string` | No | `data-testid` en el host |
+
+Renderiza el patrón `vs. X:` + descripción proyectada. Uso: dentro de `app-section variant="info"`.
+
+### `app-tier-section`
+
+```html
+<app-tier-section
+  testId="card-7-tier-2"
+  badgeColor="amber"
+  badgeTestId="badge-7-2"
+  badgeText="FASE 2"
+  tierDescription="4–15 personas · descripción"
+  listTestId="card-7-list-2">
+  <app-list-item>Restaurantes</app-list-item>
+</app-tier-section>
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `badgeColor` | `BadgeColor` | **Sí** | color del badge |
+| `badgeText` | `string` | **Sí** | texto del badge |
+| `badgeTestId` | `string` | **Sí** | `data-testid` del badge |
+| `tierDescription` | `string` | **Sí** | descripción del segmento |
+| `listTestId` | `string` | **Sí** | `data-testid` de la lista |
+| `testId` | `string` | No | `data-testid` en el host |
+
+Encapsula el patrón badge + descripción + lista. Proyecta `app-list-item` elementos.
+
+### `app-stat-row`
+
+```html
+<app-stat-row label="Suscripción mensual" value="S/ 99" variant="highlighted" testId="sr-1" />
+```
+
+| Input | Tipo | Requerido | Valores |
+|---|---|---|---|
+| `label` | `string` | **Sí** | texto de la etiqueta |
+| `value` | `string` | **Sí** | valor a mostrar |
+| `variant` | `StatRowVariant` | No (`'default'`) | `'default'` · `'highlighted'` · `'ai'` |
+| `testId` | `string` | No | `data-testid` |
+
+Variantes de color del valor: **default** → `#e2e8f0` · **highlighted** → `#4ade80` · **ai** → `#f9a8d4`
+
+### `app-page-header`
+
+```html
+<app-page-header emoji="🌳" title="Árbol Evolutivo" subtitle="Descripción opcional" testId="header-1" />
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `emoji` | `string` | **Sí** | emoji de la página |
+| `title` | `string` | **Sí** | título principal |
+| `subtitle` | `string` | No | descripción bajo el título |
+| `testId` | `string` | No | `data-testid` |
+
+Uso: encabezado estándar para todas las rutas de features.
+
+### `app-empty-state`
+
+```html
+<app-empty-state emoji="🚧" title="Próximamente" description="Esta sección está en construcción." />
+```
+
+| Input | Tipo | Requerido | Descripción |
+|---|---|---|---|
+| `title` | `string` | **Sí** | título del estado vacío |
+| `emoji` | `string` | No (`'🚧'`) | emoji decorativo |
+| `description` | `string` | No | texto explicativo |
+| `testId` | `string` | No | `data-testid` |
+
+Uso: placeholder para rutas no implementadas (`/tree`, `/ai`, `/triggers`, `/pricing`).
 
 ---
 

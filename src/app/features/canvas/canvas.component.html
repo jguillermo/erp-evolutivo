@@ -80,19 +80,14 @@
       [style.gridColumn]="'5/7'"
       [style.gridRow]="'1/3'">
 
-      <p class="text-[0.78rem] text-[#e2e8f0] leading-[1.5] border-l-2 border-[#22d3ee] pl-2 italic
-                print:text-[8px] print:leading-[1.35]"
-         data-testid="card-4-value-statement">
+      <app-quoted-text testId="card-4-value-statement">
         Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.
-      </p>
+      </app-quoted-text>
 
       <app-section variant="info" testId="card-4-vs">
-        <p class="text-[0.65rem] text-[#94a3b8] font-bold mt-0 mb-[1px]" data-testid="card-4-vs-label-1">vs. Libreta y Excel:</p>
-        <p class="text-[0.72rem] text-[#e2e8f0] pl-2 mb-[2px] print:text-[7.5px]">Digitalización sin trauma, empiezas gratis, el sistema te guía paso a paso</p>
-        <p class="text-[0.65rem] text-[#94a3b8] font-bold mt-1 mb-[1px]" data-testid="card-4-vs-label-2">vs. Odoo / Otros:</p>
-        <p class="text-[0.72rem] text-[#e2e8f0] pl-2 mb-[2px] print:text-[7.5px]"><span class="hl-ai">IA asesora integrada</span> + solo pagas módulos que usas (no paquetes fijos)</p>
-        <p class="text-[0.65rem] text-[#94a3b8] font-bold mt-1 mb-[1px]" data-testid="card-4-vs-label-3">vs. SAP / S10:</p>
-        <p class="text-[0.72rem] text-[#e2e8f0] pl-2 mb-[2px] print:text-[7.5px]">Sin implementador, sin meses de capacitacion.</p>
+        <app-comparison-row competitor="Libreta y Excel" testId="card-4-vs-label-1">Digitalización sin trauma, empiezas gratis, el sistema te guía paso a paso</app-comparison-row>
+        <app-comparison-row competitor="Odoo / Otros" testId="card-4-vs-label-2"><span class="hl-ai">IA asesora integrada</span> + solo pagas módulos que usas (no paquetes fijos)</app-comparison-row>
+        <app-comparison-row competitor="SAP / S10" testId="card-4-vs-label-3">Sin implementador, sin meses de capacitacion.</app-comparison-row>
       </app-section>
 
       <app-section variant="callout" testId="card-4-game" title="🎮 Mecánica de videojuego">
@@ -177,10 +172,14 @@
       </p>
 
       <app-section variant="highlight" testId="card-7-beachhead">
-        <div class="flex items-center gap-[6px] mb-1">
-          <app-badge color="amber-solid" testId="badge-7-1">BEACHHEAD</app-badge>
-          <span class="text-[0.65rem] font-bold text-[#fef3c7] print:text-[7px]">Foco de lanzamiento</span>
-        </div>
+        <app-badge-label
+          class="mb-1"
+          variant="title"
+          badgeColor="amber-solid"
+          badgeTestId="badge-7-1"
+          badgeText="BEACHHEAD"
+          labelText="Foco de lanzamiento"
+        />
         <p class="text-[0.62rem] text-[#fde68a] leading-[1.4] mb-1 print:text-[6.5px]">
           1–3 personas · Lima · Hoy usa libreta o Excel · El dolor más inmediato: no saber cuánto vendió ni facturar bien a SUNAT
         </p>
@@ -191,25 +190,29 @@
         </app-list>
       </app-section>
 
-      <div class="flex items-center gap-[6px] mt-2 mb-[2px]" data-testid="card-7-tier-2">
-        <app-badge color="amber" testId="badge-7-2">FASE 2</app-badge>
-        <span class="text-[0.62rem] text-[#9ca3af] leading-[1.3] print:text-[6.5px]">4–15 personas · Probó algún sistema y lo dejó · Necesita inventario, equipo y finanzas</span>
-      </div>
-      <app-list testId="card-7-list-2">
+      <app-tier-section
+        testId="card-7-tier-2"
+        badgeColor="amber"
+        badgeTestId="badge-7-2"
+        badgeText="FASE 2"
+        tierDescription="4–15 personas · Probó algún sistema y lo dejó · Necesita inventario, equipo y finanzas"
+        listTestId="card-7-list-2">
         <app-list-item>🍽️ Restaurantes y food service</app-list-item>
         <app-list-item>🔧 Servicios profesionales</app-list-item>
         <app-list-item>🏭 Pequeños productores y talleres</app-list-item>
-      </app-list>
+      </app-tier-section>
 
-      <div class="flex items-center gap-[6px] mt-2 mb-[2px]" data-testid="card-7-tier-3">
-        <app-badge color="orange-dim" testId="badge-7-3">FASE 3</app-badge>
-        <span class="text-[0.62rem] text-[#9ca3af] leading-[1.3] print:text-[6.5px]">16–50 personas · Múltiples locales · Necesita integración, analítica y predicción</span>
-      </div>
-      <app-list testId="card-7-list-3">
+      <app-tier-section
+        testId="card-7-tier-3"
+        badgeColor="orange-dim"
+        badgeTestId="badge-7-3"
+        badgeText="FASE 3"
+        tierDescription="16–50 personas · Múltiples locales · Necesita integración, analítica y predicción"
+        listTestId="card-7-list-3">
         <app-list-item>📦 Distribuidores y mayoristas</app-list-item>
         <app-list-item>🏗️ Constructoras pequeñas</app-list-item>
         <app-list-item>🌾 Agronegocios</app-list-item>
-      </app-list>
+      </app-tier-section>
     </app-card>
 
     <!-- Estructura de Costos -->
