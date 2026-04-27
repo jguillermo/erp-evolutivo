@@ -76,7 +76,7 @@ describe('ListItemComponent', () => {
   it('renders a <li> element', () => expect(li).toBeTruthy());
 
   // ── Size & spacing ─────────────────────────────────────────────────────────
-  it('has text-[0.74rem] class',     () => expect(li.className).toContain('text-[0.74rem]'));
+  it('has text-xs class',            () => expect(li.className).toContain('text-xs'));
   it('has leading-[1.45] class',     () => expect(li.className).toContain('leading-[1.45]'));
   it('has py-[3px] class',           () => expect(li.className).toContain('py-[3px]'));
   it('has pl-[12px] class',          () => expect(li.className).toContain('pl-[12px]'));
@@ -89,12 +89,12 @@ describe('ListItemComponent', () => {
   it("has before:content-['▸'] class",            () => expect(li.className).toContain("before:content-['▸']"));
   it('has before:absolute class',                 () => expect(li.className).toContain('before:absolute'));
   it('has before:left-0 class',                   () => expect(li.className).toContain('before:left-0'));
-  it('has before:text-[0.65rem] class',           () => expect(li.className).toContain('before:text-[0.65rem]'));
+  it('has before:text-2xs class',                 () => expect(li.className).toContain('before:text-2xs'));
   it('has before:text-ink-subtle class',          () => expect(li.className).toContain('before:text-ink-subtle'));
 
   // ── Print ──────────────────────────────────────────────────────────────────
-  it('has print:text-[7.5px] class',   () => expect(li.className).toContain('print:text-[7.5px]'));
+  it('has print:text-print-xs class',  () => expect(li.className).toContain('print:text-print-xs'));
   it('has print:leading-[1.35] class', () => expect(li.className).toContain('print:leading-[1.35]'));
   it('has print:pl-[10px] class',      () => expect(li.className).toContain('print:pl-[10px]'));
-  it('has print:before:text-[6px]',   () => expect(li.className).toContain('print:before:text-[6px]'));
+  it('has print:before:text-print-2xs', () => expect(li.className).toContain('print:before:text-print-2xs'));
 });

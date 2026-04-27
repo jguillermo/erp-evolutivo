@@ -35,7 +35,7 @@ describe('QuotedTextComponent', () => {
 
   it('renders paragraph with print classes', () => {
     const p = fixture.debugElement.query(By.css('p')).nativeElement as HTMLElement;
-    expect(p.className).toContain('print:text-[8px]');
+    expect(p.className).toContain('print:text-print-sm');
     expect(p.className).toContain('print:leading-[1.35]');
   });
 

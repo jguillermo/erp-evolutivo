@@ -15,7 +15,7 @@ import { Component, input } from '@angular/core';
       </h1>
     </div>
     @if (subtitle()) {
-      <p class="text-[0.85rem] text-ink-muted leading-[1.6]" data-testid="page-header-subtitle">
+      <p class="text-md text-ink-muted leading-[1.6]" data-testid="page-header-subtitle">
         {{ subtitle() }}
       </p>
     }

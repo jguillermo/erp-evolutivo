@@ -48,6 +48,70 @@ npx ng test --include="**/canvas.component.spec.ts"
 - Emoji icons and gradient text utilities (`.hl`, `.hl-ai`) are part of the design system — follow the patterns in `canvas.component.html`.
 - TypeScript strict mode is on — avoid `any`, use proper interfaces from `src/app/models/`.
 
+## Design Token Rules — MANDATORY
+
+These rules apply to **every line of generated code** without exception.
+
+### Colors — no raw hex values
+
+**NEVER** use hex colors, rgba, or Tailwind default palette names directly in templates or component constants:
+
+```html
+<!-- ❌ FORBIDDEN -->
+<div class="bg-[#1a1d27] text-[#e0e0e0] border-[#2a2d3a]">
+<div class="text-[#6366f1] bg-indigo-500">
+<div style="color: rgba(99,102,241,0.5)">
+```
+
+**ALWAYS** use the semantic tokens defined in `colors.js`:
+
+```html
+<!-- ✅ CORRECT -->
+<div class="bg-surface text-ink border-line">
+<div class="text-primary-400 bg-primary-500/20">
+<div class="text-accent-300 border-success-500/30">
+```
+
+Color tokens: `primary` · `accent` · `success` · `warning` · `danger` · `info` · `ai`  
+Surface tokens: `bg-base` · `bg-surface` · `bg-surface-raised` · `bg-surface-overlay`  
+Text tokens: `text-ink` · `text-ink-muted` · `text-ink-subtle`  
+Border tokens: `border-line` · `border-line-strong`
+
+### Typography — no arbitrary size values
+
+**NEVER** use arbitrary font sizes in templates:
+
+```html
+<!-- ❌ FORBIDDEN -->
+<h1 class="text-[0.72rem]">
+<p  class="text-[14px]">
+<span class="text-[0.85rem]">
+<h3 class="print:text-[8px]">
+```
+
+**ALWAYS** use the semantic scale defined in `typography.js`:
+
+```html
+<!-- ✅ CORRECT -->
+<h1 class="text-xs">
+<p  class="text-md">
+<span class="text-md">
+<h3 class="print:text-print-sm">
+```
+
+Screen scale: `text-2xs` · `text-xs` · `text-sm` · `text-md` · `text-base` · `text-lg` · `text-xl` · `text-2xl` · `text-3xl` · `text-4xl` · `text-5xl`  
+Print scale: `text-print-2xs` · `text-print-xs` · `text-print-sm` · `text-print-md` · `text-print-base`
+
+Font families: `font-sans` · `font-display` · `font-mono`
+
+### Where to change tokens
+
+| To change | Edit this file | Scope |
+|---|---|---|
+| Color palette or semantic alias | `colors.js` | Whole app |
+| Font sizes or families | `typography.js` | Whole app |
+| Surface / border / text colors | `colors.js` | Whole app |
+
 ## Project Context
 
 `app.md` in the repo root is a strategic product document (April 2026) containing the full business model, feature roadmap, pricing rationale, and market analysis. Read it for domain context before implementing new features.

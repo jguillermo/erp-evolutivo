@@ -16,8 +16,8 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Card title (Tailwind classes in CardComponent source) ─────────────────
 
-  it('card title font-size is 0.72rem (text-[0.72rem])', () => {
-    expect(cardSource).toContain('text-[0.72rem]');
+  it('card title uses text-xs token', () => {
+    expect(cardSource).toContain('text-xs');
   });
 
   it('card title text-transform is uppercase', () => {
@@ -42,8 +42,8 @@ describe('CanvasComponent — Typography', () => {
 
   // ── List item (Tailwind classes in ListItemComponent) ─────────────────────
 
-  it('list-item font-size is 0.74rem (text-[0.74rem])', () => {
-    expect(listItemSource).toContain('text-[0.74rem]');
+  it('list-item uses text-xs token', () => {
+    expect(listItemSource).toContain('text-xs');
   });
 
   it('list-item line-height is 1.45 (leading-[1.45])', () => {
@@ -62,14 +62,14 @@ describe('CanvasComponent — Typography', () => {
     expect(listItemSource).toContain("'▸'");
   });
 
-  it('list-item bullet font-size is 0.65rem', () => {
-    expect(listItemSource).toContain('before:text-[0.65rem]');
+  it('list-item bullet uses before:text-2xs token', () => {
+    expect(listItemSource).toContain('before:text-2xs');
   });
 
   // ── Card question (Tailwind classes in CardComponent source) ──────────────
 
-  it('card question font-size is 0.65rem (text-[0.65rem])', () => {
-    expect(cardSource).toContain('text-[0.65rem]');
+  it('card question uses text-2xs token', () => {
+    expect(cardSource).toContain('text-2xs');
   });
 
   it('card question font-style is italic', () => {
@@ -86,8 +86,8 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Value statement (Tailwind in QuotedTextComponent) ────────────────────
 
-  it('value-statement font-size is 0.78rem', () => {
-    expect(quotedTextSource).toContain('text-[0.78rem]');
+  it('value-statement uses text-sm token', () => {
+    expect(quotedTextSource).toContain('text-sm');
   });
 
   it('value-statement line-height is 1.5', () => {
@@ -104,22 +104,22 @@ describe('CanvasComponent — Typography', () => {
 
   // ── VS labels (Tailwind in ComparisonRowComponent) ───────────────────────
 
-  it('vs-label font-size is 0.65rem', () => {
-    expect(comparisonRowSource).toContain('text-[0.65rem]');
+  it('vs-label uses text-2xs token', () => {
+    expect(comparisonRowSource).toContain('text-2xs');
   });
 
   it('vs-label font-weight is bold (font-bold)', () => {
     expect(comparisonRowSource).toContain('font-bold');
   });
 
-  it('vs-text font-size is 0.72rem', () => {
-    expect(comparisonRowSource).toContain('text-[0.72rem]');
+  it('vs-text uses text-xs token', () => {
+    expect(comparisonRowSource).toContain('text-xs');
   });
 
   // ── Game section (inline Tailwind in canvas.component.html) ───────────────
 
-  it('game-text font-size is 0.68rem', () => {
-    expect(templateHtml).toContain('text-[0.68rem]');
+  it('game-text uses text-xs token', () => {
+    expect(templateHtml).toContain('text-xs');
   });
 
   it('game-text line-height is 1.45', () => {
@@ -128,31 +128,23 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Segment meta (inline Tailwind in canvas.component.html) ──────────────
 
-  it('segment-meta font-size is 0.68rem', () => {
-    expect(templateHtml).toContain('text-[0.68rem]');
-  });
-
   it('segment-meta has padding (px-[6px] py-[3px])', () => {
     expect(templateHtml).toContain('px-[6px]');
     expect(templateHtml).toContain('py-[3px]');
   });
 
-  it('segment tier desc font-size is 0.62rem', () => {
-    expect(templateHtml).toContain('text-[0.62rem]');
+  it('segment tier desc uses text-2xs token', () => {
+    expect(templateHtml).toContain('text-2xs');
   });
 
   // ── Beachhead (Tailwind in BadgeLabelComponent) ───────────────────────────
 
-  it('beachhead title font-size is 0.65rem', () => {
-    expect(badgeLabelSource).toContain('text-[0.65rem]');
+  it('beachhead title uses text-2xs token', () => {
+    expect(badgeLabelSource).toContain('text-2xs');
   });
 
   it('beachhead title font-weight is bold (font-bold)', () => {
     expect(templateHtml).toContain('font-bold');
-  });
-
-  it('beachhead desc font-size is 0.62rem', () => {
-    expect(templateHtml).toContain('text-[0.62rem]');
   });
 
   it('beachhead desc line-height is 1.4', () => {
@@ -161,16 +153,12 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Entry module (inline Tailwind in canvas.component.html) ──────────────
 
-  it('entry-module-main font-size is 0.8rem', () => {
-    expect(templateHtml).toContain('text-[0.8rem]');
+  it('entry-module-main uses text-sm token', () => {
+    expect(templateHtml).toContain('text-sm');
   });
 
   it('entry-module-main font-weight is bold (font-bold)', () => {
     expect(templateHtml).toContain('font-bold');
-  });
-
-  it('entry-module-sub font-size is 0.63rem', () => {
-    expect(templateHtml).toContain('text-[0.63rem]');
   });
 
   it('entry-module-sub line-height is 1.35', () => {
@@ -179,16 +167,12 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Section note (Tailwind in SectionComponent) ───────────────────────────
 
-  it('section note font-size is 0.68rem (text-[0.68rem] in SectionComponent)', () => {
-    expect(sectionSource).toContain('text-[0.68rem]');
+  it('section note container uses text-xs token', () => {
+    expect(sectionSource).toContain('text-xs');
   });
 
-  it('section note text color is slate-400 (text-slate-400 in SectionComponent)', () => {
-    expect(sectionSource).toContain('text-slate-400');
-  });
-
-  it('section title font-size is 0.65rem (text-[0.65rem] in SectionComponent)', () => {
-    expect(sectionSource).toContain('text-[0.65rem]');
+  it('section title uses text-2xs token', () => {
+    expect(sectionSource).toContain('text-2xs');
   });
 
   it('section title font-weight is bold (font-bold in SectionComponent)', () => {

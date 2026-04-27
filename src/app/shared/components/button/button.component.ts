@@ -10,9 +10,9 @@ export const BUTTON_VARIANTS = {
 } as const;
 
 export const BUTTON_SIZES = {
-  sm: 'text-[0.72rem] px-3 py-[5px]',
-  md: 'text-[0.82rem] px-4 py-[7px]',
-  lg: 'text-[0.9rem]  px-5 py-[9px]',
+  sm: 'text-xs px-3 py-[5px]',
+  md: 'text-sm px-4 py-[7px]',
+  lg: 'text-md px-5 py-[9px]',
 } as const;
 
 export type ButtonVariant = keyof typeof BUTTON_VARIANTS;

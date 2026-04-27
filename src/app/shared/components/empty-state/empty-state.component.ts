@@ -13,7 +13,7 @@ import { Component, input } from '@angular/core';
       {{ title() }}
     </h2>
     @if (description()) {
-      <p class="text-[0.85rem] text-ink-muted max-w-[400px] leading-[1.6]"
+      <p class="text-md text-ink-muted max-w-[400px] leading-[1.6]"
          data-testid="empty-state-description">
         {{ description() }}
       </p>

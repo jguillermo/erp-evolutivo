@@ -39,7 +39,7 @@ describe('AlertComponent', () => {
   it('container has items-start class',  () => { setup('info'); expect(container.className).toContain('items-start'); });
   it('container has rounded-[6px]',      () => { setup('info'); expect(container.className).toContain('rounded-[6px]'); });
   it('container has border class',       () => { setup('info'); expect(container.className).toContain('border'); });
-  it('container has text-[0.82rem]',     () => { setup('info'); expect(container.className).toContain('text-[0.82rem]'); });
+  it('container has text-sm',            () => { setup('info'); expect(container.className).toContain('text-sm'); });
 
   // ── ARIA ──────────────────────────────────────────────────────────────────
 

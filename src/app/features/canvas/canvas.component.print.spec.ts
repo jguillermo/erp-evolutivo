@@ -49,8 +49,8 @@ describe('CanvasComponent — Print styles', () => {
     expect(templateHtml).toContain('print:w-full');
   });
 
-  it('canvas-grid has print:text-[9px]', () => {
-    expect(templateHtml).toContain('print:text-[9px]');
+  it('canvas-grid has print:text-print-md', () => {
+    expect(templateHtml).toContain('print:text-print-md');
   });
 
   // ── Card print grid positions (Tailwind print: classes in template) ───────
@@ -99,16 +99,16 @@ describe('CanvasComponent — Print styles', () => {
     expect(cardSource).toContain('print:h-[3px]');
   });
 
-  it('card title has print:text-[8px]', () => {
-    expect(cardSource).toContain('print:text-[8px]');
+  it('card title has print:text-print-sm', () => {
+    expect(cardSource).toContain('print:text-print-sm');
   });
 
   it('card title has print:mb-1', () => {
     expect(cardSource).toContain('print:mb-1');
   });
 
-  it('card question has print:text-[6.5px]', () => {
-    expect(cardSource).toContain('print:text-[6.5px]');
+  it('card question has print:text-print-xs', () => {
+    expect(cardSource).toContain('print:text-print-xs');
   });
 
   it('card question has print:pb-[3px]', () => {
@@ -117,8 +117,8 @@ describe('CanvasComponent — Print styles', () => {
 
   // ── List item print (Tailwind print: classes in ListItemComponent) ────────
 
-  it('list-item has print:text-[7.5px]', () => {
-    expect(listItemSource).toContain('print:text-[7.5px]');
+  it('list-item has print:text-print-xs', () => {
+    expect(listItemSource).toContain('print:text-print-xs');
   });
 
   it('list-item has print:leading-[1.35]', () => {
@@ -133,8 +133,8 @@ describe('CanvasComponent — Print styles', () => {
     expect(listItemSource).toContain('print:pl-[10px]');
   });
 
-  it('list-item bullet has print:before:text-[6px]', () => {
-    expect(listItemSource).toContain('print:before:text-[6px]');
+  it('list-item bullet has print:before:text-print-2xs', () => {
+    expect(listItemSource).toContain('print:before:text-print-2xs');
   });
 
   // ── Section print (Tailwind print: classes in SectionComponent) ──────────
@@ -151,52 +151,44 @@ describe('CanvasComponent — Print styles', () => {
     expect(sectionSource).toContain('print:py-[4px]');
   });
 
-  it('section title has print:text-[7px]', () => {
-    expect(sectionSource).toContain('print:text-[7px]');
+  it('section title has print:text-print-xs', () => {
+    expect(sectionSource).toContain('print:text-print-xs');
   });
 
   // ── Canvas inline print classes ───────────────────────────────────────────
 
-  it('value-statement has print:text-[8px]', () => {
-    expect(templateHtml).toContain('print:text-[8px]');
+  it('value-statement has print:text-print-sm', () => {
+    expect(templateHtml).toContain('print:text-print-sm');
   });
 
-  it('vs-text has print:text-[7.5px]', () => {
-    expect(comparisonRowSource).toContain('print:text-[7.5px]');
+  it('vs-text has print:text-print-xs', () => {
+    expect(comparisonRowSource).toContain('print:text-print-xs');
   });
 
-  it('game-text has print:text-[7px]', () => {
-    expect(templateHtml).toContain('print:text-[7px]');
+  it('game-text has print:text-print-xs', () => {
+    expect(templateHtml).toContain('print:text-print-xs');
   });
 
-  it('segment-meta has print:text-[6.5px]', () => {
-    expect(templateHtml).toContain('print:text-[6.5px]');
+  it('segment-meta has print:text-print-xs', () => {
+    expect(templateHtml).toContain('print:text-print-xs');
   });
 
-  it('entry-module-main has print:text-[8px]', () => {
-    expect(templateHtml).toContain('print:text-[8px]');
+  it('entry-module-main has print:text-print-sm', () => {
+    expect(templateHtml).toContain('print:text-print-sm');
   });
 
-  it('entry-module-sub has print:text-[6.5px]', () => {
-    expect(templateHtml).toContain('print:text-[6.5px]');
+  it('entry-module-sub has print:text-print-xs', () => {
+    expect(templateHtml).toContain('print:text-print-xs');
   });
 
-  it('beachhead title has print:text-[7px]', () => {
-    expect(templateHtml).toContain('print:text-[7px]');
+  it('beachhead desc has print:text-print-xs', () => {
+    expect(templateHtml).toContain('print:text-print-xs');
   });
 
-  it('beachhead desc has print:text-[6.5px]', () => {
-    expect(templateHtml).toContain('print:text-[6.5px]');
-  });
-
-  it('segment tier desc has print:text-[6.5px]', () => {
-    expect(templateHtml).toContain('print:text-[6.5px]');
-  });
-
-  it('badge has print:text-[6px] (BadgeComponent)', () => {
+  it('badge has print:text-print-2xs (BadgeComponent)', () => {
     const badgeSource = readFileSync(
       join(__dir, '../../shared/components/badge/badge.component.ts'), 'utf-8'
     );
-    expect(badgeSource).toContain('print:text-[6px]');
+    expect(badgeSource).toContain('print:text-print-2xs');
   });
 });

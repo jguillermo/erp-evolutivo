@@ -34,13 +34,13 @@ export type AlertVariant = keyof typeof ALERT_STYLES;
     '[attr.aria-live]': 'variant() === "error" ? "assertive" : "polite"',
   },
   template: `
-    <div class="flex items-start gap-2 px-3 py-2 rounded-[6px] border text-[0.82rem]"
+    <div class="flex items-start gap-2 px-3 py-2 rounded-[6px] border text-sm"
          [ngClass]="styles().container">
       <span aria-hidden="true">{{ styles().icon }}</span>
       <span class="flex-1">{{ message() }}</span>
       @if (dismissible()) {
         <button class="ml-auto text-current opacity-70 hover:opacity-100 transition-opacity
-                       text-[1rem] leading-none cursor-pointer"
+                       text-base leading-none cursor-pointer"
                 [attr.aria-label]="'Dismiss ' + variant() + ' alert'"
                 (click)="onDismiss()">
           ×

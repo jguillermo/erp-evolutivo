@@ -58,7 +58,7 @@ describe('BadgeLabelComponent', () => {
     it('renders label with description classes', () => {
       const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
       expect(span.className).toContain('text-gray-400');
-      expect(span.className).toContain('text-[0.62rem]');
+      expect(span.className).toContain('text-2xs');
     });
 
     it('renders label text', () => {

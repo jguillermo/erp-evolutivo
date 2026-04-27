@@ -3,9 +3,9 @@ import { NgClass } from '@angular/common';
 
 // All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const STAT_ROW_STYLES = {
-  default:     { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-slate-200' },
-  highlighted: { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-green-400' },
-  ai:          { label: 'text-[0.65rem] text-slate-400', value: 'text-[0.78rem] font-bold text-pink-300' },
+  default:     { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-slate-200' },
+  highlighted: { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-green-400' },
+  ai:          { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-pink-300' },
 } as const;
 
 export type StatRowVariant = keyof typeof STAT_ROW_STYLES;

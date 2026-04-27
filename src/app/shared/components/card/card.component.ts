@@ -40,8 +40,8 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Title -->
       <h3
-        class="text-[0.72rem] uppercase tracking-[1px] mb-2 flex items-center gap-[5px]
-               print:text-[8px] print:mb-1"
+        class="text-xs uppercase tracking-[1px] mb-2 flex items-center gap-[5px]
+               print:text-print-sm print:mb-1"
         [ngClass]="colors().title"
         [attr.data-testid]="testId() + '-title'">
         <span aria-hidden="true">{{ emoji() }}</span>{{ title() }}
@@ -49,9 +49,9 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Question -->
       <p
-        class="text-[0.65rem] text-gray-500 italic mb-2 pb-[6px]
+        class="text-2xs text-gray-500 italic mb-2 pb-[6px]
                border-b border-dashed border-line
-               print:text-[6.5px] print:mb-1 print:pb-[3px]"
+               print:text-print-xs print:mb-1 print:pb-[3px]"
         [attr.data-testid]="testId() + '-question'">
         {{ question() }}
       </p>

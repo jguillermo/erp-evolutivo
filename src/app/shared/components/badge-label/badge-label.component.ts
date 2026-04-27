@@ -4,8 +4,8 @@ import { BadgeComponent, BadgeColor } from '../badge/badge.component';
 
 // All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const BADGE_LABEL_VARIANTS = {
-  title:       'text-[0.65rem] font-bold text-warning-100 print:text-[7px]',
-  description: 'text-[0.62rem] text-gray-400 leading-[1.3] print:text-[6.5px]',
+  title:       'text-2xs font-bold text-warning-100 print:text-print-xs',
+  description: 'text-2xs text-gray-400 leading-[1.3] print:text-print-xs',
 } as const;
 
 export type BadgeLabelVariant = keyof typeof BADGE_LABEL_VARIANTS;

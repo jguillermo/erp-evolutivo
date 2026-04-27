@@ -36,6 +36,69 @@ Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
 
 ---
 
+## Sistema de tipografía
+
+**Un solo archivo para gobernarlos todos: `typography.js` en la raíz del proyecto.**
+
+Para cambiar la fuente principal de Inter a Geist:
+```js
+// typography.js
+const fontSans = ['Geist', 'system-ui', 'sans-serif']   // ← cambio aquí
+```
+
+Para ajustar el tamaño base de todo el cuerpo:
+```js
+// typography.js
+'base': ['1.0625rem', { lineHeight: '1.5rem' }],         // ← cambio aquí
+```
+
+### Fuentes
+
+| Token | Familia | Uso |
+|---|---|---|
+| `font-sans` | Inter → system-ui | Texto por defecto en toda la app |
+| `font-display` | (alias de `font-sans`) | Headings — apuntar a una display font si se requiere |
+| `font-mono` | JetBrains Mono → Fira Code | Código, valores técnicos |
+
+### Escala de tamaños
+
+`fontSize` reemplaza la escala por defecto de Tailwind. Usar **siempre** estos tokens semánticos; nunca valores arbitrarios `text-[0.72rem]`.
+
+| Token | Tamaño | Uso |
+|---|---|---|
+| `text-2xs` | 0.625 rem / 10 px | Micro badges, timestamps, anotaciones |
+| `text-xs` | 0.72 rem / 11.5 px | Labels de tarjeta, tags, encabezados compactos |
+| `text-sm` | 0.8 rem / 12.8 px | Texto secundario, descripciones cortas |
+| `text-md` | 0.875 rem / 14 px | Cuerpo compacto, subtítulos de sección |
+| `text-base` | 1 rem / 16 px | Cuerpo estándar |
+| `text-lg` | 1.125 rem / 18 px | Subencabezados, títulos de estado vacío |
+| `text-xl` | 1.25 rem / 20 px | Encabezados de página (`page-header` title) |
+| `text-2xl` | 1.5 rem / 24 px | Títulos de sección prominente |
+| `text-3xl` | 1.875 rem / 30 px | Títulos de página principal |
+| `text-4xl` | 2.25 rem / 36 px | Display grande |
+| `text-5xl` | 3 rem / 48 px | Hero, splash |
+
+#### Tokens print
+
+Usar con el variant `print:` → `print:text-print-sm`
+
+| Token | Tamaño | Equivalente pantalla |
+|---|---|---|
+| `text-print-2xs` | 5.5 px | `text-2xs` |
+| `text-print-xs` | 6.5 px | `text-xs` |
+| `text-print-sm` | 8 px | `text-sm` / `text-md` |
+| `text-print-md` | 9 px | `text-md` |
+| `text-print-base` | 10 px | `text-base` |
+
+### Reglas
+
+1. **Nunca** valores arbitrarios de tamaño (`text-[0.72rem]`, `text-[14px]`) en templates.
+2. **Usar siempre** tokens semánticos: `text-xs`, `text-md`, `text-base`, `text-xl`, etc.
+3. Para print, usar `print:text-print-sm` en lugar de `print:text-[8px]`.
+4. Para cambiar tamaños globalmente, editar **solo** `typography.js`.
+
+---
+
 ## Sistema de colores
 
 **Un solo archivo para gobernarlos todos: `colors.js` en la raíz del proyecto.**
@@ -127,11 +190,11 @@ Regla: el componente padre es responsable de los `data-testid` de contenido proy
 
 ## Print
 
-Usar el variant `print:` de Tailwind para todas las reglas de impresión:
+Usar el variant `print:` de Tailwind para todas las reglas de impresión. Usar siempre tokens semánticos — nunca valores arbitrarios:
 
 ```html
-<h3 class="text-[0.72rem] print:text-[8px]">
-<p  class="text-[0.65rem] print:text-[6.5px]">
+<h3 class="text-xs   print:text-print-sm">
+<p  class="text-2xs  print:text-print-xs">
 ```
 
 El `@page` size (A3 landscape) se declara en `src/styles.css` como regla global — es el único CSS externo permitido para print layout.
