@@ -79,8 +79,8 @@ describe('CanvasComponent — Print styles', () => {
 
   // ── Card print box styles (Tailwind print: classes in CardComponent) ──────
 
-  it('card has print:rounded-[6px]', () => {
-    expect(cardSource).toContain('print:rounded-[6px]');
+  it('card has print:rounded-md', () => {
+    expect(cardSource).toContain('print:rounded-md');
   });
 
   it('card has print:px-lg', () => {
@@ -95,8 +95,8 @@ describe('CanvasComponent — Print styles', () => {
     expect(cardSource).toContain('print:break-inside-avoid');
   });
 
-  it('card bar has print:h-[3px]', () => {
-    expect(cardSource).toContain('print:h-[3px]');
+  it('card bar has print:h-sm', () => {
+    expect(cardSource).toContain('print:h-sm');
   });
 
   it('card title has print:text-print-sm', () => {
@@ -121,8 +121,8 @@ describe('CanvasComponent — Print styles', () => {
     expect(listItemSource).toContain('print:text-print-xs');
   });
 
-  it('list-item has print:leading-[1.35]', () => {
-    expect(listItemSource).toContain('print:leading-[1.35]');
+  it('list-item has print:leading-condensed', () => {
+    expect(listItemSource).toContain('print:leading-condensed');
   });
 
   it('list-item has print:py-nano', () => {

@@ -34,7 +34,7 @@ export type AlertVariant = keyof typeof ALERT_STYLES;
     '[attr.aria-live]': 'variant() === "error" ? "assertive" : "polite"',
   },
   template: `
-    <div class="flex items-start gap-lg px-xl py-lg rounded-[6px] border text-sm"
+    <div class="flex items-start gap-lg px-xl py-lg rounded-md border text-sm"
          [ngClass]="styles().container">
       <span aria-hidden="true">{{ styles().icon }}</span>
       <span class="flex-1">{{ message() }}</span>

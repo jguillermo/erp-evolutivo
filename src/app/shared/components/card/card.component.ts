@@ -26,21 +26,21 @@ export type CardColor = keyof typeof CARD_COLORS;
     'class': 'block',
   },
   template: `
-    <div class="relative overflow-hidden bg-surface border border-line rounded-[10px] p-xl h-full
-               print:rounded-[6px] print:px-lg print:py-md print:break-inside-avoid"
+    <div class="relative overflow-hidden bg-surface border border-line rounded-card p-xl h-full
+               print:rounded-md print:px-lg print:py-md print:break-inside-avoid"
          cdkMonitorSubtreeFocus>
 
       <!-- Color bar -->
       <div
-        class="absolute inset-x-0 top-0 h-[3px] rounded-t-[10px] bg-gradient-to-r
-               print:h-[3px]"
+        class="absolute inset-x-0 top-0 h-sm rounded-t-card bg-gradient-to-r
+               print:h-sm"
         [ngClass]="colors().bar"
         [attr.data-testid]="testId() + '-bar'">
       </div>
 
       <!-- Title -->
       <h3
-        class="text-xs uppercase tracking-[1px] mb-lg flex items-center gap-md
+        class="text-xs uppercase tracking-title mb-lg flex items-center gap-md
                print:text-print-sm print:mb-sm"
         [ngClass]="colors().title"
         [attr.data-testid]="testId() + '-title'">

@@ -62,7 +62,7 @@ describe('TooltipComponent', () => {
   it('has print:hidden class',          () => { setup('t'); expect(tooltip.className).toContain('print:hidden'); });
   it('has bg-surface class',             () => { setup('t'); expect(tooltip.className).toContain('bg-surface'); });
   it('has border class',                () => { setup('t'); expect(tooltip.className).toContain('border'); });
-  it('has rounded-[4px] class',         () => { setup('t'); expect(tooltip.className).toContain('rounded-[4px]'); });
+  it('has rounded class',                () => { setup('t'); expect(tooltip.className).toContain('rounded'); });
 
   // ── Position classes ──────────────────────────────────────────────────────
 

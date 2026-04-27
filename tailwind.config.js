@@ -11,11 +11,18 @@ module.exports = {
     // fontSize reemplaza la escala por defecto de Tailwind — usar tokens semánticos
     fontSize: appTypography.fontSize,
     extend: {
-      colors:     appColors,
-      fontFamily: appTypography.fontFamily,
-      // spacing añade los huecos intermedios (1.5px, 3px, 5px, 7px, 9px)
-      // sin tocar los valores estándar de Tailwind (px, 0.5, 1, 1.5, 2, 2.5, 3...)
-      spacing:    appSpacing,
+      colors:        appColors,
+      fontFamily:    appTypography.fontFamily,
+      lineHeight:    appTypography.lineHeight,
+      letterSpacing: appTypography.letterSpacing,
+      // spacing añade la escala semántica de letras (nano/xs/sm/md/lg/xl/2xl/3xl/4xl/5xl)
+      spacing:       appSpacing,
+      // borderRadius añade los valores de esquinas que no están en la escala estándar de Tailwind
+      // rounded(4px) y rounded-md(6px) ya existen; aquí solo los que faltan
+      borderRadius: {
+        'badge': '3px',    // rounded-badge — badges inline
+        'card':  '10px',   // rounded-card, rounded-t-card — tarjetas principales
+      },
     },
   },
   plugins: [],

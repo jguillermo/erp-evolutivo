@@ -28,7 +28,7 @@ export type ButtonSize    = keyof typeof BUTTON_SIZES;
   },
   template: `
     <button
-      class="inline-flex items-center justify-center gap-lg font-medium rounded-[6px]
+      class="inline-flex items-center justify-center gap-lg font-medium rounded-md
              transition-colors duration-150 cursor-pointer
              focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500
              disabled:opacity-50 disabled:cursor-not-allowed

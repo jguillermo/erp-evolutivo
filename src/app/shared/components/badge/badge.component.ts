@@ -29,7 +29,7 @@ export type BadgeColor = keyof typeof BADGE_COLORS;
     'class': 'inline',
   },
   template: `
-    <span class="inline-block font-bold tracking-[0.5px] rounded-[3px] py-nano whitespace-nowrap print:text-print-2xs"
+    <span class="inline-block font-bold tracking-badge rounded-badge py-nano whitespace-nowrap print:text-print-2xs"
           [ngClass]="styles()">
       <ng-content />
     </span>

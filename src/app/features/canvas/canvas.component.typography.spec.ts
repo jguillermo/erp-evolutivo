@@ -24,8 +24,8 @@ describe('CanvasComponent — Typography', () => {
     expect(cardSource).toContain('uppercase');
   });
 
-  it('card title letter-spacing is 1px (tracking-[1px])', () => {
-    expect(cardSource).toContain('tracking-[1px]');
+  it('card title letter-spacing is 1px (tracking-title)', () => {
+    expect(cardSource).toContain('tracking-title');
   });
 
   it('card title margin-bottom is 8px (mb-lg)', () => {
@@ -46,8 +46,8 @@ describe('CanvasComponent — Typography', () => {
     expect(listItemSource).toContain('text-xs');
   });
 
-  it('list-item line-height is 1.45 (leading-[1.45])', () => {
-    expect(listItemSource).toContain('leading-[1.45]');
+  it('list-item line-height is 1.45 (leading-body)', () => {
+    expect(listItemSource).toContain('leading-body');
   });
 
   it('list-item padding-left is 12px (pl-xl)', () => {
@@ -90,8 +90,8 @@ describe('CanvasComponent — Typography', () => {
     expect(quotedTextSource).toContain('text-sm');
   });
 
-  it('value-statement line-height is 1.5', () => {
-    expect(quotedTextSource).toContain('leading-[1.5]');
+  it('value-statement line-height is 1.5 (leading-normal)', () => {
+    expect(quotedTextSource).toContain('leading-normal');
   });
 
   it('value-statement padding-left (pl-lg)', () => {
@@ -122,8 +122,8 @@ describe('CanvasComponent — Typography', () => {
     expect(templateHtml).toContain('text-xs');
   });
 
-  it('game-text line-height is 1.45', () => {
-    expect(templateHtml).toContain('leading-[1.45]');
+  it('game-text line-height is 1.45 (leading-body)', () => {
+    expect(templateHtml).toContain('leading-body');
   });
 
   // ── Segment meta (inline Tailwind in canvas.component.html) ──────────────
@@ -147,8 +147,8 @@ describe('CanvasComponent — Typography', () => {
     expect(templateHtml).toContain('font-bold');
   });
 
-  it('beachhead desc line-height is 1.4', () => {
-    expect(templateHtml).toContain('leading-[1.4]');
+  it('beachhead desc line-height is 1.4 (leading-cozy)', () => {
+    expect(templateHtml).toContain('leading-cozy');
   });
 
   // ── Entry module (inline Tailwind in canvas.component.html) ──────────────
@@ -161,8 +161,8 @@ describe('CanvasComponent — Typography', () => {
     expect(templateHtml).toContain('font-bold');
   });
 
-  it('entry-module-sub line-height is 1.35', () => {
-    expect(templateHtml).toContain('leading-[1.35]');
+  it('entry-module-sub line-height is 1.35 (leading-condensed)', () => {
+    expect(templateHtml).toContain('leading-condensed');
   });
 
   // ── Section note (Tailwind in SectionComponent) ───────────────────────────
@@ -187,19 +187,19 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Card box dimensions (Tailwind classes in CardComponent source) ─────────
 
-  it('card inner div border-radius is 10px (rounded-[10px])', () => {
-    expect(cardSource).toContain('rounded-[10px]');
+  it('card inner div border-radius is 10px (rounded-card)', () => {
+    expect(cardSource).toContain('rounded-card');
   });
 
   it('card inner div padding is 12px (p-xl)', () => {
     expect(cardSource).toContain('p-xl');
   });
 
-  it('card bar height is 3px (h-[3px])', () => {
-    expect(cardSource).toContain('h-[3px]');
+  it('card bar height (h-sm)', () => {
+    expect(cardSource).toContain('h-sm');
   });
 
-  it('card bar top border-radius (rounded-t-[10px])', () => {
-    expect(cardSource).toContain('rounded-t-[10px]');
+  it('card bar top border-radius (rounded-t-card)', () => {
+    expect(cardSource).toContain('rounded-t-card');
   });
 });

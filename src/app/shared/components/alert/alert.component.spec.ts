@@ -37,7 +37,7 @@ describe('AlertComponent', () => {
 
   it('container has flex class',         () => { setup('info'); expect(container.className).toContain('flex'); });
   it('container has items-start class',  () => { setup('info'); expect(container.className).toContain('items-start'); });
-  it('container has rounded-[6px]',      () => { setup('info'); expect(container.className).toContain('rounded-[6px]'); });
+  it('container has rounded-md',          () => { setup('info'); expect(container.className).toContain('rounded-md'); });
   it('container has border class',       () => { setup('info'); expect(container.className).toContain('border'); });
   it('container has text-sm',            () => { setup('info'); expect(container.className).toContain('text-sm'); });
 

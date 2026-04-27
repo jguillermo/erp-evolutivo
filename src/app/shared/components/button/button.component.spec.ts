@@ -36,7 +36,7 @@ describe('ButtonComponent', () => {
 
   it('has inline-flex class',        () => { setup(); expect(button.className).toContain('inline-flex'); });
   it('has font-medium class',        () => { setup(); expect(button.className).toContain('font-medium'); });
-  it('has rounded-[6px] class',      () => { setup(); expect(button.className).toContain('rounded-[6px]'); });
+  it('has rounded-md class',          () => { setup(); expect(button.className).toContain('rounded-md'); });
   it('has transition-colors class',  () => { setup(); expect(button.className).toContain('transition-colors'); });
   it('has cursor-pointer class',     () => { setup(); expect(button.className).toContain('cursor-pointer'); });
   it('has print:hidden class',       () => { setup(); expect(button.className).toContain('print:hidden'); });

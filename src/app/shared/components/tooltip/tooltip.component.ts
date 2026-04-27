@@ -23,7 +23,7 @@ export type TooltipPosition = keyof typeof TOOLTIP_POSITIONS;
     <ng-content />
     <div role="tooltip"
          class="absolute z-50 px-lg py-sm text-xs font-medium text-ink
-                bg-surface border border-line rounded-[4px] whitespace-nowrap
+                bg-surface border border-line rounded whitespace-nowrap
                 shadow-lg pointer-events-none
                 opacity-0 transition-opacity duration-150
                 group-hover:opacity-100 group-focus-within:opacity-100

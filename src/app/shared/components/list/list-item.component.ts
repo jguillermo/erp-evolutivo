@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-list-item',
   standalone: true,
   template: `
-    <li class="text-xs leading-[1.45] py-sm pl-xl relative text-ink-muted
+    <li class="text-xs leading-body py-sm pl-xl relative text-ink-muted
                before:content-['▸'] before:absolute before:left-0 before:text-2xs before:text-ink-subtle
-               print:text-print-xs print:leading-[1.35] print:py-nano print:pl-xl
+               print:text-print-xs print:leading-condensed print:py-nano print:pl-xl
                print:before:text-print-2xs">
       <ng-content />
     </li>

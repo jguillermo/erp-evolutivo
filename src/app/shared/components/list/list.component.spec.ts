@@ -77,7 +77,7 @@ describe('ListItemComponent', () => {
 
   // ── Size & spacing ─────────────────────────────────────────────────────────
   it('has text-xs class',            () => expect(li.className).toContain('text-xs'));
-  it('has leading-[1.45] class',     () => expect(li.className).toContain('leading-[1.45]'));
+  it('has leading-body class',        () => expect(li.className).toContain('leading-body'));
   it('has py-sm class',              () => expect(li.className).toContain('py-sm'));
   it('has pl-xl class',              () => expect(li.className).toContain('pl-xl'));
 
@@ -94,7 +94,7 @@ describe('ListItemComponent', () => {
 
   // ── Print ──────────────────────────────────────────────────────────────────
   it('has print:text-print-xs class',  () => expect(li.className).toContain('print:text-print-xs'));
-  it('has print:leading-[1.35] class', () => expect(li.className).toContain('print:leading-[1.35]'));
+  it('has print:leading-condensed class', () => expect(li.className).toContain('print:leading-condensed'));
   it('has print:pl-xl class',          () => expect(li.className).toContain('print:pl-xl'));
   it('has print:before:text-print-2xs', () => expect(li.className).toContain('print:before:text-print-2xs'));
 });

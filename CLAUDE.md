@@ -123,6 +123,49 @@ Font families: `font-sans` · `font-display` · `font-mono`
 
 Scale reference: `nano`=1px · `xs`=2px · `sm`=4px · `md`=6px · `lg`=8px · `xl`=12px · `2xl`=16px · `3xl`=20px · `4xl`=24px · `5xl`=40px
 
+### Line-height — named tokens only
+
+**NEVER** use arbitrary line-height values:
+
+```html
+<!-- ❌ FORBIDDEN -->
+<p class="leading-[1.45]">
+<li class="leading-[1.35]">
+```
+
+**ALWAYS** use the semantic scale defined in `typography.js`:
+
+```html
+<!-- ✅ CORRECT -->
+<p class="leading-body">
+<li class="print:leading-condensed">
+```
+
+Scale: `leading-compact`=1.3 · `leading-condensed`=1.35 · `leading-cozy`=1.4 · `leading-body`=1.45 · `leading-normal`=1.5 (Tailwind std) · `leading-comfortable`=1.6
+
+### Letter-spacing & border-radius — named tokens only
+
+**NEVER** arbitrary values:
+
+```html
+<!-- ❌ FORBIDDEN -->
+<h3 class="tracking-[1px]">
+<span class="rounded-[3px]">
+<div class="rounded-[10px]">
+```
+
+**ALWAYS** use the tokens defined in `typography.js` / `tailwind.config.js`:
+
+```html
+<!-- ✅ CORRECT -->
+<h3 class="tracking-title">
+<span class="rounded-badge">
+<div class="rounded-card">
+```
+
+Tracking: `tracking-badge`=0.5px · `tracking-title`=1px  
+Radius: `rounded-badge`=3px · `rounded`=4px (Tailwind std) · `rounded-md`=6px (Tailwind std) · `rounded-card`=10px
+
 ### Where to change tokens
 
 | To change | Edit this file | Scope |
