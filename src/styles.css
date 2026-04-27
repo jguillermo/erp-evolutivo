@@ -239,15 +239,9 @@ body {
 
 /* AI badge */
 .ai-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-size: 0.6rem;
+  @apply inline-flex items-center gap-sm text-2xs py-nano px-md rounded font-bold;
   background: linear-gradient(135deg, #831843, #4c1d95);
   color: #f9a8d4;
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-weight: 700;
 }
 
 /* AI glow animation */
@@ -258,17 +252,11 @@ body {
 
 /* Feat tag base */
 .feat-tag {
-  font-size: 0.62rem;
-  padding: 2px 7px;
-  border-radius: 4px;
-  font-weight: 600;
+  @apply text-2xs py-xs px-lg rounded font-semibold;
 }
 
 .feat-ai {
-  font-size: 0.62rem;
-  padding: 2px 7px;
-  border-radius: 4px;
-  font-weight: 600;
+  @apply text-2xs py-xs px-lg rounded font-semibold;
   background: linear-gradient(135deg, #831843, #4c1d95) !important;
   color: #f9a8d4 !important;
   border: 1px solid rgba(147, 51, 234, 0.33);

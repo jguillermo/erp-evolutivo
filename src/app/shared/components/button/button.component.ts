@@ -1,6 +1,5 @@
-import { Component, computed, inject, input, output } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 import { NgClass } from '@angular/common';
-import { FocusMonitor } from '@angular/cdk/a11y';
 
 // All color tokens live here — Tailwind JIT detects them via static scan of this file
 export const BUTTON_VARIANTS = {
@@ -49,7 +48,6 @@ export class ButtonComponent {
   readonly ariaLabel = input<string>();
   readonly clicked   = output<void>();
 
-  protected readonly focusMonitor  = inject(FocusMonitor);
   protected readonly variantClasses = computed(() => BUTTON_VARIANTS[this.variant()]);
   protected readonly sizeClasses    = computed(() => BUTTON_SIZES[this.size()]);
 

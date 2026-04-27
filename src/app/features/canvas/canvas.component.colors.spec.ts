@@ -38,10 +38,10 @@ describe('CanvasComponent — Colors', () => {
     expect(inner.classList.contains('border-line')).toBe(true);
   });
 
-  it('card question has text-gray-500 class', () => {
+  it('card question has text-ink-subtle class', () => {
     const q = el.querySelector('[data-testid="card-1-question"]') as HTMLElement;
     expect(q).toBeTruthy();
-    expect(q.className).toContain('text-gray-500');
+    expect(q.className).toContain('text-ink-subtle');
   });
 
   it('card question has border-line class', () => {
@@ -134,8 +134,8 @@ describe('CanvasComponent — Colors', () => {
     expect(templateHtml).toContain('text-white');
   });
 
-  it('vs-label uses text-slate-400 in canvas template', () => {
-    expect(templateHtml).toContain('text-slate-400');
+  it('vs-label uses text-ink-muted in canvas template', () => {
+    expect(templateHtml).toContain('text-ink-muted');
   });
 
   it('segment tier desc uses text-gray-400 in badge-label source', () => {
@@ -154,8 +154,8 @@ describe('CanvasComponent — Colors', () => {
     expect(templateHtml).toContain('text-warning-200');
   });
 
-  it('game-text uses text-gray-300 in canvas template', () => {
-    expect(templateHtml).toContain('text-gray-300');
+  it('game-text uses text-ink-muted in canvas template', () => {
+    expect(templateHtml).toContain('text-ink-muted');
   });
 
   // ── Card bar gradient colors (semantic tokens via DOM) ───────────────────

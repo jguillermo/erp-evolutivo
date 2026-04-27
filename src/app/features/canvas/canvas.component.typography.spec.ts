@@ -181,8 +181,8 @@ describe('CanvasComponent — Typography', () => {
 
   // ── Highlights font-weight (in styles.css) ────────────────────────────────
 
-  it('.hl font-weight: 600 is in styles.css', () => {
-    expect(globalCss).toContain('font-weight: 600');
+  it('.feat-tag uses font-semibold (600) via @apply in styles.css', () => {
+    expect(globalCss).toContain('font-semibold');
   });
 
   // ── Card box dimensions (Tailwind classes in CardComponent source) ─────────

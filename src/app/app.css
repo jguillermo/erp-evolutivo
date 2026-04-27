@@ -1,77 +1,59 @@
 .tab-link {
-  padding: 8px 14px;
-  background: none;
-  border: none;
-  color: #22d3ee;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.3s;
+  @apply py-lg px-2xl border-none bg-transparent text-accent-400 cursor-pointer text-md font-bold no-underline transition-colors duration-300;
 }
 
 .tab-link:hover {
-  color: #67e8f9;
+  @apply text-accent-300;
 }
 
 .tab-link-light {
-  color: #1e3a5f !important;
+  color: theme('colors.primary.900') !important;
 }
 
 .tab-link-light:hover {
-  color: #312e81 !important;
+  color: theme('colors.primary.800') !important;
 }
 
 .tab-btn {
-  padding: 8px 14px;
-  border-radius: 8px;
-  border: 1px solid #2a2d3a;
-  background: #1a1d27;
-  color: #888;
-  cursor: pointer;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s;
+  @apply py-lg px-2xl rounded-card border border-line bg-surface text-ink-subtle cursor-pointer text-xs font-semibold no-underline transition-all duration-300;
 }
 
 .tab-btn:hover {
-  border-color: #4a4d5a;
-  color: #ccc;
+  @apply border-line-strong text-ink-muted;
 }
 
 .tab-active {
-  background: linear-gradient(135deg, #312e81, #1e3a5f) !important;
-  border-color: #6366f1 !important;
-  color: #a5b4fc !important;
+  background: linear-gradient(135deg, theme('colors.primary.900'), theme('colors.info.900')) !important;
+  border-color: theme('colors.primary.500') !important;
+  color: theme('colors.primary.300') !important;
 }
 
 .tab-link.tab-active {
-  background: none !important;
-  border: none !important;
-  color: #22d3ee !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: theme('colors.accent.400') !important;
 }
 
 .tab-link-light.tab-active {
-  background: none !important;
-  border: none !important;
-  color: #1e3a5f !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: theme('colors.primary.900') !important;
 }
 
 /* Light mode overrides */
 .tab-btn-light {
-  background: #fff !important;
-  border-color: #ddd !important;
-  color: #555 !important;
+  background: white !important;
+  border-color: #d4d4d8 !important;
+  color: theme('colors.ink.subtle') !important;
 }
 
 .tab-btn-light:hover {
-  border-color: #999 !important;
-  color: #222 !important;
+  border-color: #9ca3af !important;
+  color: theme('colors.ink.inverse') !important;
 }
 
 .tab-btn-light.tab-active {
-  background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
-  border-color: #6366f1 !important;
-  color: #fff !important;
+  background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.primary.700')) !important;
+  border-color: theme('colors.primary.500') !important;
+  color: white !important;
 }

@@ -79,8 +79,11 @@ const state = {
 // EXPORT
 // ─────────────────────────────────────────────────────────────────────────────
 
+const baseLight = '#f5f5f5' // light mode root background
+
 module.exports = {
   primary, accent, success, warning, danger, info, ai,
-  base, surface, line, ink,
+  base, 'base-light': baseLight,
+  surface, line, ink,
   state,
 }

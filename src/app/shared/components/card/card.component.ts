@@ -1,6 +1,5 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
-import { FocusMonitor } from '@angular/cdk/a11y';
 
 // All color tokens live here — change a token, all cards using it update automatically
 export const CARD_COLORS = {
@@ -27,8 +26,7 @@ export type CardColor = keyof typeof CARD_COLORS;
   },
   template: `
     <div class="relative overflow-hidden bg-surface border border-line rounded-card p-xl h-full
-               print:rounded-md print:px-lg print:py-md print:break-inside-avoid"
-         cdkMonitorSubtreeFocus>
+               print:rounded-md print:px-lg print:py-md print:break-inside-avoid">
 
       <!-- Color bar -->
       <div
@@ -49,7 +47,7 @@ export type CardColor = keyof typeof CARD_COLORS;
 
       <!-- Question -->
       <p
-        class="text-2xs text-gray-500 italic mb-lg pb-md
+        class="text-2xs text-ink-subtle italic mb-lg pb-md
                border-b border-dashed border-line
                print:text-print-xs print:mb-sm print:pb-sm"
         [attr.data-testid]="testId() + '-question'">
@@ -69,6 +67,4 @@ export class CardComponent {
   readonly color   = input.required<CardColor>();
 
   readonly colors = computed(() => CARD_COLORS[this.color()]);
-
-  protected readonly focusMonitor = inject(FocusMonitor);
 }

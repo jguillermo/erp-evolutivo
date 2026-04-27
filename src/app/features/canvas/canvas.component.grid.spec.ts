@@ -55,17 +55,17 @@ describe('CanvasComponent — Grid & Layout', () => {
 
   // ── Responsive breakpoints (Tailwind classes in template source) ──────────
 
-  it('responsive 1000px breakpoint collapses to 2 columns', () => {
-    expect(templateHtml).toContain('max-[1000px]:grid-cols-2');
+  it('responsive md breakpoint collapses to 2 columns', () => {
+    expect(templateHtml).toContain('max-md:grid-cols-2');
   });
 
-  it('responsive 600px breakpoint collapses to 1 column', () => {
-    expect(templateHtml).toContain('max-[600px]:grid-cols-1');
+  it('responsive sm breakpoint collapses to 1 column', () => {
+    expect(templateHtml).toContain('max-sm:grid-cols-1');
   });
 
-  it('responsive 1000px resets block grid-column to auto', () => {
-    expect(templateHtml).toContain('max-[1000px]:[grid-column:auto]');
-    expect(templateHtml).toContain('max-[1000px]:[grid-row:auto]');
+  it('responsive md breakpoint resets block grid-column to auto', () => {
+    expect(templateHtml).toContain('max-md:[grid-column:auto]');
+    expect(templateHtml).toContain('max-md:[grid-row:auto]');
   });
 
   // ── Canvas grid DOM identity ──────────────────────────────────────────────
