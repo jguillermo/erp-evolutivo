@@ -2,6 +2,9 @@
 const appColors     = require('./colors')
 const appTypography = require('./typography')
 const appSpacing    = require('./spacing')
+const appShadows    = require('./shadows')
+const appRadius     = require('./radius')
+const appScreens    = require('./screens')
 
 module.exports = {
   content: [
@@ -10,6 +13,8 @@ module.exports = {
   theme: {
     // fontSize reemplaza la escala por defecto de Tailwind — usar tokens semánticos
     fontSize: appTypography.fontSize,
+    // screens reemplaza la escala por defecto — breakpoints orientados a ERP de escritorio
+    screens:  appScreens,
     extend: {
       colors:        appColors,
       fontFamily:    appTypography.fontFamily,
@@ -17,12 +22,10 @@ module.exports = {
       letterSpacing: appTypography.letterSpacing,
       // spacing añade la escala semántica de letras (nano/xs/sm/md/lg/xl/2xl/3xl/4xl/5xl)
       spacing:       appSpacing,
-      // borderRadius añade los valores de esquinas que no están en la escala estándar de Tailwind
-      // rounded(4px) y rounded-md(6px) ya existen; aquí solo los que faltan
-      borderRadius: {
-        'badge': '3px',    // rounded-badge — badges inline
-        'card':  '10px',   // rounded-card, rounded-t-card — tarjetas principales
-      },
+      // borderRadius añade tokens semánticos sobre la escala estándar de Tailwind
+      borderRadius:  appRadius,
+      // boxShadow añade elevación semántica (card/raised/overlay)
+      boxShadow:     appShadows,
     },
   },
   plugins: [],

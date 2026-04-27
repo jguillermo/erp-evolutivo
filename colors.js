@@ -56,6 +56,26 @@ const ink = {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// STATE TOKENS — estados interactivos (hover, active, selected, disabled)
+// ─────────────────────────────────────────────────────────────────────────────
+//
+//  Estandariza el aspecto de todos los elementos interactivos.
+//  En HTML: hover:bg-state-hover  active:bg-state-active  bg-state-selected
+//
+//  hover    → superficie elevada (dropdown row al pasar el cursor)
+//  active   → superficie más elevada (click / pressed)
+//  selected → ítem seleccionado — tinte primario oscuro
+//  disabled → fondo apagado para elementos no interactivos
+// ─────────────────────────────────────────────────────────────────────────────
+
+const state = {
+  hover:    surface.raised,   // '#242838' — elevación sutil al hover
+  active:   surface.overlay,  // '#2d3148' — elevación al presionar
+  selected: primary[900],     // indigo-900 '#1e1b4b' — ítem seleccionado
+  disabled: surface.dark,     // '#0f1117' — elemento no interactivo
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // EXPORT — lo que se pasa a tailwind.config.js
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -74,4 +94,7 @@ module.exports = {
   surface,
   line,
   ink,
+
+  // Estados interactivos
+  state,
 }

@@ -173,12 +173,81 @@ Cada alias expone la escala completa de 50 a 950:
 | `text-ink-muted` | `#b0b3c0` | Texto secundario |
 | `text-ink-subtle` | `#888888` | Placeholder, timestamps |
 
+### Tokens de estado interactivo
+
+Estandarizan el aspecto de todos los elementos interactivos. Definidos en `colors.js` referenciando los tokens de superficie — cambiar una superficie actualiza todos los estados.
+
+| Token | Valor base | Uso |
+|---|---|---|
+| `bg-state-hover` | `surface-raised` (#242838) | Fila / ítem al pasar el cursor |
+| `bg-state-active` | `surface-overlay` (#2d3148) | Elemento al presionar / click |
+| `bg-state-selected` | `primary-900` (#1e1b4b) | Ítem seleccionado / activo en lista |
+| `bg-state-disabled` | `surface-dark` (#0f1117) | Elemento no interactivo |
+
+En HTML: `hover:bg-state-hover` · `active:bg-state-active` · `bg-state-selected` · `bg-state-disabled`
+
 ### Reglas
 
 1. **Nunca** valores hex sueltos (`#6366f1`, `rgba(...)`) en templates ni constantes de componente.
 2. **Usar siempre** aliases semánticos: `primary-500` en vez de `indigo-500`.
 3. Las constantes de componente (`CARD_COLORS`, `BADGE_COLORS`, etc.) siguen existiendo para que Tailwind JIT las detecte, pero ya referencian tokens nombrados.
 4. Para opacidad usa la sintaxis `/`: `bg-primary-500/20`, `border-success-500/30`.
+5. Para estados interactivos, usar siempre `bg-state-*` en lugar de implementar hover/active ad-hoc por componente.
+
+---
+
+## Sistema de sombras
+
+**Un solo archivo para gobernarlos todos: `shadows.js` en la raíz del proyecto.**
+
+Escala semántica de elevación basada en el color de base (`#0f1117`) con opacidades crecientes. Para cambiar el tinte global, editar solo `shadows.js`.
+
+| Token | Opacidad | Uso |
+|---|---|---|
+| `shadow-card` | 50% | Tarjetas, paneles con elevación sutil |
+| `shadow-raised` | 60% | Dropdowns, tooltips, elementos flotantes |
+| `shadow-overlay` | 75% | Modales, drawers, sheets |
+
+En HTML: `shadow-card` · `shadow-raised` · `shadow-overlay`
+
+### Reglas
+
+1. **Nunca** valores `box-shadow` arbitrarios en templates.
+2. **Usar siempre** los tres tokens semánticos según el nivel de elevación del elemento.
+
+---
+
+## Sistema de radio de borde
+
+**Un solo archivo para gobernarlos todos: `radius.js` en la raíz del proyecto.**
+
+Se añade sobre la escala estándar de Tailwind (`rounded`=4px, `rounded-md`=6px). Usar siempre estos tokens; nunca valores arbitrarios `rounded-[10px]`.
+
+| Token | Valor | Uso |
+|---|---|---|
+| `rounded-badge` | 3 px | Badges inline, tags pequeños |
+| `rounded-card` | 10 px | Tarjetas principales, paneles |
+| `rounded-panel` | 14 px | Modales, drawers, sheets grandes |
+
+En HTML: `rounded-badge` · `rounded-card` · `rounded-panel`
+
+---
+
+## Breakpoints
+
+**Un solo archivo para gobernarlos todos: `screens.js` en la raíz del proyecto.**
+
+Reemplaza la escala estándar de Tailwind con breakpoints orientados a ERP de escritorio.
+
+| Token | Valor | Dispositivo objetivo |
+|---|---|---|
+| `sm` | 640 px | Tablet / móvil landscape |
+| `md` | 1024 px | Laptop estándar |
+| `lg` | 1280 px | Desktop |
+| `xl` | 1440 px | Desktop grande |
+| `2xl` | 1920 px | Ultrawide |
+
+En HTML: `sm:px-0` · `md:grid-cols-2` · `lg:grid-cols-3` · `xl:gap-xl`
 
 ---
 
@@ -186,7 +255,7 @@ Cada alias expone la escala completa de 50 a 950:
 
 ```html
 <!-- ✅ Correcto -->
-<div class="bg-surface border border-line rounded-[10px] p-3">
+<div class="bg-surface border border-line rounded-card p-xl">
 
 <!-- ✅ Correcto — grid span con valores arbitrarios Tailwind -->
 <app-card class="[grid-column:1/3] [grid-row:1/3]
@@ -353,7 +422,7 @@ Visibilidad: CSS `opacity-0` → `opacity-100` via `group-hover:` y `group-focus
 |---|---|---|---|
 | `testId` | `string` | No | `data-testid` en el host |
 
-Proyecta contenido en un `<p>` con `border-l-2 border-[#22d3ee] italic`. Uso: frases de posicionamiento, citas estratégicas.
+Proyecta contenido en un `<p>` con `border-l-2 border-accent-300 italic`. Uso: frases de posicionamiento, citas estratégicas.
 
 ### `app-badge-label`
 
@@ -376,7 +445,7 @@ Proyecta contenido en un `<p>` con `border-l-2 border-[#22d3ee] italic`. Uso: fr
 | `variant` | `BadgeLabelVariant` | No (`'description'`) | `'title'` · `'description'` |
 | `testId` | `string` | No | `data-testid` en el host |
 
-Variantes: **title** → `text-[#fef3c7] font-bold` · **description** → `text-[#9ca3af]`
+Variantes: **title** → `text-warning-100 font-bold` · **description** → `text-ink-muted`
 
 ### `app-comparison-row`
 
@@ -431,7 +500,7 @@ Encapsula el patrón badge + descripción + lista. Proyecta `app-list-item` elem
 | `variant` | `StatRowVariant` | No (`'default'`) | `'default'` · `'highlighted'` · `'ai'` |
 | `testId` | `string` | No | `data-testid` |
 
-Variantes de color del valor: **default** → `#e2e8f0` · **highlighted** → `#4ade80` · **ai** → `#f9a8d4`
+Variantes de color del valor: **default** → `text-ink` · **highlighted** → `text-success-400` · **ai** → `text-ai-300`
 
 ### `app-page-header`
 
@@ -489,16 +558,16 @@ Los tests verifican **clases Tailwind** vía `data-testid`, no valores CSS compu
 ```typescript
 it('card title has correct color class', () => {
   const title = el.querySelector('[data-testid="card-1-title"]') as HTMLElement;
-  expect(title.className).toContain('text-[#a78bfa]');
+  expect(title.className).toContain('text-ai-400');
 });
 
 it('card title has correct font size class', () => {
-  expect(title.className).toContain('text-[0.72rem]');
+  expect(title.className).toContain('text-xs');
   expect(title.className).toContain('uppercase');
-  expect(title.className).toContain('tracking-[1px]');
+  expect(title.className).toContain('tracking-title');
 });
 
 it('card title has print font size class', () => {
-  expect(title.className).toContain('print:text-[8px]');
+  expect(title.className).toContain('print:text-print-sm');
 });
 ```
