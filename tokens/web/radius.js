@@ -1,7 +1,7 @@
 /** @type {Record<string, string>} */
 
 // ─────────────────────────────────────────────────────────────────────────────
-// RADIO DE BORDE — tokens semánticos de esquinas
+// RADIO DE BORDE WEB — tokens semánticos de esquinas para escritorio / tablet
 // ─────────────────────────────────────────────────────────────────────────────
 //
 //  Se añade sobre la escala estándar de Tailwind (rounded=4px, rounded-md=6px…).

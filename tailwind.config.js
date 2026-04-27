@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-const appColors     = require('./colors')
-const appTypography = require('./typography')
-const appSpacing    = require('./spacing')
-const appShadows    = require('./shadows')
-const appRadius     = require('./radius')
-const appScreens    = require('./screens')
+const { getTokens } = require('./tokens')
+
+// ─────────────────────────────────────────────────────────────────────────────
+// VIEWPORT — cambiar aquí para alternar entre escalas de tamaño
+// ─────────────────────────────────────────────────────────────────────────────
+//
+//  'web'    → escala compacta para escritorio / tablet (densidad alta)
+//  'mobile' → escala ampliada para pantallas táctiles (legibilidad prioritaria)
+//
+// ─────────────────────────────────────────────────────────────────────────────
+const tokens = getTokens('web')
 
 module.exports = {
   content: [
@@ -12,20 +17,17 @@ module.exports = {
   ],
   theme: {
     // fontSize reemplaza la escala por defecto de Tailwind — usar tokens semánticos
-    fontSize: appTypography.fontSize,
+    fontSize: tokens.fontSize,
     // screens reemplaza la escala por defecto — breakpoints orientados a ERP de escritorio
-    screens:  appScreens,
+    screens:  tokens.screens,
     extend: {
-      colors:        appColors,
-      fontFamily:    appTypography.fontFamily,
-      lineHeight:    appTypography.lineHeight,
-      letterSpacing: appTypography.letterSpacing,
-      // spacing añade la escala semántica de letras (nano/xs/sm/md/lg/xl/2xl/3xl/4xl/5xl)
-      spacing:       appSpacing,
-      // borderRadius añade tokens semánticos sobre la escala estándar de Tailwind
-      borderRadius:  appRadius,
-      // boxShadow añade elevación semántica (card/raised/overlay)
-      boxShadow:     appShadows,
+      colors:        tokens.colors,
+      fontFamily:    tokens.fontFamily,
+      lineHeight:    tokens.lineHeight,
+      letterSpacing: tokens.letterSpacing,
+      spacing:       tokens.spacing,
+      borderRadius:  tokens.borderRadius,
+      boxShadow:     tokens.boxShadow,
     },
   },
   plugins: [],

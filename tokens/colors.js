@@ -71,30 +71,16 @@ const ink = {
 const state = {
   hover:    surface.raised,   // '#242838' — elevación sutil al hover
   active:   surface.overlay,  // '#2d3148' — elevación al presionar
-  selected: primary[900],     // indigo-900 '#1e1b4b' — ítem seleccionado
+  selected: primary[900],     // indigo-900 — ítem seleccionado
   disabled: surface.dark,     // '#0f1117' — elemento no interactivo
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// EXPORT — lo que se pasa a tailwind.config.js
+// EXPORT
 // ─────────────────────────────────────────────────────────────────────────────
 
 module.exports = {
-  // Aliases semánticos (usar SIEMPRE estos en los templates)
-  primary,
-  accent,
-  success,
-  warning,
-  danger,
-  info,
-  ai,
-
-  // Sistema de superficies
-  base,
-  surface,
-  line,
-  ink,
-
-  // Estados interactivos
+  primary, accent, success, warning, danger, info, ai,
+  base, surface, line, ink,
   state,
 }

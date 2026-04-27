@@ -1,7 +1,7 @@
 /** @type {Record<string, string>} */
 
 // ─────────────────────────────────────────────────────────────────────────────
-// ESPACIADO — escala semántica con claves de letras (reemplaza los números intermedios)
+// ESPACIADO WEB — escala semántica para pantalla de escritorio / tablet
 // ─────────────────────────────────────────────────────────────────────────────
 //
 //  Se añade sobre la escala estándar de Tailwind (0.5=2px, 1=4px, 2=8px, ...).

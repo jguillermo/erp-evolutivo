@@ -38,11 +38,11 @@ Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
 
 ## Sistema de espaciado
 
-**Un solo archivo para gobernarlos todos: `spacing.js` en la raíz del proyecto.**
+**`tokens/web/spacing.js`** para web · **`tokens/mobile/spacing.js`** para móvil.
 
 La escala usa claves semánticas de letras (`nano`, `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, `4xl`, `5xl`) que se añaden a la escala estándar de Tailwind vía `theme.extend.spacing`. Las claves de letras son inconfundibles con los valores numéricos de Tailwind.
 
-Para cambiar el espaciado global, edita los valores en `spacing.js`. Todos los componentes se actualizan automáticamente.
+Para cambiar el espaciado global, edita el archivo del viewport activo. El viewport se selecciona en `tailwind.config.js` con `getTokens('web')` o `getTokens('mobile')`.
 
 ### Escala semántica
 
@@ -71,17 +71,17 @@ En HTML: `py-nano` · `px-sm` · `gap-md` · `mb-lg` · `p-xl` · `px-2xl` · `m
 
 ## Sistema de tipografía
 
-**Un solo archivo para gobernarlos todos: `typography.js` en la raíz del proyecto.**
+**`tokens/typography.js`** para familias, interlineado y tracking · **`tokens/web/typography.js`** / **`tokens/mobile/typography.js`** para tamaños de fuente.
 
 Para cambiar la fuente principal de Inter a Geist:
 ```js
-// typography.js
+// tokens/typography.js
 const fontSans = ['Geist', 'system-ui', 'sans-serif']   // ← cambio aquí
 ```
 
-Para ajustar el tamaño base de todo el cuerpo:
+Para ajustar el tamaño base del cuerpo en web:
 ```js
-// typography.js
+// tokens/web/typography.js
 'base': ['1.0625rem', { lineHeight: '1.5rem' }],         // ← cambio aquí
 ```
 
@@ -134,11 +134,11 @@ Usar con el variant `print:` → `print:text-print-sm`
 
 ## Sistema de colores
 
-**Un solo archivo para gobernarlos todos: `colors.js` en la raíz del proyecto.**
+**`tokens/colors.js`** — viewport-agnostic, único punto para colores.
 
 Para cambiar el color primario de indigo a azul, basta editar una línea:
 ```js
-// colors.js
+// tokens/colors.js
 const primary = twColors.blue   // ← cambio aquí, toda la app se actualiza
 ```
 

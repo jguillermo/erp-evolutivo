@@ -192,15 +192,22 @@ Radius: `rounded-badge`=3px · `rounded`=4px (Tailwind std) · `rounded-md`=6px 
 
 ### Where to change tokens
 
+All token files live in the `tokens/` folder. The active viewport is set in `tailwind.config.js` (`getTokens('web')` or `getTokens('mobile')`).
+
 | To change | Edit this file | Scope |
 |---|---|---|
-| Color palette or semantic alias | `colors.js` | Whole app |
-| Font sizes or families | `typography.js` | Whole app |
-| Spacing / padding / margin / gap | `spacing.js` | Whole app |
-| Surface / border / text / state colors | `colors.js` | Whole app |
-| Shadow / elevation | `shadows.js` | Whole app |
-| Border radius | `radius.js` | Whole app |
-| Breakpoints | `screens.js` | Whole app |
+| Color palette or semantic alias | `tokens/colors.js` | Whole app |
+| Surface / border / text / state colors | `tokens/colors.js` | Whole app |
+| Shadow / elevation | `tokens/shadows.js` | Whole app |
+| Breakpoints | `tokens/screens.js` | Whole app |
+| Font families / leading / tracking | `tokens/typography.js` | Whole app |
+| Font sizes — web | `tokens/web/typography.js` | Web viewport |
+| Font sizes — mobile | `tokens/mobile/typography.js` | Mobile viewport |
+| Spacing — web | `tokens/web/spacing.js` | Web viewport |
+| Spacing — mobile | `tokens/mobile/spacing.js` | Mobile viewport |
+| Border radius — web | `tokens/web/radius.js` | Web viewport |
+| Border radius — mobile | `tokens/mobile/radius.js` | Mobile viewport |
+| Active viewport | `tailwind.config.js` line `getTokens(...)` | Build |
 
 ## Project Context
 
