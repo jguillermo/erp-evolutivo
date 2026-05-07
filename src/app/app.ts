@@ -25,10 +25,11 @@ export class App {
   printPage() { window.print(); }
 
   tabs: NavTab[] = [
-    { label: 'Lienzo Canvas',  route: '/canvas',  icon: '📋', visible: true  },
-    { label: 'Árbol Evolutivo',route: '/tree',    icon: '🌳', visible: false },
-    { label: 'IA Asesora',     route: '/ai',      icon: '🧠', visible: false },
-    { label: 'Triggers',       route: '/triggers',icon: '⚡', visible: false },
-    { label: 'Precios',        route: '/pricing', icon: '💰', visible: false },
+    { label: 'Lienzo Canvas',       route: '/canvas',               icon: '📋', visible: true  },
+    { label: 'Análisis Estratégico',route: '/analisis-estrategico', icon: '🧭', visible: true  },
+    { label: 'Árbol Evolutivo',     route: '/tree',                 icon: '🌳', visible: false },
+    { label: 'IA Asesora',          route: '/ai',                   icon: '🧠', visible: false },
+    { label: 'Triggers',            route: '/triggers',             icon: '⚡', visible: false },
+    { label: 'Precios',             route: '/pricing',              icon: '💰', visible: false },
   ];
 }

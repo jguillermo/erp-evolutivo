@@ -1,0 +1,394 @@
+<!-- Análisis PESTEL -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a routerLink="/analisis-estrategico"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      ← Análisis Estratégico
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="pestel-title">
+      🌍 Análisis PESTEL
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="pestel-subtitle">
+      Lectura del macroentorno — ¿qué acelera o frena la adopción del beachhead (bodegas en Lima)?
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="pestel-intro">
+    ERP Evolutivo no es un SaaS más. Es una apuesta a que un microempresario peruano, con baja
+    alfabetización digital y márgenes muy ajustados, va a digitalizar su negocio durante los
+    próximos tres años. El PESTEL no es un trámite académico: es la lectura del terreno en el que
+    esa apuesta se gana o se pierde.
+  </app-quoted-text>
+
+  <!-- ── Factores en columna ── -->
+  <div class="flex flex-col gap-3xl" data-testid="pestel-factors">
+
+    <!-- ── P: POLÍTICO ── -->
+    <app-card
+      testId="pestel-politico"
+      color="amber"
+      title="Político"
+      emoji="🏛️"
+      question="¿La presión fiscal de SUNAT actúa como viento de cola estructural?">
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        El Perú vive un ciclo crónico de inestabilidad política — cambios de presidente, congresos
+        fragmentados, ruido permanente. Para el <span class="hl">bodeguero limeño</span> ese ruido es de
+        fondo: su negocio sigue operando bajo cualquier gobierno y su decisión de adoptar un sistema
+        digital no depende de quién esté en Palacio.
+      </p>
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        Lo que sí importa, y mucho, es la
+        <span class="hl">dirección política sostenida hacia la formalización</span>. SUNAT, con apoyo
+        transversal de izquierdas y derechas (ambos sectores quieren más recaudación), ha venido bajando
+        el umbral de obligatoriedad de la facturación electrónica. Este vector
+        <span class="hl2">no se revierte con cambios de gobierno</span> — es viento de cola estructural
+        para ERP Evolutivo y no debe confundirse con la volatilidad política superficial.
+      </p>
+      <app-list testId="pestel-politico-list">
+        <app-list-item>
+          <span class="hl">Programas PYME activos:</span> Ministerio de la Producción ("Tu Empresa"),
+          COFIDE, "Compras MYPErú", INADI, cámaras de comercio sectoriales — oportunidades concretas de
+          distribución institucional en fases posteriores
+        </app-list-item>
+        <app-list-item>
+          <span class="hl2">LATAM — menor riesgo país:</span> Colombia, México y Chile ofrecen mayor
+          estabilidad institucional, reduciendo el riesgo en la fase de expansión regional
+        </app-list-item>
+      </app-list>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-politico-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          La política peruana, paradójicamente, <span class="hl2">ayuda al modelo</span>. No por
+          estabilidad, sino porque la presión fiscal hacia la formalización
+          <span class="hl">empuja al cliente hacia el producto</span>. La estrategia debe asumir esto como
+          permanente y construir el discurso de venta apoyado en esa obligación, no en una promesa
+          abstracta de "modernización".
+        </p>
+      </app-section>
+    </app-card>
+
+    <!-- ── E: ECONÓMICO ── -->
+    <app-card
+      testId="pestel-economico"
+      color="blue"
+      title="Económico"
+      emoji="💹"
+      question="¿El contexto macro hace viable el ARPU y el modelo freemium proyectados?">
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        Perú creció anémicamente post pandemia (~2–3% promedio, recesión técnica en 2023,
+        recuperación moderada en 2024–2025). Inflación controlada ~3%, salarios reales bajos y tasas
+        elevadas. Para una bodega con <span class="hl">márgenes netos del 8–15%</span> sobre ventas
+        pequeñas, cada sol de gasto fijo nuevo se siente.
+      </p>
+      <p class="text-xs text-ink-muted leading-body mb-sm">
+        Tres puntos económicos que el modelo debe internalizar:
+      </p>
+      <app-list testId="pestel-economico-list">
+        <app-list-item>
+          <span class="hl">Sensibilidad al precio estructural:</span> una bodega con
+          <span class="hl3">S/ 1,500–4,000 de utilidad mensual</span> no firma un contrato de S/ 99 al
+          mes con la misma facilidad que una empresa mediana. La disposición a pagar real puede estar
+          entre <span class="hl3">S/ 15–35 mensuales</span> en el mejor escenario — el rango S/ 29–199
+          del canvas tiene un techo difícil de tocar en el primer tier
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Riesgo cambiario silencioso:</span> las
+          <span class="hl-ai">APIs de LLM se pagan en USD</span>. Si el sol se deprecia 10–15%,
+          el costo variable del módulo IA Avanzada sube en la misma proporción mientras el precio al
+          cliente permanece en soles — erosión directa de margen premium
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">SAM efectivo reducido:</span> más del 80% del empleo peruano es informal;
+          entre las MYPEs formales muchas operan con contabilidad mínima, sin incentivo fiscal para usar
+          facturación electrónica
+        </app-list-item>
+      </app-list>
+      <app-section variant="info" testId="pestel-economico-latam" class="mt-lg">
+        <span class="hl2">LATAM como referencia:</span> México y Colombia ofrecen mercados más grandes
+        y resilientes, con clases medias emprendedoras más establecidas. Chile tiene mayor poder
+        adquisitivo por PYME pero menor densidad absoluta — relevante para priorización en Fase 2.
+      </app-section>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-economico-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          El <span class="hl">ARPU bajo es estructural</span> y no se corrige con marketing. El modelo
+          solo es viable si se cumplen tres condiciones simultáneas:
+          <span class="hl2">CAC muy bajo</span> (canal contadores + referidos),
+          <span class="hl2">churn controlado</span> (valor inmediato + gamificación) y
+          <span class="hl2">escala regional rápida</span> para acumular base. Si falla una, el negocio
+          no llega a punto de equilibrio.
+        </p>
+      </app-section>
+    </app-card>
+
+    <!-- ── S: SOCIAL ── -->
+    <app-card
+      testId="pestel-social"
+      color="cyan"
+      title="Social"
+      emoji="👥"
+      question="¿Las barreras culturales del segmento son superables con UX y canal adecuados?">
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        La demografía juega a favor: <span class="hl2">33M de habitantes, mediana de 30 años</span>,
+        Lima ~10M, penetración urbana &gt;78%. Smartphones sobre el 85% en zonas urbanas, uso cotidiano de
+        WhatsApp y Yape incluso en estratos C y D.
+      </p>
+      <p class="text-xs text-ink-muted leading-body mb-sm">
+        Sin embargo, hay tres realidades que el modelo no puede ignorar:
+      </p>
+      <app-list testId="pestel-social-list">
+        <app-list-item>
+          <span class="hl">Alfabetización digital media-baja</span> del bodeguero típico
+          (35–55 años, educación secundaria, dueño operativo): sabe usar WhatsApp y Yape, pero no
+          configura apps, no entiende "módulos" como concepto abstracto y tiene aversión natural a
+          formularios. La promesa de onboarding en &lt;10 min es el estándar de diseño correcto —
+          si el equipo no la cumple, el modelo falla en el primer contacto
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Desconfianza cultural:</span> la frase "te van a meter SUNAT" sigue
+          circulando en el imaginario del comerciante. La narrativa debe pivotar a
+          <span class="hl2">"control de tu negocio para ganar más"</span>, no a "cumple con SUNAT"
+        </app-list-item>
+        <app-list-item>
+          <span class="hl2">Generación de relevo como palanca real:</span> hijos, sobrinos y parejas
+          jóvenes (nativos digitales) son la palanca real de adopción — es el patrón Yape: el hijo le
+          instaló la app a la madre. ERP Evolutivo debe diseñar puntos de entrada para ese
+          <span class="hl-ai">"embajador interno"</span> (TikTok para jóvenes que ayudan en el
+          negocio familiar, campañas de "digitaliza el negocio de tu mamá")
+        </app-list-item>
+      </app-list>
+      <app-section variant="note" testId="pestel-social-contradiccion" class="mt-lg">
+        <span class="hl">Contradicción del pago modular:</span> "pago por uso modular" es elegante en
+        un canvas, pero el modelo mental de este usuario es binario: gratis o plano mensual fijo. Una
+        factura variable que cambia cada mes genera desconfianza. La presentación del precio debe
+        simplificarse al máximo, posiblemente con planes de techo predecible o slider visual antes
+        del cobro.
+      </app-section>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-social-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          La barrera social no es desinterés —
+          es <span class="hl">desconfianza y costo cognitivo</span>. La inversión en
+          <span class="hl-ai">UX especializado y gamificación</span> no es opcional; es la única palanca
+          para mover la curva de adopción. El <span class="hl">canal contadores</span> cobra sentido
+          aquí: no solo vende, traduce culturalmente el producto.
+        </p>
+      </app-section>
+    </app-card>
+
+    <!-- ── T: TECNOLÓGICO ── -->
+    <app-card
+      testId="pestel-tecnologico"
+      color="indigo"
+      title="Tecnológico"
+      emoji="⚙️"
+      question="¿El stack disponible hoy hace posible y viable la promesa del producto?">
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        Es la dimensión donde mejor está parado el negocio y donde el
+        <span class="hl2">"¿por qué ahora?"</span> se sostiene. Los costos de inferencia de modelos de
+        lenguaje <span class="hl2">cayeron más del 90% desde 2023</span>. Modelos on-device
+        (<span class="hl-ai">Phi, Gemma, Llama 3.2 1B/3B</span>) ya son capaces para la capa de
+        IA Básica — la afirmación de "costo ~0" es técnicamente realista en 2026, no fantasía de
+        pitch deck.
+      </p>
+      <app-list testId="pestel-tecnologico-enablers">
+        <app-list-item>
+          <span class="hl">Infraestructura cloud LATAM:</span> AWS São Paulo, GCP Santiago, Azure México —
+          latencia aceptable, precios competitivos. Lima Metropolitana: cobertura 4G/5G &gt;95% en los
+          distritos clave del beachhead
+        </app-list-item>
+        <app-list-item>
+          <span class="hl2">Pasarelas maduras:</span> Yape (BCP, +14M usuarios) y Plin (Interbank,
+          BBVA, Scotiabank) — adopción mainstream en bodegas, sin necesidad de educar al usuario en
+          un método de cobro nuevo
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">OSEs homologados SUNAT:</span> permiten tercerizar la complejidad fiscal
+          en lugar de desarrollarla in house — acelerador y, a la vez, punto de concentración de riesgo
+        </app-list-item>
+      </app-list>
+      <p class="text-xs text-ink-muted leading-body mt-lg mb-sm">
+        Tres riesgos tecnológicos que merecen atención:
+      </p>
+      <app-list testId="pestel-tecnologico-riesgos">
+        <app-list-item>
+          <span class="hl">Concentración de proveedores</span> (LLM, OSE, pasarelas): cualquiera puede
+          subir precios o cambiar términos.
+          <span class="hl2">Diseño multi-vendor desde día 1</span> es la mitigación correcta
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Ciberseguridad:</span> un incidente de phishing o filtración de datos
+          transaccionales puede destruir la reputación en un mercado donde la confianza se construye
+          lento y se pierde rápido
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Brecha de hardware en el cliente:</span> smartphone sí, PC no. La app web
+          responsive es válida para Fase 1, pero la
+          <span class="hl2">app móvil nativa de Fase 2 es habilitadora de retención</span>,
+          no un nice-to-have
+        </app-list-item>
+      </app-list>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-tecnologico-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          El stack es viable hoy de una forma que no lo era en 2022 —
+          <span class="hl2">esa ventana de oportunidad técnica es real</span> y favorece a quien llegue
+          primero con buena ejecución. Pero la viabilidad técnica no es ventaja competitiva sostenible:
+          cualquier competidor accede al mismo stack. La ventaja real se construye en el
+          <span class="hl-ai">flywheel de datos propietarios</span> y en la
+          <span class="hl">calidad del UX</span>, no en el stack en sí.
+        </p>
+      </app-section>
+    </app-card>
+
+    <!-- ── E: ECOLÓGICO ── -->
+    <app-card
+      testId="pestel-ecologico"
+      color="green"
+      title="Ecológico"
+      emoji="🌿"
+      question="¿Tiene relevancia directa el entorno ecológico en la estrategia operativa?">
+      <app-section variant="note" testId="pestel-ecologico-nota">
+        Factor de <span class="hl">baja relevancia directa</span> en las decisiones estratégicas del
+        negocio. Forzar relevancia donde no la hay debilita el análisis. Aun así, hay tres conexiones
+        reales que vale anotar.
+      </app-section>
+      <app-list testId="pestel-ecologico-list" class="mt-lg">
+        <app-list-item>
+          <span class="hl">Digitalización elimina papel</span> — boletas físicas, libretas de control,
+          archivadores de facturas. No es argumento de venta primario para el bodeguero, pero sí
+          componente válido de la
+          <span class="hl2">narrativa ESG en rondas de inversión institucional</span>
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Lima tiene riesgo sísmico estructural.</span> La arquitectura cloud
+          distribuida con redundancia geográfica es mitigación natural y puede comunicarse como parte
+          del valor en mercados donde la continuidad operativa es preocupación real
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Disrupciones climáticas</span> (Niño Costero, sequías) afectan cadenas de
+          abastecimiento de bodegas. En el largo plazo, una rama de
+          <span class="hl-ai">"continuidad operativa" / "alertas de proveedores"</span> podría
+          responder a un dolor real — fuera del scope MVP pero en el radar del roadmap
+        </app-list-item>
+      </app-list>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-ecologico-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          Baja prioridad operativa en Fases 1 y 2. Relevante únicamente para
+          <span class="hl2">storytelling de impacto en rondas de inversión</span> y para postular a
+          fondos de innovación con criterios ESG. No modificar hoja de ruta por este factor.
+        </p>
+      </app-section>
+    </app-card>
+
+    <!-- ── L: LEGAL ── -->
+    <app-card
+      testId="pestel-legal"
+      color="red"
+      title="Legal"
+      emoji="⚖️"
+      question="¿El cumplimiento regulatorio es carga o acelerador del negocio?">
+      <p class="text-xs text-ink-muted leading-body mb-sm">
+        Esta es, junto con la dimensión política, la
+        <span class="hl">palanca más fuerte y la principal carga regulatoria</span> del modelo.
+      </p>
+      <app-list testId="pestel-legal-list">
+        <app-list-item>
+          <span class="hl2">Motor del crecimiento — SUNAT:</span> la trayectoria apunta a cobertura
+          universal de microempresas formales hacia 2027–2028. Cada microempresa nueva que entra en
+          obligación es un cliente al que se le acaba de
+          <span class="hl">generar el dolor</span> — mercado que crece sin marketing propio
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Ley 29733 — Protección de Datos Personales:</span> datos transaccionales
+          procesados con <span class="hl-ai">IA</span> para "asesoría" requieren consentimiento expreso,
+          política de privacidad explícita, posiblemente DPO al escalar.
+          <span class="hl2">Privacy by design desde día 1</span> es órdenes de magnitud más barato que
+          retrofittearlo
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Ley MYPE / Régimen MYPE Tributario:</span> la rama "Equipo" debe
+          parametrizar planillas electrónicas (PLAME), CTS, gratificaciones, vacaciones. Módulo
+          frecuentemente subestimado, requiere especialización legal local por país
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">INDECOPI — publicidad comparativa:</span> cualquier comunicación
+          "vs. Odoo", "vs. Alegra" o "vs. Bsale" debe sostenerse en hechos verificables.
+          La promesa de <span class="hl-ai">"IA asesora"</span> debe ser cuidadosa —
+          INDECOPI ha sancionado claims de IA inflados en otros sectores
+        </app-list-item>
+        <app-list-item>
+          <span class="hl-ai">Regulación emergente de IA:</span> Perú sin ley específica a mayo 2026,
+          pero LATAM avanza (Brasil PL 2338/23, Chile y México con proyectos en Congreso) y el
+          EU AI Act ya está vigente. La trayectoria global apunta a
+          <span class="hl">transparencia algorítmica y derecho a explicación</span>.
+          Diseñar la IA Asesora con explicabilidad incorporada es preparación regulatoria y
+          mejor producto simultáneamente
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">Homologación OSE SUNAT:</span> barrera de entrada positiva (filtra
+          competidores improvisados) + concentración de riesgo si el OSE falla. Plan B
+          (segundo OSE o evaluación de homologación propia en Fase 3) debe estar en el radar
+        </app-list-item>
+      </app-list>
+      <app-section variant="callout" title="⚡ Implicancia estratégica" testId="pestel-legal-impl" class="mt-lg">
+        <p class="text-xs leading-body">
+          El marco legal peruano es simultáneamente acelerador y carga. La estrategia ganadora trata el
+          <span class="hl2">compliance como feature, no como costo</span>: convertir
+          "facturación electrónica garantizada", "datos protegidos por ley peruana",
+          <span class="hl-ai">"IA explicable"</span> en argumentos de venta diferenciadores.
+          Lo que para el competidor improvisado es freno, para ERP Evolutivo debe ser
+          <span class="hl">foso competitivo</span>.
+        </p>
+      </app-section>
+    </app-card>
+
+  </div>
+
+  <!-- ── SÍNTESIS EJECUTIVA ── -->
+  <div class="mt-5xl" data-testid="pestel-sintesis">
+    <app-section variant="highlight" title="📊 Síntesis ejecutiva del macroentorno" testId="pestel-sintesis-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg">
+        El PESTEL revela que el negocio nace en un terreno con
+        <span class="hl2">dos vientos de cola fuertes</span> (presión fiscal hacia formalización +
+        caída de costos de IA), <span class="hl">dos vientos de proa serios</span>
+        (sensibilidad al precio + baja alfabetización digital) y cargas regulatorias manejables que,
+        bien gestionadas, se convierten en barrera de entrada.
+      </p>
+      <app-list testId="pestel-sintesis-list">
+        <app-list-item>
+          <span class="hl2">La oportunidad es real y tiene ventana.</span> La convergencia
+          regulatoria, tecnológica y de pagos digitales no se da con esta intensidad en otros
+          mercados ni se mantendrá indefinidamente. Quien llegue primero con buena ejecución
+          captura early adopters comprometidos
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">El riesgo dominante no es macroeconómico ni regulatorio — es de adopción.</span>
+          El bodeguero no se resiste por falta de oferta, se resiste por costo cognitivo y desconfianza
+          cultural. El producto se gana o se pierde en el UX y en el canal contador, no en el feature set
+        </app-list-item>
+        <app-list-item>
+          <span class="hl">La sensibilidad al precio impone disciplina financiera.</span>
+          Con ARPU bajo estructural, la rentabilidad solo se alcanza con CAC muy bajo y escala regional
+          rápida. Valida el modelo freemium pero exige validar la disposición a pagar real
+          antes de escribir código de producción
+        </app-list-item>
+        <app-list-item>
+          <span class="hl2">El compliance es palanca, no carga.</span>
+          <span class="hl-ai">Privacy by design, IA explicable</span>, integración OSE certificada,
+          ESG ligero por desmaterialización. Convertir cada requisito legal en argumento de venta es la
+          diferencia entre un competidor que cumple y uno que <span class="hl">gana</span>
+        </app-list-item>
+      </app-list>
+      <p class="text-xs text-ink-muted leading-body mt-lg">
+        Estas conclusiones aterrizan directamente en las siguientes secciones del estudio.
+        El análisis de las <span class="hl">5 Fuerzas de Porter</span> tomará el peso del
+        costo de cambio (bajo desde Excel, alto entre ERPs) y la rivalidad real con Alegra y Bsale.
+        El <span class="hl">análisis interno</span> tendrá que confrontar la realidad de un fundador
+        único con capital semilla acotado contra un mercado que exige velocidad. La
+        <span class="hl">matriz EFE</span> recogerá explícitamente los factores macro identificados
+        aquí, con pesos ponderados según su impacto en la viabilidad del beachhead.
+      </p>
+    </app-section>
+  </div>
+
+</div>

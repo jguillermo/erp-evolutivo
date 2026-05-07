@@ -12,6 +12,27 @@ export const routes: Routes = [
     title: 'Canvas — ERP Evolutivo'
   },
   {
+    path: 'analisis-estrategico',
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/analisis-estrategico.component').then(
+            m => m.AnalisisEstrategicoComponent
+          ),
+        title: 'Análisis Estratégico — ERP Evolutivo'
+      },
+      {
+        path: 'pestel',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/pestel/pestel.component').then(
+            m => m.PestelComponent
+          ),
+        title: 'PESTEL — Análisis Estratégico'
+      }
+    ]
+  },
+  {
     path: '**',
     redirectTo: 'canvas'
   }
