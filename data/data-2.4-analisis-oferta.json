@@ -1,0 +1,282 @@
+{
+  "title": "🎪 Análisis de la Oferta",
+  "subtitle": "¿Qué oferta efectiva enfrenta el bodeguero del beachhead hoy, cómo evolucionó la curva en los últimos años y hacia dónde se mueve en el horizonte 5 años?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "El análisis tradicional de oferta describe competidores, lista productos y calcula cuotas nominales. Para ERP Evolutivo eso es estructuralmente insuficiente. La pregunta real no es *\"quiénes están ahí\"*, son tres preguntas distintas: **(a)** cuál es la oferta **efectiva** que enfrenta el bodeguero del beachhead hoy — considerando que el sustituto dominante (**Excel y libreta**) no aparece en ningún reporte sectorial pero es el competidor número uno; **(b)** cómo evolucionó la pendiente, no la foto estática; **(c)** hacia dónde se mueve en el horizonte 5 años, sabiendo que el mercado SaaS B2SMB LATAM está en aceleración (**CAGR ≈25%**) y la oferta se va a multiplicar antes de que ERP Evolutivo consolide su posición. Todas las cifras provienen de fuentes verificables (PRODUCE, SUNAT, Statista, Alegra, Siigo, Nubefact, BCRP).",
+  "sections": [
+    {
+      "id": "capa-excel",
+      "title": "Capa 1 — Excel y libreta",
+      "emoji": "📓",
+      "question": "¿Por qué el competidor #1 por volumen no aparece en ningún ranking comercial?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Es la competencia número uno y el documento maestro lo identifica como **amenaza A7**. Según la Encuesta de Transformación Digital Mipyme de PRODUCE, **el 70% de las pymes peruanas** todavía registra ventas, inventarios y finanzas de manera manual. En bodegas específicamente la proporción es **mayor**: libreta de cuaderno, hoja Excel rudimentaria sin fórmulas en computadora compartida, y memoria operativa del dueño."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Proveedor:** no tiene proveedor único, no tiene equipo comercial.",
+            "**Precio:** gratuito.",
+            "**Switching cost percibido:** cero.",
+            "**Utilidad percibida:** alta a pesar de limitaciones reales.",
+            "**Evolución histórica:** decreciente lenta — cada año cede algunos puntos a herramientas digitales, pero la cesión es **marginal** y enfrenta enorme inercia cultural.",
+            "**Market share funcional en el beachhead:** **posición #1**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ El competidor más difícil de desplazar",
+          "text": "Es el competidor más difícil porque su switching cost percibido es cero y su utilidad percibida es alta. **No se desplaza con mejor producto** — se desplaza demostrando que la pérdida (multa SUNAT, mermas no detectadas, cliente que no regresa) supera el costo cognitivo de adoptar algo nuevo. La estrategia comercial se diseña contra este rival, no contra Alegra ni Siigo."
+        }
+      ]
+    },
+    {
+      "id": "capa-ose",
+      "title": "Capa 2 — OSE de facturación electrónica",
+      "emoji": "🧾",
+      "question": "¿Competidor parcial o proveedor potencial?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Operan los **OSE (Operadores de Servicios Electrónicos)** homologados por SUNAT: **Nubefact, Efact, Mifact, Factesol, Isiore**. Propuesta de valor estrecha pero crítica — garantizar la emisión correcta de comprobantes electrónicos. A partir del periodo tributario de **abril de 2024** los contribuyentes están obligados a usar el **SIRE** (Sistema Integrado de Registros Electrónicos), lo que empujó la adopción de proveedores homologados."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Nubefact Online:** desde **S/ 70 mensuales** (S/ 700 anuales).",
+            "**Nubefact Offline:** desde **S/ 118 mensuales** (S/ 1,180 anuales).",
+            "**Nubefact API-REST:** desde **S/ 70 mensuales**.",
+            "**Efact:** plan básico **gratuito** hasta 50 comprobantes/mes.",
+            "**Evolución:** crecimiento por **arrastre regulatorio puro**, no por elección comercial del usuario."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Doble rol estratégico para ERP Evolutivo.** Como **competidor parcial** (cubre solo facturación, no gestión integral) y como **proveedor potencial** — la integración con un OSE homologado es estrategia recomendada en lugar de construir el componente in-house. Confirma la decisión de stack del documento maestro."
+        }
+      ]
+    },
+    {
+      "id": "capa-software-pyme",
+      "title": "Capa 3 — Software contable PYME",
+      "emoji": "💼",
+      "question": "¿La capa más relevante competitivamente, pero diseñada para quién?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aquí compiten **Alegra, Siigo, Nubox, Quipu, Bind ERP** y players locales. Es la capa más relevante competitivamente — su propuesta de valor se superpone sustancialmente con ERP Evolutivo (ventas, inventario, facturación SUNAT, reportes financieros)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Alegra (Colombia, fundada 2012):** **250K usuarios en 2019 → 605K en 2021 → 1M+ en 2024 → 2.1M en 2025**. Crecimiento interanual del **30% en 2025** mientras otros SaaS B2B se estancaron. Recibió **USD 47 M en 2025** para soluciones de IA. Nivel de automatización: **85% de tareas contables**. Opera en 8 países incluido Perú, con certificación OSE.",
+            "**Siigo (Colombia):** proveedor tecnológico **#1 autorizado por DIAN** en Colombia. Presencia en 5 países adicionales (México, Uruguay, Ecuador, Perú). **>1 millón de clientes** con **93% de satisfacción** a nivel LATAM. Entrada al mercado peruano más reciente pero **acelerada**.",
+            "**Nubox:** opera Chile y Perú con producto ERP + contabilidad para pymes.",
+            "**Quipu:** mencionada por ESAN como alternativa relevante para pymes peruanas.",
+            "**Partnership de Alegra con Mastercard (abril 2025):** impactar **100,000 PYMEs adicionales** con herramientas digitales."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Diseñados para pyme con sofisticación, no para microempresa-bodega.** La oferta de esta capa creció en 5 años **más rápido que la demanda efectiva del segmento microempresa peruano** — competencia intensa en marketing pero **baja penetración real en el rubro bodeguero**. El bodeguero limeño no usa Alegra ni Siigo no porque no existan, sino porque **no fueron diseñados para él**."
+        }
+      ]
+    },
+    {
+      "id": "capa-erp-robusto",
+      "title": "Capa 4 — ERP robusto (Odoo, SAP, Bsale)",
+      "emoji": "🏢",
+      "question": "¿Por qué esta capa está estructuralmente lejana al beachhead?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Operan **Odoo, SAP Business One, Defontana, Bsale, S10, Concar**. Propuesta completa y profunda, pero costo y complejidad los alejan estructuralmente del beachhead."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Odoo Cloud:** **USD 25–60 mensuales por usuario**, implementación de semanas.",
+            "**SAP Business One y S10:** pequeñas y medianas empresas con presupuesto IT formal, **miles de USD de implementación**, curva de aprendizaje pronunciada.",
+            "**Bsale y Defontana:** segmento intermedio — comercio minorista mediano con sistema POS instalado.",
+            "**Penetración histórica en Perú:** lenta pero sostenida en **mini-markets y pequeñas cadenas**, no en bodegas tradicionales."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Sin impacto significativo en el beachhead.** Esta capa compite por un segmento adyacente (Segmento C del análisis 2.2.2 — comercios con POS instalado), no por el bodeguero ansioso con dolor SUNAT vencido. Su evolución no debería ocupar tiempo de monitoreo competitivo del equipo."
+        }
+      ]
+    },
+    {
+      "id": "capa-pagos",
+      "title": "Capa 5 — Pagos digitales evolucionando",
+      "emoji": "💳",
+      "question": "¿Por qué Yape o Plin son la amenaza estratégica de mediano plazo más seria?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Yape y Plin** son hoy principalmente billeteras de cobro, pero el ecosistema **BCP** (Yape) y los bancos detrás de Plin están añadiendo gradualmente funcionalidades adyacentes: historial transaccional, gestión de cobros pendientes, microcréditos basados en flujo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**28 millones de usuarios conjuntos en 2024** (Yape + Plin).",
+            "**90% de las transacciones por billetera digital** en Perú.",
+            "**No es competidor directo hoy**, pero su evolución hacia *\"billetera + herramienta de gestión\"* es la **amenaza estratégica de mediano plazo más seria** del modelo.",
+            "**Si BCP decide ofrecer un módulo gratuito de \"control de mi negocio\" integrado a Yape**, gana el mercado **por distribución antes que por producto** — costo de adquisición efectivamente cero."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Monitoreo activo trimestral, no asumirse remoto",
+          "text": "Las señales tempranas a vigilar incluyen lanzamiento de funcionalidades adyacentes en Yape/Plin: **historial avanzado, gestión de cuentas por cobrar, microcréditos con scoring transaccional**. Cada nueva funcionalidad de este tipo es una señal del movimiento estratégico mayor. Mitigación: construir relación directa con el usuario y diferenciación sostenible vía IA y datos **antes** de que esto ocurra."
+        }
+      ]
+    },
+    {
+      "id": "factores-expansivos",
+      "title": "Cinco factores que expanden la oferta",
+      "emoji": "📈",
+      "question": "¿Qué fuerzas estructurales atraen nuevos entrantes y aceleran a los existentes?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La oferta del mercado SaaS B2SMB para pymes peruanas y latinoamericanas no es estática. Cinco factores expansivos operan en horizonte 2026–2031 con pendiente positiva sostenida."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Atractividad del mercado regional SaaS.** SaaS LATAM: **USD 8.3 mil M en 2024 → USD 31.9 mil M en 2030**, CAGR **24.88%** (Statista) — supera el promedio global. Atrae inversión activa: nuevos players entran al mercado **todos los trimestres**.",
+            "**Caída sostenida del costo de IA y cloud.** Lo inviable para un cliente de S/ 30 hace 3 años hoy es financieramente sostenible. **USD 47 M de Alegra (2025)** específicamente para IA confirman que el sector se reposiciona alrededor de IA como diferenciador.",
+            "**Presión regulatoria SUNAT en expansión.** Resolución **000075-2026/SUNAT** vigente desde **junio 2026**: nuevos contribuyentes = emisores electrónicos desde día uno. Crea demanda automática que **atrae oferta**.",
+            "**Expansión geográfica de players regionales.** Alegra opera en 8 países con **partnership Mastercard (abril 2025)** para 100K PYMEs adicionales. Siigo en 5 países. La oferta peruana **está siendo redefinida por players regionales** con capital y capacidad de adaptación regulatoria.",
+            "**Programas estatales de cofinanciamiento.** **ProInnóvate** mantiene cofinanciamiento de digitalización para empresas con ventas hasta **2,300 UIT** — estimula la entrada de proveedores locales al mercado."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "factores-restrictivos",
+      "title": "Tres factores que restringen la oferta efectiva en el beachhead",
+      "emoji": "🚧",
+      "question": "¿Por qué la oferta nominal es amplia pero la efectivamente especializada en microempresa-bodega es estrecha?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La oferta general crece rápido, pero la oferta **efectivamente especializada en el sub-segmento microempresa-bodega limeña** crece más lento. Esta brecha abre una **ventana competitiva temporal** para ERP Evolutivo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Costo de adaptación regulatoria por país.** Un competidor global necesita **18–24 meses** para replicar la infraestructura normativa país por país en LATAM. Viento de cola para ERP Evolutivo en Perú, pero también **barrera estructural** que limita la entrada de players globales nuevos en el corto plazo.",
+            "**Especialización por segmento operativo.** La mayoría de la oferta SaaS contable está diseñada para **pyme con sofisticación** (pequeña empresa con asistente administrativo o contador interno), no para microempresa unipersonal con dueño-operador. Esto crea un sub-mercado donde **la oferta efectiva es menor a la oferta nominal**.",
+            "**Costo de adquisición creciente en mercado fragmentado.** Alegra creció 30% en 2025 mientras otros SaaS B2B se estancaron — la diferencia competitiva no fue producto sino **velocidad de adaptación regulatoria** y **enfoque en contadores multi-cliente**. La oferta nominal es amplia pero la que efectivamente conquista usuarios depende de modelos de distribución específicos que pocos dominan."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Ventana competitiva temporal de 18–36 meses",
+          "text": "La conclusión operativa: la oferta general crecerá rápido, pero **la oferta efectivamente especializada en microempresa-bodega Lima crecerá más lento** — abre ventana competitiva de **18 a 36 meses** para ERP Evolutivo antes de que players grandes ajusten su producto al sub-segmento o de que un actor de pagos digitales se mueva hacia gestión."
+        }
+      ]
+    },
+    {
+      "id": "metodologia",
+      "title": "Metodología de proyección — CAGR + bottom-up",
+      "emoji": "🧮",
+      "question": "¿Por qué CAGR sectorial con escenarios y no Bass para la oferta?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La oferta **no se difunde como un producto entre adoptantes** — crece por entrada de nuevos competidores y expansión de los existentes. Esta dinámica se modela mejor con **CAGR sectorial calibrado**, complementado con **análisis bottom-up** de la oferta efectiva en el beachhead. Bass no aplica para proyectar oferta."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Statista:** SaaS LATAM USD 8.3 mil M (2024) → USD 31.9 mil M (2030), **CAGR 24.88%**.",
+            "**Grand View Research:** SaaS LATAM USD 21.4 mil M en 2024, **CAGR 12.5%** al 2030.",
+            "**Fortune Business Insights:** segmento ERP específico LATAM, **CAGR 7.6%** en 2023–2030.",
+            "**Dataintelo:** SaaS LATAM, **CAGR 14.9%** al 2034 impulsado por digitalización pyme."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Discrepancia razonable entre fuentes (rango 7.6%–24.88%)** refleja diferencias en definición del mercado y horizonte temporal. Para la proyección operativa se usa **CAGR base 15%** (punto medio robusto entre las cuatro fuentes), con sensibilidad **8% conservador** (ERP puro) y **25% optimista** (SaaS amplio). El análisis bottom-up complementa proyectando competidores **efectivos** en el sub-segmento microempresa-bodega Lima, no en el sector agregado."
+        }
+      ]
+    },
+    {
+      "id": "proyeccion",
+      "title": "Proyección 2026–2031 — competidores y cuota",
+      "emoji": "🔮",
+      "question": "¿Cuántos competidores efectivos y qué cuota proyecta cada player en el sub-segmento microempresa-bodega Lima?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Más útil que proyectar el SaaS LATAM agregado es proyectar **cuántos competidores efectivos** enfrentará ERP Evolutivo en su beachhead y **cómo se reparte la cuota** durante los próximos 5 años. Tres componentes: competidores establecidos en evolución, nuevos entrantes startup, y players de pagos digitales evolucionando hacia gestión."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1 (2026–2027) — 3–4 competidores activos.** Alegra, Siigo y eventualmente Nubox o Quipu con presencia comercial real. ERP Evolutivo entra con diferenciador claro (**evolución progresiva + IA integrada + freemium robusto**). Probabilidad de entrada de player gratuito de pagos digitales: **baja (20%)**.",
+            "**Año 2 (2027–2028) — 4–5 competidores activos.** Probable intensificación de Alegra y Siigo en Perú post-rondas de inversión recientes. Entrada esperada de **1–2 nuevos players regionales** (probablemente Brasil o México). Probabilidad de movimiento de Yape/Plin hacia gestión: **moderada (40%)**.",
+            "**Año 3 (2028–2029) — 5–7 competidores activos.** Posible entrada de player global tipo QuickBooks o Xero con foco LATAM. Maduración del segmento. Probabilidad Yape/Plin: **alta (60%)** — si ocurre, **redefine completamente el panorama**.",
+            "**Año 4 (2029–2030) — 6–8 competidores activos.** Probable consolidación con **2–3 players capturando 60–70%** del mercado de software contable pyme/micro en Perú. Players menores en nichos o por precio.",
+            "**Año 5 (2030–2031) — 5–7 competidores tras consolidación.** Probable presencia consolidada de jugador gratuito de pagos digitales con módulo de gestión. Probabilidad acumulada de Yape/Plin hacia gestión integral: **muy alta (85%)**."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Cuota de mercado estimada en el sub-segmento microempresa peruana** (estimación direccional basada en datos públicos y proxies regionales — no certezas):"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1:** Excel y libreta **70%**, Alegra **8%**, Siigo **5%**, OSE puros **6%**, otros (Nubox, Quipu, Bind) **5%**, espacio disponible incluido ERP Evolutivo **6%**.",
+            "**Año 3:** Excel y libreta **60%**, Alegra **12%**, Siigo **8%**, OSE puros **7%**, ERP Evolutivo + nuevos entrantes **8%**, otros consolidados **5%**.",
+            "**Año 5:** Excel y libreta **50%**, Alegra **15%**, Siigo **10%**, jugador de pagos digitales con módulo de gestión (si ocurre) **8%**, **ERP Evolutivo 5–7%**, OSE puros **6%**, otros **5–6%**."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Validación cruzada con el documento maestro.** La tesis maestro de **ventana competitiva 18–24 meses antes de que un grande copie la mecánica evolutiva** coincide con esta proyección independientemente construida — es exactamente el lapso entre el lanzamiento del MVP (2026–2027) y la consolidación de Alegra/Siigo con sus rondas de inversión recientes invertidas (2027–2028). **La urgencia operativa del proyecto no es retórica — es matemática.**"
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas de la proyección de oferta",
+    "lead": "Las proyecciones tienen **seis implicancias operativas concretas** para producto, canal, marketing y arquitectura del modelo. No son matices — son condiciones de viabilidad.",
+    "items": [
+      "**La ventana competitiva real es de 18–24 meses post-MVP.** Coincide con la tesis maestra. Cualquier retraso en el lanzamiento o en la validación del beachhead **reduce esta ventana en lapso equivalente**, no en lapso menor.",
+      "**El competidor más serio no es Alegra ni Siigo ni Odoo.** Es **Excel-libreta hoy** y potencialmente **Yape-con-módulo-de-gestión mañana**. La estrategia comercial debe diseñarse contra estos dos rivales, no contra la oferta nominal del sector.",
+      "**La diferenciación vía IA tiene caducidad.** Alegra alcanzó **85% de automatización** de tareas contables en 2025. La inversión sectorial en IA es generalizada. ERP Evolutivo debe usar IA **como entrada** (parte del freemium desde día uno) y construir defensibilidad por otra vía: **datos transaccionales propietarios y profundidad de fit con microempresa**, no por sofisticación de IA aislada.",
+      "**El canal contadores como Canal #1 es defensa estructural.** Los players regionales grandes han demostrado capacidad de relación con contadores en sus mercados de origen — **83% de contadores colombianos ya usa IA** según datos de Alegra. **Cerrar contadores limeños antes de que los grandes intensifiquen su estrategia local** es ventana operativa real, no retórica.",
+      "**El riesgo de movimiento de Yape o Plin hacia gestión integral debe monitorearse trimestralmente** como punto de inteligencia competitiva, no asumirse improbable. Señales tempranas: historial avanzado, gestión de cuentas por cobrar, microcréditos con scoring transaccional. Cada nueva funcionalidad adyacente es señal del movimiento estratégico mayor.",
+      "**La expansión geográfica multi-país preconstruida es defensa contra players que llegan después de Perú.** Quien tiene producto operando en Lima, Bogotá, Ciudad de México y Santiago simultáneamente tiene una posición más difícil de atacar que quien opera solo en una ciudad. Valida la estrategia E7 del documento maestro."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas de la proyección a vigilar trimestralmente",
+    "lead": "Cuatro supuestos de la proyección son críticos. Su validación o refutación cambia decisiones operativas, no solo cifras del modelo.",
+    "items": [
+      "**Probabilidad de Yape/Plin hacia gestión integral en los próximos 36 meses: 50–75%.** Si ocurre, ERP Evolutivo enfrenta un competidor con distribución masiva y **costo de adquisición efectivamente cero**. Mitigación: construir relación directa con el usuario y diferenciación sostenible vía IA y datos **antes** de que esto ocurra.",
+      "**Velocidad de entrada de Alegra y Siigo al sub-segmento microempresa-bodega.** Calibrada como moderada. Si los **USD 47 M de Alegra (2025)** se traducen en campaña agresiva de penetración en Perú específicamente, el escenario puede acelerarse **12–18 meses** respecto a lo proyectado.",
+      "**CAGR sectorial 15% base puede ser conservador.** Si los factores favorables actúan más fuerte de lo previsto, el sector podría crecer al **20–25% real** — atrae más entrantes pero también amplía el mercado total disponible.",
+      "**Capacidad de OSE puros (Nubefact, Efact) de moverse hacia *\"facturación + gestión integral\"*.** Estimada como limitada hoy. Si Nubefact decide complementar su oferta con módulos de inventario y ventas, se convierte en **competidor directo con la ventaja de tener ya una base de usuarios pagantes** capturados por obligación regulatoria."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva del análisis de oferta",
+    "lead": "La oferta del mercado relevante para ERP Evolutivo se organiza en cinco capas con dinámicas distintas — pero la conclusión operativa es una sola y matemática: la ventana competitiva no es retórica de pitch deck.",
+    "items": [
+      "**5 capas de oferta:** Excel/libreta dominante (70% según PRODUCE), OSE de facturación (Nubefact S/ 70–118), software contable PYME (Alegra 2.1M LATAM 2025 +30% interanual, Siigo 1M+ en 5 países), ERP robusto (Odoo, SAP — lejano), pagos digitales emergentes (Yape+Plin 28M usuarios).",
+      "**Factores estructurales:** 5 expansivos (CAGR 24.88% SaaS LATAM, IA financieramente viable, presión SUNAT, expansión regional, ProInnóvate) y 3 restrictivos (adaptación regulatoria 18–24m, especialización por segmento, costo de adquisición fragmentado).",
+      "**Proyección base CAGR 15% + bottom-up:** 3–4 competidores año 1, 4–5 año 2, 5–7 año 3, consolidación años 4–5. Cuota proyectada de ERP Evolutivo: **5–7% al año 5**. Excel/libreta cede de 70% a 50%. Alegra + Siigo capturan **20–25% del segmento que se digitaliza**.",
+      "**Cuatro hipótesis con revisión trimestral:** movimiento Yape/Plin (50% en 24m, 85% en 60m), velocidad de Alegra/Siigo en Perú, CAGR real (8%–25%), capacidad de OSE de moverse a gestión integral."
+    ],
+    "closing": "**La ventana competitiva de 18–24 meses identificada en el documento maestro coincide con la proyección de oferta independientemente construida.** No es retórica de pitch deck — es **restricción matemática**. Las tres palancas que ERP Evolutivo debe accionar antes de que la oferta efectiva en el sub-segmento se duplique son: ejecución disciplinada del beachhead Lima Norte, cierre temprano del canal contadores, y construcción del flywheel de datos desde el MVP. La posibilidad de capturar share **sin guerra de precios** se cierra entre los años 2 y 3."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "title": "📈 Análisis de la Demanda",
+  "subtitle": "¿Qué dice la evidencia cuantitativa sobre el tamaño, las palancas y la velocidad de adopción del mercado objetivo en los próximos cinco años?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "El análisis se construye sobre tres bloques integrados: la **evolución histórica del universo objetivo**, los **factores estructurales** que aceleran o frenan la adopción, y una **proyección Bass calibrada sobre el SOM efectivo del beachhead**, no sobre el TAM nacional. Todas las cifras provienen de fuentes oficiales verificables (INEI, SUNAT, PRODUCE, BCRP, ABP, ESAN, Statista). La proyección no es certeza — es **marco de gestión** que debe revisarse cada 90 días con datos primarios del producto en mercado.",
+  "sections": [
+    {
+      "id": "historica",
+      "title": "Demanda histórica del universo objetivo",
+      "emoji": "📚",
+      "question": "¿Qué dicen las series oficiales sobre el tamaño y la dinámica del mercado al cierre de 2024–2026?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Seis piezas de evidencia oficial definen el universo del producto y el momentum estructural que lo acompaña — todas verificables y todas operando en la misma dirección."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**MYPE formal en Perú (PRODUCE / INEI-SUNAT-SBS, 2024).** **2.3 millones** de empresas — **99.1%** del tejido empresarial formal, **20.2%** del PBI. Lima concentra el **43.8%**, ≈1 millón de unidades. Crecimiento promedio 2016–2021: **4.1% anual**, con contracción puntual del 25.1% en 2020 y limpieza administrativa SUNAT que redujo el registro neto en **167,162 empresas** en Q1 2025.",
+            "**Bodegas en Lima Metropolitana (ABP, 2024–2026).** Universo estimado **113,000 unidades** (estudio histórico ABP) → **135,000–145,000 en 2026** considerando el crecimiento del 25% reportado por la propia asociación. Distribución: **Lima Norte 43.1%**, Lima Sur 21.7%, Lima Este 20.8%. Presión coyuntural: ABP advierte riesgo de quiebra de 5,000 bodegas a nivel nacional y caídas de ventas >50% en categorías clave (gaseosas, cerveza, helados).",
+            "**Detonante regulatorio (SUNAT, 2026).** **Resolución de Superintendencia N° 000075-2026/SUNAT**, vigente desde el **1 de junio de 2026**: los nuevos contribuyentes en RUC bajo régimen MYPE, Especial o General son **emisores electrónicos desde el primer día**, eliminando el plazo previo de tres meses. Cada nueva alta formal es cliente potencial estructural del producto.",
+            "**Infraestructura de pagos digitales (Logiconsult, 2026; BCRP).** **73% de las ventas en bodegas de Lima** se realiza con billeteras digitales en 2026 — partiendo del 60% en enero de 2024. **Yape + Plin: 28 millones de usuarios conjuntos en 2024**, 90% de las transacciones por billetera digital en Perú. La barrera de educación tecnológica que existía hace tres años **ya está disuelta**.",
+            "**Gap de digitalización (PRODUCE, IMD, Movistar Empresas).** **70% de las pymes peruanas** todavía registra ventas, inventarios y finanzas de manera **manual**. Perú: **puesto 63 de 64** en el IMD World Digital Competitiveness Ranking 2024. Pero la urgencia percibida sube: el Sondeo de Adopción Digital Pymes 2025 reporta que el **96% de pymes** considera la digitalización clave para crecimiento, frente al **46% en 2021**.",
+            "**Mercado SaaS regional (Statista).** SaaS Latinoamérica: **USD 8,300 M en 2024 → USD 31,900 M en 2030**, CAGR **24.88%** — superior al promedio global. ERP específico para PYMEs LatAm crece al **14.9% CAGR**, impulsado por digitalización gubernamental, expansión fintech y crecimiento del e-commerce."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ La distancia entre urgencia declarada y digitalización efectiva es el TAM real",
+          "text": "**96% de pymes considera la digitalización clave** pero **70% sigue operando en manual**. Esa brecha de ≈26 puntos sobre un millón de pymes formales limeñas no es ruido estadístico — es la masa de mercado a la que la propuesta de ERP Evolutivo está diseñada para conectar en los próximos cinco años."
+        }
+      ]
+    },
+    {
+      "id": "factores-aceleran",
+      "title": "Factores que aceleran la demanda",
+      "emoji": "🚀",
+      "question": "¿Qué fuerzas estructurales empujan la curva hacia arriba?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Seis factores estructurales operan a favor del producto. Cuatro son externos al equipo (regulación, tecnología, infraestructura, política pública) y dos son demográficos (relevo digital, urgencia percibida). Su convergencia define la **ventana competitiva 2026–2028**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Presión regulatoria SUNAT en expansión irreversible.** Cada nueva alta de RUC = emisor electrónico desde día uno. La cohorte mensual de adoptantes potenciales **se renueva automáticamente** sin esfuerzo comercial.",
+            "**Penetración de pagos digitales en bodegas >73% en Lima.** La fricción de educación tecnológica que existía hace tres años está disuelta. El bodeguero ya entiende *\"pagar por celular\"* — solo falta extender el patrón a la herramienta de gestión.",
+            "**Caída sostenida del costo de IA >90% desde 2023.** Lo que en 2023 hubiera sido financieramente inviable como propuesta de S/ 22 mensuales, hoy es matemáticamente sostenible. La unit economics se abrió en los últimos 18 meses, no antes.",
+            "**Crecimiento del mercado SaaS regional al 24.88% CAGR.** Viento de cola sectorial fuerte que arrastra atención de capital, talento y partners. El producto no nada contracorriente.",
+            "**Relevo digital silencioso (hijos/sobrinos 22–35 años).** Acelerador al estilo Yape — el familiar nativo digital instala la app al operador. No aparece en encuestas declarativas pero opera en el comportamiento real.",
+            "**Programas estatales de cofinanciamiento de digitalización (ProInnóvate y similares).** Subsidios que pueden bajar la barrera de adquisición y validar la propuesta ante el bodeguero escéptico al *\"pago por software\"*."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "factores-frenan",
+      "title": "Factores que frenan la demanda",
+      "emoji": "🛑",
+      "question": "¿Qué fuerzas estructurales mantienen la curva contenida en los primeros 24 meses?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Seis factores operan en contra. La mayoría son **estructurales del segmento**, no del producto — lo que significa que **no se resuelven con mejor marketing**, se navegan con disciplina operativa y diseño de pricing."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Resistencia cultural al pago por software.** Identificada como **amenaza estratégica número uno** en Porter. El bodeguero no tiene presupuesto mental para *\"suscripción mensual\"*. El freemium y la opción de pago por Yape no son features — son condiciones de entrada.",
+            "**Alta informalidad estructural.** **86.8% de MYPEs no registradas en SUNAT** en 2024 (ComexPerú con datos Enaho-INEI). El TAM nominal del rubro bodeguero es 4x el SAM efectivo, y la diferencia no es atendible con este producto.",
+            "**Sensibilidad estructural al precio.** Utilidad neta mensual de bodega **S/ 1,500–4,000**: limita disposición a pagar al rango **S/ 15–35 mensuales**. El techo no es preferencia comercial — es restricción matemática del flujo de caja del usuario.",
+            "**Contracción coyuntural del rubro bodeguero.** ABP reporta caídas >50% en categorías clave y riesgo de quiebra de 5,000 unidades en 2024. El segmento no está creciendo a doble dígito — está bajo presión.",
+            "**Bajo ratio de inclusión financiera de microempresas.** Solo **6.1%** con operación crediticia activa, frente a **56.4%** de pequeña empresa. Sin acceso a crédito formal, la elasticidad al gasto fijo nuevo es estructuralmente baja.",
+            "**Mortalidad anual de bodegas del 3–5%.** Opera como **drenaje continuo sobre la base instalada** — la proyección Bass clásica no captura este churn por cierre de negocio."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El **balance neto a 3–5 años es claramente positivo en pendiente**, pero la velocidad de adopción debe calibrarse **conservadoramente** en años uno y dos, donde los factores que frenan tienen peso operativo dominante. La aceleración matemática llega cuando el efecto cluster (q de Bass) se activa, no antes."
+        }
+      ]
+    },
+    {
+      "id": "metodologia",
+      "title": "Metodología Bass y definición del SOM",
+      "emoji": "🧮",
+      "question": "¿Por qué Bass calibrado sobre el SOM del beachhead, y no extrapolación lineal sobre el TAM nacional?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Se eligió **modelo de difusión Bass simplificado** porque es el estándar académico y operativo para pronóstico de adopción de nuevas tecnologías en mercados con **efecto imitación entre pares cercanos** — exactamente el patrón del beachhead bodeguero. Modelos lineales no aplican por ausencia de serie histórica del producto; modelos puramente cualitativos no aplican porque hay datos suficientes para calibración cuantitativa."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Cascada del SOM efectivo.** Total bodegas Lima Metropolitana **113,000** (ABP) → filtro de formalidad efectiva del **40%** = **45,200 bodegas formales** → concentración Lima Norte **43.1%** = **19,481 bodegas formales** en zona del beachhead → penetración estimada de obligación SUNAT vencida **65%** sobre formales = **12,663 bodegas** → **SOM operativo = 13,000 bodegas**.",
+            "**SAM Lima Metropolitana:** **45,000–55,000 bodegas**.",
+            "**TAM nacional:** **>165,000 bodegas formales**.",
+            "**Parámetro m (mercado potencial):** **13,000** — SOM operativo del beachhead.",
+            "**Parámetro p (innovación):** **0.015** — punto medio bajo del rango 0.01–0.03 de literatura para productos B2SMB con detonante regulatorio, ajustado a baja iniciativa propia del segmento.",
+            "**Parámetro q (imitación):** **0.38** — rango alto, refleja el efecto cluster geográfico denso del rubro bodeguero, validado por la densidad reportada por ABP de **78 personas por bodega** en Lima."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Calibración sobre SOM, no sobre TAM.** Proyectar sobre 165,000 bodegas formales nacionales sería **inflación de un orden de magnitud** porque el equipo no puede atender Lima Sur ni provincia en año uno. Cualquier proyección honesta opera sobre el universo realmente atendible: **13,000 bodegas del beachhead Lima Norte**."
+        }
+      ]
+    },
+    {
+      "id": "proyeccion",
+      "title": "Proyección base de adopción y de ingresos",
+      "emoji": "📊",
+      "question": "¿Cuántos pagantes y cuánto ARR genera el beachhead aislado en horizonte 1–5 años?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aplicando Bass con **m=13,000, p=0.015, q=0.38** sobre el beachhead Lima Norte, la proyección de **pagantes acumulados** y la conversión a ingresos con **ARPU realista de S/ 22 mensuales** son las siguientes."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1:** **195 pagantes acumulados** → **S/ 51,480 ARR**.",
+            "**Año 2:** **460 pagantes acumulados** → **S/ 121,440 ARR**.",
+            "**Año 3:** **817 pagantes acumulados** → **S/ 215,688 ARR**.",
+            "**Año 4:** **1,279 pagantes acumulados** → **S/ 337,656 ARR**.",
+            "**Año 5:** **1,893 pagantes acumulados** → **S/ 499,752 ARR** (≈ **USD 135,000 ARR**)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**USD 135,000 ARR al año 5 en el beachhead aislado.** Este número es **la verdad operativa** que el producto puede generar sin expansión geográfica ni multi-segmento. Cualquier cifra superior requiere ejecución activa de expansión — no es subproducto automático del crecimiento del beachhead."
+        }
+      ]
+    },
+    {
+      "id": "sensibilidad",
+      "title": "Sensibilidad y reconciliación con metas del documento maestro",
+      "emoji": "⚖️",
+      "question": "¿Qué tan amplio es el rango razonable y cómo conecta con las metas declaradas de 500/2,000 usuarios y USD 3M ARR?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La proyección no es punto único — es **rango**. Tres escenarios con parámetros Bass distintos capturan honestamente la incertidumbre del proyecto pre-MVP."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Conservador (p=0.010, q=0.30):** **550 pagantes año 3, 1,250 año 5**. Refleja efecto cluster débil y baja innovación propia.",
+            "**Base (p=0.015, q=0.38):** **817 pagantes año 3, 1,893 año 5**. Escenario de planificación financiera y go/no-go.",
+            "**Optimista (p=0.022, q=0.50):** **1,650 pagantes año 3, 3,400 año 5**. Requiere ejecución limpia, cluster validado y momentum referido fuerte."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El rango razonable al año 3 está entre **550 y 1,650 pagantes** — **factor 3x entre extremos**. Esta amplitud refleja la incertidumbre real de un proyecto pre-MVP, no debilidad del análisis. Cerrar el rango requiere validación con datos primarios del fake door test y los primeros 90 días post-lanzamiento."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Reconciliación con metas del documento maestro.** Las metas declaradas (500 usuarios año 1, 2,000 año 2, ARR USD 800K año 3, ARR USD 3M año 5) son alcanzables solo en **escenario optimista** y asumiendo dos condiciones simultáneas:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**La cifra de usuarios año 1 incluye freemium activos**, no solo pagantes. Con conversión freemium→pago del **30–40%**, los 195 pagantes Bass coexisten con **500–650 usuarios activos totales** — reconcilia con la meta.",
+            "**La expansión geográfica más allá de Lima Norte se ejecuta activamente desde año 2.** Las metas año 3+ requieren **multi-zona y multi-segmento** — no solo profundización en Lima Norte. La expansión a Lima Sur, Lima Este, Arequipa, Trujillo y eventualmente Colombia **es condición matemática del modelo**, no decisión opcional."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ USD 3M ARR año 5 requiere 4–5 zonas o sub-segmentos activados",
+          "text": "El beachhead Lima Norte por sí solo entrega **USD 135K ARR año 5** (proyección Bass base) o **USD 240K** en optimista. Multiplicar por **4–5 zonas equivalentes** con playbook validado lleva a **USD 600K–1.2M**. Cerrar la brecha hasta USD 3M exige ARPU más alto (S/ 30+ en segmentos premium o módulos adicionales) o adopción multi-segmento (peluquerías, restaurantes, talleres). **La meta no es imposible — pero no es alcanzable solo con el beachhead.**"
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas",
+    "lead": "La proyección Bass conservadora tiene cuatro consecuencias operativas que el equipo debe asumir explícitamente en planificación financiera, ejecución comercial y comunicación con inversionistas.",
+    "items": [
+      "**La rentabilidad del producto en el beachhead aislado se alcanza recién hacia el año 3–4** en escenario base. La sostenibilidad del primer año depende del **freemium y la disciplina de costos**, no del flujo de pagantes. Esto valida la tesis de **capital adicional (Serie Seed a 12–18 meses post-MVP)** y confirma la estrategia E5 del documento maestro.",
+      "**La ventana competitiva 18–24 meses coincide con el momento donde la curva Bass entra en aceleración** (años 2–3). La disciplina de concentración geográfica no es preferencia estética — es la **palanca matemática que mueve el parámetro q**. Cada decisión de atender una bodega fuera del cluster reduce el efecto imitación y baja la curva.",
+      "**El ARR objetivo USD 3M año 5 requiere 4–5 sub-segmentos o zonas activadas con playbook validado**, no solo el beachhead Lima Norte. La expansión a Lima Sur, Lima Este, Arequipa, Trujillo y eventualmente Colombia **es condición matemática del modelo**, no decisión opcional.",
+      "**La mortalidad anual de bodegas del 3–5% opera como drenaje sobre la base instalada.** Bass clásico no captura este churn por cierre de negocio. La base efectiva al año 5 puede ser **10–15% menor** que la cifra bruta — el modelo requiere **reposición continua de adoptantes**, no solo retención."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas a validar en los primeros seis meses",
+    "lead": "Cuatro parámetros de la proyección están calibrados por literatura o inferencia, no medidos en este vertical específico. Su validación cuantitativa es **prerrequisito** para cualquier decisión de inversión adicional.",
+    "items": [
+      "**Coeficiente q de imitación = 0.38.** Calibrado por literatura comparable, no medido específicamente para software de gestión en bodegas limeñas. Si el efecto cluster real es **q=0.25**, la proyección año 3 cae de **817 a 550 pagantes**. La validación pasa por medir referidos intra-cluster en los primeros 90 días.",
+      "**Formalidad efectiva del rubro bodeguero = 40%.** Requiere validación con datos SUNAT o estudio sectorial específico. Si la formalidad real es **30%**, el SOM cae proporcionalmente y la proyección año 5 se reduce en un **25%**.",
+      "**Penetración de obligación SUNAT vencida = 65% sobre formales.** Debe contrastarse con cifras oficiales actualizadas. La Resolución 000075-2026 (vigente 1 junio 2026) podría llevarla al **80% en doce meses**, lo que ampliaría el SOM efectivo y mejoraría la proyección.",
+      "**ARPU realista = S/ 22.** Estimación inferida del perfil socioeconómico. El fake door test debe confirmarlo, ubicarlo más bajo (**S/ 15–18** estresa la unit economics) o más alto (**S/ 25–30** mejora el ARR sin alterar el volumen)."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Conclusión operativa",
+    "lead": "La demanda estructural existe y los detonantes regulatorios, tecnológicos y de pagos digitales operan a favor. Pero la velocidad de adopción debe planificarse con honestidad, no con voluntarismo.",
+    "items": [
+      "**Universo:** 2.3M MYPE formal Perú, ≈1M en Lima, 113K–145K bodegas en Lima Metropolitana, 73% ya usa billeteras digitales. El gap **96% urgencia declarada vs 70% manual** es el TAM real.",
+      "**SOM efectivo del beachhead Lima Norte: ≈13,000 bodegas formales** con obligación SUNAT vencida. Proyección base con Bass calibrado (p=0.015, q=0.38, ARPU S/22): **195 → 460 → 817 → 1,279 → 1,893 pagantes** años 1 a 5.",
+      "**Rango razonable año 3 entre 550 y 1,650 pagantes** (factor 3x entre conservador y optimista). USD 135K ARR año 5 en beachhead aislado; USD 3M ARR año 5 exige **multi-zona y multi-segmento**.",
+      "**Cuatro hipótesis críticas** (q de imitación, formalidad efectiva, penetración SUNAT vencida, ARPU realista) deben validarse en los primeros seis meses con datos primarios del fake door test y los primeros 90 días post-lanzamiento."
+    ],
+    "closing": "Las metas del documento maestro son alcanzables en **escenario optimista con ejecución limpia, validación temprana de hipótesis críticas y expansión multi-zona desde año 2**. La proyección no es certeza — es **marco de gestión** que debe revisarse cada 90 días con datos primarios del producto en mercado, no con intuición acumulada ni con la presión de cerrar inversión."
+  }
+}

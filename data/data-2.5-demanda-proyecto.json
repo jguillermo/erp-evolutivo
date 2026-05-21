@@ -1,0 +1,207 @@
+{
+  "title": "🎯 Demanda del Proyecto",
+  "subtitle": "¿Qué fracción del mercado puede capturar realmente ERP Evolutivo dado su modelo, su capacidad operativa, su canal y su ventana competitiva — en la intersección honesta de tres restricciones simultáneas?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La *\"demanda del proyecto\"* **no es** la demanda del mercado ni la oferta del producto — es la fracción del mercado que ERP Evolutivo razonablemente puede capturar dado su modelo, su capacidad operativa, su estrategia de canal y su ventana competitiva. En estudios tradicionales esto se resuelve con un cálculo simple (*\"demanda insatisfecha menos oferta total, el proyecto captura X% arbitrario\"*). Para una startup pre-MVP con capital semilla acotado y fundador único, ese enfoque es ingenuo. La demanda del proyecto se construye con **tres restricciones simultáneas**: demanda real del segmento (Bass calibrado, sección 2.3), oferta competitiva que disputa ese mismo segmento (sección 2.4), y **capacidad ejecutiva** del proyecto para convertir oportunidad teórica en pagantes reales. Es la **intersección honesta** de esas tres restricciones, no el techo optimista de ninguna.",
+  "sections": [
+    {
+      "id": "marco-conceptual",
+      "title": "Marco conceptual — cinco pasos del cálculo",
+      "emoji": "🧩",
+      "question": "¿Qué pasos secuenciales evitan saltar supuestos débiles y ocultar dónde se rompe el modelo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El cálculo se construye en **cinco pasos secuenciales** con lógica explícita. Saltar pasos o calcular en agregado oculta dónde están los supuestos débiles y dónde se rompe el modelo si una hipótesis falla."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Paso 1 — Demanda potencial total del sub-segmento prioritario.** Cifra de la sección 2.3: **≈13,000 bodegas** en el SOM efectivo del beachhead Lima Norte (formales con obligación SUNAT vencida). Techo absoluto del primer año por **disciplina estratégica**, no por limitación física.",
+            "**Paso 2 — Demanda insatisfecha en el sub-segmento.** Excel y libreta atienden 70% funcionalmente pero **no resuelven la obligación SUNAT activa** (oferta parcial). Alegra, Siigo, Nubox, Quipu atienden 5–10% con producto diseñado para pyme con sofisticación, no microempresa. La demanda insatisfecha del problema completo (facturación + control diario + asesoría) es **80–85% del universo**, equivalente a **10,400–11,050 bodegas** con dolor activo y sin solución integral.",
+            "**Paso 3 — Demanda alcanzable por el proyecto en el horizonte temporal.** Bass base de la sección 2.3: **195 / 460 / 817 / 1,279 / 1,893 pagantes** años 1–5 en el beachhead aislado. Incorpora efecto cluster (**q=0.38**) e iniciativa propia limitada (**p=0.015**) — demanda alcanzable bajo ejecución promedio disciplinada.",
+            "**Paso 4 — Ajuste por presión competitiva creciente.** La sección 2.4 proyecta 3–4 competidores año 1 → 5–7 año 3 → consolidación años 4–5. Factor de erosión progresivo: **100% año 1, 90% año 2, 80% año 3, 70% año 4, 60% año 5** (post-consolidación y posible entrada de Yape/Plin).",
+            "**Paso 5 — Ajuste por ejecución y validación de hipótesis.** Si ARPU real es menor a S/ 22, si el canal contadores no se activa con la velocidad esperada, o si el efecto cluster es menor a q=0.38, la demanda alcanzable se reduce. Este ajuste opera como **rango de escenarios**, no como factor único."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario-base",
+      "title": "Cálculo — escenario base año 1 a 5 (beachhead aislado)",
+      "emoji": "📊",
+      "question": "¿Cuántos pagantes y cuánta cuota del SOM proyecta el escenario base con ARPU S/ 22?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aplicando los cinco pasos al escenario base de la sección 2.3 y al escenario base de proyección de oferta de la sección 2.4 — pagantes = Bass × factor competitivo del año, ingresos = pagantes × **S/ 22 × 12**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1 (2026–2027):** 195 × 100% = **195 pagantes** · cuota SOM **1.5%** · cuota sobre demanda insatisfecha **1.9%** · **S/ 51,480** ARR.",
+            "**Año 2 (2027–2028):** 460 × 90% = **414 pagantes** · cuota SOM **3.2%** · **S/ 109,296** ARR.",
+            "**Año 3 (2028–2029):** 817 × 80% = **654 pagantes** · cuota SOM **5.0%** · **S/ 172,656** ARR.",
+            "**Año 4 (2029–2030):** 1,279 × 70% = **895 pagantes** · cuota SOM **6.9%** · **S/ 236,280** ARR.",
+            "**Año 5 (2030–2031):** 1,893 × 60% = **1,136 pagantes** · cuota SOM **8.7%** · **S/ 299,904** ARR (**≈ USD 81,000**)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Estas cifras son del beachhead Lima Norte exclusivamente.** Excluyen explícitamente la expansión a Lima Sur, Lima Este, provincias y otros países. El ARR objetivo de **USD 3M al año 5** declarado en el documento maestro requiere expansión geográfica activa que **multiplica esta base por un factor de 8 a 10**."
+        }
+      ]
+    },
+    {
+      "id": "escenarios-alternativos",
+      "title": "Escenarios alternativos — conservador, base, optimista",
+      "emoji": "⚖️",
+      "question": "¿Cuál es el rango razonable y por qué un factor 5.8x entre extremos refleja honestidad metodológica?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La utilidad de la demanda del proyecto no está en una cifra única sino en el **rango razonable** que permite planificación financiera honesta y criterios go/no-go explícitos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Conservador (p=0.010, q=0.30; factor competitivo 90%→35%).** Año 1: **117 pagantes / S/ 30,888**. Año 3: **303 / S/ 79,992**. Año 5: **438 / S/ 115,632**. Refleja efecto cluster débil y baja innovación propia.",
+            "**Base (p=0.015, q=0.38; factor competitivo 100%→60%).** Año 1: **195 / S/ 51,480**. Año 3: **654 / S/ 172,656**. Año 5: **1,136 / S/ 299,904**. Escenario de planificación financiera y go/no-go.",
+            "**Optimista (p=0.022, q=0.50; factor competitivo 100%→75%).** Año 1: **286 / S/ 75,504**. Año 3: **1,485 / S/ 392,040**. Año 5: **2,550 / S/ 673,200**. Requiere ejecución limpia y cluster validado."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Rango razonable año 5 en el beachhead aislado: 438–2,550 pagantes** — factor **5.8x entre extremos**. Esta amplitud refleja honestamente la incertidumbre real de un proyecto pre-MVP. Cualquier proyección que pretenda mayor precisión es **ingeniería inversa de un objetivo financiero**, no análisis de demanda. Cerrar el rango requiere validación con datos primarios del fake door test y los primeros 90 días post-lanzamiento."
+        }
+      ]
+    },
+    {
+      "id": "pagantes-vs-totales",
+      "title": "Pagantes vs usuarios totales — la distinción que reconcilia metas",
+      "emoji": "🔢",
+      "question": "¿Por qué confundir usuarios totales con pagantes es uno de los errores recurrentes de startups SaaS?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las cifras Bass de la sección 2.3 estiman **usuarios pagantes**, no usuarios totales en plataforma. Bajo modelo freemium robusto, la base total (freemium activos + pagantes) es significativamente mayor. Conversión freemium→pago asumida: **25–35%** (vs benchmark sectorial 8–15% — el ajuste al alza se justifica por el **detonante SUNAT como upgrade natural**, pero requiere validación cuantitativa real)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1:** 195 pagantes / 30% = **650 usuarios totales activos**.",
+            "**Año 2:** 414 / 30% = **1,380 usuarios totales**.",
+            "**Año 3:** 654 / 32% = **2,044 usuarios totales** (la conversión mejora con base instalada y casos de éxito).",
+            "**Año 5:** 1,136 / 35% = **3,246 usuarios totales**."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Reconciliación con metas del documento maestro.** La meta de **500 usuarios en Lima año 1** es alcanzable como usuarios totales (**650 proyectados en escenario base**), no como pagantes. La meta de **2,000 al año 2** es alcanzable solo con conversión y ejecución sólidas. La meta de **5,000 en Perú al año 3** requiere expansión más allá del beachhead Lima Norte."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ La distinción es estratégicamente decisiva",
+          "text": "Usuarios totales y pagantes son **dos métricas distintas con dos lógicas de negocio diferentes**. La primera valida adopción y product-market fit; la segunda valida monetización y unit economics. **Confundirlas en reporting interno o pitch externo** es uno de los errores recurrentes en startups SaaS que termina en sobreestimación de valoración y bajo retorno real."
+        }
+      ]
+    },
+    {
+      "id": "expansion-consolidada",
+      "title": "Demanda consolidada con expansión geográfica y sectorial",
+      "emoji": "🌐",
+      "question": "¿Qué proyecta la suma de Lima Norte profundizado + anillos concéntricos de expansión, y cómo cierra el gap respecto al USD 3M ARR del documento maestro?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La estrategia E2 del documento maestro establece concentración en el beachhead durante los primeros 12 meses, pero **desde el año 2 contempla expansión sectorial** y **desde el año 3 expansión geográfica** a Lima Sur, Lima Este y eventualmente Arequipa, Trujillo y Colombia. La demanda consolidada se construye por **anillos concéntricos**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Año 1 — solo Lima Norte.** **195 pagantes / 650 usuarios totales** · **S/ 51,480** ARR.",
+            "**Año 2 — Lima Norte profundizada + Lima Sur early + peluquerías/unipersonales Lima Norte.** 414 + 60 + 50 = **524 pagantes / 1,750 usuarios totales** · **S/ 138,336** ARR.",
+            "**Año 3 — Lima Metropolitana consolidada + Arequipa-Trujillo early.** 654 + 200 + 150 + 100 + 60 = **1,164 pagantes / 3,500–4,000 usuarios totales** · **S/ 307,296** ARR.",
+            "**Año 4 — Perú consolidado + Colombia early.** 1,400 + 350 + 100 = **1,850 pagantes / 5,500–6,500 usuarios totales** · **S/ 488,400** ARR.",
+            "**Año 5 — Perú maduro + Colombia activa + México early.** 1,800 + 600 + 400 + 100 = **2,900 pagantes / 8,500–10,000 usuarios totales** · **S/ 765,600** ARR (**≈ USD 207,000** consolidado)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Lectura crítica del gap respecto al USD 3M ARR año 5 declarado.** El escenario base con expansión disciplinada arroja **USD 207K ARR año 5** — aproximadamente **un cuarto del objetivo**. Dos lecturas legítimas: **(L1)** las metas requieren ejecución excepcional simultánea en cinco frentes (pricing, canal contadores, retención >88%, expansión sin diluir foco, capital adicional); **(L2)** la demanda puede acelerarse con **dos eventos no contemplados en base** — Serie A en año 2 para marketing pagado, y movimiento del producto a rama 2/3 que eleve ARPU de S/ 22 a S/ 35–45."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Conclusión operativa",
+          "text": "La demanda del proyecto en escenario base **sostiene un negocio rentable de tamaño regional medio, no un unicornio**. Para alcanzar las metas del documento maestro se requiere **ejecución excepcional + capital adicional + expansión multi-rama**, en orden de prioridad estricta. La planificación financiera debe construirse sobre el **escenario base**, no sobre el optimista — evitar el patrón clásico de quemar runway persiguiendo metas calibradas para pitch deck en lugar de para gestión."
+        }
+      ]
+    },
+    {
+      "id": "demanda-residual",
+      "title": "Demanda insatisfecha residual y oportunidad disponible",
+      "emoji": "🧭",
+      "question": "¿Se agota el mercado al año 5 con ERP Evolutivo + competidores, o queda techo estructural para el segundo decenio?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distribución estimada del SOM efectivo del beachhead Lima Norte (13,000 bodegas) al **año 5 en escenario base**:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**ERP Evolutivo:** 1,136 pagantes (**8.7%**).",
+            "**Excel y libreta:** **≈50%** (6,500 bodegas) — pendiente decreciente desde 70% inicial.",
+            "**Alegra + Siigo combinados:** **≈20%** (2,600 bodegas).",
+            "**OSE puros (Nubefact, Efact):** **7%** (910 bodegas).",
+            "**Otros (Nubox, Quipu, nuevos entrantes):** **5%** (650 bodegas).",
+            "**Yape/Plin con eventual módulo de gestión** (si se materializa): **5–8%** (650–1,040 bodegas)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Demanda insatisfecha residual al año 5 en el beachhead Lima Norte: ≈50% del universo** — las bodegas que siguen en Excel y libreta. Confirma que **el mercado no se agota** con la presencia de ERP Evolutivo + competidores. **Hay oportunidad estructural sostenida para el segundo decenio**, no solo para los primeros cinco años."
+        },
+        {
+          "type": "note",
+          "text": "**Relevante para conversaciones con inversores:** el mercado del proyecto **no es de techo bajo**. La oportunidad disponible después de cinco años de operación de ERP Evolutivo + todos sus competidores es comparable al universo capturado, lo que sostiene la tesis de inversión de largo plazo."
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las cifras de demanda del proyecto tienen **seis implicancias operativas concretas** que deben sostenerse como criterio de gestión, no como reflexión académica.",
+    "items": [
+      "**La sostenibilidad financiera del primer año NO descansa en ingresos del beachhead.** 195 pagantes proyectados año 1 = **S/ 51,480 anuales (S/ 4,290 mensuales)** — cubren apenas una fracción menor de los costos operativos. La caja del primer año depende del **capital semilla y disciplina de costos** (AMOFHIT), no del flujo comercial.",
+      "**Punto de equilibrio operativo: 1,500–2,000 pagantes activos.** Asumiendo costos mensuales de **S/ 25,000–40,000** en fase MVP-post-MVP (equipo 3–5 personas, infraestructura cloud, marketing mínimo). Coincide con el escenario base **año 4–5 consolidado** o con beachhead + expansión a Lima Sur y Lima Este. **La tesis de Serie Seed 12–18 meses post-MVP se confirma matemáticamente**, no es preferencia táctica.",
+      "**Cuota objetivo 8.7% del SOM Lima Norte al año 5 es referencia de validación.** Si en año 3 la cuota efectiva está **<3%**, la trayectoria hacia 8.7% se quiebra y la estrategia debe replantearse. Si está **>5% en año 3**, el escenario optimista se vuelve probable y la planificación puede ser más agresiva.",
+      "**La dependencia del ARR respecto a expansión multi-zona es absoluta, no relativa.** ERP Evolutivo **no llega a USD 800K ARR año 3 quedándose solo en Lima Norte**. El cronograma de expansión (Lima Sur año 2, Lima Este año 3, Arequipa-Trujillo año 3, Colombia año 4) **no es opcional — es restricción matemática del modelo**. Refuerza la importancia de la **arquitectura multi-país preconstruida (E7)**.",
+      "**Riesgo Yape/Plin gestionado con dos defensas paralelas.** **Defensa 1:** velocidad de captura del beachhead **antes** del movimiento — si ERP Evolutivo tiene **800 pagantes activos con NPS alto** al momento del movimiento, retención es defensa real. **Defensa 2:** profundidad de funcionalidad que un módulo *\"gratis con la billetera\"* no puede igualar (asesoría IA contextual, expansión por ramas, integración con contador). **Ambas defensas requieren ejecución desde el día uno**, no como reacción.",
+      "**Validación de hipótesis críticas: cuantitativa, no declarativa.** El fake door test debe arrojar datos en los primeros 6 meses sobre: (a) **conversión visitante → pre-registro >5%** en landing, (b) **disposición a pagar S/ 22 mensuales** sobre muestra **≥100 bodegueros** con dolor SUNAT vencido — **umbral viable >40% positiva**, (c) **≥3 contadores aliados firmados antes del mes 4** con cartera bodega en zonas del beachhead. **Si los tres umbrales no se cumplen, recalcular demanda a la baja y revisar la decisión de Serie Seed.**"
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas del cálculo a validar con datos reales",
+    "lead": "Cinco supuestos del cálculo son críticos y deben validarse **antes** de comprometer capital significativo en construcción o expansión. Su falla cambia decisiones operativas, no solo cifras del modelo.",
+    "items": [
+      "**Factor de erosión competitiva (100% año 1 → 60% año 5).** Calibrado por juicio experto sobre velocidad esperada de Alegra/Siigo/Yape-Plin. Si la entrada es más agresiva (factor cae a **50% en año 3** en lugar de 80%), la demanda año 3 baja de **654 a 408 pagantes** — afecta la viabilidad financiera.",
+      "**Conversión freemium→pago 25–35%.** Optimista frente al benchmark sectorial (**8–15%** típico SaaS B2SMB). Ajuste al alza justificado por detonante SUNAT, pero **requiere validación real**. Si la conversión real es **12–15%**, la base pagante cae a la mitad y los ingresos se reducen proporcionalmente.",
+      "**ARPU S/ 22 mensuales — estimación inferida.** Si el fake door test arroja **S/ 15–18** (segmento más sensible al precio), los ingresos del proyecto bajan **18–32%** sin alterar el volumen.",
+      "**Cronograma de expansión geográfica (Lima Sur año 2, Lima Este año 3, Arequipa-Trujillo año 3, Colombia año 4).** Si la expansión se retrasa por necesidad de profundizar Lima Norte, la demanda consolidada año 5 baja de **2,900 a 1,500–1,800 pagantes**.",
+      "**Riesgo Yape/Plin hacia gestión integral con módulo gratuito — la incertidumbre más impactante.** Si ocurre en año 2 o 3, el factor de erosión cae más fuerte de lo asumido y la demanda año 5 podría caer a **500–700 pagantes** — invalidaría la tesis financiera del modelo actual y obligaría al **pivote E20 del FODA** hacia monetización por comisiones transaccionales."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva de la demanda del proyecto",
+    "lead": "La demanda del proyecto se construye en la intersección de tres restricciones — demanda potencial del sub-segmento, oferta competitiva creciente y capacidad ejecutiva bajo capital semilla y fundador único. Las cifras son marco de gestión, no certeza.",
+    "items": [
+      "**Beachhead Lima Norte aislado (base):** **195 / 414 / 654 / 895 / 1,136 pagantes** años 1–5 · ingresos **S/ 51,480 → 299,904** · ≈ **USD 81,000 ARR** año 5 · cuota SOM **1.5% → 8.7%**.",
+      "**Consolidado con expansión disciplinada (base):** **2,900 pagantes año 5** · ingresos **S/ 765,600** · ≈ **USD 207,000 ARR** — **un cuarto del USD 3M objetivo** declarado en el documento maestro.",
+      "**Rango año 5 (conservador / base / optimista en beachhead):** **438 / 1,136 / 2,550 pagantes** — factor **5.8x entre extremos** que refleja la incertidumbre estructural pre-MVP.",
+      "**Reconciliación con metas maestro vía freemium:** con conversión 30–35%, los **500 usuarios totales año 1** declarados son alcanzables como base activa en plataforma con 195 pagantes efectivos. Metas posteriores requieren ejecución excepcional, capital adicional año 2 y expansión multi-rama coordinada.",
+      "**Demanda insatisfecha residual al año 5: ≈50% del beachhead** (Excel y libreta) — el mercado no se agota, hay oportunidad estructural para el segundo decenio."
+    ],
+    "closing": "**La conclusión operativa central:** el modelo es **matemáticamente viable en escenario base con disciplina de ejecución**, pero solo se acerca a las metas ambiciosas del documento maestro en escenario optimista con capital adicional y expansión multi-zona simultánea. La planificación financiera debe construirse sobre el **escenario base, no sobre el optimista**, para evitar el patrón clásico de startups que **queman runway persiguiendo metas calibradas para pitch deck en lugar de para gestión**. La demanda del proyecto no es certeza — es marco que debe revisarse cada 90 días con datos primarios reales del producto en mercado."
+  }
+}

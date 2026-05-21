@@ -146,6 +146,30 @@ export const routes: Routes = [
             m => m.SegmentacionComponent
           ),
         title: 'Segmentación del Mercado Objetivo — Estudio de Mercado'
+      },
+      {
+        path: 'analisis-demanda',
+        loadComponent: () =>
+          import('./features/estudio-mercado/analisis-demanda/analisis-demanda.component').then(
+            m => m.AnalisisDemandaComponent
+          ),
+        title: 'Análisis de la Demanda — Estudio de Mercado'
+      },
+      {
+        path: 'analisis-oferta',
+        loadComponent: () =>
+          import('./features/estudio-mercado/analisis-oferta/analisis-oferta.component').then(
+            m => m.AnalisisOfertaComponent
+          ),
+        title: 'Análisis de la Oferta — Estudio de Mercado'
+      },
+      {
+        path: 'demanda-proyecto',
+        loadComponent: () =>
+          import('./features/estudio-mercado/demanda-proyecto/demanda-proyecto.component').then(
+            m => m.DemandaProyectoComponent
+          ),
+        title: 'Demanda del Proyecto — Estudio de Mercado'
       }
     ]
   },
