@@ -31,7 +31,8 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --base-href "/erp-evolutivo/"
+        # El hook `prebuild` en package.json ejecuta scripts/build-docs.mjs antes
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

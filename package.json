@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "prestart": "npm run docs:build",
     "start": "ng serve",
+    "prebuild": "npm run docs:build",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "docs:build": "node scripts/build-docs.mjs"
   },
   "private": true,
   "packageManager": "npm@10.9.4",

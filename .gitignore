@@ -6,6 +6,11 @@
 /out-tsc
 /bazel-out
 
+# Docs generadas por scripts/build-docs.mjs — encadenado vía prestart/prebuild.
+# Aterrizan en public/ para que Angular las trate como assets estáticos.
+/public/erp-evolutivo.md
+/public/.nojekyll
+
 # Node
 /node_modules
 npm-debug.log
