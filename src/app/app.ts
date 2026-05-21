@@ -26,7 +26,8 @@ export class App {
 
   tabs: NavTab[] = [
     { label: 'Lienzo Canvas',       route: '/canvas',               icon: '📋', visible: true  },
-    { label: 'Análisis Estratégico',route: '/analisis-estrategico', icon: '🧭', visible: true  },
+    { label: 'Estudio Estratégico', route: '/estudio-estrategico',  icon: '🧭', visible: true  },
+    { label: 'Estudio de Mercado',  route: '/estudio-mercado',      icon: '📈', visible: true  },
     { label: 'Árbol Evolutivo',     route: '/tree',                 icon: '🌳', visible: false },
     { label: 'IA Asesora',          route: '/ai',                   icon: '🧠', visible: false },
     { label: 'Triggers',            route: '/triggers',             icon: '⚡', visible: false },

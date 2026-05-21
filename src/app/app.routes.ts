@@ -12,7 +12,7 @@ export const routes: Routes = [
     title: 'Canvas — ERP Evolutivo'
   },
   {
-    path: 'analisis-estrategico',
+    path: 'estudio-estrategico',
     children: [
       {
         path: '',
@@ -20,7 +20,7 @@ export const routes: Routes = [
           import('./features/analisis-estrategico/analisis-estrategico.component').then(
             m => m.AnalisisEstrategicoComponent
           ),
-        title: 'Análisis Estratégico — ERP Evolutivo'
+        title: 'Estudio Estratégico — ERP Evolutivo'
       },
       {
         path: 'pestel',
@@ -28,7 +28,7 @@ export const routes: Routes = [
           import('./features/analisis-estrategico/pestel/pestel.component').then(
             m => m.PestelComponent
           ),
-        title: 'PESTEL — Análisis Estratégico'
+        title: 'PESTEL — Estudio Estratégico'
       },
       {
         path: 'porter',
@@ -36,7 +36,7 @@ export const routes: Routes = [
           import('./features/analisis-estrategico/porter/porter.component').then(
             m => m.PorterComponent
           ),
-        title: '5 Fuerzas de Porter — Análisis Estratégico'
+        title: '5 Fuerzas de Porter — Estudio Estratégico'
       },
       {
         path: 'analisis-interno',
@@ -44,7 +44,7 @@ export const routes: Routes = [
           import('./features/analisis-estrategico/analisis-interno/analisis-interno.component').then(
             m => m.AnalisisInternoComponent
           ),
-        title: 'Análisis Interno (AMOFHIT) — Análisis Estratégico'
+        title: 'Análisis Interno — Estudio Estratégico'
       },
       {
         path: 'efi-efe',
@@ -52,7 +52,20 @@ export const routes: Routes = [
           import('./features/analisis-estrategico/efi-efe/efi-efe.component').then(
             m => m.EfiEfeComponent
           ),
-        title: 'Matrices EFI & EFE — Análisis Estratégico'
+        title: 'Matrices EFI & EFE — Estudio Estratégico'
+      }
+    ]
+  },
+  {
+    path: 'estudio-mercado',
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/estudio-mercado/estudio-mercado.component').then(
+            m => m.EstudioMercadoComponent
+          ),
+        title: 'Estudio de Mercado — ERP Evolutivo'
       }
     ]
   },

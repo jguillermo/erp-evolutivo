@@ -1,7 +1,7 @@
 {
   "title": "📊 Matrices EFI & EFE",
   "subtitle": "Evaluación ponderada de factores internos y externos — ¿dónde está parado realmente el proyecto?",
-  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
   "intro": "Aplicar la metodología de D'Alessio a una startup pre-MVP requiere una adaptación honesta. La **EFI** evalúa la *capacidad actual del proyecto para activar respuestas internas*, considerando el estado real: fundador único, capital semilla disponible, sin producto, sin equipo comercial. La **EFE** evalúa qué tan preparado está el proyecto para capturar oportunidades y neutralizar amenazas del entorno dadas las acciones y decisiones tomadas hasta hoy. Las calificaciones reflejan la posición actual, no el potencial futuro. Esta distinción es crítica para que el análisis no se convierta en una autoevaluación complaciente.",
   "matrices": [
     {

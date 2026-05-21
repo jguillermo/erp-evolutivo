@@ -1,7 +1,7 @@
 {
   "title": "🌍 Análisis PESTEL",
   "subtitle": "Lectura del macroentorno — ¿qué acelera o frena la adopción del beachhead (bodegas en Lima)?",
-  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
   "intro": "ERP Evolutivo no es un SaaS más. Es una apuesta a que un microempresario peruano, con baja alfabetización digital y márgenes muy ajustados, va a digitalizar su negocio durante los próximos tres años. **El PESTEL no es un trámite académico: es la lectura del terreno en el que esa apuesta se gana o se pierde.**",
   "factors": [
     {

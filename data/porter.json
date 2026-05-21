@@ -1,7 +1,7 @@
 {
   "title": "🔬 5 Fuerzas de Porter",
   "subtitle": "Análisis del microentorno competitivo — ¿en qué arena entra ERP Evolutivo y qué fuerzas definen su supervivencia?",
-  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
   "intro": "Antes de invertir capital semilla en desarrollo, hay que entender en qué arena se está entrando. El análisis de Porter **no se usa aquí como ejercicio académico, sino como filtro de decisión**. Lo que importa no es cuántas fuerzas son altas o bajas, sino cuáles definen si el negocio puede sobrevivir, cuáles definen el margen futuro y cuáles ponen en riesgo la propuesta antes incluso del lanzamiento. Este análisis evalúa la **industria de software de gestión para micro y pequeñas empresas en Lima**, no el entorno macro. Los actores reales son los que ya tocan o podrían tocar al bodeguero limeño con una solución de gestión.",
   "forces": [
     {

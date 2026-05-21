@@ -1,7 +1,7 @@
 {
   "title": "🔬 Análisis Interno (AMOFHIT)",
   "subtitle": "Adaptación honesta del marco a un proyecto pre-MVP — ¿qué capacidades existen hoy y qué brechas definen la viabilidad?",
-  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
   "intro": "El análisis interno de D'Alessio fue diseñado para evaluar organizaciones **en operación**, con áreas funcionales activas. ERP Evolutivo no es eso: es un **proyecto pre-MVP con un fundador único**, sin producto en mercado, sin clientes, sin equipo formal. Aplicar AMOFHIT como si fuera una empresa establecida produciría un análisis ficticio. Lo que sigue es una adaptación honesta del marco, diferenciando explícitamente entre **hechos verificables**, **hipótesis no validadas** e **inferencias de advisor**.",
   "audits": [
     {

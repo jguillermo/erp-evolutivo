@@ -1,32 +1,77 @@
-<!-- Análisis Estratégico — índice de marcos -->
+<!-- Estudio Estratégico — Capítulo I — índice jerárquico -->
 <div class="max-w-screen-lg mx-auto">
 
   <div class="mb-4xl">
-    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="ae-title">
-      🧭 Análisis Estratégico
+    <p class="text-2xs font-mono text-ink-subtle uppercase tracking-title mb-sm">Capítulo I</p>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="ee-title">
+      🧭 Estudio Estratégico
     </h2>
-    <p class="text-md text-ink-muted leading-body" data-testid="ae-subtitle">
-      Marcos de diagnóstico del entorno y la posición competitiva de ERP Evolutivo.
-      Cada sección profundiza en un análisis independiente.
+    <p class="text-md text-ink-muted leading-body" data-testid="ee-subtitle">
+      Diagnóstico externo e interno, evaluación de factores y planeamiento estratégico de ERP Evolutivo.
     </p>
   </div>
 
-  <div class="grid grid-cols-3 gap-lg max-md:grid-cols-2 max-sm:grid-cols-1"
-       data-testid="ae-grid">
+  <!-- 1.1 Análisis Externo -->
+  <section class="mb-4xl" data-testid="ee-section-11">
+    <div class="flex items-center gap-md mb-2xl">
+      <span class="text-2xs font-mono font-bold text-primary-fg bg-primary-tint border border-primary-line px-md py-xs rounded-badge">1.1</span>
+      <h3 class="text-sm font-semibold text-ink">Análisis Externo</h3>
+    </div>
+    <div class="grid grid-cols-2 gap-lg max-sm:grid-cols-1">
 
-    <!-- PESTEL — disponible -->
-    <a routerLink="pestel"
-       class="block no-underline group"
-       data-testid="ae-card-pestel">
+      <a routerLink="pestel" class="block no-underline group" data-testid="ee-card-pestel">
+        <div class="bg-surface border border-line rounded-card p-2xl shadow-card
+                    group-hover:border-success-line group-hover:shadow-raised
+                    transition-all duration-300 h-full flex flex-col">
+          <div class="flex items-center gap-md mb-lg">
+            <span class="text-xl">🌍</span>
+            <span class="text-xs font-bold text-ink uppercase tracking-title">PESTEL — Macroentorno</span>
+          </div>
+          <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
+            Factores Político, Económico, Social, Tecnológico, Ecológico y Legal del macroentorno.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
+            <span class="text-2xs text-ink-subtle group-hover:text-ink-muted transition-colors">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a routerLink="porter" class="block no-underline group" data-testid="ee-card-porter">
+        <div class="bg-surface border border-line rounded-card p-2xl shadow-card
+                    group-hover:border-success-line group-hover:shadow-raised
+                    transition-all duration-300 h-full flex flex-col">
+          <div class="flex items-center gap-md mb-lg">
+            <span class="text-xl">🔬</span>
+            <span class="text-xs font-bold text-ink uppercase tracking-title">5 Fuerzas de Porter — Microentorno</span>
+          </div>
+          <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
+            Rivalidad competitiva, amenaza de nuevos entrantes, poder negociador y sustitutos.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
+            <span class="text-2xs text-ink-subtle group-hover:text-ink-muted transition-colors">→</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 1.2 + 1.3 + 1.4 en una fila de 3 -->
+  <div class="grid grid-cols-3 gap-lg max-md:grid-cols-2 max-sm:grid-cols-1 mb-4xl"
+       data-testid="ee-row-12-14">
+
+    <a routerLink="analisis-interno" class="block no-underline group" data-testid="ee-card-interno">
       <div class="bg-surface border border-line rounded-card p-2xl shadow-card
                   group-hover:border-success-line group-hover:shadow-raised
                   transition-all duration-300 h-full flex flex-col">
         <div class="flex items-center gap-md mb-lg">
-          <span class="text-xl">🌍</span>
-          <span class="text-xs font-bold text-ink uppercase tracking-title">PESTEL</span>
+          <span class="text-2xs font-mono font-bold text-primary-fg bg-primary-tint border border-primary-line px-md py-xs rounded-badge">1.2</span>
+          <span class="text-xs font-bold text-ink uppercase tracking-title">Análisis Interno</span>
         </div>
         <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
-          Factores Político, Económico, Social, Tecnológico, Ecológico y Legal del macroentorno.
+          Auditoría interna AMOFHIT: administración, marketing, operaciones, finanzas y sistemas.
         </p>
         <div class="flex items-center justify-between">
           <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
@@ -35,57 +80,12 @@
       </div>
     </a>
 
-    <!-- 5 Fuerzas de Porter — disponible -->
-    <a routerLink="porter"
-       class="block no-underline group"
-       data-testid="ae-card-porter">
+    <a routerLink="efi-efe" class="block no-underline group" data-testid="ee-card-efiefe">
       <div class="bg-surface border border-line rounded-card p-2xl shadow-card
                   group-hover:border-success-line group-hover:shadow-raised
                   transition-all duration-300 h-full flex flex-col">
         <div class="flex items-center gap-md mb-lg">
-          <span class="text-xl">🔬</span>
-          <span class="text-xs font-bold text-ink uppercase tracking-title">5 Fuerzas de Porter</span>
-        </div>
-        <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
-          Rivalidad competitiva, amenaza de nuevos entrantes, poder negociador y sustitutos.
-        </p>
-        <div class="flex items-center justify-between">
-          <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
-          <span class="text-2xs text-ink-subtle group-hover:text-ink-muted transition-colors">→</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Análisis Interno (AMOFHIT) — disponible -->
-    <a routerLink="analisis-interno"
-       class="block no-underline group"
-       data-testid="ae-card-interno">
-      <div class="bg-surface border border-line rounded-card p-2xl shadow-card
-                  group-hover:border-success-line group-hover:shadow-raised
-                  transition-all duration-300 h-full flex flex-col">
-        <div class="flex items-center gap-md mb-lg">
-          <span class="text-xl">🔬</span>
-          <span class="text-xs font-bold text-ink uppercase tracking-title">Análisis Interno (AMOFHIT)</span>
-        </div>
-        <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
-          Auditoría adaptada a pre-MVP: administración, marketing, operaciones, finanzas, RR. HH. y sistemas.
-        </p>
-        <div class="flex items-center justify-between">
-          <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
-          <span class="text-2xs text-ink-subtle group-hover:text-ink-muted transition-colors">→</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Matrices EFI & EFE — disponible -->
-    <a routerLink="efi-efe"
-       class="block no-underline group"
-       data-testid="ae-card-efe">
-      <div class="bg-surface border border-line rounded-card p-2xl shadow-card
-                  group-hover:border-success-line group-hover:shadow-raised
-                  transition-all duration-300 h-full flex flex-col">
-        <div class="flex items-center gap-md mb-lg">
-          <span class="text-xl">📊</span>
+          <span class="text-2xs font-mono font-bold text-primary-fg bg-primary-tint border border-primary-line px-md py-xs rounded-badge">1.3</span>
           <span class="text-xs font-bold text-ink uppercase tracking-title">Matrices EFI & EFE</span>
         </div>
         <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
@@ -98,18 +98,89 @@
       </div>
     </a>
 
-    <!-- FODA Estratégico — próximamente -->
     <div class="bg-base border border-line rounded-card p-2xl cursor-default"
-         data-testid="ae-card-foda">
+         data-testid="ee-card-fce">
       <div class="flex items-center gap-md mb-lg">
-        <span class="text-xl opacity-40">🎯</span>
-        <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">FODA Estratégico</span>
+        <span class="text-2xs font-mono font-bold text-ink-subtle bg-surface border border-line px-md py-xs rounded-badge">1.4</span>
+        <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Factores Críticos de Éxito</span>
       </div>
       <p class="text-2xs text-ink-subtle leading-body mb-xl">
-        Fortalezas, Oportunidades, Debilidades y Amenazas con iniciativas estratégicas.
+        Factores determinantes del éxito derivados de los análisis previos.
       </p>
       <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
     </div>
 
   </div>
+
+  <!-- 1.5 Planeamiento Estratégico -->
+  <section class="mb-4xl" data-testid="ee-section-15">
+    <div class="flex items-center gap-md mb-2xl">
+      <span class="text-2xs font-mono font-bold text-primary-fg bg-primary-tint border border-primary-line px-md py-xs rounded-badge">1.5</span>
+      <h3 class="text-sm font-semibold text-ink">Planeamiento Estratégico</h3>
+    </div>
+    <div class="grid grid-cols-3 gap-lg max-md:grid-cols-2 max-sm:grid-cols-1">
+
+      <div class="bg-base border border-line rounded-card p-2xl cursor-default"
+           data-testid="ee-card-mision">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl opacity-40">🎯</span>
+          <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Misión, Visión y Valores</span>
+        </div>
+        <p class="text-2xs text-ink-subtle leading-body mb-xl">
+          Propósito, proyección a futuro y principios que guían a ERP Evolutivo.
+        </p>
+        <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
+      </div>
+
+      <div class="bg-base border border-line rounded-card p-2xl cursor-default"
+           data-testid="ee-card-rse">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl opacity-40">🤝</span>
+          <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Responsabilidad Social</span>
+        </div>
+        <p class="text-2xs text-ink-subtle leading-body mb-xl">
+          Compromisos ambientales, sociales y de gobernanza del negocio.
+        </p>
+        <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
+      </div>
+
+      <div class="bg-base border border-line rounded-card p-2xl cursor-default"
+           data-testid="ee-card-foda">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl opacity-40">🔀</span>
+          <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">FODA Cruzada</span>
+        </div>
+        <p class="text-2xs text-ink-subtle leading-body mb-xl">
+          Análisis y Matriz FODA cruzada con iniciativas FO, FA, DO y DA.
+        </p>
+        <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
+      </div>
+
+      <div class="bg-base border border-line rounded-card p-2xl cursor-default"
+           data-testid="ee-card-peyea">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl opacity-40">📐</span>
+          <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Matriz PEYEA</span>
+        </div>
+        <p class="text-2xs text-ink-subtle leading-body mb-xl">
+          Posición estratégica y evaluación de la acción competitiva.
+        </p>
+        <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
+      </div>
+
+      <div class="bg-base border border-line rounded-card p-2xl cursor-default"
+           data-testid="ee-card-estrategias">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl opacity-40">🗺️</span>
+          <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Estrategias Globales</span>
+        </div>
+        <p class="text-2xs text-ink-subtle leading-body mb-xl">
+          Principales estrategias y objetivos vinculados derivados del análisis completo.
+        </p>
+        <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
+      </div>
+
+    </div>
+  </section>
+
 </div>
