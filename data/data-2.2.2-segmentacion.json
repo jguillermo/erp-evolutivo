@@ -1,0 +1,286 @@
+{
+  "title": "🎯 Segmentación del Mercado Objetivo",
+  "subtitle": "¿Cuál es el sub-segmento más concentrado del beachhead donde la probabilidad de validar el modelo es máxima — y qué disciplina de exclusión sostiene ese foco durante los próximos doce meses?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La segmentación clásica termina en una tabla con cinco segmentos descritos en abstracto. Para una startup pre-MVP con capital semilla acotado y fundador único, ese enfoque es **estratégicamente nocivo**: produce una sensación falsa de cobertura cuando lo que se necesita es la disciplina opuesta — identificar el sub-segmento más estrecho posible dentro del beachhead que cumple simultáneamente todas las condiciones de adopción, y concentrar el **100% de la ejecución** en él durante los primeros 12 a 18 meses. La pregunta correcta no es *\"en cuántos segmentos podemos vender\"* — es *\"cuál es el sub-segmento más concentrado donde la probabilidad de validar el modelo es máxima\"*. Lo que sigue construye la segmentación con criterio de **exclusión**, no de cobertura.",
+  "sections": [
+    {
+      "id": "criterios",
+      "title": "Criterios que segmentan en serio",
+      "emoji": "🔍",
+      "question": "¿Qué variables informan decisiones y cuáles son ruido descriptivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Antes de aplicar cualquier marco, la decisión previa es **qué variables segmentan de verdad** en este contexto y cuáles son ruido descriptivo. Esta limpieza inicial evita construir buyer personas que se diferencian en variables decorativas pero coinciden en las variables que importan — la ilusión de segmentación cuando en realidad es la misma persona descrita con distinto traje."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Las cinco variables que SÍ segmentan:** urgencia regulatoria efectiva (¿obligación SUNAT activa hoy o no?), nivel de digitalización actual (libreta / Excel rudimentario / POS / software), estructura del decisor (solo / con cónyuge / con relevo digital familiar), intensidad del dolor SUNAT específico (notificado / ansioso al día / multado), y disponibilidad y vínculo con contador externo activo.",
+            "**Las cuatro variables que NO segmentan** dentro del beachhead: edad exacta (38 vs 47 años se comportan igual si todo lo demás es igual), género en aislamiento (importa como combinación de variables, no como dimensión independiente), distrito específico dentro de la zona (Comas vs Los Olivos no difieren — importa la zona macro), nivel educativo formal (no diferencia comportamiento dentro de NSE C)."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Operar con variables que no segmentan en serio produce **ilusión de segmentación**: cuatro buyer personas distintas que en realidad son la misma persona con distinta ropa. Cada hora invertida en describir personas no-discriminantes se resta del trabajo real — identificar el filtro de cinco variables que sí distingue adoptante de no-adoptante."
+        }
+      ]
+    },
+    {
+      "id": "segmentos-macro",
+      "title": "Cinco segmentos macro del universo",
+      "emoji": "📊",
+      "question": "¿Dónde se ubica el beachhead respecto al universo total de microempresas comerciales en Lima?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El mapa no es para *\"atender a todos\"* — es para tener claro **qué se está dejando fuera y por qué**. La distribución honesta del esfuerzo en los primeros 12 meses es **100% en el Segmento A, 0% en los demás**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Segmento A — Bodegas formales con obligación SUNAT activa y dolor regulatorio vivo.** RUC activo bajo régimen MYPE o Especial, ya recibieron notificación o saben que deben emitir comprobante. **60,000–100,000 negocios** en Lima Metropolitana. Dolor agudo, presupuesto comprometido, urgencia operativa. **Este es el beachhead.**",
+            "**Segmento B — Bodegas formales aún en RUS sin obligación electrónica vencida.** RUC activo pero régimen no exige aún facturación electrónica, o la exige con baja fiscalización efectiva. **80,000–130,000 negocios.** Dolor latente pero no vencido. Adoptantes naturales del **año dos**, no del año uno.",
+            "**Segmento C — Comercios formales con sistema POS o software contable básico ya instalado.** Mini-markets, librerías escolares con tamaño, ferreterías medianas, panaderías formalizadas. **30,000–50,000 negocios.** Tienen presupuesto, también tienen incumbente. La pelea no es contra Excel — es contra el sistema que ya pagan. Segmento de **segunda o tercera ola**.",
+            "**Segmento D — Bodegas y comercios informales sin RUC.** **>200,000 unidades** solo en Lima. **No son mercado objetivo bajo ninguna circunstancia** en los primeros 24 meses — el producto requiere RUC para emitir comprobantes electrónicos y atraer informales rompe el modelo regulatorio.",
+            "**Segmento E — Otros comercios no-bodega.** Peluquerías, barberías, restaurantes pequeños, talleres de servicios, emprendedores unipersonales. Volumen agregado importante pero comportamiento heterogéneo. Su atención antes del año dos **contamina la lectura de tracción del beachhead**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Distribución del esfuerzo año 1",
+          "text": "**100% del esfuerzo comercial y de producto en Segmento A**, 0% en los demás. Cualquier tentación de *\"atender oportunamente\"* un usuario del Segmento C que aparezca interesado debe rechazarse con disciplina — el costo de oportunidad de atender bien al Segmento A es alto y los recursos del fundador único son finitos."
+        }
+      ]
+    },
+    {
+      "id": "a1-ansioso",
+      "title": "A1 — Bodeguero ansioso con dolor SUNAT vencido",
+      "emoji": "🚨",
+      "question": "¿Por qué este sub-segmento es el foco absoluto del primer trimestre?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Recibió ya una notificación, una multa pequeña o sabe de un vecino que la recibió. **Su búsqueda de solución es activa**: ha preguntado al contador, ha buscado en YouTube cómo emitir facturas electrónicas, ha intentado opciones gratuitas de SUNAT (Mis Comprobantes) y se frustró por la fricción."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen estimado** dentro del beachhead Lima Norte/Este: **8,000–15,000 negocios**.",
+            "**Disposición a pagar** relativamente alta: **S/ 18–35 mensuales** sin gran resistencia si el producto resuelve el dolor.",
+            "**Velocidad de decisión** rápida — el dolor vencido acelera el proceso.",
+            "**Tolerancia a fricción** de onboarding moderada porque el dolor motiva a perseverar.",
+            "**Rol estratégico:** sub-segmento prioritario absoluto del **trimestre 1 post-lanzamiento**. Si el producto no convierte aquí, no va a convertir en ningún otro."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Anclaje narrativo — A1",
+          "text": "**Resolución inmediata.** *\"Ya no más multas de SUNAT, emites tus comprobantes en 30 segundos desde tu celular.\"* Lenguaje directo, sin adornos, sin promesas de modernización. El usuario está buscando solución, no inspiración."
+        }
+      ]
+    },
+    {
+      "id": "a2-preventivo",
+      "title": "A2 — Bodeguero preventivo con dolor latente",
+      "emoji": "⏳",
+      "question": "¿Por qué este sub-segmento llega al trimestre 2, no al primero?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Sabe que tiene la obligación, no ha sido notificado aún, pero entiende que es cuestión de tiempo. Su búsqueda es **pasiva, no activa**. Acepta la recomendación del contador si llega en el momento adecuado pero no buscaría el producto por iniciativa propia."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen estimado:** **15,000–25,000 negocios**.",
+            "**Disposición a pagar** moderada: **S/ 15–25 mensuales**.",
+            "**Velocidad de decisión** media — requiere refuerzo del entorno (contador, vecino comerciante, recordatorio explícito de SUNAT en redes).",
+            "**Rol estratégico:** sub-segmento natural del **trimestre 2 y 3**, cuando el canal contador esté operativo y los primeros referidos comiencen a circular."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Anclaje narrativo — A2",
+          "text": "**Preparación tranquila.** *\"Que SUNAT no te agarre desprevenido. Empieza gratis y ten todo listo cuando lo necesites.\"* El freemium cumple aquí su función estratégica máxima: no le cobra por preparar lo que aún no necesita pagar, pero lo deja listo. La conversión a pago llega cuando la urgencia se activa."
+        }
+      ]
+    },
+    {
+      "id": "a3-digital",
+      "title": "A3 — Hijo o hija digital del bodeguero",
+      "emoji": "📱",
+      "question": "¿Cómo opera el «embajador interno» que instala el producto en el negocio familiar?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Generación de relevo, **22 a 35 años**, nativo digital, tomó el negocio por herencia o ayuda al padre/madre que aún figura como titular del RUC. Comportamiento de adopción **dramáticamente distinto** al sub-segmento dominante: instala apps por iniciativa propia, evalúa rápido, compara, no necesita validación de tercero."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen estimado** dentro del beachhead: **3,000–6,000 casos**.",
+            "**Disposición a pagar** alta relativa por capacidad de proyectar valor futuro.",
+            "**Velocidad de decisión** muy rápida — pero la decisión final puede seguir en padre/madre, introduciendo **fricción de aprobación familiar**.",
+            "**Rol estratégico:** detonador natural del **canal TikTok e Instagram**. Opera como *embajador interno* — patrón Yape, donde el hijo le configuró la app a la madre.",
+            "**Justificación de inversión:** contenido digital corto dirigido a este perfil, no al bodeguero operador directo."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Anclaje narrativo — A3",
+          "text": "**Protagonismo y orgullo.** *\"Configúrale el sistema a tu papá/mamá en 10 minutos y olvídate del Excel viejo.\"* Lenguaje TikTok, vertical, casual. El protagonista del mensaje no es el producto — es el hijo o hija que resuelve algo que el padre/madre no podía. Conecta con el patrón cultural de respeto familiar y orgullo por aportar valor al negocio familiar."
+        }
+      ]
+    },
+    {
+      "id": "a4-bodeguera",
+      "title": "A4 — Bodeguera mujer con economía integrada",
+      "emoji": "👩‍💼",
+      "question": "¿Por qué este sub-perfil transversal merece tratamiento diferenciado?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Sub-perfil identificado en la sección **2.2.1 (Perfil del Consumidor)**, **transversal a A1 y A2**. Mujer entre 40 y 60 años, frecuentemente madre con economía de hogar integrada al negocio."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen estimado:** entre el **30% y el 50% del beachhead total**.",
+            "**Patrones distintos al promedio masculino:** mayor aversión al gasto fijo recurrente con hijos en edad escolar, mayor sensibilidad a la previsibilidad del costo, mayor disposición a aceptar recomendación de tercero de confianza, **mayor desconfianza al cobro automático con tarjeta**, decisión a veces compartida con cónyuge.",
+            "**Disposición a pagar** similar al promedio del beachhead, pero con **menor tolerancia a la incertidumbre del costo mensual variable**.",
+            "**Canal complementario:** programas de inclusión financiera con perspectiva de género activos en Lima, asociaciones de mujeres comerciantes."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Anclaje narrativo — A4",
+          "text": "**Previsibilidad y control.** *\"Tú decides cuánto pagas y cuándo. Si no usas la rama un mes, no pagas. Ni un sol más sin que tú lo digas.\"* Énfasis en la transparencia del cobro, en la opción de **pago manual por Yape**, en el carácter no-trampa del modelo."
+        },
+        {
+          "type": "note",
+          "text": "**Sub-segmento descartado dentro del beachhead — bodeguero hostil al cambio.** Mayor de 55 años, sin relevo generacional digital, opera con libreta hace décadas, ya tiene contador que le lleva los papeles y prefiere seguir así, paga la multa de SUNAT cuando aparece y la asume como costo del negocio. Volumen estimado: **15–25% del beachhead nominal**. **No es mercado objetivo** aunque aparezca en el universo demográfico — el costo de convencerlo es desproporcionado y desvía recursos del sub-segmento adoptante. Comunicar este descarte al equipo, no diluir el mensaje para incluirlo."
+        }
+      ]
+    },
+    {
+      "id": "segmento-prioritario",
+      "title": "Definición operativa — primeros 90 días",
+      "emoji": "📍",
+      "question": "¿Cuál es la definición que debe filtrar cada decisión del trimestre uno?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Definición que debería estar **pegada en la pared del equipo** y operar como filtro de cualquier decisión de producto, canal o mensaje durante el trimestre uno post-lanzamiento del MVP."
+        },
+        {
+          "type": "info",
+          "text": "Bodeguero dueño-operador de comercio minorista en zonas comerciales densas de **Lima Norte** (San Martín de Porres, Los Olivos, Independencia) o sub-zonas equivalentes según donde aterricen los primeros tres contadores aliados, con **RUC activo** bajo régimen MYPE o Régimen Especial, con **obligación SUNAT vencida** y **búsqueda activa de solución (sub-segmento A1)**, ingreso operativo neto **S/ 1,500–4,000 mensuales**, smartphone Android funcional, usuario habitual de WhatsApp y Yape. Si es mujer con economía de hogar integrada, recibe el mensaje diferenciado de **A4**. Si hay hijo/hija digital en la familia que ayuda con el negocio, el mensaje secundario llega vía **A3**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta definición **excluye explícitamente** al bodeguero del Segmento B (sin dolor SUNAT vencido), al del Segmento C (con sistema POS ya instalado), al sub-segmento A2 (preventivo, llega en el segundo trimestre), y al hostil al cambio. La exclusión no es despectiva — es **estratégica**. Estos segmentos llegarán naturalmente después si el modelo se valida en A1 primero."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen del segmento prioritario:** **8,000–15,000 bodegueros** en la zona del beachhead seleccionada.",
+            "**Meta a 90 días:** **100 usuarios activos** — penetración 0.7–1.3% del segmento prioritario.",
+            "**Meta a 12 meses:** **500 usuarios activos** — penetración 3.3–6.3%.",
+            "**Meta a 24 meses:** **2,000 usuarios activos** — coincide con el objetivo declarado en el documento maestro."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Las cifras son ambiciosas pero **matemáticamente alcanzables dentro del sub-segmento prioritario**, sin necesidad de extender el beachhead a otros sub-segmentos o zonas geográficas durante el primer año."
+        }
+      ]
+    },
+    {
+      "id": "mensajes",
+      "title": "Mensaje diferenciado por sub-segmento",
+      "emoji": "💬",
+      "question": "¿Cómo se mantiene constante la promesa central cambiando solo el ángulo de aproximación?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La segmentación útil culmina en **mensaje diferenciado**, no solo en descripción. Cada sub-segmento prioritario requiere un anclaje narrativo distinto, aunque el producto sea el mismo. No son cuatro productos — son **cuatro entradas distintas al mismo producto**, calibradas por el modelo mental de cada sub-segmento."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**A1 (ansioso, dolor vencido) — Resolución inmediata.** *\"Ya no más multas de SUNAT, emites tus comprobantes en 30 segundos desde tu celular.\"* Lenguaje directo, sin adornos, sin promesas de modernización. El usuario busca solución, no inspiración.",
+            "**A2 (preventivo, dolor latente) — Preparación tranquila.** *\"Que SUNAT no te agarre desprevenido. Empieza gratis y ten todo listo cuando lo necesites.\"* El freemium cumple aquí su función estratégica máxima: deja al usuario listo sin cobrarle hasta que la urgencia se active.",
+            "**A3 (hijo/hija digital) — Protagonismo y orgullo.** *\"Configúrale el sistema a tu papá/mamá en 10 minutos y olvídate del Excel viejo.\"* Lenguaje TikTok, vertical, casual. El protagonista es el hijo o hija que resuelve algo que el padre/madre no podía — conecta con respeto familiar y orgullo por aportar al negocio familiar.",
+            "**A4 (bodeguera mujer) — Previsibilidad y control.** *\"Tú decides cuánto pagas y cuándo. Si no usas la rama un mes, no pagas. Ni un sol más sin que tú lo digas.\"* Énfasis en transparencia del cobro, en la opción de pago manual por Yape, en el carácter no-trampa del modelo."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**La promesa central de ERP Evolutivo se mantiene constante; cambia solo el ángulo de aproximación.** La producción adicional es modesta (cuatro landings, cuatro guiones de contador aliado, cuatro variaciones de testimonio) pero el retorno en conversión justifica el esfuerzo si las hipótesis se sostienen en la validación."
+        }
+      ]
+    },
+    {
+      "id": "evolucion",
+      "title": "Evolución dinámica del segmento prioritario",
+      "emoji": "📈",
+      "question": "¿Cómo se expande por anillos concéntricos sin diluir el foco operativo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La segmentación no es estática. El sub-segmento prioritario del trimestre 1 no es el mismo del cuarto trimestre. La progresión natural, si el modelo se valida, sigue una secuencia que **conviene anticipar** — cada paso amplía el segmento atendido sin diluir el foco operativo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Trimestre 1 — foco absoluto en A1.** El producto se prueba e itera con este sub-segmento. *Si no convierte aquí, no va a convertir en ningún otro.*",
+            "**Trimestre 2 — ampliación a A2** cuando el canal contador esté operativo y los primeros referidos circulen. A1 sigue prioritario pero ya hay base de usuarios y casos de éxito que permiten activar A2 sin diluir foco.",
+            "**Trimestre 3 y 4 — activación de A3** vía canal TikTok e Instagram. El contenido digital opera con materiales **testeados, no especulativos**. Lanzar TikTok en el trimestre 1 quemaría presupuesto sin tracción.",
+            "**Año 2 — expansión de A2 a toda la zona del beachhead**, profundización en A4 con canal de inclusión financiera, evaluación de apertura controlada al Segmento E (peluquerías, barberías, unipersonales) en la misma zona geográfica. La rama de producto sigue siendo la misma — no se construye rama nueva hasta que la primera esté consolidada.",
+            "**Año 3 — expansión geográfica** (Lima Sur, eventualmente Arequipa y Trujillo) replicando el playbook validado en el beachhead. Solo entonces, evaluación de **segunda rama de producto** según lo que la data muestre como segundo dolor más urgente."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Propiedad de la secuencia",
+          "text": "**Expansión por anillos concéntricos, no por dispersión.** Cada paso amplía el segmento atendido sin diluir el foco operativo. La rama de producto se mantiene única hasta que la primera está consolidada; la geografía se expande solo cuando el playbook está validado; el sub-segmento se amplía solo cuando el anterior alcanza masa crítica."
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "La segmentación construida con criterio de exclusión genera **siete decisiones operativas** concretas para los próximos 12 meses. No son opciones que mejoren el modelo — son condiciones de viabilidad.",
+    "items": [
+      "**100% del esfuerzo en Segmento A**, con priorización absoluta a A1 en el trimestre 1. Cualquier prospecto de Segmento B, C o E que aparezca durante la validación es **derivado a lista de espera**, no atendido.",
+      "**Contenido en cuatro versiones diferenciadas (A1, A2, A3, A4)**, no en versión universal. Producción adicional modesta: cuatro landings, cuatro guiones de contador aliado, cuatro variaciones de testimonio.",
+      "**Canal priorizado por sub-segmento.** Contadores aliados para A1 y A2. Contenido orgánico TikTok/Instagram para A3 (postergado al trimestre 3). Asociaciones de comerciantes y programas de inclusión financiera para A4. **No mezclar canales por sub-segmento** — diluye el mensaje y reduce la trazabilidad.",
+      "**Pricing con estructura única, énfasis diferenciado por mensaje.** Para A4: previsibilidad y pago manual por Yape. Para A3: simplicidad (*\"S/ 18, ya está, sin más\"*). Para A1: inmediatez del valor (*\"este mes pagas S/ 18 y dejas de tener problemas con SUNAT\"*).",
+      "**Métricas de tracción desagregadas por sub-segmento desde el primer día.** Conversión, retención mes 1 y mes 3, NPS — todos los KPIs operativos se reportan por sub-segmento, no en agregado. Requiere instrumentación de captura desde el MVP: origen del usuario, canal de adquisición, sub-perfil declarado en onboarding. Es la base operativa del **flywheel de datos** como activo defensivo de largo plazo.",
+      "**Revisión formal del sub-segmento prioritario cada 90 días** con métricas objetivas, no por intuición acumulada. Si la tracción en A1 está por debajo del umbral mínimo (<50% de la meta de usuarios activos a 90 días), se evalúa producto, canal o segmentación — ajustando **una sola variable a la vez** para mantener trazabilidad.",
+      "**Disciplina de exclusión como responsabilidad explícita del fundador.** La presión por *\"atender cualquier oportunidad\"* es alta cuando el runway se acorta, pero ceder a esa presión es exactamente lo que destruye el efecto cluster del beachhead y diluye la lectura de tracción. **Probablemente la decisión culturalmente más difícil de sostener durante el año uno.**"
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis débiles de la segmentación a vigilar",
+    "lead": "Tres puntos de esta segmentación son inferencias razonadas pero **no validadas con investigación primaria propia**. Listarlos evita operar bajo certeza falsa. Las tres deben validarse cuantitativamente en el fake door test con muestras de **al menos 50–80 respuestas por sub-segmento** para significancia mínima.",
+    "items": [
+      "**Proporción real del sub-segmento A1** (ansioso con dolor vencido) dentro del beachhead Lima Norte. Si es menor a lo asumido, la masa crítica del primer trimestre no se alcanza con concentración en A1 solo, y la activación de A2 debe adelantarse al mes 2 o 3. Si es mayor, el foco se sostiene más tiempo y la velocidad de validación aumenta.",
+      "**Intensidad real del efecto «embajador interno» del sub-segmento A3** (hijo/hija digital). Patrón inferido del caso Yape pero no medido en este vertical específico. Si resulta más fuerte que lo asumido, justifica inversión más temprana en TikTok y modifica el orden de activación de canales. Si resulta menor, el canal contadores se vuelve aún más crítico y único.",
+      "**Elasticidad del sub-segmento A4 al mensaje diferenciado de previsibilidad** versus el mensaje genérico del beachhead. Si el mensaje diferenciado mejora la conversión en al menos **15 puntos porcentuales**, justifica producción de materiales segmentados y exploración de canales con perspectiva de género. Si la mejora es marginal, se consolida un mensaje único y la inversión va al perfil dominante."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva de la segmentación",
+    "lead": "La segmentación útil de ERP Evolutivo para los primeros 12 meses **no es una grilla de cinco segmentos atendidos** — es concentración deliberada en un sub-segmento prioritario del beachhead.",
+    "items": [
+      "**Cinco variables segmentan en serio:** urgencia SUNAT, nivel de digitalización actual, estructura del decisor, intensidad del dolor regulatorio, vínculo con contador externo. Las demás son ruido descriptivo.",
+      "**Universo en cinco segmentos macro (A–E).** Esfuerzo concentrado al **100% en A** durante el primer año. Segmentos B, C, D, E quedan explícitamente fuera.",
+      "**Dentro de A, cuatro sub-segmentos con secuencia trimestral:** A1 (ansioso, T1) → A2 (preventivo, T2) → A3 (hijo digital, T3–T4) → A4 (bodeguera mujer, transversal con tratamiento diferenciado).",
+      "**Segmento prioritario T1:** A1 en Lima Norte, **8,000–15,000 negocios**. Metas: **100 usuarios activos a 90 días, 500 a 12 meses, 2,000 a 24 meses** — alcanzables sin extender geografía ni segmento."
+    ],
+    "closing": "La disciplina central de esta sección — y probablemente la más difícil de sostener operativamente — es la **disciplina de la exclusión**. Decir no al Segmento C que aparece atractivo. Decir no al Segmento B que pide demos. Decir no a la peluquería del Segmento E que oferta pagar. Decir no al bodeguero hostil al cambio que consume tres horas de soporte y nunca convierte. Sostener esos cuatro *\"no\"* durante los próximos 12 meses es la condición operativa real de que el modelo encuentre el fit producto-segmento antes de que el runway se acabe."
+  }
+}

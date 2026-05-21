@@ -122,6 +122,30 @@ export const routes: Routes = [
             './features/estudio-mercado/mercado-objetivo-caracteristicas/mercado-objetivo-caracteristicas.component'
           ).then(m => m.MercadoObjetivoCaracteristicasComponent),
         title: 'Características del Mercado — Estudio de Mercado'
+      },
+      {
+        path: 'zonas-geograficas',
+        loadComponent: () =>
+          import('./features/estudio-mercado/zonas-geograficas/zonas-geograficas.component').then(
+            m => m.ZonasGeograficasComponent
+          ),
+        title: 'Selección de Zonas Geográficas — Estudio de Mercado'
+      },
+      {
+        path: 'perfil-consumidor',
+        loadComponent: () =>
+          import('./features/estudio-mercado/perfil-consumidor/perfil-consumidor.component').then(
+            m => m.PerfilConsumidorComponent
+          ),
+        title: 'Perfil del Consumidor — Estudio de Mercado'
+      },
+      {
+        path: 'segmentacion',
+        loadComponent: () =>
+          import('./features/estudio-mercado/segmentacion/segmentacion.component').then(
+            m => m.SegmentacionComponent
+          ),
+        title: 'Segmentación del Mercado Objetivo — Estudio de Mercado'
       }
     ]
   },

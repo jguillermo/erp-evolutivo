@@ -1,0 +1,238 @@
+{
+  "title": "🧑‍🤝‍🧑 Perfil del Consumidor",
+  "subtitle": "¿Quién es exactamente el consumidor objetivo de ERP Evolutivo, cómo piensa y qué trabajos le pide realmente al producto?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "El *\"perfil del consumidor\"* en plantillas académicas suele resolverse con cinco variables demográficas y una descripción genérica del estilo de vida. Para ERP Evolutivo eso es **insuficiente y peligroso**: insuficiente porque las decisiones de producto, pricing, onboarding, canal y comunicación dependen de entender al sujeto real; peligroso porque el *\"promedio del bodeguero limeño\"* no existe operativamente, y diseñar para ese fantasma genera un producto que no calza con nadie. Lo que sigue construye el perfil desde tres capas integradas: la **identidad operativa** (quién es y cómo opera), el **sistema de creencias y decisiones** (cómo piensa y por qué actúa como actúa), y los **jobs to be done reales** (qué está intentando lograr cuando contrata, evalúa o abandona la herramienta).",
+  "sections": [
+    {
+      "id": "identidad-operativa",
+      "title": "Identidad operativa",
+      "emoji": "👤",
+      "question": "¿Cuáles son las coordenadas verificables del consumidor objetivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El consumidor de ERP Evolutivo en el beachhead es una persona específica: **hombre o mujer entre 35 y 55 años**, dueño-operador de una bodega o comercio minorista en Lima Metropolitana, con local en distrito NSE C predominante (Lima Norte, Lima Este o Lima Sur según la selección geográfica final), nivel educativo de secundaria completa con extensión técnica ocasional, RUC activo bajo régimen MYPE Tributario o Régimen Especial, entre uno y tres años de operación formal en el rubro, vendedor único o con apoyo familiar (cónyuge, hijo, hija) en el mostrador."
+        },
+        {
+          "type": "paragraph",
+          "text": "El ingreso neto operativo de su negocio se ubica entre **S/ 1,500 y S/ 4,000 mensuales** sobre ventas brutas de S/ 8,000 a S/ 25,000. Esto no es un dato auxiliar — es la **restricción matemática que define la disposición a pagar real**. Cualquier gasto fijo nuevo superior a S/ 30 mensuales compite directamente con decisiones de hogar (recarga del celular, gas, internet, útiles escolares de los hijos), no con decisiones de *\"inversión en mi negocio\"*. El costo de ERP Evolutivo se evalúa contra el presupuesto familiar, no contra un inexistente presupuesto de software empresarial."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Operativa del negocio.** Local abierto de 6:00 AM a 10:00 PM, seis o siete días por semana, frecuentemente con vivienda integrada al local. Ticket promedio S/ 5–25, entre 80 y 250 transacciones diarias. Yape y Plin representan ya el 30–50% del flujo en distritos del beachhead. Entre tres y cinco proveedores formales por semana con dinámicas de pago heterogéneas.",
+            "**Stack digital.** Smartphone Android de gama media-baja (Samsung A14, Xiaomi Redmi, Motorola E series), plan de datos prepago S/ 30–50. WhatsApp como sistema operativo de vida y de negocio, Yape como cobro digital principal, Plin como secundario. Facebook ocasionalmente, TikTok creciendo entre menores de 45 años. Ninguna otra app de productividad. **Cero suscripciones SaaS activas.**",
+            "**Formalización tributaria.** RUC activo bajo régimen MYPE o RUS, pero con **facturación electrónica obligatoria SUNAT** — ese es el detonante de dolor que ERP Evolutivo capitaliza. Quienes están aún en RUS sin obligación de facturación electrónica son un segmento adyacente, no el beachhead. La diferencia importa porque define urgencia real versus mejora aspiracional pendiente."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Sub-perfil femenino — observación crítica que el análisis convencional omite.** Una proporción significativa de bodegas NSE C en Lima es operada por **mujeres entre 40 y 60 años**, frecuentemente madres con economía de hogar integrada al negocio. Este sub-perfil representa probablemente el 30–50% del beachhead total y tiene patrones de decisión distintos: mayor aversión al gasto fijo recurrente con hijos en edad escolar, mayor disposición a aceptar recomendación de tercero de confianza, mayor sensibilidad a la promesa de previsibilidad del costo, mayor desconfianza al cobro automático con tarjeta. Diseñar bajo el supuesto implícito de un bodeguero masculino estándar deja fuera una porción muy relevante del mercado objetivo."
+        }
+      ]
+    },
+    {
+      "id": "creencias-dinero",
+      "title": "Relación con el dinero y el precio",
+      "emoji": "💰",
+      "question": "¿Cómo evalúa el bodeguero un gasto fijo recurrente cuando opera con lógica de caja diaria?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El bodeguero opera bajo **lógica de caja diaria**, no de presupuesto mensual ni de cálculo de ROI. La pregunta al cerrar el local cada noche es *\"cuánto entró y cuánto salió hoy\"*, no *\"cuál es mi margen operativo proyectado del trimestre\"*. Esta lógica tiene tres consecuencias directas para producto y comunicación."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**El cobro recurrente automático es culturalmente friccional**, aunque sea operativamente eficiente. Entiende *\"pagar S/ 18 hoy por Yape\"*; no entiende sin resistencia *\"pagar S/ 18 al mes que se cargan a mi tarjeta los días 15 hasta que cancele\"*. Forzar cobro automático desde el día uno es perder usuarios que el producto sí podría retener.",
+            "**Las justificaciones en ROI o ahorro mensual no conectan.** Funcionan en cambio las comparaciones a su unidad mental natural: *\"S/ 18 es lo que vendes en una hora promedio\"* o *\"S/ 18 es menos que tu plan de datos\"*.",
+            "**Anclarse a referentes que ya paga sin resistencia** — plan móvil, cable básico, streaming compartido, cuota de gremio. Comparar contra esos referentes es más útil que defender el precio en términos absolutos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Complementario a la lógica de caja: el bodeguero responde con **mayor intensidad a la posibilidad de perder algo** (multa de SUNAT, robo no detectado, producto vencido sin aviso, cliente que no regresa porque le cobró mal) que a la posibilidad de ganar algo (vender 10% más, optimizar margen, descubrir oportunidades). *\"Te ayudo a no perder S/ 200 al mes en mermas\"* convierte mejor que *\"te ayudo a ganar S/ 200 al mes en eficiencia\"*. El sesgo de pérdida es la **puerta cognitiva de entrada** al producto."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia de producto y pricing",
+          "text": "El pricing debe ofrecer **pago manual por Yape o Plin** además del cobro automático con tarjeta, aunque sea operativamente más caro de gestionar para el equipo financiero. La migración al cobro automático es una conquista posterior, no una condición de entrada. La comunicación de precio se construye desde la pérdida evitada, no desde el beneficio ganado."
+        }
+      ]
+    },
+    {
+      "id": "creencias-sunat",
+      "title": "Relación con SUNAT",
+      "emoji": "🏛️",
+      "question": "¿Cómo se comunica ERP Evolutivo alrededor de SUNAT sin activar el mecanismo de defensa del usuario?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aquí hay una **contradicción cultural que define el tono de toda la comunicación comercial**. El bodeguero formal teme a SUNAT más de lo que confía en cualquier ayuda relacionada con ella. La narrativa *\"cumple con tus obligaciones tributarias\"* o *\"regulariza tu situación fiscal\"* lo asusta — internamente la traduce como *\"te van a fiscalizar, te van a multar\"*."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Narrativa ofensiva — no funciona.** *\"Cumple con SUNAT\"*, *\"digitaliza tus comprobantes\"*, *\"regulariza tu situación fiscal\"*. Activa el mecanismo de defensa, genera distancia.",
+            "**Narrativa defensiva — funciona.** *\"Tienes todo en orden para que SUNAT no te moleste\"*, *\"emite tus comprobantes sin pensar en ellos\"*, *\"no te ganan por una notificación\"*. Es la misma información comercial con **polaridad invertida**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Posicionamiento obligatorio",
+          "text": "ERP Evolutivo se posiciona como **escudo defensivo del bodeguero frente a SUNAT**, no como brazo facilitador de SUNAT. Esta distinción es invisible para el equipo de producto pero decisiva para la conversión. Cada texto del producto, cada landing y cada mensaje del contador aliado debe pasar el filtro: *¿esto suena a \"te ayudo a estar tranquilo\" o a \"te empujo a cumplir\"?* Solo el primero convierte."
+        }
+      ]
+    },
+    {
+      "id": "creencias-tecnologia",
+      "title": "Relación con la tecnología",
+      "emoji": "📱",
+      "question": "¿Una app más es una propuesta de valor o una promesa de fricción?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El bodeguero del beachhead usa **cuatro aplicaciones** en su vida cotidiana (WhatsApp, Yape, Facebook, ocasionalmente TikTok o YouTube), y esa lista no se ha movido en los últimos dos o tres años. Agregar una quinta app dedicada a *\"su negocio\"* entra en **competencia directa por espacio mental y por hábito**, no por feature set."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**La promesa de *\"una app más\"* es una promesa de fricción**, no de valor, independientemente de qué tan buena sea la app. La narrativa correcta es *\"te ayuda a hacer lo que ya haces, mejor\"*, no *\"te trae una nueva forma de gestionar tu negocio\"*.",
+            "**La integración con WhatsApp como canal de interacción** (registrar venta enviando mensaje, consultar stock por chat, recibir alertas por chat) no es solo un atajo técnico — es alineamiento cultural con el sistema operativo real del usuario."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Tensión de arquitectura no resuelta.** La decisión entre *app dedicada* vs *WhatsApp como interfaz primaria* afecta toda la arquitectura del MVP, no se resuelve en el canvas. El canvas asume app dedicada; el comportamiento real del segmento apunta hacia WhatsApp como interfaz de menor fricción. Esta tensión merece **validación cuantitativa explícita antes del MVP** — no asumirse resuelta por intuición de producto."
+        }
+      ]
+    },
+    {
+      "id": "creencias-aprendizaje",
+      "title": "Patrón de aprendizaje y curva de paciencia",
+      "emoji": "⏱️",
+      "question": "¿Qué ocurre si el producto no funciona en los primeros cinco días?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La tolerancia al fracaso de una herramienta en este segmento es **extremadamente baja**. Si el bodeguero intenta algo y no le funciona en los primeros tres a cinco días, no lo vuelve a abrir — y lo cuenta a sus pares como confirmación de que *\"esos sistemas no sirven, son pura demora\"*. El boca a boca negativo viaja más rápido y más lejos que el positivo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Onboarding debe entregar valor visible en la primera sesión.** Una primera venta registrada y un comprobante electrónico emitido sin errores en los primeros diez minutos define si el usuario sobrevive a la semana uno. No en la quinta sesión — en la primera.",
+            "**Errores técnicos en facturación SUNAT son cero-tolerancia.** Rechazos, caídas, demoras superiores a tres segundos. No se *\"mejoran después\"* — se previenen antes. El usuario no interpreta un error técnico como error del sistema; lo interpreta como evidencia de que el producto no funciona.",
+            "**Customer success no es reactivo, es preventivo.** Un usuario que cae en silencio en los primeros 30 días no es neutral — es un **detractor en construcción** contando a sus vecinos por qué no le funcionó."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El onboarding debe diseñarse como **secuencia completable en cinco interrupciones de dos minutos**, no como flujo continuo de diez minutos. El bodeguero no tiene diez minutos sin interrupción — tiene un cliente esperando, un proveedor cobrando, una llamada familiar. La promesa de *\"\\<10 minutos\"* del canvas es el techo; el diseño real es *\"completable en cinco interrupciones de dos minutos\"*."
+        }
+      ]
+    },
+    {
+      "id": "creencias-pares",
+      "title": "Decisión por imitación de pares",
+      "emoji": "🤝",
+      "question": "¿Por qué el contador aliado vale más que cien anuncios pagados?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Una recomendación de un **colega bodeguero del mismo barrio** pesa más que una recomendación de un experto, una influencer, un banco o un anuncio pagado. Pesa también más que una promoción de descuento. El patrón de adopción en este segmento es por **imitación de pares próximos**, no por autoridad técnica ni por persuasión publicitaria."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**El contador aliado funciona como puente social entre bodegas.** No por su autoridad técnica contable sino porque conoce a treinta bodegueros del mismo barrio y los conecta indirectamente. Su recomendación vale lo que vale la confianza que cada bodeguero ya depositó en él personalmente.",
+            "**El marketing tradicional (Google Ads, banners, Facebook institucional) tendrá rendimiento marginal** durante los primeros 12 meses. La inversión es mejor reasignarla a **referidos económicos directos** (pago concreto al usuario que refiere y al que es referido) y a testimonios orgánicos filmados en bodegas reales del beachhead."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El material de comunicación debe mostrar a **bodegueros que se parezcan al perfil del usuario objetivo**, no a bodegueros aspiracionales ni a locales de Lima Moderna. Si el testimonio luce a sesión profesional de marketing, el filtro de desconfianza se activa y el mensaje se pierde."
+        }
+      ]
+    },
+    {
+      "id": "creencias-confianza",
+      "title": "Confianza en personas, no en marcas",
+      "emoji": "🙏",
+      "question": "¿Por qué la sofisticación de la marca genera desconfianza, no atracción?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En productos de bajo involucramiento (gaseosas, snacks) la marca tiene peso. En productos que requieren **confianza y tiempo** (servicios financieros, software, servicios de salud), el bodeguero del beachhead confía en personas, no en marcas. Confía en su contador, en su vecino comerciante, en su hija que sabe de computadoras."
+        },
+        {
+          "type": "paragraph",
+          "text": "ERP Evolutivo, en consecuencia, **no se vende como marca SaaS sofisticada** — la sofisticación genera desconfianza, no atracción. Se vende como herramienta recomendada por una persona específica que el usuario ya conoce y respeta."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia para el canal",
+          "text": "Esta lógica conecta con la estrategia de canal contadores como Canal #1 y **refuerza por qué no es sustituible por un canal publicitario equivalente**, aunque el canal publicitario tenga mayor alcance. El alcance sin confianza previa no convierte en este segmento — y la confianza no se compra con presupuesto publicitario, se construye con personas."
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "title": "Jobs to be done reales",
+      "emoji": "🎯",
+      "question": "¿Qué trabajos concretos contrata el bodeguero cuando evalúa ERP Evolutivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La capa más accionable del perfil — los trabajos concretos que el consumidor está intentando lograr cuando evalúa, contrata o abandona la herramienta. Lo que más diferencia un perfil construido en serio de uno construido en serie."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Job 1 — Evitar la multa de SUNAT** por no emitir comprobantes electrónicos correctamente. Es el **job funcional dominante** y el detonante de búsqueda activa de solución. No es *\"modernizar mi negocio\"* — es *\"necesito que no me caiga SUNAT\"*, *\"necesito emitir mi boleta o factura cuando el cliente la pide\"*. Si el producto resuelve este job sin fricción, el usuario tolera fricciones menores en otros frentes. Si no lo resuelve, ninguna otra promesa compensa.",
+            "**Job 2 — Saber al cierre del día cuánto vendió de verdad.** Job emocional: ansiedad de incertidumbre crónica (*\"estoy vendiendo bien pero no sé si gano\"*). La promesa que conecta es *\"al cerrar el local sabes exactamente cuánto entró, cuánto saliste y con cuánto te quedas\"*, no *\"te damos dashboards con KPIs\"*. Es el segundo motor de adopción y el que sostiene la retención cuando el Job 1 ya está cubierto.",
+            "**Job 3 — Sentirse en control frente al proveedor, el cliente moroso y la familia que pide cuentas.** Job emocional: legitimidad. Demostrar con datos algo que hoy solo puede afirmar con intuición. No es Job MVP, pero la narrativa de mediano plazo se construye sobre este job.",
+            "**Job 4 — Dejar el negocio en orden cuando un familiar tenga que atender en su ausencia.** Job operativo: continuidad del negocio sin ansiedad. Un sistema que registre ventas, calcule cambio y emita comprobantes válidos permite delegar sin perder el control. La semilla narrativa puede plantarse desde el MVP.",
+            "**Job 5 — Demostrar viabilidad para acceder a crédito formal.** Las bodegas con un año de operación exploran microcrédito formal (Mibanco, Caja Arequipa, BCP PYME). El requisito es demostrar flujo verificable. ERP Evolutivo está posicionado para resolver este job en mediano plazo — conecta con el flywheel de datos y alianzas fintech. No es Job MVP pero es palanca de retención fuerte cuando entra en juego."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Job negativo — el trabajo que explícitamente no quiere contratar.** No quiere *\"transformar digitalmente su negocio\"*. No quiere *\"ser el bodeguero del futuro\"*. No quiere convertirse en analista de datos. El consumidor objetivo se ve como una persona que tiene un negocio y quiere que ese negocio funcione mejor con el **menor cambio posible en su forma de operar**. Cualquier mensaje que apele a transformación digital genera distancia, no atracción."
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las tres capas anteriores convergen en seis decisiones que el equipo de ERP Evolutivo debe sostener durante los próximos doce meses. No son opciones que mejoren el modelo — son condiciones de viabilidad del modelo.",
+    "items": [
+      "**Onboarding fragmentable, no lineal.** El usuario tiene cinco a diez minutos discontinuos por día para interactuar con la herramienta. Microtareas, persistencia de estado, recuperación tras interrupción. Más exigente arquitectónicamente que un onboarding lineal, pero no opcional.",
+      "**Pricing con opción de pago manual por Yape o Plin** además del cobro automático con tarjeta. El bodeguero no entrega control de cuándo y cuánto se le carga sin confianza acumulada previa. Forzar cobro automático desde el día uno es perder usuarios que el producto sí podría retener.",
+      "**Comunicación construida desde la perspectiva defensiva frente a SUNAT.** Cambio de polaridad narrativa. Cada texto del producto, landing y mensaje del contador aliado debe pasar el filtro: *¿esto suena a \"te ayudo a estar tranquilo\" o a \"te empujo a cumplir\"?* Solo el primero convierte.",
+      "**Inversión publicitaria reasignada a referidos económicos directos y testimonios reales.** El bodeguero del perfil objetivo necesita verse representado por alguien parecido a él en el material de comunicación, no por un aspiracional. Marketing tradicional tiene rendimiento marginal en los primeros 12 meses.",
+      "**Customer success preventivo en los primeros 30 días de cada usuario nuevo.** WhatsApp con respuesta en menos de dos horas, llamada proactiva al día 3 si el usuario no ha emitido su primer comprobante, visita en bodega si el usuario está en el cluster del beachhead. Es el único freno al churn temprano que destruye el efecto cluster de referidos.",
+      "**Sub-perfil de bodegueras mujeres entre 40 y 60 años merece tratamiento diferenciado en mensaje y canal.** Programas de inclusión financiera con perspectiva de género en Lima (ONG, microfinancieras, gremios) podrían operar como canal complementario al canal contadores. Esta vía debería explorarse explícitamente, no descartarse por defecto."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis débiles del perfil a vigilar",
+    "lead": "Tres puntos del perfil son inferencias sobre patrones observables, no hechos validados con investigación primaria del proyecto. La calibración estratégica depende de ellos.",
+    "items": [
+      "**Proporción real del sub-bloque femenino (40–60 años) dentro del beachhead.** Si supera el 40%, justifica materiales diferenciados y exploración activa de canales con perspectiva de género. Si está por debajo del 25%, la diferenciación pierde eficiencia y la inversión va al perfil dominante. No se valida con intuición — se mide en el fake door test.",
+      "**Elasticidad real al modelo de cobro recurrente automático vs. pago manual por Yape.** Esta hipótesis **no se valida con entrevista declarativa** — la respuesta declarativa subestima la resistencia al cobro automático. Se valida con test A/B real durante el fake door test, ofreciendo ambas opciones y midiendo conversión efectiva, no intención declarada.",
+      "**Fuerza del Job 5 (acceso a crédito formal) como motor de retención en el segundo año de uso.** Es un job potencialmente muy fuerte pero distante temporalmente. Su validación es crítica si la visión a cinco años del documento maestro descansa sobre la monetización del flywheel de datos vía alianzas fintech. Requiere entrevistar bodegueros que ya recorrieron el camino del microcrédito formal."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva del perfil",
+    "lead": "El consumidor objetivo de ERP Evolutivo en el beachhead no es *\"el bodeguero promedio de Lima\"*. Es una persona específica con coordenadas verificables y una lógica de decisión que difiere del usuario SaaS estándar en todo lo que importa.",
+    "items": [
+      "**Identidad:** 35–55 años, NSE C, dueño-operador de bodega con RUC activo y **obligación SUNAT vigente**, ingreso operativo S/ 1,500–4,000, stack digital limitado a WhatsApp y Yape, lógica de caja diaria. Sub-perfil femenino 30–50% del beachhead total — merece tratamiento diferenciado.",
+      "**Sistema de decisión:** baja tolerancia al fracaso de herramientas, decisión por imitación de pares próximos, confianza en personas no en marcas, sesgo de pérdida como puerta cognitiva, aversión al cobro automático sin confianza acumulada.",
+      "**Jobs dominantes:** evitar multa SUNAT (detonante de búsqueda), saber cuánto vendió al cierre del día (retención), control frente a proveedores y clientes (mediano plazo), continuidad del negocio en ausencia (delegación), acceso a crédito formal (retención año 2). **Job que no quiere:** transformarse digitalmente.",
+      "**Seis condiciones operativas:** onboarding fragmentable, pago manual disponible desde el día uno, comunicación defensiva frente a SUNAT, inversión en referidos y testimonios reales, customer success preventivo a los 30 días, tratamiento diferenciado del sub-perfil femenino."
+    ],
+    "closing": "La calibración del perfil no es definitiva — es base para validación y debe revisarse cada tres meses con datos cuantitativos propios, no con intuición acumulada. Las tres hipótesis débiles son parte explícita del fake door test recomendado en el documento maestro."
+  }
+}

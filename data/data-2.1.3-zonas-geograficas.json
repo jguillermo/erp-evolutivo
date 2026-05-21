@@ -1,0 +1,261 @@
+{
+  "title": "🗺️ Selección de Zonas Geográficas",
+  "subtitle": "¿Dónde concentra ERP Evolutivo sus primeros doce meses para maximizar la probabilidad de tracción autosostenible antes de quedarse sin runway?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La pregunta no es *\"dónde están las bodegas en Lima\"*. Esa es una pregunta descriptiva que un mapa de calor de SUNAT resolvería en cinco minutos. La pregunta estratégica es dónde concentra ERP Evolutivo sus primeros doce meses para maximizar la probabilidad de que la primera rama de producto encuentre tracción autosostenible antes de quedarse sin runway. **La selección geográfica es una decisión de asignación de recursos escasos bajo restricción de capital y de atención del fundador único**, no un ejercicio de cobertura territorial. Cualquier marco que recomiende *\"estar presente en toda Lima Metropolitana\"* desde el día uno está mal calibrado para esta etapa.",
+  "sections": [
+    {
+      "id": "filtros",
+      "title": "Los cinco filtros en cascada",
+      "emoji": "🔍",
+      "question": "¿Qué hace que un distrito sea viable para el beachhead?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La selección no se construye sobre un solo criterio sino sobre la **convergencia de cinco filtros aplicados en cascada**. Un distrito candidato debe pasar los cinco para entrar al beachhead. Pasar tres o cuatro no es suficiente. La disciplina del filtro en cascada es lo que evita el error clásico de *\"estamos lanzando en Lima\"* cuando en realidad se está lanzando en dieciocho distritos sin profundidad en ninguno."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Filtro 1 — Densidad absoluta del beachhead.** Al menos 10,000 bodegas con RUC activo en el distrito. Por debajo de ese umbral, el costo de oportunidad por visita comercial del contador aliado o del equipo de campo se vuelve prohibitivo en relación al ARPU realista del segmento.",
+            "**Filtro 2 — Perfil socioeconómico alineado al beachhead.** NSE C predominante con presencia de D emergente. Los distritos NSE A y B tienen bodegas con sistemas POS ya instalados — no es el dolor que ERP Evolutivo resuelve. Los distritos NSE E predominante tienen alta informalidad operativa y sin presión SUNAT efectiva, lo que rompe el motor de adquisición del producto.",
+            "**Filtro 3 — Densidad de cluster comercial barrio-manzana.** La métrica relevante no es bodegas por kilómetro cuadrado sino **bodegas por manzana en zonas comerciales identificadas**. Un distrito grande con bodegas dispersas en urbanizaciones residenciales tiene peor unit economics que un distrito mediano con tres avenidas comerciales densas donde el boca a boca opera por radio de 200–400 metros.",
+            "**Filtro 4 — Disponibilidad de canal contadores con cartera activa en bodegas del distrito.** Al menos cinco contadores con cartera de bodegas dispuestos a conversar el piloto. Este filtro suele ignorarse en análisis geográficos convencionales porque no aparece en INEI ni en mapas de SUNAT — pero conecta directamente con la estrategia de Canal #1. Debe mapearse **antes** de la selección, no después.",
+            "**Filtro 5 — Infraestructura digital habilitante.** Cobertura 4G/5G estable, penetración de Yape y Plin en el comercio del distrito, presencia de OSE activos atendiendo microempresas. Lima Metropolitana tiene cobertura 4G superior al 95% en zonas consolidadas, pero hay bolsones irregulares en Lima Este y Lima Sur que afectan directamente la experiencia del producto. Es filtro de control de calidad, no de selección positiva."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El Filtro 4 (contadores) es el que más frecuentemente se omite en análisis geográficos convencionales y el que más frecuentemente genera desalineamiento entre canal y territorio en el lanzamiento. Mapearlo **antes** de la selección es condición de la estrategia, no paso opcional."
+        }
+      ]
+    },
+    {
+      "id": "lima-norte",
+      "title": "Lima Norte",
+      "emoji": "🏙️",
+      "question": "¿La zona con mayor convergencia de criterios para el beachhead?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Concentra **alta densidad de bodegas en NSE C predominante**. Distritos candidatos: San Martín de Porres, Los Olivos, Comas, Independencia."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Avenidas comerciales densas: Av. Universitaria, Av. Túpac Amaru, Av. Tomás Valle.",
+            "Cultura emprendedora arraigada — es la zona de concentración histórica del emprendimiento migrante limeño.",
+            "Alta presencia de mercados zonales que articulan clusters de bodegas circundantes.",
+            "Penetración de Yape comparable al promedio metropolitano.",
+            "**Es la zona con mayor probabilidad de cumplir simultáneamente los cinco filtros**, especialmente por la convergencia de densidad y perfil socioeconómico."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Riesgo a vigilar.** Alta competencia comercial general: el bodeguero está ya saturado de propuestas de proveedores, financieras y servicios, y desarrolla anticuerpos rápido contra mensajes mal calibrados."
+        }
+      ]
+    },
+    {
+      "id": "lima-este",
+      "title": "Lima Este",
+      "emoji": "🏗️",
+      "question": "¿Alternativa viable si el canal aterriza primero aquí?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Densidad bodeguera muy alta** pero con mayor heterogeneidad socioeconómica interna. Distritos candidatos: San Juan de Lurigancho, Ate, Santa Anita, El Agustino."
+        },
+        {
+          "type": "list",
+          "items": [
+            "San Juan de Lurigancho concentra volumen que justificaría una estrategia distrito-único, pero su extensión geográfica diluye el efecto cluster — con más de 1.2 millones de habitantes opera funcionalmente como tres o cuatro mercados separados.",
+            "Si se elige Lima Este, la selección debe ser **sub-distrital**: Av. Próceres de la Independencia, Mercado de Caja de Agua, Mercado Huáscar — no *\"San Juan de Lurigancho\"* en abstracto.",
+            "Mayor potencial de volumen que Lima Norte, pero mayor riesgo operativo por heterogeneidad interna y menor cohesión del cluster."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Riesgo a vigilar.** Infraestructura digital con bolsones irregulares en zonas altas y mayor informalidad operativa promedio — puede activar el Filtro 5 como descarte en sub-zonas específicas."
+        }
+      ]
+    },
+    {
+      "id": "lima-sur",
+      "title": "Lima Sur",
+      "emoji": "🌆",
+      "question": "¿Segunda ola, no primera?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Densidad bodeguera relevante con perfil socioeconómico de **NSE C y D más marcado**. Distritos candidatos: Villa El Salvador, Villa María del Triunfo, San Juan de Miraflores, Chorrillos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cultura emprendedora muy fuerte, especialmente en Villa El Salvador (Parque Industrial).",
+            "Penetración de Yape alta por la actividad comercial intensa.",
+            "Presencia de gremios y asociaciones de comerciantes organizadas que podrían operar como canal institucional complementario al canal contadores."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Riesgo a vigilar.** Mayor sensibilidad al precio promedio y menor disposición histórica a pagar por software tensionan el modelo freemium en la conversión a pago. Lima Sur es **candidato natural para la segunda ola**, una vez que el pricing esté validado y el producto haya superado los principales gaps de UX."
+        }
+      ]
+    },
+    {
+      "id": "lima-centro",
+      "title": "Lima Centro",
+      "emoji": "🏛️",
+      "question": "¿Zona de validación específica, no de beachhead general?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Densidad bodeguera mixta. Distritos candidatos: Cercado de Lima, La Victoria, El Agustino (limítrofe), Breña."
+        },
+        {
+          "type": "list",
+          "items": [
+            "La Victoria tiene concentración comercial atípica — el comercio es predominantemente mayorista y semi-mayorista textil (Gamarra), no bodega minorista pura.",
+            "El Cercado tiene bodegas tradicionales en zonas residenciales históricas, con perfil de edad del bodeguero más alto (50–65 años) y menor alfabetización digital relativa.",
+            "La Victoria y zonas adyacentes son interesantes para sub-segmentos específicos, pero no como punto de entrada del beachhead general."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Zona de **validación específica para sub-segmentos**, no para el beachhead general."
+        }
+      ]
+    },
+    {
+      "id": "lima-moderna",
+      "title": "Lima Moderna",
+      "emoji": "🏢",
+      "question": "¿Por qué el mercado aparentemente más atractivo no es el beachhead?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distritos descartados para el beachhead: Miraflores, San Isidro, Surco, San Borja, Magdalena, Jesús María."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Las bodegas aquí operan funcionalmente como mini-markets con tickets promedio más altos.",
+            "Frecuentemente ya tienen sistemas POS instalados (Vendomática, Bsale para los más sofisticados) — no es el dolor que ERP Evolutivo resuelve.",
+            "Sus clientes son más leales por proximidad residencial, con menor efecto cluster entre bodegas del mismo entorno."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**No son el beachhead aunque parezca contraintuitivo.** Son un sub-segmento posterior, no el primero. El bodeguero de Surco pedirá features distintas (integración con POS existente, reportes contables avanzados) que sobrecargan el roadmap sin validar el modelo central."
+        }
+      ]
+    },
+    {
+      "id": "recomendacion",
+      "title": "Recomendación de selección concentrada",
+      "emoji": "🎯",
+      "question": "¿Cuál es la apuesta primaria para los primeros doce meses?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La aplicación rigurosa de los cinco filtros conduce a concentrar el lanzamiento del beachhead en **una sola zona, no en cuatro o cinco**. La zona con mayor probabilidad de cumplir los filtros simultáneamente es **Lima Norte**, con tres a cinco distritos contiguos como núcleo operativo: San Martín de Porres, Los Olivos, Independencia, con Comas como zona de expansión inmediata adyacente."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Densidad de bodegas suficiente para que el equipo comercial encuentre prospectos sin desplazamientos largos.",
+            "Perfil NSE adecuado: NSE C predominante con presencia D emergente.",
+            "Avenidas comerciales que activan el efecto cluster por radio de 200–400 metros.",
+            "Infraestructura digital robusta sin bolsones irregulares.",
+            "Proximidad geográfica entre los distritos que permite a un solo equipo comercial cubrir el conjunto."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La alternativa razonable es **Lima Este sub-distrital**: la franja comercial de San Juan de Lurigancho desde Caja de Agua hasta Las Flores. Mayor potencial de volumen pero mayor riesgo operativo por heterogeneidad interna del distrito y dificultad de cubrir la franja con recursos limitados."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Criterio de desempate",
+          "text": "La decisión entre Lima Norte y Lima Este sub-distrital no debería tomarse en abstracto. Debería decidirse por el **cruce con la disponibilidad real de los primeros tres a cinco contadores aliados**. Si los primeros contadores que firman tienen cartera en SMP y Los Olivos, el beachhead es Lima Norte. Si los primeros contadores tienen cartera en Caja de Agua o Las Flores, el beachhead es Lima Este. Este criterio aparentemente táctico es estratégicamente más sólido que cualquier análisis poblacional, porque garantiza que el canal y el territorio están alineados desde el día uno."
+        }
+      ]
+    },
+    {
+      "id": "exclusiones",
+      "title": "Lo que esta selección excluye deliberadamente",
+      "emoji": "🚫",
+      "question": "¿La disciplina de la selección se mide por lo que excluye?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La disciplina de la selección se mide por lo que se excluye, no por lo que se incluye. **Tres exclusiones explícitas** que el fundador debe sostener durante los primeros doce meses incluso ante oportunidades aparentemente atractivas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Primera exclusión — Lima Moderna.** Aunque aparezcan bodegueros de Miraflores o Surco interesados durante la validación, no deben ser priorizados. Su perfil no representa al beachhead y desviar atención contamina la lectura de tracción real del producto en su segmento natural.",
+            "**Segunda exclusión — Lima Sur en la primera ola.** La mayor sensibilidad al precio y la cultura de informalidad operativa más marcada elevan el riesgo de tracción en la fase más vulnerable del producto. Lima Sur es candidato natural para la segunda ola, una vez que el pricing esté validado.",
+            "**Tercera exclusión — expansión a provincias en los primeros 18 meses.** Arequipa, Trujillo, Chiclayo, Cusco, Piura aparecerán como tentaciones. La respuesta debe ser explícita: lista de espera, comunicación clara de *\"llegamos en Q3 del año siguiente\"*, y disciplina de no asignar ni una hora de equipo a esa expansión."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "La ventana competitiva de 18 a 24 meses identificada en el documento maestro se gana con **profundidad en un territorio**, no con presencia simbólica en cinco."
+        }
+      ]
+    },
+    {
+      "id": "metricas",
+      "title": "Métricas de validación y criterios go/no-go",
+      "emoji": "📊",
+      "question": "¿Cómo se sabe si la selección geográfica está funcionando?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La selección geográfica no es decisión irreversible. Debe monitorearse activamente con métricas que confirmen o desmientan el supuesto de fit. Las cuatro métricas operan en horizontes distintos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**A los 90 días — tasa de adquisición por referido intra-cluster.** Si menos del **20%** de los nuevos usuarios proviene de referido de un usuario existente del mismo distrito o distritos contiguos del beachhead, el efecto cluster no está operando como se asumió. Dos lecturas posibles: la zona fue incorrecta, o el producto aún no genera el nivel de satisfacción que detona el referido espontáneo. Cualquiera requiere acción correctiva inmediata.",
+            "**A los 6 meses — densidad de penetración relativa dentro del beachhead.** No *\"cuántos usuarios totales\"*, sino qué porcentaje de las bodegas formales del cluster está usando el producto. Una penetración menor al **1%** sobre bodegas con RUC activas del cluster en seis meses indica que el modelo no logra masa crítica de visibilidad local.",
+            "**A los 12 meses — retención mensual del beachhead aislado del resto.** Si la retención del cluster geográfico está por debajo del **88% mensual** (umbral de viabilidad del documento maestro), hay un problema de fit producto-segmento que la geografía no va a corregir — la decisión estratégica es replantear el segmento, no expandir geográficamente.",
+            "**A los 18 meses — capacidad de exportar el playbook a una segunda zona con métricas equivalentes en menos de seis meses.** Si la replicación a Lima Sur o Lima Este requiere reinventar el canal, el mensaje y el pricing, el playbook del beachhead no era playbook, era idiosincrasia."
+          ]
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "📐 Implicancias para el resto del estudio",
+    "lead": "La selección concentrada en una zona de Lima tiene consecuencias directas sobre las secciones siguientes que conviene anticipar para evitar incoherencias.",
+    "items": [
+      "**En análisis de demanda.** La proyección no puede construirse sobre el universo de 400,000 bodegas de Lima Metropolitana. Debe construirse sobre el universo del cluster seleccionado — probablemente 25,000–40,000 bodegas formales en los tres a cinco distritos del beachhead. Cualquier proyección que use el TAM completo de Lima como denominador está inflada por un orden de magnitud.",
+      "**En estrategia de distribución.** El canal contadores no es *\"contadores de Lima\"* sino *\"contadores con cartera activa en los distritos del beachhead\"*. Esto reduce el universo objetivo a un orden de magnitud menor — un mapeo abarcable en 60 días, no un esfuerzo titánico.",
+      "**En estrategia de promoción.** La inversión en TikTok, Instagram o Facebook Ads no debe ser geográficamente abierta. Debe segmentarse por ubicación al nivel distrital o por radio postal del cluster. Un anuncio que llega a 100,000 limeños sin diferenciación geográfica desperdicia el 95% del presupuesto; el mismo presupuesto concentrado en 8,000 personas dentro del beachhead genera tracción medible."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis débiles a vigilar",
+    "lead": "Tres supuestos de esta sección merecen vigilancia activa porque, si fallan, alteran toda la lógica geográfica.",
+    "items": [
+      "**El efecto cluster por radio barrio-manzana está asumido con fuerza pero no medido en este segmento para esta categoría de producto.** Es un patrón documentado para productos de consumo masivo y servicios financieros (Yape, microcréditos), pero no necesariamente se replica con la misma intensidad para software de gestión. Si los bodegueros adoptan ERP por canal individual más que por imitación de pares cercanos, el argumento de concentración geográfica pierde fuerza. Validar cuantitativamente en los primeros tres meses es prioridad.",
+      "**La hipótesis de que Lima Norte cumple mejor los cinco filtros que Lima Este es razonada pero no validada.** Sin un mapeo real de contadores aliados disponibles en ambas zonas, la elección entre ambas debería postergarse a la fase de búsqueda activa del primer canal. El error sería decidir Lima Norte por análisis macro y descubrir luego que los primeros contadores que firman están en Lima Este.",
+      "**La exclusión de Lima Sur asume que la mayor sensibilidad al precio es una desventaja.** Pero esa misma sensibilidad podría operar como ventaja si se valida con un sub-segmento dentro de Villa El Salvador donde el dolor SUNAT es agudo y la propuesta freemium se percibe como liberación. Esta hipótesis alternativa merece al menos diez entrevistas cuantitativas antes de cerrar la exclusión."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva",
+    "lead": "Lima Metropolitana es el punto de lanzamiento por convergencia de densidad de beachhead, infraestructura digital, presión SUNAT efectiva y disponibilidad de canal contadores. Pero **\"Lima\" no es una zona de mercado operativa** — es una etiqueta administrativa.",
+    "items": [
+      "Concentrar los primeros doce meses en **una sola zona, tres a cinco distritos contiguos**, definidos por el cruce entre densidad de bodegas NSE C, presencia de avenidas comerciales que activan efecto cluster, y disponibilidad real de los primeros contadores aliados.",
+      "**Lima Norte es la apuesta primaria** por convergencia óptima de criterios. Lima Este sub-distrital es alternativa secundaria si el canal aterriza primero allí.",
+      "Lima Sur queda explícitamente como segunda ola. Lima Moderna queda fuera del beachhead. Expansión a provincias postergada al menos 18 meses.",
+      "La selección se valida con métricas de cluster (referidos intra-zona, densidad de penetración, retención del beachhead), no con métricas absolutas de Lima Metropolitana."
+    ],
+    "closing": "Lo que esta selección excluye es tan importante como lo que incluye. La disciplina del founder único para sostener las exclusiones durante los próximos doce meses es la condición real de éxito de toda la estrategia geográfica."
+  }
+}
