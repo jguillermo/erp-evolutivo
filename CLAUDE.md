@@ -91,31 +91,54 @@ The pipe HTML-escapes raw input before applying the markers and emits `SafeHtml`
 
 These rules apply to **every line of generated code** without exception.
 
-### Colors — no raw hex values
+### Colors — no raw hex, no raw scale steps
 
-**NEVER** use hex colors, rgba, or Tailwind default palette names directly in templates or component constants:
+**NEVER** use hex colors, rgba, Tailwind default palette names, or scale steps (`*-300`, `*-400`, `*-500/20`, etc.) directly in templates or component constants. Scale-step classes look fine in dark mode and disappear (or scream) in light mode — they are a leading cause of contrast regressions.
 
 ```html
-<!-- ❌ FORBIDDEN -->
+<!-- ❌ FORBIDDEN — hex / rgba / inline -->
 <div class="bg-[#1a1d27] text-[#e0e0e0] border-[#2a2d3a]">
 <div class="text-[#6366f1] bg-indigo-500">
 <div style="color: rgba(99,102,241,0.5)">
-```
 
-**ALWAYS** use the semantic tokens defined in `colors.js`:
-
-```html
-<!-- ✅ CORRECT -->
-<div class="bg-surface text-ink border-line">
+<!-- ❌ FORBIDDEN — raw scale steps (break in light mode) -->
 <div class="text-primary-400 bg-primary-500/20">
 <div class="text-accent-300 border-success-500/30">
+<div class="text-warning-400 bg-warning-400/[8%]">
+<p   class="text-slate-200">
+<span class="text-white">
 ```
 
-Color tokens: `primary` · `accent` · `success` · `warning` · `danger` · `info` · `ai`  
-Surface tokens: `bg-base` · `bg-surface` · `bg-surface-raised` · `bg-surface-overlay`  
-Text tokens: `text-ink` · `text-ink-muted` · `text-ink-subtle`  
-Border tokens: `border-line` · `border-line-strong`  
-State tokens: `bg-state-hover` · `bg-state-active` · `bg-state-selected` · `bg-state-disabled`
+**ALWAYS** use the semantic role tokens — they are CSS-variable backed and swap automatically between dark and light mode.
+
+```html
+<!-- ✅ CORRECT — surfaces / ink / lines / state -->
+<div class="bg-surface text-ink border-line">
+<li  class="hover:bg-state-hover active:bg-state-active">
+
+<!-- ✅ CORRECT — family roles (fg / tint / line) -->
+<span class="bg-primary-tint text-primary-fg border border-primary-line">FASE 1</span>
+<div  class="bg-warning-tint border border-warning-line">
+  <h3 class="text-warning-fg-strong">📌 Beachhead</h3>
+</div>
+<p    class="text-accent-fg italic">cita</p>
+```
+
+**Reference table — `docs/design-system.md` "Tokens semánticos por familia" is the source of truth.**
+
+Family roles per color (`primary` · `accent` · `success` · `warning` · `danger` · `info` · `ai` · `teal` · `neutral` · `pink` · `orange`):
+- `text-{family}-fg` · `text-{family}-fg-strong` · `text-{family}-fg-soft`
+- `bg-{family}-tint` · `bg-{family}-tint-strong` · `bg-{family}-tint-soft`
+- `border-{family}-line`
+- (only `warning`) `bg-warning-solid-bg` + `text-warning-solid-fg`
+
+Neutral tokens (surfaces / ink / lines / state) are unchanged and remain in use:
+- Surface: `bg-base` · `bg-surface` · `bg-surface-raised` · `bg-surface-overlay`
+- Text: `text-ink` · `text-ink-muted` · `text-ink-subtle`
+- Border: `border-line` · `border-line-strong`
+- State: `bg-state-hover` · `bg-state-active` · `bg-state-selected` · `bg-state-disabled`
+
+**If you need a shade that doesn't exist yet:** add it as a new CSS variable in BOTH `:root` and `html.light` blocks in `src/styles.css`, expose it under the family in `tokens/colors.js`, and document it in `docs/design-system.md`. Never inline a one-off hex/rgba to "fix it for now".
 
 ### Typography — no arbitrary size values
 
