@@ -1,21 +1,26 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All color tokens live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — usan tokens semánticos (fg/tint/line) que cambian
+// automáticamente entre modo oscuro y modo claro vía CSS variables.
+// Niveles de intensidad:
+//   tint-soft  → más sutil (CANAL #3, SECUNDARIO)
+//   tint       → estándar (CANAL #2, FUTURO)
+//   tint-strong → más prominente (CANAL #1, PRINCIPAL)
 export const BADGE_COLORS = {
-  'indigo':       'text-2xs px-sm mr-sm bg-primary-500/20 text-primary-300 border border-primary-500/40',
-  'slate':        'text-2xs px-sm mr-sm bg-slate-600/20 text-slate-400 border border-slate-600/35',
-  'teal-hi':      'text-2xs px-sm mr-sm bg-teal-500/25 text-teal-400 border border-teal-500/50',
-  'teal-mid':     'text-2xs px-sm mr-sm bg-teal-500/[12%] text-teal-300 border border-teal-500/25',
-  'teal-lo':      'text-2xs px-sm mr-sm bg-teal-500/[6%] text-teal-200 border border-teal-500/15',
-  'red':          'text-2xs px-sm mr-sm bg-danger-500/15 text-danger-400 border border-danger-500/30',
-  'orange':       'text-2xs px-sm mr-sm bg-orange-400/15 text-orange-400 border border-orange-400/30',
-  'green-hi':     'text-2xs px-sm mr-sm bg-green-400/15 text-green-400 border border-green-400/30',
-  'green-lo':     'text-2xs px-sm mr-sm bg-green-400/[7%] text-green-300 border border-green-400/15',
-  'pink':         'text-2xs px-sm mr-sm bg-pink-300/10 text-pink-300 border border-pink-300/20',
-  'amber-solid':  'text-2xs px-md bg-warning-600 text-white',
-  'amber':        'text-2xs px-md bg-warning-400/15 text-warning-400 border border-warning-400/30',
-  'orange-dim':   'text-2xs px-md bg-orange-500/15 text-orange-400 border border-orange-500/30',
+  'indigo':       'text-2xs px-sm mr-sm bg-primary-tint text-primary-fg border border-primary-line',
+  'slate':        'text-2xs px-sm mr-sm bg-neutral-tint text-neutral-fg border border-neutral-line',
+  'teal-hi':      'text-2xs px-sm mr-sm bg-teal-tint-strong text-teal-fg border border-teal-line',
+  'teal-mid':     'text-2xs px-sm mr-sm bg-teal-tint text-teal-fg border border-teal-line',
+  'teal-lo':      'text-2xs px-sm mr-sm bg-teal-tint-soft text-teal-fg border border-teal-line',
+  'red':          'text-2xs px-sm mr-sm bg-danger-tint text-danger-fg border border-danger-line',
+  'orange':       'text-2xs px-sm mr-sm bg-orange-tint text-orange-fg border border-orange-line',
+  'green-hi':     'text-2xs px-sm mr-sm bg-success-tint text-success-fg border border-success-line',
+  'green-lo':     'text-2xs px-sm mr-sm bg-success-tint-soft text-success-fg border border-success-line',
+  'pink':         'text-2xs px-sm mr-sm bg-pink-tint text-pink-fg border border-pink-line',
+  'amber-solid':  'text-2xs px-md bg-warning-solid-bg text-warning-solid-fg',
+  'amber':        'text-2xs px-md bg-warning-tint text-warning-fg border border-warning-line',
+  'orange-dim':   'text-2xs px-md bg-orange-tint text-orange-fg border border-orange-line',
 } as const;
 
 export type BadgeColor = keyof typeof BADGE_COLORS;

@@ -1,22 +1,23 @@
 import { Component, computed, input, output } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All color tokens live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — usan tokens semánticos que cambian automáticamente
+// entre modo oscuro y modo claro vía CSS variables.
 export const ALERT_STYLES = {
   info: {
-    container: 'bg-accent-500/10 border-accent-500/30 text-accent-400',
+    container: 'bg-accent-tint-soft border-accent-line text-accent-fg',
     icon: 'ℹ️',
   },
   success: {
-    container: 'bg-success-500/10 border-success-500/30 text-success-400',
+    container: 'bg-success-tint-soft border-success-line text-success-fg',
     icon: '✅',
   },
   warning: {
-    container: 'bg-warning-500/10 border-warning-500/30 text-warning-400',
+    container: 'bg-warning-tint-soft border-warning-line text-warning-fg',
     icon: '⚠️',
   },
   error: {
-    container: 'bg-danger-500/10 border-danger-500/30 text-danger-400',
+    container: 'bg-danger-tint-soft border-danger-line text-danger-fg',
     icon: '❌',
   },
 } as const;

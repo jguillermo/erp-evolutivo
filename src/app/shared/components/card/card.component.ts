@@ -1,17 +1,20 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All color tokens live here — change a token, all cards using it update automatically
+// All color tokens live here — usan tokens semánticos (fg/tint/line) que cambian
+// automáticamente entre modo oscuro y modo claro vía CSS variables.
+// La franja superior (from-/to-) conserva la escala 500/600 porque son tonos
+// saturados que mantienen identidad y contraste en ambos modos.
 export const CARD_COLORS = {
-  purple:  { bar: 'from-ai-500 to-ai-600',         title: 'text-ai-400'      },
-  indigo:  { bar: 'from-primary-500 to-primary-600', title: 'text-primary-400' },
-  blue:    { bar: 'from-info-500 to-info-600',       title: 'text-info-400'    },
-  cyan:    { bar: 'from-accent-500 to-accent-600',   title: 'text-accent-400'  },
-  green:   { bar: 'from-success-500 to-success-600', title: 'text-success-400' },
-  teal:    { bar: 'from-teal-500 to-teal-600',       title: 'text-teal-400'    },
-  amber:   { bar: 'from-warning-500 to-warning-600', title: 'text-warning-400' },
-  red:     { bar: 'from-danger-500 to-danger-600',   title: 'text-danger-400'  },
-  emerald: { bar: 'from-green-500 to-green-600',     title: 'text-green-400'   },
+  purple:  { bar: 'from-ai-500 to-ai-600',           title: 'text-ai-fg'      },
+  indigo:  { bar: 'from-primary-500 to-primary-600', title: 'text-primary-fg' },
+  blue:    { bar: 'from-info-500 to-info-600',       title: 'text-info-fg'    },
+  cyan:    { bar: 'from-accent-500 to-accent-600',   title: 'text-accent-fg'  },
+  green:   { bar: 'from-success-500 to-success-600', title: 'text-success-fg' },
+  teal:    { bar: 'from-teal-500 to-teal-600',       title: 'text-teal-fg'    },
+  amber:   { bar: 'from-warning-500 to-warning-600', title: 'text-warning-fg' },
+  red:     { bar: 'from-danger-500 to-danger-600',   title: 'text-danger-fg'  },
+  emerald: { bar: 'from-success-500 to-success-600', title: 'text-success-fg' },
 } as const;
 
 export type CardColor = keyof typeof CARD_COLORS;

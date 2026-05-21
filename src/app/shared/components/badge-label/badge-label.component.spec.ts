@@ -57,7 +57,7 @@ describe('BadgeLabelComponent', () => {
 
     it('renders label with description classes', () => {
       const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
-      expect(span.className).toContain('text-gray-400');
+      expect(span.className).toContain('text-ink-muted');
       expect(span.className).toContain('text-2xs');
     });
 
@@ -78,7 +78,7 @@ describe('BadgeLabelComponent', () => {
 
     it('renders label with title classes', () => {
       const span = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
-      expect(span.className).toContain('text-warning-100');
+      expect(span.className).toContain('text-warning-fg-strong');
       expect(span.className).toContain('font-bold');
     });
   });

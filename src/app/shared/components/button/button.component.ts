@@ -5,7 +5,7 @@ import { NgClass } from '@angular/common';
 export const BUTTON_VARIANTS = {
   primary:   'bg-primary-500 hover:bg-primary-600 text-white border border-primary-500 hover:border-primary-600',
   secondary: 'bg-surface hover:bg-surface-raised text-ink border border-line hover:border-line-strong',
-  ghost:     'bg-transparent hover:bg-white/[6%] text-ink-muted hover:text-ink border border-transparent',
+  ghost:     'bg-transparent hover:bg-state-hover text-ink-muted hover:text-ink border border-transparent',
 } as const;
 
 export const BUTTON_SIZES = {

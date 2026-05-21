@@ -30,6 +30,121 @@
   --ds-state-active:    #2d3148;
   --ds-state-selected:  #312e81;
   --ds-state-disabled:  #0f1117;
+
+  /* ── Semantic color roles (dark mode defaults) ──────────────────────────
+     Cada familia define seis roles que swappean en modo claro. Las escalas
+     crudas *-300/-400/-500/etc. NO deben usarse en componentes ni templates;
+     hay que consumir SIEMPRE estos roles para que el modo claro funcione.
+
+       fg            → texto enfatizado sobre fondo neutro
+       fg-strong     → texto enfatizado más fuerte (títulos, badges sólidos)
+       fg-soft       → texto enfatizado más suave
+       tint          → fondo tintado estándar
+       tint-strong   → fondo tintado más pronunciado
+       tint-soft     → fondo tintado muy sutil
+       line          → borde en la familia
+     ──────────────────────────────────────────────────────────────────────── */
+
+  /* primary (indigo) */
+  --ds-primary-fg:          #a5b4fc;
+  --ds-primary-fg-strong:   #c7d2fe;
+  --ds-primary-fg-soft:     #818cf8;
+  --ds-primary-tint:        rgb(99 102 241 / 0.20);
+  --ds-primary-tint-strong: rgb(99 102 241 / 0.30);
+  --ds-primary-tint-soft:   rgb(99 102 241 / 0.08);
+  --ds-primary-line:        rgb(99 102 241 / 0.40);
+
+  /* accent (cyan) */
+  --ds-accent-fg:           #67e8f9;
+  --ds-accent-fg-strong:    #a5f3fc;
+  --ds-accent-fg-soft:      #22d3ee;
+  --ds-accent-tint:         rgb(6 182 212 / 0.18);
+  --ds-accent-tint-strong:  rgb(6 182 212 / 0.30);
+  --ds-accent-tint-soft:    rgb(6 182 212 / 0.08);
+  --ds-accent-line:         rgb(6 182 212 / 0.35);
+
+  /* success (emerald) */
+  --ds-success-fg:          #6ee7b7;
+  --ds-success-fg-strong:   #a7f3d0;
+  --ds-success-fg-soft:     #34d399;
+  --ds-success-tint:        rgb(16 185 129 / 0.18);
+  --ds-success-tint-strong: rgb(16 185 129 / 0.30);
+  --ds-success-tint-soft:   rgb(16 185 129 / 0.08);
+  --ds-success-line:        rgb(16 185 129 / 0.40);
+
+  /* warning (amber) */
+  --ds-warning-fg:          #fcd34d;
+  --ds-warning-fg-strong:   #fde68a;
+  --ds-warning-fg-soft:     #fbbf24;
+  --ds-warning-tint:        rgb(251 191 36 / 0.15);
+  --ds-warning-tint-strong: rgb(217 119 6 / 0.25);
+  --ds-warning-tint-soft:   rgb(251 191 36 / 0.08);
+  --ds-warning-line:        rgb(217 119 6 / 0.40);
+  --ds-warning-solid-bg:    #d97706; /* amber-600 fondo sólido (badge BEACHHEAD) */
+  --ds-warning-solid-fg:    #ffffff;
+
+  /* danger (red) */
+  --ds-danger-fg:           #fca5a5;
+  --ds-danger-fg-strong:    #fecaca;
+  --ds-danger-fg-soft:      #f87171;
+  --ds-danger-tint:         rgb(239 68 68 / 0.15);
+  --ds-danger-tint-strong:  rgb(239 68 68 / 0.30);
+  --ds-danger-tint-soft:    rgb(239 68 68 / 0.08);
+  --ds-danger-line:         rgb(239 68 68 / 0.35);
+
+  /* info (blue) */
+  --ds-info-fg:             #93c5fd;
+  --ds-info-fg-strong:      #bfdbfe;
+  --ds-info-fg-soft:        #60a5fa;
+  --ds-info-tint:           rgb(59 130 246 / 0.15);
+  --ds-info-tint-strong:    rgb(59 130 246 / 0.30);
+  --ds-info-tint-soft:      rgb(59 130 246 / 0.08);
+  --ds-info-line:           rgb(59 130 246 / 0.35);
+
+  /* ai (violet) */
+  --ds-ai-fg:               #c4b5fd;
+  --ds-ai-fg-strong:        #ddd6fe;
+  --ds-ai-fg-soft:          #a78bfa;
+  --ds-ai-tint:             rgb(139 92 246 / 0.18);
+  --ds-ai-tint-strong:      rgb(139 92 246 / 0.30);
+  --ds-ai-tint-soft:        rgb(139 92 246 / 0.08);
+  --ds-ai-line:             rgb(139 92 246 / 0.30);
+
+  /* teal */
+  --ds-teal-fg:             #5eead4;
+  --ds-teal-fg-strong:      #99f6e4;
+  --ds-teal-fg-soft:        #2dd4bf;
+  --ds-teal-tint:           rgb(20 184 166 / 0.18);
+  --ds-teal-tint-strong:    rgb(20 184 166 / 0.30);
+  --ds-teal-tint-soft:      rgb(20 184 166 / 0.08);
+  --ds-teal-line:           rgb(20 184 166 / 0.35);
+
+  /* neutral (slate) — pares vs/comparison/quoted */
+  --ds-neutral-fg:          #e2e8f0;
+  --ds-neutral-fg-strong:   #f1f5f9;
+  --ds-neutral-fg-soft:     #94a3b8;
+  --ds-neutral-tint:        rgb(71 85 105 / 0.25);
+  --ds-neutral-tint-strong: rgb(71 85 105 / 0.45);
+  --ds-neutral-tint-soft:   rgb(71 85 105 / 0.10);
+  --ds-neutral-line:        rgb(71 85 105 / 0.40);
+
+  /* pink (futuro / IA secundaria) */
+  --ds-pink-fg:             #f9a8d4;
+  --ds-pink-fg-strong:      #fbcfe8;
+  --ds-pink-fg-soft:        #f472b6;
+  --ds-pink-tint:           rgb(244 114 182 / 0.10);
+  --ds-pink-tint-strong:    rgb(244 114 182 / 0.20);
+  --ds-pink-tint-soft:      rgb(244 114 182 / 0.06);
+  --ds-pink-line:           rgb(244 114 182 / 0.25);
+
+  /* orange (variable / costos) */
+  --ds-orange-fg:           #fdba74;
+  --ds-orange-fg-strong:    #fed7aa;
+  --ds-orange-fg-soft:      #fb923c;
+  --ds-orange-tint:         rgb(251 146 60 / 0.15);
+  --ds-orange-tint-strong:  rgb(249 115 22 / 0.25);
+  --ds-orange-tint-soft:    rgb(251 146 60 / 0.08);
+  --ds-orange-line:         rgb(249 115 22 / 0.35);
 }
 
 html.light {
@@ -48,6 +163,113 @@ html.light {
   --ds-state-active:    #e8edf2;
   --ds-state-selected:  #e0e7ff;
   --ds-state-disabled:  #f5f5f5;
+
+  /* ── Semantic color roles (light mode overrides) ────────────────────────
+     fg/fg-strong/fg-soft pasan a tonos *-700/-800/-600 para contraste sobre
+     blanco; los tint pasan a *-100/-200/-50 (pasteles legibles); la familia
+     conserva su identidad cromática en ambos modos.
+     ──────────────────────────────────────────────────────────────────────── */
+
+  /* primary (indigo) */
+  --ds-primary-fg:          #4338ca; /* indigo-700 */
+  --ds-primary-fg-strong:   #3730a3; /* indigo-800 */
+  --ds-primary-fg-soft:     #4f46e5; /* indigo-600 */
+  --ds-primary-tint:        #e0e7ff; /* indigo-100 */
+  --ds-primary-tint-strong: #c7d2fe; /* indigo-200 */
+  --ds-primary-tint-soft:   #eef2ff; /* indigo-50  */
+  --ds-primary-line:        #a5b4fc; /* indigo-300 */
+
+  /* accent (cyan) */
+  --ds-accent-fg:           #0e7490;
+  --ds-accent-fg-strong:    #155e75;
+  --ds-accent-fg-soft:      #0891b2;
+  --ds-accent-tint:         #cffafe;
+  --ds-accent-tint-strong:  #a5f3fc;
+  --ds-accent-tint-soft:    #ecfeff;
+  --ds-accent-line:         #67e8f9;
+
+  /* success (emerald) */
+  --ds-success-fg:          #047857;
+  --ds-success-fg-strong:   #065f46;
+  --ds-success-fg-soft:     #059669;
+  --ds-success-tint:        #d1fae5;
+  --ds-success-tint-strong: #a7f3d0;
+  --ds-success-tint-soft:   #ecfdf5;
+  --ds-success-line:        #6ee7b7;
+
+  /* warning (amber) */
+  --ds-warning-fg:          #b45309;
+  --ds-warning-fg-strong:   #78350f;
+  --ds-warning-fg-soft:     #d97706;
+  --ds-warning-tint:        #fef3c7;
+  --ds-warning-tint-strong: #fde68a;
+  --ds-warning-tint-soft:   #fffbeb;
+  --ds-warning-line:        #fcd34d;
+  --ds-warning-solid-bg:    #b45309;
+  --ds-warning-solid-fg:    #ffffff;
+
+  /* danger (red) */
+  --ds-danger-fg:           #b91c1c;
+  --ds-danger-fg-strong:    #7f1d1d;
+  --ds-danger-fg-soft:      #dc2626;
+  --ds-danger-tint:         #fee2e2;
+  --ds-danger-tint-strong:  #fecaca;
+  --ds-danger-tint-soft:    #fef2f2;
+  --ds-danger-line:         #fca5a5;
+
+  /* info (blue) */
+  --ds-info-fg:             #1d4ed8;
+  --ds-info-fg-strong:      #1e40af;
+  --ds-info-fg-soft:        #2563eb;
+  --ds-info-tint:           #dbeafe;
+  --ds-info-tint-strong:    #bfdbfe;
+  --ds-info-tint-soft:      #eff6ff;
+  --ds-info-line:           #93c5fd;
+
+  /* ai (violet) */
+  --ds-ai-fg:               #6d28d9;
+  --ds-ai-fg-strong:        #5b21b6;
+  --ds-ai-fg-soft:          #7c3aed;
+  --ds-ai-tint:             #ede9fe;
+  --ds-ai-tint-strong:      #ddd6fe;
+  --ds-ai-tint-soft:        #f5f3ff;
+  --ds-ai-line:             #c4b5fd;
+
+  /* teal */
+  --ds-teal-fg:             #0f766e;
+  --ds-teal-fg-strong:      #115e59;
+  --ds-teal-fg-soft:        #0d9488;
+  --ds-teal-tint:           #ccfbf1;
+  --ds-teal-tint-strong:    #99f6e4;
+  --ds-teal-tint-soft:      #f0fdfa;
+  --ds-teal-line:           #5eead4;
+
+  /* neutral (slate) */
+  --ds-neutral-fg:          #334155;
+  --ds-neutral-fg-strong:   #1e293b;
+  --ds-neutral-fg-soft:     #475569;
+  --ds-neutral-tint:        #e2e8f0;
+  --ds-neutral-tint-strong: #cbd5e1;
+  --ds-neutral-tint-soft:   #f1f5f9;
+  --ds-neutral-line:        #94a3b8;
+
+  /* pink */
+  --ds-pink-fg:             #be185d;
+  --ds-pink-fg-strong:      #9d174d;
+  --ds-pink-fg-soft:        #db2777;
+  --ds-pink-tint:           #fce7f3;
+  --ds-pink-tint-strong:    #fbcfe8;
+  --ds-pink-tint-soft:      #fdf2f8;
+  --ds-pink-line:           #f9a8d4;
+
+  /* orange */
+  --ds-orange-fg:           #c2410c;
+  --ds-orange-fg-strong:    #9a3412;
+  --ds-orange-fg-soft:      #ea580c;
+  --ds-orange-tint:         #ffedd5;
+  --ds-orange-tint-strong:  #fed7aa;
+  --ds-orange-tint-soft:    #fff7ed;
+  --ds-orange-line:         #fdba74;
 }
 
 /* Global resets and base */
@@ -78,6 +300,51 @@ body {
     --ds-state-active:    #f0f0f0;
     --ds-state-selected:  #e0e7ff;
     --ds-state-disabled:  #f5f5f5;
+
+    /* Semantic color roles — light values for print */
+    --ds-primary-fg: #4338ca; --ds-primary-fg-strong: #3730a3; --ds-primary-fg-soft: #4f46e5;
+    --ds-primary-tint: #e0e7ff; --ds-primary-tint-strong: #c7d2fe; --ds-primary-tint-soft: #eef2ff;
+    --ds-primary-line: #a5b4fc;
+
+    --ds-accent-fg: #0e7490; --ds-accent-fg-strong: #155e75; --ds-accent-fg-soft: #0891b2;
+    --ds-accent-tint: #cffafe; --ds-accent-tint-strong: #a5f3fc; --ds-accent-tint-soft: #ecfeff;
+    --ds-accent-line: #67e8f9;
+
+    --ds-success-fg: #047857; --ds-success-fg-strong: #065f46; --ds-success-fg-soft: #059669;
+    --ds-success-tint: #d1fae5; --ds-success-tint-strong: #a7f3d0; --ds-success-tint-soft: #ecfdf5;
+    --ds-success-line: #6ee7b7;
+
+    --ds-warning-fg: #b45309; --ds-warning-fg-strong: #78350f; --ds-warning-fg-soft: #d97706;
+    --ds-warning-tint: #fef3c7; --ds-warning-tint-strong: #fde68a; --ds-warning-tint-soft: #fffbeb;
+    --ds-warning-line: #fcd34d; --ds-warning-solid-bg: #b45309; --ds-warning-solid-fg: #ffffff;
+
+    --ds-danger-fg: #b91c1c; --ds-danger-fg-strong: #7f1d1d; --ds-danger-fg-soft: #dc2626;
+    --ds-danger-tint: #fee2e2; --ds-danger-tint-strong: #fecaca; --ds-danger-tint-soft: #fef2f2;
+    --ds-danger-line: #fca5a5;
+
+    --ds-info-fg: #1d4ed8; --ds-info-fg-strong: #1e40af; --ds-info-fg-soft: #2563eb;
+    --ds-info-tint: #dbeafe; --ds-info-tint-strong: #bfdbfe; --ds-info-tint-soft: #eff6ff;
+    --ds-info-line: #93c5fd;
+
+    --ds-ai-fg: #6d28d9; --ds-ai-fg-strong: #5b21b6; --ds-ai-fg-soft: #7c3aed;
+    --ds-ai-tint: #ede9fe; --ds-ai-tint-strong: #ddd6fe; --ds-ai-tint-soft: #f5f3ff;
+    --ds-ai-line: #c4b5fd;
+
+    --ds-teal-fg: #0f766e; --ds-teal-fg-strong: #115e59; --ds-teal-fg-soft: #0d9488;
+    --ds-teal-tint: #ccfbf1; --ds-teal-tint-strong: #99f6e4; --ds-teal-tint-soft: #f0fdfa;
+    --ds-teal-line: #5eead4;
+
+    --ds-neutral-fg: #334155; --ds-neutral-fg-strong: #1e293b; --ds-neutral-fg-soft: #475569;
+    --ds-neutral-tint: #e2e8f0; --ds-neutral-tint-strong: #cbd5e1; --ds-neutral-tint-soft: #f1f5f9;
+    --ds-neutral-line: #94a3b8;
+
+    --ds-pink-fg: #be185d; --ds-pink-fg-strong: #9d174d; --ds-pink-fg-soft: #db2777;
+    --ds-pink-tint: #fce7f3; --ds-pink-tint-strong: #fbcfe8; --ds-pink-tint-soft: #fdf2f8;
+    --ds-pink-line: #f9a8d4;
+
+    --ds-orange-fg: #c2410c; --ds-orange-fg-strong: #9a3412; --ds-orange-fg-soft: #ea580c;
+    --ds-orange-tint: #ffedd5; --ds-orange-tint-strong: #fed7aa; --ds-orange-tint-soft: #fff7ed;
+    --ds-orange-line: #fdba74;
   }
 
   @page { size: A3 landscape; margin: 6mm; }
@@ -107,17 +374,13 @@ body {
   }
 }
 
-/* ===== Text highlight utilities (used across canvas content) ===== */
-.hl    { @apply text-ai-300 font-semibold; }
-.hl2   { @apply text-accent-400 font-semibold; }
-.hl3   { @apply text-green-400 font-semibold; }
-.hl-ai { @apply text-pink-300 font-semibold; }
-
-/* Light mode: versiones más oscuras con contraste adecuado sobre blanco */
-html.light .hl    { color: theme('colors.ai.700'); }
-html.light .hl2   { color: theme('colors.accent.700'); }
-html.light .hl3   { color: theme('colors.green.700'); }
-html.light .hl-ai { color: theme('colors.pink.700'); }
+/* ===== Text highlight utilities (used across canvas content) =====
+   Usan tokens semánticos *-fg que swappean automáticamente entre dark/light.
+   No requieren overrides manuales — los CSS vars hacen el trabajo. */
+.hl    { @apply text-ai-fg font-semibold; }
+.hl2   { @apply text-accent-fg font-semibold; }
+.hl3   { @apply text-success-fg font-semibold; }
+.hl-ai { @apply text-pink-fg font-semibold; }
 
 /* ===== Gradient text utilities ===== */
 .gradient-text-brand {

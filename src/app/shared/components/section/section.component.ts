@@ -1,27 +1,28 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All color tokens live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — usan tokens semánticos que cambian automáticamente
+// entre modo oscuro y modo claro vía CSS variables.
 export const SECTION_STYLES = {
   note: {
     container: 'mt-lg px-lg py-md bg-surface-raised rounded border-l-2 border-line-strong text-xs text-ink-muted print:mt-sm print:px-md print:py-sm',
     title: 'text-2xs font-bold text-ink-muted mb-sm print:text-print-xs',
   },
   info: {
-    container: 'mt-lg px-lg py-md bg-accent-500/[6%] rounded-md print:mt-sm print:px-md print:py-sm',
-    title: 'text-2xs font-bold text-accent-300 mb-sm print:text-print-xs',
+    container: 'mt-lg px-lg py-md bg-accent-tint-soft rounded-md print:mt-sm print:px-md print:py-sm',
+    title: 'text-2xs font-bold text-accent-fg mb-sm print:text-print-xs',
   },
   callout: {
-    container: 'mt-lg px-lg py-md bg-ai-500/[8%] border border-ai-500/20 rounded-md print:mt-sm print:px-md print:py-sm',
-    title: 'text-2xs font-bold text-ai-400 mb-sm print:text-print-xs',
+    container: 'mt-lg px-lg py-md bg-ai-tint-soft border border-ai-line rounded-md print:mt-sm print:px-md print:py-sm',
+    title: 'text-2xs font-bold text-ai-fg mb-sm print:text-print-xs',
   },
   highlight: {
-    container: 'mt-md px-lg py-lg bg-warning-600/[7%] border border-warning-600/40 rounded-md print:mt-sm print:px-md print:py-sm',
-    title: 'text-2xs font-bold text-warning-100 mb-sm print:text-print-xs',
+    container: 'mt-md px-lg py-lg bg-warning-tint border border-warning-line rounded-md print:mt-sm print:px-md print:py-sm',
+    title: 'text-2xs font-bold text-warning-fg-strong mb-sm print:text-print-xs',
   },
   feature: {
-    container: 'mt-lg px-lg py-md bg-accent-500/[8%] border border-accent-500/35 rounded-md print:mt-sm print:px-md print:py-sm',
-    title: 'text-2xs font-bold text-accent-300 mb-sm print:text-print-xs',
+    container: 'mt-lg px-lg py-md bg-accent-tint border border-accent-line rounded-md print:mt-sm print:px-md print:py-sm',
+    title: 'text-2xs font-bold text-accent-fg mb-sm print:text-print-xs',
   },
 } as const;
 

@@ -41,7 +41,7 @@ describe('StatRowComponent', () => {
 
     it('applies default value color class', () => {
       const value = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
-      expect(value.className).toContain('text-slate-200');
+      expect(value.className).toContain('text-ink');
     });
   });
 
@@ -56,7 +56,7 @@ describe('StatRowComponent', () => {
 
     it('applies green color for highlighted value', () => {
       const value = fixture.debugElement.queryAll(By.css('span'))[1].nativeElement as HTMLElement;
-      expect(value.className).toContain('text-green-400');
+      expect(value.className).toContain('text-success-fg');
     });
   });
 });

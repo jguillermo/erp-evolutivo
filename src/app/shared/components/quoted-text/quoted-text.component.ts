@@ -8,7 +8,7 @@ import { Component, input } from '@angular/core';
     'class': 'block',
   },
   template: `
-    <p class="text-sm text-slate-200 leading-normal border-l-2 border-accent-400 pl-lg italic
+    <p class="text-sm text-ink leading-normal border-l-2 border-accent-line pl-lg italic
               print:text-print-sm print:leading-condensed">
       <ng-content />
     </p>

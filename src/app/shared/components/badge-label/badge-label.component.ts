@@ -2,10 +2,11 @@ import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { BadgeComponent, BadgeColor } from '../badge/badge.component';
 
-// All color tokens live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — usan tokens semánticos que cambian automáticamente
+// entre modo oscuro y modo claro vía CSS variables.
 export const BADGE_LABEL_VARIANTS = {
-  title:       'text-2xs font-bold text-warning-100 print:text-print-xs',
-  description: 'text-2xs text-gray-400 leading-compact print:text-print-xs',
+  title:       'text-2xs font-bold text-warning-fg-strong print:text-print-xs',
+  description: 'text-2xs text-ink-muted leading-compact print:text-print-xs',
 } as const;
 
 export type BadgeLabelVariant = keyof typeof BADGE_LABEL_VARIANTS;

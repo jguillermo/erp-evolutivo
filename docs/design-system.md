@@ -23,16 +23,16 @@ Todos los componentes del design system siguen estas tres reglas sin excepción:
 
 ## Utilidades de texto
 
-Definidas en `src/styles.css` como clases globales. No requieren componente.
+Definidas en `src/styles.css` como clases globales. No requieren componente. Internamente referencian tokens semánticos por familia, así que cambian automáticamente entre dark y light mode sin overrides manuales.
 
-| Clase | Color | Uso |
+| Clase | Token base | Uso |
 |---|---|---|
-| `.hl` | `#c4b5fd` (violeta) | Términos clave generales |
-| `.hl2` | `#22d3ee` (cyan) | Términos de crecimiento |
-| `.hl3` | `#4ade80` (verde) | Términos de ingresos |
-| `.hl-ai` | `#f9a8d4` (rosa) | Términos relacionados con IA |
+| `.hl` | `text-ai-fg` (violeta) | Términos clave generales |
+| `.hl2` | `text-accent-fg` (cyan) | Términos de crecimiento |
+| `.hl3` | `text-success-fg` (verde) | Términos de ingresos |
+| `.hl-ai` | `text-pink-fg` (rosa) | Términos relacionados con IA |
 
-Light mode: colores sobrescritos por `.light-mode .hl` etc. en `src/styles.css`.
+Estas clases son el equivalente CSS de los marcadores markdown que produce el `MarkdownPipe`: `**texto**` se renderiza como `<strong class="hl">`.
 
 ---
 
@@ -136,62 +136,110 @@ Usar con el variant `print:` → `print:text-print-sm`
 
 **`tokens/colors.js`** — viewport-agnostic, único punto para colores.
 
-Para cambiar el color primario de indigo a azul, basta editar una línea:
+Para cambiar el color primario de indigo a azul:
 ```js
 // tokens/colors.js
-const primary = twColors.blue   // ← cambio aquí, toda la app se actualiza
+const primary = family('primary', twColors.blue)   // ← cambio aquí, toda la app se actualiza
 ```
+Además hay que actualizar los valores `--ds-primary-*` en `src/styles.css` para que el modo claro siga teniendo contraste.
 
-### Aliases semánticos
+### Familias semánticas
 
-| Token | Paleta base | Uso |
+| Familia | Paleta base | Uso |
 |---|---|---|
 | `primary` | indigo | Acciones, botones, focus ring |
-| `accent` | cyan | Destacados, datos, info |
+| `accent` | cyan | Destacados, datos, info, citas |
 | `success` | emerald | Estados positivos, ingresos |
-| `warning` | amber | Atención, alertas |
-| `danger` | red | Errores, acciones destructivas |
+| `warning` | amber | Atención, alertas, beachhead |
+| `danger` | red | Errores, acciones destructivas, costos fijos |
 | `info` | blue | Informativo neutro |
 | `ai` | violet | Elementos de IA |
+| `teal` | teal | Canales secundarios |
+| `neutral` | slate | Texto y fondos neutros (comparaciones) |
+| `pink` | pink | Futuro / IA secundaria |
+| `orange` | orange | Costos variables |
 
-En HTML: `bg-primary-500`, `text-accent-400`, `border-danger-300`, `bg-success-500/10`
+### Tokens semánticos por familia — MANDATORY
 
-Cada alias expone la escala completa de 50 a 950:
-`primary-50` `primary-100` `primary-200` … `primary-900` `primary-950`
+Cada familia expone siete roles respaldados por CSS variables que **se invierten automáticamente entre modo oscuro y modo claro**. Los componentes y templates deben usar SIEMPRE estos roles; las escalas crudas `*-300`, `*-400`, `*-500`, etc. quedan reservadas para tooling y experimentos y están **prohibidas** en cualquier código de producción.
+
+| Rol | Uso típico | Dark mode | Light mode |
+|---|---|---|---|
+| `text-{family}-fg` | Texto enfatizado sobre fondo neutro (badges, títulos de card, vínculos) | `*-300` | `*-700` |
+| `text-{family}-fg-strong` | Texto enfatizado más fuerte (títulos de sección highlight) | `*-200` | `*-800` |
+| `text-{family}-fg-soft` | Texto enfatizado más suave (subtítulos, hints) | `*-400` | `*-600` |
+| `bg-{family}-tint` | Fondo tintado estándar (badges, secciones tintadas) | `*-500 / 20%` | `*-100` |
+| `bg-{family}-tint-strong` | Fondo tintado más pronunciado (badges activos, callouts) | `*-500 / 30%` | `*-200` |
+| `bg-{family}-tint-soft` | Fondo tintado muy sutil (info banners, alerts) | `*-500 / 8%` | `*-50` |
+| `border-{family}-line` | Borde en color de la familia | `*-500 / 40%` | `*-300` |
+
+Excepción `warning`: además expone `bg-warning-solid-bg` + `text-warning-solid-fg` para badges con fondo sólido tipo BEACHHEAD.
+
+#### Ejemplos canónicos
+
+```html
+<!-- ✅ Badge con tres niveles de intensidad (CANAL #1, #2, #3) -->
+<span class="bg-teal-tint-strong text-teal-fg border border-teal-line">CANAL #1</span>
+<span class="bg-teal-tint        text-teal-fg border border-teal-line">CANAL #2</span>
+<span class="bg-teal-tint-soft   text-teal-fg border border-teal-line">CANAL #3</span>
+
+<!-- ✅ Sección destacada con título fuerte -->
+<div class="bg-warning-tint border border-warning-line">
+  <h3 class="text-warning-fg-strong">📌 Beachhead</h3>
+</div>
+
+<!-- ✅ Alerta info -->
+<div class="bg-accent-tint-soft border border-accent-line text-accent-fg">…</div>
+
+<!-- ❌ Prohibido: escalas crudas (rompen en light mode) -->
+<span class="text-warning-400 bg-warning-400/[8%]">…</span>
+<p   class="text-slate-200">…</p>
+<div class="border-success-500/50">…</div>
+```
+
+#### Dónde se definen los valores reales
+
+Los siete roles por familia son CSS variables (`--ds-{family}-{role}`) declaradas dos veces en `src/styles.css`:
+- en `:root` con valores claros sobre fondo oscuro (modo dark, default)
+- en `html.light` y en `@media print { :root }` con valores oscuros sobre fondo claro
+
+Para cambiar un valor solo hay que editar las dos declaraciones en `src/styles.css`. La capa de Tailwind (`tokens/colors.js` con la función `family()`) ya las cablea al sistema.
 
 ### Tokens de superficie
 
-| Token | Valor | Uso |
-|---|---|---|
-| `bg-base` | `#0f1117` | Fondo del body / canvas exterior |
-| `bg-surface` | `#1a1d27` | Tarjetas, paneles |
-| `bg-surface-raised` | `#242838` | Tooltips, dropdowns |
-| `bg-surface-overlay` | `#2d3148` | Modales |
-| `border-line` | `#2a2d3a` | Bordes por defecto |
-| `border-line-strong` | `#4a4d5a` | Bordes en hover / focus |
-| `text-ink` | `#e0e0e0` | Texto principal |
-| `text-ink-muted` | `#b0b3c0` | Texto secundario |
-| `text-ink-subtle` | `#888888` | Placeholder, timestamps |
+Backed by CSS variables — cambian automáticamente entre modos.
+
+| Token | Dark | Light | Uso |
+|---|---|---|---|
+| `bg-base` | `#0f1117` | `#f5f5f5` | Fondo del body / canvas exterior |
+| `bg-surface` | `#1a1d27` | `#ffffff` | Tarjetas, paneles |
+| `bg-surface-raised` | `#242838` | `#f0f4f8` | Tooltips, dropdowns |
+| `bg-surface-overlay` | `#2d3148` | `#e8edf2` | Modales |
+| `border-line` | `#2a2d3a` | `#d4d4d8` | Bordes por defecto |
+| `border-line-strong` | `#4a4d5a` | `#9ca3af` | Bordes en hover / focus |
+| `text-ink` | `#e0e0e0` | `#1e293b` | Texto principal |
+| `text-ink-muted` | `#b0b3c0` | `#4b5563` | Texto secundario |
+| `text-ink-subtle` | `#888888` | `#6b7280` | Placeholder, timestamps |
 
 ### Tokens de estado interactivo
 
 Estandarizan el aspecto de todos los elementos interactivos. Definidos en `colors.js` referenciando los tokens de superficie — cambiar una superficie actualiza todos los estados.
 
-| Token | Valor base | Uso |
-|---|---|---|
-| `bg-state-hover` | `surface-raised` (#242838) | Fila / ítem al pasar el cursor |
-| `bg-state-active` | `surface-overlay` (#2d3148) | Elemento al presionar / click |
-| `bg-state-selected` | `primary-900` (#1e1b4b) | Ítem seleccionado / activo en lista |
-| `bg-state-disabled` | `surface-dark` (#0f1117) | Elemento no interactivo |
+| Token | Dark | Light | Uso |
+|---|---|---|---|
+| `bg-state-hover` | surface-raised | `#f0f4f8` | Fila / ítem al pasar el cursor |
+| `bg-state-active` | surface-overlay | `#e8edf2` | Elemento al presionar / click |
+| `bg-state-selected` | `#312e81` | `#e0e7ff` | Ítem seleccionado / activo en lista |
+| `bg-state-disabled` | base | `#f5f5f5` | Elemento no interactivo |
 
 En HTML: `hover:bg-state-hover` · `active:bg-state-active` · `bg-state-selected` · `bg-state-disabled`
 
 ### Reglas
 
-1. **Nunca** valores hex sueltos (`#6366f1`, `rgba(...)`) en templates ni constantes de componente.
-2. **Usar siempre** aliases semánticos: `primary-500` en vez de `indigo-500`.
-3. Las constantes de componente (`CARD_COLORS`, `BADGE_COLORS`, etc.) siguen existiendo para que Tailwind JIT las detecte, pero ya referencian tokens nombrados.
-4. Para opacidad usa la sintaxis `/`: `bg-primary-500/20`, `border-success-500/30`.
+1. **Nunca** valores hex sueltos (`#6366f1`, `rgba(...)`) ni `text-white`/`bg-white` en templates ni constantes de componente.
+2. **Nunca** escalas crudas (`text-primary-300`, `bg-warning-400/[8%]`, `border-success-500/50`, `text-slate-200`) en componentes ni templates — rompen en modo claro.
+3. **Usar siempre** los roles semánticos por familia (`text-{family}-fg`, `bg-{family}-tint`, `border-{family}-line`, …). Si necesitas un matiz que no exista, añádelo en `src/styles.css` para AMBOS modos antes de usarlo.
+4. Las constantes de componente (`CARD_COLORS`, `BADGE_COLORS`, `SECTION_STYLES`, `ALERT_STYLES`, `STAT_ROW_STYLES`, `BADGE_LABEL_VARIANTS`) ya están alineadas a roles semánticos — no introducir escalas ahí.
 5. Para estados interactivos, usar siempre `bg-state-*` en lugar de implementar hover/active ad-hoc por componente.
 
 ---

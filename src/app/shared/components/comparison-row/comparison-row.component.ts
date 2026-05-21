@@ -8,8 +8,8 @@ import { Component, input } from '@angular/core';
     'class': 'block',
   },
   template: `
-    <p class="text-2xs text-slate-400 font-bold mt-sm mb-nano">vs. {{ competitor() }}:</p>
-    <p class="text-xs text-slate-200 pl-lg mb-xs print:text-print-xs"><ng-content /></p>
+    <p class="text-2xs text-ink-muted font-bold mt-sm mb-nano">vs. {{ competitor() }}:</p>
+    <p class="text-xs text-ink pl-lg mb-xs print:text-print-xs"><ng-content /></p>
   `,
 })
 export class ComparisonRowComponent {

@@ -58,7 +58,7 @@
       </app-section>
 
       <app-section variant="feature" testId="card-4-entry-module" [title]="propuestaValor.entryModule.title">
-        <p class="text-sm font-bold text-white mb-xs print:text-print-sm"
+        <p class="text-sm font-bold text-ink mb-xs print:text-print-sm"
            data-testid="card-4-entry-module-main"
            [innerHTML]="propuestaValor.entryModule.primary | md"></p>
         <p class="text-2xs text-ink-muted leading-condensed print:text-print-xs"
@@ -86,7 +86,7 @@
       [question]="segmentos.question"
       [class]="style(segmentos.id).gridClass">
 
-      <p class="text-xs text-warning-400 bg-warning-400/[8%] rounded px-md py-sm mb-sm print:text-print-xs"
+      <p class="text-xs text-warning-fg bg-warning-tint-soft rounded px-md py-sm mb-sm print:text-print-xs"
          data-testid="card-7-meta"
          [innerHTML]="segmentos.meta | md"></p>
 
@@ -99,7 +99,7 @@
           [badgeText]="segmentos.beachhead.badge"
           [labelText]="segmentos.beachhead.label"
         />
-        <p class="text-2xs text-warning-200 leading-cozy mb-sm print:text-print-xs"
+        <p class="text-2xs text-warning-fg-strong leading-cozy mb-sm print:text-print-xs"
            [innerHTML]="segmentos.beachhead.description | md"></p>
         <app-list testId="card-7-beachhead-list" class="mt-sm">
           @for (item of segmentos.beachhead.items; track $index) {

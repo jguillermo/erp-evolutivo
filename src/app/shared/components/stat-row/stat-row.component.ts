@@ -1,11 +1,12 @@
 import { Component, computed, input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
-// All color tokens live here — Tailwind JIT detects them via static scan of this file
+// All color tokens live here — usan tokens semánticos que cambian automáticamente
+// entre modo oscuro y modo claro vía CSS variables.
 export const STAT_ROW_STYLES = {
-  default:     { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-slate-200' },
-  highlighted: { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-green-400' },
-  ai:          { label: 'text-2xs text-slate-400', value: 'text-sm font-bold text-pink-300' },
+  default:     { label: 'text-2xs text-ink-muted', value: 'text-sm font-bold text-ink' },
+  highlighted: { label: 'text-2xs text-ink-muted', value: 'text-sm font-bold text-success-fg' },
+  ai:          { label: 'text-2xs text-ink-muted', value: 'text-sm font-bold text-pink-fg' },
 } as const;
 
 export type StatRowVariant = keyof typeof STAT_ROW_STYLES;
