@@ -5,6 +5,125 @@
   "intro": "La *\"demanda del proyecto\"* **no es** la demanda del mercado ni la oferta del producto — es la fracción del mercado que ERP Evolutivo razonablemente puede capturar dado su modelo, su capacidad operativa, su estrategia de canal y su ventana competitiva. En estudios tradicionales esto se resuelve con un cálculo simple (*\"demanda insatisfecha menos oferta total, el proyecto captura X% arbitrario\"*). Para una startup pre-MVP con capital semilla acotado y fundador único, ese enfoque es ingenuo. La demanda del proyecto se construye con **tres restricciones simultáneas**: demanda real del segmento (Bass calibrado, sección 2.3), oferta competitiva que disputa ese mismo segmento (sección 2.4), y **capacidad ejecutiva** del proyecto para convertir oportunidad teórica en pagantes reales. Es la **intersección honesta** de esas tres restricciones, no el techo optimista de ninguna.",
   "sections": [
     {
+      "id": "demanda-total-dirigida",
+      "title": "2.5.1 — Demanda total proyectada vs. demanda dirigida al segmento",
+      "emoji": "📊",
+      "question": "¿Qué fracción de la demanda total proyectada de Lima Metropolitana cae en el segmento objetivo accesible A+B+C?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Partiendo de la proyección Bass de la sección 2.3 (bodegas adoptando herramientas de gestión digital en Lima Metropolitana), se deriva la **demanda dirigida al segmento accesible** aplicando el filtro del 70% correspondiente a los segmentos A+B+C sobre el universo de 150,000 bodegas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**2026:** demanda total proyectada Lima Metro ≈ 17,550 bodegas con algún software de gestión → **× 70% segmento A+B+C = 12,285 demanda dirigida**.",
+            "**2027:** ≈ 28,900 → **× 70% = 20,230 demanda dirigida**.",
+            "**2028:** ≈ 47,200 → **× 70% = 33,040 demanda dirigida**.",
+            "**2029:** ≈ 71,100 → **× 70% = 49,770 demanda dirigida**.",
+            "**2030:** ≈ 97,800 → **× 70% = 68,460 demanda dirigida**.",
+            "**Nota metodológica:** los porcentajes de 70% para A+B+C y 54% para A+B son derivados del cuadro de segmentación de la sección 2.2.2 (11% + 43% + 16% = 70%). Las cifras de demanda total proyectada provienen del modelo Bass de 2.3 escalado al SAM Lima Metropolitana (45,000–55,000 bodegas formales), no al SOM del beachhead únicamente."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "participacion-mercado",
+      "title": "2.5.2 — Participación de mercado esperada",
+      "emoji": "🎯",
+      "question": "¿Qué porcentaje de captura es realista por año dado el modelo operativo, el canal y la ventana competitiva?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La participación de mercado objetivo no se fija arbitrariamente — se justifica desde la capacidad ejecutiva del equipo, la velocidad del canal contador, y los parámetros Bass validados para el beachhead."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**2026 — 1.5% de la demanda dirigida.** Fase de validación del MVP en Lima Norte. Equipo de 2 personas, 15 contadores aliados activos. Meta: 184 clientes al cierre del año.",
+            "**2027 — 4.0%.** Lima Norte profundizada + activación Lima Norte-Lima Este. Canal contador con 40+ aliados. Meta: 809 clientes al cierre.",
+            "**2028 — 7.0%.** Cross-sell módulo C activo. Lima Sur en marcha. Meta: 2,313 clientes al cierre.",
+            "**2029 — 9.0%.** Madurez Lima Metropolitana, expansión a ciudades secundarias. Meta: 4,479 clientes al cierre.",
+            "**2030 — 10.0%.** Techo razonable de cuota en escenario base Lima Metro + expansión activa. Meta: 6,846 clientes al cierre."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El porcentaje de captura no representa cuota del universo de 150,000 bodegas — es cuota sobre la **demanda dirigida al segmento** en ese año. El universo crece con la digitalización, lo que amplía la base de cálculo y hace que un 10% de cuota en 2030 represente más clientes absolutos que en 2026."
+        }
+      ]
+    },
+    {
+      "id": "demanda-efectiva",
+      "title": "2.5.3 — Demanda efectiva del proyecto",
+      "emoji": "💰",
+      "question": "¿Cuántos clientes y cuántos ingresos puede generar ERP Evolutivo aplicando la captura proyectada sobre la demanda dirigida?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La demanda efectiva combina la demanda dirigida con el porcentaje de captura y el ticket promedio mensual proyectado. El ticket sube levemente por año por efecto del cross-sell a módulos de mayor precio."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**2026:** 12,285 × 1.5% = **184 clientes al cierre** · promedio del año = 92 · ticket promedio S/ 22 · **ingreso anual estimado S/ 24,264**.",
+            "**2027:** 20,230 × 4.0% = **809 clientes al cierre** · promedio del año = 497 · ticket S/ 22 · **ingreso anual S/ 131,208**.",
+            "**2028:** 33,040 × 7.0% = **2,313 clientes** · promedio = 1,561 · ticket S/ 25 (mix A+C) · **ingreso anual S/ 468,300**.",
+            "**2029:** 49,770 × 9.0% = **4,479 clientes** · promedio = 3,396 · ticket S/ 27 · **ingreso anual S/ 1,100,376**.",
+            "**2030:** 68,460 × 10.0% = **6,846 clientes** · promedio = 5,663 · ticket S/ 29 · **ingreso anual S/ 1,970,532**.",
+            "**Reconciliación con el SOM del beachhead (sección 2.3):** las cifras de año 1–2 en este cuadro son superiores a las del beachhead aislado Lima Norte (195 pagantes año 1 en Bass) porque aquí se incluye Lima Metropolitana completa como demanda dirigida. La diferencia es consistente: en año 1 el equipo opera solo en Lima Norte, pero en el modelo de demanda del proyecto se proyecta la expansión zonal que efectivamente ocurre entre mes 4 y mes 12."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "viabilidad-comercial",
+      "title": "2.5.4 — Viabilidad comercial — análisis del punto de equilibrio",
+      "emoji": "⚖️",
+      "question": "¿En qué mes cruza la operación el punto de equilibrio y cuál es el margen de seguridad en el año 3?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El punto de equilibrio operativo se alcanza cuando los ingresos por suscripción cubren los costos operativos mensuales (equipo, infraestructura, canal, soporte). Con costos mensuales de S/ 25,000 en fase MVP-post-MVP y ticket promedio de S/ 22:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Clientes necesarios para equilibrio:** 25,000 / 22 = **1,136 clientes pagantes activos**.",
+            "**Mes en que se cruza el punto de equilibrio:** según la curva de adopción mensual del modelo Bass, el acumulado de clientes activos supera 1,136 en el **mes 14–16** (Q2 del año 2), asumiendo churn mensual del 8% y ejecución del canal contador desde el mes 4.",
+            "**Margen de seguridad año 3:** con 2,313 clientes proyectados al cierre del año 3, el ratio sobre punto de equilibrio es **2,313 / 1,136 = 2.04x** — margen operativo positivo sostenible.",
+            "**Validación de hipótesis crítica de precio:** si el ticket promedio efectivo resulta en S/ 18 (por mix más conservador de freemium vs. pagantes), el punto de equilibrio sube a 1,389 clientes y se corre al mes 18–20."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Conclusión de viabilidad comercial.** El modelo es viable en el escenario base: el punto de equilibrio se cruza dentro de los primeros 18 meses y el margen de seguridad al año 3 es >2x. La tesis de Serie Seed (ronda de financiamiento externo a los 12–18 meses) se confirma matemáticamente — sin capital adicional, los ingresos orgánicos son insuficientes para financiar la expansión geográfica antes del mes 18."
+        }
+      ]
+    },
+    {
+      "id": "sensibilidad-demanda",
+      "title": "2.5.5 — Sensibilidad de la demanda efectiva del proyecto",
+      "emoji": "📉",
+      "question": "¿Cuánto varía la demanda efectiva en escenarios pesimista, base y optimista — y qué hipótesis cambia más el resultado?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El análisis de sensibilidad aplica los tres escenarios Bass (conservador / base / optimista) a la demanda efectiva del proyecto. Es la conexión directa con el capítulo de análisis financiero."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Escenario pesimista (p=0.010, q=0.30, factor competitivo 90%→35%):** clientes año 1 = 117, año 3 = 303, año 5 = 438. Ingreso año 3: S/ 79,992. Punto de equilibrio no alcanzado hasta mes 22–24. **Viabilidad del negocio sin capital externo: comprometida.**",
+            "**Escenario base (p=0.015, q=0.38, factor competitivo 100%→60%):** clientes año 1 = 195, año 3 = 654, año 5 = 1,136. Ingreso año 3: S/ 172,656. Punto de equilibrio en mes 14–16. **Viabilidad con disciplina: sólida.**",
+            "**Escenario optimista (p=0.022, q=0.50, factor competitivo 100%→75%):** clientes año 1 = 286, año 3 = 1,485, año 5 = 2,550. Ingreso año 3: S/ 392,040. Punto de equilibrio en mes 8–10. **Caja positiva anticipada — permite acelerar expansión geográfica.**",
+            "**Variable más sensible:** el parámetro q (imitación / efecto cluster). Si q = 0.30 en lugar de 0.38, la demanda año 3 cae de 654 a 303 — una reducción del 54%. Confirma que la validación del efecto cluster en los primeros 90 días (% de nuevos usuarios proveniente de referido intra-cluster) es la métrica más importante del modelo.",
+            "**Segunda variable:** el factor de erosión competitiva. Si Yape/Plin se mueve hacia gestión integral en año 2 y el factor cae al 50% en año 3 en lugar de 80%, la demanda efectiva baja a 408 clientes — por debajo del punto de equilibrio — y se activa la condición de pivote documentada en 2.6.2."
+          ]
+        }
+      ]
+    },
+    {
       "id": "marco-conceptual",
       "title": "Marco conceptual — cinco pasos del cálculo",
       "emoji": "🧩",

@@ -201,6 +201,52 @@
           "text": "**Job negativo — el trabajo que explícitamente no quiere contratar.** No quiere *\"transformar digitalmente su negocio\"*. No quiere *\"ser el bodeguero del futuro\"*. No quiere convertirse en analista de datos. El consumidor objetivo se ve como una persona que tiene un negocio y quiere que ese negocio funcione mejor con el **menor cambio posible en su forma de operar**. Cualquier mensaje que apele a transformación digital genera distancia, no atracción."
         }
       ]
+    },
+    {
+      "id": "clusters-segmentos",
+      "title": "Tabla puente — clusters cualitativos y segmentos poblacionales",
+      "emoji": "🔗",
+      "question": "¿Cómo mapean los clusters del estudio cualitativo n=30 con los segmentos cuantitativos del universo de 150,000 bodegas?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El estudio primario (n=30, entrevistas cualitativas en profundidad) produjo clusters comportamentales que no son directamente equivalentes a los segmentos cuantitativos de la sección 2.2.2. Sin la tabla puente que mapea ambas taxonomías, la lectura conjunta produce inconsistencias aparentes. Esta sección resuelve el mapeo explícitamente."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Cluster A1 — Power user (47% de la muestra, n=14).** Bodeguero con obligación SUNAT activa y búsqueda activa de solución. **Mapea con Segmento A (11% del universo = 16,500 bodegas)**. La cuota muestral es mayor (47%) porque el estudio sobre-muestreó deliberadamente este segmento para validar la hipótesis de PMF: se entrevistó con sesgo hacia el adoptante potencial más probable, no con muestra aleatoria del universo.",
+            "**Cluster A2 — Con campeón joven (30% de la muestra, n=9).** Bodeguero con campeón joven en el hogar que mediaría la adopción. **Mapea con Segmento B (43% del universo = 64,500 bodegas)** en su fracción con campeón activo, y parcialmente con Segmento C. La cuota muestral (30%) es representativa del peso real del Segmento B en el universo.",
+            "**Cluster NoTarget (23% de la muestra, n=7).** Bodeguero hostil al cambio, mayor de 55 años sin relevo digital, paga multas SUNAT como costo del negocio. **Mapea con Segmentos D + E (10% + 20% = 30% del universo = 45,000 bodegas)**. La cuota muestral (23%) es similar al peso real del no-target en el universo — señal de que el reclutamiento no logró filtrar completamente este perfil.",
+            "**Por qué la cuota muestral difiere de la poblacional:** el estudio sobre-muestreó A1 (47% vs 11% real) porque el objetivo era validar hipótesis de PMF con los adoptantes más probables, no representar estadísticamente el universo. Este sesgo es metodológicamente correcto para la fase de exploración cualitativa pero **no permite inferencias sobre prevalencia** — de ahí la necesidad de fase cuantitativa con n ≥ 200."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Lectura crítica del Van Westendorp con muestra n=30.** El OPP de S/20 y el IPP resultantes del análisis de Van Westendorp son indicadores de la disposición a pagar del **cluster A1 sobre-muestreado**, no del universo de 150,000 bodegas. Los puntos adicionales PMC (Precio de Marginalidad de Bajo Costo — el punto donde el producto empieza a parecer de mala calidad por precio demasiado bajo) y PME (Precio de Marginalidad de Costo Excesivo — donde ya no lo compra nadie por caro) requieren calcular las curvas acumuladas de las cuatro preguntas Van Westendorp. Con n=30 los resultados son referenciales: PMC estimado en torno a **S/8–10**, PME estimado en torno a **S/45–50**. El rango de precio aceptable es S/8–50, con OPP en S/20. Estos puntos críticos completos deben recalcularse con la fase cuantitativa n≥200."
+        }
+      ]
+    },
+    {
+      "id": "limitaciones-estudio",
+      "title": "Limitaciones formales del estudio primario",
+      "emoji": "⚠️",
+      "question": "¿Qué no puede afirmarse con este estudio y qué validación adicional es obligatoria antes del lanzamiento?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La declaración explícita de limitaciones no es debilidad metodológica — es integridad académica. Un estudio que no declara sus límites tiene credibilidad aparente, no real. Cuatro limitaciones críticas:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Muestra no probabilística, no extrapolable al universo.** n=30 seleccionados por conveniencia (red de contactos del equipo + derivación de contadores aliados). No hay probabilidad de selección calculable para cada bodeguero del universo. **Las proporciones de cluster (47/30/23%) son descriptoras de la muestra, no estimaciones poblacionales.** Escribir *\"el 47% de los bodegueros de Lima son power users\"* a partir de este estudio es un error metodológico.",
+            "**Saturación teórica en entrevista 24.** A partir de la entrevista 24 no emergieron categorías nuevas en el análisis temático — señal de saturación del corpus cualitativo. El n=30 supera el umbral de saturación, lo que valida la calidad del estudio cualitativo, pero no compensa la limitación de representatividad estadística.",
+            "**Sesgo de auto-selección posible.** Los bodegueros que accedieron a ser entrevistados tienen mayor disposición a interactuar con emprendedores externos que el promedio del universo — posiblemente mayor apertura a herramientas nuevas. Esto sobre-estima la disposición a adoptar en la muestra respecto al universo real.",
+            "**Necesidad de fase cuantitativa previa al lanzamiento.** El estudio cualitativo genera hipótesis; la fase cuantitativa las verifica o refuta. Se requiere: muestreo probabilístico estratificado por zona geográfica (Lima Norte, Sur, Este) y segmento (A/B/C), n≥200 (poder estadístico suficiente para detectar diferencias de 15% con α=0.05), instrumentos cerrados de medición para: disposición a pagar real (Van Westendorp y/o Conjoint Analysis), escala de adoptabilidad tecnológica, y prevalencia de campeón joven en el hogar. **Esta fase cuantitativa es condición recomendada, no opcional, antes de comprometer capital en construcción de producto.**"
+          ]
+        }
+      ]
     }
   ],
   "implications": {

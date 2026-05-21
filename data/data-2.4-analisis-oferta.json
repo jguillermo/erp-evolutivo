@@ -5,6 +5,75 @@
   "intro": "El análisis tradicional de oferta describe competidores, lista productos y calcula cuotas nominales. Para ERP Evolutivo eso es estructuralmente insuficiente. La pregunta real no es *\"quiénes están ahí\"*, son tres preguntas distintas: **(a)** cuál es la oferta **efectiva** que enfrenta el bodeguero del beachhead hoy — considerando que el sustituto dominante (**Excel y libreta**) no aparece en ningún reporte sectorial pero es el competidor número uno; **(b)** cómo evolucionó la pendiente, no la foto estática; **(c)** hacia dónde se mueve en el horizonte 5 años, sabiendo que el mercado SaaS B2SMB LATAM está en aceleración (**CAGR ≈25%**) y la oferta se va a multiplicar antes de que ERP Evolutivo consolide su posición. Todas las cifras provienen de fuentes verificables (PRODUCE, SUNAT, Statista, Alegra, Siigo, Nubefact, BCRP).",
   "sections": [
     {
+      "id": "historia-oferta",
+      "title": "Evolución histórica de la oferta — cronología del mercado",
+      "emoji": "📚",
+      "question": "¿Cuándo entró cada actor relevante al mercado peruano y qué eventos disruptivos marcaron la evolución de la oferta en los últimos cinco años?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La oferta actual no es una foto estática — es el resultado de una evolución acelerada impulsada por tres fuerzas convergentes: presión regulatoria SUNAT, entrada de players regionales con capital, y emergencia de pagos digitales que crearon infraestructura habilitante. Entender la cronología es condición para interpretar correctamente el panorama competitivo de 2026."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Antes de 2018 — dominio total de Excel, libreta y contabilidad manual.** El bodeguero peruana no tenía software de gestión específico. Los sistemas POS existían para supermercados y cadenas; el ERP era exclusivo de mediana y gran empresa. La oferta efectiva para bodegas era cero.",
+            "**2018–2020 — entrada de Bsale y Defontana al Perú.** Bsale (Chile, fundada 2011) inicia operaciones en Perú con foco en comercio minorista con POS. Defontana (Chile) amplía presencia regional. Ninguno de los dos apunta al sub-segmento microempresa-bodega — su target es el mini-market con ticket y volumen mayor. La bodega sigue sin oferta adaptada.",
+            "**2019–2021 — escalada de Alegra y Siigo.** Alegra (Colombia, fundada 2012) supera 250,000 usuarios en LATAM en 2019 y acelera expansión en Perú. Siigo (Colombia, #1 autorizado DIAN) inicia expansión a cinco países incluyendo Perú. Ambos llegan con producto diseñado para pyme con sofisticación contable — accesibles para pequeña empresa pero con fricción significativa para microempresa-bodega.",
+            "**2021 — punto de inflexión: Yape Negocios.** BCP lanza funcionalidades de gestión básica integradas a Yape — historial de cobros, estadísticas de ventas simples. Es la primera oferta nativa del ecosistema bodeguero con costo cero para el usuario. No es un ERP completo, pero establece el precedente de *\"gestión en tu billetera digital\"* que condiciona la percepción del segmento de aquí en adelante.",
+            "**2022 — detonante regulatorio: obligatoriedad SEE para MYPE.** SUNAT extiende el Sistema de Emisión Electrónica a MYPE iniciales (junio 2022). Los OSE (Nubefact, Efact, Mifact) aceleran captación de clientes por arrastre regulatorio puro — crecen sin esfuerzo comercial. Nubefact supera 100,000 usuarios activos.",
+            "**2024 — SIRE obligatorio y ronda de inversión de Alegra.** Enero 2024: SUNAT hace obligatorio el SIRE (Sistema Integrado de Registros Electrónicos). Alegra recibe **USD 47 millones** (2025) específicamente para IA — señal de reposicionamiento del sector hacia IA como diferenciador. Partnership Alegra-Mastercard (abril 2025): impactar 100,000 PYMEs adicionales.",
+            "**2026 — RS 000075-2026/SUNAT y entrada de ERP Evolutivo.** Nuevos contribuyentes bajo régimen MYPE son emisores electrónicos desde el primer día. Número de competidores directos en el sub-segmento microempresa-bodega Lima: **0** (ERP Evolutivo es el primer producto diseñado nativamente para este segmento). Número de competidores indirectos: **4** (Alegra, Siigo, Nubefact, y Excel/libreta como sustituto dominante).",
+            "**Eventos disruptivos clave del período 2020–2026:** (1) COVID-19 eliminó dos años de crecimiento del rubro pero aceleró la digitalización de pagos (Yape explota en 2020–2021); (2) Limpieza administrativa SUNAT Q1 2025 redujo el registro neto en 167,162 empresas — contrae el universo formal en el corto plazo; (3) ABP alerta riesgo de quiebra de 5,000 bodegas en 2024 — señal de que el segmento está bajo presión económica."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Número de competidores efectivos por año en el sub-segmento microempresa-bodega Lima:** 2018 = 0, 2020 = 0, 2022 = 1 (OSE puro), 2024 = 2–3 (Alegra/Siigo con penetración parcial + Yape básico), **2026 = 4–5** (Alegra, Siigo, Nubefact/Efact, Yape, más ERP Evolutivo). El mercado pasó de cero competencia efectiva a cuatro en ocho años — y aún así la penetración real en bodegas sigue siendo baja (~13%, ABP 2024). Esto confirma que el bajo número de adoptantes no se debe a falta de oferta nominal sino a inadecuación de la oferta existente para el perfil del segmento."
+        }
+      ]
+    },
+    {
+      "id": "estructura-competitiva",
+      "title": "Estructura competitiva del mercado",
+      "emoji": "🏛️",
+      "question": "¿Cómo se clasifica el mercado y qué barreras protegen o amenazan la posición de ERP Evolutivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La clasificación formal del mercado no es etiqueta académica — define qué estrategias son viables y cuáles destruyen valor en este contexto."
+        },
+        {
+          "type": "info",
+          "text": "**El mercado de ERP para bodega peruana se clasifica como competencia monopolista emergente con segmentos no servidos.** Características: múltiples oferentes (Alegra, Siigo, Nubefact, Yape, Excel), productos diferenciados (no homogéneos), barreras de entrada moderadas (integración SUNAT, canal contador, marca), y un segmento específico — bodega microempresa con campeón joven y obligación SUNAT activa — que **ningún competidor atiende de forma especializada** a 2026. La posición de ERP Evolutivo en este segmento no servido es la justificación central de la oportunidad de mercado."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Barreras de entrada al sub-segmento microempresa-bodega Lima** — por orden de importancia decreciente para un entrante nuevo:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Barrera regulatoria — alta.** Integración con SUNAT como OSE homologado o como integrador vía API SUNAT: requiere certificación técnica, auditoría de procesos y mantenimiento continuo ante cambios normativos. Time-to-market: 6–12 meses solo para cumplimiento. Esta barrera **protege a ERP Evolutivo** una vez operativo, pero también fue la que retrasó a todos los entrantes previos.",
+            "**Barrera de canal — media-alta.** Relación con contadores limeños con cartera activa de bodegas: se construye en meses o años, no puede comprarse. Un nuevo entrante con capital puede pagar comisiones más altas, pero el contador le da credibilidad al primer producto que construyó esa relación — no necesariamente al que paga más. Ventaja del primero en el canal.",
+            "**Barrera de confianza — media.** El boca a boca del bodeguero opera con velocidad e intensidad significativas. Un producto con 300 usuarios activos satisfechos en Lima Norte tiene tracción defensiva que un entrante sin usuarios no puede replicar con publicidad. Se construye solo con tiempo y ejecución — no hay atajo.",
+            "**Barrera técnica (infraestructura cloud) — baja.** AWS, Google Cloud y Azure son accesibles para cualquier startup con capital semilla básico. No es barrera real en 2026 — solo lo fue antes de 2015. Un competidor con capital puede replicar la infraestructura técnica en semanas."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Análisis de poder de negociación — dos dimensiones:**"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Proveedores de ERP Evolutivo:** AWS/GCP (poder alto pero precios estándar de mercado — sin riesgo de negociación adversa), API SUNAT (poder regulatorio absoluto pero sin costo monetario — riesgo es operativo, no económico), pasarelas de pago Yape/Plin (poder medio — son activos estratégicos de BCP/Scotiabank con incentivos propios para expandir ecosistema), OSE integrado/Nubefact (poder medio — ERP Evolutivo puede cambiar de OSE si las condiciones se deterioran). **Riesgo de poder de proveedor: bajo en el corto plazo, vigilar a Yape/Plin a mediano plazo.**",
+            "**Clientes de ERP Evolutivo:** bodegueros individuales (poder bajo — atomización extrema, ninguno representa más del 0.01% de ingresos), contadores como influenciadores (poder alto — un contador con 50 bodegas en cartera puede mover o retirar esa cartera; mitigación: diversificar base de contadores y construir relación directa con el bodeguero final), ABP como gremio (poder medio — puede facilitar acceso masivo o cerrar la puerta; relación estratégica con la asociación debe cultivarse desde los primeros 6 meses)."
+          ]
+        }
+      ]
+    },
+    {
       "id": "capa-excel",
       "title": "Capa 1 — Excel y libreta",
       "emoji": "📓",

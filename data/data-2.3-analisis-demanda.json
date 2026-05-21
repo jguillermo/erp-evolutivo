@@ -83,6 +83,57 @@
       ]
     },
     {
+      "id": "factores-determinantes",
+      "title": "Factores que determinan la demanda — cinco fuerzas integradas",
+      "emoji": "🔑",
+      "question": "¿Qué variables estructurales definen el nivel y la velocidad de la demanda del mercado objetivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Más allá de listar aceleradores y frenos por separado, el análisis académico formal requiere identificar los **factores determinantes estructurales** que condicionan el nivel de demanda del mercado. Se presentan como cinco fuerzas integradas según la taxonomía estándar de análisis de demanda (marco de Lambin, 2008)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Factor regulatorio (detonante primario).** La obligatoriedad de comprobante electrónico es la palanca de mayor potencia. Cronología SUNAT: junio 2022 — extensión del SEE a MYPE iniciales con ventas >S/ 200,000; enero 2024 — obligatoriedad del SIRE (Sistema Integrado de Registros Electrónicos); junio 2026 — **RS 000075-2026/SUNAT**: nuevos contribuyentes bajo régimen MYPE, Especial o General son emisores electrónicos desde el primer día, sin plazo previo. Cada nueva alta formal es un cliente potencial estructural que ingresa de manera automática al mercado objetivo. Este factor es **irreversible y creciente**: cada ciclo regulatorio amplía el universo exigible.",
+            "**Factor tecnológico (habilitador de adopción).** La penetración de smartphone funcional en el bodeguero limeño (87%, ABP 2024) y de pagos digitales (73% de ventas vía Yape/Plin, datos BCRP 2026) ha eliminado la barrera de alfabetización tecnológica que existía antes de 2021. El bodeguero **ya sabe usar un app** — Yape y WhatsApp son evidencia concreta. La demanda de herramientas de gestión digital está habilitada tecnológicamente; la fricción que persiste es cultural (resistencia al pago por software) y de diseño (interfaces no adaptadas al perfil del usuario).",
+            "**Factor económico (determinante del techo de adopción).** El ingreso disponible del bodeguero (utilidad neta S/ 1,500–4,000 mensual) define el techo absoluto de disposición a pagar. El costo de oportunidad de la formalización — tiempo y dinero dedicado a cumplimiento SUNAT — opera como detonante: el bodeguero que ya paga multas o teme multas tiene una evaluación de costo-beneficio favorable que el que no ha sido notificado no tiene. La contracción coyuntural del rubro (ABP reporta caídas >50% en categorías clave, 2024) actúa como factor depresivo a corto plazo que mitiga parcialmente la demanda potencial en el año 1.",
+            "**Factor sociocultural (acelerador no lineal).** La presencia de campeón joven (77% de hogares bodegueros, ABP 2024) es el acelerador sociocultural más potente — es la replicación del patrón de adopción de Yape, donde el hijo o hija configura la billetera al padre/madre. Opera de forma no lineal: un campeón joven con acceso a TikTok e Instagram puede detonar adopción en un cluster entero vía imitación. La asimetría de confianza contador vs. vendedor externo también opera como factor cultural: el contador tiene autoridad validada para recomendar herramientas; un vendedor externo desconocido no. Esto determina que el canal contador tenga mayor efectividad que cualquier canal de marketing directo.",
+            "**Factor competitivo (determinante del diferencial de adopción).** La ausencia de un ERP diseñado específicamente para la microempresa-bodega peruana es el factor de oportunidad estructural. Los competidores existentes (Alegra, Siigo, Nubox) están diseñados para pyme con sofisticación y tienen barreras de adopción (precio, complejidad de onboarding, lenguaje técnico) incompatibles con el perfil del beachhead. Esta brecha define el **diferencial de adopción**: la demanda del mercado que los competidores existentes no están capturando por incompatibilidad de diseño, no por falta de conocimiento del mercado."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Integración de los cinco factores.** Los factores regulatorio y tecnológico actúan como *condiciones habilitantes* que definen el universo de demanda potencial. Los factores económico y sociocultural actúan como *moduladores de velocidad* que determinan cuándo y cómo se convierte esa demanda potencial en adopción real. El factor competitivo actúa como *amplificador del diferencial* que define qué porción de la demanda potencial captura ERP Evolutivo vs. los competidores existentes."
+        }
+      ]
+    },
+    {
+      "id": "estacionalidad",
+      "title": "Estacionalidad de la adopción",
+      "emoji": "📅",
+      "question": "¿En qué momentos del año la probabilidad de adopción es mayor — y cómo calibrar el plan comercial sobre esa curva?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La estacionalidad relevante para un SaaS de suscripción mensual **no es la estacionalidad de la facturación** (el bodeguero no vende más en diciembre de manera que impacte su disposición a pagar por software) sino la **estacionalidad de la adopción**: en qué momentos del año la presión percibida y la disponibilidad cognitiva del bodeguero para tomar decisiones de herramientas son mayores."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Enero (cierre de ejercicio fiscal + planificación).** El contador hace la declaración anual del bodeguero, revisa comprobantes del año anterior y frecuentemente recomienda herramientas para el año nuevo. Pico de adopción vía canal contador — el contador ya tiene agenda con cada bodeguero y puede insertar la recomendación de Bodi en esa interacción.",
+            "**Abril–junio (período de declaraciones SUNAT).** SUNAT intensifica comunicaciones sobre obligaciones. El bodeguero recibe recordatorios, notificaciones o presencia de fiscalizadores en su zona. Presión percibida alta → ventana de adopción por sub-segmento A1 (ansioso con dolor vencido). Pico de conversión de freemium a pago.",
+            "**Agosto (mitad de año — revisión del negocio).** Muchos bodegueros hacen balance informal a mediados de año. El campeón joven estudiantil tiene vacaciones y más disponibilidad para ayudar a instalar herramientas. Canal TikTok/Instagram con mayor alcance orgánico en período vacacional.",
+            "**Noviembre–diciembre (campañas de ventas).** El rubro bodeguero tiene pico de ventas (panetón, bebidas, artículos de regalo). El bodeguero está ocupado y tiene menor disposición a adoptar herramientas nuevas — es el peor momento para activación de nuevos clientes, aunque es buen momento para retención de existentes (ventas más altas mejoran la percepción de valor de la herramienta)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Hipótesis a contrastar en operación.** Esta estacionalidad es una hipótesis informada por el ciclo tributario y el comportamiento documentado del segmento, **no un dato cuantificado con datos históricos de adopción propios** (el producto no existe aún). Debe verificarse con los datos de adquisición de los primeros 12 meses: si el pico de enero y abril–junio se confirman en datos reales, el plan de contenidos y comisiones del canal contador debe cargarse en esos períodos. Si los picos son distintos, recalibrar."
+        }
+      ]
+    },
+    {
       "id": "metodologia",
       "title": "Metodología Bass y definición del SOM",
       "emoji": "🧮",

@@ -102,6 +102,45 @@
       ]
     },
     {
+      "id": "niveles-producto",
+      "title": "Niveles del producto y ciclo de vida",
+      "emoji": "🔺",
+      "question": "¿En qué nivel del producto se entrega valor al usuario en cada fase y en qué etapa del ciclo de vida se posiciona ERP Evolutivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La jerarquía de niveles del producto (Kotler, 2012) permite comunicar internamente qué está comprometido en el MVP y qué es diferenciación futura. Es también el marco correcto para la conversación con inversores sobre por qué el freemium es estratégico."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Nivel básico (beneficio central).** Registro de ventas diarias y emisión de comprobantes electrónicos válidos ante SUNAT. Sin esto el producto no existe. Entregado en el MVP.",
+            "**Nivel esperado (producto esperado).** Cumplimiento SUNAT sin fricción: boleta y factura electrónica, reportes tributarios listos para el contador, dashboard básico de ventas. Es lo que el usuario del sub-segmento A1 espera recibir — no es diferenciación sino costo mínimo de entrada al mercado. Entregado en el MVP.",
+            "**Nivel aumentado (producto aumentado).** IA asesora que sugiere precios, detecta mermas, avisa sobre inventario bajo, genera resumen diario en lenguaje coloquial. Conciliación automática con Yape/Plin. Canal contador integrado con dashboard de cartera. **Este nivel es la diferenciación real** y el que genera retención por encima del benchmark. Entregado parcialmente en MVP (IA básica 3 consultas/día); en toda su extensión en Fase 2–3.",
+            "**Nivel potencial (producto potencial / roadmap).** Marketplace de proveedores, acceso a crédito de capital de trabajo basado en el historial transaccional del producto, modelos predictivos de demanda, integración con e-commerce. Este nivel no se comunica en el MVP — es la tesis de largo plazo para inversores y la promesa implícita al bodeguero que crece."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Posición en el ciclo de vida del producto:** fase de **introducción**. Esta clasificación condiciona toda la mezcla de marketing:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "En introducción, la prioridad es **generar conocimiento** (no aún preferencia o lealtad). El objetivo de comunicación es cognitivo, no conativo.",
+            "La estrategia de penetración con precio bajo respecto al valor percibido es consistente con la fase de introducción — acelera adopción sacrificando margen inicial.",
+            "La promoción debe concentrarse en **educación del mercado** (qué es el producto, para qué sirve) antes que en competir feature por feature contra incumbentes.",
+            "Los costos por usuario son altos en introducción (economías de escala no activadas) — confirma que la caja del año 1 requiere capital semilla, no cashflow del producto."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia de la fase de introducción",
+          "text": "La tentación de saltarse la fase de introducción y posicionar el producto directamente en crecimiento (con comunicación agresiva, presupuesto de marketing alto, ampliación de canales) es el error más frecuente en startups con capital semilla. ERP Evolutivo está en introducción: la prioridad es **conseguir los primeros 100 adoptantes que validan el PMF**, no llegar a 10,000. La estrategia de beachhead existe precisamente para no confundir las fases."
+        }
+      ]
+    },
+    {
       "id": "marca",
       "title": "Marca, naming e identidad visual",
       "emoji": "🎨",
@@ -128,6 +167,18 @@
             "**Tono visual del producto.** Mensajes cortos en lenguaje hablado peruano informal pero respetuoso (*\"Vendiste bien hoy\"*, no *\"Has registrado ventas satisfactorias en el período\"*). **Cero terminología técnica visible** — ni siquiera *\"módulo\"* (sustituida internamente por *\"rama\"*, comunicada al usuario como *\"herramienta\"*).",
             "**Comunicación visual de la mecánica evolutiva.** Las 9 ramas merecen representación coherente y memorable. Árbol literal puede ser obvio pero efectivo; alternativas más sutiles (anillos concéntricos, nivel de juego, mapa de progreso) deben **validarse con bodegueros reales**, no decidirse desde la estética del fundador técnico.",
             "**Materiales publicitarios.** **Mostrar bodegueros reales del beachhead, no actores ni perfiles aspiracionales.** La estética profesional excesiva genera distancia, no atracción (sección 2.2.1)."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Tono de voz de marca — estrategia dual.** El producto tiene dos audiencias primarias con formas de comunicar radicalmente distintas. Usar el mismo tono para ambas reduce la efectividad en las dos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Canal digital hacia campeón joven y sub-segmento A3 (Facebook, Instagram, TikTok):** tuteo cercano, vocabulario coloquial peruano (*chamba, sacarle el jugo, está en la cancha, bacán*), formato corto y visual, protagonista es el hijo o hija que moderniza el negocio familiar. Tono: orgullo + facilidad + velocidad. Ejemplo: *\"Ayuda a tu mamá con su bodega. Se instala en 10 minutos. Gratis.\"*",
+            "**Canal contador (materiales físicos, presentaciones a estudios contables, webinars):** tratamiento formal de usted, vocabulario técnico-tributario (*SUNAT, SIRE, OSE, declaración mensual, libro electrónico*), enfoque en la eficiencia del contador y en el beneficio para su relación con el cliente. Tono: profesionalismo + ingresos pasivos + diferenciación competitiva. Ejemplo: *\"Bodi le permite a su cliente estar en cumplimiento SUNAT. Usted recibe una comisión mensual recurrente mientras el cliente se mantenga activo.\"*",
+            "**Consistencia del nombre.** El nombre comercial corto (a definir, referenciado internamente como Bodi en los documentos de trabajo) se usa en toda la comunicación. El nombre técnico ERP Evolutivo aparece solo en documentos institucionales, pitch decks y comunicación con contadores especializados. **Nunca mezclar en el mismo material.**"
           ]
         }
       ]

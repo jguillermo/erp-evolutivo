@@ -5,6 +5,38 @@
   "intro": "La estrategia de precio en SaaS B2SMB es probablemente **la decisión comercial más sensible del modelo** — y la que más frecuentemente se subestima. No es ejercicio numérico aislado: es el punto donde se cruzan **tres tensiones simultáneas** (valor percibido, costos del proveedor, posicionamiento competitivo). Para ERP Evolutivo el reto adicional es que el modelo declarado (**pago por uso bajo activación mensual**) es estructuralmente innovador frente a la competencia (planes fijos escalonados) y, simultáneamente, **cognitivamente complejo** para un bodeguero con baja alfabetización digital. La sección se construye en seis bloques: marco estratégico, análisis de enfoques, propuesta de MVP, plan B documentado, hipótesis críticas e implicancias. Pricing es la dimensión donde **el costo de equivocarse silenciosamente es mayor que en cualquier otra**.",
   "sections": [
     {
+      "id": "estrategia-general",
+      "title": "Estrategia de precio elegida — penetración deliberada",
+      "emoji": "🎯",
+      "question": "¿Cuál es la estrategia central de precio y por qué es coherente con la posición competitiva y el ciclo de vida del producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Antes de las restricciones y los enfoques de fijación, la decisión estratégica más importante es **cuál estrategia de precio se elige** y por qué es la correcta para el contexto."
+        },
+        {
+          "type": "info",
+          "text": "**Estrategia de penetración.** Por la elasticidad observada (demanda elástica en el tramo S/25 a S/30, estimada a partir del análisis de Van Westendorp y la distribución de disposición a pagar del estudio primario n=30), y por la posición del producto en **fase de introducción** contra un mercado dominado por la inercia de Excel y cuaderno, se elige una estrategia de penetración. El precio de entrada se fija deliberadamente por debajo del valor percibido (S/80–150 de valor económico estimado) para acelerar la adopción y construir base instalada, con upgrade posterior a módulos pagos de mayor margen. Esta estrategia es consistente con la necesidad de activar el efecto cluster (parámetro q de Bass) en el beachhead: la base instalada es el activo que genera el boca a boca, no la rentabilidad unitaria inicial."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Aclaración metodológica — OPP S/20 vs precio de lista S/25 vs precio óptimo S/25.** Estos tres conceptos responden a lógicas distintas y deben distinguirse explícitamente para evitar confusión metodológica:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**OPP (Precio de Aceptabilidad Óptima — Van Westendorp): S/20.** Es el punto de máxima aceptabilidad psicológica del bodeguero — el precio donde el porcentaje que lo considera *\"ni demasiado caro ni demasiado barato\"* es máximo. No es el precio que maximiza el ingreso esperado del negocio; es el precio que minimiza la fricción psicológica de entrada. Fuente: análisis Van Westendorp del estudio primario n=30.",
+            "**Precio óptimo de maximización de ingreso esperado: S/25.** Resulta de multiplicar el precio por la curva de demanda proyectada (bodegueros dispuestos a pagar × precio de la escala). El producto ingreso × demanda es máximo en S/25 dentro del rango razonable. Este es el precio de lista del modelo A.",
+            "**Precio promocional de captura Lima Este — primeros 3 meses: S/15–20.** El OPP de S/20 funciona como precio de lanzamiento con descuento en la zona piloto, no como precio de lista permanente. Pasados los 3 meses, el precio de lista sube a S/25. Los bodegueros que entraron al precio de lanzamiento no sufren el aumento si ya adoptaron la rama."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Costo de la promoción Lima Este.** Con meta de 500 clientes en los primeros 3 meses al precio de S/15 en lugar de S/25: (S/25 − S/15) × 500 clientes × 3 meses = **S/15,000 de inversión promocional**. Recuperable con LTV de S/270 por cliente retenido 12 meses (a S/25 promedio efectivo)."
+        }
+      ]
+    },
+    {
       "id": "restricciones",
       "title": "Cinco restricciones simultáneas del marco estratégico",
       "emoji": "🧭",
@@ -116,6 +148,44 @@
         {
           "type": "note",
           "text": "**Comunicación del plan B.** A inversores en pitch deck **como evidencia de pensamiento estratégico robusto**, no como debilidad. Al equipo como **criterio claro de pivote**, no como amenaza implícita. La existencia documentada reduce el riesgo binario y mejora la conversación con fondos."
+        }
+      ]
+    },
+    {
+      "id": "costo-variable",
+      "title": "Desglose del costo variable unitario por usuario pagante",
+      "emoji": "🔢",
+      "question": "¿Cuál es el costo marginal real de atender a un usuario pagante mensualmente — y cómo se distribuye entre infraestructura, regulación, IA y soporte?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El análisis de unit economics requiere que el costo variable por usuario no sea una cifra agregada sino un desglose auditado por componente. Esto permite identificar qué componente es sensible al volumen (escala) y cuál es fijo por contrato (SUNAT)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Servidor cloud prorrateado (AWS/GCP): S/ 0.90/usuario/mes.** Estimado sobre hosting en capa de aplicación y base de datos prorrateado entre usuarios activos. Escala favorablemente: con 1,000 usuarios el costo por usuario baja a ~S/ 0.60; con 10,000 puede llegar a S/ 0.30.",
+            "**API SUNAT / OSE integrado (comprobantes electrónicos): S/ 0.80/usuario/mes.** Asumiendo 80 comprobantes mensuales promedio por bodega activa, a la tarifa de integración con OSE tercero (Nubefact/Efact en plan API). Componente relativamente fijo por transacción — escala en volumen total de comprobantes.",
+            "**Tokens de IA asesora (OpenAI/Anthropic API): S/ 1.10/usuario/mes.** Asumiendo 50 consultas/mes al nivel Básico (3 consultas/día). Componente más volátil — sensible a la tarifa del proveedor de modelos, que ha caído >70% entre 2022 y 2025 y sigue bajando.",
+            "**Soporte humano vía WhatsApp prorrateado: S/ 0.40/usuario/mes.** Estimado sobre el costo de un agente de soporte que atiende 600–800 consultas mensuales. Escala mal: entre 1,000 y 5,000 usuarios el equipo de soporte debe crecer linealmente. Automatizar con IA de soporte desde el mes 12 es prioridad técnica.",
+            "**Total costo variable unitario: S/ 3.20/usuario pagante/mes.** Margen bruto por usuario a S/ 18 de precio de lista: **S/ 14.80 (82.2% de margen bruto)**. A S/ 25: **S/ 21.80 (87.2%)**. Confirma que la unit economics del SaaS es viable incluso a precios de penetración."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Sensibilidad del costo variable.** El componente de IA (S/1.10) es el más sensible a dos factores: (1) uso real vs. asumido (si el bodeguero promedio usa 100 consultas/mes en lugar de 50, el costo sube a S/ 2.20 solo en IA); (2) precio del proveedor de modelos (si OpenAI/Anthropic reducen tarifas otro 50%, el componente cae a S/ 0.55). El plan de monitoring del costo variable debe incluir el conteo de tokens consumidos por usuario desde el día uno."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Política de no acumulación de descuentos.** El cuadro de modalidades de descuento puede producir combinaciones que destruyen el margen si se acumulan. Regla operativa:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cada cliente puede acceder a un máximo de **dos beneficios simultáneos** (ej. descuento de lanzamiento + descuento por referido, pero no lanzamiento + referido + pago anual + contador aliado + antigüedad).",
+            "**El descuento de lanzamiento Lima Este es excluyente del descuento por pago anual adelantado** durante los primeros 3 meses: son la misma lógica de captura early y no se acumulan.",
+            "**Precio mínimo neto efectivo: S/ 12/mes** por usuario con descuentos combinados — por debajo de este umbral la unit economics se rompe con el costo variable de S/ 3.20."
+          ]
         }
       ]
     }

@@ -17,7 +17,7 @@
         {
           "type": "list",
           "items": [
-            "**Las cinco variables que SÍ segmentan:** urgencia regulatoria efectiva (¿obligación SUNAT activa hoy o no?), nivel de digitalización actual (libreta / Excel rudimentario / POS / software), estructura del decisor (solo / con cónyuge / con relevo digital familiar), intensidad del dolor SUNAT específico (notificado / ansioso al día / multado), y disponibilidad y vínculo con contador externo activo.",
+            "**Las seis variables que SÍ segmentan:** (1) urgencia regulatoria efectiva (¿obligación SUNAT activa hoy o no?), (2) nivel de digitalización actual (libreta / Excel rudimentario / POS / software), (3) estructura del decisor (solo / con cónyuge / con relevo digital familiar), (4) intensidad del dolor SUNAT específico (notificado / ansioso al día / multado), (5) disponibilidad y vínculo con contador externo activo, y **(6) respuesta diferenciada al estímulo de marketing** — criterio fundamental de Lambin que distingue segmentación real de descripción: los segmentos deben reaccionar de forma distinta al mismo estímulo (precio, canal, mensaje). Un segmento que describiría al mismo perfil con distinto adjetivo pero respondería igual a la misma oferta **no es un segmento válido**. Este criterio es el que valida los sub-segmentos A1–A4: cada uno tiene un anclaje narrativo distinto porque responden a estímulos distintos (urgencia vencida vs. preventiva vs. orgullo digital vs. previsibilidad de costo).",
             "**Las cuatro variables que NO segmentan** dentro del beachhead: edad exacta (38 vs 47 años se comportan igual si todo lo demás es igual), género en aislamiento (importa como combinación de variables, no como dimensión independiente), distrito específico dentro de la zona (Comas vs Los Olivos no difieren — importa la zona macro), nivel educativo formal (no diferencia comportamiento dentro de NSE C)."
           ]
         },
@@ -40,11 +40,12 @@
         {
           "type": "list",
           "items": [
-            "**Segmento A — Bodegas formales con obligación SUNAT activa y dolor regulatorio vivo.** RUC activo bajo régimen MYPE o Especial, ya recibieron notificación o saben que deben emitir comprobante. **60,000–100,000 negocios** en Lima Metropolitana. Dolor agudo, presupuesto comprometido, urgencia operativa. **Este es el beachhead.**",
-            "**Segmento B — Bodegas formales aún en RUS sin obligación electrónica vencida.** RUC activo pero régimen no exige aún facturación electrónica, o la exige con baja fiscalización efectiva. **80,000–130,000 negocios.** Dolor latente pero no vencido. Adoptantes naturales del **año dos**, no del año uno.",
-            "**Segmento C — Comercios formales con sistema POS o software contable básico ya instalado.** Mini-markets, librerías escolares con tamaño, ferreterías medianas, panaderías formalizadas. **30,000–50,000 negocios.** Tienen presupuesto, también tienen incumbente. La pelea no es contra Excel — es contra el sistema que ya pagan. Segmento de **segunda o tercera ola**.",
-            "**Segmento D — Bodegas y comercios informales sin RUC.** **>200,000 unidades** solo en Lima. **No son mercado objetivo bajo ninguna circunstancia** en los primeros 24 meses — el producto requiere RUC para emitir comprobantes electrónicos y atraer informales rompe el modelo regulatorio.",
-            "**Segmento E — Otros comercios no-bodega.** Peluquerías, barberías, restaurantes pequeños, talleres de servicios, emprendedores unipersonales. Volumen agregado importante pero comportamiento heterogéneo. Su atención antes del año dos **contamina la lectura de tracción del beachhead**."
+            "**Segmento A — Bodegas formales con obligación SUNAT activa y dolor regulatorio vivo.** RUC activo bajo régimen MYPE o Especial, ya recibieron notificación o saben que deben emitir comprobante. **16,500 negocios (11% del universo de 150,000)** en Lima Metropolitana. Dolor agudo, presupuesto comprometido, urgencia operativa. **Este es el beachhead.** Fuente: extrapolación heurística del estudio cualitativo n=30 cruzado con datos ABP 2024 — interpretar como estimación de orden de magnitud, no como inferencia estadística.",
+            "**Segmento B — Bodegas formales aún en RUS sin obligación electrónica vencida.** RUC activo pero régimen no exige aún facturación electrónica, o la exige con baja fiscalización efectiva. **64,500 negocios (43% del universo).** Dolor latente pero no vencido. Adoptantes naturales del **año dos**, no del año uno.",
+            "**Segmento C — Comercios formales con sistema POS o software contable básico ya instalado.** Mini-markets, librerías escolares con tamaño, ferreterías medianas, panaderías formalizadas. **24,000 negocios (16% del universo).** Tienen presupuesto, también tienen incumbente. La pelea no es contra Excel — es contra el sistema que ya pagan. Segmento de **segunda o tercera ola**.",
+            "**Segmento D — Bodegas y comercios con formalización parcial o adulto mayor operador digital.** **15,000 negocios (10% del universo).** Disposición digital baja, adopción solo si hay un campeón joven activo en el hogar. Atendibles con producto gratuito o subsidiado vía canal contador.",
+            "**Segmento E — No target estructural.** Informales sin RUC, hostiles al cambio, sin relevo generacional. **30,000 negocios (20% del universo).** **No son mercado objetivo bajo ninguna circunstancia** en los primeros 24 meses — el producto requiere RUC para emitir comprobantes electrónicos y el costo de conversión es desproporcionado.",
+            "**Cifra de referencia unificada:** universo total = **150,000 bodegas** (ABP 2024). Target accesible A + B + C = **105,000 (70%)**. Segmento prioritario lanzamiento A + B = **81,000 (54%)**. SOM efectivo MVP (A con obligación SUNAT vencida en Lima Norte) = **≈13,000**. Eliminar del análisis la cifra 114,000 — era un redondeo del dato histórico ABP 2019–2020 que convivía inconsistentemente con los datos actualizados."
           ]
         },
         {
@@ -246,6 +247,36 @@
           "type": "implication",
           "title": "⚡ Propiedad de la secuencia",
           "text": "**Expansión por anillos concéntricos, no por dispersión.** Cada paso amplía el segmento atendido sin diluir el foco operativo. La rama de producto se mantiene única hasta que la primera está consolidada; la geografía se expande solo cuando el playbook está validado; el sub-segmento se amplía solo cuando el anterior alcanza masa crítica."
+        }
+      ]
+    },
+    {
+      "id": "targeting-equilibrio",
+      "title": "Estrategia de targeting y punto de equilibrio",
+      "emoji": "🎯",
+      "question": "¿Qué estrategia de cobertura elige ERP Evolutivo y cuándo cruza el punto de equilibrio?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La segmentación culmina en una **declaración explícita de estrategia de targeting** — no se puede dejar implícita porque condiciona la asignación de presupuesto, la arquitectura del producto y los KPIs del primer año."
+        },
+        {
+          "type": "info",
+          "text": "**Estrategia elegida: marketing diferenciado.** ERP Evolutivo no aplica una propuesta única para todos los segmentos (indiferenciado) ni se concentra en un solo segmento con un solo producto (concentrado). Aplica **marketing diferenciado**: propuesta distinta por segmento con el mismo producto base modulado — modelo A (S/25) para segmentos B y C; modelo C (S/35–S/70) para segmento A power user; producto gratuito para segmento D (vía canal contador como subsidiador); segmento E descartado. La diferenciación opera en precio, canal y mensaje — no en producto distinto. Justificación: los tres segmentos activos tienen respuestas diferenciadas al mismo estímulo de marketing y los recursos del proyecto permiten atender las tres variantes sin dispersión no recuperable."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Punto de equilibrio operativo.** Asumiendo costos operativos mensuales de S/ 25,000 en fase MVP-post-MVP (equipo 3 personas, infraestructura, marketing mínimo) y ticket promedio de S/ 22 mensuales:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Clientes necesarios para equilibrio:** 25,000 / 22 = **1,136 clientes pagantes activos**.",
+            "**Porcentaje del segmento prioritario A+B:** 1,136 / 81,000 = **1.40% del segmento A+B** — o **1.08% del target accesible A+B+C (105,000)**.",
+            "**Horizonte temporal según curva de adopción Bass:** el escenario base proyecta alcanzar 1,136 pagantes hacia **el mes 14 del año 2** con ejecución disciplinada del beachhead Lima Norte y activación del canal contador en mes 4.",
+            "**Margen de seguridad año 3:** con 1,893 pagantes proyectados al año 3, el ratio sobre el punto de equilibrio es **1.67x** — margen operativo positivo pero no holgado. Confirma que el año 3 es el primero con caja operativa positiva sostenida.",
+            "**Validación de hipótesis crítica:** si la conversión freemium→pago resulta 12–15% (benchmark sectorial) en lugar del 25–30% asumido, el punto de equilibrio se corre 6–9 meses hacia adelante. Esta hipótesis debe validarse con los primeros 90 días de datos."
+          ]
         }
       ]
     }

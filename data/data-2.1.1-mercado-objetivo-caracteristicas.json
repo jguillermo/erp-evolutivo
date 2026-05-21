@@ -5,6 +5,70 @@
   "intro": "La sección clásica de \"caracterización del mercado\" suele resolverse con datos del INEI y un par de párrafos sobre el limeño promedio. Ese enfoque aquí no sirve. **ERP Evolutivo no vende al limeño, ni a la PYME genérica, ni siquiera a la bodega como rubro.** Vende al dueño de bodega que hoy anota ventas en una libreta y enfrenta presión SUNAT para emitir comprobantes electrónicos. Cualquier caracterización que no aterrice en ese sujeto concreto produce análisis de manual sin valor accionable.",
   "dimensions": [
     {
+      "id": "universo",
+      "title": "Universo y dimensión cuantitativa del mercado",
+      "emoji": "📊",
+      "question": "¿Cuántas bodegas hay, cómo se distribuyen y con qué perfil opera el sector en Lima Metropolitana?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El universo del mercado objetivo se cuantifica con datos de la **Encuesta al Sector Bodeguero — ABP 2024** (Asociación de Bodegueros del Perú), que es la fuente más actualizada y específica para este rubro. Sin este anclaje cuantitativo la caracterización queda en inferencia cualitativa no defendible académicamente."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Tamaño del universo: 150,000 bodegas en Lima Metropolitana** (ABP, Encuesta al Sector Bodeguero 2024). Crecimiento estimado 2020–2024: 25% impulsado por el aumento de emprendimiento de subsistencia post-pandemia. Este es el denominador base de toda la segmentación posterior.",
+            "**Distribución geográfica por macrozona:** Lima Norte **43.1%** (≈64,650 bodegas), Lima Sur **21.7%** (≈32,550), Lima Este **20.8%** (≈31,200), Lima Centro **8.3%** (≈12,450), Centro Medio **6.1%** (≈9,150). Fuente: ABP 2024.",
+            "**Antigüedad del negocio:** **60%** con más de 10 años de operación, **27%** entre 5 y 10 años, **13%** menos de 5 años. El segmento está dominado por negocios establecidos con arraigo territorial — relevante porque el bodeguero veterano tiene inercia operativa alta pero también presión acumulada de SUNAT mayor. Fuente: ABP 2024.",
+            "**Estructura del negocio:** **17%** unipersonales (dueño opera solo), **70%** operadas por pareja o familia directa (el modelo operativo mayoritario), **13%** por equipos de 3 o más personas. Esta distribución define el modelo mental del usuario: no es un solo individuo sino una unidad de decisión familiar con múltiples partes interesadas. Fuente: ABP 2024.",
+            "**Nivel socioeconómico estimado:** cruce entre la distribución geográfica ABP 2024 y la clasificación APEIM 2024 por distrito sitúa a la población bodeguera predominantemente en **NSE C (≈50%) y D (≈30%)**, con presencia menor en B emergente (≈15%) y E (≈5%). Nota metodológica: este cruce es estimación heurística por distrito de concentración — la validación exacta requiere estudio de campo con muestra representativa estratificada por zona."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Fuente primaria y limitaciones.** La ABP 2024 es la fuente sectorial más específica disponible. Las cifras de distribución geográfica provienen del estudio de caracterización del sector publicado en 2024. Para la cifra exacta del estudio consultar directamente: Asociación de Bodegueros del Perú, *Encuesta al Sector Bodeguero Lima 2024*, disponible en abp.org.pe. Las cifras de NSE resultan de cruzar la distribución geográfica con los niveles NSE por distrito según APEIM 2024 — metodología válida como proxy pero que requiere validación con muestreo propio para mayor precisión."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia para la segmentación",
+          "text": "Sobre un universo de **150,000 bodegas**, la segmentación posterior (sección 2.2.2) toma como mercado target accesible a los segmentos A + B + C (≈105,000 unidades, 70% del universo). El segmento prioritario de lanzamiento A + B suma **81,000 unidades** (54%). El beachhead operativo del MVP se delimita al SOM efectivo de **≈13,000 bodegas formales con obligación SUNAT activa en Lima Norte**."
+        }
+      ]
+    },
+    {
+      "id": "comportamiento-digital",
+      "title": "Comportamiento digital y hábito contable",
+      "emoji": "📱",
+      "question": "¿Qué stack digital usa el bodeguero hoy y cómo lleva sus cuentas en la práctica?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El comportamiento digital del bodeguero no es una inferencia general sobre la PYME peruana — hay datos específicos del rubro que informan directamente las decisiones de producto, canal y onboarding."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Yape o Plin como cobro digital: 93%** de bodegas en Lima Metropolitana ya cobra con billetera digital (ABP 2024 cruzado con datos BCRP, *Reporte de Estabilidad Financiera* 2024). La barrera de educación financiera digital está disuelta — el bodeguero ya opera en digital para cobros.",
+            "**Smartphone gama media o alta: 87%** de los operadores tiene acceso a smartphone funcional (Samsung A-series, Xiaomi Redmi, Motorola E-series predominantes). Plan de datos prepago S/ 30–50. Fuente: ABP 2024.",
+            "**Cuaderno físico para control de caja: 47%** sigue usando cuaderno como herramienta principal de registro (ABP 2024). Convive con Yape — el cuaderno no desaparece con la digitalización del cobro.",
+            "**Excel rudimentario: 23%** usa hoja de cálculo sin fórmulas, generalmente en computadora compartida del hogar. No es uso profesional de Excel — es cuaderno digital (ABP 2024).",
+            "**App digital de gestión: 13%** ya usa alguna aplicación de gestión de negocios — incluye OSE, apps básicas de inventario y SUNAT Mis Comprobantes (ABP 2024). Este es el baseline de adopción preexistente que el MVP compite por ampliar.",
+            "**Hábito contable predominante: conteo de caja al cierre del día.** La práctica estándar es contar el efectivo al cerrar el local y comparar con el cálculo mental de lo vendido. El **60% de los bodegueros admite errores de conciliación frecuentes** — no detectados en el momento sino al final del mes cuando el contador hace el cuadre (ABP 2024). Este punto de dolor específico es el gancho de producto más directo: no es *\"digitalización\"* sino *\"cierre de caja sin error\"*.",
+            "**Campeón joven en el hogar bodeguero: 77%** de los hogares bodegueros tiene al menos un miembro entre 20 y 35 años con competencias digitales activas que ayuda operativamente al negocio (ABP 2024). Este dato es estratégicamente decisivo: el instalador del producto no es necesariamente el dueño-operador sino el hijo o hija digital."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Síntesis del stack digital actual.** El bodeguero de Lima Metropolitana en 2024 cobra con Yape (93%), tiene smartphone funcional (87%), pero sigue anotando ventas en cuaderno (47%) o Excel sin fórmulas (23%). Solo el 13% usa app de gestión. La brecha entre adopción de pagos digitales (93%) y adopción de gestión digital (13%) define el **mercado de sustitución** que ERP Evolutivo ataca: no es convencer al bodeguero de que use el celular — ya lo usa. Es convencerlo de que lo use también para controlar su negocio."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia para el onboarding",
+          "text": "El campeón joven (77% de hogares) es la palanca de instalación más potente — el diseño del onboarding debe contemplar explícitamente el **caso de uso \"lo instala el hijo/a\"**: flujo que puede iniciar el campeón y entregar funcionando al dueño-operador en menos de 10 minutos. La analogía exacta es cómo Yape llegó masivamente — el familiar nativo digital configuró la billetera a la mamá o papá."
+        }
+      ]
+    },
+    {
       "id": "demografica",
       "title": "Demográfica",
       "emoji": "👤",
