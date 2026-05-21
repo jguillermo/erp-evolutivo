@@ -1,0 +1,191 @@
+{
+  "title": "📦 Producto — Marca, Características y Atributos",
+  "subtitle": "¿Qué es ERP Evolutivo como producto SaaS, cuál es el alcance honesto del MVP frente al roadmap, y qué decisiones de marca y componentes críticos sostienen la diferenciación?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La descripción de producto en estudios tradicionales se resuelve listando funcionalidades, mostrando un logo provisional y describiendo el packaging. Para un **SaaS pre-MVP B2SMB** ese enfoque es estructuralmente inadecuado — no hay packaging físico, las funcionalidades evolucionan, y el *\"diseño gráfico\"* no es decoración sino **vehículo de propuesta de valor**. La sección se construye en cinco bloques que sí informan decisión: definición precisa, características por fase (qué existe vs. roadmap), atributos diferenciadores reales, marca y arquitectura visual, y **componentes críticos** (equivalente SaaS de materias primas).",
+  "sections": [
+    {
+      "id": "definicion",
+      "title": "Definición del producto y dimensiones distintivas",
+      "emoji": "🎯",
+      "question": "¿Qué hace que ERP Evolutivo no sea un ERP recortado para PYMEs sino una categoría nueva?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**ERP Evolutivo es un Software como Servicio (SaaS) de gestión empresarial modular impulsado por inteligencia artificial**, diseñado específicamente para **micro y pequeñas empresas en Latinoamérica**, con punto de lanzamiento en bodegas y comercios minoristas de **Lima, Perú**. Su categoría es **ERP cloud-native para microempresa** — pero la categorización clásica subestima lo distintivo: **no es un ERP recortado para PYMEs, es un sistema diseñado nativamente alrededor de la lógica de crecimiento progresivo del negocio.**"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Producto digital puro.** Sin componente físico ni hardware. Entregado vía web responsive en MVP y app móvil nativa en Fase 2.",
+            "**Producto de relación continua.** No es venta única — es servicio recurrente con interacción diaria. **La retención es más decisiva que la adquisición inicial.**",
+            "**Producto auto-configurable.** Onboarding guiado por tipo de negocio (*\"Soy bodega\"*, *\"Soy peluquería\"*, *\"Soy restaurante\"*), sin implementador externo ni capacitación formal — condición **no negociable** dado el perfil del consumidor."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Dilema operativo que el producto resuelve.** El bodeguero limeño que opera con libreta y Excel enfrenta cuatro problemas: presión SUNAT activa, falta de visibilidad de sus números, imposibilidad de delegar la gestión en su ausencia, y carencia de evidencia bancable para crédito formal. Las herramientas existentes resuelven cada problema **por separado, a un costo que el segmento no puede pagar y con complejidad que no tolera**. ERP Evolutivo resuelve los cuatro en **un solo sistema**, con núcleo gratuito permanente, pago solo por módulos efectivamente usados, e IA asesora desde el día uno."
+        }
+      ]
+    },
+    {
+      "id": "mvp",
+      "title": "Características del MVP (Fase 1, primeros 12 meses)",
+      "emoji": "🚀",
+      "question": "¿Qué se construye en los primeros 12 meses y qué se promete comercialmente sin sobrepromesa?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La descripción honesta del producto debe distinguir entre lo que existe en el MVP y lo que está en roadmap. Esta distinción no es burocrática — define **qué se puede comunicar comercialmente sin caer en sobrepromesa** (riesgo identificado en el valor *Honestidad con el cliente*)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Núcleo gratuito permanente** (punto de entrada universal, no trial). Registro de ventas con interfaz simple (botón grande, agregar producto en <5 toques en mobile), inventario simple, facturación SUNAT vía OSE tercero, dashboard básico (3–5 indicadores), acceso web responsive, **IA Asesora nivel Básico** con 3 consultas/día, tips contextuales y alertas básicas.",
+            "**Primera rama paga: Ventas + Facturación Electrónica avanzada** (coincide con dolor más agudo SUNAT vencida). Facturación ilimitada, cotizaciones, CRM básico, integración Yape/Plin para conciliación automática, reportes tributarios listos para contador. Precio referencial **S/ 18–22 mensuales** según activación, **modelo de cobro por activación mensual** (Opción C del documento maestro).",
+            "**IA Asesora nivel Básico** sobre APIs externas (OpenAI/Anthropic) + modelos ligeros offline. **No es chatbot conversacional — es motor de insights sobre datos propios del usuario**: *\"Este mes vendiste 12% más que el anterior. Tus tres productos top son cerveza, gaseosa y pan. Los martes vendes 30% menos que los viernes\"*. 3 consultas diarias para evitar sobrecosto de inferencia.",
+            "**Onboarding *\"Soy bodega\"* guiado, sin soporte humano.** Configuración en **<10 minutos** en flujo lineal pero **fragmentable** — primera venta registrada en <24 horas del registro. Estado persistente, retomable, sin perder progreso ante interrupciones.",
+            "**Integración con OSE homologado SUNAT como tercero**, no in-house. Reduce time-to-market en 6–9 meses y desplaza el riesgo regulatorio al especialista. Auditoría pre-lanzamiento: **tasa de rechazo SUNAT <0.5%** y **uptime del módulo facturación 99.5%** (factor crítico de éxito)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roadmap",
+      "title": "Roadmap — Fase 2 y Fase 3 (años 2–5)",
+      "emoji": "🌱",
+      "question": "¿Qué se construye después del MVP y bajo qué regla de progresión?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Construcción progresiva con regla explícita: **cada rama nueva se construye solo cuando la rama anterior alcanza el umbral validado de 20 pagantes activos**. Una a la vez, no en paralelo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Ocho ramas adicionales en construcción secuencial.** Equipo (personal, nómina, turnos), Locaciones (multi-sede, transferencias), Inventario avanzado (órdenes de compra, proveedores), Finanzas (contabilidad, conciliación bancaria, reportes tributarios consolidados), Clientes (fidelización, segmentación, campañas), Digital (e-commerce, catálogo digital, marketplaces), Analítica (BI, dashboards, predicción), Producción (manufactura, control de procesos).",
+            "**IA Asesora niveles superiores.** **Estratégica** (consultas ilimitadas, opciones rankeadas por probabilidad de éxito), **Predictiva** (predicciones de demanda, simulación de escenarios), **Ejecutiva** (optimización multi-sede, modelo fine-tuned por sector, API para integraciones).",
+            "**App móvil nativa Android** (iOS opcional según validación) — Fase 2 confirmada.",
+            "**Motor de triggers de progresión** con los cuatro modos (Automático, Sugerido, Manual, IA) — Fase 2.",
+            "**Marketplace de plantillas, conectores con terceros, exportación de datos sectoriales anonimizados a fintech aliadas** — Fase 3."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Comunicar las nueve ramas como existentes cuando solo una está construida es sobrepromesa que erosiona confianza.** El MVP es disciplina estratégica de la **E2 del documento maestro** (penetración profunda antes que ampliación horizontal), no austeridad táctica."
+        }
+      ]
+    },
+    {
+      "id": "atributos",
+      "title": "Ocho atributos diferenciadores priorizados",
+      "emoji": "✨",
+      "question": "¿Cuáles son los atributos comunicables que combinan diferenciación real con alineamiento al perfil del consumidor?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Los atributos que merecen comunicación comercial activa son los que combinan **diferenciación real frente a competidores con alineamiento al perfil del consumidor**. No todo atributo es comunicable: algunos son técnicamente sólidos pero culturalmente invisibles para el bodeguero."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Evolución progresiva por ramas activables.** Diferenciador estructural difícil de copiar (**F1 del FODA**). Alegra, Siigo, Odoo no pueden agregarlo sin reescribir arquitectura. Ventana de imitación **18–24 meses**. Comunicado: *\"empieza con lo básico, desbloquea nuevas herramientas solo cuando tu negocio crezca\"*.",
+            "**Pago solo por uso real.** Sin suscripción fija. Resuelve aversión cultural al gasto fijo recurrente (sección 2.2.1, FODA D5/A1). Comunicado en cinco segundos: *\"S/ 18 por mes que uses la rama. Si no usas, S/ 0\"*.",
+            "**IA Asesora integrada en el núcleo gratuito.** Mientras los competidores cobran extra por IA (incluido Alegra post-USD 47M), ERP Evolutivo la incluye desde día uno (**F4 del FODA**). Ventana competitiva temporal: **12–18 meses** antes de que los players regionales generalicen IA incluida.",
+            "**Onboarding <10 minutos sin soporte humano.** Diferencia operativa frente a Odoo/SAP (requieren implementador) y frente a Alegra/Siigo (configuración técnica más extensa). Conecta con factor crítico de éxito: **si el usuario no registra primera venta en 24h, no vuelve**.",
+            "**Freemium robusto sin tarjeta de crédito.** Reduce drásticamente la barrera de entrada en segmento con desconfianza estructural al cobro automático (**F5 del FODA**). Diferencia frente al trial de 15–30 días de Alegra y Siigo.",
+            "**Diseño multi-país preconstruido.** SUNAT (Perú), DIAN (Colombia), SAT (México), SII (Chile). Reduce deuda técnica futura en expansión regional (**F6 del FODA**). **No es comunicable al bodeguero** — pero es crítico para inversores y roadmap.",
+            "**Integración nativa con Yape y Plin.** Conciliación automática de cobros digitales — reduce trabajo manual del bodeguero. Apalanca la penetración del **73% de pagos digitales en bodegas** según Logiconsult.",
+            "**Dashboards en lenguaje cotidiano, no contable.** *\"Este mes vendiste S/ 8,500\"* (no *\"ingresos del período\"*). *\"Te queda poca cerveza, deberías reponer mañana\"* (no *\"stock por debajo del nivel mínimo configurado\"*). Diferencia estructural frente a Alegra/Siigo, diseñados para contador, no para dueño-operador con secundaria completa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marca",
+      "title": "Marca, naming e identidad visual",
+      "emoji": "🎨",
+      "question": "¿Por qué el nombre técnico y la paleta dark no convencen al usuario final aunque sí a los inversores?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El nombre **ERP Evolutivo** es funcional pero **estratégicamente discutible para el usuario final**. *ERP* es un acrónimo que el consumidor del beachhead no reconoce — *\"suena a sistema corporativo lejano y caro\"*, exactamente la asociación que el producto quiere evitar. La recomendación es **evaluar un naming comercial dirigido al usuario final distinto al nombre técnico-corporativo**, siguiendo el patrón **Yape (BCP), Plin (Interbank-Scotiabank), Tunki, Mibanco**: nombre comercial corto, evocativo, ajeno a tecnicismos."
+        },
+        {
+          "type": "note",
+          "text": "**El nombre técnico *\"ERP Evolutivo\"* puede mantenerse para comunicación con contadores, inversores y partners institucionales**, donde el reconocimiento de la categoría ERP agrega credibilidad. La decisión es tener **dos nombres convivientes**, no eliminar el técnico."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Identidad visual.** La paleta actual del proyecto usa dark theme con purples, teals, greens y oranges — coherente para presentación a inversores. Pero **el producto al usuario final probablemente requiere paleta distinta**: el bodeguero limeño asocia dark themes con productos premium y de nicho técnico, **no con simplicidad y confianza**. Yape (azul confianza BCP) y Plin (magenta vivo) usan paletas claras, contrastes altos y colores con asociaciones culturales positivas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Paleta clara dominante** con color de marca distintivo pero culturalmente cálido. **Verde naturaleza-crecimiento** o **azul claro confianza** son apuestas razonables. Naranja vibrante compite con Plin; morado/púrpura suena lejano para el segmento.",
+            "**Tipografía sans-serif de alta legibilidad** en pantallas pequeñas. **Mínimo 16px en mobile**. Evitar tipografías condensadas o decorativas — usuarios con **presbicia incipiente** (rango 35–55 años).",
+            "**Iconografía concreta y reconocible, no abstracta.** Billetes para *\"ventas\"*, cajas para *\"inventario\"*, calculadora para *\"facturación\"*. Evitar iconos genéricos del SaaS internacional que el usuario no decodifica.",
+            "**Tono visual del producto.** Mensajes cortos en lenguaje hablado peruano informal pero respetuoso (*\"Vendiste bien hoy\"*, no *\"Has registrado ventas satisfactorias en el período\"*). **Cero terminología técnica visible** — ni siquiera *\"módulo\"* (sustituida internamente por *\"rama\"*, comunicada al usuario como *\"herramienta\"*).",
+            "**Comunicación visual de la mecánica evolutiva.** Las 9 ramas merecen representación coherente y memorable. Árbol literal puede ser obvio pero efectivo; alternativas más sutiles (anillos concéntricos, nivel de juego, mapa de progreso) deben **validarse con bodegueros reales**, no decidirse desde la estética del fundador técnico.",
+            "**Materiales publicitarios.** **Mostrar bodegueros reales del beachhead, no actores ni perfiles aspiracionales.** La estética profesional excesiva genera distancia, no atracción (sección 2.2.1)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "componentes",
+      "title": "Componentes críticos del producto (materias primas SaaS)",
+      "emoji": "🧱",
+      "question": "¿De qué dependencias críticas depende la calidad y entrega del producto, y qué riesgo o ventaja generan?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La sección académica clásica de *\"materias primas\"* no aplica a un SaaS (sin insumos físicos), pero la pregunta funcional equivalente es relevante: **¿de qué componentes depende la calidad y entrega del producto?** Seis componentes críticos identificados."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Infraestructura cloud.** **AWS São Paulo** es la apuesta razonable para el beachhead Lima por equilibrio latencia/madurez/precio. **Invisible al usuario cuando funciona, catastrófica cuando falla.** Arquitectura redundante desde el día uno es proporcional al factor crítico de éxito (uptime SUNAT 99.5%), no overkill.",
+            "**APIs de Modelos de Lenguaje (LLM).** OpenAI, Anthropic, eventualmente Llama/Mistral autoalojados. Es la *\"materia prima\"* más visible al usuario porque determina la calidad de la IA Asesora. **Estrategia multi-proveedor desde día uno (E18 del FODA)** como defensa estructural. La caída del 90% del costo de inferencia desde 2023 hace financieramente viable la IA en freemium.",
+            "**Integración con OSE homologado SUNAT.** Nubefact, Efact o equivalente. Componente externo que opera como **dependencia crítica** — si el OSE falla, ERP Evolutivo falla en el módulo más sensible. La decisión de no construir in-house es correcta por costo de oportunidad, time-to-market y especialización. **Mitigación: contrato con dos OSE en paralelo** (primario y backup), monitoreo en tiempo real, plan B explícito si el primario degrada SLA.",
+            "**Integraciones con pasarelas de pago digital** (Yape, Plin, Mercado Pago). Diferencia el producto culturalmente al usuario peruano. **No son técnicamente complejas pero requieren acuerdos comerciales con BCP (Yape) y consorcio de bancos detrás de Plin.** Sin acuerdos formales, la integración opera vía scraping o conectores indirectos con riesgo de inestabilidad — **ciclo de negociación con banco grande: 6–12 meses, debe abrirse antes del MVP**.",
+            "**Prompts especializados por sector y nivel de madurez del negocio.** Es la **receta del producto** que diferencia ERP Evolutivo de un wrapper genérico de ChatGPT. Bibliotecas validadas con bodegueros, peluquerías, restaurantes pequeños — **activo de la empresa que no se replica con código abierto**. Su calidad determina el valor percibido de la IA en los primeros 30 días (factor crítico de éxito).",
+            "**Datos transaccionales anonimizados de los propios usuarios.** En MVP no hay datos significativos. Pero conforme la base crece, este componente se convierte en la **materia prima más valiosa** — el **flywheel de datos (F8 del FODA)** y activo defensivo de largo plazo. **La instrumentación de captura desde el día uno se paga 10x cuando la base supera los 1,000 usuarios.**"
+          ]
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las decisiones de producto tienen **seis implicancias operativas concretas** que conectan con el resto del estudio y deben sostenerse como criterio de gestión, no como reflexión académica.",
+    "items": [
+      "**El MVP NO es el producto completo del documento maestro.** Es el **núcleo gratuito + una sola rama paga** (Ventas + Facturación). No es austeridad táctica — es disciplina estratégica E2 (penetración profunda antes que ampliación horizontal). **Comunicar las 9 ramas como existentes cuando solo una está construida es sobrepromesa que erosiona confianza.**",
+      "**La IA Asesora del MVP debe comunicarse como *\"asistente que mejora con datos\"*, no como *\"asesor experto sofisticado\"*.** La **honestidad de comunicación** es valor explícito y reduce el riesgo de la objeción *\"esto es lo mismo que cualquier otro ERP\"* cuando el usuario descubre las limitaciones del MVP.",
+      "**Identidad visual del producto al usuario final ≠ identidad visual de la presentación a inversores.** Son **dos audiencias con códigos culturales distintos**. Mantener una sola estética para ambas audiencias es **economía falsa**: el inversor se siente cómodo con dark theme y tipografía sofisticada; el bodeguero con paleta clara y lenguaje coloquial.",
+      "**Naming comercial al usuario final = decisión estratégica pendiente que debería validarse antes del lanzamiento.** Mantener *\"ERP Evolutivo\"* como nombre técnico-corporativo y desarrollar un nombre comercial distinto para el consumidor final es **replicable del patrón Yape (BCP)** y vale la inversión.",
+      "**Integración con Yape y Plin NO es feature accesoria — es atributo central.** El acuerdo comercial formal con BCP y el consorcio Plin debería **abrirse desde el día uno del proyecto, antes incluso del MVP**, porque el ciclo de negociación con banco grande puede tomar **6–12 meses**.",
+      "**El flywheel de datos requiere arquitectura de captura desde el MVP.** El equipo técnico no puede tratar el producto como *\"construyo features y después veo qué datos genero\"*. **Diseñar primero el esquema de captura, anonimización y almacenamiento, luego las features.** Es decisión arquitectónica que se paga **diez veces más cara si se posterga**."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis débiles del producto a vigilar",
+    "lead": "Tres puntos del diseño operan como **supuestos no validados** que deben confirmarse con investigación primaria **antes de comprometer construcción**.",
+    "items": [
+      "**El usuario tolera y prefiere la mecánica evolutiva sobre un paquete fijo completo.** Plausible por el patrón de gamificación cultural del segmento (videojuegos como referencia generacional), pero **no validado con bodegueros reales** en sesiones de prototipo navegable. **Validación requerida:** mostrar dos prototipos navegables a 20–30 bodegueros del beachhead (uno paquete fijo, otro mecánica evolutiva) y medir preferencia declarada y comportamiento de exploración.",
+      "**La IA Asesora en lenguaje cotidiano genera valor percibido suficiente para detonar conversión a pago en 90 días.** La calidad de prompts y relevancia de recomendaciones en Fase 1 (sin fine-tuning con datos propios) es riesgo real. **Validación requerida:** medir tasa de apertura y tasa de acción sobre recomendaciones de IA en muestra de **primeros 30 usuarios beta**, **umbral mínimo del 25% de aceptación** según el factor crítico de éxito.",
+      "**El nombre *\"ERP Evolutivo\"* funciona comercialmente con el usuario final.** Plausible para audiencias institucionales pero discutible para bodegueros. **Validación requerida:** test de comprensión y asociación con **30–50 bodegueros**, comparando *\"ERP Evolutivo\"* con 2–3 alternativas de naming comercial."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva — Producto",
+    "lead": "ERP Evolutivo es un SaaS modular de gestión empresarial con IA integrada, diseñado para microempresas LATAM con lanzamiento en bodegas de Lima Norte. Su arquitectura nativa de **crecimiento progresivo** lo diferencia de la categoría ERP convencional.",
+    "items": [
+      "**Estructura por fase.** MVP (12 meses) = núcleo gratuito permanente + **una sola rama paga** (Ventas + Facturación, S/ 18–22 mensuales con cobro por activación). Las **8 ramas adicionales** y los **3 niveles superiores de IA** son roadmap Fase 2–3, construidas progresivamente con regla de **20 pagantes activos por rama** antes de pasar a la siguiente.",
+      "**8 atributos diferenciadores priorizados.** Evolución progresiva (ventana imitación 18–24m) · Pago solo por uso real · IA en freemium (ventana 12–18m) · Onboarding <10 min · Freemium sin tarjeta · Multi-país preconstruido · Integración Yape/Plin · Dashboards en lenguaje cotidiano.",
+      "**Marca y diseño.** Recomendación: **naming comercial distinto** al técnico ERP Evolutivo (patrón Yape/Plin), **paleta clara dominante** para producto al usuario final (diferenciada del dark theme de inversores), tipografía sans-serif ≥16px mobile, iconografía concreta, **bodegueros reales en materiales publicitarios** (no aspiracionales).",
+      "**6 componentes críticos (materias primas SaaS).** AWS São Paulo · LLMs multi-proveedor desde día uno · OSE SUNAT contratado con plan B · Acuerdos formales Yape/Plin (ciclo 6–12 meses, abrir antes del MVP) · Bibliotecas de prompts por sector · Instrumentación de captura de datos desde el MVP para flywheel."
+    ],
+    "closing": "**Decisión estratégica central: el MVP es disciplina, no austeridad.** Una sola rama paga construida con calidad superior, IA comunicada honestamente como *\"asistente que mejora con datos\"* (no como *\"asesor experto\"*), identidad visual diferenciada del consumidor final respecto al material para inversores, y arquitectura de captura de datos desde el día uno. **La diferenciación se construye en producto desde la primera línea de código, no se agrega después con campañas de marketing.**"
+  }
+}

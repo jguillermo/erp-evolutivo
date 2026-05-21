@@ -170,6 +170,38 @@ export const routes: Routes = [
             m => m.DemandaProyectoComponent
           ),
         title: 'Demanda del Proyecto — Estudio de Mercado'
+      },
+      {
+        path: 'producto',
+        loadComponent: () =>
+          import('./features/estudio-mercado/producto/producto.component').then(
+            m => m.ProductoComponent
+          ),
+        title: 'Producto — Marketing Mix — Estudio de Mercado'
+      },
+      {
+        path: 'precio',
+        loadComponent: () =>
+          import('./features/estudio-mercado/precio/precio.component').then(
+            m => m.PrecioComponent
+          ),
+        title: 'Estrategia de Precio — Marketing Mix — Estudio de Mercado'
+      },
+      {
+        path: 'distribucion',
+        loadComponent: () =>
+          import('./features/estudio-mercado/distribucion/distribucion.component').then(
+            m => m.DistribucionComponent
+          ),
+        title: 'Estrategia de Distribución — Marketing Mix — Estudio de Mercado'
+      },
+      {
+        path: 'promocion',
+        loadComponent: () =>
+          import('./features/estudio-mercado/promocion/promocion.component').then(
+            m => m.PromocionComponent
+          ),
+        title: 'Estrategia de Promoción — Marketing Mix — Estudio de Mercado'
       }
     ]
   },

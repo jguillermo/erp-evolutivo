@@ -1,0 +1,292 @@
+{
+  "title": "📣 Estrategia de Promoción",
+  "subtitle": "¿Qué mezcla promocional gana con autenticidad y calibración cultural — no con presupuesto — al bodeguero limeño con desconfianza a marcas, baja alfabetización digital y temor estructural a SUNAT?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La promoción tradicional cubre publicidad, RR.PP., promoción de ventas y boca a boca. Para ERP Evolutivo aplicar esa taxonomía sin ajustes es estructuralmente inadecuado: el beachhead **no responde a los canales clásicos con la eficiencia esperada**. Anuncios pagados generan alcance pero baja conversión, RR.PP. con medios empresariales no llegan al A1, descuentos agresivos **degradan el posicionamiento *Pago justo***. La estrategia que tiene sentido aquí es **radicalmente distinta**: se construye sobre **testimonios reales del beachhead**, contenido educativo que **resuelve dolor concreto (no que vende producto)**, activaciones del contador como traductor cultural, e **incentivos económicos directos al usuario referente** (no descuentos al producto).",
+  "sections": [
+    {
+      "id": "marco",
+      "title": "Marco estratégico — cinco principios",
+      "emoji": "🧭",
+      "question": "¿Qué restricciones filtran cualquier táctica antes de proponer presupuesto y calendarización?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La estrategia opera bajo **cinco principios estructurales**. Cada principio es **restricción operativa**, no preferencia estética."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**La promoción amplifica el canal de distribución, NO lo sustituye.** Sección 2.6.3 estableció los dos canales prioritarios: contadores aliados y PLG vía comprobantes. La promoción opera **al servicio** de ellos — facilitar que el contador convierta más rápido, o que el bodeguero que recibe comprobante con mención dé el siguiente paso.",
+            "**Mensaje desde la perspectiva defensiva del bodeguero, NO desde la perspectiva ofensiva de digitalización.** El bodeguero teme a SUNAT más de lo que confía en cualquier ayuda relacionada. Filtro: *¿esto suena a \"te ayudo a estar tranquilo\" o a \"te empujo a cumplir\"?* **Solo el primer tono convierte.**",
+            "**Explotar el sesgo de pérdida sobre ganancia.** El segmento responde con mayor intensidad a evitar pérdida (multa SUNAT, robo, cliente perdido) que a obtener ganancia (vender más, optimizar margen). *\"Te ayudo a no perder S/ 200 al mes en mermas\"* convierte mejor que *\"te ayudo a ganar S/ 200 al mes en eficiencia\"*.",
+            "**Protagonistas reales del beachhead, NO perfiles aspiracionales.** Cualquier material con estética profesional excesiva, actores o aspiracionales activa el **filtro de desconfianza** del segmento y reduce conversión. **La inversión en producción de alta calidad estética es contraproductiva** en este contexto.",
+            "**NO degradar el posicionamiento *Pago justo*.** El valor explícito es transparencia y previsibilidad del costo. Descuento agresivo, oferta limitada con countdown, precio tachado → **contradicen el posicionamiento y erosionan confianza** donde el boca a boca opera con la misma intensidad en positivo y negativo. La promoción opera sobre **acceso** (referidos, comunidad, contenido educativo), no sobre descuentos al producto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posicionamiento",
+      "title": "Posicionamiento y mensaje central por sub-segmento",
+      "emoji": "🎯",
+      "question": "¿Qué mensaje sostenido durante 18 meses calibra cada sub-segmento sin diluir el posicionamiento central?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Un posicionamiento difuso genera comunicación dispersa y rendimiento marginal de cada peso invertido. La definición se construye en **tres capas**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Capa 1 — Declaración interna (brújula del equipo, NO al usuario).** *Para el bodeguero limeño formal con dolor SUNAT activo, ERP Evolutivo es la herramienta de gestión que le permite estar en orden con SUNAT y controlar su negocio en menos de 10 minutos diarios, sin pagar lo que no usa, con asesoría incluida.*",
+            "**Capa 2 — Mensaje central al usuario.** *\"Tu negocio en orden. Sin pelearte con SUNAT\"*. Variante alternativa también con tono defensivo: *\"Vende tranquilo. Nosotros nos encargamos de SUNAT\"*. **El mensaje exacto debe validarse con bodegueros reales antes del lanzamiento**, no decidirse desde la oficina.",
+            "**Capa 3 — Jerarquía de beneficios (siempre en este orden).** (1) Tranquilidad frente a SUNAT · (2) Control del negocio en lenguaje cotidiano · (3) Pago solo por uso · (4) Asesoría incluida · (5) Comunidad de bodegueros. **La tentación de comunicar primero la IA o la mecánica evolutiva debe resistirse** — son atributos interesantes para inversores y press, pero secundarios para el bodeguero que necesita primero estar tranquilo con SUNAT."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Cuatro variantes del mensaje central por sub-segmento** (sección 2.2.2). No son cuatro productos — son **cuatro entradas distintas al mismo producto**, calibradas por el modelo mental de cada uno."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**A1 (ansioso con dolor SUNAT vencido):** *\"Ya no más multas. Emite tus comprobantes en 30 segundos\"*. Lenguaje directo, sin adornos, sin promesas de modernización.",
+            "**A2 (preventivo con dolor latente):** *\"Que SUNAT no te agarre desprevenido. Empieza gratis y ten todo listo\"*. El freemium opera aquí su función estratégica máxima.",
+            "**A3 (hijo/hija digital del bodeguero):** *\"Configúrale el sistema a tu papá o mamá en 10 minutos y olvídense del Excel viejo\"*. Lenguaje TikTok, vertical, casual. El protagonista es el hijo/hija que resuelve algo que el padre no podía.",
+            "**A4 (bodeguera con economía integrada):** *\"Tú decides cuánto pagas y cuándo. Si no usas, no pagas. Ni un sol más sin que tú lo digas\"*. Énfasis en previsibilidad y control, posiblemente con conexión a asociaciones de mujeres comerciantes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "palanca-contadores",
+      "title": "Palanca 1 — Activación del contador como canal promocional",
+      "emoji": "🤝",
+      "question": "¿Cómo habilitar al contador para que sea efectivamente evangelizador del producto en su cartera?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Es la **palanca de mayor retorno marginal** en el primer año. **No es publicidad en el sentido clásico** — es habilitar al contador para que sea efectivamente un evangelizador del producto en su cartera de 20–50 bodegas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Material de venta para el contador.** Folleto físico **A5 a doble cara** con tres beneficios para el bodeguero (tranquilidad SUNAT, control diario, pago solo por uso) y tres para el propio contador (cartera ordenada, certificación visible, comisión por referido). **A5 entra en folder profesional**. Impresión inicial 200 unidades para los primeros 5 contadores aliados.",
+            "**Webinar de bienvenida al contador certificado.** Sesión online de **90 minutos** presentando producto, mecánica de referidos, dashboard de cartera y casos de uso. **Grabado para nuevos incorporados**. Frecuencia: mensual mes 4–18, luego trimestral.",
+            "**Pack de demo guiada para visitas con bodegas referidas.** Video de **3 minutos** donde el fundador/advisor muestra el flujo del producto (registro → primera venta → comprobante SUNAT → dashboard). El contador puede mostrarlo directamente al bodeguero **sin tener que explicarlo él mismo**. Reduce drásticamente la fricción de venta.",
+            "**Cita conjunta del contador con bodega referida.** En los primeros 6 meses de cada contador certificado, el equipo de ERP Evolutivo se ofrece a acompañar al contador en la primera reunión con cada bodega referida. **Reduce el riesgo de mala comunicación** en la fase crítica de validación. Después del mes 6 del contador, opera autónomamente."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas.** Contadores certificados activos · referidos efectivos por contador en 90 días post-certificación · **tasa de conversión referido → pagante >20%** (factor crítico del documento maestro) · **CAC vía contador <S/ 30** (unit economics)."
+        }
+      ]
+    },
+    {
+      "id": "palanca-testimonios",
+      "title": "Palanca 2 — Testimonios filmados en bodegas reales del beachhead",
+      "emoji": "🎬",
+      "question": "¿Por qué la estética auténtica vence a la producción premium en este segmento específico?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Es la **palanca de mayor credibilidad** para el segmento. El bodeguero del beachhead confía en pares cercanos más que en cualquier autoridad técnica o marca abstracta. **Producir testimonios reales no es opcional — es la única forma de generar conversión orgánica significativa.**"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Cantidad y diversidad.** **8–12 testimonios** en los primeros 6 meses post-MVP. Diversidad por **género** (incluyendo explícitamente bodegueras del A4), **distrito** del beachhead (SMP, Los Olivos, Independencia), **antigüedad** de la bodega (establecidas + emprendimientos jóvenes) y **dolor resuelto** (multa SUNAT evitada, ahorro de tiempo en cuadre, oportunidad comercial vía IA).",
+            "**Formato y estética.** Videos verticales **30–90 segundos**, **filmados en la bodega real, no en estudio**. Sin libreto rígido, preguntas guía abiertas. El bodeguero habla en su propio lenguaje **con sus propias palabras, incluyendo pequeñas imperfecciones de habla que refuerzan autenticidad**. Subtítulos en castellano peruano coloquial. **Sin música emocional manipulativa, sin colorimetría de comercial.**",
+            "**Cifras concretas en cada testimonio.** Estructura replicable: situación inicial (lo que hacía antes) → dolor específico → decisión de adoptar → resultado medible. Ejemplo: *\"Antes anotaba mis ventas en una libreta. Una vez me llegó multa de SUNAT por no emitir comprobante. Ahora desde el celular emito comprobante en menos de un minuto. Este mes vendí S/ 9,800 y ya sé cuánto gané\"*.",
+            "**Distribución.** Cada testimonio se publica en TikTok, Instagram Reels, YouTube Shorts y Facebook Watch. **Versión 15 segundos para captación · versión 60–90 segundos para conversión**. También alimentan la landing page con sección específica por tipo de negocio."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas.** Alcance orgánico por testimonio · tasa de visualización completa (proxy de credibilidad) · conversión de visualización a registro freemium · CAC vía testimonios."
+        }
+      ]
+    },
+    {
+      "id": "palanca-contenido",
+      "title": "Palanca 3 — Contenido educativo de utilidad inmediata",
+      "emoji": "📚",
+      "question": "¿Cómo construir autoridad de marca capturando al sub-segmento A3 (hijo/hija digital) sin caer en *\"tips para PYMEs\"* genéricos?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Palanca de **construcción de autoridad de marca y captación de A3**. Rendimiento moderado en captación directa pero alto en posicionamiento a 12–24 meses. Temas centrados en **dolor concreto del bodeguero, no en producto**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Contenido TikTok e Instagram (3–5 videos/semana).** Ejemplos: *\"Cómo emitir tu primer comprobante electrónico en 3 minutos\"*, *\"Por qué SUNAT está fiscalizando ventas por redes sociales en 2026\"*, *\"3 errores comunes al manejar inventario en una bodega\"*, *\"Cómo saber si tu bodega está ganando de verdad\"*. **Tono coloquial peruano, no formal corporativo.**",
+            "**Posts del fundador y advisor comercial.** **LinkedIn** para autoridad B2B (contadores, inversores, partners institucionales). **Twitter/X** para conversación con ecosistema startup peruano. Frecuencia: 2–3 posts semanales.",
+            "**Comunidad WhatsApp por sector.** *\"Bodegueros que usan ERP Evolutivo\"* moderado por customer success. **50–200 miembros activos** como tamaño manejable (grupos más grandes pierden cohesión). **Canal de retención más que de adquisición**, pero genera contenido orgánico de calidad que alimenta otros canales.",
+            "**Newsletter mensual para contadores aliados.** Cambios regulatorios SUNAT, novedades del producto, casos de éxito de bodegas referidas. **Refuerza la relación con el canal contadores y mantiene activo al certificado entre referidos.**"
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas.** Alcance orgánico mensual (**meta mes 18: 5,000 visitantes/mes a landing**) · engagement por pieza · conversión seguidor → registro freemium · **CAC <S/ 25**."
+        }
+      ]
+    },
+    {
+      "id": "palanca-referidos",
+      "title": "Palanca 4 — Programa de referidos económicos directos",
+      "emoji": "🔗",
+      "question": "¿Cómo aceleran los referidos económicos el canal PLG sin caer en descuento al producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aceleración del canal PLG vía estrategia **E19 del FODA**. El programa opera como **capa adicional sobre la base instalada existente** — no es descuento al producto, **es mecanismo de adquisición compartida donde la economía del CAC se transfiere al usuario que genera la adquisición**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Incentivo al referente.** Por cada bodega referida que se registra **y completa primer comprobante emitido** (no solo registro), el referente recibe **crédito de S/ 18** = un mes de la rama Ventas-Facturación activa. **Acumulable**: refiere 3 bodegas → no paga el siguiente trimestre · refiere 12 bodegas → no paga el año.",
+            "**Incentivo al referido.** Por registrarse vía referido, **el primer mes de la rama paga activada es gratis**. Reduce barrera de entrada de la primera conversión a pago.",
+            "**Mecánica de operación.** Cada usuario tiene **código único en su panel** + **link compartible directo por WhatsApp** (canal natural del segmento). Tracking automático. **Pago del crédito al referente solo cuando el referido completa primer comprobante** — alinea incentivo con éxito real.",
+            "**Diferencia con descuento.** **CAC efectivo ≈ S/ 36 por usuario** (S/ 18 al referente + S/ 18 perdidos del primer mes del referido). Competitivo, y lo más importante, **escalable sin presupuesto incremental de marketing**."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas.** Tasa de uso del programa · usuarios adquiridos vía programa por mes · **conversión post-referido a pagante recurrente** (no solo primer mes gratis) · CAC efectivo del canal."
+        }
+      ]
+    },
+    {
+      "id": "palanca-rrpp",
+      "title": "Palanca 5 — Relaciones públicas y posicionamiento institucional",
+      "emoji": "🏛️",
+      "question": "¿Qué construye credibilidad ante inversores y partners institucionales sin que sea captación directa en el primer año?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Palanca de **construcción de marca a mediano plazo**, no captación directa en el primer año. Su rol es habilitar conversaciones con inversores, partners institucionales (BCP, asociaciones de comerciantes, gremios de contadores) y eventualmente con SUNAT como interlocutor formal."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Apariciones del fundador en eventos del ecosistema startup peruano.** PERU Venture Capital Conference, Startup Perú demo days, UTEC Ventures, BBVA Open Innovation, ProInnóvate. Frecuencia **4–6 apariciones anuales**. Costo bajo (la mayoría son gratuitos), retorno alto en visibilidad ante inversores y advisors potenciales.",
+            "**Relación con medios especializados.** Gestión, El Comercio (sección economía), RPP economía, Semana Económica, especializados en startups (LatamList, Bloomberg Línea LATAM). **Pitch con ángulos específicos**: digitalización de bodegas en Lima, modelo evolutivo único en LATAM, IA aplicada a microempresa.",
+            "**Casos de estudio para audiencia institucional.** Reportes trimestrales en PDF con métricas del producto **anonimizadas**. Distribuidos a fondos regionales (Salkantay, Angel Ventures, Magma Partners, Kayyak Ventures) y partners institucionales potenciales.",
+            "**Premios y reconocimientos.** Postulación a programas tipo *\"Innovación PYME\"* del Ministerio de la Producción, *\"Reto Innovación\"* del Banco BBVA, premios de la Cámara de Comercio de Lima. **Ganarlos genera credibilidad institucional desproporcionada a su costo de aplicación.**"
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas.** Apariciones en medios/trimestre · reuniones con inversores generadas · **calidad de prospectos institucionales (no volumen)**."
+        }
+      ]
+    },
+    {
+      "id": "calendario-presupuesto",
+      "title": "Calendario secuencial y presupuesto referencial",
+      "emoji": "📅",
+      "question": "¿Cómo respeta el cronograma la restricción real de capacidad del fundador único + advisor comercial?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las **cinco palancas NO se activan simultáneamente**. Lanzar las cinco el mes 1 garantiza **ejecución pobre de todas**. La secuencia respeta la **restricción real de capacidad ejecutiva del fundador único + advisor comercial** (D1 del FODA)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Mes 1–3 (pre-MVP).** **Palanca 1 (contadores) intensiva** con material físico, webinar, citas conjuntas. Palancas 2-4-5 en **preparación silenciosa**: filmación de primeros testimonios sin publicar, diseño del programa de referidos, primeras conversaciones con medios. **Sin contenido orgánico todavía** — lanzar TikTok sin producto valida nada.",
+            "**Mes 4–6 (MVP en producción).** Lanzamiento de **Palanca 2** con 3–5 testimonios reales. Activación parcial de **Palanca 3** (1 video semanal). **Palanca 4** en beta a usuarios fundadores. Palanca 1 continúa intensivamente.",
+            "**Mes 7–9 (escalamiento del beachhead).** **Palanca 3 intensiva** (3–5 videos semanales). Palanca 4 escalada a toda la base. **Palanca 5 activada** con primeros eventos del ecosistema. Palanca 1: escalar de 5 a 25 contadores certificados.",
+            "**Mes 10–18 (consolidación).** Las cinco palancas operando en simultáneo. Palanca 3 entrega volumen significativo de tráfico orgánico a landing. **Palanca 5 abre conversaciones formales con inversores para Serie Seed.**",
+            "**Mes 19–24 (expansión geográfica).** Replicación del playbook en Lima Sur, Lima Este, eventualmente Arequipa y Trujillo. Adaptación del contenido orgánico para nuevos sub-segmentos (peluquerías, restaurantes pequeños)."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Presupuesto referencial primer año post-MVP** — calibrado al tamaño real del proyecto, no a benchmarks de startups con capital extranjero."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Palanca 1 (contadores):** **S/ 8,000–12,000 anuales**. Material físico + webinar + viáticos + comisiones por referidos efectivos (variable).",
+            "**Palanca 2 (testimonios):** **S/ 6,000–10,000 anuales**. Honorarios de productor freelance + pequeños incentivos a los bodegueros que participan. **Producción modesta de varios testimonios pesa más que producción premium de uno solo perfecto.**",
+            "**Palanca 3 (contenido orgánico):** **S/ 12,000–20,000 anuales**. Community manager o creador de contenido part-time freelance + herramientas + eventual promoción pagada **modesta para amplificar testimonios de alto desempeño orgánico** (no para anuncios genéricos).",
+            "**Palanca 4 (referidos):** **variable S/ 5,000–8,000** en base de 500 usuarios con 5% de actividad. **Costo variable directo de adquisición, no presupuesto fijo.**",
+            "**Palanca 5 (RP institucional):** **S/ 4,000–8,000 anuales**. Inscripciones a eventos selectos, producción del reporte trimestral, eventual freelance de PR. **La mayoría del trabajo lo ejecuta el fundador o el advisor.**"
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Total primer año: S/ 35,000–58,000 anuales (≈ USD 10,000–16,000).** Presupuesto modesto, **viable solo bajo el supuesto de que canales orgánicos generan la mayor parte de la adquisición**, no la inversión publicitaria. Comparación: una startup que invierte agresivamente en Facebook/Google Ads para B2SMB peruana gasta USD 30,000–80,000 anuales con CAC efectivo S/ 80–150, muy por encima del umbral viable. **Operar con presupuesto modesto NO es austeridad — es disciplina de unit economics.**"
+        }
+      ]
+    },
+    {
+      "id": "descartados",
+      "title": "Canales explícitamente descartados con justificación",
+      "emoji": "🚫",
+      "question": "¿Qué canales convencionales se descartan durante los primeros 18 meses y por qué la existencia de un canal no obliga a invertir en él?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La **disciplina de exclusión** es tan relevante en promoción como en segmentación y distribución. Los siguientes canales se descartan **deliberadamente durante los primeros 18 meses**, no por imposibilidad sino por **mala calibración costo-beneficio**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Google Ads y SEM.** CAC alto en B2SMB con **bajo intent de búsqueda** del segmento. El bodeguero del beachhead no busca *\"ERP para mi bodega\"* en Google — busca soluciones puntuales (*\"cómo emitir factura electrónica\"*) con bajo intent comercial. **CAC efectivo estimado S/ 80–200**, muy superior al umbral viable.",
+            "**Facebook Ads e Instagram Ads pagados masivos.** Baja conversión y alta sensibilidad al anuncio interruptivo. Anuncios genéricos generan alcance pero baja conversión. **Excepción:** promoción pagada modesta para **amplificar testimonios orgánicos de alto desempeño**, no para anuncios genéricos del producto.",
+            "**Ferias comerciales presenciales generalistas.** Costo desproporcionado al alcance del beachhead. *Expo PYME* tiene audiencia amplia que mayoritariamente no es el sub-segmento prioritario. **Excepción:** presencia selectiva en **Expobodega** (evento anual de la ABP) y eventos sectoriales específicos de comerciantes formales.",
+            "**Anuncios en radio y prensa escrita.** Baja eficiencia de medición y alcance disperso. El segmento consume radio y prensa pero **no toma decisiones de compra de software desde estos canales**.",
+            "**Marketplace de software empresarial (Capterra, GetApp, ComparaSoftware).** Irrelevante para microempresa-bodega. Es canal relevante para PYMEs con departamento de IT que comparan opciones — **el bodeguero del beachhead no opera con este proceso de decisión**.",
+            "**Patrocinio deportivo o eventos masivos.** Costo desproporcionado y dilución del posicionamiento. **La marca aún en construcción no necesita visibilidad de masa sino credibilidad de nicho.**"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ La existencia de un canal NO obliga a invertir en él",
+          "text": "La disciplina de **decir \"no\" a canales mal calibrados** es la **palanca matemática que mantiene CAC blended por debajo del umbral viable de S/ 50**. Cada peso invertido en un canal con CAC superior es peso que **no estuvo disponible** para los canales que sí funcionan en este segmento."
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las decisiones de promoción tienen **siete implicancias operativas** que conectan con el resto del estudio y deben sostenerse como criterio de gestión.",
+    "items": [
+      "**La promoción los primeros 9 meses es función del fundador y advisor comercial, NO tercerizada.** Autenticidad de la voz, calibración del tono y decisión de cada pieza son **responsabilidad central**, no operativa. El advisor comercial cubre la brecha de experiencia del fundador técnico (D1 del FODA).",
+      "**El contenido orgánico requiere creador de contenido freelance desde mes 4, no antes.** Antes no hay producto que mostrar de forma honesta. Después del mes 9 puede evaluarse contratación part-time interna si el volumen justifica.",
+      "**La producción de testimonios es decisión estratégica, no logística.** Cada testimonio publicado opera como **activo de marketing reutilizable por meses**. La inversión en producir 8–12 testimonios sólidos en los primeros 6 meses es **más eficiente que invertir lo equivalente en anuncios pagados** que se consumen en semanas.",
+      "**Disciplina de NO usar descuentos agresivos protege el posicionamiento *Pago justo*.** La tentación de *\"promoción de lanzamiento con 50% de descuento\"* debe **rechazarse explícitamente** porque contradice el valor central del modelo.",
+      "**El programa de referidos opera sobre el efecto cluster geográfico del beachhead.** Un usuario en SMP refiere a otro bodeguero del mismo distrito con probabilidad **mucho mayor** que a uno de Surco o Miraflores. **Refuerza la disciplina de concentración geográfica** (sección 2.1.3).",
+      "**La relación con medios y ecosistema startup peruano es función del fundador, NO terciaria.** Es **la inversión más rentable por hora** en términos de captación de advisors, inversores potenciales y partners institucionales. **Asignar 4–6 horas semanales** a esta función desde mes 6 es decisión calibrada, no opcional.",
+      "**El cronograma de activación secuencial NO debe colapsarse por ansiedad de *\"hacer todo desde el día uno\"*.** Lanzar las cinco palancas en simultáneo el mes 1 garantiza ejecución pobre de todas. **La secuencia (contadores → testimonios mes 4–6 → orgánico mes 7–9 → referidos progresivo → RP institucional mes 10–18) respeta restricción real de capacidad.**"
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas a validar cuantitativamente",
+    "lead": "Cinco supuestos son críticos y deben validarse con datos primarios reales durante los primeros **6–12 meses**.",
+    "items": [
+      "**El mensaje central *\"Tu negocio en orden. Sin pelearte con SUNAT\"* funciona mejor que mensajes alternativos.** Test A/B con landing page y **≥3 variantes**, midiendo tasa de pre-registro por variante en cohortes equivalentes. **Muestra mínima 500 visitantes/variante**.",
+      "**Los testimonios filmados en bodegas reales convierten mejor que material producido con estética profesional.** Test A/B en redes con el mismo mensaje en **dos formatos contrastantes**, midiendo engagement, retención y conversión.",
+      "**El programa de referidos económicos genera CAC efectivo <S/ 50.** Cohorte real del primer trimestre del programa, midiendo costo total dividido por usuarios pagantes adquiridos.",
+      "**El contenido orgánico TikTok-Instagram captura efectivamente al sub-segmento A3.** Documentada en sección 2.6.3 — repetida aquí porque toca tanto distribución como promoción.",
+      "**El sub-segmento A4 (bodegueras mujeres) responde diferencialmente al mensaje calibrado de previsibilidad.** Test A/B con dos variantes de comunicación dirigida a este sub-segmento."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva — Estrategia de Promoción",
+    "lead": "La promoción de ERP Evolutivo se gana con **autenticidad y calibración cultural, no con presupuesto**. La inversión más rentable es habilitar al contador como evangelizador efectivo, filmar testimonios reales del beachhead, producir contenido educativo que resuelva dolor concreto y operar programa de referidos económicos directos.",
+    "items": [
+      "**Marco:** 5 principios estructurales — la promoción **amplifica** la distribución (no la sustituye), comunica desde la **perspectiva defensiva frente a SUNAT**, explota el **sesgo de pérdida**, usa **protagonistas reales del beachhead**, y **protege el posicionamiento *Pago justo*** rechazando descuentos agresivos.",
+      "**Posicionamiento:** *\"Tu negocio en orden. Sin pelearte con SUNAT\"* (a validar). Jerarquía de beneficios: tranquilidad SUNAT → control cotidiano → pago por uso → asesoría → comunidad. **4 variantes** del mensaje por sub-segmento (A1 ansioso, A2 preventivo, A3 hijo digital, A4 bodeguera mujer).",
+      "**5 palancas priorizadas:** (1) **Activación del contador** (material físico, webinar, demo guiada, citas conjuntas) — CAC <S/ 30. (2) **Testimonios filmados** 8–12 en 6 meses, estética auténtica, cifras concretas. (3) **Contenido educativo** 3–5 videos/semana + LinkedIn/X + comunidad WhatsApp + newsletter contadores — CAC <S/ 25. (4) **Referidos económicos** S/ 18 crédito al referente + primer mes gratis al referido — **CAC efectivo ≈ S/ 36**. (5) **RR.PP. institucional** apariciones en ecosistema startup + medios especializados + casos de estudio + premios.",
+      "**Calendario secuencial.** Mes 1–3 contadores intensivo (resto en preparación silenciosa) → mes 4–6 testimonios + orgánico parcial + referidos beta → mes 7–9 orgánico intensivo + referidos escalado + RR.PP. activada → mes 10–18 las 5 palancas en simultáneo + conversaciones Serie Seed → mes 19–24 replicación del playbook a Lima Sur/Este/provincias.",
+      "**Presupuesto primer año post-MVP: S/ 35,000–58,000 anuales (≈ USD 10K–16K).** Modesto pero **viable solo si canales orgánicos generan la mayor parte de la adquisición**. Comparación: startups que invierten agresivamente en Facebook/Google Ads gastan USD 30K–80K con CAC S/ 80–150, muy por encima del umbral viable. **No es austeridad — es disciplina de unit economics.**"
+    ],
+    "closing": "**Canales descartados explícitamente durante los primeros 18 meses:** Google Ads/SEM, Facebook/Instagram Ads masivos, ferias comerciales generalistas, radio y prensa escrita, marketplace de software empresarial, patrocinio deportivo o eventos masivos. **La existencia de un canal no obliga a invertir en él** — la disciplina de decir *\"no\"* a canales mal calibrados es la **palanca matemática que mantiene el CAC blended por debajo del umbral viable de S/ 50**."
+  }
+}

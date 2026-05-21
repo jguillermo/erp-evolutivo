@@ -1,0 +1,114 @@
+<!-- Estrategia de Precio — Marketing Mix 2.6.2 -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <p class="text-2xs font-mono text-ink-subtle uppercase tracking-title mb-sm">2.6.2 · Capítulo II</p>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="prec-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="prec-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Nota metodológica / framing -->
+  <app-quoted-text class="mb-4xl" testId="prec-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- ── Secciones en columna ── -->
+  <div class="flex flex-col gap-3xl" data-testid="prec-sections">
+    @for (section of sections; track section.id) {
+      <app-card
+        [testId]="'prec-' + section.id"
+        [color]="sectionColor(section.id)"
+        [title]="section.title"
+        [emoji]="section.emoji"
+        [question]="section.question">
+
+        @for (block of section.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              <app-list [testId]="'prec-' + section.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'prec-' + section.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'prec-' + section.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'prec-' + section.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- ── IMPLICANCIAS ESTRATÉGICAS ── -->
+  <div class="mt-5xl" data-testid="prec-implications">
+    <app-section variant="info" [title]="data.implications.title" testId="prec-implications-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.implications.lead | md"></p>
+      <app-list testId="prec-implications-list">
+        @for (item of data.implications.items; track $index) {
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+        }
+      </app-list>
+    </app-section>
+  </div>
+
+  <!-- ── HIPÓTESIS CRÍTICAS ── -->
+  <div class="mt-3xl" data-testid="prec-weak-hypotheses">
+    <app-section variant="callout" [title]="data.weakHypotheses.title" testId="prec-weak-hypotheses-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.weakHypotheses.lead | md"></p>
+      <app-list testId="prec-weak-hypotheses-list">
+        @for (item of data.weakHypotheses.items; track $index) {
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+        }
+      </app-list>
+    </app-section>
+  </div>
+
+  <!-- ── SÍNTESIS EJECUTIVA ── -->
+  <div class="mt-3xl" data-testid="prec-synthesis">
+    <app-section variant="highlight" [title]="data.synthesis.title" testId="prec-synthesis-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.synthesis.lead | md"></p>
+      <app-list testId="prec-synthesis-list">
+        @for (item of data.synthesis.items; track $index) {
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+        }
+      </app-list>
+      <p class="text-xs text-ink-muted leading-body mt-lg" [innerHTML]="data.synthesis.closing | md"></p>
+    </app-section>
+  </div>
+
+</div>

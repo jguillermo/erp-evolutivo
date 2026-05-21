@@ -1,0 +1,160 @@
+{
+  "title": "💰 Estrategia de Precio",
+  "subtitle": "¿Cuál es la cifra más baja del rango razonable que sostiene unit economics positiva, es comunicable en cinco segundos al bodeguero, y diferenciada en estructura frente al piso competitivo?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La estrategia de precio en SaaS B2SMB es probablemente **la decisión comercial más sensible del modelo** — y la que más frecuentemente se subestima. No es ejercicio numérico aislado: es el punto donde se cruzan **tres tensiones simultáneas** (valor percibido, costos del proveedor, posicionamiento competitivo). Para ERP Evolutivo el reto adicional es que el modelo declarado (**pago por uso bajo activación mensual**) es estructuralmente innovador frente a la competencia (planes fijos escalonados) y, simultáneamente, **cognitivamente complejo** para un bodeguero con baja alfabetización digital. La sección se construye en seis bloques: marco estratégico, análisis de enfoques, propuesta de MVP, plan B documentado, hipótesis críticas e implicancias. Pricing es la dimensión donde **el costo de equivocarse silenciosamente es mayor que en cualquier otra**.",
+  "sections": [
+    {
+      "id": "restricciones",
+      "title": "Cinco restricciones simultáneas del marco estratégico",
+      "emoji": "🧭",
+      "question": "¿Qué condiciones no negociables filtran cualquier propuesta de precio antes de proponer cifras?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La estrategia de precio opera bajo **cinco restricciones simultáneas**. Cualquier decisión que viole una de ellas es **estructuralmente inviable**, independientemente de cuán atractiva luzca en papel."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Capacidad de pago real del segmento.** Utilidad neta mensual de bodega típica: **S/ 1,500–4,000** sobre ventas brutas S/ 8,000–25,000. Cualquier gasto fijo nuevo **>1–2% de la utilidad operativa** enfrenta resistencia estructural que el marketing no resuelve. Rango realista de disposición a pagar: **S/ 15–35 mensuales**.",
+            "**Lógica de caja diaria del usuario.** Modelo mental *\"cuánto entró hoy, cuánto salió hoy\"*, no presupuesto mensual ni cálculo de ROI anual. Sensibilidad alta al cobro automático recurrente. Obliga a soluciones de cobro alternativas (Yape directo, pago manual) aunque sean menos eficientes operativamente.",
+            "**Comprensión en cinco segundos** — factor crítico de éxito del documento maestro. El bodeguero debe responder instantáneamente a *\"cuánto me va a costar esto\"* sin explicación adicional. **Descarta el modelo usage-based granular tipo AWS**: elegante en teoría, cognitivamente inaccesible para el segmento.",
+            "**Viabilidad unit economics.** CAC blended estimado **S/ 20** (canal contadores), churn mensual estimado **8–12%** (mortalidad natural de bodegas). Obliga a **ARPU mínimo S/ 18–25 mensuales** para sostener **LTV/CAC > 3x** (umbral mínimo SaaS B2SMB). Por debajo de S/ 15 efectivos, el modelo se rompe matemáticamente — no importa la adopción.",
+            "**Ventana competitiva temporal.** **Alegra ya tiene >75,000 pymes en Perú facturando**, con planes escalonados desde **≈ S/ 35 mensuales** (tope facturación S/ 10,000/mes en plan base). El pricing debe ser **diferenciado en estructura, no solo en precio absoluto**, para evitar batalla directa con un incumbente con más recursos y marca establecida."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enfoques",
+      "title": "Análisis de los tres enfoques de fijación",
+      "emoji": "⚖️",
+      "question": "¿Qué arroja cada enfoque clásico y cuál es la intersección razonable que ancla la propuesta?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El marco académico distingue tres enfoques: **costos, valor y competencia**. La estrategia final es híbrida, pero la disciplina de evaluarlos por separado evita el atajo común de *\"ponerle un precio que suene bien\"*."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Enfoque basado en costos.** Costo marginal por usuario freemium: **S/ 1–3 mensuales** (infraestructura + IA básica offline). Usuario pagante con IA Estratégica: **S/ 4–8 mensuales**. Costo fijo prorrateado: **S/ 80–120/usuario** con base 200 pagantes → **S/ 10–20/usuario** con base 2,000. Útil para validar el **piso del precio**, inadecuado como driver principal — fijar costo + 30% margen llevaría a **S/ 5 mensuales**, dejando enorme valor sobre la mesa.",
+            "**Enfoque basado en valor.** Valor económico cuantificable al bodeguero: **(a)** multas SUNAT evitadas desde **0.6 UIT ≈ S/ 3,210** (UIT 2025 S/ 5,350) — prima de tranquilidad equivalente a varios meses de uso; **(b)** ahorro 4–6 horas administrativas mensuales × S/ 8–10/h = **S/ 32–60 mensuales**; **(c)** visibilidad de oportunidades vía IA — valor real difícil de cuantificar; **(d)** evidencia bancable para microcrédito futuro — valor latente alto pero distante. Valor económico total: **S/ 80–150 mensuales**. Capturar 15–25% justifica **S/ 18–35**. Límite operativo: **el usuario no calcula valor económico, siente precio absoluto**.",
+            "**Enfoque basado en competencia.** **Alegra Perú** plan básico: facturación + boletas ilimitadas, 2 usuarios, 1 almacén, tope **S/ 10,000/mes facturación**, certificado digital, OSE incluido — **75,000 pymes peruanas facturando**. **Nubefact**: Online desde **S/ 70/mes** (S/ 700 anual), Offline desde **S/ 118/mes**, API desde S/ 70. **Efact**: plan básico gratuito hasta 50 comprobantes/mes. **Siigo Perú**: 1M+ clientes LATAM, planes desde USD 15–30. **Odoo**: USD 25–60/usuario/mes. **SAP B1, S10**: cientos a miles USD/mes — fuera del segmento."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Intersección razonable",
+          "text": "**Piso de costos (S/ 5–8) muy bajo** → flexibilidad. **Techo de valor (S/ 80–150) alto** → margen disponible. **Rango competitivo efectivo (S/ 35–70 sub-segmento microempresa)** ancla expectativas. La intersección para la primera rama paga del MVP es **S/ 18–25 mensuales**, **deliberadamente por debajo del piso competitivo** como estrategia de penetración en el beachhead."
+        }
+      ]
+    },
+    {
+      "id": "propuesta-mvp",
+      "title": "Propuesta de pricing del MVP — tres capas",
+      "emoji": "🎯",
+      "question": "¿Qué estructura percibe el usuario como un solo precio aunque internamente tenga tres lógicas distintas?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tres capas explícitas que el usuario percibe como un solo precio, pero con lógica interna distinta. La complejidad de las 9 ramas, los 4 niveles de IA, las comisiones y el roadmap de 3 fases es **complejidad interna que el usuario nunca debe ver en su primera interacción**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Capa 1 — Núcleo gratuito permanente.** **Precio S/ 0**, sin tarjeta de crédito, sin fecha de vencimiento, sin downgrade tras trial. Incluye ventas, inventario simple, facturación SUNAT vía OSE, dashboard, **IA Asesora Básica (3 consultas/día)** y alertas. **No es trial — es producto permanente**. Rol triple: eliminar barrera de entrada, generar base instalada que activa el efecto cluster (q de Bass), capturar usuarios con dolor SUNAT latente (A2) que convertirán cuando el dolor se agudice.",
+            "**Capa 2 — Primera rama paga: Ventas + Facturación Electrónica avanzada.** **Precio S/ 18 mensuales** bajo **modelo de activación mensual con umbral mínimo** (Opción C del documento maestro). Mecánica: **si el usuario emite ≥5 comprobantes en el mes desde la rama, paga S/ 18 al cierre; si no, paga S/ 0**. Monetiza directamente el dolor SUNAT agudo (A1). Precio **deliberadamente por debajo del piso competitivo** (Alegra ≈ S/ 35, Nubefact desde S/ 70): estrategia de penetración + anclaje psicológico contra referentes ya pagados sin resistencia (plan móvil S/ 30–50, streaming S/ 20–35, cable básico S/ 40–60).",
+            "**Capa 3 — Ramas adicionales (Fases 2 y 3).** Precio referencial **S/ 18–22/rama mensual** bajo el mismo modelo de activación. Equipo, Inventario avanzado, Finanzas, Clientes, Locaciones, Digital, Analítica, Producción. Un usuario con 3 ramas activas paga **S/ 54–66 mensuales total**. **No se cobra en MVP** — comunicar el modelo de pago por uso como filosofía, **sin listar ramas específicas hasta que estén construidas** (sobrepromesa erosiona confianza)."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Mensaje comunicado en cinco segundos:** *\"Empieza gratis. Cuando uses una rama paga, son S/ 18 al mes. Si no la usas, pagas cero. Sin contratos.\"* Este mensaje pasa el test de comprensión en 5 segundos — es el factor crítico que diferencia un pricing operativo de uno académico."
+        }
+      ]
+    },
+    {
+      "id": "ingresos-complementarios",
+      "title": "Fuentes de ingreso complementarias",
+      "emoji": "🌊",
+      "question": "¿Qué fuentes silenciosas elevan el ARPU efectivo sin requerir decisión adicional del usuario?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El ARPU efectivo del proyecto **no proviene solo de la rama paga directa**. Tres fuentes adicionales operan en paralelo y completan la estructura de ingresos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Comisiones transaccionales sobre cobros digitales.** **0.5%–1.0%** sobre Yape, Plin, Mercado Pago integrados. **Ingreso silencioso** — crece automáticamente con volumen del bodeguero y se acumula incluso sin activar rama paga. Para bodeguero promedio que procesa **S/ 8,000/mes digitales**, comisión a 0.75% genera **S/ 60 anuales/usuario ≈ S/ 5 ARPU oculto/mes**. En base de 1,000 usuarios: **S/ 60,000 anuales adicionales** sin requerir conversión directa.",
+            "**IA Avanzada como upsell natural (Fases 2–3, no MVP).** **Estratégica S/ 39/mes**, **Predictiva S/ 79/mes**, **Ejecutiva S/ 149/mes**. Eleva ARPU del usuario que ya superó la barrera de adopción. Conversión proyectada: **5–10% de la base pagante** en Fase 2 → ARPU promedio del proyecto sube de **S/ 22 a S/ 30–35 hacia el año 3**.",
+            "**Marketplace y datos sectoriales (Fase 3).** Plantillas de negocio, conectores, reportes sectoriales anonimizados para fintech, scoring crediticio para bancos. **No monetizable en años 1–2** — opcionalidad estratégica de largo plazo, no fuente de planificación inmediata."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-b",
+      "title": "Plan B documentado — pivote a comisiones transaccionales",
+      "emoji": "🛟",
+      "question": "¿Bajo qué condiciones se activa el pivote y qué consecuencias tiene sobre la unit economics?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El documento maestro identifica un Plan B de pricing como **estrategia E20 del FODA cruzado**. Esta sección lo formaliza con criterio operativo. **No es contingencia teórica — es opcionalidad estratégica que reduce el riesgo binario del modelo**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Condición de activación.** Si **al mes 6 post-MVP** la conversión freemium-pago efectiva está **<5%** (umbral mínimo factor crítico de éxito) **Y** la disposición a pagar declarada en validación cuantitativa muestra **<40% positivas a S/ 18**, el modelo actual debe pivotar.",
+            "**Pivote.** **Modelo 100% gratuito** monetizado exclusivamente por **comisiones transaccionales del 1.0%–1.5%** sobre cobros Yape, Plin y Mercado Pago. **El usuario nunca paga por ERP Evolutivo.** Para bodeguero que procesa S/ 8,000/mes digitales: **S/ 80–120 anuales/usuario (S/ 7–10 ARPU efectivo mensual)**.",
+            "**Consecuencias.** ARPU efectivo cae a **S/ 7–10/mes** (vs S/ 22 base). LTV/CAC se aprieta pero sigue positivo con CAC S/ 20. La unit economics requiere **base 3–4x más usuarios** para igual ARR absoluto. **Defensibilidad se desplaza al flywheel de datos + integraciones con bancos para microcrédito** (modelo similar a Square/Kushki). Acelera cronograma de expansión geográfica y de Serie Seed: menor rentabilidad/usuario, mayor escala."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Comunicación del plan B.** A inversores en pitch deck **como evidencia de pensamiento estratégico robusto**, no como debilidad. Al equipo como **criterio claro de pivote**, no como amenaza implícita. La existencia documentada reduce el riesgo binario y mejora la conversación con fondos."
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las decisiones de pricing tienen **ocho implicancias operativas** que conectan con el resto del estudio y deben sostenerse para evitar incoherencias internas.",
+    "items": [
+      "**Pricing comunicado al usuario es radicalmente más simple que el del modelo completo.** *\"S/ 18 al mes si la usas, cero si no\"* es lo que el usuario percibe. La complejidad de las 9 ramas, 4 niveles de IA, comisiones y roadmap de 3 fases **es interna, nunca expuesta en la primera interacción**.",
+      "**El cobro debe soportar pago manual por Yape además del cobro automático con tarjeta.** No es feature accesoria — es **alineamiento con la lógica de caja diaria** documentada en el perfil de consumidor. Operativamente menos eficiente (conciliación manual), pero baja drásticamente la barrera de entrada.",
+      "**Transparencia del cobro como valor explícito (*Pago justo*) y diferenciador competitivo.** Cada mes, notificación clara al usuario: *\"este mes activaste la rama Ventas. Tu cuenta del mes es S/ 18\"*. Sin sorpresas, sin cobros adicionales no anunciados, sin upgrade automático sin consentimiento.",
+      "**Comisiones transaccionales explicadas con la misma claridad que el cobro directo**, no como letra chica. *\"Cuando recibes pagos por Yape integrados a ERP Evolutivo, te cobramos 0.75% de comisión\"* es mensaje honesto que el usuario tolera si lo entiende. Cobrar sin anunciarlo erosiona confianza con efecto multiplicador por boca a boca del segmento.",
+      "**Plan B opera como red de seguridad financiera, no como degradación.** Comunicado a inversores como **opcionalidad estratégica**. Al equipo como criterio claro de pivote. **Reduce el riesgo binario del modelo y mejora la conversación con fondos.**",
+      "**Estrategia de penetración con precio < piso competitivo (S/ 18 vs S/ 35 Alegra) es viable solo durante la ventana de 18–24 meses.** A partir del año 2–3 post-lanzamiento, **migración a precios alineados al mercado (S/ 25–35)** para sostener unit economics. Mantener precio histórico a usuarios legacy y aplicar precio nuevo solo a nuevos, comunicando como *\"agradecimiento por ser uno de los primeros\"*.",
+      "**El pricing del MVP NO debe diluir la promesa de IA incluida en el núcleo gratuito.** La tentación de *\"monetizar también la IA\"* para acelerar ingresos es comprensible pero **estratégicamente costosa**: la IA en freemium es el atributo F4 del FODA y la ventana competitiva temporal 12–18 meses. Cobrar por IA básica **destruye el diferenciador antes de que rinda frutos**.",
+      "**Disciplina de no construir las 9 ramas en paralelo se refleja también en la comunicación de pricing.** **No anunciar precios de ramas que no existen aún.** No mostrar tabla completa de las 9 ramas en la página de precios del MVP. Evita sobrepromesa y mantiene honestidad comunicacional como valor distintivo."
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas a validar cuantitativamente en los primeros 6 meses",
+    "lead": "Cinco supuestos del pricing son críticos. La validación cualitativa de entrevistas tiende a **sobreestimar la disposición a pagar en factor 3–10x** respecto al comportamiento real. La validación debe ser **cuantitativa, no declarativa**.",
+    "items": [
+      "**Disposición real a pagar S/ 18 mensuales por Ventas + Facturación.** Muestra **≥100 bodegueros** del beachhead expuestos al modelo en landing o demo navegable, con métrica de **pre-registro con compromiso de pago** (no solo email). **Umbral viabilidad: 40% positiva**. Si <25%, pivote.",
+      "**Comprensión del modelo de activación mensual en cinco segundos.** Test cualitativo con **30–50 bodegueros**: mostrar la página de precios 5 segundos y preguntar *\"cuánto cuesta esto\"*. **Umbral: 80% respuestas correctas**. Si <60%, simplificar el modelo (probable: eliminar métrica de uso y dejar activación mensual binaria).",
+      "**Conversión efectiva freemium-pago a 90 días.** Cohorte real del MVP medida en **pago efectivo**. **Umbral del factor crítico de éxito: 8%** (documento maestro). Si <5%, activar plan B.",
+      "**Sensibilidad real al precio en rango S/ 15–30.** Test A/B con **tres precios diferentes (S/ 15, S/ 22, S/ 30)** en cohortes separadas durante el fake door test. Si elasticidad-precio baja → precio óptimo es el más alto. Si elasticidad alta → precio óptimo es el más bajo.",
+      "**Penetración real de pagos digitales que sostiene el plan B.** Línea base **73% según Logiconsult** en bodegas de Lima 2026. Si la integración Yape/Plin se ejecuta limpiamente y el % sigue creciendo, el plan B se vuelve más viable. Fricciones técnicas o comerciales (acuerdo BCP, ciclo largo) lo debilitan."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva — Estrategia de Precio",
+    "lead": "El precio no es lo que el modelo cuesta producir ni lo que el competidor cobra — es **la cifra más baja del rango razonable que sostiene unit economics positiva, comunicable en cinco segundos al bodeguero, y diferenciada en estructura** (activación por uso) frente al piso competitivo (planes fijos escalonados).",
+    "items": [
+      "**Marco:** 5 restricciones simultáneas (capacidad de pago S/ 15–35, lógica de caja diaria, comprensión 5 segundos, ARPU mínimo S/ 18–25 para LTV/CAC >3x, ventana competitiva vs Alegra con 75K pymes en Perú).",
+      "**Enfoques:** piso de costos **S/ 5–8 marginal**, techo de valor **S/ 80–150 económico**, rango competitivo efectivo **S/ 35–70 sub-segmento microempresa** (Alegra ≈ S/ 35, Nubefact desde S/ 70, Efact gratis hasta 50 comprobantes). Intersección razonable: **S/ 18–25 mensuales** como penetración por debajo del piso competitivo.",
+      "**Propuesta MVP de 3 capas.** Núcleo gratuito permanente (sin tarjeta, sin trial) + primera rama paga Ventas+Facturación a **S/ 18/mes con activación mensual ≥5 comprobantes** (Opción C) + ramas adicionales Fase 2–3 a S/ 18–22 bajo mismo modelo.",
+      "**Fuentes complementarias.** Comisiones transaccionales 0.5–1.0% sobre cobros digitales (ARPU oculto ≈ S/ 5/mes), IA Avanzada upsell Fase 2–3 (Estratégica S/ 39, Predictiva S/ 79, Ejecutiva S/ 149), marketplace y datos sectoriales Fase 3.",
+      "**Plan B documentado.** Si conversión <5% al mes 6 Y disposición <40% positiva, pivote a 100% gratuito + comisiones 1.0–1.5% (ARPU S/ 7–10 efectivo) — opcionalidad estratégica que reduce el riesgo binario."
+    ],
+    "closing": "**Mensaje comunicado en cinco segundos:** *\"Empieza gratis. Cuando uses una rama paga, son S/ 18 al mes. Si no la usas, pagas cero. Sin contratos.\"* **S/ 18 mensuales por rama activa es la apuesta cuantitativa**, con plan B documentado y **revisión obligatoria a los seis meses con datos primarios reales** — no con intuición declarativa."
+  }
+}

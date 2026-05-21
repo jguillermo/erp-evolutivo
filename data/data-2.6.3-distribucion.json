@@ -1,0 +1,199 @@
+{
+  "title": "🚚 Estrategia de Distribución",
+  "subtitle": "¿Cómo se entera el usuario potencial del producto (canal de descubrimiento) y cómo accede operativamente una vez decidida la adquisición (canal de entrega)?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La distribución en marketing tradicional describe la cadena productor-consumidor pasando por mayoristas y detallistas. Para un **SaaS B2SMB** esa categorización es estructuralmente inadecuada: no hay producto físico que mover, no hay inventario que rotar, no hay logística que coordinar. La *\"distribución\"* en SaaS responde a **dos preguntas distintas**: cómo el usuario potencial se entera del producto (**canal de descubrimiento y adquisición**), y cómo accede operativamente una vez decidido (**canal de entrega del servicio**). **Confundir ambas preguntas es error frecuente en estudios tradicionales aplicados a SaaS** — la sección separa rigurosamente las dos dimensiones.",
+  "sections": [
+    {
+      "id": "marco",
+      "title": "Marco estratégico — cinco principios estructurales",
+      "emoji": "🧭",
+      "question": "¿Qué restricciones filtran cualquier canal antes de proponer cifras concretas?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La estrategia opera bajo **cinco principios estructurales**. Cada principio es **restricción operativa**, no preferencia táctica."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Distribución directa sin intermediarios físicos.** Producto digital puro entregado vía web responsive (Fase 1) y app móvil nativa (Fase 2). No hay revendedores, franquicias ni distribuidores territoriales. Lo que sí aplica es **arquitectura de canales de descubrimiento** que opera sobre confianza acumulada de terceros (contadores) y viralidad orgánica integrada al producto (comprobantes).",
+            "**Multi-canal desde el día uno, NO monocanal.** La debilidad **D3 del FODA** documenta el riesgo de descansar solo en contadores. La estrategia **E19** establece que el canal alternativo PLG vía comprobantes **debe construirse desde el primer día**, no como reacción al fracaso del canal contadores. Es defensa estructural contra dependencia única.",
+            "**Canales priorizados por eficiencia, no por volumen.** Meta no es *\"estar en todos los canales\"* sino concentrar inversión en **2–3 canales con CAC <S/ 50** y velocidad de captación predecible. Cualquier canal con CAC superior **se descarta**, no se subsidia ni *\"se optimiza 6 meses para ver si mejora\"*.",
+            "**Canal y territorio alineados.** Concentración geográfica del beachhead (Lima Norte) define qué contadores se buscan y dónde se invierte en contenido orgánico. **No tiene sentido cerrar un contador con cartera en Cusco si el producto se valida en SMP–Los Olivos.**",
+            "**Cada canal se construye sobre una hipótesis de fricción específica.** Contadores → desconfianza cultural del bodeguero frente a tecnología nueva. PLG → fricción de descubrimiento inicial. Contenido orgánico → autoridad de marca en segmento que confía en personas, no en productos. **Canal que no resuelve fricción específica del comportamiento de compra es ruido publicitario**, no distribución estratégica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canal-contadores",
+      "title": "Canal 1 — Contadores aliados (prioritario)",
+      "emoji": "🤝",
+      "question": "¿Cómo operan los contadores como traductores culturales entre tecnología y bodeguero?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Es el canal **número uno declarado** del modelo. Su rol va más allá de *\"tener a alguien que recomiende el producto\"* — el contador opera como **traductor cultural** entre la tecnología y el bodeguero, función que ningún anuncio publicitario reemplaza. Cada contador típico atiende **20–50 bodegas en radio geográfico limitado**, lo que multiplica la palanca de cada relación cerrada."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Comisión por referido exitoso: S/ 30–50** por bodega que se registra **y completa onboarding** (no por bodega que solo se registra). Pago mensual transparente, dashboard con estado de cada referido.",
+            "**Certificación visible *\"Contador Aliado ERP Evolutivo\"* — gratuita.** Curso online de 4 horas, evaluación simple, badge digital para redes profesionales. Diferenciador en mercado donde el contador compite por clientes.",
+            "**Dashboard de cartera unificado.** Todas las bodegas que el contador atiende y refirió, con métricas relevantes (comprobantes emitidos, alertas SUNAT, libros electrónicos). Convierte al producto en **herramienta de productividad del propio contador** — switching cost alto para el canal.",
+            "**Soporte preferente.** WhatsApp dedicado con respuesta <2 horas, webinars trimestrales sobre cambios SUNAT, documentación técnica avanzada para integraciones (libros electrónicos, SIRE). Convierte al contador en **aliado técnico genuino**, no solo agente comercial."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Cronograma operativo de los primeros 9 meses post-MVP.**"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Mes 1–3:** identificación y cierre de los **primeros 5 contadores aliados** vía reunión presencial uno a uno (venta consultiva, no mass marketing). Filtro doble: cartera concentrada en beachhead Lima Norte (≥15 bodegas activas) + perfil profesional dispuesto a explorar tecnología.",
+            "**Mes 4–6:** **prueba piloto** — cada contador firmado refiere 3–5 bodegas como early adopters con seguimiento intensivo del fundador. Meta: validar que el contador **efectivamente refiere** (no solo firma) y que el producto cumple en casos reales.",
+            "**Mes 7–9:** escalamiento a **25–50 contadores aliados**. Programa de certificación formal con materiales producidos a escala. Los primeros 5 contadores validados operan como testimonios y referentes.",
+            "**Mes 9 en adelante:** programa de certificación abierto. Meta del documento maestro: **50 contadores certificados al mes 9**, con **≥30% refiriendo ≥1 usuario** en los primeros 90 días post-certificación."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas semanales.** **(1)** Contadores activos (meta mes 9: 50). **(2)** Conversión contador → referido efectivo (meta >30%). **(3)** CAC vía canal contadores (meta <S/ 30). **(4)** Conversión referido → pagante 90 días (meta >20%, umbral del documento maestro)."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Cuatro riesgos + mitigaciones",
+          "text": "**(1) Incentivos ambiguos del contador** — un contador puede percibir que digitalizar al bodeguero reduce su propio trabajo facturable. Mitigación: enmarcar el producto como **herramienta de productividad del propio contador**. **(2) Contadores tradicionales reactivos al cambio** (Concar, Siscont). Mitigación: filtro explícito de selección receptiva. **(3) Saturación por competidores** — Alegra (USD 47M en 2025) puede ofrecer comisiones más agresivas (A6 del FODA). Mitigación: **exclusividad/preferencia con los primeros 50** + beneficios diferenciados no comprables por comisión alta. **(4) Dependencia operativa única**. Mitigación: canal PLG en paralelo **desde el día uno, no como Plan B reactivo**."
+        }
+      ]
+    },
+    {
+      "id": "canal-plg",
+      "title": "Canal 2 — Product-Led Growth vía comprobantes electrónicos",
+      "emoji": "🔁",
+      "question": "¿Cómo cada factura emitida desde el sistema genera adquisición orgánica con CAC tendiendo a cero?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Recomendación estratégica **E19 del FODA cruzado** como *\"Plan B de canal\"*. Su importancia operativa es mayor de lo que sugiere esa clasificación: **opera en paralelo desde el día uno como defensa contra dependencia única del canal contadores**."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Mecánica.** Cada factura o boleta electrónica emitida desde ERP Evolutivo incluye una **mención discreta dirigida al cliente del bodeguero** (no al bodeguero mismo): en el pie del comprobante PDF y de la versión digital enviada por email/WhatsApp, aparece un texto breve del tipo *\"Emitido con ERP Evolutivo. Gestiona tu negocio gratis en erpevolutivo.pe\"* (texto exacto a validar)."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Viralidad cuantificada.** Una bodega típica del beachhead emite **30–80 comprobantes diarios**. Si la mitad los recibe otro comerciante del barrio, **cada bodega activa genera 15–40 puntos de contacto orgánicos diarios** dirigidos al perfil exacto del beachhead. En base instalada de 100 usuarios: **1,500–4,000 impresiones orgánicas diarias sin costo de marketing pagado**.",
+            "**CAC tendiendo a cero a escala.** Única inversión: desarrollo del componente técnico (mención en comprobante, landing de aterrizaje desde QR o link). **Umbral del documento maestro: CAC PLG <S/ 10/usuario** al mes 12.",
+            "**Alineamiento natural con el comportamiento del usuario.** El comprobante electrónico circula entre comerciantes por necesidad operativa — la mención aparece en **contexto cultural relevante (comerciante a comerciante)**, no como anuncio interruptivo.",
+            "**Autoselección del prospecto.** Quien hace clic o escanea el QR del comprobante ya manejaba comprobantes electrónicos en su negocio — **prospecto con dolor SUNAT activo confirmado, exactamente el sub-segmento A1 prioritario**.",
+            "**Defensibilidad creciente con la base instalada.** Más usuarios → más comprobantes → más exposición → más adquisición. **Flywheel autosostenible** sin presupuesto incremental de marketing."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas mensuales.** **(1)** Tasa de clic en el enlace/QR del comprobante (línea base **0.5%–2%**, estándar para menciones no-interruptivas). **(2)** Conversión clic → registro freemium (meta **>10%**). **(3)** Conversión registro PLG → pagante 90 días (meta **>8%**, umbral general del documento maestro)."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Tres riesgos específicos + mitigaciones",
+          "text": "**(1) Percepción negativa del cliente final del bodeguero** si la mención luce a publicidad invasiva. Mitigación: diseño sutil (pie de página, sin colorimetría agresiva) + validación cualitativa pre-lanzamiento. **(2) Percepción negativa del bodeguero** si siente que *\"su\"* comprobante se usa como publicidad. Mitigación: **opt-out disponible en su panel** (default activado) + **crédito en próxima rama activada por cada registro desde sus comprobantes** — convierte el uso del comprobante en beneficio explícito. **(3) Regulación SUNAT sobre contenido publicitario en comprobantes.** Mitigación: revisión legal previa + posicionamiento como *\"información del proveedor del sistema\"* (similar a *powered by Stripe*), no como anuncio comercial."
+        }
+      ]
+    },
+    {
+      "id": "canal-organico",
+      "title": "Canal 3 — Contenido orgánico TikTok e Instagram",
+      "emoji": "📱",
+      "question": "¿Por qué este canal se posterga al trimestre 3 post-MVP y captura un sub-segmento distinto al de los canales 1 y 2?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estrategia **E9 del FODA**: *\"contenido educativo en TikTok e Instagram para reducir dependencia del canal contadores\"*. Pero la activación intensiva **se posterga al trimestre 3 post-MVP, no al trimestre 1**."
+        },
+        {
+          "type": "note",
+          "text": "**Justificación del timing.** Lanzar contenido orgánico **antes de tener producto validado y testimonios reales es desperdicio de presupuesto**. El contenido genérico *\"tips para PYMEs\"* tiene rendimiento marginal; el contenido con testimonios reales filmados en bodegas del beachhead tiene rendimiento medible. **El sub-segmento A3 (hijo/hija digital) se activa con materiales auténticos, no con producción aspiracional.**"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Contenido educativo PYME en formato corto.** Videos verticales de 30–60 segundos. Temas centrados en el dolor del bodeguero (cómo emitir comprobante SUNAT, controlar inventario sin Excel, conciliar Yape con ventas). **Tono coloquial peruano**, protagonistas reales del beachhead. Frecuencia: **3–5 videos/semana**.",
+            "**Testimonios de usuarios del beachhead.** Casos reales con cifras concretas (*\"antes me demoraba 2 horas diarias en cuadrar, ahora 15 minutos\"*). **Filmados en bodegas reales, no en estudio**. Frecuencia: **2 testimonios/mes**.",
+            "**Contenido del fundador y advisor comercial.** Posts educativos sobre gestión, SUNAT, IA aplicada a microempresa. Construye **autoridad de marca a largo plazo**, no captación inmediata. Frecuencia: **2–3 posts/semana**.",
+            "**Comunidad WhatsApp por sector.** *\"Bodegueros que usan ERP Evolutivo\"* con **50–200 miembros activos**. Soporte entre pares, intercambio de experiencias, anuncios de novedades. **Canal de retención más que de adquisición**, refuerza pertenencia."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Métricas críticas mensuales (desde activación).** **(1)** Alcance orgánico — meta mes 18: **5,000 visitantes/mes** a landing. **(2)** Conversión visitante → registro freemium (meta **>3%**). **(3)** CAC vía contenido orgánico (meta **<S/ 25**)."
+        },
+        {
+          "type": "note",
+          "text": "**Limitación honesta.** El **sub-segmento A1 (ansioso con dolor SUNAT vencido) NO se captura principalmente por TikTok** — se captura por contador o por PLG. El segmento que captura el canal orgánico es predominantemente **A3 (hijo/hija digital)** y secundariamente **A4 (bodeguera mujer)**. El ROI del canal es **moderado en los primeros 12 meses** y debe evaluarse con expectativas calibradas."
+        }
+      ]
+    },
+    {
+      "id": "canal-entrega",
+      "title": "Canal 4 — Entrega operativa del servicio",
+      "emoji": "🌐",
+      "question": "¿Cómo accede el usuario al producto una vez decidida la adquisición — el componente que distingue *acceder* de *enterarse*?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distinto a los tres canales de descubrimiento anteriores, este canal responde a **cómo accede operativamente el usuario al producto una vez decidida la adquisición**. En SaaS la respuesta es estándar pero merece explicitación."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Fase 1 — Web responsive.** Aplicación accesible desde cualquier navegador (Chrome, Safari, Firefox) y dispositivo (smartphone Android dominante, eventualmente PC compartida). **Sin descarga, sin instalación, sin actualizaciones manuales**. URL única (erpevolutivo.pe o dominio del naming comercial validado). **Reduce drásticamente la fricción de adopción** frente a competidores que requieren descarga o instalación.",
+            "**Fase 2 — App móvil nativa Android** (iOS opcional según validación). Activada según validación de Fase 1. Mejora la experiencia (notificaciones push, funcionamiento offline parcial, integración con sensores) pero **no es prerrequisito del MVP**. Lanzar app nativa antes de validar el modelo es sobrecostoso.",
+            "**Soporte vía WhatsApp Business.** Respuesta <2 horas en horario operativo (**8 AM–9 PM**), email para casos complejos. **No hay call center en Fase 1** por costo y preferencia del segmento (el bodeguero prefiere chat asíncrono, no llamada en plena atención al cliente).",
+            "**Facturación SUNAT tercerizada vía OSE homologado** (Nubefact, Efact o equivalente). El usuario no percibe esto — ve facturación electrónica integrada nativamente. Internamente, ERP Evolutivo opera como integrador, no como OSE certificado.",
+            "**Integración con Yape, Plin y Mercado Pago** vía acuerdos comerciales formales con BCP y consorcios. Componente crítico que **merece negociación temprana — ciclo de 6–12 meses antes del MVP**."
+          ]
+        }
+      ]
+    }
+  ],
+  "implications": {
+    "title": "⚡ Implicancias estratégicas integradas",
+    "lead": "Las decisiones de canal tienen **siete implicancias operativas** que conectan con el resto del estudio y deben sostenerse como criterio de gestión.",
+    "items": [
+      "**Cronograma de activación deliberadamente secuencial, no simultáneo.** Mes 1–3 contadores aliados iniciales (5 en zona del beachhead) · Mes 4–6 piloto con contadores firmados · Mes 7–9 escalamiento canal contadores (50 certificados) + activación intensiva PLG · Mes 10–18 activación canal orgánico. Respeta la **restricción real de capacidad ejecutiva del fundador único** + advisor comercial.",
+      "**El canal de contadores NO es decisión que se tome desde la oficina.** Requiere **actividad presencial intensa los primeros 6–9 meses** — trabajo que el fundador técnico debe ejecutar personalmente o cubrir con advisor comercial. **Postergar esta función es uno de los errores recurrentes en startups técnicas** (debilidad D1 del FODA).",
+      "**El canal PLG requiere decisión arquitectónica desde el primer commit del MVP.** No es feature que se agrega después. Si la mención no está en el primer comprobante emitido, los primeros 100 usuarios activos **no generan tracción viral**. Cálculo conservador: la diferencia entre incluirlo desde el día uno y agregarlo en el mes 12 es de **36,000 a 120,000 impresiones perdidas** (50 comprobantes/día × 100 usuarios × 360 días).",
+      "**Negociación con BCP-Yape y consorcio Plin debe iniciarse ANTES del MVP, no después.** Ciclo con banco grande **6–12 meses**. Si la integración Yape/Plin no está formalizada al lanzamiento, **el producto pierde el atributo diferenciador 7** identificado en sección 2.6.1.",
+      "**Concentración geográfica del beachhead se cruza con selección de contadores.** No cerrar contadores con cartera dispersa por toda Lima Metropolitana. Búsqueda activa en distritos del beachhead: **San Martín de Porres, Los Olivos, Independencia, Comas**. Reduce el universo objetivo de miles a **200–400 contadores en zona**.",
+      "**Sub-segmento A4 (bodeguera mujer con economía integrada) merece canal complementario específico.** Asociaciones de comerciantes y programas de inclusión financiera con perspectiva de género en Lima son canal potencial subexplotado. **Inversión modesta, retorno alto si valida.**",
+      "**Disciplina de exclusión es tan relevante en distribución como en segmentación.** Decir no a canales aparentemente atractivos pero estructuralmente débiles: **Google Ads** (CAC alto en B2SMB con baja sofisticación digital), **Facebook Ads** (alcance amplio, baja conversión por desconfianza al cobro automático), **ferias comerciales presenciales** (alto costo, alcance limitado), **marketplace de software empresarial** (no relevante para microempresa). **Descartados explícitamente durante los primeros 18 meses.**"
+    ]
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis críticas a validar cuantitativamente",
+    "lead": "Cinco supuestos de la estrategia son críticos y deben validarse con **datos primarios reales antes de comprometer escalamiento** del modelo.",
+    "items": [
+      "**El contador es canal viable — la más urgente.** Cierre formal de **≥3 contadores aliados antes del MVP** (umbral del documento maestro), con seguimiento de referidos efectivos en piloto. Si al cabo de 90 días con 5 contadores firmados la conversión a usuarios pagantes es **<10%**, el canal es menos viable de lo asumido y debe acelerarse PLG.",
+      "**Tasa de clic suficiente en mención del comprobante para sostener PLG** — estructuralmente débil hasta validación. Prueba A/B con **500 comprobantes con y sin mención durante el primer mes del MVP**, midiendo clic y conversión a registro. Si <**0.3%**, el canal PLG es marginal y la dependencia del canal contadores aumenta peligrosamente.",
+      "**Contenido orgánico TikTok captura efectivamente al sub-segmento A3.** Inferido del caso Yape pero no validado para software de gestión. Prueba de **90 días con 30–50 videos** producidos según el patrón propuesto, midiendo alcance, engagement y conversión a registro.",
+      "**El bodeguero acepta la mención en sus comprobantes sin desactivarla en bulk.** Validación cualitativa con prototipo del comprobante mostrado a **30–50 bodegueros**, medición de aceptación declarada y propensión a desactivar.",
+      "**Contadores reaccionan favorablemente a la propuesta certificación + comisión.** Plausible pero no medido. Reuniones presenciales con **15–25 contadores de Lima Norte antes del MVP**, con tasa de aceptación declarada **>30%** como umbral mínimo."
+    ]
+  },
+  "synthesis": {
+    "title": "📌 Síntesis ejecutiva — Estrategia de Distribución",
+    "lead": "Arquitectura de canales **digital pura sin intermediarios físicos**, **multi-canal desde el día uno** (no monocanal), priorizada por eficiencia (**CAC <S/ 50**), con canal y territorio alineados al beachhead, y construida sobre hipótesis específicas de fricción que cada canal resuelve.",
+    "items": [
+      "**Canal 1 — Contadores aliados (prioritario).** Traductor cultural entre tecnología y bodeguero. 4 componentes: comisión S/ 30–50/referido exitoso, certificación gratuita, dashboard de cartera, soporte preferente WhatsApp. Cronograma: 5 contadores mes 3 → piloto mes 4–6 → 50 certificados mes 9. Métricas: contadores activos, conversión a referido >30%, CAC <S/ 30, conversión referido a pagante >20%.",
+      "**Canal 2 — PLG vía comprobantes electrónicos (paralelo desde día uno, NO Plan B reactivo).** Mención discreta en cada comprobante. Base 100 usuarios → **1,500–4,000 impresiones orgánicas diarias** sin marketing pagado. Umbral: **CAC <S/ 10 al mes 12**. Métricas: clic 0.5–2%, conversión clic→registro >10%, conversión registro→pagante >8%.",
+      "**Canal 3 — Contenido orgánico TikTok/Instagram (secundario, activación trimestre 3).** Videos verticales 30–60s + testimonios reales del beachhead + contenido del fundador + comunidad WhatsApp. Destinatario: A3 (hijo/hija digital), secundariamente A4. Meta mes 18: 5,000 visitantes/mes. **ROI moderado en los primeros 12 meses — A1 no se captura por este canal.**",
+      "**Canal 4 — Entrega operativa.** Fase 1 web responsive sin descarga · Fase 2 app móvil Android · Soporte WhatsApp 8 AM–9 PM <2 horas · OSE tercerizado para SUNAT · Acuerdos formales Yape/Plin/Mercado Pago **iniciados antes del MVP** (ciclo 6–12 meses).",
+      "**5 hipótesis críticas a validar.** Viabilidad canal contador (≥3 cerrados pre-MVP, conversión >10% día 90) · Tasa de clic mención comprobante >0.3% (prueba A/B mes 1) · Captura A3 por TikTok (90 días, 30–50 videos) · Aceptación del bodeguero a mención (30–50 bodegueros) · Reacción favorable de contadores (>30% en 15–25 reuniones presenciales)."
+    ],
+    "closing": "**La distribución se gana en los primeros 9 meses con dos canales operando en paralelo:** contadores como **canal de confianza y traducción cultural**, PLG como **canal de viralidad orgánica con CAC tendiendo a cero a escala**. El contenido orgánico es complemento de marca y captura del sub-segmento generacional, no motor principal del primer año. **Cualquier dependencia única de un solo canal viola la disciplina multi-canal y eleva el riesgo binario del modelo a nivel inaceptable.**"
+  }
+}
