@@ -1,0 +1,178 @@
+<!-- Matrices EFI & EFE -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="efi-efe-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="efi-efe-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Nota metodológica -->
+  <app-quoted-text class="mb-4xl" testId="efi-efe-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- Matrices + conclusiones -->
+  <div class="flex flex-col gap-3xl" data-testid="efi-efe-matrices">
+
+    @for (matrix of matrices; track matrix.id) {
+      <app-card
+        [testId]="'efi-efe-' + matrix.id"
+        [color]="matrixColor(matrix.id)"
+        [title]="matrix.title"
+        [emoji]="matrix.emoji"
+        [question]="matrix.question">
+
+        <!-- Escala de calificación -->
+        <app-section variant="info" [testId]="'efi-efe-' + matrix.id + '-scale'">
+          <span class="text-2xs text-ink-muted">{{ matrix.scale }}</span>
+        </app-section>
+
+        <!-- Grupos de factores -->
+        @for (group of matrix.groups; track group.id) {
+          <div [attr.data-testid]="'efi-efe-' + matrix.id + '-' + group.id" class="mt-2xl">
+
+            <!-- Cabecera del grupo -->
+            <h4 class="text-xs font-bold text-ink uppercase tracking-title mb-lg pb-sm border-b border-line">
+              {{ group.title }}
+            </h4>
+
+            <!-- Factores -->
+            @for (factor of group.factors; track factor.tag) {
+              <div class="flex items-start gap-md py-md border-b border-line last:border-0"
+                   [attr.data-testid]="'efi-efe-' + matrix.id + '-' + factor.tag">
+                <div class="shrink-0 pt-xs">
+                  <app-badge
+                    [testId]="'badge-' + matrix.id + '-' + factor.tag"
+                    [color]="factorBadgeColor(group.kind, factor.rating)">
+                    {{ factor.tag }}
+                  </app-badge>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-xs text-ink leading-body">{{ factor.title }}</p>
+                  <div class="flex flex-wrap items-center gap-xl mt-xs">
+                    <span class="text-2xs text-ink-subtle">Peso
+                      <strong class="text-ink-muted">{{ fmt(factor.weight) }}</strong>
+                    </span>
+                    <span class="text-2xs text-ink-subtle">Cal.
+                      <strong class="text-ink-muted">{{ factor.rating }}/4</strong>
+                    </span>
+                    <span class="text-2xs text-ink-subtle">Pond.
+                      <strong class="text-ink-muted">{{ fmt(factor.weighted) }}</strong>
+                    </span>
+                  </div>
+                  <p class="text-2xs text-ink-subtle leading-body mt-xs"
+                     [innerHTML]="factor.justification | md"></p>
+                </div>
+              </div>
+            }
+
+            <!-- Subtotal del grupo -->
+            <div class="flex justify-end items-center gap-2xl mt-sm pt-sm">
+              <span class="text-2xs text-ink-subtle">
+                Subtotal peso: <strong class="text-ink-muted">{{ fmt(group.subtotal_weight) }}</strong>
+              </span>
+              <span class="text-2xs text-ink-subtle">
+                Subtotal pond.: <strong class="text-ink-muted">{{ fmt(group.subtotal_weighted) }}</strong>
+              </span>
+            </div>
+          </div>
+        }
+
+        <!-- Total ponderado -->
+        <app-section
+          variant="highlight"
+          [testId]="'efi-efe-' + matrix.id + '-total'"
+          class="mt-2xl">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-ink">Total Ponderado</span>
+            <span class="text-xl font-display font-extrabold text-warning-fg-strong">
+              {{ fmt(matrix.total_weighted) }}
+            </span>
+          </div>
+          <p class="text-2xs text-ink-muted mt-xs">
+            Promedio del sector: 2.50 — Por encima indica posición favorable.
+          </p>
+        </app-section>
+
+        <!-- Interpretación -->
+        @for (block of matrix.interpretation.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mt-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'efi-efe-' + matrix.id + '-note-' + $index">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'efi-efe-' + matrix.id + '-impl-' + $index"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+
+      </app-card>
+    }
+
+    <!-- Conclusiones integradas -->
+    <app-card
+      testId="efi-efe-conclusions"
+      color="amber"
+      [title]="conclusions.title"
+      [emoji]="conclusions.emoji"
+      [question]="conclusions.question">
+
+      @for (block of conclusions.blocks; track $index) {
+        @switch (block.type) {
+          @case ('paragraph') {
+            <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+          }
+          @case ('list') {
+            @if (block.label) {
+              <p class="text-2xs font-bold text-ink-muted uppercase tracking-title mb-md mt-lg">
+                {{ block.label }}
+              </p>
+            }
+            <ol class="list-none m-0 p-0 flex flex-col gap-md">
+              @for (item of block.items; track $index) {
+                <li class="flex items-start gap-md">
+                  <span class="text-2xs font-bold text-ink-subtle shrink-0 mt-xs">{{ $index + 1 }}.</span>
+                  <span class="text-xs text-ink-muted leading-body" [innerHTML]="item | md"></span>
+                </li>
+              }
+            </ol>
+          }
+          @case ('implication') {
+            <app-section
+              [variant]="sectionVariant('implication')"
+              [title]="block.title"
+              [testId]="'efi-efe-conclusions-impl-' + $index"
+              class="mt-lg">
+              <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+            </app-section>
+          }
+        }
+      }
+
+    </app-card>
+
+  </div>
+
+</div>

@@ -45,6 +45,14 @@ export const routes: Routes = [
             m => m.AnalisisInternoComponent
           ),
         title: 'Análisis Interno (AMOFHIT) — Análisis Estratégico'
+      },
+      {
+        path: 'efi-efe',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/efi-efe/efi-efe.component').then(
+            m => m.EfiEfeComponent
+          ),
+        title: 'Matrices EFI & EFE — Análisis Estratégico'
       }
     ]
   },

@@ -1,0 +1,375 @@
+{
+  "title": "📊 Matrices EFI & EFE",
+  "subtitle": "Evaluación ponderada de factores internos y externos — ¿dónde está parado realmente el proyecto?",
+  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "intro": "Aplicar la metodología de D'Alessio a una startup pre-MVP requiere una adaptación honesta. La **EFI** evalúa la *capacidad actual del proyecto para activar respuestas internas*, considerando el estado real: fundador único, capital semilla disponible, sin producto, sin equipo comercial. La **EFE** evalúa qué tan preparado está el proyecto para capturar oportunidades y neutralizar amenazas del entorno dadas las acciones y decisiones tomadas hasta hoy. Las calificaciones reflejan la posición actual, no el potencial futuro. Esta distinción es crítica para que el análisis no se convierta en una autoevaluación complaciente.",
+  "matrices": [
+    {
+      "id": "efi",
+      "title": "Matriz EFI — Evaluación de Factores Internos",
+      "emoji": "🏗️",
+      "question": "¿Qué tan sólida es la posición interna del proyecto para ejecutar?",
+      "scale": "4 = fortaleza mayor · 3 = fortaleza menor · 2 = debilidad menor · 1 = debilidad mayor. Promedio del sector: 2.5.",
+      "groups": [
+        {
+          "id": "fortalezas",
+          "kind": "strength",
+          "title": "Fortalezas",
+          "factors": [
+            {
+              "tag": "F1",
+              "title": "Capacidad técnica del fundador para construir el MVP sin tercerización",
+              "weight": 0.10,
+              "rating": 4,
+              "weighted": 0.40,
+              "justification": "Perfil senior en desarrollo de software e IA permite ejecutar el roadmap técnico de Fase 1 sin contratar equipo externo, lo que reduce burn rate y acelera time to market. Es la **fortaleza mayor** más clara del proyecto."
+            },
+            {
+              "tag": "F2",
+              "title": "Modelo de negocio articulado con profundidad estratégica poco común en pre-MVP",
+              "weight": 0.06,
+              "rating": 4,
+              "weighted": 0.24,
+              "justification": "La existencia de un documento de negocio con segmentación, unit economics, posicionamiento competitivo y autoanálisis crítico es atípica en esta etapa y reduce el riesgo de pivotear por falta de marco mental claro."
+            },
+            {
+              "tag": "F3",
+              "title": "Diferenciador conceptual (evolución progresiva + IA asesora integrada) difícil de replicar",
+              "weight": 0.10,
+              "rating": 4,
+              "weighted": 0.40,
+              "justification": "No es un feature agregable, es una arquitectura de producto. Da una ventana defendible de **18 a 24 meses** antes de que un competidor establecido pueda copiarlo con calidad comparable."
+            },
+            {
+              "tag": "F4",
+              "title": "Arquitectura de costos eficiente con IA básica offline",
+              "weight": 0.07,
+              "rating": 4,
+              "weighted": 0.28,
+              "justification": "Elimina el riesgo principal de los SaaS con IA: el crecimiento descontrolado de costos de API. Permite escalar la base gratuita sin que se convierta en un pasivo financiero."
+            },
+            {
+              "tag": "F5",
+              "title": "Beachhead bien elegido (bodegas en Lima, dolor SUNAT, decisor único, volumen suficiente)",
+              "weight": 0.06,
+              "rating": 4,
+              "weighted": 0.24,
+              "justification": "Tres de tres criterios para un primer segmento adecuado están presentes. No es un mercado de prueba, es un mercado real y masivo con más de **400 mil bodegas** en Lima."
+            },
+            {
+              "tag": "F6",
+              "title": "Capital semilla disponible sin dependencia inmediata de capital externo",
+              "weight": 0.05,
+              "rating": 3,
+              "weighted": 0.15,
+              "justification": "Da pista de despegue para construir MVP y validar tracción inicial sin presión de ronda. Fortaleza menor porque el monto exacto no está declarado y depender del capital propio limita la velocidad de crecimiento si la validación es positiva."
+            },
+            {
+              "tag": "F7",
+              "title": "Flywheel de datos como barrera de entrada potencial",
+              "weight": 0.05,
+              "rating": 3,
+              "weighted": 0.15,
+              "justification": "Fortaleza condicional: hoy no existe ningún dato, pero la arquitectura está diseñada para acumular y aprovechar datos transaccionales y de comportamiento de PYMEs. Si se ejecuta bien, se convierte en **barrera estructural en 2 a 3 años**."
+            }
+          ],
+          "subtotal_weight": 0.49,
+          "subtotal_weighted": 1.86
+        },
+        {
+          "id": "debilidades",
+          "kind": "weakness",
+          "title": "Debilidades",
+          "factors": [
+            {
+              "tag": "D1",
+              "title": "Fundador único sin función comercial demostrada ni equipo",
+              "weight": 0.10,
+              "rating": 1,
+              "weighted": 0.10,
+              "justification": "La capacidad de vender ERPs a bodegueros y manejar objeciones en campo no está cubierta por el perfil del fundador. Es probablemente el **cuello de botella número uno** del proyecto y hoy no tiene plan activo de cobertura."
+            },
+            {
+              "tag": "D2",
+              "title": "Ausencia total de validación cuantitativa de demanda y pricing",
+              "weight": 0.10,
+              "rating": 1,
+              "weighted": 0.10,
+              "justification": "Conversaciones cualitativas con bodegas no constituyen validación. No hay landing con captura, no hay fake door test, no hay datos de intención de compra. Cada semana sin esa validación incrementa el riesgo de construir algo que nadie comprará."
+            },
+            {
+              "tag": "D3",
+              "title": "Canal de distribución principal (contadores) no validado, sin alianzas cerradas",
+              "weight": 0.09,
+              "rating": 1,
+              "weighted": 0.09,
+              "justification": "Toda la estrategia go-to-market descansa sobre una hipótesis sin tracción. La lealtad típica de los contadores está con sistemas que ya operan (Concar, Siscont) y el incentivo económico para referir un nuevo ERP aún no está testeado."
+            },
+            {
+              "tag": "D4",
+              "title": "Modelo de pricing pago por uso con riesgo de incomprensión en el segmento",
+              "weight": 0.06,
+              "rating": 1,
+              "weighted": 0.06,
+              "justification": "La sofisticación cognitiva requerida para entender un pricing variable es alta para un bodeguero promedio. El sustituto (Excel) es gratis, lo que aumenta la sensibilidad al precio. Sin un modelo mental simple, el riesgo de no conversión es significativo."
+            },
+            {
+              "tag": "D5",
+              "title": "Función de soporte y customer success no diseñada",
+              "weight": 0.05,
+              "rating": 2,
+              "weighted": 0.10,
+              "justification": "El segmento requerirá soporte humano intensivo en el onboarding. Sin un canal de soporte planificado (WhatsApp atendido, sistema híbrido humano + IA), la productividad de desarrollo del fundador colapsará al alcanzar los primeros 30 a 50 usuarios."
+            },
+            {
+              "tag": "D6",
+              "title": "Unit economics descansan sobre supuestos optimistas",
+              "weight": 0.04,
+              "rating": 2,
+              "weighted": 0.08,
+              "justification": "CAC de S/ 20, ARPU de S/ 30 y churn mensual de 8% son benchmarks favorables pero probablemente irrealistas. Un ajuste a CAC de S/ 60–100, ARPU de S/ 18–22 y churn de 12–15% sigue siendo viable pero cambia drásticamente la velocidad de quema de capital."
+            },
+            {
+              "tag": "D7",
+              "title": "Ausencia de instrumentación de producto y analítica desde el día uno",
+              "weight": 0.03,
+              "rating": 2,
+              "weighted": 0.06,
+              "justification": "Sin tracking de eventos, embudo de conversión y herramienta de feedback, los primeros 50 usuarios serán una oportunidad de aprendizaje perdida. Es resoluble con bajo costo pero hoy no está planificado."
+            },
+            {
+              "tag": "D8",
+              "title": "Soledad ejecutiva sin sparring partner ni advisor formal",
+              "weight": 0.04,
+              "rating": 2,
+              "weighted": 0.08,
+              "justification": "Aumenta el riesgo de sesgo de confirmación, especialmente en decisiones de pricing y go-to-market. El propio documento del proyecto lo identifica como acción prioritaria pero aún no se ha activado."
+            }
+          ],
+          "subtotal_weight": 0.51,
+          "subtotal_weighted": 0.67
+        }
+      ],
+      "total_weighted": 2.53,
+      "interpretation": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El resultado de **2.53** ubica al proyecto ligeramente por encima del promedio sectorial (2.5). Las fortalezas internas son sustantivas pero están concentradas en el plano conceptual y técnico: modelo articulado, diferenciador defendible, capacidad de construir producto, arquitectura de costos eficiente. Las debilidades, en cambio, están concentradas en el plano operativo y comercial: sin equipo de ventas, sin canal validado, sin datos de demanda, sin pricing validado. Esto define la **asimetría estructural** del proyecto: es fuerte donde se piensa, débil donde se ejecuta."
+          },
+          {
+            "type": "note",
+            "text": "La posición interna está **apenas por encima del umbral**. Convertir una sola de las debilidades mayores (D1, D2 o D3) en debilidad menor llevaría el puntaje cerca de 3.0. Cualquier deterioro en una de ellas hundiría el puntaje por debajo de 2.5."
+          },
+          {
+            "type": "implication",
+            "title": "⚡ Implicancia estratégica",
+            "text": "Las prioridades de los próximos seis meses no son de producto, son de **validación comercial**. La EFI confirma cuantitativamente lo que el análisis cualitativo ya sugería: el cuello de botella no es técnico."
+          }
+        ]
+      }
+    },
+    {
+      "id": "efe",
+      "title": "Matriz EFE — Evaluación de Factores Externos",
+      "emoji": "🌐",
+      "question": "¿Está el proyecto preparado para capturar el entorno favorable y neutralizar las amenazas?",
+      "scale": "4 = respuesta superior · 3 = respuesta por encima del promedio · 2 = respuesta promedio · 1 = respuesta pobre. Promedio del sector: 2.5.",
+      "groups": [
+        {
+          "id": "oportunidades",
+          "kind": "opportunity",
+          "title": "Oportunidades",
+          "factors": [
+            {
+              "tag": "O1",
+              "title": "Mandato SUNAT de facturación electrónica en expansión progresiva hacia microempresas",
+              "weight": 0.12,
+              "rating": 3,
+              "weighted": 0.36,
+              "justification": "Es la palanca de adopción más fuerte del mercado. Convierte la digitalización en obligación, no en elección. La respuesta está por encima del promedio porque el núcleo gratuito incluye facturación electrónica como entrada natural. No alcanza calificación 4 porque la integración con OSE homologado aún no está cerrada operativamente."
+            },
+            {
+              "tag": "O2",
+              "title": "Masificación de Yape, Plin y pagos digitales en bodegas y microempresas",
+              "weight": 0.08,
+              "rating": 3,
+              "weighted": 0.24,
+              "justification": "Crea infraestructura de datos transaccionales digitales preexistente, lo que reduce la fricción de adopción y enriquece el insumo para la IA asesora. La respuesta es buena porque la arquitectura contempla integración con flujos digitales. No es superior porque aún no hay integración técnica diseñada con APIs de billeteras."
+            },
+            {
+              "tag": "O3",
+              "title": "Caída de costos de IA en orden de magnitud desde 2023",
+              "weight": 0.09,
+              "rating": 4,
+              "weighted": 0.36,
+              "justification": "Hace viable lo que hace tres años era económicamente imposible. La respuesta del proyecto es **superior** porque la decisión arquitectónica de IA básica offline con modelos ligeros y IA avanzada solo en tiers pagos captura esta oportunidad estructuralmente."
+            },
+            {
+              "tag": "O4",
+              "title": "Generación de emprendedores nativos digitales (25–45 años) que entienden lógica de niveles y progresión",
+              "weight": 0.07,
+              "rating": 4,
+              "weighted": 0.28,
+              "justification": "La narrativa de evolución progresiva está diseñada explícitamente para esta generación, lo que reduce la curva de adopción. Es una oportunidad cultural que el proyecto **capitaliza por diseño**."
+            },
+            {
+              "tag": "O5",
+              "title": "Mercado direccionable amplio en Lima (+400 mil bodegas) y LATAM (+9 millones de PYMEs)",
+              "weight": 0.08,
+              "rating": 3,
+              "weighted": 0.24,
+              "justification": "Hay volumen suficiente para construir un negocio relevante. La respuesta del proyecto es buena por el foco geográfico en Lima como beachhead. No alcanza superior porque la estrategia de expansión a Colombia, México y Chile no está aterrizada operativamente."
+            },
+            {
+              "tag": "O6",
+              "title": "Baja penetración de ERPs en microempresas (+80% sigue usando Excel o libreta)",
+              "weight": 0.07,
+              "rating": 3,
+              "weighted": 0.21,
+              "justification": "El mercado de reemplazo es enorme y la competencia directa es débil en este nicho. La respuesta es buena por el posicionamiento explícito contra Excel como sustituto principal. No es superior porque aún no hay campaña de adquisición funcionando."
+            },
+            {
+              "tag": "O7",
+              "title": "Tendencia regional de financiamiento a startups de SaaS B2SMB en LATAM",
+              "weight": 0.04,
+              "rating": 2,
+              "weighted": 0.08,
+              "justification": "Existe apetito de fondos como Kaszek, Monashees, ALLVP por SaaS verticales en PYMEs. La respuesta es promedio porque el proyecto aún no tiene métricas de tracción que permitan acceder a esos fondos."
+            },
+            {
+              "tag": "O8",
+              "title": "Crisis del retail tradicional y necesidad de profesionalización de bodegas frente a Tambo, OXXO, Mass",
+              "weight": 0.05,
+              "rating": 3,
+              "weighted": 0.15,
+              "justification": "La presión competitiva sobre las bodegas independientes crea urgencia real de eficiencia operativa. ERP Evolutivo se posiciona como herramienta de competitividad para el comerciante independiente, lo que conecta directamente con esta tendencia."
+            }
+          ],
+          "subtotal_weight": 0.60,
+          "subtotal_weighted": 1.92
+        },
+        {
+          "id": "amenazas",
+          "kind": "threat",
+          "title": "Amenazas",
+          "factors": [
+            {
+              "tag": "A1",
+              "title": "Sensibilidad extrema al precio en el segmento microempresa con ancla mental de S/ 10–20 mensuales",
+              "weight": 0.10,
+              "rating": 2,
+              "weighted": 0.20,
+              "justification": "Es la amenaza con **más probabilidad de materializarse**. La respuesta del proyecto es promedio porque el rango propuesto (S/ 18–30) está apenas dentro o por encima del ancla. No hay aún estrategia clara de manejo de objeción de precio ni un test de elasticidad."
+            },
+            {
+              "tag": "A2",
+              "title": "Informalidad y baja alfabetización digital del segmento",
+              "weight": 0.08,
+              "rating": 2,
+              "weighted": 0.16,
+              "justification": "Una porción significativa del universo objetivo opera en la informalidad. La respuesta es promedio: la gamificación y el onboarding simple son antídotos, pero el filtro de informalidad reduce el SAM efectivo y aún no está dimensionado con precisión."
+            },
+            {
+              "tag": "A3",
+              "title": "Competidores regionales establecidos (Alegra, Bsale, Defontana) con base de usuarios y equipos comerciales activos",
+              "weight": 0.07,
+              "rating": 2,
+              "weighted": 0.14,
+              "justification": "Alegra tiene cobertura en Perú y Colombia con planes desde aprox. S/ 15. La respuesta del proyecto es promedio porque el diferenciador es defendible pero la batalla de adquisición es desigual mientras no haya tracción."
+            },
+            {
+              "tag": "A4",
+              "title": "Riesgo de entrada de un competidor grande (Siigo, Contabilium o player internacional) replicando la mecánica evolutiva",
+              "weight": 0.05,
+              "rating": 2,
+              "weighted": 0.10,
+              "justification": "La ventana de 18 a 24 meses antes de que un grande copie es real pero limitada. La respuesta es promedio porque no hay aún velocidad de ejecución demostrada para aprovechar esa ventana."
+            },
+            {
+              "tag": "A5",
+              "title": "Cambios regulatorios en facturación electrónica SUNAT (versiones, validaciones, requisitos técnicos)",
+              "weight": 0.04,
+              "rating": 3,
+              "weighted": 0.12,
+              "justification": "SUNAT modifica especificaciones técnicas periódicamente. La respuesta es buena por la decisión de usar un OSE homologado como socio en lugar de desarrollar integración propia, lo que **terceriza el riesgo regulatorio**."
+            },
+            {
+              "tag": "A6",
+              "title": "Churn por complejidad percibida y por mortalidad natural de microempresas",
+              "weight": 0.06,
+              "rating": 2,
+              "weighted": 0.12,
+              "justification": "La tasa de mortalidad de bodegas en Lima es alta y eleva el churn estructuralmente. La respuesta es promedio porque la gamificación reduce la complejidad pero no resuelve la mortalidad del negocio cliente."
+            },
+            {
+              "tag": "A7",
+              "title": "Dependencia de APIs de LLM externas (OpenAI, Anthropic) con volatilidad de precios y cambios de términos",
+              "weight": 0.04,
+              "rating": 3,
+              "weighted": 0.12,
+              "justification": "La respuesta es buena porque la IA básica offline reduce la exposición y la IA avanzada solo se activa en tiers que cubren el costo. No alcanza superior porque aún no hay arquitectura multi-proveedor que mitigue cambios unilaterales."
+            },
+            {
+              "tag": "A8",
+              "title": "Lealtad y costo de cambio de los contadores hacia sistemas establecidos (Concar, Siscont)",
+              "weight": 0.06,
+              "rating": 1,
+              "weighted": 0.06,
+              "justification": "Los contadores son agentes con **costo de cambio alto**. El proyecto no tiene aún propuesta de valor diferenciada para ellos: programa de comisiones, integración con sus sistemas actuales, soporte preferente. Respuesta pobre."
+            }
+          ],
+          "subtotal_weight": 0.40,
+          "subtotal_weighted": 1.02
+        }
+      ],
+      "total_weighted": 2.94,
+      "interpretation": {
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "El resultado de **2.94** ubica al proyecto significativamente por encima del promedio (2.5). El entorno es genuinamente favorable: la suma ponderada de oportunidades (1.92) supera ampliamente la de amenazas (1.02). Es un mercado en ventana, con tailwinds regulatorios, tecnológicos y culturales convergiendo en el mismo período."
+          },
+          {
+            "type": "paragraph",
+            "text": "La respuesta a las oportunidades estructurales (regulación SUNAT, costo de IA, generación digital) es buena o superior. La respuesta a las amenazas operativas (precio, informalidad, competidores establecidos) es solo promedio o pobre, lo que confirma que la **ejecución comercial es la brecha pendiente**."
+          },
+          {
+            "type": "note",
+            "text": "**A8 (lealtad de contadores)** tiene la respuesta más pobre del análisis. El proyecto apuesta a un canal cuyos actores tienen costo de cambio alto sin haber diseñado todavía una propuesta de valor específica para ellos. Es una contradicción estratégica que debe resolverse antes del lanzamiento."
+          },
+          {
+            "type": "implication",
+            "title": "⚡ Implicancia estratégica",
+            "text": "El entorno ya está jugando a favor. La diferencia entre postura buena (2.94) y superior está en la **ejecución comercial**: validar canales, cerrar alianzas con contadores, demostrar capacidad real de adquisición."
+          }
+        ]
+      }
+    }
+  ],
+  "conclusions": {
+    "title": "Conclusiones Integradas EFI & EFE",
+    "emoji": "🎯",
+    "question": "¿Cuál es la inversión que mueve más puntos en menos tiempo?",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "El proyecto se ubica en una **posición intermedia favorable**: internamente apenas por encima del promedio (EFI 2.53), externamente con buena postura (EFE 2.94). Esto sugiere que el mayor potencial de mejora está adentro, no afuera. El entorno ya está jugando a favor. Lo que falta es cerrar las brechas operativas y comerciales internas para capturarlo."
+      },
+      {
+        "type": "list",
+        "label": "Tres acciones que cambiarían materialmente ambos puntajes",
+        "items": [
+          "**Ejecutar el fake door test** con landing y tráfico pagado durante seis semanas. Resolvería D2 (ausencia de validación) y aumentaría la calificación de O5 y O6 al demostrar capacidad real de captura.",
+          "**Incorporar un perfil comercial** (advisor con equity o co-fundador) con red en el segmento PYME peruano. Atacaría D1, D3 y D8 simultáneamente. Es la palanca más eficiente en términos de impacto sobre el puntaje EFI por unidad de inversión.",
+          "**Diseñar y testear una propuesta de valor específica para contadores** (comisiones recurrentes, dashboard de cartera, integración con su sistema contable). Atacaría A8 y consolidaría O1 al activar el canal de distribución principal."
+        ]
+      },
+      {
+        "type": "implication",
+        "title": "💡 Insight para el fundador",
+        "text": "Las matrices EFI y EFE son un sistema de medición que permite responder con precisión a la pregunta más importante de los próximos seis meses. La respuesta no está en construir más producto. Está en cerrar las debilidades comerciales con acciones específicas, medibles y baratas. **Cada una de esas tres acciones cuesta menos de S/ 5 mil y mueve el puntaje EFI en al menos 0.3 puntos.** Eso es retorno estratégico, no retorno técnico."
+      }
+    ]
+  }
+}

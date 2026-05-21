@@ -77,18 +77,26 @@
       </div>
     </a>
 
-    <!-- Matrices EFE / EFI — próximamente -->
-    <div class="bg-base border border-line rounded-card p-2xl cursor-default"
-         data-testid="ae-card-efe">
-      <div class="flex items-center gap-md mb-lg">
-        <span class="text-xl opacity-40">📊</span>
-        <span class="text-xs font-bold text-ink-subtle uppercase tracking-title">Matrices EFE / EFI</span>
+    <!-- Matrices EFI & EFE — disponible -->
+    <a routerLink="efi-efe"
+       class="block no-underline group"
+       data-testid="ae-card-efe">
+      <div class="bg-surface border border-line rounded-card p-2xl shadow-card
+                  group-hover:border-success-line group-hover:shadow-raised
+                  transition-all duration-300 h-full flex flex-col">
+        <div class="flex items-center gap-md mb-lg">
+          <span class="text-xl">📊</span>
+          <span class="text-xs font-bold text-ink uppercase tracking-title">Matrices EFI & EFE</span>
+        </div>
+        <p class="text-2xs text-ink-muted leading-body mb-xl flex-1">
+          Evaluación ponderada de factores internos (EFI 2.53) y externos (EFE 2.94).
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="text-2xs text-success-fg font-semibold">✓ Disponible</span>
+          <span class="text-2xs text-ink-subtle group-hover:text-ink-muted transition-colors">→</span>
+        </div>
       </div>
-      <p class="text-2xs text-ink-subtle leading-body mb-xl">
-        Evaluación ponderada de factores externos e internos del entorno.
-      </p>
-      <span class="text-2xs text-ink-subtle font-semibold">⏳ Próximamente</span>
-    </div>
+    </a>
 
     <!-- FODA Estratégico — próximamente -->
     <div class="bg-base border border-line rounded-card p-2xl cursor-default"
