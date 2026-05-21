@@ -1,0 +1,114 @@
+<!-- Análisis Interno (AMOFHIT) -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="ai-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="ai-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="ai-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- ── Auditorías AMOFHIT en columna ── -->
+  <div class="flex flex-col gap-3xl" data-testid="ai-audits">
+    @for (audit of audits; track audit.id) {
+      <app-card
+        [testId]="'ai-' + audit.id"
+        [color]="auditColor(audit.id)"
+        [title]="audit.title"
+        [emoji]="audit.emoji"
+        [question]="audit.question">
+
+        @for (block of audit.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              @if (block.label) {
+                <p class="text-2xs font-bold text-ink uppercase tracking-title mt-lg mb-sm">
+                  {{ block.label }}
+                </p>
+              }
+              <app-list [testId]="'ai-' + audit.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'ai-' + audit.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'ai-' + audit.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'ai-' + audit.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- ── SÍNTESIS: fortalezas / debilidades / competencias ── -->
+  <div class="mt-5xl" data-testid="ai-sintesis">
+    <h3 class="text-xl font-display font-extrabold text-ink mb-md" data-testid="ai-sintesis-title">
+      {{ data.synthesis.title }}
+    </h3>
+    <p class="text-xs text-ink-muted leading-body mb-2xl" [innerHTML]="data.synthesis.lead | md"></p>
+
+    <div class="flex flex-col gap-xl">
+      @for (group of synthesisGroups; track group.kind) {
+        <app-section
+          [variant]="synthesisVariant(group.kind)"
+          [title]="group.label + ' — ' + group.title"
+          [testId]="'ai-sintesis-' + group.kind">
+          <app-list [testId]="'ai-sintesis-' + group.kind + '-list'">
+            @for (item of group.items; track $index) {
+              <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+            }
+          </app-list>
+        </app-section>
+      }
+    </div>
+  </div>
+
+  <!-- ── INSIGHT INTEGRADOR ── -->
+  <div class="mt-5xl" data-testid="ai-insight">
+    <app-section variant="highlight" [title]="data.insight.title" testId="ai-insight-section">
+      @for (paragraph of data.insight.paragraphs; track $index) {
+        <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="paragraph | md"></p>
+      }
+      <p class="text-xs text-ink leading-body font-semibold mt-lg" [innerHTML]="data.insight.closing | md"></p>
+    </app-section>
+  </div>
+
+</div>

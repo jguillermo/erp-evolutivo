@@ -1,0 +1,230 @@
+{
+  "title": "🔬 Análisis Interno (AMOFHIT)",
+  "subtitle": "Adaptación honesta del marco a un proyecto pre-MVP — ¿qué capacidades existen hoy y qué brechas definen la viabilidad?",
+  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "intro": "El análisis interno de D'Alessio fue diseñado para evaluar organizaciones **en operación**, con áreas funcionales activas. ERP Evolutivo no es eso: es un **proyecto pre-MVP con un fundador único**, sin producto en mercado, sin clientes, sin equipo formal. Aplicar AMOFHIT como si fuera una empresa establecida produciría un análisis ficticio. Lo que sigue es una adaptación honesta del marco, diferenciando explícitamente entre **hechos verificables**, **hipótesis no validadas** e **inferencias de advisor**.",
+  "audits": [
+    {
+      "id": "ciclo-operativo",
+      "title": "Ciclo operativo del negocio",
+      "emoji": "🔄",
+      "question": "¿Existe siquiera un ciclo operativo que auditar hoy?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El ciclo operativo de un SaaS B2SMB normalmente incluye desarrollo de producto, adquisición de usuarios, onboarding, monetización, soporte y retención. En ERP Evolutivo, hoy, **ese ciclo no está activo**. Lo que existe es:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Una **visualización interactiva** del modelo de negocio en Angular hosteada en GitHub Pages. Sirve como artefacto de comunicación con stakeholders, *no como producto*. No tiene base de datos, no procesa transacciones, no genera ingresos.",
+            "Un **documento de modelo de negocio** detallado: definición de producto (núcleo gratuito + nueve ramas), arquitectura de IA en cuatro niveles, pricing pago-por-uso y proyección de unit economics.",
+            "**Conversaciones cualitativas iniciales** con bodegas de Lima que confirmaron un dato (uso de Excel como herramienta principal) pero **no validaron pricing, disposición a pagar ni canales de distribución**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Hablar de \"ciclo operativo\" en este punto es prematuro. El **primer ciclo operativo real arranca cuando se ejecute el fake door test**. Todo análisis interno debe leerse, por tanto, como una evaluación de *capacidad para construir el negocio*, no de cómo lo está operando."
+        }
+      ]
+    },
+    {
+      "id": "administracion",
+      "title": "Administración y Gerencia (A)",
+      "emoji": "🧑‍💼",
+      "question": "¿La estructura de decisión actual acelera o frena la construcción del negocio?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** Fundador único, Guillermo, con perfil técnico (desarrollo de software e IA). No existe estructura organizacional formal, no hay directorio, no hay advisors confirmados, no hay equipo. La toma de decisiones está concentrada en una sola persona."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Fortaleza real — velocidad de decisión.** En etapa pre-MVP, un solo decisor con visión clara y profundo conocimiento técnico es una **ventaja, no una limitación**: permite iterar sin fricciones políticas. El nivel de elaboración del documento de negocio (segmentación, unit economics, posicionamiento) sugiere planeación estratégica con rigor superior al promedio de proyectos en esta etapa.",
+            "**Debilidad estructural — soledad ejecutiva.** Un fundador único sin *sparring partner* es estadísticamente más vulnerable a sesgos de confirmación, especialmente en validación de hipótesis comerciales. El propio documento lo reconoce y recomienda buscar advisor o co-fundador comercial. Esa búsqueda **aún no se ha activado**."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Riesgo silencioso que casi nadie nombra.** El fundador es excelente construyendo producto pero **no se ha demostrado vendiendo**. Vender ERPs a bodegueros en Lima no es un problema técnico — es un problema de **ventas en frío y manejo de objeciones** de personas que no tienen cultura digital. Esa brecha de competencia es probablemente el cuello de botella número uno del proyecto, por encima de cualquier consideración técnica."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing y Ventas (M)",
+      "emoji": "📣",
+      "question": "¿Existe función comercial siquiera como hipótesis ejecutable?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** No hay actividad de marketing en curso. No hay landing page de captura. No hay marca posicionada. No hay funnel de adquisición funcionando. El canal principal hipotético (contadores aliados) está mencionado pero **no tiene una sola alianza cerrada**. Tampoco hay testeo de canales alternativos (redes sociales orgánicas, ferias de bodegueros, asociaciones de comerciantes)."
+        },
+        {
+          "type": "list",
+          "label": "Hipótesis no validadas que vale la pena nombrar con claridad",
+          "items": [
+            "Que los **contadores quieran recomendar** el sistema — su incentivo económico no está confirmado y su lealtad típica está con sistemas que ya manejan (Concar, Siscont, etc.).",
+            "Que el **bodeguero acepte un precio de S/ 18 a S/ 30 por rama** — la sensibilidad al precio en este segmento es brutalmente alta, especialmente cuando el sustituto (Excel) es gratis.",
+            "Que el **churn estimado del 8% mensual** sea realista — en SaaS B2SMB de baja sofisticación, el churn real suele ubicarse entre **10% y 15% mensual**."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Fortaleza inferida.** La narrativa de producto (evolución progresiva, lógica de videojuego, IA como asesor) es **comunicable y diferenciada**. Un material de marketing construido sobre esa narrativa tiene buena probabilidad de generar conversación. Es un activo intangible — no operativo — pero real."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Debilidad crítica",
+          "text": "La función de ventas **no existe ni siquiera como hipótesis ejecutable**. No hay scripts, no hay materiales, no hay piloto de adquisición. Esta es la **mayor brecha entre el modelo en papel y la capacidad operativa real** — y la primera que hay que cerrar antes de invertir más capital semilla en desarrollo."
+        }
+      ]
+    },
+    {
+      "id": "operaciones",
+      "title": "Operaciones y Tecnología (O · T)",
+      "emoji": "⚙️",
+      "question": "¿La capacidad técnica disponible cubre todo el alcance operativo del producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** No hay producto. Existe una visualización en Angular que no procesa transacciones. El stack técnico de producción aún no está definido formalmente. La integración con **SUNAT (OSE homologado)** está mencionada como dependencia pero no contratada."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Fortaleza real — capacidad técnica del fundador.** Es probablemente **el activo más sólido del proyecto**. Construir un MVP de ERP con núcleo de ventas, inventario, facturación electrónica e IA básica con prompting estructurado sobre APIs externas es **perfectamente factible en 4 a 6 meses** para un desarrollador senior con foco. La elección arquitectónica de hacer la IA básica offline con modelos ligeros es estratégicamente correcta y reduce dependencia de costos variables."
+        },
+        {
+          "type": "list",
+          "label": "Riesgos operativos no abordados",
+          "items": [
+            "**Operación de soporte.** Un bodeguero promedio va a necesitar soporte humano para configurar su catálogo, entender la facturación electrónica y resolver dudas. Ese costo *no está cuantificado*. Un solo fundador **no puede dar soporte a 100 usuarios** sin que su productividad de desarrollo colapse. Hace falta planificar desde ahora el customer success — probablemente WhatsApp atendido por una persona dedicada o un sistema híbrido humano + IA.",
+            "**Homologación SUNAT.** La homologación como emisor electrónico (o la integración con un OSE) no es trivial ni gratuita. Es un trabajo de **varias semanas, con auditoría técnica, y un costo recurrente**. Este ítem *no aparece costeado explícitamente* en los unit economics."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finanzas",
+      "title": "Finanzas y Contabilidad (F)",
+      "emoji": "💰",
+      "question": "¿Los unit economics resisten un escenario realista o solo el optimista?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** Existe capital semilla disponible (monto exacto no declarado). No hay estructura de costos detallada todavía. No hay proyección financiera mensual a 18–24 meses. Los unit economics estimados (**CAC S/ 20, ARPU S/ 30, LTV S/ 375, ratio LTV/CAC de 18.75x**) son benchmarks razonables pero **descansan sobre supuestos no validados**."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Fortaleza.** El modelo financiero está bien diseñado en su lógica. La eficiencia estructural es real: **IA básica gratis con costo cercano a cero**, IA avanzada solo en tiers pagos que la cubren, ausencia de subsidio cruzado tóxico. Es una arquitectura de costos defendible."
+        },
+        {
+          "type": "info",
+          "text": "**Debilidad financiera más importante.** El ratio **LTV/CAC de 18.75x es probablemente irrealista**. Ajustando a un escenario realista — CAC de **S/ 60 a S/ 100** cuando los contadores no entreguen el volumen esperado, ARPU efectivo de **S/ 18 a S/ 22** porque muchos usuarios solo activarán una rama, churn mensual de **12% a 15%** — el ratio cae a **2x–4x**. Sigue viable pero ya no espectacular. El *payback period* también se alarga a **3 a 5 meses**. Esto cambia la velocidad de quema de capital semilla."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Hipótesis crítica no validada",
+          "text": "La **disposición efectiva a pagar**. En el segmento bodeguero peruano, el ancla mental de precio es **S/ 10 a S/ 20 mensuales** para \"algo digital\" (influenciada por planes de internet móvil y servicios básicos). Cruzar el umbral psicológico de **S/ 30 mensual** requiere un valor percibido muy alto. Es testeable y **debe testearse antes de seguir invirtiendo en desarrollo**."
+        }
+      ]
+    },
+    {
+      "id": "recursos-humanos",
+      "title": "Recursos Humanos (H)",
+      "emoji": "👥",
+      "question": "¿El proyecto tiene un techo natural por falta de equipo antes del lanzamiento?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** Una sola persona. Sin equipo contratado, sin advisors formales, sin co-fundador. Sin política de contratación porque no hay nada que contratar todavía. Sin cultura organizacional porque la organización es de uno."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Implicancia estratégica.** El proyecto tiene un **techo natural** si no se construye equipo antes del lanzamiento. Las funciones que el fundador no domina — *ventas a PYMEs, customer success en español coloquial, manejo de objeciones de bodegueros, alianzas con contadores* — son las que probablemente determinen el éxito comercial. Postergar la incorporación de talento comercial bajo la lógica de \"primero hago el producto y después busco vendedor\" es uno de los **errores más comunes en startups técnicas** y debe evitarse activamente."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Recomendación accionable",
+          "text": "Antes del lanzamiento del MVP debería haber **al menos dos personas más**: un perfil **comercial con red en el segmento PYME** (puede ser part-time o asesor con equity) y un perfil de **customer success o comunidad**. No tener este equipo armado al momento del lanzamiento **garantiza que el feedback de los primeros 50 usuarios no se capitalice bien**."
+        }
+      ]
+    },
+    {
+      "id": "sistemas-informacion",
+      "title": "Sistemas de Información y Comunicaciones (I)",
+      "emoji": "📡",
+      "question": "¿Hay instrumentación suficiente para capitalizar el feedback de los primeros usuarios?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Hechos.** Repositorio en GitHub. Deploy automático a GitHub Pages. **No hay CRM**, no hay sistema de **analítica de producto**, no hay funnel de adquisición instrumentado. Para una empresa pre-MVP es esperable, pero conviene anticiparlo."
+        },
+        {
+          "type": "info",
+          "text": "**Antes de tener 10 usuarios reales** ya debería existir un stack mínimo de medición: **analítica de evento, herramienta de feedback, canal de soporte trazable**. De lo contrario, el feedback de los primeros usuarios se perderá en conversaciones sueltas sin convertirse en aprendizaje sistemático."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Activo invisible pero real — la documentación del proyecto.** El `CLAUDE.md` y el material asociado están escritos con un nivel de elaboración que es, en sí mismo, **un activo**. Sirven para alinear nuevos colaboradores, presentar a inversores y guiar decisiones técnicas. La calidad de la documentación es **atípica en proyectos en esta etapa** y es una ventaja real."
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "🎯 Síntesis: fortalezas, debilidades y competencias distintivas",
+    "lead": "El análisis interno se condensa en tres listas que conviene leer juntas: **lo que existe hoy y se puede palancar**, **lo que falta y compromete ejecución si no se atiende**, y **lo que aún no es fortaleza pero define el éxito a 24 meses**.",
+    "groups": [
+      {
+        "kind": "fortalezas",
+        "label": "Fortalezas",
+        "title": "Capacidades que existen hoy y son palancables",
+        "items": [
+          "**Capacidad técnica del fundador** para construir el MVP sin tercerización.",
+          "**Modelo de negocio articulado** con profundidad estratégica poco común en pre-MVP.",
+          "**Diferenciador conceptual** (evolución progresiva + IA asesora) difícil de copiar sin reestructurar producto.",
+          "**Arquitectura de costos eficiente**, con IA básica offline que elimina el principal riesgo de SaaS con IA.",
+          "**Beachhead bien elegido** (bodegas en Lima, dolor SUNAT, decisor único, volumen suficiente).",
+          "**Capital semilla disponible**, sin necesidad inmediata de capital externo.",
+          "**Timing favorable** (SUNAT, Yape/Plin, caída de costo de IA, generación digital)."
+        ]
+      },
+      {
+        "kind": "debilidades",
+        "label": "Debilidades",
+        "title": "Limitaciones estructurales que comprometen ejecución si no se atienden",
+        "items": [
+          "**Fundador único con perfil técnico**, sin función comercial demostrada ni equipo.",
+          "**Ausencia total de validación cuantitativa** de demanda y pricing.",
+          "**Canal de distribución principal (contadores) no validado** — sin una sola alianza cerrada.",
+          "**Pricing pago-por-uso** con riesgo de incomprensión por el usuario final.",
+          "**Soledad ejecutiva**, sin sparring partner ni advisor formal.",
+          "**Función de soporte y customer success no diseñada** operativamente.",
+          "**Costo de homologación e integración SUNAT no cuantificado**.",
+          "**Unit economics** descansan sobre supuestos optimistas que probablemente se ajusten a la baja."
+        ]
+      },
+      {
+        "kind": "competencias",
+        "label": "Competencias distintivas a desarrollar",
+        "title": "No son fortalezas hoy, pero definen el éxito a 24 meses",
+        "items": [
+          "**Adquisición eficiente** en el segmento bodeguero, con **CAC menor a S/ 50**.",
+          "**Retención por encima del 88% mensual** (churn menor al 12%).",
+          "Construcción del **flywheel de datos** que vuelva irremplazable a la IA asesora después de los primeros miles de usuarios.",
+          "**Iteración rápida** basada en feedback de usuarios reales — requiere instrumentación de producto desde el día uno."
+        ]
+      }
+    ]
+  },
+  "insight": {
+    "title": "💡 Insight integrador para el fundador",
+    "paragraphs": [
+      "El análisis interno revela una **asimetría que vale la pena nombrar con claridad**. ERP Evolutivo es fuerte donde la mayoría de startups son débiles (*visión estratégica, diferenciador defendible, arquitectura técnica y de costos, timing*) y es débil donde la mayoría de startups son fuertes en esta etapa (*validación de mercado en campo, equipo comercial básico, hipótesis testeadas con dinero real*). Esa asimetría es típica de **fundadores técnicos solitarios** y es exactamente la razón por la que muchos productos brillantes en el papel no encuentran tracción.",
+      "La acción más importante derivada de este análisis **no es construir más producto ni refinar más la estrategia**. Es invertir las próximas **seis a ocho semanas** en cerrar la brecha comercial: incorporar un co-fundador o advisor con red en el segmento, ejecutar el *fake door test* con tráfico pagado a una landing, cerrar al menos una alianza piloto con un contador y conseguir **tres bodegas dispuestas a probar un prototipo de baja fidelidad**. Si esa fase de seis semanas no produce señales claras de demanda, el modelo necesita reformularse **antes de invertir capital semilla en desarrollo**."
+    ],
+    "closing": "Esta es la **decisión clave del análisis interno**. Todo lo demás (matriz EFI, FODA cruzado, PEYEA, estrategias globales) se construirá sobre las respuestas de esa fase de validación. Adelantar conclusiones estratégicas sobre supuestos no validados sería repetir el error clásico de las startups que **confunden plan elegante con negocio viable**."
+  }
+}

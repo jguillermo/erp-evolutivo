@@ -37,6 +37,14 @@ export const routes: Routes = [
             m => m.PorterComponent
           ),
         title: '5 Fuerzas de Porter — Análisis Estratégico'
+      },
+      {
+        path: 'analisis-interno',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/analisis-interno/analisis-interno.component').then(
+            m => m.AnalisisInternoComponent
+          ),
+        title: 'Análisis Interno (AMOFHIT) — Análisis Estratégico'
       }
     ]
   },
