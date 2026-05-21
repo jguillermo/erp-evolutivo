@@ -6,253 +6,152 @@
        id="canvas-grid"
        data-testid="canvas-grid">
 
-    <!-- Socios Clave -->
-    <app-card
-      testId="card-1"
-      color="purple"
-      title="Socios Clave"
-      emoji="🤝"
-      question="¿Qué no puedo o no me conviene hacer solo?"
-      class="[grid-column:1/3] [grid-row:1/3]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:1/3] print:[grid-row:1/3]">
-      <app-list testId="card-1-list">
-        <app-list-item><app-badge color="indigo" testId="badge-1-1">FASE 1</app-badge> <span class="hl">OSE / SUNAT:</span> proveedor de facturación electrónica homologado — sin esto no podemos operar legalmente en Perú</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-1-2">FASE 1</app-badge> <span class="hl">Yape / Plin:</span> pasarela de cobro dominante en bodegas limeñas — integración crítica para el flujo de ventas del beachhead</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-1-3">FASE 1</app-badge> <span class="hl">Red de contadores aliados:</span> 5–10 contadores activos en Lima que ya atienden bodegas — son el Canal #1 de distribución</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-1-4">FASE 2+</app-badge> <span class="hl">Proveedores LLM</span> (OpenAI / Anthropic) para la IA avanzada — necesario cuando lleguen usuarios premium</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-1-5">FASE 2+</app-badge> <span class="hl">Incubadoras y cámaras de comercio PYME</span> — para escalar acceso a early adopters en otras ciudades</app-list-item>
-      </app-list>
-    </app-card>
-
-    <!-- Actividades Clave -->
-    <app-card
-      testId="card-2"
-      color="indigo"
-      title="Actividades Clave"
-      emoji="⚙️"
-      question="¿Qué tenemos que hacer sí o sí para entregar la propuesta de valor?"
-      class="[grid-column:3/5] [grid-row:1]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:3/5] print:[grid-row:1/2]">
-      <app-list testId="card-2-list">
-        <app-list-item><app-badge color="indigo" testId="badge-2-1">FASE 1</app-badge> Desarrollar <span class="hl">módulo Ventas + Inventario básico</span> para bodegas (flujo completo en &lt;10 min)</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-2-2">FASE 1</app-badge> Crear <span class="hl">onboarding "Soy bodega"</span> — setup guiado sin soporte humano</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-2-3">FASE 1</app-badge> Integrar <span class="hl">facturación electrónica SUNAT</span> y pasarela Yape/Plin</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-2-4">FASE 2+</app-badge> Motor de <span class="hl">triggers de progresión</span> (detecta cuándo activar el siguiente módulo)</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-2-5">FASE 2+</app-badge> <span class="hl-ai">Prompts IA por sector</span> y nivel de madurez del negocio</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-2-6">FASE 2+</app-badge> <span class="hl">Contenido educativo</span> (TikTok, YouTube) para escalar captación orgánica</app-list-item>
-      </app-list>
-    </app-card>
-
-    <!-- Recursos Clave -->
-    <app-card
-      testId="card-3"
-      color="blue"
-      title="Recursos Clave"
-      emoji="🔧"
-      question="¿Sin qué recursos no podemos operar?"
-      class="[grid-column:3/5] [grid-row:2]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:3/5] print:[grid-row:2/3]">
-      <app-list testId="card-3-list">
-        <app-list-item><app-badge color="indigo" testId="badge-3-1">FASE 1</app-badge> <span class="hl">2 devs full-stack web</span> — sin mobile nativa aún; app web responsive es suficiente para bodegas</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-3-2">FASE 1</app-badge> <span class="hl">1 UX</span> especializado en usuarios no técnicos con baja alfabetización digital</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-3-3">FASE 1</app-badge> <span class="hl-ai">Prompts IA para bodegas</span> — base de conocimiento acotada a comercio minorista (no todos los sectores)</app-list-item>
-        <app-list-item><app-badge color="indigo" testId="badge-3-4">FASE 1</app-badge> <span class="hl">Capital semilla</span> para MVP + primeros 100 usuarios activos en Lima</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-3-5">FASE 2+</app-badge> <span class="hl">App móvil nativa</span> + growth marketer LATAM para escalar a otras ciudades</app-list-item>
-        <app-list-item><app-badge color="slate" testId="badge-3-6">FASE 2+</app-badge> <span class="hl-ai">Pipeline IA multi-sector</span> y motor de reglas de progresión completo</app-list-item>
-      </app-list>
-    </app-card>
+    <!-- Socios Clave / Actividades Clave / Recursos Clave / Relación Clientes / Canales — tarjetas con lista simple -->
+    @for (card of [sociosClave, actividadesClave, recursosClave, relacionClientes, canales]; track card.id; let i = $index) {
+      <app-card
+        [testId]="'card-' + (i === 0 ? 1 : i === 1 ? 2 : i === 2 ? 3 : i === 3 ? 5 : 6)"
+        [color]="style(card.id).color"
+        [title]="card.title"
+        [emoji]="card.emoji"
+        [question]="card.question"
+        [class]="style(card.id).gridClass">
+        <app-list [testId]="'card-' + card.id + '-list'">
+          @for (item of card.items; track $index) {
+            <app-list-item>
+              @if (item.tag) {
+                <app-badge [color]="tagColor(card.id, item.tag)" [testId]="'badge-' + card.id + '-' + $index">{{ item.tag }}</app-badge>
+              }
+              @if (item.label) {
+                <span class="hl">{{ item.label }}:</span>
+              }
+              {{ item.text }}
+            </app-list-item>
+          }
+        </app-list>
+      </app-card>
+    }
 
     <!-- Propuesta de Valor -->
     <app-card
       testId="card-4"
-      color="cyan"
-      title="Propuesta de Valor"
-      emoji="💎"
-      question="¿Qué problema resuelvo y por qué me elegirían?"
-      class="[grid-column:5/7] [grid-row:1/3]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:5/7] print:[grid-row:1/3]">
+      [color]="style(propuestaValor.id).color"
+      [title]="propuestaValor.title"
+      [emoji]="propuestaValor.emoji"
+      [question]="propuestaValor.question"
+      [class]="style(propuestaValor.id).gridClass">
 
       <app-quoted-text testId="card-4-value-statement">
-        Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.
+        {{ propuestaValor.valueStatement }}
       </app-quoted-text>
 
       <app-section variant="info" testId="card-4-vs">
-        <app-comparison-row competitor="Libreta y Excel" testId="card-4-vs-label-1">Digitalización sin trauma, empiezas gratis, el sistema te guía paso a paso</app-comparison-row>
-        <app-comparison-row competitor="Odoo / Otros" testId="card-4-vs-label-2"><span class="hl-ai">IA asesora integrada</span> + solo pagas módulos que usas (no paquetes fijos)</app-comparison-row>
-        <app-comparison-row competitor="SAP / S10" testId="card-4-vs-label-3">Sin implementador, sin meses de capacitacion.</app-comparison-row>
+        @for (cmp of propuestaValor.comparisons; track $index) {
+          <app-comparison-row [competitor]="cmp.competitor" [testId]="'card-4-vs-label-' + ($index + 1)">
+            {{ cmp.text }}
+          </app-comparison-row>
+        }
       </app-section>
 
-      <app-section variant="feature" testId="card-4-game" title="🎮 Mecánica de videojuego">
+      <app-section variant="feature" testId="card-4-game" [title]="propuestaValor.gameMechanic.title">
         <p class="text-xs text-ink-muted leading-body print:text-print-xs">
-          Igual que en un juego de estrategia, arrancas con lo básico y vas desbloqueando nuevas herramientas conforme avanzas. Nuestros usuarios crecieron jugando así, entienden niveles, logros y progresión sin necesidad de manual. Esa misma lógica aplicada a su negocio hace que adoptar un ERP se sienta natural, no abrumador.
+          {{ propuestaValor.gameMechanic.text }}
         </p>
       </app-section>
 
-      <app-section variant="feature" testId="card-4-entry-module" title="🚀 Módulo de arranque">
+      <app-section variant="feature" testId="card-4-entry-module" [title]="propuestaValor.entryModule.title">
         <p class="text-sm font-bold text-white mb-xs print:text-print-sm"
            data-testid="card-4-entry-module-main">
-          💰 Ventas + Inventario básico + Facturación SUNAT
+          {{ propuestaValor.entryModule.primary }}
         </p>
         <p class="text-2xs text-ink-muted leading-condensed print:text-print-xs">
-          Para bodega/comercio minorista en Lima — setup en &lt;10 min, gratis para empezar
+          {{ propuestaValor.entryModule.secondary }}
         </p>
       </app-section>
 
       <app-list testId="card-4-list" class="mt-md">
-        <app-list-item><span class="hl2">Crece contigo:</span> ramas que se activan según TU camino real, como subir de nivel</app-list-item>
-        <app-list-item><span class="hl-ai">IA siempre incluida:</span> asesorando cuando tu negocio lo necesita</app-list-item>
-        <app-list-item>El sistema sugiere tu <span class="hl2">siguiente paso</span> basado en tu contexto</app-list-item>
-        <app-list-item><span class="hl-ai">Como tener un asesor de negocio 24/7</span> que conoce tu sector</app-list-item>
-      </app-list>
-    </app-card>
-
-    <!-- Relación Clientes -->
-    <app-card
-      testId="card-5"
-      color="green"
-      title="Relación Clientes"
-      emoji="💬"
-      question="¿Cómo los capto, retengo y hago que crezcan conmigo?"
-      class="[grid-column:7/9] [grid-row:1]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:7/9] print:[grid-row:1/2]">
-      <app-list testId="card-5-list">
-        <app-list-item><span class="hl">Captación:</span> Registro freemium sin tarjeta + onboarding guiado por tipo de negocio ("Soy bodega", "Soy restaurante"...)</app-list-item>
-        <app-list-item><span class="hl">Retención:</span> Celebración de hitos del negocio, comunidad de emprendedores por sector, soporte por <span class="hl-ai">chat IA contextual</span></app-list-item>
-        <app-list-item><span class="hl">Expansión:</span> <span class="hl-ai">IA proactiva: "Tu negocio ya tiene 3 empleados, activa la rama Equipo"</span> el sistema vende el upgrade naturalmente</app-list-item>
-        <app-list-item><span class="hl">Recuperación:</span> Alertas cuando el usuario deja de entrar + resumen de lo que se perdió</app-list-item>
-      </app-list>
-    </app-card>
-
-    <!-- Canales -->
-    <app-card
-      testId="card-6"
-      color="teal"
-      title="Canales"
-      emoji="📡"
-      question="¿Cómo me conocen, cómo compran y cómo reciben el producto?"
-      class="[grid-column:7/9] [grid-row:2]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:7/9] print:[grid-row:2/3]">
-      <app-list testId="card-6-list">
-        <app-list-item><app-badge color="teal-hi" testId="badge-6-1">CANAL #1</app-badge> <span class="hl">Contadores y asesores tributarios</span> que ya visitan a bodegas — recomendación directa de confianza</app-list-item>
-        <app-list-item><app-badge color="teal-mid" testId="badge-6-2">CANAL #2</app-badge> <span class="hl">TikTok / Instagram</span> con tips de negocio PYME — captación orgánica de bajo costo</app-list-item>
-        <app-list-item><app-badge color="teal-lo" testId="badge-6-3">CANAL #3</app-badge> <span class="hl">Programa de referidos</span> entre dueños de negocio del mismo barrio</app-list-item>
-        <app-list-item><span class="hl">Evalúan:</span> Landing con demo interactiva y testimonios por sector (bodega, peluquería...)</app-list-item>
-        <app-list-item><span class="hl">Reciben:</span> App web responsive + app móvil nativa</app-list-item>
-        <app-list-item><span class="hl">Recompran:</span> <span class="hl-ai">IA proactiva in-app</span> que sugiere el siguiente módulo cuando el negocio lo necesita</app-list-item>
+        @for (item of propuestaValor.items; track $index) {
+          <app-list-item>
+            @if (item.label) {
+              <span class="hl2">{{ item.label }}:</span>
+            }
+            {{ item.text }}
+          </app-list-item>
+        }
       </app-list>
     </app-card>
 
     <!-- Segmentos -->
     <app-card
       testId="card-7"
-      color="amber"
-      title="Segmentos de Clientes"
-      emoji="👥"
-      question="¿Para quién es? ¿Quién paga? ¿Quién usa?"
-      class="[grid-column:9/11] [grid-row:1/3]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:9/11] print:[grid-row:1/3]">
+      [color]="style(segmentos.id).color"
+      [title]="segmentos.title"
+      [emoji]="segmentos.emoji"
+      [question]="segmentos.question"
+      [class]="style(segmentos.id).gridClass">
 
       <p class="text-xs text-warning-400 bg-warning-400/[8%] rounded px-md py-sm mb-sm print:text-print-xs"
          data-testid="card-7-meta">
-        📍 Perú primero (Lima), luego LATAM · Dueño = usuario = pagador
+        {{ segmentos.meta }}
       </p>
 
       <app-section variant="highlight" testId="card-7-beachhead">
         <app-badge-label
           class="mb-sm"
           variant="title"
-          badgeColor="amber-solid"
+          [badgeColor]="tierBadgeColor(segmentos.beachhead.badge)"
           badgeTestId="badge-7-1"
-          badgeText="BEACHHEAD"
-          labelText="Foco de lanzamiento"
+          [badgeText]="segmentos.beachhead.badge"
+          [labelText]="segmentos.beachhead.label"
         />
         <p class="text-2xs text-warning-200 leading-cozy mb-sm print:text-print-xs">
-          1–3 personas · Lima · Hoy usa libreta o Excel · El dolor más inmediato: no saber cuánto vendió ni facturar bien a SUNAT
+          {{ segmentos.beachhead.description }}
         </p>
         <app-list testId="card-7-beachhead-list" class="mt-sm">
-          <app-list-item>🛒 <span class="hl">Bodegas y comercios minoristas</span> — 400K+ solo en Lima, alta frecuencia de transacciones, dolor claro</app-list-item>
-          <app-list-item>💇 Peluquerías, barberías, spas — agenda + cobro, decisión de compra rápida</app-list-item>
-          <app-list-item>🌱 Emprendedores unipersonales — primeras ventas, necesitan orden sin complejidad</app-list-item>
+          @for (item of segmentos.beachhead.items; track $index) {
+            <app-list-item>{{ item }}</app-list-item>
+          }
         </app-list>
       </app-section>
 
-      <app-tier-section
-        testId="card-7-tier-2"
-        badgeColor="amber"
-        badgeTestId="badge-7-2"
-        badgeText="FASE 2"
-        tierDescription="4–15 personas · Probó algún sistema y lo dejó · Necesita inventario, equipo y finanzas"
-        listTestId="card-7-list-2">
-        <app-list-item>🍽️ Restaurantes y food service</app-list-item>
-        <app-list-item>🔧 Servicios profesionales</app-list-item>
-        <app-list-item>🏭 Pequeños productores y talleres</app-list-item>
-      </app-tier-section>
-
-      <app-tier-section
-        testId="card-7-tier-3"
-        badgeColor="orange-dim"
-        badgeTestId="badge-7-3"
-        badgeText="FASE 3"
-        tierDescription="16–50 personas · Múltiples locales · Necesita integración, analítica y predicción"
-        listTestId="card-7-list-3">
-        <app-list-item>📦 Distribuidores y mayoristas</app-list-item>
-        <app-list-item>🏗️ Constructoras pequeñas</app-list-item>
-        <app-list-item>🌾 Agronegocios</app-list-item>
-      </app-tier-section>
+      @for (tier of segmentos.tiers; track $index) {
+        <app-tier-section
+          [testId]="'card-7-tier-' + ($index + 2)"
+          [badgeColor]="tierBadgeColor(tier.badge)"
+          [badgeTestId]="'badge-7-' + ($index + 2)"
+          [badgeText]="tier.badge"
+          [tierDescription]="tier.description"
+          [listTestId]="'card-7-list-' + ($index + 2)">
+          @for (item of tier.items; track $index) {
+            <app-list-item>{{ item }}</app-list-item>
+          }
+        </app-tier-section>
+      }
     </app-card>
 
-    <!-- Estructura de Costos -->
-    <app-card
-      testId="card-8"
-      color="red"
-      title="Estructura de Costos"
-      emoji="💸"
-      question="¿Cuáles son los gastos principales? ¿Los ingresos los superan?"
-      class="[grid-column:1/6] [grid-row:3]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:1/6] print:[grid-row:3/4]">
-      <app-list testId="card-8-list">
-        <app-list-item><app-badge color="red" testId="badge-8-1">FIJO</app-badge> <span class="hl">Equipo técnico:</span> devs full-stack, QA, UX, DevOps; el mayor costo fijo (~60% del total)</app-list-item>
-        <app-list-item><app-badge color="red" testId="badge-8-2">FIJO</app-badge> <span class="hl">Infraestructura base:</span> servidores cloud, CDN, bases de datos, CI/CD</app-list-item>
-        <app-list-item><app-badge color="red" testId="badge-8-3">FIJO</app-badge> <span class="hl">Soporte y CS:</span> equipo de soporte, documentación, community manager</app-list-item>
-        <app-list-item><app-badge color="orange" testId="badge-8-4">VARIABLE</app-badge> <span class="hl-ai">IA avanzada:</span> APIs LLM por consumo; crece con usuarios premium (la IA básica offline es costo ~0)</app-list-item>
-        <app-list-item><app-badge color="orange" testId="badge-8-5">VARIABLE</app-badge> <span class="hl">Adquisición:</span> marketing digital, contenido educativo, eventos y ferias PYME</app-list-item>
-        <app-list-item><app-badge color="orange" testId="badge-8-6">VARIABLE</app-badge> <span class="hl">Compliance:</span> facturación electrónica SUNAT, certificaciones de seguridad</app-list-item>
-      </app-list>
-      <app-section variant="note" testId="card-8-viability">
-        📐 <span class="hl">Viabilidad:</span> costos de IA básica ~0 (offline). Costo de IA avanzada crece solo cuando el usuario ya paga tier premium. El modelo se autofinancia por nivel.
-      </app-section>
-    </app-card>
-
-    <!-- Fuentes de Ingreso -->
-    <app-card
-      testId="card-9"
-      color="emerald"
-      title="Fuentes de Ingreso"
-      emoji="💰"
-      question="¿Cómo gano dinero? ¿Hay ingresos recurrentes? ¿Cuánto están dispuestos a pagar?"
-      class="[grid-column:6/11] [grid-row:3]
-             max-md:[grid-column:auto] max-md:[grid-row:auto]
-             print:[grid-column:6/11] print:[grid-row:3/4]">
-      <app-list testId="card-9-list">
-        <app-list-item><app-badge color="green-hi" testId="badge-9-1">PRINCIPAL</app-badge> <span class="hl3">Suscripción por ramas activas:</span> pagas solo los módulos que usas (S/ 29–199/mes) ingreso recurrente mensual, predecible</app-list-item>
-        <app-list-item><app-badge color="green-hi" testId="badge-9-2">PRINCIPAL</app-badge> <span class="hl-ai">IA Avanzada (upsell natural):</span> cuando el negocio crece y necesita predicciones, estrategia y análisis con LLM, el usuario ya percibe el valor</app-list-item>
-        <app-list-item><app-badge color="green-lo" testId="badge-9-3">SECUNDARIO</app-badge> <span class="hl3">Freemium → conversión:</span> núcleo gratis + IA básica offline ilimitada → el propio crecimiento del negocio lo lleva a pagar</app-list-item>
-        <app-list-item><app-badge color="green-lo" testId="badge-9-4">SECUNDARIO</app-badge> <span class="hl3">Comisiones transaccionales:</span> % sobre cobros procesados vía pasarelas integradas (Yape, Mercado Pago)</app-list-item>
-        <app-list-item><app-badge color="pink" testId="badge-9-5">FUTURO</app-badge> <span class="hl3">Marketplace:</span> plantillas de negocio, reportes sectoriales, conectores con terceros</app-list-item>
-        <app-list-item><app-badge color="pink" testId="badge-9-6">FUTURO</app-badge> <span class="hl-ai">Inteligencia sectorial:</span> datos anonimizados y agregados de PYMEs para consultoras e inversores</app-list-item>
-      </app-list>
-      <app-section variant="note" testId="card-9-viability">
-        💡 <span class="hl3">Referencia de mercado:</span> Odoo cobra S/ 70–200/mes por funcionalidad fija. Nosotros cobramos igual o menos, pero el usuario solo paga lo que usa.
-      </app-section>
-    </app-card>
+    <!-- Estructura de Costos / Fuentes de Ingreso — listas con tag y nota final -->
+    @for (card of [estructuraCostos, fuentesIngreso]; track card.id; let i = $index) {
+      <app-card
+        [testId]="'card-' + (i === 0 ? 8 : 9)"
+        [color]="style(card.id).color"
+        [title]="card.title"
+        [emoji]="card.emoji"
+        [question]="card.question"
+        [class]="style(card.id).gridClass">
+        <app-list [testId]="'card-' + card.id + '-list'">
+          @for (item of card.items; track $index) {
+            <app-list-item>
+              @if (item.tag) {
+                <app-badge [color]="tagColor(card.id, item.tag)" [testId]="'badge-' + card.id + '-' + $index">{{ item.tag }}</app-badge>
+              }
+              {{ item.text }}
+            </app-list-item>
+          }
+        </app-list>
+        <app-section variant="note" [testId]="'card-' + card.id + '-viability'">
+          {{ card.note }}
+        </app-section>
+      </app-card>
+    }
 
   </div>
 </div>

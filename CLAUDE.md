@@ -29,7 +29,18 @@ npx ng test --include="**/canvas.component.spec.ts"
 **State management**: Angular Signals only (no NgRx). `ThemeService` (`src/app/theme.service.ts`) manages dark/light mode via a signal and toggles automatically for print via `@HostListener`.
 
 
-**No API layer** — the app is currently a static stakeholder visualization. All data is hardcoded in the model constants.
+**No API layer** — the app is currently a static stakeholder visualization. The content of each view lives in `data/<view>.json` as plain text; the matching feature component imports the JSON, applies visual decisions (colors, layout, classes) and renders the template.
+
+## Data separation — MANDATORY for every view
+
+Every feature view has two artifacts:
+
+1. **`data/<view>.json`** — the **only** source of textual content. Plain text strings, structured by what the view needs to show. **Never** HTML tags, **never** Tailwind classes, **never** color tokens, **never** `testId`s. Tags like `FASE 1`, `CANAL #1`, `FIJO`, `PRINCIPAL` are content (they appear on screen) and stay in the JSON; the color used to render them is a presentation decision and lives in the component.
+2. **`src/app/features/<view>/<view>.component.{ts,html}`** — imports the JSON (`import data from '../../../../data/<view>.json'`), declares the typed interfaces for the JSON shape, maps semantic identifiers (card id, tag value, factor id) to design-token classes/colors, and renders the template by iterating over the data.
+
+When adding a new view: create the JSON file first with the full content, then write the component that consumes it. Refactoring existing views means moving copy out of the template into the JSON without changing what renders. See `data/canvas.json` + `features/canvas/canvas.component.ts` for the reference pattern, and `data/pestel.json` + `features/analisis-estrategico/pestel/pestel.component.ts` for a view with typed block sequences (`paragraph` / `list` / `note` / `info` / `implication`).
+
+JSON support is enabled in `tsconfig.json` (`resolveJsonModule: true`) and `tsconfig.app.json` includes `data/**/*.json`.
 
 ## Tech Stack
 
