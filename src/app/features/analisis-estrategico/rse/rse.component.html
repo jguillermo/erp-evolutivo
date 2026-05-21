@@ -1,0 +1,89 @@
+<!-- Responsabilidad Social Empresarial -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="rse-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="rse-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="rse-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- Secciones -->
+  <div class="flex flex-col gap-3xl" data-testid="rse-sections">
+    @for (section of sections; track section.id) {
+      <app-card
+        [testId]="'rse-' + section.id"
+        [color]="sectionColor(section.id)"
+        [title]="section.title"
+        [emoji]="section.emoji"
+        [question]="section.question">
+
+        @for (block of section.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              <app-list [testId]="'rse-' + section.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'rse-' + section.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'rse-' + section.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'rse-' + section.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- Síntesis ejecutiva -->
+  <div class="mt-5xl" data-testid="rse-sintesis">
+    <app-section variant="highlight" [title]="data.synthesis.title" testId="rse-sintesis-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.synthesis.lead | md"></p>
+      <app-list testId="rse-sintesis-list">
+        @for (item of data.synthesis.items; track $index) {
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+        }
+      </app-list>
+      <p class="text-xs text-ink-muted leading-body mt-lg" [innerHTML]="data.synthesis.closing | md"></p>
+    </app-section>
+  </div>
+
+</div>

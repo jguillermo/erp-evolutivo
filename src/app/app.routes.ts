@@ -61,6 +61,22 @@ export const routes: Routes = [
             m => m.FceComponent
           ),
         title: 'Factores Críticos de Éxito — Estudio Estratégico'
+      },
+      {
+        path: 'mision-vision-valores',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/mision-vision-valores/mision-vision-valores.component').then(
+            m => m.MisionVisionValoresComponent
+          ),
+        title: 'Misión, Visión y Valores — Estudio Estratégico'
+      },
+      {
+        path: 'rse',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/rse/rse.component').then(
+            m => m.RseComponent
+          ),
+        title: 'Responsabilidad Social Empresarial — Estudio Estratégico'
       }
     ]
   },

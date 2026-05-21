@@ -1,0 +1,152 @@
+{
+  "title": "🧭 Misión, Visión y Valores",
+  "subtitle": "Planeamiento estratégico — propósito, proyección y principios que guían ERP Evolutivo.",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "Para una startup pre-MVP, la misión, visión y valores no son una pieza decorativa. Son una herramienta operativa con tres funciones concretas: **alinear decisiones difíciles** cuando hay tensión entre opciones, filtrar talento y partners en una etapa donde el founder único no puede equivocarse de compañeros de ruta, y comunicar la propuesta de valor de forma comprimida cuando el tiempo es escaso.",
+  "sections": [
+    {
+      "id": "mision",
+      "title": "Misión",
+      "emoji": "🎯",
+      "question": "¿Qué hace ERP Evolutivo, para quién y cómo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Habilitar el crecimiento ordenado** de las micro y pequeñas empresas en Latinoamérica, ofreciendo un sistema de gestión **modular** con inteligencia artificial integrada, que evoluciona al ritmo del negocio, **cobra solo por lo que se usa** y guía al empresario con asesoría especializada las 24 horas, eliminando la barrera económica y de complejidad que históricamente ha excluido a las PYMEs del acceso a herramientas profesionales."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Abre con habilitar, no con ser líder.** La misión describe qué hace el negocio para alguien, no qué quiere ser el negocio para sí mismo.",
+            "**Nombra los tres diferenciadores en una sola oración:** modular y evolutivo, cobra solo por lo que se usa, IA como asesor. Quien lea esa oración entiende qué hace distinto ERP Evolutivo frente a Odoo, Alegra o Bsale.",
+            "**Cierra con el por qué:** eliminar la barrera económica y de complejidad conecta con la responsabilidad social del modelo y da peso narrativo frente a contadores, incubadoras y fondos de impacto en LATAM."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "La misión no menciona Perú ni Lima deliberadamente — debe sobrevivir a la expansión a Colombia, México y Chile sin reescribirse. La estrategia geográfica vive en otros documentos, no aquí."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": "Visión",
+      "emoji": "🔭",
+      "question": "¿Dónde queremos estar en cinco años?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "En cinco años, ser la plataforma de gestión empresarial con **mayor penetración** entre las micro y pequeñas empresas de Latinoamérica, con presencia operativa en al menos cuatro países y la **base de datos más extensa de la región** sobre cómo crecen las PYMEs, convirtiendo esa inteligencia acumulada en una ventaja competitiva que ningún competidor pueda replicar sin años de operación."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Retadora pero verificable.** Cinco años, cuatro países, base de datos regional — cualquier persona puede saber en cualquier momento si el negocio está cerca o lejos de cumplirla.",
+            "**Captura el activo real.** El software es replicable, los datos no. La visión orienta inversión hacia capturar, ordenar y aprovechar datos desde el día uno, no como proyecto futuro.",
+            "**Habilita la conversación de exit.** Un comprador estratégico — fintech, banco, software empresarial interesado en la base de PYMEs — entiende en cinco líneas por qué la compañía valdría una prima."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Tensión legítima: ERP Evolutivo está pre-MVP con un fundador único. La visión debe iluminar el largo plazo, no describir el presente. Su validez se sostiene si las metas anuales son agresivamente realistas — esa coherencia se construye en los objetivos de largo y corto plazo, no en este enunciado."
+        }
+      ]
+    },
+    {
+      "id": "valores",
+      "title": "Valores",
+      "emoji": "⚖️",
+      "question": "¿Qué principios deciden entre dos opciones difíciles?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cada valor debe poder usarse para **decidir entre dos opciones concretas** que se le presenten al fundador en los próximos doce meses. Los cinco seleccionados cumplen ese filtro."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Simplicidad radical.** Si un bodeguero de 50 años con teléfono Android básico no entiende cómo usar una funcionalidad en menos de tres minutos sin ayuda humana, la funcionalidad no se publica. Contrarresta el sesgo natural del fundador técnico a sobre-construir."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Pago justo.** El usuario nunca paga por lo que no usa, nunca se cobra de más por error sistémico y el precio se comunica en cinco segundos o menos. La confianza vale más que un punto de margen en este segmento."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Honestidad con el cliente.** La IA dice \"no sé\" cuando no sabe. El producto comunica lo que es, no promete lo que aún no entrega. Crítico en Fase 1: prometer la IA como *\"asesor experto sofisticado\"* sin fine tuning propio erosiona la confianza irreparablemente."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Evolución progresiva.** Crecer cuando el negocio está listo, no antes. Validar una rama antes de construir la siguiente — construir las nueve en paralelo gasta capital semilla en inventario que quizás nadie quiere comprar."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Inclusión digital con respeto.** La PYME latinoamericana merece producto del mismo nivel de pulido que un SaaS de Silicon Valley, comunicación en su lenguaje, soporte en horarios reales de Lima y consideración por su contexto: informalidad, márgenes ajustados, capacidad de pago intermitente."
+        },
+        {
+          "type": "info",
+          "text": "**No incluidos deliberadamente:** *\"innovación\"* (no decide nada — cualquier opción puede justificarse como innovadora) y *\"trabajo en equipo\"* (la empresa hoy tiene un fundador único — ese valor sería inverosímil y opaco)."
+        }
+      ]
+    },
+    {
+      "id": "implicancias",
+      "title": "Implicancias estratégicas",
+      "emoji": "⚡",
+      "question": "¿Qué decisiones concretas generan estos enunciados hoy?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estos enunciados no son textos para enmarcar. Si se adoptan, generan cuatro **decisiones concretas** para el próximo trimestre."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Roadmap de producto:** priorizar la rama paga más demandada según validación, no las nueve en paralelo. El valor de evolución progresiva lo exige y ya lo recomienda explícitamente el análisis interno.",
+            "**Modelo de pricing:** simplificar antes del lanzamiento. La activación mensual con umbral mínimo es coherente con el valor de pago justo — modelos más complejos lo contradicen.",
+            "**Comunicación de IA en Fase 1:** describir la IA como *\"asistente que mejora con el tiempo\"*, no como *\"asesor experto\"* mientras no haya fine tuning con datos propios. Reduce el riesgo de erosión de confianza en el beachhead.",
+            "**Filtro para advisor o cofundador:** un perfil que privilegie maximización de ARPU sobre simplicidad y confianza está culturalmente desalineado. Mejor continuar solo que sumar a alguien que erosionará el diferenciador central."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Conexión con responsabilidad social",
+          "text": "La misión, visión y valores cargan implícitamente el componente de responsabilidad social. Las PYMEs que adoptan herramientas digitales formales **acceden a crédito**, reducen evasión involuntaria y sobreviven más años. No es una capa de marketing — es el corazón del modelo, y eso es argumento poderoso frente a contadores, gremios, cámaras de comercio y fondos de impacto en LATAM."
+        }
+      ]
+    },
+    {
+      "id": "supuestos",
+      "title": "Supuestos débiles a vigilar",
+      "emoji": "⚠️",
+      "question": "¿Qué hipótesis aún no han sido validadas?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tres aspectos de esta sección quedan como hipótesis a vigilar activamente en las próximas rondas de entrevistas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Simplicidad sobre potencia.** Plausible pero no validado. Si los bodegueros más sofisticados — los que ya intentaron Excel avanzado o algún software — prefieren más control sobre menos fricción, el valor de simplicidad radical debe matizarse para no perder ese sub-segmento valioso.",
+            "**Aceptación de la visión de datos.** La conversación regional sobre privacidad de PYMEs es incipiente pero puede endurecerse. La visión es defendible solo si la captura de datos se hace con consentimiento claro y valor recíproco — acceso a benchmarks sectoriales, por ejemplo.",
+            "**Sostenibilidad del founder único.** Cuando aparece presión por ARR, los valores blandos son los primeros en ceder. Conviene revisarlos cada trimestre con un advisor externo que actúe como guardián cultural."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Esta sección se lee en conjunto con el **FODA cruzado**, los factores críticos de éxito y las estrategias globales del negocio. Aislados son palabras — conectados al análisis, son el marco que define qué pelea da ERP Evolutivo, contra quién, con qué armas y por qué debería ganar."
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "🧭 Síntesis ejecutiva",
+    "lead": "Los enunciados de ERP Evolutivo son herramientas operativas, no decoración académica. **La misión** nombra el qué, el para quién y el cómo en una sola oración con los tres diferenciadores duros. **La visión** ancla el activo real a largo plazo — la inteligencia acumulada sobre cómo crecen las PYMEs — y habilita la conversación de exit. **Los cinco valores** se eligieron como cuchillos que deciden, no como espejos que reflejan.",
+    "items": [
+      "**Misión:** habilitar el crecimiento ordenado de las PYMEs en LATAM con un sistema modular, IA integrada y cobro solo por uso",
+      "**Visión:** mayor penetración en micro y pequeñas empresas de LATAM en cinco años, con la base de datos propietaria como ventaja no replicable",
+      "**Valores:** Simplicidad radical · Pago justo · Honestidad con el cliente · Evolución progresiva · Inclusión digital con respeto"
+    ],
+    "closing": "Los tres supuestos débiles identificados — sensibilidad al precio vs. potencia, privacidad de datos y sostenibilidad cultural del founder — son señales de alerta que deben monitorearse en las próximas rondas de validación. Si alguno se invalida, actualizar los enunciados antes de escalar."
+  }
+}

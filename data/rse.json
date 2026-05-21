@@ -1,0 +1,186 @@
+{
+  "title": "🌱 Responsabilidad Social Empresarial",
+  "subtitle": "Planeamiento estratégico — la RSE como capa estratégica cosida al modelo de negocio, no como anexo decorativo.",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "La RSE de ERP Evolutivo **está en el producto, no al costado del producto**. Bien entendida, cumple tres funciones reales: alinear la propuesta de valor con un dolor estructural de primer orden (la digitalización de PYMEs en LATAM), blindar al negocio frente a riesgos reputacionales y regulatorios que crecen con la escala, y abrir puertas comerciales que de otra forma estarían cerradas — fondos de impacto, gremios, ministerios y bancos con programas de inclusión financiera.",
+  "sections": [
+    {
+      "id": "frente-1",
+      "title": "Frente 1 · Inclusión digital de PYMEs",
+      "emoji": "📱",
+      "question": "¿Qué impacto verificable genera el producto por operar con normalidad?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Este es el frente principal y el único que se ejecuta desde el día uno, porque **coincide con la operación normal del negocio**. No requiere presupuesto extra ni programas paralelos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Información ordenada:** la PYME accede por primera vez a datos reales de su negocio — ventas, márgenes, inventario — lo que mejora sus decisiones operativas.",
+            "**Cumplimiento fiscal:** emite facturas electrónicas SUNAT correctamente, reduciendo el riesgo de informalidad forzada o salida del mercado.",
+            "**Historial para crédito:** genera un registro transaccional digital que es el insumo principal para que bancos, cajas o fintechs evalúen elegibilidad crediticia."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La métrica de impacto creíble no es *\"cuántas PYMEs digitalizamos\"* sino **indicadores funcionales verificables**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Primera factura electrónica:** PYMEs que emiten su primer comprobante formal usando el sistema.",
+            "**Digitalización de gestión:** PYMEs que pasan del registro manual al digital de inventario y ventas en el primer trimestre.",
+            "**Elegibilidad crediticia:** PYMEs que, tras doce meses, tienen historial suficiente para ser evaluadas por una fintech — este indicador, cerrado con una alianza financiera explícita, convierte el impacto declarado en **impacto demostrado**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia operativa",
+          "text": "El producto debe instrumentarse desde el MVP para capturar estas métricas. No se añaden después — el **data model las contempla desde el inicio**. Si no, la tesis de impacto queda sin evidencia y se vuelve marketing vacío."
+        }
+      ]
+    },
+    {
+      "id": "frente-2",
+      "title": "Frente 2 · Ética del dato y privacidad",
+      "emoji": "🔒",
+      "question": "¿Cómo se convierte la ética del dato en diferenciador competitivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aquí está el **riesgo más subestimado del modelo** y, por lo mismo, la mayor oportunidad de diferenciación. El activo a largo plazo — la inteligencia acumulada sobre cómo crecen las PYMEs — implica procesar datos sensibles de cada cliente: ventas, márgenes, proveedores, deudas, flujos. Información que muchas PYMEs no comparten ni siquiera con sus contadores."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Consentimiento explícito y entendible.** Cada uso de datos para entrenar modelos o generar reportes sectoriales está autorizado en lenguaje comprensible — el usuario entiende qué se anonimiza, qué se agrega y qué permanece privado.",
+            "**Anonimización efectiva, no nominal.** Reportes y datasets usan agregaciones que impiden reidentificar un negocio individual. No es estándar voluntario — es requisito técnico verificable.",
+            "**Valor recíproco.** Si la empresa monetiza datos agregados, el usuario que los aporta recibe valor concreto: benchmarks de su sector, alertas sectoriales, recomendaciones basadas en patrones similares. La data flow no puede ser de una sola vía.",
+            "**No discriminación algorítmica.** Cuando la IA genere recomendaciones o alimente scoring crediticio de terceros, debe existir un proceso documentado para verificar que el modelo no penaliza sistemáticamente sub-segmentos por sesgos del dataset.",
+            "**Portabilidad y derecho a desaparecer.** El usuario exporta todos sus datos en cualquier momento y cierra su cuenta con borrado efectivo. Codificado desde el MVP, no añadido en el año cuatro."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Estos cinco compromisos, publicados como **documento corto y accesible** (no como términos y condiciones), funcionan como diferenciador competitivo frente a competidores con políticas opacas y blindan al negocio frente a regulaciones que se endurecen en LATAM — Ley 29733 en Perú, LGPD en Brasil, regulaciones de Colombia y México. La empresa que llega anticipada paga mucho menos costo de adaptación."
+        }
+      ]
+    },
+    {
+      "id": "frente-3",
+      "title": "Frente 3 · Trato justo al cliente",
+      "emoji": "🤝",
+      "question": "¿Qué compromisos convierten la confianza en ventaja competitiva real?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El segmento atendido — bodegueros, peluquerías, emprendedores unipersonales — es históricamente abusado por proveedores de servicios: comisiones ocultas, contratos confusos, soporte inexistente, suscripciones imposibles de cancelar. La RSE de ERP Evolutivo en este frente consiste en **operar en sentido contrario y comunicarlo**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Precio sin letra chica.** El usuario sabe exactamente cuánto va a pagar y por qué. Si usó la rama este mes, paga X. Si no la usó, paga 0. Sin sorpresas.",
+            "**Cancelación de un clic.** Si el usuario quiere irse, se va. Sin retención forzada, sin llamadas, sin formularios disuasorios — declaración de confianza en el producto, no una pérdida.",
+            "**Soporte humano en horario real de Lima.** Aunque la IA atienda la mayoría de consultas, debe haber acceso a una persona cuando el caso lo requiera — en español peruano, con horario peruano, con conocimiento del contexto local.",
+            "**Comunicación honesta del estado del producto.** Si una rama está en beta, se dice. Si la IA tiene limitaciones, se dice. La RSE convierte la advertencia de sobreprometer la IA en Fase 1 en un compromiso comunicable y auditable."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia comercial",
+          "text": "Este frente genera el retorno más rápido en **word of mouth**. En el segmento bodega de Lima, la confianza viaja por barrio. Una experiencia limpia se traduce en referidos sin costo. Una experiencia turbia se traduce en pérdida de un cluster completo. Esa diferencia vale más que cualquier inversión en marketing pagado."
+        }
+      ]
+    },
+    {
+      "id": "frente-4",
+      "title": "Frente 4 · Educación y empleabilidad",
+      "emoji": "🎓",
+      "question": "¿Cómo convierte ERP Evolutivo su adopción en oportunidad social escalable?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Este frente es de mediano plazo y **no debe distraer recursos en pre-MVP**. Al volverse el estándar de gestión para PYMEs en LATAM, ERP Evolutivo genera demanda creciente de personas capacitadas para usarlo, configurarlo y enseñarlo. Esa demanda se puede convertir en oportunidad social."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Certificación gratuita para contadores y asesores tributarios.** Aprovecha el canal #1 del go to market. Capacitar gratuitamente a contadores los convierte en aliados naturales, mejora la asesoría que reciben las PYMEs y crea un cuerpo de profesionales con dominio del sistema. Lanzar cuando la primera rama esté validada — no antes.",
+            "**Inserción laboral para jóvenes en zonas de Lima con desempleo alto.** Capacitar a jóvenes de 18 a 25 años en uso avanzado y ofrecerles certificación oficial. Crea una base de *asesores ERP Evolutivo* para autoempleo o contratación directa por PYMEs. Co-financiable con cooperación internacional, fundaciones bancarias o el Ministerio de la Producción."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Ningún programa de RSE se anuncia sin **cronograma, dueño operativo y métrica de cierre**. Trigger concreto: el programa de certificación se lanza al alcanzar 1,000 usuarios activos de pago. Sin trigger, cualquier anuncio anticipado destruye reputación más rápido que el silencio."
+        }
+      ]
+    },
+    {
+      "id": "exclusiones",
+      "title": "Lo que NO entra en esta RSE",
+      "emoji": "🚫",
+      "question": "¿Qué prácticas comunes se excluyen deliberadamente y por qué?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Tres componentes habituales en declaraciones de RSE de startups se excluyen para mantener coherencia estratégica."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Medio ambiente como bandera principal.** El impacto ambiental directo de un SaaS sin operaciones físicas es marginal. Corresponde minimizar consumo de cómputo y preferir proveedores cloud con compromisos de energía limpia — pero pretender que el ambiente es el pilar central sería forzar una narrativa que no es la del negocio.",
+            "**Filantropía discrecional.** Donar utilidades a causas no relacionadas con el core confunde el mensaje y diluye la tesis de impacto endógena — la digitalización de PYMEs. No genera el efecto compuesto que produce concentrar el impacto en el producto.",
+            "**Voluntariado corporativo en pre-MVP.** Con un fundador único, declararlo es performativo. Se incorpora cuando el equipo supere las diez personas y tenga sentido cultural real — no antes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "riesgos",
+      "title": "Riesgos y supuestos débiles",
+      "emoji": "⚠️",
+      "question": "¿Dónde puede chocar esta declaración con la realidad operativa?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Tensión datos vs. ética.** El activo estratégico de *base de datos más grande de PYMEs de LATAM* y el compromiso de no explotar comercialmente los datos sin valor recíproco son tensiones reales. Requieren una política explícita sobre qué se monetiza, cómo se compensa al usuario y qué nunca se vende — escrita **antes** de tener presión de inversores.",
+            "**Frente 4 solo creíble si se ejecuta.** Una startup que promete certificación gratuita y nunca la lanza pierde reputación más rápido que una que nunca lo prometió. La regla es simple: no se anuncia ningún programa sin cronograma, dueño operativo y métrica de cierre.",
+            "**Tiempo del founder.** En pre-MVP, cada hora dedicada a estructurar RSE es una hora no dedicada a validar pricing o cerrar el primer contador aliado. La recomendación operativa: condensar los cuatro frentes en una página, publicarla en la web y volver a iterarla al cierre del MVP."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conexiones",
+      "title": "Conexiones con el planeamiento estratégico",
+      "emoji": "🔗",
+      "question": "¿Cómo refuerza la RSE los demás componentes del análisis?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Misión y visión:** el frente 1 (inclusión digital) es la traducción operativa del *para qué* del negocio. La consistencia entre ambos enunciados refuerza la credibilidad de los dos.",
+            "**Valores corporativos:** los frentes 2 y 3 (ética del dato y trato justo) son la ejecución directa de los valores de honestidad con el cliente, pago justo e inclusión digital con respeto. Si la RSE contradice a los valores, alguno de los dos está mal escrito.",
+            "**FODA cruzado:** la RSE bien ejecutada es una fortaleza defensiva ante competidores que pueden replicar features pero no pueden replicar **reputación construida con años de práctica coherente**. Es un foso lento pero profundo.",
+            "**Go to market:** el frente 4 (certificación de contadores) refuerza directamente el canal #1 de distribución. La RSE no es un costo — es un acelerador del go to market cuando se diseña bien.",
+            "**Modelo de ingresos:** la política de cancelación fácil genera **menos resistencia a entrar** en el segmento. El churn evitado por barreras forzadas es churn diferido, no churn evitado — mejor ganar la retención por valor entregado que por fricción de salida."
+          ]
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "🌱 Síntesis ejecutiva — RSE",
+    "lead": "La RSE de ERP Evolutivo **no es un anexo** — está cosida al modelo de negocio. La digitalización de PYMEs en LATAM, ejecutada con producto serio, pricing limpio, manejo ético del dato y trato justo al cliente, *es* responsabilidad social de fondo. No necesita ornamento. Necesita ejecución consistente y métricas verificables.",
+    "items": [
+      "**Frente 1 (núcleo):** inclusión digital de PYMEs — impacto medible sin presupuesto extra, desde el día uno",
+      "**Frente 2:** ética del dato — cinco compromisos auditables que blindan ante regulación y diferencian frente a competidores opacos",
+      "**Frente 3:** trato justo al cliente — operativa contraria al abuso histórico del segmento, con retorno directo en word of mouth",
+      "**Frente 4 (mediano plazo):** educación y empleabilidad — lanzar solo con trigger verificable (≥1,000 usuarios de pago) y cronograma real"
+    ],
+    "closing": "Los tres supuestos débiles — tensión datos vs. ética, credibilidad del frente 4 y tiempo del founder — requieren política escrita antes de escalar. La coherencia entre RSE, valores y modelo de negocio no es cosmética. Es el foso que los competidores no pueden copiar comprando un plan de nube."
+  }
+}
