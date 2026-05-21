@@ -1,0 +1,120 @@
+<!-- 5 Fuerzas de Porter -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="porter-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="porter-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="porter-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- ── Fuerzas ── -->
+  <div class="flex flex-col gap-3xl" data-testid="porter-forces">
+    @for (force of forces; track force.id) {
+      <app-card
+        [testId]="'porter-' + force.id"
+        [color]="forceColor(force.id)"
+        [title]="force.title"
+        [emoji]="force.emoji"
+        [question]="force.question">
+
+        <!-- Intensity badge — el indicador visual de la fuerza -->
+        <div class="flex items-center gap-md mb-lg flex-wrap" [attr.data-testid]="'porter-' + force.id + '-intensity'">
+          <span class="text-2xs uppercase tracking-title text-ink-subtle">Intensidad</span>
+          <app-badge
+            [color]="intensityBadge(force.intensity)"
+            [testId]="'porter-' + force.id + '-intensity-badge'">
+            {{ force.intensity }}
+          </app-badge>
+        </div>
+
+        @for (block of force.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              @if (block.label) {
+                <p class="text-2xs font-bold text-ink uppercase tracking-title mt-lg mb-sm">{{ block.label }}</p>
+              }
+              <app-list [testId]="'porter-' + force.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'porter-' + force.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'porter-' + force.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'porter-' + force.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- ── Síntesis ── -->
+  <div class="mt-5xl" data-testid="porter-synthesis">
+    <app-section variant="highlight" [title]="synthesis.title" testId="porter-synthesis-section">
+      @for (block of synthesis.blocks; track $index) {
+        @switch (block.type) {
+          @case ('paragraph') {
+            <p class="text-xs leading-body mb-lg" [innerHTML]="block.text | md"></p>
+          }
+          @case ('list') {
+            @if (block.label) {
+              <p class="text-2xs font-bold text-warning-fg-strong uppercase tracking-title mt-lg mb-sm">{{ block.label }}</p>
+            }
+            <app-list [testId]="'porter-synthesis-list-' + $index">
+              @for (item of block.items; track $index) {
+                <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+              }
+            </app-list>
+          }
+          @case ('note') {
+            <app-section
+              [variant]="sectionVariant('note')"
+              [testId]="'porter-synthesis-note-' + $index"
+              class="mt-lg">
+              <span [innerHTML]="block.text | md"></span>
+            </app-section>
+          }
+        }
+      }
+    </app-section>
+  </div>
+
+</div>

@@ -1,0 +1,272 @@
+{
+  "title": "🔬 5 Fuerzas de Porter",
+  "subtitle": "Análisis del microentorno competitivo — ¿en qué arena entra ERP Evolutivo y qué fuerzas definen su supervivencia?",
+  "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
+  "intro": "Antes de invertir capital semilla en desarrollo, hay que entender en qué arena se está entrando. El análisis de Porter **no se usa aquí como ejercicio académico, sino como filtro de decisión**. Lo que importa no es cuántas fuerzas son altas o bajas, sino cuáles definen si el negocio puede sobrevivir, cuáles definen el margen futuro y cuáles ponen en riesgo la propuesta antes incluso del lanzamiento. Este análisis evalúa la **industria de software de gestión para micro y pequeñas empresas en Lima**, no el entorno macro. Los actores reales son los que ya tocan o podrían tocar al bodeguero limeño con una solución de gestión.",
+  "forces": [
+    {
+      "id": "rivalidad",
+      "title": "Rivalidad entre competidores existentes",
+      "emoji": "⚔️",
+      "question": "¿Quiénes pelean ya por este segmento y con qué intensidad?",
+      "intensity": "MEDIA-ALTA",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El mercado de software de gestión para PYMEs en Perú **no es un mercado vacío**. Existen jugadores establecidos con marca, base de usuarios y capacidad operativa. La rivalidad debe analizarse por capa, porque cada capa de competidor pelea por un perfil distinto de cliente."
+        },
+        {
+          "type": "list",
+          "label": "Capa de competidores directos formales",
+          "items": [
+            "**Alegra** — competidor regional más activo en Perú y Colombia. Pricing desde ~S/ 15 mensuales con planes fijos. Es el referente cuando una PYME peruana busca en Google \"software de facturación\". Marca, soporte, integración SUNAT y base instalada. Es **el competidor que más se le parece a ERP Evolutivo en intención de mercado**, aunque no en arquitectura.",
+            "**Bsale** — opera en Chile y Perú con foco en punto de venta y facturación electrónica. Su fortaleza es la cobertura de comercios físicos, justamente donde está el beachhead. No tiene IA ni mecánica evolutiva, pero tiene algo más peligroso: **presencia comercial en terreno**.",
+            "**Contapyme y otros locales** — perfil más contable, sirven al contador antes que al dueño del negocio. Paradójicamente, eso les da **influencia sobre el canal** que ERP Evolutivo quiere usar.",
+            "**Odoo / Defontana** — opción ERP completo. Compiten en otra liga (PYMEs medianas, S/ 70–200/mes con implementador), pero pelean por la misma palabra clave en búsquedas y por la mente del contador que recomienda.",
+            "**SAP Business One / S10** — no son competencia real del beachhead. Referencia mental, no opción de compra para una bodega."
+          ]
+        },
+        {
+          "type": "list",
+          "label": "Capa de competidores informales pero dominantes",
+          "items": [
+            "**Excel, libreta, WhatsApp y Yape** funcionando como \"sistema improvisado\". Es la competencia real del día 1 — la opción ganadora hoy en el segmento. Pertenece más a Sustitutos, pero hay que nombrarla aquí porque define la psicología de compra del usuario."
+          ]
+        },
+        {
+          "type": "list",
+          "label": "Características estructurales de la rivalidad",
+          "items": [
+            "**Diferenciación entre jugadores formales:** moderada. Todos hacen facturación electrónica, todos ofrecen inventario básico, todos cobran mensualidad fija. Por eso la rivalidad se vuelve sensible al precio y al servicio.",
+            "**Crecimiento del mercado:** la presión SUNAT está expandiendo la base de clientes potenciales. Esto **reduce la rivalidad** — hay torta que ganar, no torta que repartir. Ventana favorable.",
+            "**Costos de cambio para el usuario:** bajos en teoría, altos en práctica. Migrar de Alegra a otro sistema es técnicamente fácil; el bodeguero que recién se acostumbró no quiere aprender otro. Protege al primero que entre y consolide.",
+            "**Barreras de salida:** bajas. Un competidor que no rinda puede abandonar Perú sin grandes pérdidas. La rivalidad puede ser **volátil, no estructural**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "La rivalidad no se gana peleando precio frente a Alegra. Se gana en la franja que **ningún competidor está atacando bien**: la microempresa que hoy usa Excel y aún no ha entrado al software formal. Alegra cobra desde el día 1, ERP Evolutivo no. Odoo asusta, ERP Evolutivo no. Bsale necesita visita comercial, ERP Evolutivo apuesta a autoservicio. La estrategia no es competir frontalmente — es **ocupar un espacio adyacente y vaciarlo antes de que reaccionen**."
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica.** El supuesto de \"los competidores tardarán 18–24 meses en copiar la mecánica evolutiva\" se sostiene solo si la mecánica se ejecuta bien. Si se ejecuta a medias, no es defensa, es un PowerPoint. Alegra tiene equipo, capital y base instalada — si percibe a ERP Evolutivo como amenaza real, puede lanzar un \"modo simple\" en **menos de 12 meses**. La ventaja temporal hay que usarla, no asumirla."
+        }
+      ]
+    },
+    {
+      "id": "nuevos-entrantes",
+      "title": "Amenaza de nuevos entrantes",
+      "emoji": "🚪",
+      "question": "¿Qué tan fácil es que aparezca otro jugador mañana?",
+      "intensity": "ALTA",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Construir un SaaS de gestión para PYMEs en 2026 no es lo que era en 2015. Las barreras de entrada se han desplomado y eso juega en contra de cualquier proyecto pre-MVP, incluido este. **Posiblemente el riesgo competitivo más subestimado** del modelo."
+        },
+        {
+          "type": "list",
+          "label": "Por qué la amenaza es alta",
+          "items": [
+            "**Costo de desarrollo bajo.** Con APIs de IA, frameworks modernos y servicios cloud por uso, un equipo pequeño puede construir un MVP comparable en seis meses. Lo que un fundador técnico puede hacer, otro fundador técnico también puede hacerlo.",
+            "**Acceso a infraestructura crítica equilibrado.** OSE, pasarelas Yape/Plin, proveedores LLM — ningún recurso es exclusivo. Cualquier entrante accede a lo mismo, en condiciones similares.",
+            "**Capital semilla disponible para esta categoría.** El ecosistema VC en LATAM sigue financiando SaaS B2SMB. ERP Evolutivo no es la única apuesta posible para un inversor que ve la oportunidad SUNAT.",
+            "**Falta de marcas dominantes.** Ningún jugador tiene una marca tan fuerte en bodega que actúe como barrera psicológica. Facilita la entrada — bueno para ERP Evolutivo, pero también para cualquier otro."
+          ]
+        },
+        {
+          "type": "list",
+          "label": "Tipos de entrantes a vigilar",
+          "items": [
+            "**Fintechs verticales** — Niubiz, Izipay, incluso Yape mismo. Cualquiera podría agregar \"facturación + gestión básica\" a su producto. Ya están adentro del bodeguero, ya manejan sus pagos, ya tienen su confianza. **Si Yape lanza \"Yape Negocios\" con factura electrónica integrada, ERP Evolutivo queda en una posición muy difícil.** Es la amenaza individual más seria del análisis.",
+            "**Software contable existente** — Concar, NoyaSoft o cualquier sistema contable peruano puede agregar un frontend simple para el cliente final del contador.",
+            "**Startups extranjeras** — Tiendanube, Treinta (Colombia), Mango Life. Ya operan en LATAM, capital ya levantado, pueden entrar a Perú agresivamente.",
+            "**Players globales con IA** — cualquier SaaS internacional con capa de IA puede traducirse a contexto peruano. Barrera idiomática nula, barrera regulatoria (SUNAT) resoluble en 3–6 meses con un partner OSE."
+          ]
+        },
+        {
+          "type": "list",
+          "label": "Barreras de entrada que sí existen",
+          "items": [
+            "**Conocimiento profundo del segmento.** Saber qué necesita realmente una bodega limeña no se compra — requiere trabajo de campo. Barrera real pero blanda.",
+            "**Cumplimiento SUNAT y certificación OSE.** Toma tiempo pero no es insuperable.",
+            "**Red de contadores.** Solo si ERP Evolutivo logra construirla y volverla exclusiva. Hoy no existe — es promesa.",
+            "**Datos acumulados de PYMEs.** Única barrera estructural de largo plazo. Pero solo se activa después de tener miles de usuarios, no antes."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "La amenaza de entrantes obliga a moverse rápido. La ventana competitiva **no es de 18–24 meses, es de 12 meses** para tener producto funcionando y primeros usuarios pagando. Más allá, el riesgo de que un fintech o competidor regional ocupe el espacio es real."
+        },
+        {
+          "type": "note",
+          "text": "**Riesgo subestimado: Yape como potencial entrante directo.** Hoy procesa pagos de millones de bodegas y tiene la relación más profunda con el segmento. Si BCP decide convertir a Yape en plataforma de gestión, no en simple pasarela, **ningún ERP independiente sobrevive en bodegas**. Esto debe monitorearse mensualmente."
+        }
+      ]
+    },
+    {
+      "id": "proveedores",
+      "title": "Poder de negociación de los proveedores",
+      "emoji": "🔗",
+      "question": "¿Quién nos puede ahorcar desde el lado de los inputs?",
+      "intensity": "MEDIA",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "ERP Evolutivo depende de un conjunto acotado de proveedores. La pregunta no es cuántos, sino **qué pasa si uno falla**. El poder está concentrado en pocos puntos críticos."
+        },
+        {
+          "type": "list",
+          "label": "Proveedores críticos",
+          "items": [
+            "**Proveedor OSE para facturación electrónica** — varios en Perú (Nubefact, Efact, Facturador SUNAT, otros). Hay competencia real, cambio operativamente viable. Poder de negociación: **BAJO**. Punto manejable.",
+            "**Pasarelas Yape y Plin** — críticas y diferentes. Yape pertenece a BCP, Plin a un consorcio de bancos. Su poder es **asimétrico**: ERP Evolutivo necesita integrarse a ellos, ellos no necesitan a ERP Evolutivo. Comisiones, exclusividades y SLA los definen ellos. El plan de \"ingresos secundarios por comisiones transaccionales\" depende casi enteramente de su voluntad comercial. Poder de negociación: **ALTO**. Punto delicado.",
+            "**Proveedores LLM (OpenAI, Anthropic)** — hay competencia, precios bajaron un orden de magnitud, existen modelos open-source viables. La IA básica offline reduce la dependencia. Poder de negociación: **BAJO a MEDIO**. Bien gestionado en la estrategia actual.",
+            "**Infraestructura cloud (AWS, GCP, Azure)** — commoditizado, intercambiable, sin poder real. Poder de negociación: **BAJO**.",
+            "**Talento técnico en Lima** — escasez relativa de devs senior con experiencia SaaS. Afecta costos al escalar el equipo. Poder de negociación del talento: **MEDIO**. No bloquea, encarece.",
+            "**Contadores como \"proveedores de canal\"** — no son proveedor tradicional, pero funcionalmente lo son: proveen el acceso al cliente. Su poder es **ALTO** mientras sean el canal principal. Conecta con el poder de los clientes."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El punto frágil real es la dependencia de **Yape y Plin como pasarelas**. Si la comisión transaccional secundaria es parte importante del plan de ingresos, hay que validar pronto las condiciones contractuales que estos actores ofrecen a integradores. No basta con asumir que \"se integran\" — hay que ver con qué comisión, con qué exclusividad, con qué SLA."
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica.** Llamar a OSE/SUNAT \"alianza estratégica\" es impreciso. **SUNAT no es aliado, es regulador.** La OSE es proveedor commodity. No confundir relación operativa con alianza, porque eso induce sensación falsa de fortaleza."
+        }
+      ]
+    },
+    {
+      "id": "clientes",
+      "title": "Poder de negociación de los clientes",
+      "emoji": "👥",
+      "question": "¿Cuánto puede empujarnos al suelo el cliente, pese a ser pequeño?",
+      "intensity": "ALTA",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El cliente objetivo es el bodeguero o microempresario limeño. Suena pequeño, suena débil. **No lo es.** Probablemente la fuerza más decisiva para el éxito o fracaso del negocio."
+        },
+        {
+          "type": "list",
+          "label": "Por qué el poder del cliente es alto, a pesar de su tamaño",
+          "items": [
+            "**Cero costo de cambio respecto al status quo.** Excel y libreta son gratis. Cualquier propuesta paga compite contra cero. El cliente no necesita negociar — simplemente no compra y sigue con lo que tiene.",
+            "**Sensibilidad extrema al precio.** El margen operativo de una bodega típica en Lima es estrecho. S/ 30 mensuales no es trivial. El cliente decide con criterio de inversionista exigente, aunque no lo articule así.",
+            "**Baja diferenciación percibida.** Para el bodeguero, todos los sistemas se parecen. No distingue arquitectura modular de plan fijo — ve \"una app más que le quita tiempo\". Puede elegir por cualquier criterio (recomendación del vecino, color de la interfaz, precio del primer mes).",
+            "**Decisor único pero poco sofisticado.** El dueño decide y paga — ciclo corto, eso es bueno. Pero tiene baja alfabetización digital y baja tolerancia a la fricción. **Si en 5 minutos no entiende el producto, se va.**",
+            "**Volumen individual bajo, volumen agregado alto.** Ningún bodeguero solo tiene poder, pero el comportamiento agregado define todo. Si los primeros 50 no recomiendan al vecino, no hay flywheel.",
+            "**Información asimétrica favorable al cliente.** WhatsApp, TikTok, ferias de barrio. La información negativa se propaga más rápido que la positiva. **Un mal review en un grupo de bodegueros del distrito vale por 50 demos.**"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Este poder pone bajo presión dos decisiones clave del modelo. El **pricing por uso** (modelo C de umbral mensual) es una decisión defensiva contra el alto poder del cliente — está bien pensada. La duda es si \"S/ 18 al mes por una rama\" es comprensible cuando el cliente ni siquiera entiende qué es una rama. **La traducción comercial del concepto es tan importante como la mecánica misma.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "La **promesa de IA asesora** es la segunda decisión expuesta. Si entrega tips genéricos, el cliente se sentirá engañado, dirá \"no sirve\" y eso se propagará. Si entrega valor real desde el primer día (interpretación simple de sus propios números), eso también se propagará. La asimetría entre boca a boca positivo y negativo no es 1 a 1, es más cercana a **1 a 5**. Un cliente decepcionado pesa cinco veces más que uno satisfecho."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El alto poder del cliente significa que ERP Evolutivo **no puede darse el lujo de un MVP feo o un onboarding confuso**. En mercados donde el cliente tiene bajo poder, el MVP imperfecto se tolera. Aquí no. Esto eleva la barra técnica del lanzamiento por encima de lo que típicamente sugiere la literatura lean startup."
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica.** El concepto de \"primer momento wow en la primera sesión\" no es marketing — es diseño obligatorio. Sin él, el cliente vuelve a Excel y no regresa. La inversión en UX especializado y prompts IA debe estar en el día 1, no en la Fase 2."
+        }
+      ]
+    },
+    {
+      "id": "sustitutos",
+      "title": "Amenaza de productos y servicios sustitutos",
+      "emoji": "🔄",
+      "question": "¿Qué hace hoy el bodeguero que reemplaza lo que ofrecemos?",
+      "intensity": "MUY ALTA",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aquí está la realidad incómoda. **El competidor real de ERP Evolutivo no es Alegra, ni Bsale, ni Odoo.** Es Excel, la libreta y la combinación informal de WhatsApp + Yape. Es la fuerza dominante del microentorno."
+        },
+        {
+          "type": "list",
+          "label": "Sustitutos reales",
+          "items": [
+            "**Excel y Google Sheets.** Gratis, conocidos, suficientes para el 80% del control diario que necesita una bodega chica. El bodeguero que sabe Excel mínimo siente que ya \"tiene su sistema\".",
+            "**Cuaderno físico.** No es broma — sigue siendo dominante en el subsegmento más pequeño. Para el dueño que aún no factura electrónicamente, no necesita más.",
+            "**WhatsApp + Yape + Plin como sistema operativo de facto.** Pedidos por WhatsApp, cobros por Yape, control mental. Es un sistema porque funciona en conjunto, aunque no fue diseñado para eso. **El sustituto más subestimado** — ya cumple varias funciones que ERP Evolutivo planea integrar.",
+            "**Apps de gestión gratuitas tipo Treinta o Cuenti.** Particularmente peligrosas porque ya prepararon al microempresario para usar una app de gestión sencilla, y son gratuitas o muy baratas. **Han hecho parte del trabajo de evangelización.**",
+            "**Servicios manuales del contador.** Muchos bodegueros simplemente entregan el bolsón de papeles al contador una vez al mes y dejan que él gestione lo formal. Contratar un sistema sería duplicar costo."
+          ]
+        },
+        {
+          "type": "list",
+          "label": "Por qué esta amenaza es muy alta",
+          "items": [
+            "**Costo de los sustitutos cero o casi cero.** Excel y cuaderno son gratis. Cuenti y similares también. ERP Evolutivo solo gana cuando el sustituto duele — mientras no duela visiblemente, no hay decisión de compra.",
+            "**Funcionalidad \"suficiente\" del sustituto.** Aquí está la trampa. Suficiente no significa óptimo. El bodeguero sabe que Excel no es ideal, pero **le alcanza**. La diferencia entre suficiente y mejor es donde se pierden la mayoría de ventas. No basta ser mejor — hay que ser **indispensable**.",
+            "**Resistencia psicológica al cambio.** Aprender un sistema nuevo es un costo emocional y de tiempo. Para una persona con jornada de 12 horas, ese costo es enorme. El sustituto, aunque inferior, gana por inercia.",
+            "**SUNAT como activador parcial.** La obligación de facturación electrónica obliga a digitalizar al menos esa función — rompe la inercia, pero solo parcialmente. El bodeguero puede usar el facturador gratuito de SUNAT o un OSE básico y seguir manejando todo lo demás en Excel. SUNAT empuja al usuario a un punto, pero **no hasta ERP Evolutivo**."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "La batalla central **no es contra Alegra, es contra Excel**. Y esa batalla se gana solo de una forma: demostrando valor inmediato y tangible en los primeros 7 días de uso. No se gana con features — se gana con **momentos de claridad** (\"vendiste 12% más este mes que el anterior\", \"tu producto más vendido es X\"). El usuario debe sentir que aprendió algo de su negocio que no sabía. Si en una semana no logra eso, vuelve a Excel. Esto refuerza por qué la IA básica del día 1 debe ejecutarse bien: **no es un complemento estético, es la herramienta principal para vencer al sustituto**."
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica.** La narrativa del producto mide la competencia frente a Odoo, Alegra y Bsale. Esa es la competencia que el equipo ve. **La competencia que el cliente ve es Excel.** Esa diferencia de perspectiva tiene que cerrarse en la comunicación de la propuesta de valor. Si la landing habla de \"ERP modular con IA asesora\" pero el bodeguero busca \"cómo controlar mis ventas\", hay un desalineamiento que cuesta conversiones."
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "📊 Veredicto integrado del microentorno",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "La industria es **atractiva en el mediano plazo, pero exigente en el corto plazo**. Atractiva por crecimiento (digitalización forzada por SUNAT, expansión del mercado SaaS B2SMB en LATAM, caída de costos de IA). Exigente porque **cuatro de las cinco fuerzas presionan al margen y a la velocidad**."
+      },
+      {
+        "type": "list",
+        "label": "Ranking de fuerzas por impacto sobre el negocio",
+        "items": [
+          "**1ª — Sustitutos.** Fuerza dominante: define el costo real de adopción. Mientras Excel siga siendo \"suficiente\", ningún ERP gana.",
+          "**2ª — Poder de los clientes.** Define el techo de precio, la exigencia de UX y la velocidad de propagación reputacional.",
+          "**3ª — Nuevos entrantes.** Define la ventana competitiva: no son 18–24 meses, son **12 meses** para tener tracción mínima defensible.",
+          "**4ª — Rivalidad existente.** Importante pero menos urgente: los competidores formales no atacan agresivamente el subsegmento bodega.",
+          "**5ª — Proveedores.** Manejable en general, con un punto crítico en Yape y Plin."
+        ]
+      },
+      {
+        "type": "list",
+        "label": "Decisiones que el análisis fuerza tomar antes de codificar",
+        "items": [
+          "**Validar disposición real a pagar frente al sustituto Excel**, no en abstracto. La pregunta correcta no es \"¿pagarías S/ 18 al mes?\" sino \"**¿abandonarías Excel por S/ 18 al mes?**\". Son preguntas distintas con respuestas distintas.",
+          "**Definir cómo se neutraliza el riesgo Yape.** Pensar desde ya qué se construye que \"Yape Negocios\" no pueda construir igual. La respuesta probable: la mecánica evolutiva y la IA asesora con datos verticales, no la facturación.",
+          "**Aceptar que el canal contadores no es defensa contra entrantes**, solo es eficiencia de adquisición. La barrera de entrada real son los datos y la mecánica de producto, no la red comercial.",
+          "**Subir el listón del MVP.** Dado el alto poder del cliente y la fuerza de los sustitutos, el MVP no puede ser feo ni confuso. Tiene que entregar un *momento wow* en la primera sesión."
+        ]
+      },
+      {
+        "type": "list",
+        "label": "Hipótesis estratégicas a priorizar para validación inmediata",
+        "items": [
+          "**H1 — El bodeguero abandona Excel solo si percibe ahorro de tiempo ≥ 30 min diarios o ingreso adicional medible.** Sin esto, no migra.",
+          "**H2 — La IA básica genera el momento de claridad sin fine-tuning ni datos sectoriales propios.** Si no lo logra con prompting estructurado, el diferenciador del día 1 se cae.",
+          "**H3 — El contador acepta recomendar la herramienta sin sentir amenaza a su rol.** Si la siente, el canal se cierra antes de abrirse."
+        ]
+      },
+      {
+        "type": "note",
+        "text": "**Datos faltantes que introducen sesgo.** Este análisis se sustenta en información cualitativa y conocimiento de mercado. Antes de fijar pricing o canal definitivos, la siguiente etapa de research debe levantar: número de competidores con presencia comercial activa en Lima por distrito, participación de mercado aproximada de Alegra y Bsale en bodegas limeñas, tasa real de adopción de Cuenti / Treinta / equivalentes en Perú, y condiciones comerciales públicas de integración con Yape y Plin para terceros. Sin esto, opera con supuestos razonables pero no validados."
+      }
+    ]
+  }
+}

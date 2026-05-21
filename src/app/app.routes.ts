@@ -29,6 +29,14 @@ export const routes: Routes = [
             m => m.PestelComponent
           ),
         title: 'PESTEL — Análisis Estratégico'
+      },
+      {
+        path: 'porter',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/porter/porter.component').then(
+            m => m.PorterComponent
+          ),
+        title: '5 Fuerzas de Porter — Análisis Estratégico'
       }
     ]
   },
