@@ -7,11 +7,11 @@
       "emoji": "🤝",
       "question": "¿Qué no puedo o no me conviene hacer solo?",
       "items": [
-        { "tag": "FASE 1",   "text": "OSE / SUNAT: proveedor de facturación electrónica homologado — sin esto no podemos operar legalmente en Perú" },
-        { "tag": "FASE 1",   "text": "Yape / Plin: pasarela de cobro dominante en bodegas limeñas — integración crítica para el flujo de ventas del beachhead" },
-        { "tag": "FASE 1",   "text": "Red de contadores aliados: 5–10 contadores activos en Lima que ya atienden bodegas — son el Canal #1 de distribución" },
-        { "tag": "FASE 2+",  "text": "Proveedores LLM (OpenAI / Anthropic) para la IA avanzada — necesario cuando lleguen usuarios premium" },
-        { "tag": "FASE 2+",  "text": "Incubadoras y cámaras de comercio PYME — para escalar acceso a early adopters en otras ciudades" }
+        { "tag": "FASE 1",   "text": "**OSE / SUNAT:** proveedor de facturación electrónica homologado — sin esto no podemos operar legalmente en Perú" },
+        { "tag": "FASE 1",   "text": "**Yape / Plin:** pasarela de cobro dominante en bodegas limeñas — integración crítica para el flujo de ventas del beachhead" },
+        { "tag": "FASE 1",   "text": "**Red de contadores aliados:** 5–10 contadores activos en Lima que ya atienden bodegas — son el Canal #1 de distribución" },
+        { "tag": "FASE 2+",  "text": "**Proveedores LLM** (OpenAI / Anthropic) para la IA avanzada — necesario cuando lleguen usuarios premium" },
+        { "tag": "FASE 2+",  "text": "**Incubadoras y cámaras de comercio PYME** — para escalar acceso a early adopters en otras ciudades" }
       ]
     },
     {
@@ -20,12 +20,12 @@
       "emoji": "⚙️",
       "question": "¿Qué tenemos que hacer sí o sí para entregar la propuesta de valor?",
       "items": [
-        { "tag": "FASE 1",   "text": "Desarrollar módulo Ventas + Inventario básico para bodegas (flujo completo en <10 min)" },
-        { "tag": "FASE 1",   "text": "Crear onboarding \"Soy bodega\" — setup guiado sin soporte humano" },
-        { "tag": "FASE 1",   "text": "Integrar facturación electrónica SUNAT y pasarela Yape/Plin" },
-        { "tag": "FASE 2+",  "text": "Motor de triggers de progresión (detecta cuándo activar el siguiente módulo)" },
-        { "tag": "FASE 2+",  "text": "Prompts IA por sector y nivel de madurez del negocio" },
-        { "tag": "FASE 2+",  "text": "Contenido educativo (TikTok, YouTube) para escalar captación orgánica" }
+        { "tag": "FASE 1",   "text": "Desarrollar **módulo Ventas + Inventario básico** para bodegas (flujo completo en <10 min)" },
+        { "tag": "FASE 1",   "text": "Crear **onboarding \"Soy bodega\"** — setup guiado sin soporte humano" },
+        { "tag": "FASE 1",   "text": "Integrar **facturación electrónica SUNAT** y pasarela Yape/Plin" },
+        { "tag": "FASE 2+",  "text": "Motor de **triggers de progresión** (detecta cuándo activar el siguiente módulo)" },
+        { "tag": "FASE 2+",  "text": "**Prompts IA por sector** y nivel de madurez del negocio" },
+        { "tag": "FASE 2+",  "text": "**Contenido educativo** (TikTok, YouTube) para escalar captación orgánica" }
       ]
     },
     {
@@ -34,12 +34,12 @@
       "emoji": "🔧",
       "question": "¿Sin qué recursos no podemos operar?",
       "items": [
-        { "tag": "FASE 1",   "text": "2 devs full-stack web — sin mobile nativa aún; app web responsive es suficiente para bodegas" },
-        { "tag": "FASE 1",   "text": "1 UX especializado en usuarios no técnicos con baja alfabetización digital" },
-        { "tag": "FASE 1",   "text": "Prompts IA para bodegas — base de conocimiento acotada a comercio minorista (no todos los sectores)" },
-        { "tag": "FASE 1",   "text": "Capital semilla para MVP + primeros 100 usuarios activos en Lima" },
-        { "tag": "FASE 2+",  "text": "App móvil nativa + growth marketer LATAM para escalar a otras ciudades" },
-        { "tag": "FASE 2+",  "text": "Pipeline IA multi-sector y motor de reglas de progresión completo" }
+        { "tag": "FASE 1",   "text": "**2 devs full-stack web** — sin mobile nativa aún; app web responsive es suficiente para bodegas" },
+        { "tag": "FASE 1",   "text": "**1 UX** especializado en usuarios no técnicos con baja alfabetización digital" },
+        { "tag": "FASE 1",   "text": "**Prompts IA para bodegas** — base de conocimiento acotada a comercio minorista (no todos los sectores)" },
+        { "tag": "FASE 1",   "text": "**Capital semilla** para MVP + primeros 100 usuarios activos en Lima" },
+        { "tag": "FASE 2+",  "text": "**App móvil nativa** + growth marketer LATAM para escalar a otras ciudades" },
+        { "tag": "FASE 2+",  "text": "**Pipeline IA multi-sector** y motor de reglas de progresión completo" }
       ]
     },
     {
@@ -47,26 +47,26 @@
       "title": "Propuesta de Valor",
       "emoji": "💎",
       "question": "¿Qué problema resuelvo y por qué me elegirían?",
-      "valueStatement": "Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.",
+      "valueStatement": "Las PYMEs en LATAM gestionan su negocio con libretas, Excel y WhatsApp. O pagan por ERPs complejos que no usan ni al 20%. **ERP Evolutivo les da solo lo que necesitan hoy, con una IA que les dice qué hacer mañana.**",
       "comparisons": [
         { "competitor": "Libreta y Excel", "text": "Digitalización sin trauma, empiezas gratis, el sistema te guía paso a paso" },
-        { "competitor": "Odoo / Otros",    "text": "IA asesora integrada + solo pagas módulos que usas (no paquetes fijos)" },
+        { "competitor": "Odoo / Otros",    "text": "**IA asesora integrada** + solo pagas módulos que usas (no paquetes fijos)" },
         { "competitor": "SAP / S10",        "text": "Sin implementador, sin meses de capacitacion." }
       ],
       "gameMechanic": {
         "title": "🎮 Mecánica de videojuego",
-        "text": "Igual que en un juego de estrategia, arrancas con lo básico y vas desbloqueando nuevas herramientas conforme avanzas. Nuestros usuarios crecieron jugando así, entienden niveles, logros y progresión sin necesidad de manual. Esa misma lógica aplicada a su negocio hace que adoptar un ERP se sienta natural, no abrumador."
+        "text": "Igual que en un juego de estrategia, **arrancas con lo básico y vas desbloqueando nuevas herramientas conforme avanzas**. Nuestros usuarios crecieron jugando así, entienden niveles, logros y progresión sin necesidad de manual. Esa misma lógica aplicada a su negocio hace que adoptar un ERP se sienta natural, no abrumador."
       },
       "entryModule": {
         "title": "🚀 Módulo de arranque",
         "primary": "💰 Ventas + Inventario básico + Facturación SUNAT",
-        "secondary": "Para bodega/comercio minorista en Lima — setup en <10 min, gratis para empezar"
+        "secondary": "Para bodega/comercio minorista en Lima — setup en <10 min, **gratis para empezar**"
       },
       "items": [
         { "label": "Crece contigo", "text": "ramas que se activan según TU camino real, como subir de nivel" },
         { "label": "IA siempre incluida", "text": "asesorando cuando tu negocio lo necesita" },
-        { "text": "El sistema sugiere tu siguiente paso basado en tu contexto" },
-        { "text": "Como tener un asesor de negocio 24/7 que conoce tu sector" }
+        { "text": "El sistema sugiere tu **siguiente paso** basado en tu contexto" },
+        { "text": "**Como tener un asesor de negocio 24/7** que conoce tu sector" }
       ]
     },
     {
@@ -76,8 +76,8 @@
       "question": "¿Cómo los capto, retengo y hago que crezcan conmigo?",
       "items": [
         { "label": "Captación",   "text": "Registro freemium sin tarjeta + onboarding guiado por tipo de negocio (\"Soy bodega\", \"Soy restaurante\"...)" },
-        { "label": "Retención",   "text": "Celebración de hitos del negocio, comunidad de emprendedores por sector, soporte por chat IA contextual" },
-        { "label": "Expansión",   "text": "IA proactiva: \"Tu negocio ya tiene 3 empleados, activa la rama Equipo\" el sistema vende el upgrade naturalmente" },
+        { "label": "Retención",   "text": "Celebración de hitos del negocio, comunidad de emprendedores por sector, soporte por **chat IA contextual**" },
+        { "label": "Expansión",   "text": "**IA proactiva: \"Tu negocio ya tiene 3 empleados, activa la rama Equipo\"** el sistema vende el upgrade naturalmente" },
         { "label": "Recuperación","text": "Alertas cuando el usuario deja de entrar + resumen de lo que se perdió" }
       ]
     },
@@ -87,12 +87,12 @@
       "emoji": "📡",
       "question": "¿Cómo me conocen, cómo compran y cómo reciben el producto?",
       "items": [
-        { "tag": "CANAL #1", "text": "Contadores y asesores tributarios que ya visitan a bodegas — recomendación directa de confianza" },
-        { "tag": "CANAL #2", "text": "TikTok / Instagram con tips de negocio PYME — captación orgánica de bajo costo" },
-        { "tag": "CANAL #3", "text": "Programa de referidos entre dueños de negocio del mismo barrio" },
+        { "tag": "CANAL #1", "text": "**Contadores y asesores tributarios** que ya visitan a bodegas — recomendación directa de confianza" },
+        { "tag": "CANAL #2", "text": "**TikTok / Instagram** con tips de negocio PYME — captación orgánica de bajo costo" },
+        { "tag": "CANAL #3", "text": "**Programa de referidos** entre dueños de negocio del mismo barrio" },
         { "label": "Evalúan",   "text": "Landing con demo interactiva y testimonios por sector (bodega, peluquería...)" },
         { "label": "Reciben",   "text": "App web responsive + app móvil nativa" },
-        { "label": "Recompran", "text": "IA proactiva in-app que sugiere el siguiente módulo cuando el negocio lo necesita" }
+        { "label": "Recompran", "text": "**IA proactiva in-app** que sugiere el siguiente módulo cuando el negocio lo necesita" }
       ]
     },
     {
@@ -100,13 +100,13 @@
       "title": "Segmentos de Clientes",
       "emoji": "👥",
       "question": "¿Para quién es? ¿Quién paga? ¿Quién usa?",
-      "meta": "📍 Perú primero (Lima), luego LATAM · Dueño = usuario = pagador",
+      "meta": "📍 Perú primero (Lima), luego LATAM · **Dueño = usuario = pagador**",
       "beachhead": {
         "badge": "BEACHHEAD",
         "label": "Foco de lanzamiento",
-        "description": "1–3 personas · Lima · Hoy usa libreta o Excel · El dolor más inmediato: no saber cuánto vendió ni facturar bien a SUNAT",
+        "description": "1–3 personas · Lima · Hoy usa libreta o Excel · El dolor más inmediato: **no saber cuánto vendió ni facturar bien a SUNAT**",
         "items": [
-          "🛒 Bodegas y comercios minoristas — 400K+ solo en Lima, alta frecuencia de transacciones, dolor claro",
+          "🛒 **Bodegas y comercios minoristas** — 400K+ solo en Lima, alta frecuencia de transacciones, dolor claro",
           "💇 Peluquerías, barberías, spas — agenda + cobro, decisión de compra rápida",
           "🌱 Emprendedores unipersonales — primeras ventas, necesitan orden sin complejidad"
         ]
@@ -138,14 +138,14 @@
       "emoji": "💸",
       "question": "¿Cuáles son los gastos principales? ¿Los ingresos los superan?",
       "items": [
-        { "tag": "FIJO",     "text": "Equipo técnico: devs full-stack, QA, UX, DevOps; el mayor costo fijo (~60% del total)" },
-        { "tag": "FIJO",     "text": "Infraestructura base: servidores cloud, CDN, bases de datos, CI/CD" },
-        { "tag": "FIJO",     "text": "Soporte y CS: equipo de soporte, documentación, community manager" },
-        { "tag": "VARIABLE", "text": "IA avanzada: APIs LLM por consumo; crece con usuarios premium (la IA básica offline es costo ~0)" },
-        { "tag": "VARIABLE", "text": "Adquisición: marketing digital, contenido educativo, eventos y ferias PYME" },
-        { "tag": "VARIABLE", "text": "Compliance: facturación electrónica SUNAT, certificaciones de seguridad" }
+        { "tag": "FIJO",     "text": "**Equipo técnico:** devs full-stack, QA, UX, DevOps; el mayor costo fijo (~60% del total)" },
+        { "tag": "FIJO",     "text": "**Infraestructura base:** servidores cloud, CDN, bases de datos, CI/CD" },
+        { "tag": "FIJO",     "text": "**Soporte y CS:** equipo de soporte, documentación, community manager" },
+        { "tag": "VARIABLE", "text": "**IA avanzada:** APIs LLM por consumo; crece con usuarios premium (la IA básica offline es costo ~0)" },
+        { "tag": "VARIABLE", "text": "**Adquisición:** marketing digital, contenido educativo, eventos y ferias PYME" },
+        { "tag": "VARIABLE", "text": "**Compliance:** facturación electrónica SUNAT, certificaciones de seguridad" }
       ],
-      "note": "📐 Viabilidad: costos de IA básica ~0 (offline). Costo de IA avanzada crece solo cuando el usuario ya paga tier premium. El modelo se autofinancia por nivel."
+      "note": "📐 **Viabilidad:** costos de IA básica ~0 (offline). Costo de IA avanzada crece solo cuando el usuario ya paga tier premium. El modelo se autofinancia por nivel."
     },
     {
       "id": "fuentes-ingreso",
@@ -153,14 +153,14 @@
       "emoji": "💰",
       "question": "¿Cómo gano dinero? ¿Hay ingresos recurrentes? ¿Cuánto están dispuestos a pagar?",
       "items": [
-        { "tag": "PRINCIPAL",  "text": "Suscripción por ramas activas: pagas solo los módulos que usas (S/ 29–199/mes) ingreso recurrente mensual, predecible" },
-        { "tag": "PRINCIPAL",  "text": "IA Avanzada (upsell natural): cuando el negocio crece y necesita predicciones, estrategia y análisis con LLM, el usuario ya percibe el valor" },
-        { "tag": "SECUNDARIO", "text": "Freemium → conversión: núcleo gratis + IA básica offline ilimitada → el propio crecimiento del negocio lo lleva a pagar" },
-        { "tag": "SECUNDARIO", "text": "Comisiones transaccionales: % sobre cobros procesados vía pasarelas integradas (Yape, Mercado Pago)" },
-        { "tag": "FUTURO",     "text": "Marketplace: plantillas de negocio, reportes sectoriales, conectores con terceros" },
-        { "tag": "FUTURO",     "text": "Inteligencia sectorial: datos anonimizados y agregados de PYMEs para consultoras e inversores" }
+        { "tag": "PRINCIPAL",  "text": "**Suscripción por ramas activas:** pagas solo los módulos que usas (S/ 29–199/mes) ingreso recurrente mensual, predecible" },
+        { "tag": "PRINCIPAL",  "text": "**IA Avanzada (upsell natural):** cuando el negocio crece y necesita predicciones, estrategia y análisis con LLM, el usuario ya percibe el valor" },
+        { "tag": "SECUNDARIO", "text": "**Freemium → conversión:** núcleo gratis + IA básica offline ilimitada → el propio crecimiento del negocio lo lleva a pagar" },
+        { "tag": "SECUNDARIO", "text": "**Comisiones transaccionales:** % sobre cobros procesados vía pasarelas integradas (Yape, Mercado Pago)" },
+        { "tag": "FUTURO",     "text": "**Marketplace:** plantillas de negocio, reportes sectoriales, conectores con terceros" },
+        { "tag": "FUTURO",     "text": "**Inteligencia sectorial:** datos anonimizados y agregados de PYMEs para consultoras e inversores" }
       ],
-      "note": "💡 Referencia de mercado: Odoo cobra S/ 70–200/mes por funcionalidad fija. Nosotros cobramos igual o menos, pero el usuario solo paga lo que usa."
+      "note": "💡 **Referencia de mercado:** Odoo cobra S/ 70–200/mes por funcionalidad fija. Nosotros cobramos igual o menos, pero el usuario solo paga lo que usa."
     }
   ]
 }

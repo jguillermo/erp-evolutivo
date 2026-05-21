@@ -2,7 +2,7 @@
   "title": "🌍 Análisis PESTEL",
   "subtitle": "Lectura del macroentorno — ¿qué acelera o frena la adopción del beachhead (bodegas en Lima)?",
   "backLink": { "label": "← Análisis Estratégico", "route": "/analisis-estrategico" },
-  "intro": "ERP Evolutivo no es un SaaS más. Es una apuesta a que un microempresario peruano, con baja alfabetización digital y márgenes muy ajustados, va a digitalizar su negocio durante los próximos tres años. El PESTEL no es un trámite académico: es la lectura del terreno en el que esa apuesta se gana o se pierde.",
+  "intro": "ERP Evolutivo no es un SaaS más. Es una apuesta a que un microempresario peruano, con baja alfabetización digital y márgenes muy ajustados, va a digitalizar su negocio durante los próximos tres años. **El PESTEL no es un trámite académico: es la lectura del terreno en el que esa apuesta se gana o se pierde.**",
   "factors": [
     {
       "id": "politico",
@@ -12,23 +12,23 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "El Perú vive un ciclo crónico de inestabilidad política — cambios de presidente, congresos fragmentados, ruido permanente. Para el bodeguero limeño ese ruido es de fondo: su negocio sigue operando bajo cualquier gobierno y su decisión de adoptar un sistema digital no depende de quién esté en Palacio."
+          "text": "El Perú vive un ciclo crónico de inestabilidad política — cambios de presidente, congresos fragmentados, ruido permanente. Para el **bodeguero limeño** ese ruido es de fondo: su negocio sigue operando bajo cualquier gobierno y su decisión de adoptar un sistema digital no depende de quién esté en Palacio."
         },
         {
           "type": "paragraph",
-          "text": "Lo que sí importa, y mucho, es la dirección política sostenida hacia la formalización. SUNAT, con apoyo transversal de izquierdas y derechas (ambos sectores quieren más recaudación), ha venido bajando el umbral de obligatoriedad de la facturación electrónica. Este vector no se revierte con cambios de gobierno — es viento de cola estructural para ERP Evolutivo y no debe confundirse con la volatilidad política superficial."
+          "text": "Lo que sí importa, y mucho, es la **dirección política sostenida hacia la formalización**. SUNAT, con apoyo transversal de izquierdas y derechas (ambos sectores quieren más recaudación), ha venido bajando el umbral de obligatoriedad de la facturación electrónica. Este vector **no se revierte con cambios de gobierno** — es viento de cola estructural para ERP Evolutivo y no debe confundirse con la volatilidad política superficial."
         },
         {
           "type": "list",
           "items": [
-            "Programas PYME activos: Ministerio de la Producción (\"Tu Empresa\"), COFIDE, \"Compras MYPErú\", INADI, cámaras de comercio sectoriales — oportunidades concretas de distribución institucional en fases posteriores",
-            "LATAM — menor riesgo país: Colombia, México y Chile ofrecen mayor estabilidad institucional, reduciendo el riesgo en la fase de expansión regional"
+            "**Programas PYME activos:** Ministerio de la Producción (\"Tu Empresa\"), COFIDE, \"Compras MYPErú\", INADI, cámaras de comercio sectoriales — oportunidades concretas de distribución institucional en fases posteriores",
+            "**LATAM — menor riesgo país:** Colombia, México y Chile ofrecen mayor estabilidad institucional, reduciendo el riesgo en la fase de expansión regional"
           ]
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "La política peruana, paradójicamente, ayuda al modelo. No por estabilidad, sino porque la presión fiscal hacia la formalización empuja al cliente hacia el producto. La estrategia debe asumir esto como permanente y construir el discurso de venta apoyado en esa obligación, no en una promesa abstracta de \"modernización\"."
+          "text": "La política peruana, paradójicamente, **ayuda al modelo**. No por estabilidad, sino porque la presión fiscal hacia la formalización **empuja al cliente hacia el producto**. La estrategia debe asumir esto como permanente y construir el discurso de venta apoyado en esa obligación, no en una promesa abstracta de \"modernización\"."
         }
       ]
     },
@@ -40,7 +40,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Perú creció anémicamente post pandemia (~2–3% promedio, recesión técnica en 2023, recuperación moderada en 2024–2025). Inflación controlada ~3%, salarios reales bajos y tasas elevadas. Para una bodega con márgenes netos del 8–15% sobre ventas pequeñas, cada sol de gasto fijo nuevo se siente."
+          "text": "Perú creció anémicamente post pandemia (~2–3% promedio, recesión técnica en 2023, recuperación moderada en 2024–2025). Inflación controlada ~3%, salarios reales bajos y tasas elevadas. Para una bodega con **márgenes netos del 8–15%** sobre ventas pequeñas, cada sol de gasto fijo nuevo se siente."
         },
         {
           "type": "paragraph",
@@ -49,19 +49,19 @@
         {
           "type": "list",
           "items": [
-            "Sensibilidad al precio estructural: una bodega con S/ 1,500–4,000 de utilidad mensual no firma un contrato de S/ 99 al mes con la misma facilidad que una empresa mediana. La disposición a pagar real puede estar entre S/ 15–35 mensuales en el mejor escenario — el rango S/ 29–199 del canvas tiene un techo difícil de tocar en el primer tier",
-            "Riesgo cambiario silencioso: las APIs de LLM se pagan en USD. Si el sol se deprecia 10–15%, el costo variable del módulo IA Avanzada sube en la misma proporción mientras el precio al cliente permanece en soles — erosión directa de margen premium",
-            "SAM efectivo reducido: más del 80% del empleo peruano es informal; entre las MYPEs formales muchas operan con contabilidad mínima, sin incentivo fiscal para usar facturación electrónica"
+            "**Sensibilidad al precio estructural:** una bodega con **S/ 1,500–4,000 de utilidad mensual** no firma un contrato de S/ 99 al mes con la misma facilidad que una empresa mediana. La disposición a pagar real puede estar entre **S/ 15–35 mensuales** en el mejor escenario — el rango S/ 29–199 del canvas tiene un techo difícil de tocar en el primer tier",
+            "**Riesgo cambiario silencioso:** las **APIs de LLM se pagan en USD**. Si el sol se deprecia 10–15%, el costo variable del módulo IA Avanzada sube en la misma proporción mientras el precio al cliente permanece en soles — erosión directa de margen premium",
+            "**SAM efectivo reducido:** más del 80% del empleo peruano es informal; entre las MYPEs formales muchas operan con contabilidad mínima, sin incentivo fiscal para usar facturación electrónica"
           ]
         },
         {
           "type": "info",
-          "text": "LATAM como referencia: México y Colombia ofrecen mercados más grandes y resilientes, con clases medias emprendedoras más establecidas. Chile tiene mayor poder adquisitivo por PYME pero menor densidad absoluta — relevante para priorización en Fase 2."
+          "text": "**LATAM como referencia:** México y Colombia ofrecen mercados más grandes y resilientes, con clases medias emprendedoras más establecidas. Chile tiene mayor poder adquisitivo por PYME pero menor densidad absoluta — relevante para priorización en Fase 2."
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "El ARPU bajo es estructural y no se corrige con marketing. El modelo solo es viable si se cumplen tres condiciones simultáneas: CAC muy bajo (canal contadores + referidos), churn controlado (valor inmediato + gamificación) y escala regional rápida para acumular base. Si falla una, el negocio no llega a punto de equilibrio."
+          "text": "El **ARPU bajo es estructural** y no se corrige con marketing. El modelo solo es viable si se cumplen tres condiciones simultáneas: **CAC muy bajo** (canal contadores + referidos), **churn controlado** (valor inmediato + gamificación) y **escala regional rápida** para acumular base. Si falla una, el negocio no llega a punto de equilibrio."
         }
       ]
     },
@@ -73,7 +73,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "La demografía juega a favor: 33M de habitantes, mediana de 30 años, Lima ~10M, penetración urbana >78%. Smartphones sobre el 85% en zonas urbanas, uso cotidiano de WhatsApp y Yape incluso en estratos C y D."
+          "text": "La demografía juega a favor: **33M de habitantes, mediana de 30 años**, Lima ~10M, penetración urbana >78%. Smartphones sobre el 85% en zonas urbanas, uso cotidiano de WhatsApp y Yape incluso en estratos C y D."
         },
         {
           "type": "paragraph",
@@ -82,19 +82,19 @@
         {
           "type": "list",
           "items": [
-            "Alfabetización digital media-baja del bodeguero típico (35–55 años, educación secundaria, dueño operativo): sabe usar WhatsApp y Yape, pero no configura apps, no entiende \"módulos\" como concepto abstracto y tiene aversión natural a formularios. La promesa de onboarding en <10 min es el estándar de diseño correcto — si el equipo no la cumple, el modelo falla en el primer contacto",
-            "Desconfianza cultural: la frase \"te van a meter SUNAT\" sigue circulando en el imaginario del comerciante. La narrativa debe pivotar a \"control de tu negocio para ganar más\", no a \"cumple con SUNAT\"",
-            "Generación de relevo como palanca real: hijos, sobrinos y parejas jóvenes (nativos digitales) son la palanca real de adopción — es el patrón Yape: el hijo le instaló la app a la madre. ERP Evolutivo debe diseñar puntos de entrada para ese \"embajador interno\" (TikTok para jóvenes que ayudan en el negocio familiar, campañas de \"digitaliza el negocio de tu mamá\")"
+            "**Alfabetización digital media-baja** del bodeguero típico (35–55 años, educación secundaria, dueño operativo): sabe usar WhatsApp y Yape, pero no configura apps, no entiende \"módulos\" como concepto abstracto y tiene aversión natural a formularios. La promesa de onboarding en <10 min es el estándar de diseño correcto — si el equipo no la cumple, el modelo falla en el primer contacto",
+            "**Desconfianza cultural:** la frase \"te van a meter SUNAT\" sigue circulando en el imaginario del comerciante. La narrativa debe pivotar a **\"control de tu negocio para ganar más\"**, no a \"cumple con SUNAT\"",
+            "**Generación de relevo como palanca real:** hijos, sobrinos y parejas jóvenes (nativos digitales) son la palanca real de adopción — es el patrón Yape: el hijo le instaló la app a la madre. ERP Evolutivo debe diseñar puntos de entrada para ese **\"embajador interno\"** (TikTok para jóvenes que ayudan en el negocio familiar, campañas de \"digitaliza el negocio de tu mamá\")"
           ]
         },
         {
           "type": "note",
-          "text": "Contradicción del pago modular: \"pago por uso modular\" es elegante en un canvas, pero el modelo mental de este usuario es binario: gratis o plano mensual fijo. Una factura variable que cambia cada mes genera desconfianza. La presentación del precio debe simplificarse al máximo, posiblemente con planes de techo predecible o slider visual antes del cobro."
+          "text": "**Contradicción del pago modular:** \"pago por uso modular\" es elegante en un canvas, pero el modelo mental de este usuario es binario: gratis o plano mensual fijo. Una factura variable que cambia cada mes genera desconfianza. La presentación del precio debe simplificarse al máximo, posiblemente con planes de techo predecible o slider visual antes del cobro."
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "La barrera social no es desinterés — es desconfianza y costo cognitivo. La inversión en UX especializado y gamificación no es opcional; es la única palanca para mover la curva de adopción. El canal contadores cobra sentido aquí: no solo vende, traduce culturalmente el producto."
+          "text": "La barrera social no es desinterés — es **desconfianza y costo cognitivo**. La inversión en **UX especializado y gamificación** no es opcional; es la única palanca para mover la curva de adopción. El **canal contadores** cobra sentido aquí: no solo vende, traduce culturalmente el producto."
         }
       ]
     },
@@ -106,15 +106,14 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Es la dimensión donde mejor está parado el negocio y donde el \"¿por qué ahora?\" se sostiene. Los costos de inferencia de modelos de lenguaje cayeron más del 90% desde 2023. Modelos on-device (Phi, Gemma, Llama 3.2 1B/3B) ya son capaces para la capa de IA Básica — la afirmación de \"costo ~0\" es técnicamente realista en 2026, no fantasía de pitch deck."
+          "text": "Es la dimensión donde mejor está parado el negocio y donde el **\"¿por qué ahora?\"** se sostiene. Los costos de inferencia de modelos de lenguaje **cayeron más del 90% desde 2023**. Modelos on-device (**Phi, Gemma, Llama 3.2 1B/3B**) ya son capaces para la capa de IA Básica — la afirmación de \"costo ~0\" es técnicamente realista en 2026, no fantasía de pitch deck."
         },
         {
           "type": "list",
-          "label": "Habilitadores",
           "items": [
-            "Infraestructura cloud LATAM: AWS São Paulo, GCP Santiago, Azure México — latencia aceptable, precios competitivos. Lima Metropolitana: cobertura 4G/5G >95% en los distritos clave del beachhead",
-            "Pasarelas maduras: Yape (BCP, +14M usuarios) y Plin (Interbank, BBVA, Scotiabank) — adopción mainstream en bodegas, sin necesidad de educar al usuario en un método de cobro nuevo",
-            "OSEs homologados SUNAT: permiten tercerizar la complejidad fiscal en lugar de desarrollarla in house — acelerador y, a la vez, punto de concentración de riesgo"
+            "**Infraestructura cloud LATAM:** AWS São Paulo, GCP Santiago, Azure México — latencia aceptable, precios competitivos. Lima Metropolitana: cobertura 4G/5G >95% en los distritos clave del beachhead",
+            "**Pasarelas maduras:** Yape (BCP, +14M usuarios) y Plin (Interbank, BBVA, Scotiabank) — adopción mainstream en bodegas, sin necesidad de educar al usuario en un método de cobro nuevo",
+            "**OSEs homologados SUNAT:** permiten tercerizar la complejidad fiscal en lugar de desarrollarla in house — acelerador y, a la vez, punto de concentración de riesgo"
           ]
         },
         {
@@ -123,17 +122,16 @@
         },
         {
           "type": "list",
-          "label": "Riesgos",
           "items": [
-            "Concentración de proveedores (LLM, OSE, pasarelas): cualquiera puede subir precios o cambiar términos. Diseño multi-vendor desde día 1 es la mitigación correcta",
-            "Ciberseguridad: un incidente de phishing o filtración de datos transaccionales puede destruir la reputación en un mercado donde la confianza se construye lento y se pierde rápido",
-            "Brecha de hardware en el cliente: smartphone sí, PC no. La app web responsive es válida para Fase 1, pero la app móvil nativa de Fase 2 es habilitadora de retención, no un nice-to-have"
+            "**Concentración de proveedores** (LLM, OSE, pasarelas): cualquiera puede subir precios o cambiar términos. **Diseño multi-vendor desde día 1** es la mitigación correcta",
+            "**Ciberseguridad:** un incidente de phishing o filtración de datos transaccionales puede destruir la reputación en un mercado donde la confianza se construye lento y se pierde rápido",
+            "**Brecha de hardware en el cliente:** smartphone sí, PC no. La app web responsive es válida para Fase 1, pero la **app móvil nativa de Fase 2 es habilitadora de retención**, no un nice-to-have"
           ]
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "El stack es viable hoy de una forma que no lo era en 2022 — esa ventana de oportunidad técnica es real y favorece a quien llegue primero con buena ejecución. Pero la viabilidad técnica no es ventaja competitiva sostenible: cualquier competidor accede al mismo stack. La ventaja real se construye en el flywheel de datos propietarios y en la calidad del UX, no en el stack en sí."
+          "text": "El stack es viable hoy de una forma que no lo era en 2022 — **esa ventana de oportunidad técnica es real** y favorece a quien llegue primero con buena ejecución. Pero la viabilidad técnica no es ventaja competitiva sostenible: cualquier competidor accede al mismo stack. La ventaja real se construye en el **flywheel de datos propietarios** y en la **calidad del UX**, no en el stack en sí."
         }
       ]
     },
@@ -145,20 +143,20 @@
       "blocks": [
         {
           "type": "note",
-          "text": "Factor de baja relevancia directa en las decisiones estratégicas del negocio. Forzar relevancia donde no la hay debilita el análisis. Aun así, hay tres conexiones reales que vale anotar."
+          "text": "Factor de **baja relevancia directa** en las decisiones estratégicas del negocio. Forzar relevancia donde no la hay debilita el análisis. Aun así, hay tres conexiones reales que vale anotar."
         },
         {
           "type": "list",
           "items": [
-            "Digitalización elimina papel — boletas físicas, libretas de control, archivadores de facturas. No es argumento de venta primario para el bodeguero, pero sí componente válido de la narrativa ESG en rondas de inversión institucional",
-            "Lima tiene riesgo sísmico estructural. La arquitectura cloud distribuida con redundancia geográfica es mitigación natural y puede comunicarse como parte del valor en mercados donde la continuidad operativa es preocupación real",
-            "Disrupciones climáticas (Niño Costero, sequías) afectan cadenas de abastecimiento de bodegas. En el largo plazo, una rama de \"continuidad operativa\" / \"alertas de proveedores\" podría responder a un dolor real — fuera del scope MVP pero en el radar del roadmap"
+            "**Digitalización elimina papel** — boletas físicas, libretas de control, archivadores de facturas. No es argumento de venta primario para el bodeguero, pero sí componente válido de la **narrativa ESG en rondas de inversión institucional**",
+            "**Lima tiene riesgo sísmico estructural.** La arquitectura cloud distribuida con redundancia geográfica es mitigación natural y puede comunicarse como parte del valor en mercados donde la continuidad operativa es preocupación real",
+            "**Disrupciones climáticas** (Niño Costero, sequías) afectan cadenas de abastecimiento de bodegas. En el largo plazo, una rama de **\"continuidad operativa\" / \"alertas de proveedores\"** podría responder a un dolor real — fuera del scope MVP pero en el radar del roadmap"
           ]
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "Baja prioridad operativa en Fases 1 y 2. Relevante únicamente para storytelling de impacto en rondas de inversión y para postular a fondos de innovación con criterios ESG. No modificar hoja de ruta por este factor."
+          "text": "Baja prioridad operativa en Fases 1 y 2. Relevante únicamente para **storytelling de impacto en rondas de inversión** y para postular a fondos de innovación con criterios ESG. No modificar hoja de ruta por este factor."
         }
       ]
     },
@@ -170,36 +168,36 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Esta es, junto con la dimensión política, la palanca más fuerte y la principal carga regulatoria del modelo."
+          "text": "Esta es, junto con la dimensión política, la **palanca más fuerte y la principal carga regulatoria** del modelo."
         },
         {
           "type": "list",
           "items": [
-            "Motor del crecimiento — SUNAT: la trayectoria apunta a cobertura universal de microempresas formales hacia 2027–2028. Cada microempresa nueva que entra en obligación es un cliente al que se le acaba de generar el dolor — mercado que crece sin marketing propio",
-            "Ley 29733 — Protección de Datos Personales: datos transaccionales procesados con IA para \"asesoría\" requieren consentimiento expreso, política de privacidad explícita, posiblemente DPO al escalar. Privacy by design desde día 1 es órdenes de magnitud más barato que retrofittearlo",
-            "Ley MYPE / Régimen MYPE Tributario: la rama \"Equipo\" debe parametrizar planillas electrónicas (PLAME), CTS, gratificaciones, vacaciones. Módulo frecuentemente subestimado, requiere especialización legal local por país",
-            "INDECOPI — publicidad comparativa: cualquier comunicación \"vs. Odoo\", \"vs. Alegra\" o \"vs. Bsale\" debe sostenerse en hechos verificables. La promesa de \"IA asesora\" debe ser cuidadosa — INDECOPI ha sancionado claims de IA inflados en otros sectores",
-            "Regulación emergente de IA: Perú sin ley específica a mayo 2026, pero LATAM avanza (Brasil PL 2338/23, Chile y México con proyectos en Congreso) y el EU AI Act ya está vigente. La trayectoria global apunta a transparencia algorítmica y derecho a explicación. Diseñar la IA Asesora con explicabilidad incorporada es preparación regulatoria y mejor producto simultáneamente",
-            "Homologación OSE SUNAT: barrera de entrada positiva (filtra competidores improvisados) + concentración de riesgo si el OSE falla. Plan B (segundo OSE o evaluación de homologación propia en Fase 3) debe estar en el radar"
+            "**Motor del crecimiento — SUNAT:** la trayectoria apunta a cobertura universal de microempresas formales hacia 2027–2028. Cada microempresa nueva que entra en obligación es un cliente al que se le acaba de **generar el dolor** — mercado que crece sin marketing propio",
+            "**Ley 29733 — Protección de Datos Personales:** datos transaccionales procesados con **IA** para \"asesoría\" requieren consentimiento expreso, política de privacidad explícita, posiblemente DPO al escalar. **Privacy by design desde día 1** es órdenes de magnitud más barato que retrofittearlo",
+            "**Ley MYPE / Régimen MYPE Tributario:** la rama \"Equipo\" debe parametrizar planillas electrónicas (PLAME), CTS, gratificaciones, vacaciones. Módulo frecuentemente subestimado, requiere especialización legal local por país",
+            "**INDECOPI — publicidad comparativa:** cualquier comunicación \"vs. Odoo\", \"vs. Alegra\" o \"vs. Bsale\" debe sostenerse en hechos verificables. La promesa de **\"IA asesora\"** debe ser cuidadosa — INDECOPI ha sancionado claims de IA inflados en otros sectores",
+            "**Regulación emergente de IA:** Perú sin ley específica a mayo 2026, pero LATAM avanza (Brasil PL 2338/23, Chile y México con proyectos en Congreso) y el EU AI Act ya está vigente. La trayectoria global apunta a **transparencia algorítmica y derecho a explicación**. Diseñar la IA Asesora con explicabilidad incorporada es preparación regulatoria y mejor producto simultáneamente",
+            "**Homologación OSE SUNAT:** barrera de entrada positiva (filtra competidores improvisados) + concentración de riesgo si el OSE falla. Plan B (segundo OSE o evaluación de homologación propia en Fase 3) debe estar en el radar"
           ]
         },
         {
           "type": "implication",
           "title": "⚡ Implicancia estratégica",
-          "text": "El marco legal peruano es simultáneamente acelerador y carga. La estrategia ganadora trata el compliance como feature, no como costo: convertir \"facturación electrónica garantizada\", \"datos protegidos por ley peruana\", \"IA explicable\" en argumentos de venta diferenciadores. Lo que para el competidor improvisado es freno, para ERP Evolutivo debe ser foso competitivo."
+          "text": "El marco legal peruano es simultáneamente acelerador y carga. La estrategia ganadora trata el **compliance como feature, no como costo**: convertir \"facturación electrónica garantizada\", \"datos protegidos por ley peruana\", **\"IA explicable\"** en argumentos de venta diferenciadores. Lo que para el competidor improvisado es freno, para ERP Evolutivo debe ser **foso competitivo**."
         }
       ]
     }
   ],
   "synthesis": {
     "title": "📊 Síntesis ejecutiva del macroentorno",
-    "lead": "El PESTEL revela que el negocio nace en un terreno con dos vientos de cola fuertes (presión fiscal hacia formalización + caída de costos de IA), dos vientos de proa serios (sensibilidad al precio + baja alfabetización digital) y cargas regulatorias manejables que, bien gestionadas, se convierten en barrera de entrada.",
+    "lead": "El PESTEL revela que el negocio nace en un terreno con **dos vientos de cola fuertes** (presión fiscal hacia formalización + caída de costos de IA), **dos vientos de proa serios** (sensibilidad al precio + baja alfabetización digital) y cargas regulatorias manejables que, bien gestionadas, se convierten en barrera de entrada.",
     "items": [
-      "La oportunidad es real y tiene ventana. La convergencia regulatoria, tecnológica y de pagos digitales no se da con esta intensidad en otros mercados ni se mantendrá indefinidamente. Quien llegue primero con buena ejecución captura early adopters comprometidos",
-      "El riesgo dominante no es macroeconómico ni regulatorio — es de adopción. El bodeguero no se resiste por falta de oferta, se resiste por costo cognitivo y desconfianza cultural. El producto se gana o se pierde en el UX y en el canal contador, no en el feature set",
-      "La sensibilidad al precio impone disciplina financiera. Con ARPU bajo estructural, la rentabilidad solo se alcanza con CAC muy bajo y escala regional rápida. Valida el modelo freemium pero exige validar la disposición a pagar real antes de escribir código de producción",
-      "El compliance es palanca, no carga. Privacy by design, IA explicable, integración OSE certificada, ESG ligero por desmaterialización. Convertir cada requisito legal en argumento de venta es la diferencia entre un competidor que cumple y uno que gana"
+      "**La oportunidad es real y tiene ventana.** La convergencia regulatoria, tecnológica y de pagos digitales no se da con esta intensidad en otros mercados ni se mantendrá indefinidamente. Quien llegue primero con buena ejecución captura early adopters comprometidos",
+      "**El riesgo dominante no es macroeconómico ni regulatorio — es de adopción.** El bodeguero no se resiste por falta de oferta, se resiste por costo cognitivo y desconfianza cultural. El producto se gana o se pierde en el UX y en el canal contador, no en el feature set",
+      "**La sensibilidad al precio impone disciplina financiera.** Con ARPU bajo estructural, la rentabilidad solo se alcanza con CAC muy bajo y escala regional rápida. Valida el modelo freemium pero exige validar la disposición a pagar real antes de escribir código de producción",
+      "**El compliance es palanca, no carga.** **Privacy by design, IA explicable**, integración OSE certificada, ESG ligero por desmaterialización. Convertir cada requisito legal en argumento de venta es la diferencia entre un competidor que cumple y uno que **gana**"
     ],
-    "closing": "Estas conclusiones aterrizan directamente en las siguientes secciones del estudio. El análisis de las 5 Fuerzas de Porter tomará el peso del costo de cambio (bajo desde Excel, alto entre ERPs) y la rivalidad real con Alegra y Bsale. El análisis interno tendrá que confrontar la realidad de un fundador único con capital semilla acotado contra un mercado que exige velocidad. La matriz EFE recogerá explícitamente los factores macro identificados aquí, con pesos ponderados según su impacto en la viabilidad del beachhead."
+    "closing": "Estas conclusiones aterrizan directamente en las siguientes secciones del estudio. El análisis de las **5 Fuerzas de Porter** tomará el peso del costo de cambio (bajo desde Excel, alto entre ERPs) y la rivalidad real con Alegra y Bsale. El **análisis interno** tendrá que confrontar la realidad de un fundador único con capital semilla acotado contra un mercado que exige velocidad. La **matriz EFE** recogerá explícitamente los factores macro identificados aquí, con pesos ponderados según su impacto en la viabilidad del beachhead."
   }
 }

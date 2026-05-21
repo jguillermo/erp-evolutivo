@@ -24,7 +24,7 @@
               @if (item.label) {
                 <span class="hl">{{ item.label }}:</span>
               }
-              {{ item.text }}
+              <span [innerHTML]="item.text | md"></span>
             </app-list-item>
           }
         </app-list>
@@ -41,31 +41,28 @@
       [class]="style(propuestaValor.id).gridClass">
 
       <app-quoted-text testId="card-4-value-statement">
-        {{ propuestaValor.valueStatement }}
+        <span [innerHTML]="propuestaValor.valueStatement | md"></span>
       </app-quoted-text>
 
       <app-section variant="info" testId="card-4-vs">
         @for (cmp of propuestaValor.comparisons; track $index) {
           <app-comparison-row [competitor]="cmp.competitor" [testId]="'card-4-vs-label-' + ($index + 1)">
-            {{ cmp.text }}
+            <span [innerHTML]="cmp.text | md"></span>
           </app-comparison-row>
         }
       </app-section>
 
       <app-section variant="feature" testId="card-4-game" [title]="propuestaValor.gameMechanic.title">
-        <p class="text-xs text-ink-muted leading-body print:text-print-xs">
-          {{ propuestaValor.gameMechanic.text }}
-        </p>
+        <p class="text-xs text-ink-muted leading-body print:text-print-xs"
+           [innerHTML]="propuestaValor.gameMechanic.text | md"></p>
       </app-section>
 
       <app-section variant="feature" testId="card-4-entry-module" [title]="propuestaValor.entryModule.title">
         <p class="text-sm font-bold text-white mb-xs print:text-print-sm"
-           data-testid="card-4-entry-module-main">
-          {{ propuestaValor.entryModule.primary }}
-        </p>
-        <p class="text-2xs text-ink-muted leading-condensed print:text-print-xs">
-          {{ propuestaValor.entryModule.secondary }}
-        </p>
+           data-testid="card-4-entry-module-main"
+           [innerHTML]="propuestaValor.entryModule.primary | md"></p>
+        <p class="text-2xs text-ink-muted leading-condensed print:text-print-xs"
+           [innerHTML]="propuestaValor.entryModule.secondary | md"></p>
       </app-section>
 
       <app-list testId="card-4-list" class="mt-md">
@@ -74,7 +71,7 @@
             @if (item.label) {
               <span class="hl2">{{ item.label }}:</span>
             }
-            {{ item.text }}
+            <span [innerHTML]="item.text | md"></span>
           </app-list-item>
         }
       </app-list>
@@ -90,9 +87,8 @@
       [class]="style(segmentos.id).gridClass">
 
       <p class="text-xs text-warning-400 bg-warning-400/[8%] rounded px-md py-sm mb-sm print:text-print-xs"
-         data-testid="card-7-meta">
-        {{ segmentos.meta }}
-      </p>
+         data-testid="card-7-meta"
+         [innerHTML]="segmentos.meta | md"></p>
 
       <app-section variant="highlight" testId="card-7-beachhead">
         <app-badge-label
@@ -103,12 +99,11 @@
           [badgeText]="segmentos.beachhead.badge"
           [labelText]="segmentos.beachhead.label"
         />
-        <p class="text-2xs text-warning-200 leading-cozy mb-sm print:text-print-xs">
-          {{ segmentos.beachhead.description }}
-        </p>
+        <p class="text-2xs text-warning-200 leading-cozy mb-sm print:text-print-xs"
+           [innerHTML]="segmentos.beachhead.description | md"></p>
         <app-list testId="card-7-beachhead-list" class="mt-sm">
           @for (item of segmentos.beachhead.items; track $index) {
-            <app-list-item>{{ item }}</app-list-item>
+            <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
           }
         </app-list>
       </app-section>
@@ -122,7 +117,7 @@
           [tierDescription]="tier.description"
           [listTestId]="'card-7-list-' + ($index + 2)">
           @for (item of tier.items; track $index) {
-            <app-list-item>{{ item }}</app-list-item>
+            <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
           }
         </app-tier-section>
       }
@@ -143,12 +138,12 @@
               @if (item.tag) {
                 <app-badge [color]="tagColor(card.id, item.tag)" [testId]="'badge-' + card.id + '-' + $index">{{ item.tag }}</app-badge>
               }
-              {{ item.text }}
+              <span [innerHTML]="item.text | md"></span>
             </app-list-item>
           }
         </app-list>
         <app-section variant="note" [testId]="'card-' + card.id + '-viability'">
-          {{ card.note }}
+          <span [innerHTML]="card.note | md"></span>
         </app-section>
       </app-card>
     }

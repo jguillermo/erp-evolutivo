@@ -5,6 +5,7 @@ import { ListComponent } from '../../../shared/components/list/list.component';
 import { ListItemComponent } from '../../../shared/components/list/list-item.component';
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
+import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
 import pestelData from '../../../../../data/pestel.json';
 
 type PestelBlock =
@@ -40,7 +41,7 @@ const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = 
 @Component({
   selector: 'app-pestel',
   standalone: true,
-  imports: [RouterLink, CardComponent, ListComponent, ListItemComponent, SectionComponent, QuotedTextComponent],
+  imports: [RouterLink, CardComponent, ListComponent, ListItemComponent, SectionComponent, QuotedTextComponent, MarkdownPipe],
   templateUrl: './pestel.component.html',
 })
 export class PestelComponent {

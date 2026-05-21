@@ -8,6 +8,7 @@ import { QuotedTextComponent } from '../../shared/components/quoted-text/quoted-
 import { BadgeLabelComponent } from '../../shared/components/badge-label/badge-label.component';
 import { ComparisonRowComponent } from '../../shared/components/comparison-row/comparison-row.component';
 import { TierSectionComponent } from '../../shared/components/tier-section/tier-section.component';
+import { MarkdownPipe } from '../../shared/pipes/markdown.pipe';
 import canvasData from '../../../../data/canvas.json';
 
 interface CanvasItem {
@@ -116,6 +117,7 @@ const TIER_BADGE_COLORS: Record<string, BadgeColor> = {
     BadgeLabelComponent,
     ComparisonRowComponent,
     TierSectionComponent,
+    MarkdownPipe,
   ],
   templateUrl: './canvas.component.html',
 })

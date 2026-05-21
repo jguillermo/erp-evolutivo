@@ -42,6 +42,34 @@ When adding a new view: create the JSON file first with the full content, then w
 
 JSON support is enabled in `tsconfig.json` (`resolveJsonModule: true`) and `tsconfig.app.json` includes `data/**/*.json`.
 
+### Inline markdown inside JSON strings
+
+The only way to add emphasis to JSON text is **inline markdown**. Never embed HTML tags or color classes in the JSON.
+
+Supported markers (handled by `MarkdownPipe` at `src/app/shared/pipes/markdown.pipe.ts`):
+
+| Marker | Renders as | Visual |
+|---|---|---|
+| `**text**` | `<strong class="hl">` | primary highlight (ai-300) |
+| `*text*` | `<em>` | italic |
+| `~~text~~` | `<del>` | strikethrough |
+| `` `text` `` | `<code>` | monospace |
+
+To consume markdown in a template, use the `md` pipe with `[innerHTML]`:
+
+```html
+<!-- ✅ CORRECT — text from JSON, formatting from markdown -->
+<p [innerHTML]="block.text | md"></p>
+<span [innerHTML]="item.text | md"></span>
+
+<!-- Alternate bold color (hl2 / hl3 / hl-ai for AI emphasis) -->
+<p [innerHTML]="block.text | md:'ai'"></p>
+```
+
+The pipe HTML-escapes raw input before applying the markers and emits `SafeHtml`, so any `<`, `>`, `&`, `"` characters in the JSON are rendered as text — only the markdown markers produce tags. When importing the pipe, add `MarkdownPipe` to the component's `imports` array.
+
+**Rule of thumb:** if you find yourself reaching for `<span class="hl">` inside a JSON string, use `**text**` instead.
+
 ## Tech Stack
 
 - Angular 21.2 / TypeScript 5.9 (strict mode)

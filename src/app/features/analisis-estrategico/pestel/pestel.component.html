@@ -17,7 +17,7 @@
 
   <!-- Framing -->
   <app-quoted-text class="mb-4xl" testId="pestel-intro">
-    {{ data.intro }}
+    <span [innerHTML]="data.intro | md"></span>
   </app-quoted-text>
 
   <!-- ── Factores en columna ── -->
@@ -33,12 +33,12 @@
         @for (block of factor.blocks; track $index) {
           @switch (block.type) {
             @case ('paragraph') {
-              <p class="text-xs text-ink-muted leading-body mb-lg">{{ block.text }}</p>
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
             }
             @case ('list') {
               <app-list [testId]="'pestel-' + factor.id + '-list-' + $index">
                 @for (item of block.items; track $index) {
-                  <app-list-item>{{ item }}</app-list-item>
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
                 }
               </app-list>
             }
@@ -47,7 +47,7 @@
                 [variant]="sectionVariant('note')"
                 [testId]="'pestel-' + factor.id + '-note-' + $index"
                 class="mt-lg">
-                {{ block.text }}
+                <span [innerHTML]="block.text | md"></span>
               </app-section>
             }
             @case ('info') {
@@ -55,7 +55,7 @@
                 [variant]="sectionVariant('info')"
                 [testId]="'pestel-' + factor.id + '-info-' + $index"
                 class="mt-lg">
-                {{ block.text }}
+                <span [innerHTML]="block.text | md"></span>
               </app-section>
             }
             @case ('implication') {
@@ -64,7 +64,7 @@
                 [title]="block.title"
                 [testId]="'pestel-' + factor.id + '-impl'"
                 class="mt-lg">
-                <p class="text-xs leading-body">{{ block.text }}</p>
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
               </app-section>
             }
           }
@@ -76,17 +76,13 @@
   <!-- ── SÍNTESIS EJECUTIVA ── -->
   <div class="mt-5xl" data-testid="pestel-sintesis">
     <app-section variant="highlight" [title]="data.synthesis.title" testId="pestel-sintesis-section">
-      <p class="text-xs text-ink-muted leading-body mb-lg">
-        {{ data.synthesis.lead }}
-      </p>
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.synthesis.lead | md"></p>
       <app-list testId="pestel-sintesis-list">
         @for (item of data.synthesis.items; track $index) {
-          <app-list-item>{{ item }}</app-list-item>
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
         }
       </app-list>
-      <p class="text-xs text-ink-muted leading-body mt-lg">
-        {{ data.synthesis.closing }}
-      </p>
+      <p class="text-xs text-ink-muted leading-body mt-lg" [innerHTML]="data.synthesis.closing | md"></p>
     </app-section>
   </div>
 
