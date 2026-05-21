@@ -9,7 +9,7 @@ import { BadgeLabelComponent } from '../../shared/components/badge-label/badge-l
 import { ComparisonRowComponent } from '../../shared/components/comparison-row/comparison-row.component';
 import { TierSectionComponent } from '../../shared/components/tier-section/tier-section.component';
 import { MarkdownPipe } from '../../shared/pipes/markdown.pipe';
-import canvasData from '../../../../data/canvas.json';
+import canvasData from '../../../../data/data-0-canvas.json';
 
 interface CanvasItem {
   tag?: string;

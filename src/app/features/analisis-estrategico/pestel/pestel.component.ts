@@ -6,7 +6,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import pestelData from '../../../../../data/pestel.json';
+import pestelData from '../../../../../data/data-1.1.1-pestel.json';
 
 type PestelBlock =
   | { type: 'paragraph'; text: string }

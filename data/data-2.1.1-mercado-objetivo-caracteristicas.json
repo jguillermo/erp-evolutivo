@@ -1,0 +1,139 @@
+{
+  "title": "🎯 Características del Mercado",
+  "subtitle": "Caracterización demográfica, geográfica y psicográfica del beachhead — ¿quién es realmente el bodeguero limeño y qué exige al producto?",
+  "backLink": { "label": "← Estudio de Mercado", "route": "/estudio-mercado" },
+  "intro": "La sección clásica de \"caracterización del mercado\" suele resolverse con datos del INEI y un par de párrafos sobre el limeño promedio. Ese enfoque aquí no sirve. **ERP Evolutivo no vende al limeño, ni a la PYME genérica, ni siquiera a la bodega como rubro.** Vende al dueño de bodega que hoy anota ventas en una libreta y enfrenta presión SUNAT para emitir comprobantes electrónicos. Cualquier caracterización que no aterrice en ese sujeto concreto produce análisis de manual sin valor accionable.",
+  "dimensions": [
+    {
+      "id": "demografica",
+      "title": "Demográfica",
+      "emoji": "👤",
+      "question": "¿Quién decide, quién paga y quién opera el producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El sujeto del negocio es el **microempresario dueño-operador** de un comercio minorista en Lima Metropolitana, no un consumidor final ni una empresa con departamento de compras. La unidad de análisis es la **persona-negocio**: el bodeguero es simultáneamente decisor, usuario y pagador. Esta condición es estratégicamente decisiva porque elimina los ciclos de venta largos típicos del B2B, pero introduce un riesgo opuesto: la decisión se cae con la misma velocidad con la que se toma. No hay comité técnico, no hay presupuesto anual de IT. Hay un dueño que decide en cinco minutos si esto le sirve o no."
+        },
+        {
+          "type": "paragraph",
+          "text": "El rango etario relevante se concentra entre los **35 y 55 años**, con dos sub-bloques de comportamiento marcadamente distintos, más un tercer bloque emergente:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**35–45 años — early adopter natural:** parcialmente digitalizado, usa WhatsApp Business, cobra con Yape, smartphone Android de gama media, ha intentado Excel para llevar control. Es el segmento que adopta sin fricción si la UX está bien resuelta.",
+            "**46–55 años — bisagra crítica:** usa WhatsApp para mensajes personales, cobra con Yape porque su clientela se lo exigió, pero sigue anotando ventas en libreta y desconfía de cualquier sistema que requiera configuración. Es donde la promesa de **onboarding en <10 minutos se gana o se pierde**.",
+            "**20–30 años — relevo generacional / embajador interno:** hijos o sobrinos que asumen la gestión del negocio familiar, nativos digitales, instalan herramientas al padre o madre que opera el local. Pequeño en volumen, pero estratégicamente desproporcionado por capacidad de detonar adopción — mismo patrón que disparó la curva de Yape."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "El **nivel socioeconómico** se ubica predominantemente en **NSE C y D**, con presencia menor en B emergente. La utilidad neta mensual de una bodega típica oscila entre **S/ 1,500 y S/ 4,000** sobre ventas brutas de S/ 8,000–25,000. Esto define con dureza el techo de disposición a pagar: cualquier herramienta cuyo costo mensual supere el **1–2% de la utilidad operativa** enfrenta una resistencia estructural que no se resuelve con marketing. El rango realista de tolerancia se ubica entre **S/ 15 y S/ 35 mensuales** en el primer tier, alineado con lo que el segmento ya paga por servicios percibidos como útiles (plan de datos, Netflix compartido, cable básico). El rango S/ 29–199 del canvas tiene un techo difícil de tocar en el primer año salvo en sub-segmentos premium."
+        },
+        {
+          "type": "paragraph",
+          "text": "El **nivel educativo predominante** es secundaria completa con extensión técnica ocasional. Importa menos como dato demográfico y más como **restricción de diseño**: el lenguaje del producto debe operar bajo el supuesto de que el usuario no entiende términos como \"módulo\", \"rama\", \"freemium\" o \"usage-based\". La traducción cultural del producto es una capa de UX, no de marketing. Cualquier explicación que requiera un manual ya perdió la venta."
+        },
+        {
+          "type": "note",
+          "text": "**Observación que el análisis convencional omite — género del decisor.** Un porcentaje significativo de bodegas en Lima es operado por **mujeres entre 40 y 60 años**, frecuentemente madres de familia con economía de hogar integrada al negocio. Este sub-perfil tiene patrones de decisión distintos al masculino: mayor aversión al riesgo financiero, mayor sensibilidad a la promesa de *\"no me van a cobrar de más\"*, mayor disposición a aceptar recomendación de un tercero de confianza (el contador, la hija, la vecina). El diseño de la voz del producto debería contemplar este perfil explícitamente, no como diversidad declarativa sino como decisión de producto."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El decisor es **una sola persona con techo de pago estrecho y baja tolerancia a configuración**. El producto se gana o se pierde en los primeros cinco minutos. Pricing realista S/ 15–35 en el primer tier, lenguaje coloquial sin jerga técnica, y voz de producto que contemple explícitamente al sub-perfil femenino del segmento."
+        }
+      ]
+    },
+    {
+      "id": "geografica",
+      "title": "Geográfica",
+      "emoji": "🗺️",
+      "question": "¿Lima como mercado único o como mosaico de clusters?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Lima Metropolitana concentra aproximadamente **10 millones de habitantes en 43 distritos** distribuidos en cinco zonas de mercado (Norte, Sur, Este, Centro, Oeste) con perfiles socioeconómicos y comerciales muy diferentes entre sí. **Tratar Lima como un mercado único es un error estratégico:** la bodega de San Juan de Lurigancho no se comporta como la de Miraflores ni como la de Comas. La caracterización útil para ERP Evolutivo se construye sobre **tres capas superpuestas**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Capa 1 — Densidad y concentración del beachhead.** Las bodegas en Lima superan las **400,000 unidades**, pero no están uniformemente distribuidas. La mayor densidad por km² se ubica en distritos de **NSE C y D** de Lima Norte (San Martín de Porres, Comas, Los Olivos), Lima Este (San Juan de Lurigancho, Ate, El Agustino, Santa Anita) y Lima Sur (Villa El Salvador, Villa María del Triunfo, San Juan de Miraflores). Lima Centro tiene alta densidad pero con perfil comercial mixto. Lima Moderna (Miraflores, San Isidro, Surco) tiene baja densidad de bodegas tradicionales — no es el beachhead.",
+            "**Capa 2 — Lectura de cluster.** Las bodegas se conocen entre sí **por manzana y por avenida**. El boca a boca opera dentro de un radio de **200–400 metros**, no a nivel distrital. Conecta con la estrategia E2: *cinco bodegas adoptantes en una misma manzana valen más que cien bodegas dispersas en toda Lima.* La concentración geográfica no es preferencia estética; es la condición para que el **CAC se aproxime a cero** por efecto referido.",
+            "**Capa 3 — Alineación con canal contadores.** La distribución de contadores tributarios en Lima no es uniforme — concentraciones importantes en zonas comerciales de Lima Centro, Norte y Este, frecuentemente operando desde oficinas pequeñas o domicilios. La selección geográfica del lanzamiento debe cruzarse con el **mapa de contadores aliados disponibles**, no decidirse en abstracto. Si los primeros cinco contadores que firman están en San Martín de Porres y Los Olivos, ese es el beachhead geográfico — no Surco ni Miraflores."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica sobre el supuesto \"Lima primero, luego provincia\".** El orden es correcto, pero esconde un riesgo: **la PYME limeña no es representativa de la PYME peruana ni latinoamericana.** La bodega de Arequipa o Trujillo opera con menor presión SUNAT efectiva, menor penetración de Yape en su clientela, mayor informalidad operativa y mayor desconfianza hacia herramientas digitales. Validar el producto en Lima y asumir que el playbook se replica en provincia sin ajustes puede generar una sobreestimación peligrosa del **SAM peruano**. Cada ciudad nueva requiere su propia validación de pricing y canal."
+        },
+        {
+          "type": "paragraph",
+          "text": "La **justificación estratégica de Lima como punto de lanzamiento** no es \"es donde está el fundador\" ni \"es la capital\". Es donde converge la mayor densidad absoluta del beachhead, la mayor penetración de Yape y Plin, la mayor presión efectiva de SUNAT sobre microempresas formales, la mayor disponibilidad de contadores con cartera de bodegas, y la mejor infraestructura 4G/5G para operar un SaaS web. Esa convergencia **no se reproduce con la misma intensidad en ninguna otra ciudad peruana**, lo que vuelve a Lima no solo el primer mercado sino el único mercado viable para validar el modelo en los primeros 18 meses."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El segmento se elige por **densidad geográfica más que por tamaño absoluto**. La pelea operativa de los primeros doce meses es ganar **tres a cinco distritos contiguos en una misma zona** (probablemente Lima Norte o Lima Este), no estar presente en quince distritos dispersos. El cruce con el mapa de contadores aliados decide la selección final — no se elige en abstracto."
+        }
+      ]
+    },
+    {
+      "id": "psicografica",
+      "title": "Psicográfica",
+      "emoji": "🧠",
+      "question": "¿Cómo piensa, decide y aprende el bodeguero limeño?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aquí es donde el análisis convencional se vuelve genérico y donde el riesgo estratégico es mayor. Decir que el bodeguero *\"es trabajador, emprendedor y desconfiado\"* no informa ninguna decisión. La caracterización útil opera sobre **patrones de comportamiento, sistema de creencias y modelo mental** respecto al dinero y a la tecnología."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Estilo de vida y ritmo operativo.** Jornada de **6:00 AM a 10:00 PM, 6–7 días por semana**, sin separación entre vida personal y negocio porque el local suele estar en el primer piso de la vivienda. No hay momentos de pausa para \"configurar el sistema\" o \"leer la documentación\". Cualquier interacción con el producto compite con un cliente esperando, un proveedor cobrando, una llamada familiar. La promesa de *\"<10 minutos\"* del canvas es correcta como techo, pero el diseño real es **\"completable en cinco interrupciones de dos minutos\"**.",
+            "**Modelo mental respecto al dinero.** El bodeguero opera bajo **lógica de caja diaria, no de presupuesto mensual**. La pregunta al cierre del día es *\"cuánto entró y cuánto salió\"*, no *\"cuál es mi margen operativo del mes\"*. Esto entra en tensión directa con el cobro mensual recurrente del SaaS: entiende *\"pagar S/ 18 hoy\"*, no entiende *\"pagar S/ 18 al mes que se cargan automáticamente\"*. Hay **aversión cultural a entregar el control** del cuándo y cuánto se paga.",
+            "**Relación con la tecnología.** No es \"tiene smartphone sí o no\"; es **qué hace efectivamente con ese smartphone**. Usa WhatsApp como sistema operativo de su vida (mensajes, pedidos, fotos del producto, audios de cobranza), Yape como sistema de cobro digital, Facebook ocasionalmente, y **ninguna otra app de productividad**. El concepto de \"abrir una app específica para mi negocio\" no está en su comportamiento actual.",
+            "**Sistema de creencias respecto a SUNAT.** Contradicción cultural decisiva: **el bodeguero formal teme a SUNAT más de lo que confía en ella.** La narrativa *\"cumple con SUNAT\"* lo asusta porque la traduce como *\"te van a fiscalizar más\"*. La narrativa que funciona es la inversa: *\"tienes todo en orden para que SUNAT no te moleste\"*. Misma información comercial, polaridad opuesta. ERP Evolutivo debe comunicarse **como escudo contra SUNAT, no como herramienta de SUNAT**.",
+            "**Relación con el cambio y la prueba de algo nuevo.** Patrón documentado de **baja tolerancia al fracaso de herramientas**. Si prueba algo y no le funciona en la primera semana, no lo vuelve a intentar y, peor, lo cuenta a sus pares como confirmación de que *\"esos sistemas no sirven\"*. El boca a boca opera con la misma intensidad en sentido positivo y negativo. Un usuario que cae en silencio **no es un usuario neutral, es un usuario que ya está contando a sus vecinos que la herramienta no le funcionó**.",
+            "**Patrón de adopción por imitación de pares, no por autoridad.** Una recomendación de un colega bodeguero pesa **más que la de un experto, una influencer o un anuncio de Facebook**. Pesa también más que una promoción de descuento. Esto confirma que el canal contadores funciona no por la autoridad técnica del contador sino por su rol de **puente social entre bodegas**: el contador conoce a treinta bodegueros del mismo barrio y los conecta indirectamente."
+          ]
+        },
+        {
+          "type": "info",
+          "text": "**Tensión no resuelta — App dedicada vs. WhatsApp como interfaz.** El comportamiento real del segmento sugiere dos vías: *(a)* integración directa con **WhatsApp** como interfaz de entrada (registrar venta enviando mensaje, consultar inventario por chat), *(b)* una **app dedicada** que compita por espacio en pantalla con WhatsApp y Yape. El canvas asume la segunda; la primera podría estar más alineada con el comportamiento real. Esta tensión merece **validación cuantitativa explícita antes del MVP**, no asumirse resuelta."
+        },
+        {
+          "type": "note",
+          "text": "**Observación crítica final sobre la caracterización psicográfica.** Casi todos los puntos anteriores son **inferencias de advisor basadas en patrones observables**, no hechos verificados con investigación primaria propia del proyecto. Tienen sustento en comportamiento documentado de PYMEs limeñas y en la lógica de adopción de Yape (referencia más cercana al perfil de difusión que ERP Evolutivo necesita), pero **no equivalen a datos cuantitativos propios**. La validación cuantitativa de estos patrones psicográficos es parte del **fake door test** recomendado en el documento maestro, y debería incluir preguntas explícitas que confirmen o refuten estas inferencias antes de comprometer capital en construcción de producto."
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El producto compite con **WhatsApp y Yape por la atención del usuario**, no con otros ERPs. Comunicación defensiva frente a SUNAT (escudo, no herramienta). Customer success **preventivo** en los primeros 30 días — silencio = detractor en gestación. Marketing tradicional (Google Ads, banners, TikTok institucional) tiene rendimiento marginal en este segmento durante los primeros 12 meses; reasignar a referidos económicos directos y testimonios filmados en bodegas reales del beachhead."
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "📌 Implicancias estratégicas integradas",
+    "lead": "Para cerrar con valor accionable y no solo descriptivo, **cinco decisiones concretas** que se derivan del cruce de los tres planos de caracterización.",
+    "items": [
+      "**Densidad geográfica > tamaño absoluto.** La pelea operativa de los primeros doce meses es ganar **tres distritos contiguos con cluster de referidos activo**, no estar presente en quince distritos con tracción simbólica. Obliga a decir *no* a oportunidades dispersas que aparecerán durante la validación.",
+      "**Polaridad narrativa invertida frente a SUNAT.** La comunicación comercial se construye desde la perspectiva **defensiva** del bodeguero frente a SUNAT, no desde la perspectiva ofensiva de digitalización. El cambio de polaridad es invisible para el equipo de producto pero decisivo para el usuario.",
+      "**Pricing rendido a la lógica de caja diaria.** Cobro automático mensual con tarjeta es operativamente eficiente pero culturalmente friccional. **Ofrecer pago manual por Yape al inicio**, aunque sea más caro de gestionar, baja la barrera de entrada y permite migrar al cobro automático cuando hay confianza acumulada.",
+      "**Onboarding interruptible-first, no solo mobile-first.** Diseñado para ejecución fragmentada en interrupciones de dos a tres minutos, no para sesión continua. Más exigente que el \"móvil-first\" estándar — requiere decisiones explícitas en arquitectura de UX que el equipo técnico podría subestimar.",
+      "**Customer success preventivo no es gasto opcional.** Los primeros 30 días son la única ventana para evitar que un usuario silencioso se convierta en detractor activo dentro de su cluster geográfico. Debe **presupuestarse y diseñarse antes del MVP**, no después del primer caso de churn."
+    ],
+    "closing": "Estas cinco decisiones no son sugerencias de marketing — son **restricciones de diseño** que condicionan stack tecnológico, modelo de cobro, plan de contenido y estructura de soporte. Cada una se valida o se refuta en el fake door test antes de comprometer capital de producto."
+  },
+  "weakHypotheses": {
+    "title": "⚠️ Hipótesis débiles a vigilar",
+    "lead": "Tres puntos quedan como **supuestos no validados** que merecen atención activa en las próximas rondas de investigación primaria.",
+    "items": [
+      "**Proporción real del relevo generacional.** El bloque de hijos digitales que instalan herramientas al padre/madre operador está inferido del caso Yape, pero **no medido en el segmento bodegas-Lima específicamente**. Si resulta mayor a lo asumido, la estrategia de contenido en TikTok cobra más peso y el canal contadores se relativiza. Si resulta menor, el canal contadores se vuelve aún más crítico y único.",
+      "**App dedicada vs. integración WhatsApp como interfaz primaria.** Decisión de producto que afecta toda la arquitectura del MVP, no resuelta en el documento maestro. Validarla cuantitativamente con bodegueros reales **antes de definir el stack de producto** es estratégicamente más relevante que validar el pricing — el pricing se puede ajustar después del lanzamiento, la arquitectura de UX no.",
+      "**Patrones diferenciados por género.** La caracterización asume que la bodega operada por mujeres tiene patrones distintos al promedio masculino, pero el documento maestro no segmenta por género. Si esta hipótesis se confirma, abre la posibilidad de un **sub-segmento dentro del beachhead** con propuesta de valor matizada (énfasis en *\"control y previsibilidad del costo\"* frente a *\"potencia y features\"*), lo cual podría justificar campañas específicas y, eventualmente, partnerships con asociaciones de mujeres comerciantes y programas de inclusión financiera con perspectiva de género."
+    ]
+  }
+}

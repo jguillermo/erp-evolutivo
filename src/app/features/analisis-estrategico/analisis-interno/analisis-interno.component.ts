@@ -6,7 +6,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import data from '../../../../../data/analisis-interno.json';
+import data from '../../../../../data/data-1.2-analisis-interno.json';
 
 type AuditBlock =
   | { type: 'paragraph'; text: string }

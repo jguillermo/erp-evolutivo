@@ -6,7 +6,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import data from '../../../../../data/data-1.5.4-peyea.json';
+import data from '../../../../../data/data-2.1.1-mercado-objetivo-caracteristicas.json';
 
 type Block =
   | { type: 'paragraph'; text: string }
@@ -15,7 +15,7 @@ type Block =
   | { type: 'info'; text: string }
   | { type: 'implication'; title: string; text: string };
 
-interface Section {
+interface Dimension {
   id: string;
   title: string;
   emoji: string;
@@ -23,14 +23,10 @@ interface Section {
   blocks: Block[];
 }
 
-const SECTION_COLORS: Record<string, CardColor> = {
-  'ff-l1':      'amber',
-  'vc-l1':      'red',
-  'ee-l1':      'indigo',
-  'fi-l1':      'green',
-  'vector-l1':  'blue',
-  'lectura-2':  'cyan',
-  'poligono':   'purple',
+const DIMENSION_COLORS: Record<string, CardColor> = {
+  demografica:  'cyan',
+  geografica:   'blue',
+  psicografica: 'purple',
 };
 
 const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = {
@@ -40,17 +36,17 @@ const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = 
 };
 
 @Component({
-  selector: 'app-peyea',
+  selector: 'app-mercado-objetivo-caracteristicas',
   standalone: true,
   imports: [RouterLink, CardComponent, ListComponent, ListItemComponent, SectionComponent, QuotedTextComponent, MarkdownPipe],
-  templateUrl: './peyea.component.html',
+  templateUrl: './mercado-objetivo-caracteristicas.component.html',
 })
-export class PeyeaComponent {
+export class MercadoObjetivoCaracteristicasComponent {
   protected readonly data = data;
-  protected readonly sections = data.sections as Section[];
+  protected readonly dimensions = data.dimensions as Dimension[];
 
-  protected sectionColor(id: string): CardColor {
-    return SECTION_COLORS[id] ?? 'indigo';
+  protected dimensionColor(id: string): CardColor {
+    return DIMENSION_COLORS[id] ?? 'indigo';
   }
 
   protected sectionVariant(blockType: 'note' | 'info' | 'implication'): SectionVariant {

@@ -6,7 +6,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import data from '../../../../../data/mision-vision-valores.json';
+import data from '../../../../../data/data-1.5.1-mision-vision-valores.json';
 
 type Block =
   | { type: 'paragraph'; text: string }

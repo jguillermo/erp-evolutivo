@@ -1,6 +1,6 @@
 ---
 name: nueva-vista
-description: Scaffolds una nueva vista del ERP Evolutivo a partir de documentación o contenido en bruto que el usuario pega. Genera data/<slug>.json (texto plano + markdown inline), el componente Angular standalone con tokens semánticos, la plantilla HTML, y registra la ruta lazy-load. Reutiliza los shared components existentes (card, list, section, badge, quoted-text, comparison-row, tier-section, badge-label, alert, page-header, stat-row, empty-state, tooltip, button) y propone crear uno nuevo si el contenido no encaja. Trigger cuando el usuario pide "crear vista", "nueva vista", "nueva sección", "nueva pestaña", "nueva página", "scaffold vista", "añadir vista", "nueva parte del proyecto", "documenta esta nueva sección".
+description: Scaffolds una nueva vista del ERP Evolutivo a partir de documentación o contenido en bruto que el usuario pega. Genera data/data-<num>-<slug>.json (texto plano + markdown inline, prefijo numérico que respeta el outline del proyecto), el componente Angular standalone con tokens semánticos, la plantilla HTML, y registra la ruta lazy-load. Reutiliza los shared components existentes (card, list, section, badge, quoted-text, comparison-row, tier-section, badge-label, alert, page-header, stat-row, empty-state, tooltip, button) y propone crear uno nuevo si el contenido no encaja. Trigger cuando el usuario pide "crear vista", "nueva vista", "nueva sección", "nueva pestaña", "nueva página", "scaffold vista", "añadir vista", "nueva parte del proyecto", "documenta esta nueva sección".
 ---
 
 # Skill: nueva-vista
@@ -16,20 +16,25 @@ registrada. Sigue al pie las reglas de `CLAUDE.md` y `docs/design-system.md`.
 
 ## Antes de tocar código — preguntar SIEMPRE
 
-Antes de generar ningún archivo, hay que resolver tres cosas con
+Antes de generar ningún archivo, hay que resolver **cuatro** cosas con
 `AskUserQuestion`. No las inventes ni las deduzcas — preguntar.
 
 1. **¿Dónde cuelga la nueva vista?**
    - Top-level (`/<slug>`, aparece como pestaña en el header de `app.ts`)
-   - Dentro de un grupo existente — actualmente `analisis-estrategico/`
-     (`/analisis-estrategico/<slug>`)
+   - Dentro de un grupo existente — actualmente `analisis-estrategico/` o
+     `estudio-mercado/` (`/<grupo>/<slug>`)
    - Nuevo grupo a crear (`/<grupo>/<slug>` — confirmar nombre del grupo)
 
 2. **¿Cuál es el `slug` (path segment, kebab-case) y el nombre humano de la
    vista?** Ej: slug `porter`, nombre `5 Fuerzas de Porter`. Pedir también un
    emoji (los usa el header y, normalmente, el `<app-card>` raíz).
 
-3. **¿Visible en navegación?** Si es top-level, ¿añadimos pestaña al header
+3. **¿Qué número de sección del outline le corresponde?** Es el prefijo que
+   ordena el JSON dentro del MD unificado. Ver la tabla **Outline del
+   proyecto** justo debajo. El número va a quedar embebido en el filename
+   como `data/data-<num>-<slug>.json` (ej: `data-1.1.1-pestel.json`).
+
+4. **¿Visible en navegación?** Si es top-level, ¿añadimos pestaña al header
    (`tabs` en `src/app/app.ts`) ahora o se deja oculta (`visible: false`)?
 
 Si la documentación que pegó el usuario menciona estructuras que no encajan
@@ -38,6 +43,61 @@ con los shared components existentes (tabla densa, gráfico, formulario, etc.),
 component `<nombre>`, ¿lo creo primero?". No improvisar markup ad-hoc en la
 vista — todo elemento visual reutilizable vive en
 `src/app/shared/components/`.
+
+---
+
+## Outline del proyecto y prefijo numérico del JSON
+
+El proyecto académico tiene una estructura de capítulos fija. El **filename
+del JSON lleva un prefijo numérico** (`data-<num>-<slug>.json`) que determina
+el orden en `public/erp-evolutivo.md` — el script `scripts/build-docs.mjs`
+hace `readdirSync().sort()` y concatena, así que el orden lexicográfico del
+filename es el orden en el doc unificado.
+
+| Sección | Filename canónico |
+|---|---|
+| (overview — Business Model Canvas) | `data-0-canvas.json` |
+| 1. CAPÍTULO I · ESTUDIO ESTRATÉGICO | _(no JSON propio, índice)_ |
+| 1.1 Análisis Externo — PESTEL (Macroentorno) | `data-1.1.1-pestel.json` |
+| 1.1 Análisis Externo — Porter (Microentorno) | `data-1.1.2-porter.json` |
+| 1.2 Análisis Interno | `data-1.2-analisis-interno.json` |
+| 1.3 Matrices EFI & EFE | `data-1.3-efi-efe.json` |
+| 1.4 Factores Críticos de Éxito | `data-1.4-fce.json` |
+| 1.5 Planeamiento Estratégico — Misión, Visión, Valores | `data-1.5.1-mision-vision-valores.json` |
+| 1.5 — Responsabilidad Social Empresarial | `data-1.5.2-rse.json` |
+| 1.5 — Matriz FODA cruzada | `data-1.5.3-foda.json` |
+| 1.5 — Matriz PEYEA | `data-1.5.4-peyea.json` |
+| 1.5 — Estrategias globales del negocio | `data-1.5.5-estrategias.json` |
+| 2. CAPÍTULO II · ESTUDIO DE MERCADO | _(índice)_ |
+| 2.1.1 Características del mercado | `data-2.1.1-mercado-objetivo-caracteristicas.json` |
+| 2.1.3 Selección de zonas geográficas | `data-2.1.3-<slug>.json` |
+| 2.2.1 Perfil del consumidor | `data-2.2.1-<slug>.json` |
+| 2.2.2 Segmentación del mercado objetivo | `data-2.2.2-<slug>.json` |
+| 2.3 Análisis de la Demanda | `data-2.3-<slug>.json` |
+| 2.4 Análisis de la Oferta | `data-2.4-<slug>.json` |
+| 2.5 Demanda del Proyecto | `data-2.5-<slug>.json` |
+| 2.6 Marketing Mix — Producto | `data-2.6.1-<slug>.json` |
+| 2.6 — Estrategia de Precio | `data-2.6.2-<slug>.json` |
+| 2.6 — Estrategia de Distribución | `data-2.6.3-<slug>.json` |
+| 2.6 — Estrategia de Promoción | `data-2.6.4-<slug>.json` |
+
+**Reglas del prefijo:**
+
+- Mismo nivel del outline → mismo prefijo (1.1, 2.6, etc.). Si una sección del
+  outline tiene varias sub-vistas sin numeración propia (ej. 1.1 con PESTEL +
+  Porter), inventar sub-índice (`1.1.1`, `1.1.2`) **manteniendo el orden del
+  outline original**.
+- El `.json` debe encajar limpio entre sus vecinos lexicográficos. Verificar
+  con `ls data/ | sort` antes de cerrar.
+- Si llegan a hacer falta **≥10 ítems en un mismo nivel** (ej. `1.5.10`), hay
+  que **zero-paddear todo ese nivel** (`1.05.10`, `1.05.01`…) para que el
+  sort lexicográfico mantenga el orden numérico. Hoy no aplica.
+- Filename siempre en kebab-case, dots solo dentro del número. Ej:
+  `data-2.6.1-marketing-mix-producto.json`, no
+  `data-2-6-1-marketing-mix-producto.json` ni `data-261-producto.json`.
+- **El número del prefijo NO aparece en la ruta de Angular ni en el slug
+  visible.** La ruta sigue siendo `/estudio-mercado/<slug>` y el slug del
+  componente sigue siendo `<slug>` sin número.
 
 ---
 
@@ -72,16 +132,19 @@ el patrón de los existentes (signals, tokens semánticos, spec.ts con
 
 Toda vista del proyecto se compone de **dos artefactos siempre**:
 
-1. **`data/<slug>.json`** — único origen del texto. Plano + markdown inline.
-   **PROHIBIDO**: HTML, clases Tailwind, nombres de color, `testId`, IDs de
-   componente. Las etiquetas semánticas que aparecen en pantalla (`FASE 1`,
-   `CANAL #1`, `PRINCIPAL`, `BEACHHEAD`, etc.) sí van en el JSON; el color con
-   que se renderizan lo decide el componente.
+1. **`data/data-<num>-<slug>.json`** — único origen del texto. Plano +
+   markdown inline. El **prefijo `<num>`** sale del outline (ver tabla
+   arriba) y es el que define en qué orden aparece la sección en el MD
+   unificado. **PROHIBIDO**: HTML, clases Tailwind, nombres de color,
+   `testId`, IDs de componente. Las etiquetas semánticas que aparecen en
+   pantalla (`FASE 1`, `CANAL #1`, `PRINCIPAL`, `BEACHHEAD`, etc.) sí van en
+   el JSON; el color con que se renderizan lo decide el componente.
 
 2. **`src/app/features/<grupo>/<slug>/<slug>.component.{ts,html}`** —
    importa el JSON, declara las interfaces TypeScript del shape, mapea
    identificadores semánticos a tokens semánticos de color, y renderiza
-   iterando con `@for` / `@switch`.
+   iterando con `@for` / `@switch`. El nombre de la carpeta y del componente
+   sigue siendo `<slug>` sin el prefijo numérico.
 
 Si la nueva vista cuelga directo del root y no de un grupo, va en
 `src/app/features/<slug>/<slug>.component.{ts,html}`.
@@ -145,9 +208,10 @@ no encaja → preguntar (ver "Antes de tocar código").
 
 ### 2. Confirmar ubicación con AskUserQuestion
 
-Las tres preguntas obligatorias de arriba.
+Las **cuatro** preguntas obligatorias de arriba — incluida la del número de
+sección del outline que se convierte en prefijo del filename JSON.
 
-### 3. Crear `data/<slug>.json`
+### 3. Crear `data/data-<num>-<slug>.json`
 
 Estructura recomendada — ajustar según el contenido real:
 
@@ -185,9 +249,10 @@ Reglas estrictas para el JSON:
 - Convertir fechas relativas del briefing a absolutas.
 - Strings UTF-8 con tildes correctas (no `&aacute;` ni `á`).
 
-Referencias canónicas a copiar el shape: `data/canvas.json` (cards
-heterogéneas con shapes distintos por id) y `data/pestel.json` (factores con
-`blocks` tipados — preferir este patrón si los bloques son homogéneos).
+Referencias canónicas a copiar el shape: `data/data-0-canvas.json` (cards
+heterogéneas con shapes distintos por id) y `data/data-1.1.1-pestel.json`
+(factores con `blocks` tipados — preferir este patrón si los bloques son
+homogéneos).
 
 ### 4. Crear el componente
 
@@ -202,7 +267,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import data from '../../../../../data/<slug>.json';
+import data from '../../../../../data/data-<num>-<slug>.json';
 
 type Block =
   | { type: 'paragraph'; text: string }
@@ -366,9 +431,11 @@ clave del template.
 
 ## Checklist final — no entregar hasta cumplir TODO
 
-- [ ] Usuario confirmó ubicación, slug, nombre, emoji y visibilidad de pestaña.
-- [ ] `data/<slug>.json` existe, es texto plano + markdown inline, sin HTML, sin
-      clases, sin `testId`, sin colores.
+- [ ] Usuario confirmó ubicación, slug, nombre, emoji, **número de outline** y
+      visibilidad de pestaña.
+- [ ] `data/data-<num>-<slug>.json` existe, es texto plano + markdown inline,
+      sin HTML, sin clases, sin `testId`, sin colores.
+- [ ] `ls data/ | sort` ubica el archivo en la posición correcta del outline.
 - [ ] Componente `.ts` con `standalone: true`, interfaces tipadas para el JSON,
       `MarkdownPipe` en `imports`, mapas semánticos para id→color.
 - [ ] Template `.html` itera el JSON con `@for`/`@switch`, todo texto rich va
@@ -390,16 +457,27 @@ clave del template.
   `signal()`.
 - Ruta no lazy-load.
 - Componente no `standalone`.
+- **JSON sin prefijo numérico** (`data/<slug>.json` en lugar de
+  `data/data-<num>-<slug>.json`) → rompe el orden del MD unificado.
+- **Prefijo numérico inventado** que no encaja en el outline o se solapa con
+  el de otra vista existente → verificar contra la tabla del outline antes
+  de elegirlo.
 - Saltarse `npm run build` / `npm test`.
 
 ---
 
 ## Patrones de referencia ya en el repo
 
-- Vista con cards heterogéneas (cada card distinta) → `features/canvas/`.
+- Vista con cards heterogéneas (cada card distinta) → `features/canvas/` +
+  `data/data-0-canvas.json`.
 - Vista con bloques homogéneos tipados (`paragraph` / `list` / `note` / `info`
-  / `implication`) → `features/analisis-estrategico/pestel/`.
+  / `implication`) → `features/analisis-estrategico/pestel/` +
+  `data/data-1.1.1-pestel.json`.
+- Vista con intro metodológico + dimensiones + síntesis + hipótesis débiles →
+  `features/estudio-mercado/mercado-objetivo-caracteristicas/` +
+  `data/data-2.1.1-mercado-objetivo-caracteristicas.json`.
 - Página índice que enlaza a subvistas → `features/analisis-estrategico/
-  analisis-estrategico.component.html`.
+  analisis-estrategico.component.html` y
+  `features/estudio-mercado/estudio-mercado.component.html`.
 
 Leer estos antes de generar la nueva vista — son el estándar.

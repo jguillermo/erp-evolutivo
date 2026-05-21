@@ -114,6 +114,14 @@ export const routes: Routes = [
             m => m.EstudioMercadoComponent
           ),
         title: 'Estudio de Mercado — ERP Evolutivo'
+      },
+      {
+        path: 'mercado-objetivo-caracteristicas',
+        loadComponent: () =>
+          import(
+            './features/estudio-mercado/mercado-objetivo-caracteristicas/mercado-objetivo-caracteristicas.component'
+          ).then(m => m.MercadoObjetivoCaracteristicasComponent),
+        title: 'Características del Mercado — Estudio de Mercado'
       }
     ]
   },

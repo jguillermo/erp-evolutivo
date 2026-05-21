@@ -7,7 +7,7 @@ import { ListItemComponent } from '../../../shared/components/list/list-item.com
 import { SectionComponent, SectionVariant } from '../../../shared/components/section/section.component';
 import { QuotedTextComponent } from '../../../shared/components/quoted-text/quoted-text.component';
 import { MarkdownPipe } from '../../../shared/pipes/markdown.pipe';
-import porterData from '../../../../../data/porter.json';
+import porterData from '../../../../../data/data-1.1.2-porter.json';
 
 type PorterBlock =
   | { type: 'paragraph'; text: string }
