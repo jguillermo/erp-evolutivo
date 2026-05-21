@@ -1,0 +1,89 @@
+<!-- Estrategias Globales del Negocio -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="estrategias-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="estrategias-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="estrategias-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- Secciones -->
+  <div class="flex flex-col gap-3xl" data-testid="estrategias-sections">
+    @for (section of sections; track section.id) {
+      <app-card
+        [testId]="'estrategias-' + section.id"
+        [color]="sectionColor(section.id)"
+        [title]="section.title"
+        [emoji]="section.emoji"
+        [question]="section.question">
+
+        @for (block of section.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              <app-list [testId]="'estrategias-' + section.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'estrategias-' + section.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'estrategias-' + section.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'estrategias-' + section.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- Síntesis ejecutiva -->
+  <div class="mt-5xl" data-testid="estrategias-sintesis">
+    <app-section variant="highlight" [title]="data.synthesis.title" testId="estrategias-sintesis-section">
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.synthesis.lead | md"></p>
+      <app-list testId="estrategias-sintesis-list">
+        @for (item of data.synthesis.items; track $index) {
+          <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+        }
+      </app-list>
+      <p class="text-xs text-ink-muted leading-body mt-lg" [innerHTML]="data.synthesis.closing | md"></p>
+    </app-section>
+  </div>
+
+</div>

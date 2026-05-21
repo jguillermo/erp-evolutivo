@@ -1,0 +1,233 @@
+{
+  "title": "⛓️ Análisis y Matriz FODA Cruzada",
+  "subtitle": "Planeamiento estratégico — mapa de prioridades de los próximos 12 a 18 meses según el marco FODA cruzado de Weihrich / D'Alessio.",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "La matriz FODA de ERP Evolutivo se lee mejor como un **mapa de prioridades para los próximos 12 a 18 meses**, no como un retrato fijo. Buena parte de las fortalezas son potenciales, no efectivas — el producto todavía no existe en el mercado. Solo entran variables que cumplen dos condiciones: son verificables (no opiniones internas disfrazadas) y generan estrategias accionables. Las variables se ordenan por peso estratégico — F1 es más importante que F8, D1 más urgente que D6.",
+  "sections": [
+    {
+      "id": "fortalezas",
+      "title": "Fortalezas (F)",
+      "emoji": "💪",
+      "question": "¿Qué ventajas estructurales tiene ERP Evolutivo hoy?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**F1.** Diferenciador estructural difícil de copiar: la evolución progresiva por ramas es una arquitectura, no un feature. Un competidor establecido (Odoo, Alegra, Bsale) no puede agregarla sin reescribir su producto. Ventana estimada de imitación: **18 a 24 meses**.",
+            "**F2.** Modelo de costos eficiente por diseño: la IA básica corre offline con modelos ligeros y los costos variables crecen solo cuando el ingreso variable ya está activo. Sin subsidio cruzado negativo.",
+            "**F3.** Capital semilla disponible y fundador con perfil técnico exigente. Reduce el riesgo técnico del MVP y elimina la dependencia de subcontratación cara en la fase más vulnerable.",
+            "**F4.** IA integrada como feature, no como módulo premium. A diferencia de competidores que cobran extra por IA, ERP Evolutivo la incluye en el núcleo gratuito — argumento de adquisición desde el día uno.",
+            "**F5.** Modelo freemium sin tarjeta de crédito y onboarding bajo 10 minutos. Reduce la barrera de entrada en un segmento que históricamente abandona productos por fricción inicial.",
+            "**F6.** Diseño multi-país desde el inicio: SUNAT (Perú), DIAN (Colombia), SAT (México), SII (Chile). Reduce deuda técnica futura en la expansión regional.",
+            "**F7.** Gamificación culturalmente alineada. La lógica de niveles y progresión es intuitiva para emprendedores de 25 a 45 años — reduce costo de onboarding y soporte.",
+            "**F8.** Potencial flywheel de datos. Fortaleza prospectiva: el diseño del producto la habilita desde el MVP, aunque aún no es efectiva."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "debilidades",
+      "title": "Debilidades (D)",
+      "emoji": "⚡",
+      "question": "¿Qué capacidades o condiciones críticas faltan ahora?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**D1.** Fundador único con perfil exclusivamente técnico. La fase actual exige más trabajo comercial que técnico. Sin advisor comercial, hay riesgo de tomar decisiones de mercado desde una óptica de producto.",
+            "**D2.** Validación de mercado solo cualitativa. Sin datos cuantitativos de intención de compra ni disposición a pagar. El interés declarado en entrevistas sobreestima la demanda real en un factor de **3x a 10x**.",
+            "**D3.** Canal de distribución principal no validado. La estrategia de go to market depende de contadores que quieran recomendar el producto — hipótesis sin alianzas cerradas. Los contadores tienen incentivos ambiguos.",
+            "**D4.** Pre-MVP, sin producto en mercado. Sin código, sin usuarios reales, sin métricas operativas. Todo el modelo vive en hipótesis.",
+            "**D5.** Modelo de pricing por uso cognitivamente complejo para el segmento. Un bodeguero con baja alfabetización digital no puede predecir cuánto pagará este mes.",
+            "**D6.** Dependencia de APIs externas (OpenAI, Anthropic) para la IA avanzada. Sin datos propios para fine tuning, la IA es esencialmente un LLM genérico con prompts especializados.",
+            "**D7.** Ausencia de marca, base de usuarios y boca a boca. Los primeros 100 usuarios cuestan tres veces más adquirir que los siguientes 1,000.",
+            "**D8.** Riesgo de sobre-construcción técnica. Un fundador técnico tiende a privilegiar la elegancia del sistema sobre la velocidad de validación."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oportunidades",
+      "title": "Oportunidades (O)",
+      "emoji": "🌬️",
+      "question": "¿Qué vientos de cola externos puede aprovechar el modelo?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**O1.** Mandato SUNAT de facturación electrónica en expansión. La obligación fiscal digital se extiende a negocios cada vez más pequeños — convierte la digitalización en necesidad no opcional. Viento de cola regulatorio cuya intensidad crece año a año.",
+            "**O2.** Masificación de pagos digitales (Yape, Plin, Mercado Pago) en bodegas y micro negocios. El flujo transaccional digital ya existe en el segmento, reduciendo la curva de adopción de un sistema integrado.",
+            "**O3.** Caída sostenida del costo de inferencia de IA — más del **90% desde 2023**. Lo que era inviable para un cliente de S/ 30 al mes hace dos años, hoy es financieramente sostenible.",
+            "**O4.** Universo de mercado grande y poco penetrado: ~2.3 millones de MYPEs formales en Perú, más de 400,000 bodegas en Lima. TAM regional superior a USD 3,000 millones anuales.",
+            "**O5.** Generación de emprendedores nativos digitales (25 a 45 años). Entienden intuitivamente la gamificación — reducen la barrera psicológica de adoptar un ERP con mecánica de niveles.",
+            "**O6.** Crecimiento de fintechs que necesitan datos transaccionales de PYMEs para scoring crediticio. ERP Evolutivo está posicionado para convertirse en proveedor natural de ese insumo.",
+            "**O7.** Mercados LATAM con regulación fiscal electrónica similar (Colombia, México, Chile). La expansión geográfica es adaptar módulos, no reescribir el producto.",
+            "**O8.** Ventana de oportunidad temporal. Ningún competidor regional ha lanzado un ERP con mecánica evolutiva e IA integrada. Ventanas de este tipo duran **18 a 36 meses**."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amenazas",
+      "title": "Amenazas (A)",
+      "emoji": "⛈️",
+      "question": "¿Qué fuerzas externas pueden bloquear o erosionar el negocio?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**A1.** Resistencia cultural al pago por software entre PYMEs. El segmento ha usado Excel gratis toda su vida. **Esta es la amenaza estratégica número uno del modelo.**",
+            "**A2.** Reacción de competidores establecidos (Alegra, Bsale). Tienen base instalada, capital, marca y equipos comerciales. Pueden librar una guerra de precios aunque no puedan replicar la arquitectura evolutiva.",
+            "**A3.** Entrada de jugadores globales con capital y velocidad (Holded, QuickBooks, Intuit/Square). Probabilidad baja en el corto plazo, pero escenario plausible si LATAM muestra tracción agregada.",
+            "**A4.** Endurecimiento regulatorio sobre uso de datos. Ley 29733, LGPD y regulaciones de Colombia y México se endurecen. El modelo depende parcialmente de monetizar inteligencia de datos agregados.",
+            "**A5.** Inestabilidad política y macroeconómica en Perú y LATAM. Cambios de gobierno, ajustes tributarios y riesgo cambiario afectan capacidad de inversión y disposición de financiamiento.",
+            "**A6.** Saturación del canal contadores con productos competidores. Si Alegra o Bsale ofrecen comisiones más agresivas, el canal #1 del modelo pierde competitividad rápidamente.",
+            "**A7.** Excel como sustituto gratuito eterno. Es gratis, conocido, multipropósito y sin curva de aprendizaje adicional. Sustituirlo exige demostrar valor incremental claro.",
+            "**A8.** Dependencia tecnológica de proveedores de IA (OpenAI, Anthropic, Google). Cambios en precios, términos o disponibilidad pueden afectar el componente central del diferenciador."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fo",
+      "title": "FO · Explotar",
+      "emoji": "🚀",
+      "question": "¿Cómo usar las fortalezas para capitalizar las oportunidades?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estrategias de **máxima ofensiva**: las fortalezas actuales permiten atacar directamente las oportunidades de mayor valor."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**E1.** Diseñar la primera rama paga alrededor de la obligación SUNAT de facturación electrónica *(F1, F4, F5 · O1, O2)* — la rama Ventas y Facturación Electrónica combina el diferenciador evolutivo, la IA incluida y el onboarding rápido para atacar la necesidad regulatoria creciente.",
+            "**E2.** Capitalizar la caída del costo de IA para entregar valor desde el día uno gratis *(F2, F4 · O3, O5)* — mientras los competidores cobran extra por IA, ERP Evolutivo la incluye. Diferenciador inmediato y argumento de marketing comprimido.",
+            "**E3.** Construir desde el MVP la arquitectura de datos para alimentar el flywheel y el ingreso futuro vía scoring crediticio *(F8 · O4, O6)* — la instrumentación de captura de patrones debe estar en el primer release.",
+            "**E4.** Lanzar en Lima diseñando ya el producto para escalar a Colombia, México y Chile *(F6 · O7, O8)* — la arquitectura multi-país permite que la expansión sea adaptar módulos, no reescribir el producto.",
+            "**E5.** Usar el capital semilla para sostener una validación cuantitativa agresiva antes de invertir en construcción amplia *(F3 · O4, O8)* — con mercado grande y ventana temporal limitada, el capital se invierte mejor en aprender rápido."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "do",
+      "title": "DO · Buscar",
+      "emoji": "🎯",
+      "question": "¿Cómo superar debilidades para no perder las oportunidades?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estrategias de **mejora**: cubrir los gaps internos para poder capitalizar el contexto externo favorable."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**E6.** Reclutar un advisor o cofundador comercial con experiencia en venta a PYMEs peruanas antes del lanzamiento *(D1, D3 · O1, O4)* — puede ser 1–2% de equity. **Decisión más urgente del trimestre actual.**",
+            "**E7.** Ejecutar un fake door test cuantitativo de 4 a 6 semanas con landing page y pre-registro antes de escribir código de producto *(D2, D4 · O1, O2)* — métrica mínima: **5% de conversión** visitantes a pre-registro.",
+            "**E8.** Simplificar el modelo de pricing a activación mensual con umbral mínimo antes del lanzamiento *(D5 · O1, O5)* — *\"si usas la rama, pagas S/ 18; si no, pagas S/ 0\"* es comprensible en 5 segundos.",
+            "**E9.** Construir contenido educativo en TikTok e Instagram para reducir dependencia del canal contadores *(D3, D7 · O5)* — doble canal reduce riesgo de dependencia y compra opcionalidad.",
+            "**E10.** Comunicar la IA Fase 1 como *\"asistente que mejora con datos\"* y definir roadmap honesto por fases *(D6 · O3, O6)* — aprovechar la caída del costo de IA para iterar rápido sin sobreprometer."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fa",
+      "title": "FA · Confrontar",
+      "emoji": "🛡️",
+      "question": "¿Cómo usar las fortalezas para neutralizar amenazas?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estrategias **defensivas ofensivas**: las fortalezas actuales crean escudos activos frente a las amenazas más peligrosas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**E11.** Convertir el modelo freemium en escudo contra la resistencia al pago *(F2, F5 · A1, A7)* — el bodeguero no enfrenta *\"pagar o no pagar\"* sino *\"probar o no probar\"*. Neutraliza la amenaza #1 y le quita relevancia a Excel.",
+            "**E12.** Acelerar la profundización del diferenciador evolutivo y de la IA contextual antes de que los competidores reaccionen *(F1, F4 · A2, A3)* — la ventana de 18 a 24 meses debe usarse para construir profundidad, no para hacer marketing prematuro.",
+            "**E13.** Diseñar políticas de privacidad y manejo de datos como ventaja competitiva, no como costo regulatorio *(F1 · A4)* — llegar anticipado con prácticas auditables convierte el endurecimiento regulatorio en barrera de entrada para competidores con políticas opacas.",
+            "**E14.** Aprovechar la eficiencia estructural de costos para sobrevivir a una eventual guerra de precios *(F2 · A2)* — la arquitectura ligera permite resistir más tiempo que un competidor con costos fijos altos.",
+            "**E15.** Construir relación directa con contadores ofreciendo certificación gratuita y comisiones competitivas *(F3 · A6)* — meta: 50 contadores piloto certificados en Lima en los primeros seis meses."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "da",
+      "title": "DA · Evitar",
+      "emoji": "🚧",
+      "question": "¿Cómo minimizar debilidades y esquivar amenazas simultáneamente?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Estrategias de **supervivencia y contingencia**: evitar las combinaciones peligrosas de debilidades internas con presiones externas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**E16.** Cubrir el gap de capacidades comerciales antes de invertir capital en desarrollo *(D1, D2 · A1, A2)* — no escribir código de producto sin advisor confirmado y al menos 100 entrevistas cuantitativas con bodegueros.",
+            "**E17.** No construir las nueve ramas en paralelo *(D4, D8 · A1, A2)* — una sola rama paga validada antes de la siguiente. 20 usuarios pagando antes de construir la rama dos.",
+            "**E18.** Diversificar proveedores de IA y empezar prototipos de modelos propios temprano *(D6 · A8)* — mantener compatibilidad multi-proveedor (OpenAI, Anthropic, Llama, Mistral) y recolectar datos propios desde el MVP.",
+            "**E19.** Plan B de canal: modelo PLG con referidos vía comprobantes electrónicos si el canal contadores falla *(D3, D7 · A6)* — cada factura emitida incluye discretamente un enlace de referido. Convierte cada venta en un acto de adquisición.",
+            "**E20.** Pivote de pricing como plan B si la resistencia al pago supera lo previsto *(D2, D5 · A1, A7)* — modelo 100% gratuito monetizado por comisiones transaccionales sobre Yape, Plin y Mercado Pago."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "priorizacion",
+      "title": "Priorización para los próximos 12 a 18 meses",
+      "emoji": "📋",
+      "question": "¿Cuáles son las 5 jugadas con mayor retorno marginal por sol invertido?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "No todas las 20 estrategias se ejecutan simultáneamente. En orden de retorno marginal decreciente:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Prioridad 1 — E16 + E7:** cubrir el gap comercial (advisor o cofundador) y ejecutar validación cuantitativa antes de cualquier inversión seria en producto. **Sin esto, todo lo demás es construir sobre arena.**",
+            "**Prioridad 2 — E1 + E8:** diseñar la primera rama alrededor de facturación SUNAT y simplificar el pricing a activación mensual. Estas dos decisiones definen si el MVP es vendible o no.",
+            "**Prioridad 3 — E11 + E12:** apalancar el freemium como respuesta a la resistencia al pago y usar la ventana de 18 a 24 meses para profundizar diferenciación antes de que reaccionen los competidores.",
+            "**Prioridad 4 — E15 + E9:** saturar el canal contadores con valor y construir en paralelo presencia orgánica en redes sociales. Doble canal reduce riesgo de dependencia.",
+            "**Prioridad 5 — E13 + E3:** diseñar la arquitectura de datos y privacidad desde el MVP. Lo que se construye desde el día uno es barato — lo que se agrega después cuesta diez veces más."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Las quince estrategias restantes son válidas pero esperan a fases siguientes, o se ejecutan a costo marginal una vez que las cinco prioritarias estén en marcha."
+        }
+      ]
+    },
+    {
+      "id": "supuestos",
+      "title": "Observaciones críticas y supuestos débiles",
+      "emoji": "⚠️",
+      "question": "¿Qué hipótesis críticas condicionan la validez de toda la matriz?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**F1, F4 y F8 son potenciales, no efectivas.** La evolución progresiva, la IA como diferenciador y el flywheel de datos son fortalezas *si se ejecutan bien*. Mal ejecutadas, se convierten en debilidades. La diferencia es velocidad y calidad de ejecución.",
+            "**A1 condiciona todo el modelo.** La resistencia al pago es suficientemente grande como para cuestionar la tesis completa. E11 (freemium) y E20 (comisiones transaccionales) son mitigaciones — si ni siquiera con freemium el segmento adopta, la tesis debe reformularse, no parchearse.",
+            "**O1 tiene doble filo.** El mandato SUNAT es el viento de cola más fuerte, pero puede convertirse en amenaza si SUNAT ofrece su propio sistema gratuito de facturación o si BCP lo incluye gratis con su cuenta PYME (vía ecosistema Yape). Requiere monitoreo trimestral."
+          ]
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "⛓️ Síntesis ejecutiva — FODA Cruzada",
+    "lead": "La matriz FODA cruzada de ERP Evolutivo concentra su valor estratégico en **cuatro decisiones**: lanzar la primera rama alrededor de facturación SUNAT con pricing simple; cerrar el gap comercial con advisor antes del MVP; apalancar freemium como respuesta a la resistencia al pago; usar la ventana competitiva para profundizar diferenciación antes que ampliar superficie.",
+    "items": [
+      "**Variables internas:** 8 fortalezas (F1–F8) y 8 debilidades (D1–D8) ordenadas por peso estratégico",
+      "**Variables externas:** 8 oportunidades (O1–O8) y 8 amenazas (A1–A8) con potencial de impacto real",
+      "**20 estrategias cruzadas** distribuidas en cuatro cuadrantes: FO (explotar), DO (buscar), FA (confrontar), DA (evitar)",
+      "**5 prioridades para 12–18 meses:** E16+E7, E1+E8, E11+E12, E15+E9, E13+E3"
+    ],
+    "closing": "Todo lo que no contribuya a las cuatro decisiones centrales en los próximos doce meses se pospone. Las tres hipótesis críticas — fortalezas aún no efectivas, resistencia al pago como condicionante total y el doble filo del mandato SUNAT — deben monitorearse activamente, no asumirse resueltas."
+  }
+}

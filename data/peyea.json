@@ -1,0 +1,274 @@
+{
+  "title": "🦭 Matriz PEYEA",
+  "subtitle": "Posición Estratégica y Evaluación de la Acción — análisis en dos lecturas: estado actual (pre-MVP) y proyección al primer año post lanzamiento.",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "La PEYEA fue diseñada para empresas con operación real. Aplicarla a una startup pre-MVP exige una decisión metodológica: se construyen **dos lecturas**. La primera califica la fortaleza financiera *tal como está hoy* — describe la realidad presente y empuja hacia postura conservadora. La segunda proyecta al MVP en mercado (12 meses post lanzamiento) asumiendo escenario base disciplinado, no optimista. Ambos vectores son útiles porque informan decisiones diferentes.",
+  "sections": [
+    {
+      "id": "ff-l1",
+      "title": "FF · Fortaleza Financiera — Lectura 1",
+      "emoji": "💰",
+      "question": "¿Cuál es la situación financiera real de ERP Evolutivo hoy?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escala de 1 a 6. Mayor valor = mayor fortaleza financiera. Las calificaciones son deliberadamente conservadoras — sobrecalificar FF para obtener un vector más atractivo convertiría el análisis en un ejercicio cosmético."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Retorno sobre la inversión — 1.** El proyecto no genera ingresos. ROI actual es cero o negativo (gasto de validación).",
+            "**Apalancamiento — 4.** Capital semilla propio, sin deuda. Sin obligación de servicio de deuda — positivo en etapa exploratoria.",
+            "**Liquidez — 4.** Capital semilla disponible suficiente para sostener 12 a 18 meses de operación.",
+            "**Capital de trabajo — 3.** Limitado al capital semilla. Suficiente para construir el MVP, insuficiente para sostener equipo amplio.",
+            "**Flujo de caja — 1.** No hay ingreso. Flujo de caja neto negativo por diseño en esta etapa.",
+            "**Facilidad para salir del mercado — 5.** Sin compromisos contractuales, sin equipo grande, sin deuda. La pérdida, si el proyecto se cancela, es limitada. Paradójicamente una fortaleza pre-MVP.",
+            "**Riesgo del negocio — 2.** Hipótesis críticas no validadas: disposición a pagar, canal contadores, comprensión del pricing, adopción."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "📊 Promedio FF Lectura 1",
+          "text": "*(1 + 4 + 4 + 3 + 1 + 5 + 2) ÷ 7 = **2.86***"
+        }
+      ]
+    },
+    {
+      "id": "vc-l1",
+      "title": "VC · Ventaja Competitiva — Lectura 1",
+      "emoji": "⚔️",
+      "question": "¿Qué posición competitiva real tiene ERP Evolutivo sin producto en mercado?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escala de 1 a 6, luego se resta 6. Mayor valor original = mejor posición; el promedio resultante siempre es negativo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Participación de mercado — 1 (neto −5).** El producto no está en mercado. Participación cero.",
+            "**Calidad del producto — 4 (neto −2).** El concepto está bien construido y la arquitectura evolutiva es diferenciada. Calificación intermedia alta basada en el diseño documentado.",
+            "**Ciclo de vida del producto — 6 (neto 0).** Producto en etapa de introducción más temprana posible — hay todo el ciclo por delante.",
+            "**Lealtad del cliente — 1 (neto −5).** No hay clientes. No hay lealtad medible.",
+            "**Utilización de capacidad de competidores — 3 (neto −3).** Alegra, Bsale, Odoo tienen capacidad establecida pero no saturada. Hay espacio en la industria.",
+            "**Conocimiento tecnológico — 5 (neto −1).** Fortaleza real del fundador: perfil técnico fuerte en software e IA. Ventaja genuina, no aspiracional.",
+            "**Control sobre proveedores y distribuidores — 2 (neto −4).** Dependencia de APIs externas (OpenAI, Anthropic). Canal contadores no validado."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "📊 Promedio VC Lectura 1",
+          "text": "*(−5 − 2 + 0 − 5 − 3 − 1 − 4) ÷ 7 = **−2.86***"
+        }
+      ]
+    },
+    {
+      "id": "ee-l1",
+      "title": "EE · Estabilidad del Entorno — Lectura 1",
+      "emoji": "⛈️",
+      "question": "¿Cuán turbulento e impredecible es el entorno competitivo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escala de 1 a 6, luego se resta 6. Mayor valor original = entorno más estable. EE calificada con dureza intencional — incluso en el escenario más optimista el entorno no deja de ser inestable."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Cambios tecnológicos — 1 (neto −5).** Cambios rápidos y profundos: IA generativa, pagos digitales, regulaciones fiscales digitales y modelos de distribución en transformación acelerada.",
+            "**Tasa de inflación — 4 (neto −2).** Perú mantiene inflación relativamente controlada (banda meta BCRP). No es la mayor preocupación.",
+            "**Variabilidad de la demanda — 3 (neto −3).** Demanda por digitalización crece pero la disposición a pagar del segmento es volátil. PYMEs sensibles al ciclo económico local.",
+            "**Rango de precios de competidores — 2 (neto −4).** Dispersión amplia: Excel gratis, Alegra desde S/ 15, Odoo S/ 70–200, SAP/S10 miles de soles. Entorno de precios difícil de leer.",
+            "**Barreras de entrada — 2 (neto −4).** Técnicamente bajas. Cualquier developer puede armar un MVP de gestión SaaS. La barrera real está en distribución y datos, no en código.",
+            "**Presión competitiva — 2 (neto −4).** Alta: Alegra, Bsale, Odoo, Holded, y el sustituto eterno Excel. Más el riesgo de que una fintech o banco lance herramienta gratuita.",
+            "**Elasticidad de precio de la demanda — 1 (neto −5).** Muy alta. El segmento prefiere herramienta gratuita imperfecta sobre herramienta paga perfecta. **Amenaza estratégica número uno del modelo.**",
+            "**Presión de productos sustitutos — 1 (neto −5).** Excel, libreta, WhatsApp. Sustitutos gratuitos, conocidos y multipropósito. Presión sustitutiva máxima."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "📊 Promedio EE Lectura 1",
+          "text": "*(−5 − 2 − 3 − 4 − 4 − 4 − 5 − 5) ÷ 8 = **−4.00***"
+        }
+      ]
+    },
+    {
+      "id": "fi-l1",
+      "title": "FI · Fortaleza de la Industria — Lectura 1",
+      "emoji": "🏭",
+      "question": "¿Qué tan atractivo y robusto es el sector de software de gestión para PYMEs?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escala de 1 a 6. Mayor valor = mayor fortaleza de la industria. FI y EE son constantes en ambas lecturas — dependen del sector, no de la empresa."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Potencial de crecimiento — 6.** Mercado SaaS para PYMEs en LATAM crece a tasas de dos dígitos. TAM regional superior a USD 3,000 millones. Potencial máximo.",
+            "**Potencial de rentabilidad — 5.** SaaS B2SMB tiene márgenes brutos del 70–85% a escala. Modelo estructuralmente rentable si se controla CAC.",
+            "**Estabilidad financiera del sector — 4.** Sector software en LATAM atractivo para inversión. Capital disponible: VC regional, ángeles, fondos de impacto, corporate VC bancario.",
+            "**Conocimiento tecnológico del sector — 5.** El conocimiento para construir SaaS con IA existe, hay talento disponible y las APIs y frameworks son accesibles.",
+            "**Utilización de los recursos — 4.** Sector con uso intensivo de talento y cloud, ambos accesibles. Modelos lean son viables.",
+            "**Intensidad de capital — 5.** SaaS B2SMB no requiere capital intensivo. Permite empezar con poco y escalar gradualmente — favorable para una startup.",
+            "**Facilidad de entrada al mercado — 3.** Técnicamente baja (amenaza) pero comercialmente media-alta (positivo si ya se está dentro). Calificación intermedia.",
+            "**Productividad — 4.** Las empresas SaaS líderes en LATAM muestran ingresos por empleado crecientes. La industria gana productividad con cloud y AI."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "📊 Promedio FI Lectura 1",
+          "text": "*(6 + 5 + 4 + 5 + 4 + 5 + 3 + 4) ÷ 8 = **4.50***"
+        }
+      ]
+    },
+    {
+      "id": "vector-l1",
+      "title": "Vector resultante — Lectura 1 (Pre-MVP)",
+      "emoji": "📍",
+      "question": "¿En qué cuadrante se ubica ERP Evolutivo hoy y qué implica?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Eje X** = VC + FI = −2.86 + 4.50 = **+1.64**",
+            "**Eje Y** = FF + EE = 2.86 + (−4.00) = **−1.14**",
+            "**Vector (1.64, −1.14)** → cuadrante inferior derecho → **Postura COMPETITIVA**"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La industria es atractiva *(FI alta)* y el entorno es inestable *(EE muy negativa)*. La empresa tiene fortaleza financiera limitada y ventaja competitiva moderada. D'Alessio describe esta postura como típica de una organización que opera en un sector fuerte y turbulento donde el **factor crítico es la fortaleza financiera**."
+        },
+        {
+          "type": "note",
+          "text": "D'Alessio advierte que esta postura *\"frecuentemente conduce al fracaso\"* cuando no se resuelve la debilidad financiera. Sin levantar capital adicional en el primer año post-MVP, ERP Evolutivo compite con desventaja en una industria donde Alegra y Bsale tienen más espalda para resistir guerras de precios."
+        }
+      ]
+    },
+    {
+      "id": "lectura-2",
+      "title": "Lectura 2 — Proyectada al MVP en mercado",
+      "emoji": "🔮",
+      "question": "¿Cómo se mueve el vector si el modelo se ejecuta disciplinadamente?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escenario base: MVP lanzado con rama de Facturación Electrónica, 5 contadores aliados activos, pricing simple validado, **200 a 500 usuarios de pago** al cierre del año uno. FI y EE permanecen iguales — dependen del entorno, no de la empresa."
+        },
+        {
+          "type": "paragraph",
+          "text": "**FF recalificada:** ROI sube a 2 (ingresos existentes), flujo de caja sube a 2 (negativo pero con pendiente positiva), facilidad de salida baja a 4 (ya hay clientes y compromisos), riesgo baja a 3 (hipótesis parcialmente validadas). *Promedio FF = (2 + 4 + 4 + 3 + 2 + 4 + 3) ÷ 7 = **3.14***"
+        },
+        {
+          "type": "paragraph",
+          "text": "**VC recalificada:** participación de mercado sube a 2 (neto −4), calidad del producto sube a 5 (neto −1, refinado con usuarios reales), lealtad sube a 3 (neto −3, primeros usuarios con NPS positivo), control sobre distribuidores sube a 3 (neto −3, alianzas con contadores activas). *Promedio VC = (−4 − 1 + 0 − 3 − 3 − 1 − 3) ÷ 7 = **−2.14***"
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Eje X** = VC + FI = −2.14 + 4.50 = **+2.36**",
+            "**Eje Y** = FF + EE = 3.14 + (−4.00) = **−0.86**",
+            "**Vector (2.36, −0.86)** → cuadrante inferior derecho, moviéndose hacia la frontera con el superior → **Postura COMPETITIVA reforzada, tendencia AGRESIVA**"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia del vector",
+          "text": "La postura competitiva se consolida pero la fortaleza financiera sigue siendo insuficiente para responder a una guerra de precios. Para cruzar al cuadrante agresivo se necesita capital adicional. Esto **valida la tesis de levantar Serie Seed o Serie A entre el mes 12 y el mes 18 post-MVP**."
+        }
+      ]
+    },
+    {
+      "id": "poligono",
+      "title": "Análisis del polígono",
+      "emoji": "🔷",
+      "question": "¿Qué dice la forma del polígono más allá del vector?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "D'Alessio insiste en que el vector resultante puede generarse con polígonos muy diferentes y que cada uno exige análisis específico. El polígono de ERP Evolutivo tiene tres características que importan más que el vector mismo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**EE extendido hacia abajo (−4.00).** El entorno es genuinamente turbulento, no moderadamente inestable. Elasticidad de precio alta, presión competitiva, sustitutos gratuitos y cambios tecnológicos rápidos se acumulan. Cualquier estrategia que asuma estabilidad del entorno está mal calibrada.",
+            "**FI fuerte (4.50).** La industria es atractiva en tamaño, rentabilidad estructural y dinamismo. Es el viento de cola del modelo y la razón principal por la que vale la pena emprender.",
+            "**FF y VC débiles en valor absoluto, pero no catastróficos.** FF en 2.86 refleja la realidad de una startup capitalizada con semilla sin ingresos. VC en −2.86 refleja un producto bien diseñado pero no validado en mercado."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "La asimetría del polígono enseña la verdad estratégica central: ERP Evolutivo compite porque la **industria es atractiva y la oportunidad es real**, no porque sea financieramente fuerte o tenga ventaja consolidada. La estrategia debe capturar esa oportunidad antes de que la asimetría se cierre — por competidores con más músculo o por deterioro regulatorio o macroeconómico."
+        },
+        {
+          "type": "info",
+          "text": "La PEYEA tradicional no captura la dimensión *datos como activo defensivo a largo plazo* que el análisis interno identifica como motor real de la defensibilidad. El flywheel de datos no aparece en las 28 variables canónicas del marco — esto significa que la PEYEA subestima el potencial estructural del modelo a largo plazo si se ejecuta correctamente."
+        }
+      ]
+    },
+    {
+      "id": "estrategias",
+      "title": "Estrategias derivadas del cuadrante competitivo",
+      "emoji": "🎯",
+      "question": "¿Qué jugadas prescribe el cuadrante competitivo para ERP Evolutivo?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Diferenciación.** Productos únicos en diseño, marca, calidad y valor agregado. La evolución progresiva, el cobro por uso y la IA integrada constituyen diferenciación auténtica. La traducción operativa es pulir el diferenciador antes que ampliar la línea de producto — no construir las nueve ramas en paralelo.",
+            "**Reconversión continua.** Mantener la capacidad de pivotar partes del modelo si la validación lo indica. Tres pivotes deben estar listos: pricing de uso real a activación mensual, canal de contadores único a modelo PLG vía comprobantes, monetización de cobro directo a comisiones transaccionales.",
+            "**Penetración intensiva en el beachhead.** Más bodegas en menos zonas antes que pocas bodegas en muchas zonas. Refuerza el modelo de cluster geográfico para activar referidos de barrio.",
+            "**Alianza estratégica con actor de mayor músculo.** La PEYEA en cuadrante competitivo sugiere fusión concéntrica. En contexto startup, la traducción es alianza con fintech (distribución por equity), banco con programa PYME (go to market) o incubadora regional (capital + red). Timing: entre los meses 9 y 15 post-validación inicial.",
+            "**Reducción agresiva de costos.** La eficiencia estructural ya está en el modelo (IA básica offline, costos variables que crecen solo con ingresos). Refuerzo: no contratar talento antes de tiempo ni inflar la nómina por presión de status.",
+            "**Levantar capital antes de que el runway se acabe.** D'Alessio dice explícitamente que en esta postura las organizaciones deben adquirir recursos financieros para marketing. El fundraising toma 4 a 6 meses — iniciar conversaciones con inversores cuando aún hay **12 meses de runway**, no cuando quedan 4."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supuestos",
+      "title": "Observaciones críticas y supuestos débiles",
+      "emoji": "⚠️",
+      "question": "¿Dónde puede fallar este análisis?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**FF deliberadamente conservadora.** Sobrecalificar FF para que el vector se desplace al cuadrante agresivo convertiría el análisis en propaganda interna. La utilidad está en mostrar la realidad financiera con honestidad.",
+            "**VC es altamente sensible al marco temporal.** Lectura 1 = hoy. Lectura 2 = 12 meses. En una hipotética Lectura 3 a 36 meses con flywheel de datos activo, la VC saltaría a −1 o mejor y el vector cruzaría claramente al cuadrante agresivo. La postura estratégica no es estática: *competitiva con riesgo defensiva → competitiva consolidada al año uno → agresiva en años dos a tres* si el modelo funciona.",
+            "**EE calificada con dureza intencional.** Un analista más optimista podría calificar elasticidad de precio y presión de sustitutos en 2 (neto −4) en lugar de 1 (neto −5), moviendo EE de −4.00 a −3.50 aproximadamente. El vector subiría ligeramente, pero la conclusión sobre cuadrante competitivo no cambia.",
+            "**Limitación del marco PEYEA.** El flywheel de datos — el activo defensivo más importante a largo plazo según el análisis interno — no aparece en ninguna de las 28 variables canónicas. La PEYEA describe bien la posición competitiva en el corto y mediano plazo, pero subestima el potencial estructural del modelo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conexiones",
+      "title": "Conexiones con el planeamiento estratégico",
+      "emoji": "🔗",
+      "question": "¿Cómo complementa la PEYEA al resto del análisis?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**FODA cruzado:** las estrategias del cuadrante competitivo refuerzan E11 (freemium como escudo), E12 (profundizar diferenciación), E14 (eficiencia de costos) y E16 (cubrir gap comercial). La PEYEA aporta una estrategia no presente con igual fuerza en el FODA: la necesidad explícita de **levantar capital dentro de los primeros 12 a 18 meses**.",
+            "**Misión y visión:** la visión de cinco años (dominio regional, base de datos más extensa de PYMEs) solo es alcanzable si el vector migra del cuadrante competitivo al agresivo. Eso requiere fortalecer FF (capital y monetización) y VC (cuota y lealtad) — ambas se mueven con ejecución, no con discurso.",
+            "**Factores críticos de éxito:** la PEYEA confirma el orden correcto: 1° validación de hipótesis de adopción y pago, 2° ejecución eficiente de costos, 3° levantamiento oportuno de capital, 4° profundización del diferenciador. Cualquier otro factor es secundario en este momento del ciclo."
+          ]
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "🦭 Síntesis ejecutiva — Matriz PEYEA",
+    "lead": "La PEYEA ubica a ERP Evolutivo en **postura competitiva**: industria atractiva *(FI 4.50)*, entorno turbulento *(EE −4.00)*, fortaleza financiera limitada *(FF 2.86)* y ventaja competitiva en construcción *(VC −2.86)*. Vector Lectura 1: (1.64, −1.14). Vector Lectura 2 post-MVP: (2.36, −0.86) — se consolida y se acerca a la frontera agresiva.",
+    "items": [
+      "**Postura actual:** competitiva — industria atractiva con entorno turbulento y músculo financiero limitado",
+      "**Postura proyectada al año 1:** competitiva reforzada, tendencia agresiva si se ejecuta bien y se levanta capital",
+      "**Postura objetivo (años 2–3):** agresiva — requiere fortalecer FF con capital adicional y VC con cuota y datos",
+      "**Palanca crítica identificada por la PEYEA:** iniciar conversaciones de fundraising con 12 meses de runway, no con 4"
+    ],
+    "closing": "Las cuatro jugadas operativas que se derivan de esta posición: profundizar el diferenciador antes que ampliarlo, mantener operación lean, iniciar conversaciones de capital con runway suficiente, y buscar alianza estratégica con actor financieramente fuerte. Si se ejecutan, el vector migra al cuadrante agresivo en 24 a 36 meses — exactamente donde la visión a cinco años necesita estar."
+  }
+}

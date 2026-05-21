@@ -1,0 +1,261 @@
+{
+  "title": "🎯 Estrategias Globales del Negocio",
+  "subtitle": "Síntesis priorizada del análisis estratégico completo: siete estrategias accionables con objetivos medibles por horizonte temporal.",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "Las estrategias globales son las **pocas decisiones** que, si se ejecutan bien, hacen que las demás sean fáciles. Y si se ejecutan mal, hacen que ninguna otra importe. Están construidas a partir de la convergencia de todos los marcos previos: la misión define el *para qué*, la RSE el *cómo*, el FODA las jugadas combinadas y la PEYEA la postura competitiva. **Siete estrategias. No más. No menos.**",
+  "sections": [
+    {
+      "id": "e1-diferenciacion",
+      "title": "E1 · Diferenciación profunda por arquitectura evolutiva e IA integrada",
+      "emoji": "🏗️",
+      "question": "¿Por qué ganar si no se puede competir en precio ni en profundidad de módulos?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Esta es la **estrategia núcleo**. Todo lo demás se construye alrededor. Convergen aquí la misión (habilitar crecimiento ordenado de PYMEs sin trauma), la fortaleza F1 del FODA (diferenciador difícil de copiar) y la estrategia de diferenciación que la PEYEA recomienda para el cuadrante competitivo."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**No replicar a competidores.** La pelea es por el modelo de relación con el negocio del cliente, no por features. Competir con Alegra en precio fijo o con Odoo en profundidad de módulos es una batalla perdida.",
+            "**Profundizar antes que ampliar.** Una sola rama paga ejecutada con calidad superior a cualquier alternativa del mercado vale más que cinco ramas mediocres.",
+            "**IA como feature integrado, no producto separado.** Mientras todos los competidores cobran extra por IA, ERP Evolutivo la incluye en el núcleo gratuito — argumento comprimido para adquisición."
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 6:** primera rama (Ventas con Facturación Electrónica) completamente especificada y validada con al menos 10 bodegueros en sesiones de prototipo navegable. **Mes 12:** al menos 30% de usuarios free convierten a esta rama en los primeros 90 días. **Mes 18:** lanzar segunda rama solo si la primera tiene ≥200 pagantes y NPS >40. **Mes 24:** IA contextual con aprendizaje sectorial real — al menos 25% de sugerencias aceptadas y aplicadas."
+        }
+      ]
+    },
+    {
+      "id": "e2-beachhead",
+      "title": "E2 · Penetración profunda del beachhead antes que expansión horizontal",
+      "emoji": "📍",
+      "question": "¿Cómo escalar sin diluirse?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Convergen aquí el FODA (E13 del cuadrante FA: profundizar antes de ampliar), la postura competitiva de la PEYEA (estrategias intensivas selectivas) y la recomendación operativa de no construir las nueve ramas en paralelo. La concentración geográfica activa el efecto de cluster: las bodegas se conocen entre sí por barrio. **Cinco bodegas en una manzana valen más que cien bodegas dispersas en toda Lima Metropolitana.**"
+        },
+        {
+          "type": "note",
+          "text": "La disciplina aquí es decir *no* más veces que *sí*. No a Arequipa antes que Lima. No a peluquerías antes que bodegas. No a Colombia antes que Lima Sur. No a más ramas antes que más usuarios en una rama."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 9:** 100 usuarios activos en Lima, máximo 5 distritos — al menos 30 de ellos por referido directo. **Mes 12:** retención semana 8 >25% en el segmento beachhead (go/no-go para segunda fase). **Mes 18:** expandir a segundo sector solo si el sector original sostiene crecimiento mensual positivo. **Mes 24:** expandir a Arequipa y Trujillo antes que internacionalmente."
+        }
+      ]
+    },
+    {
+      "id": "e3-pricing",
+      "title": "E3 · Modelo de precios simple, freemium robusto y comisiones como red de seguridad",
+      "emoji": "💳",
+      "question": "¿Cómo cobrar sin perder usuarios por resistencia al pago?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Convergen aquí la debilidad D5 del FODA (pricing usage-based cognitivamente complejo), las recomendaciones explícitas de simplificar a *activación mensual con umbral mínimo* y la amenaza A1 (resistencia cultural al pago entre PYMEs). El modelo se comprime a **tres mensajes que cualquier bodeguero entiende en cinco segundos**: empezar es gratis para siempre; si usas una rama paga este mes, pagas S/ 18; si no la usas, no pagas."
+        },
+        {
+          "type": "paragraph",
+          "text": "La segunda fuente de ingreso es silenciosa: comisiones transaccionales sobre Yape, Plin y Mercado Pago integrados, que crecen automáticamente con el volumen del usuario sin requerir decisión de compra adicional."
+        },
+        {
+          "type": "info",
+          "text": "**Plan B documentado:** si la validación muestra que el segmento no adopta pago ni con freemium, el pivote es producto 100% gratuito monetizado solo por comisiones transaccionales (E20 del FODA). Esta opcionalidad reduce el riesgo binario del modelo."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 4:** validar con ≥30 bodegueros (test A/B, no entrevista declarativa) que el modelo es comprensible — al menos 60% lo aceptan sin preguntas. **Mes 9:** conversión freemium a pago >8% en primeros 90 días. **Mes 12:** comisiones transaccionales representan ≥15% del ingreso total. **Mes 18:** si conversión <5%, ejecutar pivote al modelo gratuito con comisiones."
+        }
+      ]
+    },
+    {
+      "id": "e4-canales",
+      "title": "E4 · Doble canal de distribución: contadores y crecimiento liderado por producto",
+      "emoji": "🔀",
+      "question": "¿Cómo llegar al usuario sin depender de un único canal?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Canal 1 — Contadores aliados:** programa formal de certificación gratuita, comisión por referido y certificación visible que agrega valor profesional al contador.",
+            "**Canal 2 — PLG vía comprobantes:** cada factura electrónica emitida desde ERP Evolutivo incluye mención discreta dirigida al cliente del bodeguero. 50 facturas diarias = 50 puntos de contacto orgánicos por día. CAC virtualmente cero a escala.",
+            "**Canal 3 — Contenido educativo (secundario):** TikTok e Instagram para construir marca y reducir dependencia de canales activos."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "El riesgo del canal contadores es que tengan incentivos ambiguos para recomendar herramientas que digitalizan su propio trabajo. Por eso el Canal 2 (PLG) se construye en paralelo desde el primer día, no como plan B."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 4:** al menos 3 contadores aliados con compromiso formal. **Mes 9:** 50 contadores certificados — al menos 30% refieren ≥1 usuario en los primeros 90 días. **Mes 12:** canal PLG genera ≥25% de nuevas adquisiciones mensuales — CAC PLG <S/ 10. **Mes 18:** contenido en redes genera ≥5,000 visitantes/mes a landing, conversión >3% a registro freemium."
+        }
+      ]
+    },
+    {
+      "id": "e5-gap-comercial",
+      "title": "E5 · Cobertura del gap comercial vía advisor o cofundador",
+      "emoji": "🤝",
+      "question": "¿Quién vende cuando el fundador es ingeniero?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Convergen aquí la debilidad D1 del FODA (fundador único técnico), la recomendación de buscar advisor con experiencia en venta a PYMEs peruanas y la recomendación explícita de la PEYEA sobre adquirir recursos comerciales para sobrevivir en cuadrante competitivo. **Esta no es una estrategia *nice to have*. Es condición para que las demás funcionen.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "No se busca contratar empleados. Se busca incorporar inteligencia comercial al equipo de toma de decisiones con costo de equity, no de salario. Perfil objetivo: experiencia directa vendiendo software o servicios a PYMEs peruanas, con red en gremios de bodegueros, asociaciones de comerciantes y cámaras de comercio distritales."
+        },
+        {
+          "type": "info",
+          "text": "El fundraising toma 4 a 6 meses. Iniciar conversaciones con inversores cuando aún hay **12 meses de runway**, no cuando quedan 4. El capital adicional es el factor que mueve el vector PEYEA de competitivo a agresivo."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 3:** advisor confirmado con experiencia B2SMB en Perú — compromiso formal de ≥4 horas/mes y 1–2% de equity. **Mes 6:** primera reunión con al menos 3 fondos regionales (Salkantay, Angel Ventures, Magma Partners, Kayyak). **Mes 12:** Serie Seed comprometida por ≥USD 500K o ruta clara de cierre en los siguientes 6 meses. **Mes 18:** evaluar cofundador comercial o VP con equity si la operación supera 200 pagantes."
+        }
+      ]
+    },
+    {
+      "id": "e6-flywheel",
+      "title": "E6 · Construcción temprana del flywheel de datos como activo defensivo",
+      "emoji": "🌀",
+      "question": "¿Cómo hacer que el producto sea más difícil de copiar con el tiempo?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Convergen aquí la fortaleza F8 del FODA (potencial flywheel de datos), la oportunidad O6 (fintechs y cooperación financiera necesitan datos de PYMEs), la visión a cinco años (base de datos más extensa de PYMEs en LATAM) y la responsabilidad social del frente de ética del dato. La arquitectura de datos debe instrumentarse **desde el MVP**, no agregarse después. La diferencia entre hacerlo desde el día uno o en el año tres es de dos a tres años de retraso en el activo defensivo más importante."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Captura desde el día uno.** Cada transacción, interacción con la IA, activación de rama y churn quedan registrados.",
+            "**Anonimización auditable.** Aplicada en capa de almacenamiento, no como parche posterior.",
+            "**Valor recíproco al usuario.** Benchmarks sectoriales automáticos como contraprestación — el usuario ve sus datos comparados con negocios similares."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A mediano plazo esta estrategia habilita tres productos derivados: reportes sectoriales para inversores y consultoras, scoring crediticio para fintechs y bancos, e inteligencia de mercado para cooperación internacional."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 6:** arquitectura de datos del MVP con captura completa de eventos y anonimización en almacenamiento. **Mes 12:** cada usuario activo recibe ≥1 benchmark sectorial automático al mes — ≥60% interactúan con él. **Mes 24:** primer reporte sectorial vendible a entidad externa (objetivo ≥USD 30K). **Mes 36:** alianza activa con fintech o banco para scoring crediticio de PYMEs."
+        }
+      ]
+    },
+    {
+      "id": "e7-expansion",
+      "title": "E7 · Expansión regional con producto multi-país pre-construido",
+      "emoji": "🌎",
+      "question": "¿Cómo expandirse a 4 países sin reescribir el producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Convergen aquí la fortaleza F6 del FODA (diseño multi-país desde el inicio), la oportunidad O7 (mercados LATAM con regulación similar) y la visión de presencia en al menos cuatro países. Esto **no significa lanzar en cuatro países en paralelo**. Significa diseñar el producto desde el MVP de tal forma que la expansión geográfica sea cuestión de configuración, no de reescritura."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Perú primero.** Lima, luego provincia.",
+            "**Colombia segundo.** Mayor densidad de PYMEs, regulación parecida (DIAN), idioma compartido.",
+            "**México tercero.** Mercado masivo pero más competitivo (SAT).",
+            "**Chile cuarto.** Mercado más sofisticado, regulación SII madura, validación de modelo en contexto premium."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "Cada país nuevo requiere un *partnership* local: incubadora, cámara de comercio o gremio de contadores. No se entra en frío."
+        },
+        {
+          "type": "implication",
+          "title": "🎯 Objetivos vinculados",
+          "text": "**Mes 12:** arquitectura de facturación electrónica certificada en Perú con capa de abstracción para múltiples países. **Mes 24:** pruebas técnicas con OSE colombiano o aliado local para DIAN. **Mes 36:** lanzamiento en Colombia con ≥1 partnership formal — objetivo 200 usuarios activos a 6 meses. **Mes 60:** presencia operativa en Perú, Colombia, México y Chile — ≥10,000 usuarios activos consolidados."
+        }
+      ]
+    },
+    {
+      "id": "objetivos",
+      "title": "Vinculación con los objetivos generales del negocio",
+      "emoji": "📊",
+      "question": "¿Qué métricas verifican que las siete estrategias funcionan en conjunto?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Año 1 (MVP + 12 meses):** ≥500 usuarios activos en Lima, conversión a pago >8%, primera rama validada, contadores aliados activos, advisor comercial confirmado, conversaciones avanzadas con fondos.",
+            "**Año 2:** ≥2,000 usuarios activos, Lima Metropolitana consolidada, Arequipa y Trujillo iniciadas, segunda rama paga lanzada, ARR >USD 200K, Serie Seed cerrada.",
+            "**Año 3:** ≥5,000 usuarios activos en Perú, Colombia lanzada, primer reporte sectorial monetizado, primera alianza fintech. ARR >USD 800K.",
+            "**Año 5:** presencia en 4 países LATAM, ≥10,000 usuarios activos consolidados, posicionamiento como ERP de referencia para PYMEs en la región. ARR >USD 3M — condiciones para exit estratégico o ronda de crecimiento mayor."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Las siete estrategias no son piezas separadas. La diferenciación profunda (E1) hace posible la penetración (E2). El pricing simple (E3) hace posible que ambas no se rompan en la conversión. El doble canal (E4) hace que la penetración escale. La cobertura del gap comercial (E5) hace que todas se ejecuten profesionalmente. El flywheel de datos (E6) hace que la diferenciación se vuelva insuperable con el tiempo. La expansión regional (E7) hace que el modelo trascienda el mercado local."
+        }
+      ]
+    },
+    {
+      "id": "priorizacion",
+      "title": "Priorización ejecutiva — qué hacer primero",
+      "emoji": "⏱️",
+      "question": "¿En qué orden se ejecutan las estrategias cuando el fundador es uno solo?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Meses 1–3:** E5 (cobertura del gap comercial) + validación cuantitativa del pricing (E3). Sin advisor confirmado y sin pricing validado, todo lo demás es construir sobre arena.",
+            "**Meses 4–6:** E1 (especificación de la primera rama) + cierre de contadores aliados iniciales (E4). Construir el producto correcto con canal preparado.",
+            "**Meses 7–12:** lanzamiento del MVP, ejecución intensiva de E2 (penetración del beachhead) y arranque de E6 (instrumentación de datos desde el día uno).",
+            "**Meses 13–18:** consolidación del beachhead, ampliación del canal PLG, inicio de conversaciones de capital (Serie Seed).",
+            "**Meses 19–36:** expansión sectorial, segunda rama, ciudades secundarias, evaluación de Colombia como segundo país."
+          ]
+        },
+        {
+          "type": "note",
+          "text": "E6 y E7 son de largo plazo pero requieren preparación temprana. No se ejecutan al final — se *preparan* desde el inicio para no quedar atrás cuando el momento llegue."
+        }
+      ]
+    },
+    {
+      "id": "supuestos",
+      "title": "Observaciones críticas y supuestos débiles",
+      "emoji": "⚠️",
+      "question": "¿Qué puede invalidar todo el plan?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Supuesto crítico de todas las estrategias:** la disposición a pagar del segmento se valida en los primeros 6 meses. Si no ocurre, varias estrategias deben reformularse simultáneamente — no solo la de pricing. Por eso E3 incluye plan B explícito.",
+            "**El horizonte de 5 años es agresivo.** Requiere ejecución limpia, capital adicional y ningún error mayor en el primer año. Si el lanzamiento se retrasa más de 6 meses o la primera rama no convierte como esperado, todos los objetivos posteriores deben recalcularse. Es legítimo y necesario revisar el cuadro completo cada 6 meses.",
+            "**Las siete estrategias compiten por la atención del fundador único.** La gestión del tiempo del founder es la restricción real, no el capital. Esto refuerza la prioridad absoluta de E5: incorporar un advisor multiplica la capacidad de ejecución sin diluir significativamente el equity."
+          ]
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "🎯 Síntesis ejecutiva — Estrategias Globales",
+    "lead": "Las estrategias globales de ERP Evolutivo se condensan en una idea operativa simple: **diferenciar profundo, vender simple, escalar inteligente**. Diferenciar profundo porque es la única forma de ganar contra competidores con más músculo. Vender simple porque el segmento no tolera complejidad. Escalar inteligente porque el capital es limitado y la ventana de oportunidad no es eterna.",
+    "items": [
+      "**E1 · Diferenciación:** arquitectura evolutiva e IA integrada como core — profundizar antes que ampliar",
+      "**E2 · Beachhead:** Lima, bodegas, máximo 5 distritos — referidos de barrio como motor de crecimiento",
+      "**E3 · Pricing:** activación mensual simple + comisiones transaccionales silenciosas como red de seguridad",
+      "**E4 · Canales:** contadores aliados + PLG vía comprobantes — doble canal desde el día uno",
+      "**E5 · Gap comercial:** advisor B2SMB antes del mes 3 — condición habilitante de todo lo demás",
+      "**E6 · Flywheel:** captura de datos desde el MVP — el activo defensivo que crece solo con el uso",
+      "**E7 · Expansión:** arquitectura multi-país pre-construida — Colombia en mes 36, 4 países en mes 60"
+    ],
+    "closing": "La ejecución disciplinada de esta secuencia es lo que separa una startup que se convierte en compañía regional, de un proyecto técnicamente sólido que se queda en demo."
+  }
+}

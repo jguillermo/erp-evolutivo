@@ -77,6 +77,30 @@ export const routes: Routes = [
             m => m.RseComponent
           ),
         title: 'Responsabilidad Social Empresarial — Estudio Estratégico'
+      },
+      {
+        path: 'foda',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/foda/foda.component').then(
+            m => m.FodaComponent
+          ),
+        title: 'Matriz FODA Cruzada — Estudio Estratégico'
+      },
+      {
+        path: 'peyea',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/peyea/peyea.component').then(
+            m => m.PeyeaComponent
+          ),
+        title: 'Matriz PEYEA — Estudio Estratégico'
+      },
+      {
+        path: 'estrategias',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/estrategias/estrategias.component').then(
+            m => m.EstrategiasComponent
+          ),
+        title: 'Estrategias Globales del Negocio — Estudio Estratégico'
       }
     ]
   },
