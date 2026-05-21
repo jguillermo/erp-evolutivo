@@ -175,48 +175,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "priorizacion",
-      "title": "Priorización para los próximos 12 a 18 meses",
-      "emoji": "📋",
-      "question": "¿Cuáles son las 5 jugadas con mayor retorno marginal por sol invertido?",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "No todas las 20 estrategias se ejecutan simultáneamente. En orden de retorno marginal decreciente:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Prioridad 1 — E16 + E7:** cubrir el gap comercial (advisor o cofundador) y ejecutar validación cuantitativa antes de cualquier inversión seria en producto. **Sin esto, todo lo demás es construir sobre arena.**",
-            "**Prioridad 2 — E1 + E8:** diseñar la primera rama alrededor de facturación SUNAT y simplificar el pricing a activación mensual. Estas dos decisiones definen si el MVP es vendible o no.",
-            "**Prioridad 3 — E11 + E12:** apalancar el freemium como respuesta a la resistencia al pago y usar la ventana de 18 a 24 meses para profundizar diferenciación antes de que reaccionen los competidores.",
-            "**Prioridad 4 — E15 + E9:** saturar el canal contadores con valor y construir en paralelo presencia orgánica en redes sociales. Doble canal reduce riesgo de dependencia.",
-            "**Prioridad 5 — E13 + E3:** diseñar la arquitectura de datos y privacidad desde el MVP. Lo que se construye desde el día uno es barato — lo que se agrega después cuesta diez veces más."
-          ]
-        },
-        {
-          "type": "note",
-          "text": "Las quince estrategias restantes son válidas pero esperan a fases siguientes, o se ejecutan a costo marginal una vez que las cinco prioritarias estén en marcha."
-        }
-      ]
-    },
-    {
-      "id": "supuestos",
-      "title": "Observaciones críticas y supuestos débiles",
-      "emoji": "⚠️",
-      "question": "¿Qué hipótesis críticas condicionan la validez de toda la matriz?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**F1, F4 y F8 son potenciales, no efectivas.** La evolución progresiva, la IA como diferenciador y el flywheel de datos son fortalezas *si se ejecutan bien*. Mal ejecutadas, se convierten en debilidades. La diferencia es velocidad y calidad de ejecución.",
-            "**A1 condiciona todo el modelo.** La resistencia al pago es suficientemente grande como para cuestionar la tesis completa. E11 (freemium) y E20 (comisiones transaccionales) son mitigaciones — si ni siquiera con freemium el segmento adopta, la tesis debe reformularse, no parchearse.",
-            "**O1 tiene doble filo.** El mandato SUNAT es el viento de cola más fuerte, pero puede convertirse en amenaza si SUNAT ofrece su propio sistema gratuito de facturación o si BCP lo incluye gratis con su cuenta PYME (vía ecosistema Yape). Requiere monitoreo trimestral."
-          ]
-        }
-      ]
     }
   ],
   "synthesis": {
@@ -225,9 +183,8 @@
     "items": [
       "**Variables internas:** 8 fortalezas (F1–F8) y 8 debilidades (D1–D8) ordenadas por peso estratégico",
       "**Variables externas:** 8 oportunidades (O1–O8) y 8 amenazas (A1–A8) con potencial de impacto real",
-      "**20 estrategias cruzadas** distribuidas en cuatro cuadrantes: FO (explotar), DO (buscar), FA (confrontar), DA (evitar)",
-      "**5 prioridades para 12–18 meses:** E16+E7, E1+E8, E11+E12, E15+E9, E13+E3"
+      "**20 estrategias cruzadas** distribuidas en cuatro cuadrantes: FO (explotar), DO (buscar), FA (confrontar), DA (evitar)"
     ],
-    "closing": "Todo lo que no contribuya a las cuatro decisiones centrales en los próximos doce meses se pospone. Las tres hipótesis críticas — fortalezas aún no efectivas, resistencia al pago como condicionante total y el doble filo del mandato SUNAT — deben monitorearse activamente, no asumirse resueltas."
+    "closing": "La priorización ejecutiva de estas 20 jugadas y la secuencia temporal de implementación se trasladan al *Planeamiento Estratégico* (1.5.5), donde se integran con las estrategias derivadas del resto del análisis."
   }
 }

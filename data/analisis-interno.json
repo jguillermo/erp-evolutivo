@@ -5,31 +5,6 @@
   "intro": "El análisis interno de D'Alessio fue diseñado para evaluar organizaciones **en operación**, con áreas funcionales activas. ERP Evolutivo no es eso: es un **proyecto pre-MVP con un fundador único**, sin producto en mercado, sin clientes, sin equipo formal. Aplicar AMOFHIT como si fuera una empresa establecida produciría un análisis ficticio. Lo que sigue es una adaptación honesta del marco, diferenciando explícitamente entre **hechos verificables**, **hipótesis no validadas** e **inferencias de advisor**.",
   "audits": [
     {
-      "id": "ciclo-operativo",
-      "title": "Ciclo operativo del negocio",
-      "emoji": "🔄",
-      "question": "¿Existe siquiera un ciclo operativo que auditar hoy?",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "El ciclo operativo de un SaaS B2SMB normalmente incluye desarrollo de producto, adquisición de usuarios, onboarding, monetización, soporte y retención. En ERP Evolutivo, hoy, **ese ciclo no está activo**. Lo que existe es:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Una **visualización interactiva** del modelo de negocio en Angular hosteada en GitHub Pages. Sirve como artefacto de comunicación con stakeholders, *no como producto*. No tiene base de datos, no procesa transacciones, no genera ingresos.",
-            "Un **documento de modelo de negocio** detallado: definición de producto (núcleo gratuito + nueve ramas), arquitectura de IA en cuatro niveles, pricing pago-por-uso y proyección de unit economics.",
-            "**Conversaciones cualitativas iniciales** con bodegas de Lima que confirmaron un dato (uso de Excel como herramienta principal) pero **no validaron pricing, disposición a pagar ni canales de distribución**."
-          ]
-        },
-        {
-          "type": "implication",
-          "title": "⚡ Implicancia estratégica",
-          "text": "Hablar de \"ciclo operativo\" en este punto es prematuro. El **primer ciclo operativo real arranca cuando se ejecute el fake door test**. Todo análisis interno debe leerse, por tanto, como una evaluación de *capacidad para construir el negocio*, no de cómo lo está operando."
-        }
-      ]
-    },
-    {
       "id": "administracion",
       "title": "Administración y Gerencia (A)",
       "emoji": "🧑‍💼",
@@ -218,13 +193,5 @@
         ]
       }
     ]
-  },
-  "insight": {
-    "title": "💡 Insight integrador para el fundador",
-    "paragraphs": [
-      "El análisis interno revela una **asimetría que vale la pena nombrar con claridad**. ERP Evolutivo es fuerte donde la mayoría de startups son débiles (*visión estratégica, diferenciador defendible, arquitectura técnica y de costos, timing*) y es débil donde la mayoría de startups son fuertes en esta etapa (*validación de mercado en campo, equipo comercial básico, hipótesis testeadas con dinero real*). Esa asimetría es típica de **fundadores técnicos solitarios** y es exactamente la razón por la que muchos productos brillantes en el papel no encuentran tracción.",
-      "La acción más importante derivada de este análisis **no es construir más producto ni refinar más la estrategia**. Es invertir las próximas **seis a ocho semanas** en cerrar la brecha comercial: incorporar un co-fundador o advisor con red en el segmento, ejecutar el *fake door test* con tráfico pagado a una landing, cerrar al menos una alianza piloto con un contador y conseguir **tres bodegas dispuestas a probar un prototipo de baja fidelidad**. Si esa fase de seis semanas no produce señales claras de demanda, el modelo necesita reformularse **antes de invertir capital semilla en desarrollo**."
-    ],
-    "closing": "Esta es la **decisión clave del análisis interno**. Todo lo demás (matriz EFI, FODA cruzado, PEYEA, estrategias globales) se construirá sobre las respuestas de esa fase de validación. Adelantar conclusiones estratégicas sobre supuestos no validados sería repetir el error clásico de las startups que **confunden plan elegante con negocio viable**."
   }
 }

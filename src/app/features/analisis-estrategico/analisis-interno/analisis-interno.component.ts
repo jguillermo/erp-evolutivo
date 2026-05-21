@@ -33,7 +33,6 @@ interface SynthesisGroup {
 }
 
 const AUDIT_COLORS: Record<string, CardColor> = {
-  'ciclo-operativo':       'teal',
   'administracion':        'purple',
   'marketing':             'red',
   'operaciones':           'indigo',

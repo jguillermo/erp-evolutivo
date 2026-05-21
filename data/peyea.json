@@ -206,58 +206,6 @@
           "text": "La PEYEA tradicional no captura la dimensión *datos como activo defensivo a largo plazo* que el análisis interno identifica como motor real de la defensibilidad. El flywheel de datos no aparece en las 28 variables canónicas del marco — esto significa que la PEYEA subestima el potencial estructural del modelo a largo plazo si se ejecuta correctamente."
         }
       ]
-    },
-    {
-      "id": "estrategias",
-      "title": "Estrategias derivadas del cuadrante competitivo",
-      "emoji": "🎯",
-      "question": "¿Qué jugadas prescribe el cuadrante competitivo para ERP Evolutivo?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**Diferenciación.** Productos únicos en diseño, marca, calidad y valor agregado. La evolución progresiva, el cobro por uso y la IA integrada constituyen diferenciación auténtica. La traducción operativa es pulir el diferenciador antes que ampliar la línea de producto — no construir las nueve ramas en paralelo.",
-            "**Reconversión continua.** Mantener la capacidad de pivotar partes del modelo si la validación lo indica. Tres pivotes deben estar listos: pricing de uso real a activación mensual, canal de contadores único a modelo PLG vía comprobantes, monetización de cobro directo a comisiones transaccionales.",
-            "**Penetración intensiva en el beachhead.** Más bodegas en menos zonas antes que pocas bodegas en muchas zonas. Refuerza el modelo de cluster geográfico para activar referidos de barrio.",
-            "**Alianza estratégica con actor de mayor músculo.** La PEYEA en cuadrante competitivo sugiere fusión concéntrica. En contexto startup, la traducción es alianza con fintech (distribución por equity), banco con programa PYME (go to market) o incubadora regional (capital + red). Timing: entre los meses 9 y 15 post-validación inicial.",
-            "**Reducción agresiva de costos.** La eficiencia estructural ya está en el modelo (IA básica offline, costos variables que crecen solo con ingresos). Refuerzo: no contratar talento antes de tiempo ni inflar la nómina por presión de status.",
-            "**Levantar capital antes de que el runway se acabe.** D'Alessio dice explícitamente que en esta postura las organizaciones deben adquirir recursos financieros para marketing. El fundraising toma 4 a 6 meses — iniciar conversaciones con inversores cuando aún hay **12 meses de runway**, no cuando quedan 4."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "supuestos",
-      "title": "Observaciones críticas y supuestos débiles",
-      "emoji": "⚠️",
-      "question": "¿Dónde puede fallar este análisis?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**FF deliberadamente conservadora.** Sobrecalificar FF para que el vector se desplace al cuadrante agresivo convertiría el análisis en propaganda interna. La utilidad está en mostrar la realidad financiera con honestidad.",
-            "**VC es altamente sensible al marco temporal.** Lectura 1 = hoy. Lectura 2 = 12 meses. En una hipotética Lectura 3 a 36 meses con flywheel de datos activo, la VC saltaría a −1 o mejor y el vector cruzaría claramente al cuadrante agresivo. La postura estratégica no es estática: *competitiva con riesgo defensiva → competitiva consolidada al año uno → agresiva en años dos a tres* si el modelo funciona.",
-            "**EE calificada con dureza intencional.** Un analista más optimista podría calificar elasticidad de precio y presión de sustitutos en 2 (neto −4) en lugar de 1 (neto −5), moviendo EE de −4.00 a −3.50 aproximadamente. El vector subiría ligeramente, pero la conclusión sobre cuadrante competitivo no cambia.",
-            "**Limitación del marco PEYEA.** El flywheel de datos — el activo defensivo más importante a largo plazo según el análisis interno — no aparece en ninguna de las 28 variables canónicas. La PEYEA describe bien la posición competitiva en el corto y mediano plazo, pero subestima el potencial estructural del modelo."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "conexiones",
-      "title": "Conexiones con el planeamiento estratégico",
-      "emoji": "🔗",
-      "question": "¿Cómo complementa la PEYEA al resto del análisis?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**FODA cruzado:** las estrategias del cuadrante competitivo refuerzan E11 (freemium como escudo), E12 (profundizar diferenciación), E14 (eficiencia de costos) y E16 (cubrir gap comercial). La PEYEA aporta una estrategia no presente con igual fuerza en el FODA: la necesidad explícita de **levantar capital dentro de los primeros 12 a 18 meses**.",
-            "**Misión y visión:** la visión de cinco años (dominio regional, base de datos más extensa de PYMEs) solo es alcanzable si el vector migra del cuadrante competitivo al agresivo. Eso requiere fortalecer FF (capital y monetización) y VC (cuota y lealtad) — ambas se mueven con ejecución, no con discurso.",
-            "**Factores críticos de éxito:** la PEYEA confirma el orden correcto: 1° validación de hipótesis de adopción y pago, 2° ejecución eficiente de costos, 3° levantamiento oportuno de capital, 4° profundización del diferenciador. Cualquier otro factor es secundario en este momento del ciclo."
-          ]
-        }
-      ]
     }
   ],
   "synthesis": {
@@ -269,6 +217,6 @@
       "**Postura objetivo (años 2–3):** agresiva — requiere fortalecer FF con capital adicional y VC con cuota y datos",
       "**Palanca crítica identificada por la PEYEA:** iniciar conversaciones de fundraising con 12 meses de runway, no con 4"
     ],
-    "closing": "Las cuatro jugadas operativas que se derivan de esta posición: profundizar el diferenciador antes que ampliarlo, mantener operación lean, iniciar conversaciones de capital con runway suficiente, y buscar alianza estratégica con actor financieramente fuerte. Si se ejecutan, el vector migra al cuadrante agresivo en 24 a 36 meses — exactamente donde la visión a cinco años necesita estar."
+    "closing": "La PEYEA termina en el vector. La prescripción de jugadas operativas que se derivan de esta posición — diferenciación, beachhead, pricing simple, doble canal, gap comercial cubierto, flywheel y expansión — se traslada al *Planeamiento Estratégico* (1.5.5). Si se ejecutan, el vector migra al cuadrante agresivo en 24 a 36 meses, exactamente donde la visión a cinco años necesita estar."
   }
 }

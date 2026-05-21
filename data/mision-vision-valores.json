@@ -87,56 +87,6 @@
           "text": "**No incluidos deliberadamente:** *\"innovación\"* (no decide nada — cualquier opción puede justificarse como innovadora) y *\"trabajo en equipo\"* (la empresa hoy tiene un fundador único — ese valor sería inverosímil y opaco)."
         }
       ]
-    },
-    {
-      "id": "implicancias",
-      "title": "Implicancias estratégicas",
-      "emoji": "⚡",
-      "question": "¿Qué decisiones concretas generan estos enunciados hoy?",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Estos enunciados no son textos para enmarcar. Si se adoptan, generan cuatro **decisiones concretas** para el próximo trimestre."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Roadmap de producto:** priorizar la rama paga más demandada según validación, no las nueve en paralelo. El valor de evolución progresiva lo exige y ya lo recomienda explícitamente el análisis interno.",
-            "**Modelo de pricing:** simplificar antes del lanzamiento. La activación mensual con umbral mínimo es coherente con el valor de pago justo — modelos más complejos lo contradicen.",
-            "**Comunicación de IA en Fase 1:** describir la IA como *\"asistente que mejora con el tiempo\"*, no como *\"asesor experto\"* mientras no haya fine tuning con datos propios. Reduce el riesgo de erosión de confianza en el beachhead.",
-            "**Filtro para advisor o cofundador:** un perfil que privilegie maximización de ARPU sobre simplicidad y confianza está culturalmente desalineado. Mejor continuar solo que sumar a alguien que erosionará el diferenciador central."
-          ]
-        },
-        {
-          "type": "implication",
-          "title": "⚡ Conexión con responsabilidad social",
-          "text": "La misión, visión y valores cargan implícitamente el componente de responsabilidad social. Las PYMEs que adoptan herramientas digitales formales **acceden a crédito**, reducen evasión involuntaria y sobreviven más años. No es una capa de marketing — es el corazón del modelo, y eso es argumento poderoso frente a contadores, gremios, cámaras de comercio y fondos de impacto en LATAM."
-        }
-      ]
-    },
-    {
-      "id": "supuestos",
-      "title": "Supuestos débiles a vigilar",
-      "emoji": "⚠️",
-      "question": "¿Qué hipótesis aún no han sido validadas?",
-      "blocks": [
-        {
-          "type": "paragraph",
-          "text": "Tres aspectos de esta sección quedan como hipótesis a vigilar activamente en las próximas rondas de entrevistas."
-        },
-        {
-          "type": "list",
-          "items": [
-            "**Simplicidad sobre potencia.** Plausible pero no validado. Si los bodegueros más sofisticados — los que ya intentaron Excel avanzado o algún software — prefieren más control sobre menos fricción, el valor de simplicidad radical debe matizarse para no perder ese sub-segmento valioso.",
-            "**Aceptación de la visión de datos.** La conversación regional sobre privacidad de PYMEs es incipiente pero puede endurecerse. La visión es defendible solo si la captura de datos se hace con consentimiento claro y valor recíproco — acceso a benchmarks sectoriales, por ejemplo.",
-            "**Sostenibilidad del founder único.** Cuando aparece presión por ARR, los valores blandos son los primeros en ceder. Conviene revisarlos cada trimestre con un advisor externo que actúe como guardián cultural."
-          ]
-        },
-        {
-          "type": "note",
-          "text": "Esta sección se lee en conjunto con el **FODA cruzado**, los factores críticos de éxito y las estrategias globales del negocio. Aislados son palabras — conectados al análisis, son el marco que define qué pelea da ERP Evolutivo, contra quién, con qué armas y por qué debería ganar."
-        }
-      ]
     }
   ],
   "synthesis": {

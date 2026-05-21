@@ -136,40 +136,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "riesgos",
-      "title": "Riesgos y supuestos débiles",
-      "emoji": "⚠️",
-      "question": "¿Dónde puede chocar esta declaración con la realidad operativa?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**Tensión datos vs. ética.** El activo estratégico de *base de datos más grande de PYMEs de LATAM* y el compromiso de no explotar comercialmente los datos sin valor recíproco son tensiones reales. Requieren una política explícita sobre qué se monetiza, cómo se compensa al usuario y qué nunca se vende — escrita **antes** de tener presión de inversores.",
-            "**Frente 4 solo creíble si se ejecuta.** Una startup que promete certificación gratuita y nunca la lanza pierde reputación más rápido que una que nunca lo prometió. La regla es simple: no se anuncia ningún programa sin cronograma, dueño operativo y métrica de cierre.",
-            "**Tiempo del founder.** En pre-MVP, cada hora dedicada a estructurar RSE es una hora no dedicada a validar pricing o cerrar el primer contador aliado. La recomendación operativa: condensar los cuatro frentes en una página, publicarla en la web y volver a iterarla al cierre del MVP."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "conexiones",
-      "title": "Conexiones con el planeamiento estratégico",
-      "emoji": "🔗",
-      "question": "¿Cómo refuerza la RSE los demás componentes del análisis?",
-      "blocks": [
-        {
-          "type": "list",
-          "items": [
-            "**Misión y visión:** el frente 1 (inclusión digital) es la traducción operativa del *para qué* del negocio. La consistencia entre ambos enunciados refuerza la credibilidad de los dos.",
-            "**Valores corporativos:** los frentes 2 y 3 (ética del dato y trato justo) son la ejecución directa de los valores de honestidad con el cliente, pago justo e inclusión digital con respeto. Si la RSE contradice a los valores, alguno de los dos está mal escrito.",
-            "**FODA cruzado:** la RSE bien ejecutada es una fortaleza defensiva ante competidores que pueden replicar features pero no pueden replicar **reputación construida con años de práctica coherente**. Es un foso lento pero profundo.",
-            "**Go to market:** el frente 4 (certificación de contadores) refuerza directamente el canal #1 de distribución. La RSE no es un costo — es un acelerador del go to market cuando se diseña bien.",
-            "**Modelo de ingresos:** la política de cancelación fácil genera **menos resistencia a entrar** en el segmento. El churn evitado por barreras forzadas es churn diferido, no churn evitado — mejor ganar la retención por valor entregado que por fricción de salida."
-          ]
-        }
-      ]
     }
   ],
   "synthesis": {
@@ -181,6 +147,6 @@
       "**Frente 3:** trato justo al cliente — operativa contraria al abuso histórico del segmento, con retorno directo en word of mouth",
       "**Frente 4 (mediano plazo):** educación y empleabilidad — lanzar solo con trigger verificable (≥1,000 usuarios de pago) y cronograma real"
     ],
-    "closing": "Los tres supuestos débiles — tensión datos vs. ética, credibilidad del frente 4 y tiempo del founder — requieren política escrita antes de escalar. La coherencia entre RSE, valores y modelo de negocio no es cosmética. Es el foso que los competidores no pueden copiar comprando un plan de nube."
+    "closing": "La coherencia entre RSE, valores y modelo de negocio no es cosmética. Es el foso que los competidores no pueden copiar comprando un plan de nube — se construye con años de práctica consistente y métricas auditables."
   }
 }

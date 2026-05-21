@@ -24,11 +24,9 @@ interface Section {
 }
 
 const SECTION_COLORS: Record<string, CardColor> = {
-  mision:       'teal',
-  vision:       'indigo',
-  valores:      'amber',
-  implicancias: 'blue',
-  supuestos:    'red',
+  mision:  'teal',
+  vision:  'indigo',
+  valores: 'amber',
 };
 
 const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = {

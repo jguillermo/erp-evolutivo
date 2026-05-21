@@ -31,9 +31,6 @@ const SECTION_COLORS: Record<string, CardColor> = {
   'vector-l1':  'blue',
   'lectura-2':  'cyan',
   'poligono':   'purple',
-  'estrategias':'teal',
-  'supuestos':  'amber',
-  'conexiones': 'emerald',
 };
 
 const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = {

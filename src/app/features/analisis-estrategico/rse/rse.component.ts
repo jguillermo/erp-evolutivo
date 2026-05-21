@@ -29,8 +29,6 @@ const SECTION_COLORS: Record<string, CardColor> = {
   'frente-3':   'cyan',
   'frente-4':   'teal',
   exclusiones:  'amber',
-  riesgos:      'red',
-  conexiones:   'purple',
 };
 
 const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = {

@@ -33,7 +33,6 @@ const SECTION_COLORS: Record<string, CardColor> = {
   'e7-expansion':      'indigo',
   'objetivos':         'green',
   'priorizacion':      'cyan',
-  'supuestos':         'amber',
 };
 
 const BLOCK_VARIANTS: Record<'note' | 'info' | 'implication', SectionVariant> = {

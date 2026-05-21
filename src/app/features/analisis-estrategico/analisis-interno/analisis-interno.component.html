@@ -101,14 +101,4 @@
     </div>
   </div>
 
-  <!-- ── INSIGHT INTEGRADOR ── -->
-  <div class="mt-5xl" data-testid="ai-insight">
-    <app-section variant="highlight" [title]="data.insight.title" testId="ai-insight-section">
-      @for (paragraph of data.insight.paragraphs; track $index) {
-        <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="paragraph | md"></p>
-      }
-      <p class="text-xs text-ink leading-body font-semibold mt-lg" [innerHTML]="data.insight.closing | md"></p>
-    </app-section>
-  </div>
-
 </div>
