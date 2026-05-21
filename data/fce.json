@@ -1,0 +1,360 @@
+{
+  "title": "🎯 Factores Críticos de Éxito",
+  "subtitle": "Palancas de gestión que determinan la posición competitiva en el sector SaaS B2SMB en LATAM — derivadas de la EFI (2.53) y la EFE (2.94)",
+  "backLink": { "label": "← Estudio Estratégico", "route": "/estudio-estrategico" },
+  "intro": "Los FCE son las variables sobre las que la gerencia puede influir y que **afectan significativamente la posición competitiva**. No son objetivos ni resultados deseados: son **palancas de gestión**. Esta lista prioriza factores específicos del sector, no clichés genéricos como «tener un buen equipo» o «ofrecer calidad».",
+  "factors": [
+    {
+      "id": "fce-1",
+      "number": "FCE 1",
+      "layer": "1",
+      "title": "Velocidad y Calidad de la Validación Comercial",
+      "emoji": "🔬",
+      "question": "¿Tenemos datos cuantitativos reales antes de comprometer capital en producto?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de validar con datos cuantitativos reales (no entrevistas) la disposición a pagar, la conversión de la propuesta de valor y la viabilidad del canal, **en un periodo no mayor a ocho semanas** antes de invertir capital semilla en construir producto."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** Es el factor número uno porque **tres de las cuatro hipótesis críticas** del negocio (pricing, canal contadores, adopción) no están validadas. El benchmark de la industria es claro: el interés declarado en entrevistas sobreestima la demanda real entre **3 y 10 veces**. Sin validación cuantitativa, el riesgo de construir un producto que nadie compra es estructural, no marginal."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Métrica:** tasa de pre-registro sobre tráfico cualificado en landing de captura",
+            "**Umbral mínimo viable:** 5% de visitantes deja correo y contesta micro-encuesta de disposición a pagar",
+            "**Señal fuerte:** 10% o más"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Si la tasa está por debajo del **3% después de 1,500 visitantes cualificados**, la propuesta de valor o el segmento deben reformularse. Continuar construyendo producto en ese escenario sería persistencia mal entendida."
+        }
+      ]
+    },
+    {
+      "id": "fce-2",
+      "number": "FCE 2",
+      "layer": "2",
+      "title": "Capacidad de Adquisición a Bajo Costo en el Segmento Microempresa",
+      "emoji": "💰",
+      "question": "¿Puede el modelo operar con CAC menor a S/ 50 combinando canales?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de mantener un **CAC blended por debajo de S/ 50** en los primeros 12 meses, combinando canal contadores, contenido orgánico, viralidad integrada en producto y referidos."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** La economía del modelo depende íntegramente de este factor. Con un ARPU realista de **S/ 18 a S/ 30** y churn estimado entre 8% y 15% mensual, el LTV se ubica entre **S/ 120 y S/ 375**. Un CAC superior a S/ 100 destruiría la viabilidad económica. Es una restricción dura, no una preferencia. El proyecto compite con Alegra (desde ~S/ 15/mes) que ya tiene brand awareness y equipos comerciales activos."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**CAC blended mensual** desagregado por canal",
+            "**Ratio LTV/CAC saludable:** mayor a 3x — por debajo de 2x el modelo no es viable",
+            "**Costo por canal:** comparar directo vs. contadores vs. referidos vs. orgánico"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "**Tres canales en paralelo desde el día uno**, con presupuesto que permita comparar costos reales por usuario adquirido. Si después de seis meses ningún canal opera por debajo de S/ 50, hay que revisar segmento, mensaje y pricing antes de asumir que se necesita más presupuesto."
+        }
+      ]
+    },
+    {
+      "id": "fce-3",
+      "number": "FCE 3",
+      "layer": "2",
+      "title": "Activación del Canal Contadores o Sustitución Escalable",
+      "emoji": "🤝",
+      "question": "¿Los contadores se convierten en agentes de distribución con incentivos reales?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de convertir a **contadores de PYMEs en agentes de distribución** con incentivos económicos claros y propuesta de valor diferenciada para ellos — o, alternativamente, construir un canal sustituto igualmente escalable."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** La estrategia go-to-market descansa sobre los contadores, pero hoy es una hipótesis sin alianzas cerradas. Los contadores tienen lealtad y costo de cambio alto hacia sistemas que ya manejan (Concar, Siscont). Convertirlos en aliados requiere propuesta específica para ellos: no solo comisión, también **dashboard de cartera, integración con su flujo contable y soporte preferente**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Contadores activos** con al menos un cliente referido pagando",
+            "**Conversión:** de contador firmado a clientes efectivamente pagando",
+            "**Costo por cliente** vía canal contador vs. canal directo"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Cerrar **al menos cinco pilotos con contadores en los primeros tres meses**, con seguimiento de clientes referidos que efectivamente pagan. Si después de 90 días la conversión es menor al **20%**, reconsiderar el canal y acelerar alternativas: viralidad en factura, contenido orgánico, ferias presenciales."
+        }
+      ]
+    },
+    {
+      "id": "fce-4",
+      "number": "FCE 4",
+      "layer": "2",
+      "title": "Retención del Usuario Activo por Encima del Umbral de Viabilidad",
+      "emoji": "🔒",
+      "question": "¿La retención mensual supera el 88% necesario para que el LTV funcione?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de mantener una tasa de retención mensual **igual o superior al 88%** (churn menor al 12% mensual) en el segmento microempresa pagador."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** El segmento es difícil. La mortalidad natural de bodegas en Lima es alta. La complejidad percibida de un sistema digital es causa común de abandono, y la baja alfabetización digital reduce el éxito del onboarding autoservicio. Sin retención sobre este umbral, **el LTV cae por debajo del CAC** y el modelo deja de funcionar matemáticamente. No es una métrica de vanity: es la línea de flotación del negocio."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Churn mensual** del usuario pagador (separado del gratuito)",
+            "**NRR (Net Revenue Retention)** si hay evolución a más ramas",
+            "**Tiempo a primera factura** emitida desde registro — indicador de activación real"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Invertir en **onboarding asistido y customer success desde el primer usuario pagador**. No esperar 100 usuarios para diseñar la función de retención. Probablemente requiera un canal de WhatsApp con respuesta en **menos de dos horas** durante los primeros 30 días de cada nuevo usuario."
+        }
+      ]
+    },
+    {
+      "id": "fce-5",
+      "number": "FCE 5",
+      "layer": "2",
+      "title": "Simplicidad Comunicativa del Pricing",
+      "emoji": "💡",
+      "question": "¿El bodeguero puede responder en cinco segundos cuánto le va a costar?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de comunicar el modelo de precios de manera que el usuario pueda responder la pregunta «cuánto me va a costar esto» **en menos de cinco segundos** sin explicación adicional."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** El modelo pago por uso introduce complejidad cognitiva para un usuario con baja alfabetización digital. Un bodeguero que no entiende cuánto va a pagar este mes tiene una razón estructural para no comprometerse. El benchmark son los servicios que ya consume: internet móvil, Yape, planes de luz — **todos precios fijos comprensibles**. Cualquier modelo que exija explicar una métrica de uso pierde antes de llegar al checkout."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Test de cinco segundos:** mostrar la página de precios 5 segundos y preguntar «cuánto cuesta»",
+            "**Objetivo:** 80% de respuestas correctas en el segmento bodeguero",
+            "**Conversión:** de registro a pago en los primeros 30 días"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "El modelo probablemente deba simplificarse a **«S/ 18 por rama por mes, solo los meses que la uses, sin contratos»**. El refinamiento de la métrica de uso puede venir después con datos reales. Sacrificar elegancia conceptual a cambio de **claridad operativa** es la decisión correcta en este segmento."
+        }
+      ]
+    },
+    {
+      "id": "fce-6",
+      "number": "FCE 6",
+      "layer": "3",
+      "title": "Calidad y Confiabilidad de la Facturación Electrónica SUNAT",
+      "emoji": "🧾",
+      "question": "¿La facturación funciona sin fallos el día que el bodeguero más lo necesita?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de que el módulo de facturación electrónica funcione **sin caídas, sin rechazos de SUNAT** y con tiempo de emisión menor a tres segundos, integrado con un OSE homologado confiable."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** Es el punto de entrada del producto. Si la facturación falla un día, el bodeguero deja de poder operar y la pérdida de confianza es inmediata e irrecuperable. Es el único módulo donde la calidad debe ser **superior**, no solo buena. Un error genera retroalimentación negativa de boca a boca instantánea en un segmento donde el boca a boca es el mecanismo principal de referencia."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Uptime objetivo:** 99.5% del módulo de facturación",
+            "**Tasa de rechazo SUNAT objetivo:** menor al 0.5%",
+            "**Tiempo medio de emisión** por comprobante",
+            "**Tickets de soporte** relacionados con facturación — señal temprana de degradación"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "**No desarrollar la integración SUNAT internamente.** Contratar un OSE homologado (Nubefact, Efact o Sunat directo según conveniencia) y construir sobre su API. La calidad debe auditarse antes del lanzamiento y monitorearse en tiempo real desde el día uno."
+        }
+      ]
+    },
+    {
+      "id": "fce-7",
+      "number": "FCE 7",
+      "layer": "3",
+      "title": "Valor Percibido de la IA Asesora en los Primeros 30 Días",
+      "emoji": "🤖",
+      "question": "¿La IA entrega al menos un insight accionable por semana que el usuario recuerde?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de que la IA asesora entregue **al menos un insight accionable y valioso por semana** durante los primeros 30 días, suficientemente concreto para que el usuario lo recuerde si alguien le pregunta por el producto."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** La IA es el diferenciador prometido. Si no entrega valor visible en las primeras semanas, se convierte en promesa incumplida y refuerza la objeción «esto es lo mismo que cualquier otro ERP». En Fase 1 no hay datos propios para fine-tuning — todo opera con prompting estructurado. Decir «este mes vendiste 12% más y tus tres productos top son X, Y, Z» es valor real para quien **hoy no tiene ninguna visibilidad sobre su negocio**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Tasa de apertura** de las recomendaciones de IA",
+            "**Tasa de acción:** el usuario hace algo después de la recomendación",
+            "**Recall a 30 días:** en encuesta, el usuario recuerda al menos una recomendación del sistema"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Diseñar la IA básica como **motor de insights sobre los datos propios del usuario**, no como chatbot conversacional. La calidad de **cinco insights bien hechos supera a cincuenta respuestas mediocres**. La comunicación comercial debe ajustarse a lo que la IA realmente hace, no a lo que hará en Fase 3."
+        }
+      ]
+    },
+    {
+      "id": "fce-8",
+      "number": "FCE 8",
+      "layer": "3",
+      "title": "Construcción Progresiva del Flywheel de Datos",
+      "emoji": "🔄",
+      "question": "¿Se acumulan datos que ningún competidor puede replicar sin años de operación real?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de acumular datos transaccionales y de comportamiento de PYMEs anonimizados, de manera que después de los **primeros 2,000 usuarios activos** los modelos de IA puedan ofrecer benchmarks reales contra negocios similares, convirtiendo la oferta en algo que ningún competidor puede replicar sin años de operación."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** Es la **única barrera de entrada estructural y duradera** del negocio. El diferenciador conceptual (evolución progresiva) es copiable en 18 a 24 meses. El flywheel de datos no se copia con código — requiere operación real con usuarios reales. Si se ejecuta bien, convierte la defensibilidad de «tenemos mejor producto» a **«tenemos mejor información»**, que es una posición mucho más durable."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Volumen:** transacciones procesadas mensualmente",
+            "**Calidad de data:** porcentaje con clasificación, productos identificados, ubicación",
+            "**Consentimiento:** porcentaje de usuarios que aceptaron uso anonimizado de sus datos",
+            "**Precisión:** mejora medible en benchmarks ofrecidos por la IA con el tiempo"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Diseñar la **arquitectura de datos desde el día uno** con esquema consistente, clasificación automática y consentimiento explícito de uso anonimizado. No tratar la data como subproducto del ERP — **tratarla como el producto a largo plazo**."
+        }
+      ]
+    },
+    {
+      "id": "fce-9",
+      "number": "FCE 9",
+      "layer": "1",
+      "title": "Capacidad de Equipo Comercial y de Producto Más Allá del Fundador",
+      "emoji": "👥",
+      "question": "¿Hay un perfil comercial y uno de customer success antes del lanzamiento?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de incorporar **al menos dos perfiles complementarios** al fundador antes del lanzamiento del MVP: un perfil comercial con red en el segmento PYME peruano y un perfil de customer success o comunidad. Pueden ser part-time, advisors con equity o contratistas iniciales."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** El fundador es excelente técnicamente pero la **función comercial no está cubierta**. La asimetría entre fortalezas conceptuales y debilidades operativas detectada en la EFI tiene una sola solución estructural: construir equipo en las áreas faltantes. Postergar esto bajo la lógica «primero hago el producto, después busco vendedor» es uno de los **errores más comunes y costosos** en startups técnicas."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Roles cubiertos** antes del lanzamiento del MVP",
+            "**Tiempo hasta cierre:** desde primera reunión con prospecto hasta cierre del rol",
+            "**Calidad:** primeros 10 contactos comerciales generados por el nuevo perfil"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "Esta búsqueda **debe activarse antes del 2026-06-04** (las próximas dos semanas). No es opcional ni postergable — es estructural. Una incubadora local (UTEC Ventures, Startup Perú, BBVA Open Innovation) o un programa de mentoría especializado pueden acelerar significativamente esta búsqueda."
+        }
+      ]
+    },
+    {
+      "id": "fce-10",
+      "number": "FCE 10",
+      "layer": "4",
+      "title": "Ventana de Ejecución Antes de que Competidores Grandes Repliquen",
+      "emoji": "⏱️",
+      "question": "¿Puede ERP Evolutivo capturar 1,000 usuarios pagadores en Lima antes de que lo copien?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "**Definición —** Capacidad de capturar y consolidar una base de **al menos 1,000 usuarios pagadores en Lima en los primeros 18 meses**, antes de que un competidor establecido (Alegra, Siigo, Defontana o un player internacional) replique la mecánica evolutiva."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Justificación —** La ventaja del diferenciador es real pero temporal. La estimación de **18 a 24 meses antes de que un grande copie** es razonable. Pasado ese plazo, el competidor con más capital y mejor distribución gana la guerra de adquisición, salvo que ya exista una base instalada con switching costs reales. Velocidad de ejecución no es opcional: **es requisito de supervivencia competitiva**."
+        },
+        {
+          "type": "list",
+          "items": [
+            "**Usuarios pagadores activos** en Lima",
+            "**MRR** (ingreso recurrente mensual) y crecimiento mes sobre mes",
+            "**Cuota de mercado estimada** en el segmento microempresa digitalizada de Lima"
+          ]
+        },
+        {
+          "type": "implication",
+          "title": "⚡ Implicancia estratégica",
+          "text": "**Priorizar profundidad en Lima antes que amplitud geográfica** — no expandir a Colombia, México o Chile hasta consolidar Lima. Reinvertir cualquier ingreso temprano en aceleración de adquisición, no en nuevas ramas del producto. La **segunda rama paga** se construye solo cuando la primera tiene **20+ usuarios activos pagando**."
+        }
+      ]
+    }
+  ],
+  "synthesis": {
+    "title": "📊 Síntesis y Jerarquía de los Factores Críticos",
+    "lead": "Los diez factores no tienen la misma criticidad. Organizados por urgencia e impacto sobre la viabilidad del negocio:",
+    "layers": [
+      {
+        "id": "capa-1",
+        "badge": "Capa 1",
+        "horizon": "90 días",
+        "fces": "FCE 1 y FCE 9",
+        "title": "Existencia del negocio",
+        "text": "**Validación comercial** y **equipo más allá del fundador**. Si estos dos no avanzan, no importa lo bien resueltos que estén los demás."
+      },
+      {
+        "id": "capa-2",
+        "badge": "Capa 2",
+        "horizon": "12 meses",
+        "fces": "FCE 2, FCE 3, FCE 4 y FCE 5",
+        "title": "Viabilidad económica",
+        "text": "**CAC bajo, activación del canal, retención sobre el 88% y simplicidad del pricing**. Son los que hacen que las matemáticas del SaaS funcionen."
+      },
+      {
+        "id": "capa-3",
+        "badge": "Capa 3",
+        "horizon": "24 meses",
+        "fces": "FCE 6, FCE 7 y FCE 8",
+        "title": "Calidad y defensibilidad del producto",
+        "text": "**Facturación SUNAT confiable, valor real de la IA en los primeros 30 días y flywheel de datos**. Estos evitan que el negocio sea reemplazable."
+      },
+      {
+        "id": "capa-4",
+        "badge": "Capa 4",
+        "horizon": "36 meses",
+        "fces": "FCE 10",
+        "title": "Liderazgo de mercado",
+        "text": "**Ventana de ejecución antes de que los grandes copien**. Este factor solo importa si los nueve anteriores se ejecutan bien. Antes de eso, hablar de cuota de mercado es prematuro."
+      }
+    ],
+    "connection": "Estos diez factores son el insumo directo para la **Matriz de Perfil Competitivo (MPC)**, donde se comparará la posición de ERP Evolutivo contra Excel, Alegra, Bsale y Odoo. También son el insumo para los **objetivos de largo plazo (OLP)** y los **objetivos de corto plazo (OCP)** del FODA cruzado.",
+    "closing": "La prueba de validez de un FCE no es su elegancia conceptual: es su **capacidad para generar acción en una mañana cualquiera de trabajo**. Si no puedes mirar cada factor y responder en menos de un minuto «qué voy a hacer este mes para mover esta métrica», el factor está mal formulado."
+  }
+}

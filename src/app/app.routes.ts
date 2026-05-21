@@ -53,6 +53,14 @@ export const routes: Routes = [
             m => m.EfiEfeComponent
           ),
         title: 'Matrices EFI & EFE — Estudio Estratégico'
+      },
+      {
+        path: 'fce',
+        loadComponent: () =>
+          import('./features/analisis-estrategico/fce/fce.component').then(
+            m => m.FceComponent
+          ),
+        title: 'Factores Críticos de Éxito — Estudio Estratégico'
       }
     ]
   },

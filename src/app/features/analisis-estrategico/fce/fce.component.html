@@ -1,0 +1,134 @@
+<!-- Factores Críticos de Éxito -->
+<div class="max-w-screen-lg mx-auto">
+
+  <!-- Back + header -->
+  <div class="mb-4xl">
+    <a [routerLink]="data.backLink.route"
+       class="inline-flex items-center gap-sm text-xs text-ink-subtle hover:text-ink-muted no-underline transition-colors mb-2xl">
+      {{ data.backLink.label }}
+    </a>
+    <h2 class="text-2xl font-display font-extrabold text-ink mb-sm" data-testid="fce-title">
+      {{ data.title }}
+    </h2>
+    <p class="text-md text-ink-muted leading-body" data-testid="fce-subtitle">
+      {{ data.subtitle }}
+    </p>
+  </div>
+
+  <!-- Framing -->
+  <app-quoted-text class="mb-4xl" testId="fce-intro">
+    <span [innerHTML]="data.intro | md"></span>
+  </app-quoted-text>
+
+  <!-- ── Factores en columna ── -->
+  <div class="flex flex-col gap-3xl" data-testid="fce-factors">
+    @for (factor of factors; track factor.id) {
+      <app-card
+        [testId]="'fce-' + factor.id"
+        [color]="factorColor(factor.id)"
+        [title]="factor.title"
+        [emoji]="factor.emoji"
+        [question]="factor.question">
+
+        <!-- Número + capa -->
+        <div class="flex items-center gap-md mb-2xl">
+          <span class="text-2xs font-mono font-bold text-ink-subtle bg-surface border border-line px-md py-xs rounded-badge">
+            {{ factor.number }}
+          </span>
+          <span class="text-2xs font-mono text-ink-subtle uppercase tracking-badge">
+            Capa {{ factor.layer }}
+          </span>
+        </div>
+
+        @for (block of factor.blocks; track $index) {
+          @switch (block.type) {
+            @case ('paragraph') {
+              <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="block.text | md"></p>
+            }
+            @case ('list') {
+              <app-list [testId]="'fce-' + factor.id + '-list-' + $index">
+                @for (item of block.items; track $index) {
+                  <app-list-item><span [innerHTML]="item | md"></span></app-list-item>
+                }
+              </app-list>
+            }
+            @case ('note') {
+              <app-section
+                [variant]="sectionVariant('note')"
+                [testId]="'fce-' + factor.id + '-note-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('info') {
+              <app-section
+                [variant]="sectionVariant('info')"
+                [testId]="'fce-' + factor.id + '-info-' + $index"
+                class="mt-lg">
+                <span [innerHTML]="block.text | md"></span>
+              </app-section>
+            }
+            @case ('implication') {
+              <app-section
+                [variant]="sectionVariant('implication')"
+                [title]="block.title"
+                [testId]="'fce-' + factor.id + '-impl'"
+                class="mt-lg">
+                <p class="text-xs leading-body" [innerHTML]="block.text | md"></p>
+              </app-section>
+            }
+          }
+        }
+      </app-card>
+    }
+  </div>
+
+  <!-- ── SÍNTESIS Y JERARQUÍA ── -->
+  <div class="mt-5xl" data-testid="fce-sintesis">
+    <app-section variant="highlight" [title]="data.synthesis.title" testId="fce-sintesis-section">
+
+      <p class="text-xs text-ink-muted leading-body mb-3xl" [innerHTML]="data.synthesis.lead | md"></p>
+
+      <!-- Capas de prioridad -->
+      <div class="flex flex-col gap-lg mb-3xl" data-testid="fce-layers">
+        @for (layer of layers; track layer.id) {
+          <div class="bg-surface border border-line rounded-card p-2xl">
+            <div class="flex items-center gap-md mb-lg flex-wrap">
+              @switch (layer.id) {
+                @case ('capa-1') {
+                  <span class="text-2xs font-mono font-bold text-danger-fg bg-danger-tint border border-danger-line px-md py-xs rounded-badge">
+                    {{ layer.badge }}
+                  </span>
+                }
+                @case ('capa-2') {
+                  <span class="text-2xs font-mono font-bold text-warning-fg bg-warning-tint border border-warning-line px-md py-xs rounded-badge">
+                    {{ layer.badge }}
+                  </span>
+                }
+                @case ('capa-3') {
+                  <span class="text-2xs font-mono font-bold text-info-fg bg-info-tint border border-info-line px-md py-xs rounded-badge">
+                    {{ layer.badge }}
+                  </span>
+                }
+                @case ('capa-4') {
+                  <span class="text-2xs font-mono font-bold text-success-fg bg-success-tint border border-success-line px-md py-xs rounded-badge">
+                    {{ layer.badge }}
+                  </span>
+                }
+              }
+              <span class="text-2xs font-mono text-ink-subtle">{{ layer.horizon }}</span>
+              <span class="text-2xs font-semibold text-ink-muted">{{ layer.title }}</span>
+              <span class="text-2xs text-ink-subtle">— {{ layer.fces }}</span>
+            </div>
+            <p class="text-xs text-ink-muted leading-body" [innerHTML]="layer.text | md"></p>
+          </div>
+        }
+      </div>
+
+      <p class="text-xs text-ink-muted leading-body mb-lg" [innerHTML]="data.synthesis.connection | md"></p>
+      <p class="text-xs text-ink-muted leading-body italic" [innerHTML]="data.synthesis.closing | md"></p>
+
+    </app-section>
+  </div>
+
+</div>
